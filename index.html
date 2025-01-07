@@ -75,9 +75,9 @@
   <header>
     <!-- Top Bar -->
     <div class="bg-gray-800 py-2">
-      <div class="container mx-auto px-4 flex justify-between items-center">
+      <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
         <!-- Left: Contact Info -->
-        <div class="flex space-x-4">
+        <div class="flex flex-wrap justify-between w-full md:w-auto space-x-4">
           <div class="flex items-center space-x-2 text-white">
             <i class="ri-mail-line"></i>
             <a href="mailto:info@example.com">info@example.com</a>
@@ -93,7 +93,7 @@
         </div>
 
         <!-- Right: Social Links and Languages -->
-        <div class="flex items-center space-x-4">
+        <div class="flex flex-wrap justify-between w-full md:w-auto items-center space-x-4 mt-4 md:mt-0">
           <div class="flex space-x-2">
             <a href="#" class="text-white">
               <i class="ri-facebook-fill"></i>
@@ -108,53 +108,95 @@
               <i class="ri-linkedin-fill"></i>
             </a>
           </div>
-          <!-- Alpine.js Dropdown for Language Selection -->
+          <!-- Language Dropdown (Hidden on mobile by default) -->
+          <!-- Uncomment if you want a language dropdown -->
           <!-- <div x-data="{ open: false }" class="relative">
-            <button @click="open = !open" class="text-white py-2 px-4 bg-primary rounded focus:outline-none focus:ring">
-              <i class="ri-globe-line"></i> Eng
-            </button>
-            <ul x-show="open" x-cloak @click.away="open = false"
-              class="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-md z-50 overflow-hidden">
-              <li><a class="block px-4 py-2 text-gray-900 hover:bg-gray-100" href="#">English</a></li>
-              <li><a class="block px-4 py-2 text-gray-900 hover:bg-gray-100" href="#">German</a></li>
-              <li><a class="block px-4 py-2 text-gray-900 hover:bg-gray-100" href="#">Russian</a></li>
-              <li><a class="block px-4 py-2 text-gray-900 hover:bg-gray-100" href="#">Spanish</a></li>
-            </ul>
-          </div> -->
-
+        <button @click="open = !open" class="text-white py-2 px-4 bg-primary rounded focus:outline-none focus:ring">
+          <i class="ri-globe-line"></i> Eng
+        </button>
+        <ul x-show="open" x-cloak @click.away="open = false"
+          class="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-md z-50 overflow-hidden">
+          <li><a class="block px-4 py-2 text-gray-900 hover:bg-gray-100" href="#">English</a></li>
+          <li><a class="block px-4 py-2 text-gray-900 hover:bg-gray-100" href="#">German</a></li>
+          <li><a class="block px-4 py-2 text-gray-900 hover:bg-gray-100" href="#">Russian</a></li>
+          <li><a class="block px-4 py-2 text-gray-900 hover:bg-gray-100" href="#">Spanish</a></li>
+        </ul>
+      </div> -->
         </div>
       </div>
     </div>
-    <!-- Navbar component -->
-    <div class="bg-primary-dark">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
 
-          <!-- Logo -->
-          <!-- Adjusted Logo -->
-          <div class="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
-              <img class="h-12 w-auto sm:h-14" src="./assets/logo/erersollogo.png" alt="Enersol Biopower"
-                style="min-width: 150px;">
-            </a>
+ <!-- Navbar component -->
+<div class="bg-primary-dark">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+
+      <!-- Logo -->
+      <div class="flex justify-start lg:w-0 lg:flex-1">
+        <a href="#">
+          <img class="h-12 w-auto sm:h-14" src="./assets/logo/erersollogo.png" alt="Enersol Biopower" style="min-width: 150px;">
+        </a>
+      </div>
+
+      <!-- Navbar collapse button (visible on small screens) -->
+      <div class="-mr-2 -my-2 md:hidden">
+        <button type="button"
+          class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+          id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="sr-only">Open menu</span>
+          <!-- Icon for the button (hamburger icon) -->
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" aria-hidden="true" style="color: white;">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Links for large screens -->
+      <nav class="hidden md:flex space-x-10">
+        <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
+        <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
+        <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+        <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">How It Works</a>
+        <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Blog/News</a>
+        <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
+      </nav>
+
+      <!-- Get a Quote button (visible on large screens) -->
+      <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+        <a href="#"
+          class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
+          Get a Quote
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu, toggle classes based on menu state (open/closed) -->
+  <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden" id="mobile-menu"
+    style="display: none;z-index: 10;">
+    <div
+      class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-primary-dark divide-y-2 divide-accentYellow-light">
+      <div class="pt-5 pb-6 px-5">
+        <div class="flex items-center justify-between">
+          <div>
+            <img class="h-8 w-auto" src="./assets/logo/erersollogo.png" alt="Your Company">
           </div>
-
-          <!-- Navbar collapse button (visible on small screens) -->
-          <div class="-mr-2 -my-2 md:hidden">
+          <div class="-mr-2">
             <button type="button"
-              class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-              id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
-              <span class="sr-only">Open menu</span>
-              <!-- Icon for the button (hamburger icon) -->
+              class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              onclick="toggleMobileMenu()">
+              <span class="sr-only">Close menu</span>
+              <!-- Close icon -->
               <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
-
-          <!-- Links for large screens -->
-          <nav class="hidden md:flex space-x-10">
+        </div>
+        <div class="mt-6">
+          <nav class="grid gap-y-8">
             <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
             <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
             <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
@@ -162,62 +204,22 @@
             <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Blog/News</a>
             <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
           </nav>
-
-          <!-- Get a Quote button (visible on large screens) -->
-          <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <a href="#"
-              class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
-              Get a Quote
-            </a>
-          </div>
         </div>
       </div>
-
-      <!-- Mobile menu, toggle classes based on menu state (open/closed) -->
-      <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden" id="mobile-menu"
-        style="display: none;">
-        <div
-          class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-primary-dark divide-y-2 divide-accentYellow-light">
-          <div class="pt-5 pb-6 px-5">
-            <div class="flex items-center justify-between">
-              <div>
-                <img class="h-8 w-auto" src="path_to_logo.svg" alt="Your Company">
-              </div>
-              <div class="-mr-2">
-                <button type="button"
-                  class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                  onclick="toggleMobileMenu()">
-                  <span class="sr-only">Close menu</span>
-                  <!-- Close icon -->
-                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="mt-6">
-              <nav class="grid gap-y-8">
-                <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
-                <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
-                <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
-                <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">How It Works</a>
-                <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Blog/News</a>
-                <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
-              </nav>
-            </div>
-          </div>
-          <div class="py-6 px-5 space-y-6">
-            <div>
-              <a href="#"
-                class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-secondary hover:bg-secondary-dark">
-                Get a Quote
-              </a>
-            </div>
-          </div>
+      <div class="py-6 px-5 space-y-6">
+        <div>
+          <a href="#"
+            class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-secondary hover:bg-secondary-dark">
+            Get a Quote
+          </a>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+
+
   </header>
   <div class="relative w-full" style="height: 85vh;">
     <!-- Swiper -->
@@ -1038,19 +1040,24 @@
     });
   </script>
 
+<script>
+  // JavaScript to toggle the mobile menu
+  document.getElementById('mobile-menu-button').addEventListener('click', function () {
+    var menu = document.getElementById('mobile-menu');
+    if (menu.style.display === 'none' || menu.style.display === '') {
+      menu.style.display = 'block';
+      menu.classList.add('transform', 'transition-all', 'duration-300', 'translate-x-0');
+    } else {
+      menu.style.display = 'none';
+      menu.classList.remove('transform', 'transition-all', 'duration-300', 'translate-x-0');
+    }
+  });
 
-  <script>
-    // JavaScript to toggle the mobile menu
-    document.getElementById('mobile-menu-button').addEventListener('click', function () {
-      var menu = document.getElementById('mobile-menu');
-      if (menu.style.display === 'none') {
-        menu.style.display = 'block';
-      } else {
-        menu.style.display = 'none';
-      }
-    });
-  </script>
-
+  // Function to close the menu when clicking on close icon
+  function toggleMobileMenu() {
+    document.getElementById('mobile-menu').style.display = 'none';
+  }
+</script>
 
 
 </body>

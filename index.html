@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENERSOL BIOPOWER PRIVATE LIMITED</title>
+  <style>
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // Primary Colors
+            primary: {
+              DEFAULT: '#299FD3', // Blue
+              light: '#4FB5E0',  // Lighter shade of blue
+              dark: 'rgb(3 69 155)',   // Darker shade of blue
+            },
+            secondary: {
+              DEFAULT: '#C7D110', // Green
+              light: '#D4DB50',   // Lighter green
+              dark: '#909B0B',    // Darker green
+            },
+
+            // Accent Colors
+            accentYellow: {
+              DEFAULT: '#FED400',
+              light: '#FFE766',
+              dark: '#CCAA00',
+            },
+            accentRed: {
+              DEFAULT: '#9B1418',
+              light: '#C91B1F',
+              dark: '#740F12',
+            },
+
+            // Gradients
+            gradientBlueGreen: {
+              DEFAULT: 'linear-gradient(90deg, #299FD3 0%, #C7D110 100%)',
+            },
+            gradientYellowGreen: {
+              DEFAULT: 'linear-gradient(90deg, #FED400 0%, #C7D110 100%)',
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+  <style>
+    .swiper-slide .slide-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3);
+      /* Black overlay with 30% opacity */
+      z-index: -2;
+      /* Ensures overlay is below text content */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Top bar above the main navbar -->
+  <header>
+    <!-- Top Bar -->
+    <div class="bg-gray-800 py-2">
+      <div class="container mx-auto px-4 flex justify-between items-center">
+        <!-- Left: Contact Info -->
+        <div class="flex space-x-4">
+          <div class="flex items-center space-x-2 text-white">
+            <i class="ri-mail-line"></i>
+            <a href="mailto:info@example.com">info@example.com</a>
+          </div>
+          <div class="flex items-center space-x-2 text-white">
+            <i class="ri-phone-line"></i>
+            <a href="tel:+21236547898">+2 123 654 7898</a>
+          </div>
+          <div class="hidden md:flex items-center space-x-2 text-white">
+            <i class="ri-time-line"></i>
+            <a href="#">Sun - Fri (08AM - 10PM)</a>
+          </div>
+        </div>
+
+        <!-- Right: Social Links and Languages -->
+        <div class="flex items-center space-x-4">
+          <div class="flex space-x-2">
+            <a href="#" class="text-white">
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="#" class="text-white">
+              <i class="ri-twitter-fill"></i>
+            </a>
+            <a href="#" class="text-white">
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="#" class="text-white">
+              <i class="ri-linkedin-fill"></i>
+            </a>
+          </div>
+          <!-- Alpine.js Dropdown for Language Selection -->
+          <!-- <div x-data="{ open: false }" class="relative">
+            <button @click="open = !open" class="text-white py-2 px-4 bg-primary rounded focus:outline-none focus:ring">
+              <i class="ri-globe-line"></i> Eng
+            </button>
+            <ul x-show="open" x-cloak @click.away="open = false"
+              class="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-md z-50 overflow-hidden">
+              <li><a class="block px-4 py-2 text-gray-900 hover:bg-gray-100" href="#">English</a></li>
+              <li><a class="block px-4 py-2 text-gray-900 hover:bg-gray-100" href="#">German</a></li>
+              <li><a class="block px-4 py-2 text-gray-900 hover:bg-gray-100" href="#">Russian</a></li>
+              <li><a class="block px-4 py-2 text-gray-900 hover:bg-gray-100" href="#">Spanish</a></li>
+            </ul>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+    <!-- Navbar component -->
+    <div class="bg-primary-dark">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+
+          <!-- Logo -->
+          <!-- Adjusted Logo -->
+          <div class="flex justify-start lg:w-0 lg:flex-1">
+            <a href="#">
+              <img class="h-12 w-auto sm:h-14" src="./assets/logo/erersollogo.png" alt="Enersol Biopower"
+                style="min-width: 150px;">
+            </a>
+          </div>
+
+          <!-- Navbar collapse button (visible on small screens) -->
+          <div class="-mr-2 -my-2 md:hidden">
+            <button type="button"
+              class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
+              <span class="sr-only">Open menu</span>
+              <!-- Icon for the button (hamburger icon) -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Links for large screens -->
+          <nav class="hidden md:flex space-x-10">
+            <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
+            <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
+            <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+            <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">How It Works</a>
+            <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Blog/News</a>
+            <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
+          </nav>
+
+          <!-- Get a Quote button (visible on large screens) -->
+          <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+            <a href="#"
+              class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
+              Get a Quote
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, toggle classes based on menu state (open/closed) -->
+      <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden" id="mobile-menu"
+        style="display: none;">
+        <div
+          class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-primary-dark divide-y-2 divide-accentYellow-light">
+          <div class="pt-5 pb-6 px-5">
+            <div class="flex items-center justify-between">
+              <div>
+                <img class="h-8 w-auto" src="path_to_logo.svg" alt="Your Company">
+              </div>
+              <div class="-mr-2">
+                <button type="button"
+                  class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                  onclick="toggleMobileMenu()">
+                  <span class="sr-only">Close menu</span>
+                  <!-- Close icon -->
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="mt-6">
+              <nav class="grid gap-y-8">
+                <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
+                <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
+                <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+                <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">How It Works</a>
+                <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Blog/News</a>
+                <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
+              </nav>
+            </div>
+          </div>
+          <div class="py-6 px-5 space-y-6">
+            <div>
+              <a href="#"
+                class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-secondary hover:bg-secondary-dark">
+                Get a Quote
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="relative w-full" style="height: 85vh;">
+    <!-- Swiper -->
+    <div class="swiper mySwiper h-full">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 with Full-Screen Placeholder Image -->
+        <div class="swiper-slide bg-cover bg-center h-full"
+          style="background-image: url('./assets/home/carolien-van-oijen-Md1Fk5K9F7c-unsplash.jpg');">
+          <div class="slide-overlay"></div>
+          <div class="container py-5 mb-5 mx-auto px-4 h-full flex items-end justify-start">
+            <div class="text-white text-left p-4 bg-white/30 backdrop-blur-md rounded-lg">
+              <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">Welcome to <br> Our Website</h2>
+              <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-2">Explore our products and services.</p>
+              <a href="#"
+                class="mt-4 inline-block bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded text-lg sm:text-xl md:text-2xl">Learn
+                More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 with Full-Screen Placeholder Image -->
+        <div class="swiper-slide bg-cover bg-center h-full"
+          style="background-image: url('./assets/home/thomas-richter-B09tL5bSQJk-unsplash.jpg');">
+          <div class="slide-overlay"></div>
+          <div class="container mx-auto px-4 py-5 mb-5 h-full flex items-end justify-start">
+            <div class="text-white text-left p-4 bg-white/30 backdrop-blur-md rounded-lg">
+              <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">Innovative <br> Solutions</h2>
+              <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-2">Leading the way in renewable energy.</p>
+              <a href="#" class="mt-4 inline-block bg-secondary py-2 px-4 rounded text-lg sm:text-xl md:text-2xl">Our
+                Products</a>
+            </div>
+          </div>
+        </div>
+        <!-- Additional slides as needed -->
+      </div>
+      <!-- Swiper Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Swiper Navigation -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+
+  <!-- About US -->
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h2 class="text-2xl font-semibold text-primary mb-3">About Us</h2>
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-primary-dark">
+          Enersol Biopower Pvt Ltd
+          <br class="hidden lg:inline-block">Leading Innovation in Bioenergy
+        </h1>
+        <p class="mb-4 leading-relaxed">
+          Enersol Biopower Pvt Ltd is a leading designer, manufacturer, and supplier of biomass gasifiers and
+          gasification based power plants for thermal and electrical applications. We introduced portable biomass
+          gasifier in India and our main applications include village electrification, replacing diesel generators at
+          tower industries, and serving as an alternate source of power at agro-based industries. We also offer biogas
+          services like anaerobic digester systems and CSTR biogas plants, along with biomass cook stoves, pellet cook
+          stoves, and biomass heat burners.
+        </p>
+        <ul class="list-disc list-inside mb-8 text-left">
+          <li>Biomass Gasification System</li>
+          <li>Biogas Plants</li>
+          <li>Biomass Cook Stoves</li>
+          <li>Pellets Cook Stoves</li>
+          <li>Biomass Heat Burner</li>
+        </ul>
+        <div class="flex justify-center">
+          <button
+            class="inline-flex text-white bg-gradient-to-r from-primary to-secondary border-0 py-2 px-6 focus:outline-none hover:from-primary-dark hover:to-secondary-dark rounded text-lg">Learn
+            More</button>
+          <button
+            class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Contact
+            Us</button>
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded" alt="Enersol Biopower"
+          src="./assets/home/carolien-van-oijen-Md1Fk5K9F7c-unsplash.jpg">
+      </div>
+    </div>
+  </section>
+  <!-- Why US -->
+  <section class="text-gray-600 body-font bg-primary-dark">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-white mb-4">Why ESB-R Biomass Gasifier
+          System</h1>
+        <p class="text-white leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Discover the unique advantages of the ESB-R
+          Biomass Gasifier System, designed for both efficiency and sustainability.</p>
+      </div>
+      <div class="flex flex-wrap -mx-2">
+        <!-- Feature 1 -->
+        <div class="p-2 md:w-1/2 lg:w-1/3">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-secondary-dark w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Smallest in size, reliable, rugged and compact system.</span>
+          </div>
+        </div>
+        <!-- Feature 2 -->
+        <div class="p-2 md:w-1/2 lg:w-1/3">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-secondary-dark w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Portable system; can be used anywhere power is needed.</span>
+          </div>
+        </div>
+        <!-- Feature 3 -->
+        <div class="p-2 md:w-1/2 lg:w-1/3">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-secondary-dark w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Dry filtration; no need of continuous flow of water.</span>
+          </div>
+        </div>
+        <!-- Feature 4 -->
+        <div class="p-2 md:w-1/2 lg:w-1/3">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-secondary-dark w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Soundproof system and mounted on a trolley.</span>
+          </div>
+        </div>
+        <!-- Feature 5 -->
+        <div class="p-2 md:w-1/2 lg:w-1/3">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-secondary-dark w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Accepts all types of wood waste and agricultural residues as
+              fuel.</span>
+          </div>
+        </div>
+        <!-- Feature 6 -->
+        <div class="p-2 md:w-1/2 lg:w-1/3">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-secondary-dark w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Reachable for both urban and rural people.</span>
+          </div>
+        </div>
+        <!-- Feature 7 -->
+        <div class="p-2 md:w-1/2 lg:w-1/3">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-secondary-dark w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Low maintenance, easy to operate.</span>
+          </div>
+        </div>
+        <!-- Feature 8 -->
+        <div class="p-2 md:w-1/2 lg:w-1/3">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-secondary-dark w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Helps replace fossil fuel.</span>
+          </div>
+        </div>
+        <!-- Feature 9 -->
+        <div class="p-2 md:w-1/2 lg:w-1/3">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-secondary-dark w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Environmentally friendly.</span>
+          </div>
+        </div>
+      </div>
+      <button
+        class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow flex mx-auto mt-16 border-0 py-2 px-8 focus:outline-none rounded text-lg">Learn
+        More</button>
+    </div>
+  </section>
+  <!-- Green Energy Statement Section -->
+  <section class="text-gray-600 body-font bg-gray-100">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <h2 class="sm:text-3xl text-2xl text-primary-dark font-bold title-font mb-4 md:w-2/5">
+        GREEN ENERGY: COMPACT BIOMASS GASIFIER & IMPROVED SMOKELESS BIOMASS STOVE
+      </h2>
+      <div class="md:w-3/5 md:pl-6">
+        <p class="leading-relaxed text-base text-gray-700">
+          Helping hand for rural electrification & supporting social development of the people with good health around
+          the world.
+        </p>
+        <div class="flex md:mt-4 mt-6">
+          <button
+            class="inline-flex text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-primary-dark rounded">
+            Explore Products
+          </button>
+          <a class="text-primary inline-flex items-center ml-4" href="#about-us">
+            Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Mission and Vision Section with "Who We Are" Header -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <h1 class="text-3xl font-bold text-primary-dark mb-4">Who We Are</h1>
+        <p class="text-lg leading-relaxed text-gray-600">Learn more about what drives us at ENERSOL BIOPOWER PRIVATE
+          LIMITED.</p>
+      </div>
+
+      <!-- Mission Statement -->
+      <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+        <div
+          class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-primary-light text-primary flex-shrink-0">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+          </svg>
+        </div>
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Our Mission</h2>
+          <p class="leading-relaxed text-base">To harness the immense potential of biomass through innovative energy
+            solutions that drive rural prosperity, strengthen agricultural sustainability, and accelerate India's
+            transition to a cleaner energy future.</p>
+        </div>
+      </div>
+      <!-- Vision Statement -->
+      <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Our Vision</h2>
+          <p class="leading-relaxed text-base">Enersol Biopower envisions a world powered by clean and sustainable
+            energy solutions that uplift communities, nurture the environment, and foster socio-economic progress.</p>
+        </div>
+        <div
+          class="sm:w-32 sm:ml-10 sm:h-32 h-20 w-20 inline-flex items-center justify-center rounded-full bg-primary-light text-primary flex-shrink-0">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+            <path d="M3 12l2-2 4 4L21 3" />
+            <path d="M21 12v6H3" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Renewable Energy Sources Section -->
+  <section class="bg-primary-dark text-white body-font">
+    <div class="container mx-auto px-5 py-24">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">Renewable Energy Sources</h2>
+        <p class="mt-4 text-lg">
+          Renewable energy is collected from resources that are naturally replenished on a human timescale. It plays a
+          crucial role in reducing greenhouse gas emissions and the use of fossil fuels, which are major contributors to
+          global carbon dioxide emissions.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap lg:flex-nowrap items-center">
+        <!-- Text Content -->
+        <div class="lg:w-2/3 w-full lg:pr-10">
+          <h3 class="text-2xl font-semibold text-secondary mb-4">Major Types of Renewable Energy Sources</h3>
+          <ul class="list-disc list-inside text-lg mb-8">
+            <li>Solar Energy</li>
+            <li>Wind Energy</li>
+            <li>Hydropower Energy</li>
+            <li>Biomass Energy</li>
+          </ul>
+          <h3 class="text-2xl font-semibold text-secondary mb-4">Biomass - Renewable Energy from Plants and Animals</h3>
+          <p class="leading-relaxed mb-6">
+            Biomass energy is renewable energy derived from biological sources such as plants and animal residues.
+            Humans have used biomass for thousands of years, from burning wood for cooking and warmth to utilizing
+            agricultural residues, forestry waste, and organic components of municipal and industrial waste.
+          </p>
+          <p class="leading-relaxed">
+            While wood remains a major source, modern biomass energy leverages a wide range of resources, making it an
+            adaptable and sustainable energy option.
+          </p>
+        </div>
+
+        <!-- Image with Click-to-Enlarge and Overlay -->
+        <div class="lg:w-1/3 w-full lg:mt-0 mt-8 relative group" x-data="{ open: false }">
+          <img @click="open = true" class="object-cover object-center rounded-lg shadow-md cursor-pointer"
+            src="./assets/home/43481-O3TNIH.jpg" alt="Renewable Energy" />
+
+          <!-- Overlay with Animation -->
+          <div
+            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg pointer-events-none">
+            <span class="text-white text-lg font-semibold animate-pulse">Click to Enlarge</span>
+          </div>
+
+          <!-- Lightbox -->
+          <div x-show="open" x-cloak class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+            <div class="relative max-h-screen max-w-screen">
+              <img class="rounded-lg max-h-screen max-w-full object-contain" src="./assets/home/43481-O3TNIH.jpg"
+                alt="Infographic" />
+              <button @click="open = false"
+                class="absolute top-4 right-4 text-white bg-gray-800 bg-opacity-50 hover:bg-gray-900 rounded-full p-2 focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Featured Products Section -->
+  <section class="bg-gray-100 text-gray-700 body-font">
+    <div class="container mx-auto px-5 py-24">
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-primary-dark">Our Innovative Products</h2>
+        <p class="mt-4 text-lg text-gray-600">
+          Explore our range of cutting-edge products designed to promote sustainable energy and improve lives worldwide.
+        </p>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Product Card 1 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img class="h-48 w-full object-cover" src="./assets/home/biomass_gasifier.jpeg" alt="Biomass Gasifier" />
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-primary mb-2">Biomass Gasifiers</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Innovative gasifiers designed to harness the power of biomass for rural electrification and industrial
+              use.
+            </p>
+            <a href="#" class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img class="h-48 w-full object-cover" src="./assets/home/Green Agnika10 (4).jpeg"
+            alt="Improved Biomass Stoves" />
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-primary mb-2">Improved Biomass Stoves</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Advanced smokeless stoves offering efficiency and health benefits for households and communities.
+            </p>
+            <a href="#" class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img class="h-48 w-full object-cover" src="./assets/home/IMG-20200708-WA0029.jpg"
+            alt="Biomass Heat Burners" />
+          <div class="p-6">
+            <h3 class="text-lg font-bold text-primary mb-2">Biomass Heat Burners</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Versatile burners for thermal applications, replacing traditional fossil fuels with sustainable solutions.
+            </p>
+            <a href="#" class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="text-center mt-12">
+        <a href="#products" class="bg-blue-800 hover:bg-blue-500 text-white py-3 px-8 rounded text-lg inline-block">
+          View All Products
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Stats Section -->
+  <section class="bg-primary-dark text-white body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <!-- Section Header -->
+      <div class="flex flex-col text-center w-full mb-20">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Our Achievements</h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+          A glimpse of our success. We take pride in our journey and the milestones we've reached while working
+          relentlessly towards a sustainable future.
+        </p>
+      </div>
+      <!-- Stats Cards -->
+      <div class="flex flex-wrap -m-4 text-center">
+        <!-- Finished Projects -->
+        <div class="p-4 md:w-1/5 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-white shadow-md">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="text-primary-dark w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <h2 class="title-font font-bold text-4xl text-gray-900">2477</h2>
+            <p class="leading-relaxed text-xl text-gray-700 mt-2">Finished Projects</p>
+          </div>
+        </div>
+
+        <!-- Happy Clients -->
+        <div class="p-4 md:w-1/5 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-white shadow-md">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="text-primary-dark w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" fill="none"></circle>
+              <path
+                d="M12 7c1.5 0 3 1 3 3s-1.5 3-3 3-3-1-3-3 1.5-3 3-3zM12 2C7.033 2 4 5.33 4 8.75v5.5c0 2.52 2.45 5.28 6 6.76V22h4v-1.99c3.55-1.48 6-4.24 6-6.76v-5.5C20 5.33 16.967 2 12 2z">
+              </path>
+            </svg>
+            <h2 class="title-font font-bold text-4xl text-gray-900">832</h2>
+            <p class="leading-relaxed text-xl text-gray-700 mt-2">Happy Clients</p>
+          </div>
+        </div>
+
+        <!-- Working Hours -->
+        <div class="p-4 md:w-1/5 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-white shadow-md">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="text-primary-dark w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+              <path d="M12 2v10h10m0 0L12 2M2 12l10-10m0 0L2 12m18 0H2"></path>
+            </svg>
+            <h2 class="title-font font-bold text-4xl text-gray-900">1858</h2>
+            <p class="leading-relaxed text-xl text-gray-700 mt-2">Working Hours</p>
+          </div>
+        </div>
+
+        <!-- Satisfied Employees -->
+        <div class="p-4 md:w-1/5 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-white shadow-md">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="text-primary-dark w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <h2 class="title-font font-bold text-4xl text-gray-900">10035</h2>
+            <p class="leading-relaxed text-xl text-gray-700 mt-2">Satisfied Employees</p>
+          </div>
+        </div>
+
+        <!-- Offices Worldwide -->
+        <div class="p-4 md:w-1/5 sm:w-1/2 w-full">
+          <div class="border-2 border-gray-200 px-4 py-6 rounded-lg bg-white shadow-md">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="text-primary-dark w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <h2 class="title-font font-bold text-4xl text-gray-900">1858</h2>
+            <p class="leading-relaxed text-xl text-gray-700 mt-2">Offices Worldwide</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Testimonials Section -->
+  <section class="bg-gray-100 text-gray-700 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <!-- Section Header -->
+      <h1 class="text-3xl font-bold text-primary-dark mb-12 text-center">What Our Clients Say</h1>
+      <!-- Swiper Container -->
+      <div class="swiper testimonialSwiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 (Two Testimonials) -->
+          <div class="swiper-slide p-6">
+            <div class="flex space-x-8">
+              <!-- Testimonial 1 -->
+              <div class="h-full bg-white p-8 rounded-lg shadow-md w-full flex flex-col">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-primary mb-4"
+                  viewBox="0 0 975.036 975.036">
+                  <path
+                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                  </path>
+                </svg>
+                <p class="leading-relaxed mb-6 flex-grow">ENERSOL Biopower has transformed the way we use renewable
+                  energy, offering sustainable and reliable solutions.</p>
+                <a class="inline-flex items-center">
+                  <img alt="testimonial" src="https://dummyimage.com/106x106"
+                    class="w-12 h-12 rounded-full object-cover" />
+                  <span class="flex-grow flex flex-col pl-4">
+                    <span class="title-font font-medium text-gray-900">John Doe</span>
+                    <span class="text-gray-500 text-sm">Energy Consultant</span>
+                  </span>
+                </a>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="h-full bg-white p-8 rounded-lg shadow-md w-full flex flex-col">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-primary mb-4"
+                  viewBox="0 0 975.036 975.036">
+                  <path
+                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                  </path>
+                </svg>
+                <p class="leading-relaxed mb-6 flex-grow">Their innovative biomass solutions are a game-changer for
+                  rural electrification.</p>
+                <a class="inline-flex items-center">
+                  <img alt="testimonial" src="https://dummyimage.com/107x107"
+                    class="w-12 h-12 rounded-full object-cover" />
+                  <span class="flex-grow flex flex-col pl-4">
+                    <span class="title-font font-medium text-gray-900">Jane Smith</span>
+                    <span class="text-gray-500 text-sm">Renewable Energy Expert</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 (Two Testimonials) -->
+          <div class="swiper-slide p-6">
+            <div class="flex space-x-8">
+              <!-- Testimonial 3 -->
+              <div class="h-full bg-white p-8 rounded-lg shadow-md w-full flex flex-col">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-primary mb-4"
+                  viewBox="0 0 975.036 975.036">
+                  <path
+                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                  </path>
+                </svg>
+                <p class="leading-relaxed mb-6 flex-grow">ENERSOL's solutions have significantly improved our energy
+                  efficiency and cost savings.</p>
+                <a class="inline-flex items-center">
+                  <img alt="testimonial" src="https://dummyimage.com/108x108"
+                    class="w-12 h-12 rounded-full object-cover" />
+                  <span class="flex-grow flex flex-col pl-4">
+                    <span class="title-font font-medium text-gray-900">Robert Langdon</span>
+                    <span class="text-gray-500 text-sm">Sustainability Officer</span>
+                  </span>
+                </a>
+              </div>
+
+              <!-- Testimonial 4 -->
+              <div class="h-full bg-white p-8 rounded-lg shadow-md w-full flex flex-col">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-primary mb-4"
+                  viewBox="0 0 975.036 975.036">
+                  <path
+                    d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+                  </path>
+                </svg>
+                <p class="leading-relaxed mb-6 flex-grow">A true pioneer in the field of renewable energy. The products
+                  exceeded our expectations.</p>
+                <a class="inline-flex items-center">
+                  <img alt="testimonial" src="https://dummyimage.com/109x109"
+                    class="w-12 h-12 rounded-full object-cover" />
+                  <span class="flex-grow flex flex-col pl-4">
+                    <span class="title-font font-medium text-gray-900">Sarah Lee</span>
+                    <span class="text-gray-500 text-sm">Director of Operations</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination -->
+        <div class="swiper-pagination mt-4"></div>
+      </div>
+    </div>
+  </section>
+  <section class="py-16 bg-gradient-to-r from-primary to-secondary">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-white mb-12">Contact Us</h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Contact Details -->
+        <div class="space-y-8">
+          <div>
+            <h3 class="text-2xl font-semibold text-white">Head Office</h3>
+            <p class="text-white mt-2">Plot No. 96-97, Kirti Sagar, Badarwas, Gopalpura Bypass, Jaipur, 302020</p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-white">Factory</h3>
+            <p class="text-white mt-2">Plot No.-1, Jaisalaya, Road No. - 17 Vishawkarma Industrial Area (Vki), Jaipur-
+              302013</p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-white">Call Us</h3>
+            <p class="text-white mt-2">
+              <a href="tel:+919414535665" class="hover:underline">+91 9414535665</a> <br>
+              <a href="tel:+917073495200" class="hover:underline">+91 7073495200</a>
+            </p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-white">Email Us</h3>
+            <p class="text-white mt-2">
+              <a href="mailto:info@enersolbiopower.com" class="hover:underline">info@enersolbiopower.com</a>
+            </p>
+          </div>
+        </div>
+        <!-- Contact Form -->
+        <div>
+          <h3 class="text-2xl font-semibold text-white mb-4">Get in Touch</h3>
+          <form action="#" method="POST" class="space-y-6">
+            <div class="flex flex-col">
+              <label for="name" class="text-white">Name</label>
+              <input type="text" id="name" name="name"
+                class="p-3 mt-2 border-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                required>
+            </div>
+            <div class="flex flex-col">
+              <label for="email" class="text-white">Email</label>
+              <input type="email" id="email" name="email"
+                class="p-3 mt-2 border-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                required>
+            </div>
+            <div class="flex flex-col">
+              <label for="message" class="text-white">Message</label>
+              <textarea id="message" name="message" rows="5"
+                class="p-3 mt-2 border-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                required></textarea>
+            </div>
+            <button type="submit"
+              class="w-full bg-blue-500 hover:bg-blue-700 text-white p-3 mt-4 rounded-md hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer class="bg-primary-dark text-white body-font">
+    <div
+      class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <!-- Logo and Info Section -->
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <!-- Adjusted Logo -->
+          <div class="flex justify-start lg:w-0 lg:flex-1">
+            <a href="#">
+              <img class="h-12 w-auto sm:h-14" src="./assets/logo/erersollogo.png" alt="Enersol Biopower"
+                style="min-width: 150px;">
+            </a>
+          </div>
+
+        </a>
+        <p class="mt-2 text-sm text-gray-300">Innovative Renewable Energy Solutions for a Sustainable Future</p>
+      </div>
+
+      <!-- Column 1: Categories -->
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-300 hover:text-gray-200">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-300 hover:text-gray-200">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-300 hover:text-gray-200">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-300 hover:text-gray-200">Fourth Link</a>
+            </li>
+          </nav>
+        </div>
+
+        <!-- Column 2: Categories -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-300 hover:text-gray-200">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-300 hover:text-gray-200">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-300 hover:text-gray-200">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-300 hover:text-gray-200">Fourth Link</a>
+            </li>
+          </nav>
+        </div>
+
+        <!-- Column 3: Categories -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-300 hover:text-gray-200">First Link</a>
+            </li>
+            <li>
+              <a class="text-gray-300 hover:text-gray-200">Second Link</a>
+            </li>
+            <li>
+              <a class="text-gray-300 hover:text-gray-200">Third Link</a>
+            </li>
+            <li>
+              <a class="text-gray-300 hover:text-gray-200">Fourth Link</a>
+            </li>
+          </nav>
+        </div>
+
+        <!-- Contact Column (with icons) -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
+            Contact
+          </h2>
+          <nav class="list-none mb-10 footer-contact">
+            <!-- Address -->
+            <li class="text-gray-400 flex items-start">
+              <!-- Address Icon -->
+              <i class="ri-map-pin-fill mr-2 text-white"></i>
+              <span class="block">Plot No.-1, Jaisalaya, Road No. - 17, Vishawkarma Industrial Area (Vki), Jaipur-
+                302013 (Rajasthan)</span>
+            </li>
+            <!-- Phone -->
+            <li class="text-gray-400 flex items-start">
+              <!-- Phone Icon -->
+              <i class="ri-phone-fill mr-2 text-white"></i>
+              <span class="block">+91-9414535665</span>
+            </li>
+            <li class="text-gray-400 flex items-start">
+              <i class="ri-phone-fill mr-2 text-white"></i>
+              <span class="block">+91-7073495200</span>
+            </li>
+            <!-- Email -->
+            <li class="text-gray-400 flex items-start">
+              <!-- Email Icon -->
+              <i class="ri-mail-fill mr-2 text-white"></i>
+              <a href="mailto:info@enersolbiopower.com" class="block hover:text-white">info@enersolbiopower.com</a>
+            </li>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer Bottom Section -->
+    <div class="bg-gray-800">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Enersol Biopower — All Rights Reserved</p>
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+          <a class="text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+              viewBox="0 0 24 24">
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  <!-- Swiper.js Initialization -->
+  <script>
+    const testimonialSwiper = new Swiper('.testimonialSwiper', {
+      loop: true,
+      spaceBetween: 30,
+      slidesPerView: 1,  // Display 2 testimonials per slide
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+  <script>
+    var swiper = new Swiper('.mySwiper', {
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      effect: 'coverflow',  // Optional effect
+    });
+  </script>
+
+
+  <script>
+    // JavaScript to toggle the mobile menu
+    document.getElementById('mobile-menu-button').addEventListener('click', function () {
+      var menu = document.getElementById('mobile-menu');
+      if (menu.style.display === 'none') {
+        menu.style.display = 'block';
+      } else {
+        menu.style.display = 'none';
+      }
+    });
+  </script>
+
+
+
+</body>
+
+</html>

@@ -53,47 +53,52 @@
   <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" ></script>
 
   <style>
+    [x-cloak] {
+      display: none;
+    }
+
     .swiper-slide .slide-overlay {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.3);
-      /* Black overlay with 30% opacity */
-      z-index: -2;
-      /* Ensures overlay is below text content */
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+      /* Gradient from transparent on the left to black with 50% opacity on the right */
+      z-index: 0;
+      /* Ensures overlay is below text content but above the image */
+    }
+
+    /* Initial state */
+    .fade-up-enter {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+    }
+
+    /* Final state */
+    .fade-up-enter-active {
+      opacity: 1;
+      transform: translateY(0px);
     }
   </style>
 </head>
 
 <body>
   <!-- Top bar above the main navbar -->
-  <header>
-    <!-- Top Bar -->
-    <div class="bg-gray-800 py-2">
-      <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
-        <!-- Left: Contact Info -->
-        <div class="flex flex-wrap justify-between w-full md:w-auto space-x-4">
+
+  <!-- Top Bar -->
+  <div class="bg-gray-800 py-2">
+    <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+         <!-- Right: Social Links and Languages -->
+         <div class="flex flex-wrap justify-between w-full md:w-auto items-center space-x-4 ">
           <div class="flex items-center space-x-2 text-white">
             <i class="ri-mail-line"></i>
-            <a href="mailto:info@example.com">info@example.com</a>
+            <a href="mailto:info@example.com">info@enersolbiopower.com</a>
           </div>
-          <div class="flex items-center space-x-2 text-white">
-            <i class="ri-phone-line"></i>
-            <a href="tel:+21236547898">+2 123 654 7898</a>
-          </div>
-          <div class="hidden md:flex items-center space-x-2 text-white">
-            <i class="ri-time-line"></i>
-            <a href="#">Sun - Fri (08AM - 10PM)</a>
-          </div>
-        </div>
-
-        <!-- Right: Social Links and Languages -->
-        <div class="flex flex-wrap justify-between w-full md:w-auto items-center space-x-4 mt-4 md:mt-0">
           <div class="flex space-x-2">
             <a href="#" class="text-white">
               <i class="ri-facebook-fill"></i>
@@ -108,134 +113,157 @@
               <i class="ri-linkedin-fill"></i>
             </a>
           </div>
-          <!-- Language Dropdown (Hidden on mobile by default) -->
-          <!-- Uncomment if you want a language dropdown -->
-          <!-- <div x-data="{ open: false }" class="relative">
-        <button @click="open = !open" class="text-white py-2 px-4 bg-primary rounded focus:outline-none focus:ring">
-          <i class="ri-globe-line"></i> Eng
-        </button>
-        <ul x-show="open" x-cloak @click.away="open = false"
-          class="absolute right-0 mt-2 w-40 bg-white shadow-lg rounded-md z-50 overflow-hidden">
-          <li><a class="block px-4 py-2 text-gray-900 hover:bg-gray-100" href="#">English</a></li>
-          <li><a class="block px-4 py-2 text-gray-900 hover:bg-gray-100" href="#">German</a></li>
-          <li><a class="block px-4 py-2 text-gray-900 hover:bg-gray-100" href="#">Russian</a></li>
-          <li><a class="block px-4 py-2 text-gray-900 hover:bg-gray-100" href="#">Spanish</a></li>
-        </ul>
-      </div> -->
+         
         </div>
-      </div>
-    </div>
-
- <!-- Navbar component -->
-<div class="bg-primary-dark">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
-
-      <!-- Logo -->
-      <div class="flex justify-start lg:w-0 lg:flex-1">
-        <a href="#">
-          <img class="h-12 w-auto sm:h-14" src="./assets/logo/erersollogo.png" alt="Enersol Biopower" style="min-width: 150px;">
-        </a>
-      </div>
-
-      <!-- Navbar collapse button (visible on small screens) -->
-      <div class="-mr-2 -my-2 md:hidden">
-        <button type="button"
-          class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-          id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
-          <span class="sr-only">Open menu</span>
-          <!-- Icon for the button (hamburger icon) -->
-          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor" aria-hidden="true" style="color: white;">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-          </svg>
-        </button>
+      <!-- Left: Contact Info -->
+      <div class="flex flex-wrap justify-between w-full md:w-auto space-x-4 mt-4 md:mt-0">
+        
+        <div class="flex items-center space-x-2 text-white">
+          <i class="ri-phone-line"></i>
+          <a href="tel:+21236547898">+91-9414535665</a>
+        </div>
+        <div class="flex items-center space-x-2 text-white">
+          <i class="ri-phone-line"></i>
+          <a href="tel:+21236547898">+91-7073495200</a>
+        </div>
+       
       </div>
 
-      <!-- Links for large screens -->
-      <nav class="hidden md:flex space-x-10">
-        <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
-        <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
-        <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
-        <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">How It Works</a>
-        <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Blog/News</a>
-        <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
-      </nav>
-
-      <!-- Get a Quote button (visible on large screens) -->
-      <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-        <a href="#"
-          class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
-          Get a Quote
-        </a>
-      </div>
+   
     </div>
   </div>
 
-  <!-- Mobile menu, toggle classes based on menu state (open/closed) -->
-  <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden" id="mobile-menu"
-    style="display: none;z-index: 10;">
-    <div
-      class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-primary-dark divide-y-2 divide-accentYellow-light">
-      <div class="pt-5 pb-6 px-5">
-        <div class="flex items-center justify-between">
-          <div>
-            <img class="h-8 w-auto" src="./assets/logo/erersollogo.png" alt="Your Company">
-          </div>
-          <div class="-mr-2">
-            <button type="button"
-              class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-              onclick="toggleMobileMenu()">
-              <span class="sr-only">Close menu</span>
-              <!-- Close icon -->
-              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
+  <!-- Navbar component -->
+  <div class="bg-primary-dark sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+
+        <!-- Logo -->
+        <div class="flex justify-start lg:w-0 lg:flex-1">
+          <a href="#">
+            <img class="h-12 w-auto sm:h-14" src="./assets/logo/erersollogo.png" alt="Enersol Biopower"
+              style="min-width: 150px;">
+          </a>
         </div>
-        <div class="mt-6">
-          <nav class="grid gap-y-8">
-            <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
-            <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
-            <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
-            <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">How It Works</a>
-            <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Blog/News</a>
-            <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
-          </nav>
+
+        <!-- Navbar collapse button (visible on small screens) -->
+        <div class="-mr-2 -my-2 md:hidden">
+          <button type="button"
+            class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="sr-only">Open menu</span>
+            <!-- Icon for the button (hamburger icon) -->
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true" style="color: white;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
         </div>
-      </div>
-      <div class="py-6 px-5 space-y-6">
-        <div>
+
+        <!-- Links for large screens -->
+        <nav class="hidden md:flex space-x-10">
+          <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
+          <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
+          <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+          <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">How It Works</a>
+          <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Blog/News</a>
+          <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
+        </nav>
+
+        <!-- Get a Quote button (visible on large screens) -->
+        <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
           <a href="#"
-            class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-secondary hover:bg-secondary-dark">
+            class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
             Get a Quote
           </a>
         </div>
       </div>
     </div>
+
+    <!-- Mobile menu, toggle classes based on menu state (open/closed) -->
+    <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden" id="mobile-menu"
+      style="display: none;z-index: 10;">
+      <div
+        class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-primary-dark divide-y-2 divide-accentYellow-light">
+        <div class="pt-5 pb-6 px-5">
+          <div class="flex items-center justify-between">
+            <div>
+              <img class="h-8 w-auto" src="./assets/logo/erersollogo.png" alt="Your Company">
+            </div>
+            <div class="-mr-2">
+              <button type="button"
+                class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                onclick="toggleMobileMenu()">
+                <span class="sr-only">Close menu</span>
+                <!-- Close icon -->
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="mt-6">
+            <nav class="grid gap-y-8">
+              <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
+              <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
+              <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+              <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">How It Works</a>
+              <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Blog/News</a>
+              <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
+            </nav>
+          </div>
+        </div>
+        <div class="py-6 px-5 space-y-6">
+          <div>
+            <a href="#"
+              class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-secondary hover:bg-secondary-dark">
+              Get a Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 
 
 
-  </header>
+
   <div class="relative w-full" style="height: 85vh;">
     <!-- Swiper -->
     <div class="swiper mySwiper h-full">
       <div class="swiper-wrapper">
+        <!-- Slide 2 with Full-Screen Placeholder Image -->
+        <div class="swiper-slide bg-cover bg-center h-full"
+          style="background-image: url('./assets/home/crop-5159303.jpg');">
+          <div class="slide-overlay"></div>
+          <div class="container relative mx-auto px-4 py-5 mb-5 h-full flex items-center justify-start">
+            <div class="text-white text-left px-5 fade-up-enter">
+              <h2 class="text-3xl sm:text-3xl md:text-6xl lg:text-7xl font-bold">Harnessing Biomass <br> for Rural
+                Prosperity <br> and Cleaner Energy</h2>
+              <p class="text-base sm:text-base md:text-xl lg:text-xl mt-2 lg:w-1/2">At the heart of sustainable development,
+                we are committed to transforming the landscape of energy production. Our mission is to harness the power
+                of biomass, turning organic materials into a cornerstone for rural prosperity and a cleaner, renewable
+                energy future.</p>
+              <a href="#" class="mt-4 inline-block py-2 px-4 rounded text-lg sm:text-xl md:text-2xl" style="background-color: #38b322;">Our
+                Products</a>
+            </div>
+          </div>
+        </div>
         <!-- Slide 1 with Full-Screen Placeholder Image -->
         <div class="swiper-slide bg-cover bg-center h-full"
           style="background-image: url('./assets/home/carolien-van-oijen-Md1Fk5K9F7c-unsplash.jpg');">
           <div class="slide-overlay"></div>
-          <div class="container py-5 mb-5 mx-auto px-4 h-full flex items-end justify-start">
-            <div class="text-white text-left p-4 bg-white/30 backdrop-blur-md rounded-lg">
-              <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">Welcome to <br> Our Website</h2>
-              <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-2">Explore our products and services.</p>
-              <a href="#"
-                class="mt-4 inline-block bg-gray-300 hover:bg-gray-400 text-gray-800 py-2 px-4 rounded text-lg sm:text-xl md:text-2xl">Learn
-                More</a>
+          <div class="container relative mx-auto px-4 py-5 mb-5 h-full flex items-center justify-start">
+            <div class="text-white text-left px-5 fade-up-enter">
+              <h2 class="text-3xl sm:text-3xl md:text-6xl lg:text-7xl font-bold">Harnessing Biomass <br> for Rural
+                Prosperity <br> and Cleaner Energy</h2>
+              <p class="text-base sm:text-base md:text-xl lg:text-xl mt-2 lg:w-1/2">At the heart of sustainable development,
+                we are committed to transforming the landscape of energy production. Our mission is to harness the power
+                of biomass, turning organic materials into a cornerstone for rural prosperity and a cleaner, renewable
+                energy future.</p>
+              <a href="#" class="mt-4 inline-block bg-gray-600 py-2 px-4 rounded text-lg sm:text-xl md:text-2xl" style="background-color: #38b322;" >Our
+                Products</a>
             </div>
           </div>
         </div>
@@ -243,11 +271,15 @@
         <div class="swiper-slide bg-cover bg-center h-full"
           style="background-image: url('./assets/home/thomas-richter-B09tL5bSQJk-unsplash.jpg');">
           <div class="slide-overlay"></div>
-          <div class="container mx-auto px-4 py-5 mb-5 h-full flex items-end justify-start">
-            <div class="text-white text-left p-4 bg-white/30 backdrop-blur-md rounded-lg">
-              <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold">Innovative <br> Solutions</h2>
-              <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-2">Leading the way in renewable energy.</p>
-              <a href="#" class="mt-4 inline-block bg-secondary py-2 px-4 rounded text-lg sm:text-xl md:text-2xl">Our
+          <div class="container relative mx-auto px-4 py-5 mb-5 h-full flex items-center justify-start">
+            <div class="text-white text-left px-5 fade-up-enter">
+              <h2 class="text-3xl sm:text-3xl md:text-6xl lg:text-7xl font-bold">Harnessing Biomass <br> for Rural
+                Prosperity <br> and Cleaner Energy</h2>
+              <p class="text-base sm:text-base md:text-xl lg:text-xl mt-2 lg:w-1/2">At the heart of sustainable development,
+                we are committed to transforming the landscape of energy production. Our mission is to harness the power
+                of biomass, turning organic materials into a cornerstone for rural prosperity and a cleaner, renewable
+                energy future.</p>
+              <a href="#" class="mt-4 inline-block bg-gray-600 py-2 px-4 rounded text-lg sm:text-xl md:text-2xl" style="background-color: #38b322;">Our
                 Products</a>
             </div>
           </div>
@@ -1040,24 +1072,45 @@
     });
   </script>
 
-<script>
-  // JavaScript to toggle the mobile menu
-  document.getElementById('mobile-menu-button').addEventListener('click', function () {
-    var menu = document.getElementById('mobile-menu');
-    if (menu.style.display === 'none' || menu.style.display === '') {
-      menu.style.display = 'block';
-      menu.classList.add('transform', 'transition-all', 'duration-300', 'translate-x-0');
-    } else {
-      menu.style.display = 'none';
-      menu.classList.remove('transform', 'transition-all', 'duration-300', 'translate-x-0');
-    }
-  });
+  <script>
+    // JavaScript to toggle the mobile menu
+    document.getElementById('mobile-menu-button').addEventListener('click', function () {
+      var menu = document.getElementById('mobile-menu');
+      if (menu.style.display === 'none' || menu.style.display === '') {
+        menu.style.display = 'block';
+        menu.classList.add('transform', 'transition-all', 'duration-300', 'translate-x-0');
+      } else {
+        menu.style.display = 'none';
+        menu.classList.remove('transform', 'transition-all', 'duration-300', 'translate-x-0');
+      }
+    });
 
-  // Function to close the menu when clicking on close icon
-  function toggleMobileMenu() {
-    document.getElementById('mobile-menu').style.display = 'none';
-  }
-</script>
+    // Function to close the menu when clicking on close icon
+    function toggleMobileMenu() {
+      document.getElementById('mobile-menu').style.display = 'none';
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-up-enter-active');
+          } else {
+            entry.target.classList.remove('fade-up-enter-active');
+          }
+        });
+      }, {
+        threshold: 0.5 // Adjust the threshold to when you want the animation to occur
+      });
+
+      // Query all elements you want to animate
+      document.querySelectorAll('.fade-up-enter').forEach((el) => {
+        observer.observe(el);
+      });
+    });
+  </script>
+
 
 
 </body>

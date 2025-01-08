@@ -96,106 +96,106 @@
 
   </div>
 </div>
-<!-- Navbar component -->
-<div class="bg-primary-dark sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
-          <!-- Logo -->
-          <div class="flex justify-start lg:w-0 lg:flex-1">
-              <a href="/">
-                  <img class="h-12 w-auto sm:h-14" src="/assets/logo/erersollogo.png" alt="Enersol Biopower"
-                      style="min-width: 150px;">
-              </a>
-          </div>
-          <!-- Navbar collapse button (visible on small screens) -->
-          <div class="-mr-2 -my-2 md:hidden">
-              <button type="button"
-                  class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                  id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
-                  <span class="sr-only">Open menu</span>
-                  <!-- Icon for the button (hamburger icon) -->
-                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor" aria-hidden="true" style="color: white;">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M4 6h16M4 12h16m-7 6h7" />
-                  </svg>
-              </button>
-          </div>
+   <!-- Navbar component -->
+   <div class="bg-primary-dark sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+            <!-- Logo -->
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+                <a href="/">
+                    <img class="h-12 w-auto sm:h-14" src="../assets/logo/erersollogo.png" alt="Enersol Biopower"
+                        style="min-width: 150px;">
+                </a>
+            </div>
+            <!-- Navbar collapse button (visible on small screens) -->
+            <div class="-mr-2 -my-2 md:hidden">
+                <button type="button"
+                    class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                    id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
+                    <span class="sr-only">Open menu</span>
+                    <!-- Icon for the button (hamburger icon) -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" aria-hidden="true" style="color: white;">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
 
-          <!-- Links for large screens -->
-          <nav class="hidden md:flex space-x-10">
-              <a href="/" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
-              <a href="/pages/about-us.html"
-                  class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
-              <a href="/pages/our-story.html"
-                  class="text-base font-medium text-white hover:text-accentYellow-light">Our Story</a>
-              <a href="/pages/products.html"
-                  class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
-              <a href="/pages/blogs-news.html"
-                  class="text-base font-medium text-white hover:text-accentYellow-light">Blogs & News</a>
-              <a href="/pages/contact-us.html"
-                  class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
-          </nav>
+            <!-- Links for large screens -->
+            <nav class="hidden md:flex space-x-10">
+                <a href="/enersol-site/" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
+                <a href="/enersol-site/pages/about-us.html"
+                    class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
+                <a href="/enersol-site/pages/our-story.html"
+                    class="text-base font-medium text-white hover:text-accentYellow-light">Our Story</a>
+                <a href="/enersol-site/pages/products.html"
+                    class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+                <a href="/enersol-site/pages/blogs-news.html"
+                    class="text-base font-medium text-white hover:text-accentYellow-light">Blogs & News</a>
+                <a href="/enersol-site/pages/contact-us.html"
+                    class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
+            </nav>
 
-          <!-- Get a Quote button (visible on large screens) -->
-          <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-              <a href="#"
-                  class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
-                  Get a Quote
-              </a>
-          </div>
-      </div>
-  </div>
+            <!-- Get a Quote button (visible on large screens) -->
+            <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                <a href="#"
+                    class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
+                    Get a Quote
+                </a>
+            </div>
+        </div>
+    </div>
 
-  <!-- Mobile menu, toggle classes based on menu state (open/closed) -->
-  <div class="fixed inset-y-0 right-0 w-3/4 bg-white text-white transform translate-x-full transition-transform duration-300 ease-in-out"
-      id="mobile-menu" style="display: none;z-index: 10;">
-      <div class="">
-          <div class="pt-5 pb-6 ">
-              <div class="flex items-center justify-between px-5">
-                  <div>
-                      <img class="h-8 w-auto" src="/assets/logo/erersollogo.png" alt="Your Company">
-                  </div>
-                  <div class="-mr-2">
-                      <button type="button"
-                          class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                          onclick="toggleMobileMenu()">
-                          <span class="sr-only">Close menu</span>
-                          <!-- Close icon -->
-                          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                              stroke="currentColor" aria-hidden="true">
-                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M6 18L18 6M6 6l12 12" />
-                          </svg>
-                      </button>
-                  </div>
-              </div>
-              <div class="mt-6 px-5 border-t border-gray-300 pt-5">
-                  <nav class="grid gap-y-8">
-                      <a href="/" class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
-                      <a href="/pages/about-us.html"
-                          class="text-base font-medium text-black hover:text-accentYellow-light">About Us</a>
-                      <a href="/pages/our-story.html"
-                          class="text-base font-medium text-black hover:text-accentYellow-light">Our Story</a>
-                      <a href="/pages/products.html"
-                          class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
-                      <a href="/pages/blogs-news.html"
-                          class="text-base font-medium text-black hover:text-accentYellow-light">Blogs & News</a>
-                      <a href="/pages/contact-us.html"
-                          class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
-                  </nav>
-              </div>
-          </div>
-          <div class="py-6 px-5 space-y-6">
-              <div>
-                  <a href="#"
-                      class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
-                      Get a Quote
-                  </a>
-              </div>
-          </div>
-      </div>
-  </div>
+    <!-- Mobile menu, toggle classes based on menu state (open/closed) -->
+    <div class="fixed inset-y-0 right-0 w-3/4 bg-white text-white transform translate-x-full transition-transform duration-300 ease-in-out"
+        id="mobile-menu" style="display: none;z-index: 10;">
+        <div class="">
+            <div class="pt-5 pb-6 ">
+                <div class="flex items-center justify-between px-5">
+                    <div>
+                        <img class="h-8 w-auto" src="../assets/logo/erersollogo.png" alt="Your Company">
+                    </div>
+                    <div class="-mr-2">
+                        <button type="button"
+                            class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                            onclick="toggleMobileMenu()">
+                            <span class="sr-only">Close menu</span>
+                            <!-- Close icon -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-6 px-5 border-t border-gray-300 pt-5">
+                    <nav class="grid gap-y-8">
+                        <a href="/enersol-site/" class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
+                        <a href="/enersol-site/pages/about-us.html"
+                            class="text-base font-medium text-black hover:text-accentYellow-light">About Us</a>
+                        <a href="/enersol-site/pages/our-story.html"
+                            class="text-base font-medium text-black hover:text-accentYellow-light">Our Story</a>
+                        <a href="/enersol-site/pages/products.html"
+                            class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
+                        <a href="/enersol-site/pages/blogs-news.html"
+                            class="text-base font-medium text-black hover:text-accentYellow-light">Blogs & News</a>
+                        <a href="/enersol-site/pages/contact-us.html"
+                            class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="py-6 px-5 space-y-6">
+                <div>
+                    <a href="#"
+                        class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
+                        Get a Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <div class="flex items-center justify-center bg-gray-100 p-12 min-h-screen">
   <div class="text-center bg-white p-8 rounded-lg shadow-lg max-w-lg">

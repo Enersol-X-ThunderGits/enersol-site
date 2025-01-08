@@ -137,7 +137,6 @@
   <div class="bg-primary-dark sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
-
         <!-- Logo -->
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <a href="#">
@@ -145,7 +144,6 @@
               style="min-width: 150px;">
           </a>
         </div>
-
         <!-- Navbar collapse button (visible on small screens) -->
         <div class="-mr-2 -my-2 md:hidden">
           <button type="button"
@@ -181,12 +179,12 @@
     </div>
 
     <!-- Mobile menu, toggle classes based on menu state (open/closed) -->
-    <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden" id="mobile-menu"
-      style="display: none;z-index: 10;">
-      <div
-        class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-primary-dark divide-y-2 divide-accentYellow-light">
-        <div class="pt-5 pb-6 px-5">
-          <div class="flex items-center justify-between">
+    <div
+      class="fixed inset-y-0 right-0 w-3/4 bg-white text-white transform translate-x-full transition-transform duration-300 ease-in-out"
+      id="mobile-menu" style="display: none;z-index: 10;">
+      <div class="">
+        <div class="pt-5 pb-6 ">
+          <div class="flex items-center justify-between px-5">
             <div>
               <img class="h-8 w-auto" src="./assets/logo/erersollogo.png" alt="Your Company">
             </div>
@@ -203,21 +201,21 @@
               </button>
             </div>
           </div>
-          <div class="mt-6">
+          <div class="mt-6 px-5 border-t border-gray-300 pt-5">
             <nav class="grid gap-y-8">
-              <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
-              <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
-              <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
-              <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">How It Works</a>
-              <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Blog/News</a>
-              <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
+              <a href="#" class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
+              <a href="#" class="text-base font-medium text-black hover:text-accentYellow-light">About Us</a>
+              <a href="#" class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
+              <a href="#" class="text-base font-medium text-black hover:text-accentYellow-light">How It Works</a>
+              <a href="#" class="text-base font-medium text-black hover:text-accentYellow-light">Blog/News</a>
+              <a href="#" class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
             </nav>
           </div>
         </div>
         <div class="py-6 px-5 space-y-6">
           <div>
             <a href="#"
-              class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-secondary hover:bg-secondary-dark">
+              class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
               Get a Quote
             </a>
           </div>
@@ -746,12 +744,17 @@
         <div class="p-4 md:w-1/2 w-full">
           <div class="h-full bg-white p-8 rounded-lg shadow-lg">
             <!-- Testimonial Icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-primary-dark mb-4" viewBox="0 0 975.036 975.036">
-              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-primary-dark mb-4"
+              viewBox="0 0 975.036 975.036">
+              <path
+                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+              </path>
             </svg>
-            <p class="leading-relaxed mb-6 text-black">Testimonial content goes here. Share feedback and experiences from clients or customers.</p>
+            <p class="leading-relaxed mb-6 text-black">Testimonial content goes here. Share feedback and experiences
+              from clients or customers.</p>
             <a class="inline-flex items-center">
-              <img alt="testimonial" src="https://dummyimage.com/106x106" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+              <img alt="testimonial" src="https://dummyimage.com/106x106"
+                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
               <span class="flex-grow flex flex-col pl-4">
                 <span class="title-font font-medium text-primary-dark">Client Name</span>
                 <span class="text-gray-500 text-sm">Designation</span>
@@ -759,17 +762,22 @@
             </a>
           </div>
         </div>
-        
+
         <!-- Testimonial 2 -->
         <div class="p-4 md:w-1/2 w-full">
           <div class="h-full bg-white p-8 rounded-lg shadow-lg">
             <!-- Testimonial Icon -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-primary-dark mb-4" viewBox="0 0 975.036 975.036">
-              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-primary-dark mb-4"
+              viewBox="0 0 975.036 975.036">
+              <path
+                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+              </path>
             </svg>
-            <p class="leading-relaxed mb-6 text-black" >Another testimonial content goes here. This can be more personalized feedback.</p>
+            <p class="leading-relaxed mb-6 text-black">Another testimonial content goes here. This can be more
+              personalized feedback.</p>
             <a class="inline-flex items-center">
-              <img alt="testimonial" src="https://dummyimage.com/107x107" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+              <img alt="testimonial" src="https://dummyimage.com/107x107"
+                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
               <span class="flex-grow flex flex-col pl-4">
                 <span class="title-font font-medium text-primary-dark">Client Name</span>
                 <span class="text-gray-500 text-sm">Designation</span>
@@ -780,8 +788,8 @@
       </div>
     </div>
   </section>
-  
-  
+
+
   <section class="py-16 bg-gradient-to-r from-primary to-secondary">
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="text-4xl font-bold text-center text-white mb-12">Contact Us</h2>
@@ -990,76 +998,8 @@
       </div>
     </div>
   </footer>
-  <!-- Swiper.js Initialization -->
-  <script>
-    const testimonialSwiper = new Swiper('.testimonialSwiper', {
-      loop: true,
-      spaceBetween: 30,
-      slidesPerView: 1,  // Display 2 testimonials per slide
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-  </script>
-  <script>
-    var swiper = new Swiper('.mySwiper', {
-      loop: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      effect: 'coverflow',  // Optional effect
-    });
-  </script>
 
-  <script>
-    // JavaScript to toggle the mobile menu
-    document.getElementById('mobile-menu-button').addEventListener('click', function () {
-      var menu = document.getElementById('mobile-menu');
-      if (menu.style.display === 'none' || menu.style.display === '') {
-        menu.style.display = 'block';
-        menu.classList.add('transform', 'transition-all', 'duration-300', 'translate-x-0');
-      } else {
-        menu.style.display = 'none';
-        menu.classList.remove('transform', 'transition-all', 'duration-300', 'translate-x-0');
-      }
-    });
-
-    // Function to close the menu when clicking on close icon
-    function toggleMobileMenu() {
-      document.getElementById('mobile-menu').style.display = 'none';
-    }
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('fade-up-enter-active');
-          } else {
-            entry.target.classList.remove('fade-up-enter-active');
-          }
-        });
-      }, {
-        threshold: 0.5 // Adjust the threshold to when you want the animation to occur
-      });
-
-      // Query all elements you want to animate
-      document.querySelectorAll('.fade-up-enter').forEach((el) => {
-        observer.observe(el);
-      });
-    });
-  </script>
-
+<script src="./js/main.js"></script>
 
 
 </body>

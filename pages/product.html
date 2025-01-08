@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENERSOL BIOPOWER PRIVATE LIMITED</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Primary Colors
+                        primary: {
+                            DEFAULT: '#299FD3', // Blue
+                            light: '#4FB5E0',  // Lighter shade of blue
+                            dark: 'rgb(3 69 155)',   // Darker shade of blue
+                        },
+                        secondary: {
+                            DEFAULT: '#C7D110', // Green
+                            light: '#D4DB50',   // Lighter green
+                            dark: '#909B0B',    // Darker green
+                        },
+                        // Accent Colors
+                        accentYellow: {
+                            DEFAULT: '#FED400',
+                            light: '#FFE766',
+                            dark: '#CCAA00',
+                        },
+                        accentRed: {
+                            DEFAULT: '#9B1418',
+                            light: '#C91B1F',
+                            dark: '#740F12',
+                        },
+                        // Gradients
+                        gradientBlueGreen: {
+                            DEFAULT: 'linear-gradient(90deg, #299FD3 0%, #C7D110 100%)',
+                        },
+                        gradientYellowGreen: {
+                            DEFAULT: 'linear-gradient(90deg, #FED400 0%, #C7D110 100%)',
+                        },
+                    },
+                },
+            },
+        };
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <style>
+        [x-cloak] {
+            display: none;
+        }
+
+        .swiper-slide .slide-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+            /* Gradient from transparent on the left to black with 50% opacity on the right */
+            z-index: 0;
+            /* Ensures overlay is below text content but above the image */
+        }
+
+        /* Initial state */
+        .fade-up-enter {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+        }
+
+        /* Final state */
+        .fade-up-enter-active {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="bg-gray-800 py-2">
+        <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+            <!-- Right: Social Links and Languages -->
+            <div class="flex flex-wrap justify-between w-full md:w-auto items-center space-x-4 ">
+                <div class="flex items-center space-x-2 text-white">
+                    <i class="ri-mail-line"></i>
+                    <a href="mailto:info@example.com">info@enersolbiopower.com</a>
+                </div>
+                <div class="flex space-x-2">
+                    <a href="#" class="text-white">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="#" class="text-white">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                    <a href="#" class="text-white">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="#" class="text-white">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                </div>
+
+            </div>
+            <!-- Left: Contact Info -->
+            <div class="flex flex-wrap justify-between w-full md:w-auto space-x-4 mt-4 md:mt-0">
+
+                <div class="flex items-center space-x-2 text-white">
+                    <i class="ri-phone-line"></i>
+                    <a href="tel:+21236547898">+91-9414535665</a>
+                </div>
+                <div class="flex items-center space-x-2 text-white">
+                    <i class="ri-phone-line"></i>
+                    <a href="tel:+21236547898">+91-7073495200</a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Navbar component -->
+    <div class="bg-primary-dark sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+                <!-- Logo -->
+                <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <a href="#">
+                        <img class="h-12 w-auto sm:h-14" src="../assets/logo/erersollogo.png" alt="Enersol Biopower"
+                            style="min-width: 150px;">
+                    </a>
+                </div>
+                <!-- Navbar collapse button (visible on small screens) -->
+                <div class="-mr-2 -my-2 md:hidden">
+                    <button type="button"
+                        class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
+                        <span class="sr-only">Open menu</span>
+                        <!-- Icon for the button (hamburger icon) -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true" style="color: white;">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Links for large screens -->
+                <nav class="hidden md:flex space-x-10">
+                    <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
+                    <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
+                    <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+                    <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">How It Works</a>
+                    <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Blog/News</a>
+                    <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
+                </nav>
+
+                <!-- Get a Quote button (visible on large screens) -->
+                <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                    <a href="#"
+                        class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
+                        Get a Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu, toggle classes based on menu state (open/closed) -->
+        <div class="fixed inset-y-0 right-0 w-3/4 bg-white text-white transform translate-x-full transition-transform duration-300 ease-in-out"
+            id="mobile-menu" style="display: none;z-index: 10;">
+            <div class="">
+                <div class="pt-5 pb-6 ">
+                    <div class="flex items-center justify-between px-5">
+                        <div>
+                            <img class="h-8 w-auto" src="../assets/logo/erersollogo.png" alt="Your Company">
+                        </div>
+                        <div class="-mr-2">
+                            <button type="button"
+                                class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                                onclick="toggleMobileMenu()">
+                                <span class="sr-only">Close menu</span>
+                                <!-- Close icon -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-6 px-5 border-t border-gray-300 pt-5">
+                        <nav class="grid gap-y-8">
+                            <a href="#" class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
+                            <a href="#" class="text-base font-medium text-black hover:text-accentYellow-light">About
+                                Us</a>
+                            <a href="#"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
+                            <a href="#" class="text-base font-medium text-black hover:text-accentYellow-light">How It
+                                Works</a>
+                            <a href="#"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">Blog/News</a>
+                            <a href="#" class="text-base font-medium text-black hover:text-accentYellow-light">Contact
+                                Us</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="py-6 px-5 space-y-6">
+                    <div>
+                        <a href="#"
+                            class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
+                            Get a Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto px-6 py-12">
+        <!-- Product Detail Section -->
+        <section class="text-gray-600 body-font overflow-hidden">
+            <div class="container px-5 py-6 mx-auto">
+                <div class=" flex flex-wrap">
+                    <!-- Left: Product Image Gallery -->
+                    <div class="lg:w-1/2 w-full lg:h-auto object-cover object-center rounded mb-6">
+                        <!-- Main Product Image -->
+                        <img id="main-product-image"
+                            src="../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.16.48s.jpeg"
+                            alt="Main Product Image" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                        <!-- Thumbnail Images -->
+                        <div class="overflow-x-auto flex justify-between space-x-4 mt-4">
+                            <img src="../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.16.54.jpeg"
+                                alt="Product Image 1" class="w-24 h-24 object-cover rounded-lg cursor-pointer"
+                                onclick="changeImage('../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.16.54.jpeg')">
+                            <img src="../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.17.01q.jpeg"
+                                alt="Product Image 2" class="w-24 h-24 object-cover rounded-lg cursor-pointer"
+                                onclick="changeImage('../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.17.01q.jpeg')">
+                            <img src="../assets/products/biomass-gasifier/xx.jpeg" alt="Product Image 3"
+                                class="w-24 h-24 object-cover rounded-lg cursor-pointer"
+                                onclick="changeImage('../assets/products/biomass-gasifier/xx.jpeg')">
+
+                            <img src="../assets/products/biomass-gasifier/xx.jpeg" alt="Product Image 3"
+                                class="w-24 h-24 object-cover rounded-lg cursor-pointer"
+                                onclick="changeImage('../assets/products/biomass-gasifier/xx.jpeg')">
+                        </div>
+                    </div>
+                    <!-- Right: Product Information -->
+                    <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                        <h2 class="text-sm title-font text-gray-500 tracking-widest">ENERSOL BIOPOWER</h2>
+                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Biomass Gasifier
+                            Power
+                            Plant
+
+                        </h1>
+                        <p class="mb-8 leading-relaxed">We are best known for compact & portable biomass gasifier with
+                            our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to
+                            200KW. With the help of a strong technical support, we are known for our high standard
+                            products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to
+                            200KW with successful operational record. Our prime customer are National Thermal Power
+                            Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited
+                            (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, &
+                            Junagadh University. To know more about it, click here ..</p>
+                        <div class="flex justify-start">
+                            <button
+                                class="inline-flex text-white bg-primary-dark border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Download
+                                Product Catalogue</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Available Range of Biomass Gasifiers -->
+        <section class="py-12 bg-gray-100">
+            <div class="container px-5 mx-auto">
+                <h2 class="text-xl font-semibold text-primary mb-6">AVAILABLE RANGE OF BIOMASS GASIFIER</h2>
+                <ul class="list-disc pl-5 text-gray-700 mb-6">
+                    <li class="text-lg">ESB-R05 – 5KW Biomass Gasifier with generator set</li>
+                    <li class="text-lg">ESB-R12 – 12KW Biomass Gasifier with generator set</li>
+                    <li class="text-lg">ESB-R24 – 24KW Biomass Gasifier with generator set</li>
+                    <li class="text-lg">ESB-R28 – 28KW Biomass Gasifier with generator set</li>
+                    <li class="text-lg">ESB-R50 – 50KW Biomass Gasifier with generator set</li>
+                    <li class="text-lg">ESB-R100 – 100KW Biomass Gasifier with generator set</li>
+                </ul>
+            </div>
+        </section>
+
+<!-- Product Videos Section -->
+<section class="py-12 bg-white">
+    <div class="container px-5 mx-auto">
+        <h2 class="text-xl font-semibold text-primary mb-6">Product Videos</h2>
+
+        <!-- Videos Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <!-- Video 1 -->
+            <div class="w-full">
+                <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/ShaprSOtlfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- Video 2 -->
+            <div class="w-full">
+                <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/_Hw083-jXuM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <!-- Video 3 -->
+            <div class="w-full">
+                <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/dEqKMbc6GAU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- Video 4 -->
+            <div class="w-full">
+                <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/rKM7wHr4N5E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <!-- Video 5 -->
+            <div class="w-full">
+                <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/LburfRTFHZ8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- Video 6 -->
+            <div class="w-full">
+                <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/9zru5K5FEes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <!-- Video 7 -->
+            <div class="w-full">
+                <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/V3E_BG4QzPg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- Video 8 -->
+            <div class="w-full">
+                <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/H0uSyU292FI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Additional Information Section (Specifications, Reviews) -->
+        <section class="mt-12">
+            <!-- Specifications -->
+            <div class="bg-white p-6 rounded-lg shadow-lg mb-8">
+                <h2 class="text-2xl font-semibold text-primary mb-6">Technical Specifications</h2>
+                <table class="min-w-full bg-white border border-gray-300 rounded-lg">
+                    <thead>
+                        <tr class="bg-primary text-white">
+                            <th class="px-4 py-2 text-left">Specification</th>
+                            <th class="px-4 py-2 text-left">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="px-4 py-2 font-semibold">Power Output</td>
+                            <td class="px-4 py-2">100 kW</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-semibold">Dimensions</td>
+                            <td class="px-4 py-2">2.5m x 2.0m x 3.0m</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-semibold">Fuel Type</td>
+                            <td class="px-4 py-2">Biomass (agricultural residue)</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-2 font-semibold">Operational Temperature</td>
+                            <td class="px-4 py-2">500°C - 700°C</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Reviews -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold text-primary mb-6">Customer Reviews</h2>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full mr-4"></div>
+                        <div>
+                            <p class="font-semibold text-gray-800">John Doe</p>
+                            <p class="text-gray-600">"Great product! It has significantly reduced our energy costs and
+                                is very easy to use."</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 bg-gray-300 rounded-full mr-4"></div>
+                        <div>
+                            <p class="font-semibold text-gray-800">Jane Smith</p>
+                            <p class="text-gray-600">"Highly recommend this product for rural businesses. It’s efficient
+                                and environmentally friendly."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-primary-dark text-white body-font">
+        <div
+            class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+            <!-- Logo and Info Section -->
+            <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                    <!-- Adjusted Logo -->
+                    <div class="flex justify-start lg:w-0 lg:flex-1">
+                        <a href="#">
+                            <img class="h-12 w-auto sm:h-14" src="../assets/logo/erersollogo.png" alt="Enersol Biopower"
+                                style="min-width: 150px;">
+                        </a>
+                    </div>
+
+                </a>
+                <p class="mt-2 text-sm text-gray-300">Innovative Renewable Energy Solutions for a Sustainable Future</p>
+            </div>
+
+            <!-- Column 1: Categories -->
+            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+
+                <!-- Column 2: Categories -->
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+
+                <!-- Column 3: Categories -->
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200">First Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200">Second Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200">Third Link</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200">Fourth Link</a>
+                        </li>
+                    </nav>
+                </div>
+
+                <!-- Contact Column (with icons) -->
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
+                        Contact
+                    </h2>
+                    <nav class="list-none mb-10 footer-contact">
+                        <!-- Address -->
+                        <li class="text-gray-400 flex items-start">
+                            <!-- Address Icon -->
+                            <i class="ri-map-pin-fill mr-2 text-white"></i>
+                            <span class="block">Plot No.-1, Jaisalaya, Road No. - 17, Vishawkarma Industrial Area (Vki),
+                                Jaipur-
+                                302013 (Rajasthan)</span>
+                        </li>
+                        <!-- Phone -->
+                        <li class="text-gray-400 flex items-start">
+                            <!-- Phone Icon -->
+                            <i class="ri-phone-fill mr-2 text-white"></i>
+                            <span class="block">+91-9414535665</span>
+                        </li>
+                        <li class="text-gray-400 flex items-start">
+                            <i class="ri-phone-fill mr-2 text-white"></i>
+                            <span class="block">+91-7073495200</span>
+                        </li>
+                        <!-- Email -->
+                        <li class="text-gray-400 flex items-start">
+                            <!-- Email Icon -->
+                            <i class="ri-mail-fill mr-2 text-white"></i>
+                            <a href="mailto:info@enersolbiopower.com"
+                                class="block hover:text-white">info@enersolbiopower.com</a>
+                        </li>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="bg-gray-800">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Enersol Biopower — All Rights Reserved
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                    <a class="text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('main-product-image').src = imageSrc;
+        }
+    </script>
+</body>
+
+</html>

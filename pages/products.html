@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENERSOL BIOPOWER PRIVATE LIMITED</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -50,6 +51,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <style>
         [x-cloak] {
             display: none;
@@ -131,7 +133,7 @@
             <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
                 <!-- Logo -->
                 <div class="flex justify-start lg:w-0 lg:flex-1">
-                    <a href="/">
+                    <a href="#">
                         <img class="h-12 w-auto sm:h-14" src="../assets/logo/erersollogo.png" alt="Enersol Biopower"
                             style="min-width: 150px;">
                     </a>
@@ -153,17 +155,12 @@
 
                 <!-- Links for large screens -->
                 <nav class="hidden md:flex space-x-10">
-                    <a href="/enersol-site/" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
-                    <a href="/enersol-site/pages/about-us.html"
-                        class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
-                    <a href="/enersol-site/pages/our-story.html"
-                        class="text-base font-medium text-white hover:text-accentYellow-light">Our Story</a>
-                    <a href="/enersol-site/pages/products.html"
-                        class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
-                    <a href="/enersol-site/pages/blogs-news.html"
-                        class="text-base font-medium text-white hover:text-accentYellow-light">Blogs & News</a>
-                    <a href="/enersol-site/pages/contact-us.html"
-                        class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
+                    <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
+                    <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
+                    <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+                    <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">How It Works</a>
+                    <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Blog/News</a>
+                    <a href="#" class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
                 </nav>
 
                 <!-- Get a Quote button (visible on large screens) -->
@@ -201,17 +198,17 @@
                     </div>
                     <div class="mt-6 px-5 border-t border-gray-300 pt-5">
                         <nav class="grid gap-y-8">
-                            <a href="/enersol-site/" class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
-                            <a href="/enersol-site/pages/about-us.html"
-                                class="text-base font-medium text-black hover:text-accentYellow-light">About Us</a>
-                            <a href="/enersol-site/pages/our-story.html"
-                                class="text-base font-medium text-black hover:text-accentYellow-light">Our Story</a>
-                            <a href="/enersol-site/pages/products.html"
+                            <a href="#" class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
+                            <a href="#" class="text-base font-medium text-black hover:text-accentYellow-light">About
+                                Us</a>
+                            <a href="#"
                                 class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
-                            <a href="/enersol-site/pages/blogs-news.html"
-                                class="text-base font-medium text-black hover:text-accentYellow-light">Blogs & News</a>
-                            <a href="/enersol-site/pages/contact-us.html"
-                                class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
+                            <a href="#" class="text-base font-medium text-black hover:text-accentYellow-light">How It
+                                Works</a>
+                            <a href="#"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">Blog/News</a>
+                            <a href="#" class="text-base font-medium text-black hover:text-accentYellow-light">Contact
+                                Us</a>
                         </nav>
                     </div>
                 </div>
@@ -226,204 +223,112 @@
             </div>
         </div>
     </div>
-    <div class="container mx-auto px-6 py-12">
-        <!-- Product Detail Section -->
-        <section class="text-gray-600 body-font overflow-hidden">
-            <div class="container px-5 py-6 mx-auto">
-                <div class=" flex flex-wrap">
-                    <!-- Left: Product Image Gallery -->
-                    <div class="lg:w-1/2 w-full lg:h-auto object-cover object-center rounded mb-6">
-                        <!-- Main Product Image -->
-                        <img id="main-product-image"
-                            src="../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.16.48s.jpeg"
-                            alt="Main Product Image" class="w-full h-80 object-cover rounded-lg shadow-lg">
-                        <!-- Thumbnail Images -->
-                        <div class="overflow-x-auto flex justify-center space-x-4 mt-4">
-                            <img src="../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.16.54.jpeg"
-                                alt="Product Image 1" class="w-24 h-24 object-cover rounded-lg cursor-pointer"
-                                onclick="changeImage('../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.16.54.jpeg')">
-                            <img src="../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.17.01q.jpeg"
-                                alt="Product Image 2" class="w-24 h-24 object-cover rounded-lg cursor-pointer"
-                                onclick="changeImage('../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.17.01q.jpeg')">
-                            <img src="../assets/products/biomass-gasifier/xx.jpeg" alt="Product Image 3"
-                                class="w-24 h-24 object-cover rounded-lg cursor-pointer"
-                                onclick="changeImage('../assets/products/biomass-gasifier/xx.jpeg')">
 
-                            <img src="../assets/products/biomass-gasifier/xx.jpeg" alt="Product Image 3"
-                                class="w-24 h-24 object-cover rounded-lg cursor-pointer"
-                                onclick="changeImage('../assets/products/biomass-gasifier/xx.jpeg')">
+    <!-- Hero Section with Video Background -->
+    <section class="relative bg-cover bg-center h-96">
+        <!-- Background Video -->
+        <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop>
+            <source src="../assets/Renewable Energy 101  National Geographic - National Geographic (720p, h264).mp4"
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-transparent via-black to-transparent opacity-70"></div>
+
+
+        <!-- Hero Content -->
+        <div class="container mx-auto text-center relative z-10 py-24 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold text-white mb-4">Empowering Your Future with Clean Energy Solutions</h1>
+            <p class="text-lg text-white mb-6">Explore our range of efficient and sustainable energy products for your
+                home and business.</p>
+            <a href="#product-display"
+                class="bg-primary text-white py-2 px-6 rounded-lg text-xl hover:bg-primary-light">Explore Products</a>
+            <a href="#quote-form"
+                class="bg-accentYellow text-black py-2 px-6 rounded-lg text-xl ml-4 hover:bg-accentYellow-dark">Get a
+                Quote</a>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap md:flex-nowrap gap-8">
+                <!-- Left Sidebar - Filters -->
+                <div class="md:w-1/4 w-full bg-white p-6 rounded-lg shadow-lg">
+                    <h2 class="text-xl font-semibold text-primary mb-4">Filters</h2>
+
+                    <!-- Search Bar -->
+                    <div class="mb-6">
+                        <input type="text" id="search-bar" class="w-full p-3 border border-gray-300 rounded-lg"
+                            placeholder="Search products..." oninput="filterProducts()">
+                    </div>
+
+                    <!-- Product Categories Filter -->
+                    <div class="mb-6">
+                        <h3 class="font-medium text-lg text-primary mb-2">Categories</h3>
+                        <ul>
+                            <li><input type="checkbox" class="category-filter" value="Biomass Gasifiers"
+                                    onclick="filterProducts()"> Biomass Gasifiers</li>
+                            <li><input type="checkbox" class="category-filter" value="Smokeless Stoves"
+                                    onclick="filterProducts()"> Smokeless Stoves</li>
+                            <li><input type="checkbox" class="category-filter" value="Heat Burners"
+                                    onclick="filterProducts()"> Heat Burners</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right Content - Product Display -->
+                <div class="md:w-3/4 w-full">
+                    <!-- Breadcrumb Navigation -->
+                    <nav class="mb-6">
+                        <ol class="list-reset text-sm font-medium text-gray-700">
+                            <li class="inline-block">
+                                <a href="#" class="hover:text-primary">Home</a> <span class="mx-2">/</span>
+                            </li>
+                            <li class="inline-block">
+                                <a href="#" class="hover:text-primary">Products</a>
+                            </li>
+
+                        </ol>
+                    </nav>
+
+                    <!-- Product Display Grid -->
+                    <div id="product-display" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Product Cards will be inserted here dynamically using JavaScript -->
+                    </div>
+
+                    <!-- Pagination & Sorting Options -->
+                    <div class="flex justify-between items-center mt-8">
+                        <div class="flex items-center">
+                            <span id="page-info" class="text-sm text-gray-600">Showing 1–6 of 20 results</span>
                         </div>
-                    </div>
-                    <!-- Right: Product Information -->
-                    <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                        <h2 class="text-sm title-font text-gray-500 tracking-widest">ENERSOL BIOPOWER</h2>
-                        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Biomass Gasifier
-                            Power
-                            Plant
-                        </h1>
-                        <p class="mb-8 leading-relaxed">We are best known for compact & portable biomass gasifier with
-                            our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to
-                            200KW. With the help of a strong technical support, we are known for our high standard
-                            products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to
-                            200KW with successful operational record. Our prime customer are National Thermal Power
-                            Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited
-                            (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, &
-                            Junagadh University. To know more about it, click here ..</p>
-                        <div class="flex justify-start">
-                            <button
-                                class="inline-flex text-white bg-primary-dark border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Download
-                                Product Catalogue</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Available Range of Biomass Gasifiers -->
-        <section class="py-12 bg-gray-100">
-            <div class="container px-5 mx-auto">
-                <h2 class="text-xl font-semibold text-primary mb-6">AVAILABLE RANGE OF BIOMASS GASIFIER</h2>
-                <ul class="list-disc pl-5 text-gray-700 mb-6">
-                    <li class="text-lg">ESB-R05 – 5KW Biomass Gasifier with generator set</li>
-                    <li class="text-lg">ESB-R12 – 12KW Biomass Gasifier with generator set</li>
-                    <li class="text-lg">ESB-R24 – 24KW Biomass Gasifier with generator set</li>
-                    <li class="text-lg">ESB-R28 – 28KW Biomass Gasifier with generator set</li>
-                    <li class="text-lg">ESB-R50 – 50KW Biomass Gasifier with generator set</li>
-                    <li class="text-lg">ESB-R100 – 100KW Biomass Gasifier with generator set</li>
-                </ul>
-            </div>
-        </section>
-        <!-- Product Videos Section -->
-        <section class="py-12 bg-white">
-            <div class="container px-5 mx-auto">
-                <h2 class="text-xl font-semibold text-primary mb-6">Product Videos</h2>
-
-                <!-- Videos Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                    <!-- Video 1 -->
-                    <div class="w-full">
-                        <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/ShaprSOtlfc"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <!-- Video 2 -->
-                    <div class="w-full">
-                        <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/_Hw083-jXuM"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                    <!-- Video 3 -->
-                    <div class="w-full">
-                        <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/dEqKMbc6GAU"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <!-- Video 4 -->
-                    <div class="w-full">
-                        <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/rKM7wHr4N5E"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                    <!-- Video 5 -->
-                    <div class="w-full">
-                        <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/LburfRTFHZ8"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <!-- Video 6 -->
-                    <div class="w-full">
-                        <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/9zru5K5FEes"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-                    <!-- Video 7 -->
-                    <div class="w-full">
-                        <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/V3E_BG4QzPg"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <!-- Video 8 -->
-                    <div class="w-full">
-                        <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/H0uSyU292FI"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Additional Information Section (Specifications, Reviews) -->
-        <section class="mt-12">
-            <!-- Specifications -->
-            <div class="bg-white p-6 rounded-lg shadow-lg mb-8">
-                <h2 class="text-2xl font-semibold text-primary mb-6">Technical Specifications</h2>
-                <table class="min-w-full bg-white border border-gray-300 rounded-lg">
-                    <thead>
-                        <tr class="bg-primary text-white">
-                            <th class="px-4 py-2 text-left">Specification</th>
-                            <th class="px-4 py-2 text-left">Details</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="px-4 py-2 font-semibold">Power Output</td>
-                            <td class="px-4 py-2">100 kW</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-2 font-semibold">Dimensions</td>
-                            <td class="px-4 py-2">2.5m x 2.0m x 3.0m</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-2 font-semibold">Fuel Type</td>
-                            <td class="px-4 py-2">Biomass (agricultural residue)</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-2 font-semibold">Operational Temperature</td>
-                            <td class="px-4 py-2">500°C - 700°C</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <!-- Reviews -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-semibold text-primary mb-6">Customer Reviews</h2>
-                <div class="space-y-4">
-                    <div class="flex items-start">
-                        <div class="w-10 h-10 bg-gray-300 rounded-full mr-4"></div>
                         <div>
-                            <p class="font-semibold text-gray-800">John Doe</p>
-                            <p class="text-gray-600">"Great product! It has significantly reduced our energy costs and
-                                is very easy to use."</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="w-10 h-10 bg-gray-300 rounded-full mr-4"></div>
-                        <div>
-                            <p class="font-semibold text-gray-800">Jane Smith</p>
-                            <p class="text-gray-600">"Highly recommend this product for rural businesses. It’s efficient
-                                and environmentally friendly."</p>
+                            <button id="prev-page" class="bg-primary text-white py-2 px-4 rounded-lg mr-2"
+                                onclick="prevPage()">Previous</button>
+                            <button id="next-page" class="bg-primary text-white py-2 px-4 rounded-lg"
+                                onclick="nextPage()">Next</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-white text-primary-dark py-16">
+        <div class="container mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-semibold mb-4">Ready to Harness the Power of Clean Energy?</h2>
+            <p class="text-lg mb-6">Whether you're looking to reduce your energy bills or make a positive environmental
+                impact, we have the right solutions for you. Get started today with a free consultation.</p>
+            <a href="./contact-us.html"
+                class="bg-accentYellow text-black py-3 px-8 rounded-lg text-xl hover:bg-accentYellow-dark transition duration-300">Contact Us</a>
+        </div>
+    </section>
+
+
+
+
     <!-- Footer Section -->
     <footer class="bg-primary-dark text-white body-font">
         <div
@@ -579,11 +484,122 @@
         </div>
     </footer>
     <script src="../js/main.js"></script>
+
+
+    <!-- JavaScript for Filtering Products -->
     <script>
-        function changeImage(imageSrc) {
-            document.getElementById('main-product-image').src = imageSrc;
+        function filterProducts() {
+            const searchQuery = document.getElementById('search-bar').value.toLowerCase();
+            // const priceRange = document.getElementById('price-range').value;
+            const selectedCategories = Array.from(document.querySelectorAll('.category-filter:checked')).map(checkbox => checkbox.value.toLowerCase());
+
+            const products = document.querySelectorAll('.product-card');
+
+            products.forEach(product => {
+                const productName = product.getAttribute('data-name').toLowerCase();
+                const productCategory = product.getAttribute('data-category').toLowerCase();
+                // const productPrice = parseInt(priceRange); // Assuming price is passed dynamically in product data
+
+                const matchesSearch = productName.includes(searchQuery);
+                const matchesCategory = selectedCategories.length === 0 || selectedCategories.includes(productCategory);
+                // const matchesPrice = productPrice <= priceRange; // Filter based on price
+
+                if (matchesSearch && matchesCategory) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
         }
     </script>
+
+
+    <script>
+        // Sample products data
+        const products = [
+            { name: "Biomass Gasifier 5KW", category: "Biomass Gasifiers", image: "../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.16.48s.jpeg", description: "Efficient biomass gasifier for rural applications. Ideal for small-scale energy generation." },
+            { name: "Biomass Gasifier 12KW", category: "Biomass Gasifiers", image: "../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.16.54.jpeg", description: "High-efficiency gasifier for industrial applications with advanced features." },
+            { name: "Biomass Stove", category: "Smokeless Stoves", image: "../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.17.01q.jpeg", description: "Eco-friendly stove that reduces smoke and increases cooking efficiency." },
+            { name: "Biomass Burner", category: "Heat Burners", image: "../assets/products/biomass-gasifier/xx.jpeg", description: "Durable and highly efficient biomass burner for industrial use." },
+            { name: "Biomass Gasifier 15KW", category: "Biomass Gasifiers", image: "../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.16.48s.jpeg", description: "High-performance gasifier for industrial-scale energy generation." },
+            { name: "Biomass Gasifier 30KW", category: "Biomass Gasifiers", image: "../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.16.54.jpeg", description: "Heavy-duty gasifier designed for large energy projects." },
+            { name: "Biomass Stove Pro", category: "Smokeless Stoves", image: "../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.17.01q.jpeg", description: "Advanced smokeless stove for commercial kitchens." },
+            { name: "Industrial Biomass Burner", category: "Heat Burners", image: "../assets/products/biomass-gasifier/xx.jpeg", description: "Industrial-grade biomass burner designed for large-scale operations." },
+            { name: "Biomass Gasifier 50KW", category: "Biomass Gasifiers", image: "../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.16.48s.jpeg", description: "High-capacity gasifier for heavy-duty applications." },
+            { name: "Biomass Burner Max", category: "Heat Burners", image: "../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.16.54.jpeg", description: "Maximize efficiency with our advanced biomass burner." },
+            { name: "Biomass Gasifier Turbo", category: "Biomass Gasifiers", image: "../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.16.48s.jpeg", description: "Turbocharged gasifier for high-demand industrial use." },
+            { name: "Eco Biomass Stove", category: "Smokeless Stoves", image: "../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.17.01q.jpeg", description: "Eco-friendly stove designed for energy efficiency and low emissions." }
+        ];
+
+        let currentPage = 1;
+        const productsPerPage = 6;
+        let filteredProducts = products;
+
+        // Display products based on the current page and filter
+        function displayProducts() {
+            const productDisplay = document.getElementById('product-display');
+            const pageInfo = document.getElementById('page-info');
+            const startIndex = (currentPage - 1) * productsPerPage;
+            const endIndex = currentPage * productsPerPage;
+
+            // Filter products by search and category
+            const searchQuery = document.getElementById('search-bar').value.toLowerCase();
+            const selectedCategories = Array.from(document.querySelectorAll('.category-filter:checked')).map(checkbox => checkbox.value.toLowerCase());
+
+            filteredProducts = products.filter(product => {
+                const matchesSearch = product.name.toLowerCase().includes(searchQuery) || product.description.toLowerCase().includes(searchQuery);
+                const matchesCategory = selectedCategories.length === 0 || selectedCategories.includes(product.category.toLowerCase());
+                return matchesSearch && matchesCategory;
+            });
+
+            // Get the products to display based on the current page
+            const currentProducts = filteredProducts.slice(startIndex, endIndex);
+
+            // Clear the current product display
+            productDisplay.innerHTML = '';
+
+            // Display the products
+            currentProducts.forEach(product => {
+                const productCard = document.createElement('div');
+                productCard.classList.add('product-card', 'bg-white', 'p-6', 'rounded-lg', 'shadow-lg');
+                productCard.setAttribute('data-name', product.name);
+                productCard.setAttribute('data-category', product.category);
+                productCard.innerHTML = `
+                <img src="${product.image}" alt="${product.name}" class="w-full h-48 object-cover rounded-lg mb-4">
+                <h3 class="text-xl font-semibold text-gray-800">${product.name}</h3>
+                <p class="text-sm text-gray-600 mb-4">${product.description}</p>
+                <a href="/enersol-site/sample-product.html" class="bg-primary text-white py-2 px-6 rounded-lg text-center block">Explore Product</a>
+            `;
+                productDisplay.appendChild(productCard);
+            });
+
+            // Update page info
+            pageInfo.textContent = `Showing ${startIndex + 1}–${Math.min(endIndex, filteredProducts.length)} of ${filteredProducts.length} results`;
+
+            // Disable/enable pagination buttons
+            document.getElementById('prev-page').disabled = currentPage === 1;
+            document.getElementById('next-page').disabled = currentPage * productsPerPage >= filteredProducts.length;
+        }
+
+        // Pagination functions
+        function prevPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                displayProducts();
+            }
+        }
+
+        function nextPage() {
+            if (currentPage * productsPerPage < filteredProducts.length) {
+                currentPage++;
+                displayProducts();
+            }
+        }
+
+        // Call displayProducts on page load
+        displayProducts();
+    </script>
+
 </body>
 
 </html>

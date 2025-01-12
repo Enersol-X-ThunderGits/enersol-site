@@ -1,222 +1,923 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Enersol Biopower</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            // Primary Colors
-            primary: {
-              DEFAULT: '#299FD3', // Blue
-              light: '#4FB5E0',  // Lighter shade of blue
-              dark: 'rgb(3 69 155)',   // Darker shade of blue
-            },
-            secondary: {
-              DEFAULT: '#C7D110', // Green
-              light: '#D4DB50',   // Lighter green
-              dark: '#909B0B',    // Darker green
-            },
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENERSOL BIOPOWER PRIVATE LIMITED</title>
+    <style>
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Primary Colors
+                        primary: {
+                            DEFAULT: '#299FD3', // Blue
+                            light: '#4FB5E0',  // Lighter shade of blue
+                            dark: 'rgb(3 69 155)',   // Darker shade of blue
+                        },
+                        secondary: {
+                            DEFAULT: '#C7D110', // Green
+                            light: '#D4DB50',   // Lighter green
+                            dark: '#909B0B',    // Darker green
+                        },
 
-            // Accent Colors
-            accentYellow: {
-              DEFAULT: '#FED400',
-              light: '#FFE766',
-              dark: '#CCAA00',
-            },
-            accentRed: {
-              DEFAULT: '#9B1418',
-              light: '#C91B1F',
-              dark: '#740F12',
-            },
+                        // Accent Colors
+                        accentYellow: {
+                            DEFAULT: '#FED400',
+                            light: '#FFE766',
+                            dark: '#CCAA00',
+                        },
+                        accentRed: {
+                            DEFAULT: '#9B1418',
+                            light: '#C91B1F',
+                            dark: '#740F12',
+                        },
 
-            // Gradients
-            gradientBlueGreen: {
-              DEFAULT: 'linear-gradient(90deg, #299FD3 0%, #C7D110 100%)',
+                        // Gradients
+                        gradientBlueGreen: {
+                            DEFAULT: 'linear-gradient(90deg, #299FD3 0%, #C7D110 100%)',
+                        },
+                        gradientYellowGreen: {
+                            DEFAULT: 'linear-gradient(90deg, #FED400 0%, #C7D110 100%)',
+                        },
+                    },
+                },
             },
-            gradientYellowGreen: {
-              DEFAULT: 'linear-gradient(90deg, #FED400 0%, #C7D110 100%)',
-            },
-          },
-        },
-      },
-    };
-  </script>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        };
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <style>
+        [x-cloak] {
+            display: none;
+        }
+
+        .swiper-slide .slide-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+            /* Gradient from transparent on the left to black with 50% opacity on the right */
+            z-index: 0;
+            /* Ensures overlay is below text content but above the image */
+        }
+
+        /* Initial state */
+        .fade-up-enter {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+        }
+
+        /* Final state */
+        .fade-up-enter-active {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    </style>
 </head>
+
 <body>
-<!-- Top Bar -->
-<div class="bg-gray-800 py-2">
-    <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
-        <!-- Right: Social Links and Languages -->
-        <div class="flex flex-wrap justify-between w-full md:w-auto items-center space-x-4 ">
-            <div class="flex items-center space-x-2 text-white">
-                <i class="ri-mail-line"></i>
-                <a href="mailto:info@example.com">info@enersolbiopower.com</a>
-            </div>
-            <div class="flex space-x-2">
-                <a href="#" class="text-white">
-                    <i class="ri-facebook-fill"></i>
-                </a>
-                <a href="#" class="text-white">
-                    <i class="ri-twitter-fill"></i>
-                </a>
-                <a href="#" class="text-white">
-                    <i class="ri-instagram-fill"></i>
-                </a>
-                <a href="#" class="text-white">
-                    <i class="ri-linkedin-fill"></i>
-                </a>
-            </div>
+    <!-- Top Bar -->
+    <div class="bg-gray-800 py-2">
+        <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+            <!-- Right: Social Links and Languages -->
+            <div class="flex flex-wrap justify-between w-full md:w-auto items-center space-x-4 ">
+                <div class="flex items-center space-x-2 text-white">
+                    <i class="ri-mail-line"></i>
+                    <a href="mailto:info@example.com">info@enersolbiopower.com</a>
+                </div>
+                <div class="flex space-x-2">
+                    <a href="#" class="text-white">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="#" class="text-white">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                    <a href="#" class="text-white">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="#" class="text-white">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                </div>
 
-        </div>
-        <!-- Left: Contact Info -->
-        <div class="flex flex-wrap justify-between w-full md:w-auto space-x-4 mt-4 md:mt-0">
-
-            <div class="flex items-center space-x-2 text-white">
-                <i class="ri-phone-line"></i>
-                <a href="tel:+21236547898">+91-9414535665</a>
             </div>
-            <div class="flex items-center space-x-2 text-white">
-                <i class="ri-phone-line"></i>
-                <a href="tel:+21236547898">+91-7073495200</a>
-            </div>
+            <!-- Left: Contact Info -->
+            <div class="flex flex-wrap justify-between w-full md:w-auto space-x-4 mt-4 md:mt-0">
 
-        </div>
+                <div class="flex items-center space-x-2 text-white">
+                    <i class="ri-phone-line"></i>
+                    <a href="tel:+21236547898">+91-9414535665</a>
+                </div>
+                <div class="flex items-center space-x-2 text-white">
+                    <i class="ri-phone-line"></i>
+                    <a href="tel:+21236547898">+91-7073495200</a>
+                </div>
 
-
-    </div>
-</div>
-   <!-- Navbar component -->
-   <div class="bg-primary-dark sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
-            <!-- Logo -->
-            <div class="flex justify-start lg:w-0 lg:flex-1">
-                <a href="/">
-                    <img class="h-12 w-auto sm:h-14" src="../assets/logo/erersollogo.png" alt="Enersol Biopower"
-                        style="min-width: 150px;">
-                </a>
-            </div>
-            <!-- Navbar collapse button (visible on small screens) -->
-            <div class="-mr-2 -my-2 md:hidden">
-                <button type="button"
-                    class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                    id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
-                    <span class="sr-only">Open menu</span>
-                    <!-- Icon for the button (hamburger icon) -->
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor" aria-hidden="true" style="color: white;">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16m-7 6h7" />
-                    </svg>
-                </button>
             </div>
 
-            <!-- Links for large screens -->
-            <nav class="hidden md:flex space-x-10">
-                <a href="/enersol-site/" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
-                <a href="/enersol-site/pages/about-us.html"
-                    class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
-                <a href="/enersol-site/pages/our-story.html"
-                    class="text-base font-medium text-white hover:text-accentYellow-light">Our Story</a>
-                <a href="/enersol-site/pages/products.html"
-                    class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
-                <a href="/enersol-site/pages/blogs-news.html"
-                    class="text-base font-medium text-white hover:text-accentYellow-light">Blogs & News</a>
-                <a href="/enersol-site/pages/contact-us.html"
-                    class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
-            </nav>
 
-            <!-- Get a Quote button (visible on large screens) -->
-            <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                <a href="#"
-                    class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
-                    Get a Quote
-                </a>
-            </div>
         </div>
     </div>
+    <!-- Navbar component -->
+    <div class="bg-primary-dark sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+                <!-- Logo -->
+                <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <a href="/">
+                        <img class="h-12 w-auto sm:h-14" src="../assets/logo/erersollogo.png" alt="Enersol Biopower"
+                            style="min-width: 150px;">
+                    </a>
+                </div>
+                <!-- Navbar collapse button (visible on small screens) -->
+                <div class="-mr-2 -my-2 md:hidden">
+                    <button type="button"
+                        class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
+                        <span class="sr-only">Open menu</span>
+                        <!-- Icon for the button (hamburger icon) -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true" style="color: white;">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
 
-    <!-- Mobile menu, toggle classes based on menu state (open/closed) -->
-    <div class="fixed inset-y-0 right-0 w-3/4 bg-white text-white transform translate-x-full transition-transform duration-300 ease-in-out"
-        id="mobile-menu" style="display: none;z-index: 10;">
-        <div class="">
-            <div class="pt-5 pb-6 ">
-                <div class="flex items-center justify-between px-5">
-                    <div>
-                        <img class="h-8 w-auto" src="../assets/logo/erersollogo.png" alt="Your Company">
-                    </div>
-                    <div class="-mr-2">
-                        <button type="button"
-                            class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                            onclick="toggleMobileMenu()">
-                            <span class="sr-only">Close menu</span>
-                            <!-- Close icon -->
-                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div class="mt-6 px-5 border-t border-gray-300 pt-5">
-                    <nav class="grid gap-y-8">
-                        <a href="/enersol-site/" class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
-                        <a href="/enersol-site/pages/about-us.html"
-                            class="text-base font-medium text-black hover:text-accentYellow-light">About Us</a>
-                        <a href="/enersol-site/pages/our-story.html"
-                            class="text-base font-medium text-black hover:text-accentYellow-light">Our Story</a>
-                        <a href="/enersol-site/pages/products.html"
-                            class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
-                        <a href="/enersol-site/pages/blogs-news.html"
-                            class="text-base font-medium text-black hover:text-accentYellow-light">Blogs & News</a>
-                        <a href="/enersol-site/pages/contact-us.html"
-                            class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
-                    </nav>
-                </div>
-            </div>
-            <div class="py-6 px-5 space-y-6">
-                <div>
+                <!-- Links for large screens -->
+                <nav class="hidden md:flex space-x-10">
+                    <a href="/enersol-site/"
+                        class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
+                    <a href="/enersol-site/pages/about-us.html"
+                        class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
+                    <a href="/enersol-site/pages/our-story.html"
+                        class="text-base font-medium text-white hover:text-accentYellow-light">Our Story</a>
+                    <a href="/enersol-site/pages/products.html"
+                        class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+                    <a href="/enersol-site/pages/blogs-news.html"
+                        class="text-base font-medium text-white hover:text-accentYellow-light">Blogs & News</a>
+                    <a href="/enersol-site/pages/contact-us.html"
+                        class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
+                </nav>
+
+                <!-- Get a Quote button (visible on large screens) -->
+                <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                     <a href="#"
-                        class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
+                        class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
                         Get a Quote
                     </a>
                 </div>
             </div>
         </div>
+
+        <!-- Mobile menu, toggle classes based on menu state (open/closed) -->
+        <div class="fixed inset-y-0 right-0 w-3/4 bg-white text-white transform translate-x-full transition-transform duration-300 ease-in-out"
+            id="mobile-menu" style="display: none;z-index: 10;">
+            <div class="">
+                <div class="pt-5 pb-6 ">
+                    <div class="flex items-center justify-between px-5">
+                        <div>
+                            <img class="h-8 w-auto" src="../assets/logo/erersollogo.png" alt="Your Company">
+                        </div>
+                        <div class="-mr-2">
+                            <button type="button"
+                                class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                                onclick="toggleMobileMenu()">
+                                <span class="sr-only">Close menu</span>
+                                <!-- Close icon -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-6 px-5 border-t border-gray-300 pt-5">
+                        <nav class="grid gap-y-8">
+                            <a href="/enersol-site/"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
+                            <a href="/enersol-site/pages/about-us.html"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">About Us</a>
+                            <a href="/enersol-site/pages/our-story.html"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">Our Story</a>
+                            <a href="/enersol-site/pages/products.html"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
+                            <a href="/enersol-site/pages/blogs-news.html"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">Blogs & News</a>
+                            <a href="/enersol-site/pages/contact-us.html"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="py-6 px-5 space-y-6">
+                    <div>
+                        <a href="#"
+                            class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
+                            Get a Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<div class="flex items-center justify-center bg-gray-100 p-12 min-h-screen">
-    <div class="text-center bg-white p-8 rounded-lg shadow-lg max-w-lg">
-      <h2 class="text-2xl font-semibold text-gray-800 mb-4">Work in Progress</h2>
-      <p class="text-lg text-gray-600 mb-6">This page is currently under development. Please check back later.</p>
-      <div class="flex justify-center items-center">
-        <svg class="animate-spin h-10 w-10 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 1 0 8-8 8 8 0 0 0-8 8zm16 0a8 8 0 1 1-8-8 8 8 0 0 1 8 8z"></path>
-        </svg>
-      </div>
-      <p class="text-sm text-gray-500 mt-4">Thank you for your patience!</p>
+    <div class="relative w-full" style="height: 85vh;">
+        <!-- Swiper -->
+        <div class="swiper mySwiper h-full">
+            <div class="swiper-wrapper">
+                <!-- Slide 2 with Full-Screen Placeholder Image -->
+                <div class="swiper-slide bg-cover bg-center h-full"
+                    style="background-image: url('../assets/about-us/team.jpeg');">
+                    <div class="slide-overlay"></div>
+                    <div class="container relative mx-auto px-4 py-5 mb-5 h-full flex items-end justify-end">
+                        <div class="text-white text-left px-5 fade-up-enter">
+                            <h2 class="text-2xl sm:text-2xl md:text-3xl lg:text-5xl font-bold">Leading the Way in <br>
+                                Renewable Energy <br> and Community Uplift</h2>
+                            <p class="text-base sm:text-base md:text-base lg:text-base mt-2 lg:w-1/2">Dedicated to
+                                advancing
+                                sustainable energy solutions, Enersol Biopower is at the forefront of the renewable
+                                energy sector. We innovate and deploy biomass energy technologies that not only power
+                                communities but
+                                also contribute to global sustainability.</p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 1 with Full-Screen Placeholder Image -->
+                <div class="swiper-slide bg-cover bg-center h-full"
+                    style="background-image: url('../assets/about-us/president\ house.jpg');">
+                    <div class="slide-overlay"></div>
+                    <div class="container relative mx-auto px-4 py-5 mb-5 h-full flex items-end justify-end">
+                        <div class="text-white text-left px-5 fade-up-enter">
+                            <h2 class="text-2xl sm:text-2xl md:text-3xl lg:text-5xl font-bold">Leading the Way in <br>
+                                Renewable Energy <br> and Community Uplift</h2>
+                            <p class="text-base sm:text-base md:text-base lg:text-base mt-2 lg:w-1/2">Dedicated to
+                                advancing
+                                sustainable energy solutions, Enersol Biopower is at the forefront of the renewable
+                                energy sector. We innovate and deploy biomass energy technologies that not only power
+                                communities but
+                                also contribute to global sustainability.</p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 with Full-Screen Placeholder Image -->
+                <div class="swiper-slide bg-cover bg-center h-full"
+                    style="background-image: url('../assets/about-us/DSC_1242.JPG');">
+                    <div class="slide-overlay"></div>
+                    <div class="container relative mx-auto px-4 py-5 mb-5 h-full flex items-end justify-end">
+                        <div class="text-white text-left px-5 fade-up-enter">
+                            <h2 class="text-2xl sm:text-2xl md:text-3xl lg:text-5xl font-bold">Leading the Way in <br>
+                                Renewable Energy <br> and Community Uplift</h2>
+                            <p class="text-base sm:text-base md:text-base lg:text-base mt-2 lg:w-1/2">Dedicated to
+                                advancing
+                                sustainable energy solutions, Enersol Biopower is at the forefront of the renewable
+                                energy sector. We innovate and deploy biomass energy technologies that not only power
+                                communities but
+                                also contribute to global sustainability.</p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional slides as needed -->
+            </div>
+            <!-- Swiper Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Swiper Navigation -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </div>
-  </div>
-  
-  <!-- About Us Content -->
-  <section class="py-12 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-7xl mx-auto text-center">
-      <h2 class="text-3xl font-semibold text-gray-800">About Us</h2>
-      <p class="mt-4 text-lg text-gray-600">Enersol Biopower is dedicated to providing renewable energy solutions...</p>
+
+    <section class="text-gray-600 body-font" id="mission">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h2 class="text-2xl font-bold text-black sm:text-3xl border-b-4 border-primary-dark mb-5">Our Mission
+                </h2>
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Turning Waste into Watts -
+
+                    <br class="hidden lg:inline-block"> From Field to Fuel
+                </h1>
+                <p class="mb-8 leading-relaxed">To harness the immense potential of biomass through innovative energy solutions that drive rural prosperity, strengthen agricultural sustainability, and accelerate India's transition to a cleaner energy future.</p>
+                <div class="flex justify-center">
+                    <a href="/products"
+                        class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Explore
+                        Our Products</a>
+                    <a href="/about-us"
+                        class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Learn
+                        More About Us</a>
+                </div>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded" alt="sustainable energy"
+                    src="../assets/about-us/60056.jpg">
+            </div>
+        </div>
+    </section>
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-12 md:flex-row-reverse flex-col items-center">
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h2 class="text-2xl font-bold text-black sm:text-3xl border-b-4 border-primary-dark mb-5">Our Vision
+                </h2>
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Transform your Energy
+                    <br class="hidden lg:inline-block">Transform Your World
+                </h1>
+                <p class="mb-8 leading-relaxed">Enersol Biopower envisions a world powered by clean and sustainable energy solutions that uplift communities, nurture the environment, and foster socio-economic progress.</p>
+                <div class="flex justify-center">
+                    <a href="/vision"
+                        class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Explorer
+                        Our Products</a>
+                    <a href="/community"
+                        class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Community
+                        Initiatives</a>
+                </div>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded" alt="community engagement"
+                    src="../assets/about-us/front-view-plant-growing-from-pellets.jpg">
+            </div>
+        </div>
+    </section>
+    <!-- Core Values Section -->
+    <div class="bg-white py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-green-600 mb-6">Core Values</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+                <!-- Each Core Value -->
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mb-4">
+                        <span class="text-xl font-bold text-white">T</span>
+                    </div>
+                    <h3 class="text-lg font-semibold">Team Work</h3>
+                    <p>Collaborative efforts to achieve common goals.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mb-4">
+                        <span class="text-xl font-bold text-white">E</span>
+                    </div>
+                    <h3 class="text-lg font-semibold">Environment</h3>
+                    <p>Commitment to sustainable and eco-friendly practices.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mb-4">
+                        <span class="text-xl font-bold text-white">C</span>
+                    </div>
+                    <h3 class="text-lg font-semibold">Customer Satisfaction</h3>
+                    <p>Ensuring the highest level of satisfaction for our clients.</p>
+                </div>
+                <!-- Repeat for other values -->
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mb-4">
+                        <span class="text-xl font-bold text-white">H</span>
+                    </div>
+                    <h3 class="text-lg font-semibold">Honesty & Integrity</h3>
+                    <p>Maintaining ethical standards in all our dealings.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mb-4">
+                        <span class="text-xl font-bold text-white">N</span>
+                    </div>
+                    <h3 class="text-lg font-semibold">Nature Love</h3>
+                    <p>Protecting and appreciating the natural world.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mb-4">
+                        <span class="text-xl font-bold text-white">I</span>
+                    </div>
+                    <h3 class="text-lg font-semibold">Innovation</h3>
+                    <p>Pioneering new solutions for a sustainable future.</p>
+                </div>
+                <!-- Additional values -->
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mb-4">
+                        <span class="text-xl font-bold text-white">Q</span>
+                    </div>
+                    <h3 class="text-lg font-semibold">Quality Assurance</h3>
+                    <p>Delivering excellence in every product.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mb-4">
+                        <span class="text-xl font-bold text-white">U</span>
+                    </div>
+                    <h3 class="text-lg font-semibold">Unique Culture</h3>
+                    <p>Fostering a creative and inclusive workplace.</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mb-4">
+                        <span class="text-xl font-bold text-white">E</span>
+                    </div>
+                    <h3 class="text-lg font-semibold">Excellence</h3>
+                    <p>Striving for the highest standards in everything we do.</p>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
-  <script src="../js/main.js"></script>
+    <section class="bg-white py-12">
+        <div class="container mx-auto px-5">
+            <h2 class="text-2xl font-semibold text-center text-gray-800 mb-6">Awards & Recognitions</h2>
+            <div class="flex flex-wrap justify-center text-center">
+                <!-- Awards List -->
+                <div class="p-4 md:w-1/2 lg:w-1/3">
+                    <h3 class="text-lg font-bold text-gray-700">National & International Honors</h3>
+                    <ul class="list-disc text-left ml-5 mt-4 text-gray-600">
+                        <li><strong>2009:</strong> Fifth National Grassroots Innovation Award by Smt. Pratibha Patil.
+                        </li>
+                        <li><strong>2012:</strong> Indian Merchant Chamber Inclusive Innovation Award.</li>
+                        <li><strong>2013:</strong> Innovation Scholars In-Residence Program at President House.</li>
+                        <li><strong>2014:</strong> Certificate from the Department of Science & Technology on National
+                            Science Day.</li>
+                        <li><strong>2015:</strong> Third International Conference on Creativity & Innovations at IIM
+                            Ahmedabad.</li>
+                        <li><strong>Other Recognitions:</strong> Multiple certifications as “Farmer Scientist” from
+                            prestigious universities and institutions.</li>
+                    </ul>
+                </div>
+                <!-- Exhibitions List -->
+                <div class="p-4 md:w-1/2 lg:w-1/3">
+                    <h3 class="text-lg font-bold text-gray-700">Significant Exhibitions</h3>
+                    <ul class="list-disc text-left ml-5 mt-4 text-gray-600">
+                        <li>2010 & 2015: Exhibitions of Innovations at President House.</li>
+                        <li>2013: Inauguration of ESB-R Biomass gasifier by the former chief minister of Meghalaya.</li>
+                        <li>2016: India International Science Festival (IISF) and India International Trade Fair (IITF)
+                            in New Delhi.</li>
+                        <li>2017: Mega Science & Tech and Industry Expo, New Delhi.</li>
+                        <li>2018: Bollywood movie 'Padman' promotion.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company History Section -->
+    <div class="bg-primary-dark py-8 text-white" id="our-history">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-6">Our History</h2>
+            <div class="space-y-6">
+                <!-- Each Historical Milestone -->
+                <div class="flex flex-col md:flex-row items-center text-center md:text-left">
+                    <div class="md:w-1/3">
+                        <img src="../assets/about-us/2.JPG" alt="First Milestone"
+                            class="rounded-lg shadow-lg mb-4 md:mb-0">
+                    </div>
+                    <div class="md:w-2/3 md:pl-6">
+                        <h3 class="text-xl font-semibold mb-2">Establishment - Year</h3>
+                        <p>Enersol Biopower was founded in [Year], born from a vision to create sustainable and
+                            innovative energy solutions. The company started with a small team dedicated to exploring
+                            the potential of biomass energy.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row items-center text-center md:text-left">
+                    <div class="md:w-1/3">
+                        <img src="../assets/about-us/DSC_1242.JPG" alt="Second Milestone"
+                            class="rounded-lg shadow-lg mb-4 md:mb-0">
+                    </div>
+                    <div class="md:w-2/3 md:pl-6">
+                        <h3 class="text-xl font-semibold mb-2">First Major Project - Year</h3>
+                        <p>In [Year], Enersol Biopower launched its first major project, the development of an advanced
+                            biomass gasifier. This project set the foundation for future innovations and established the
+                            company's reputation in the renewable energy sector.</p>
+                    </div>
+                </div>
+                <!-- Additional Milestones -->
+                <!-- Repeat the block for more milestones -->
+            </div>
+        </div>
+    </div>
+
+    <section class="text-gray-600 body-font bg-gray-100">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="text-2xl font-medium title-font mb-4 text-gray-900">OUR TEAM</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Discover the dedicated leaders driving innovation
+                    at our company. Each team member brings unique expertise and vision, contributing to our collective
+                    mission of advancing sustainable energy solutions.</p>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <!-- Card 1 -->
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div
+                        class="h-full flex flex-col items-center text-center bg-white rounded-lg overflow-hidden shadow-lg">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                            src="https://dummyimage.com/200x200">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-gray-900">Priya Mehra</h2>
+                            <h3 class="text-gray-500 mb-3">Chief Executive Officer</h3>
+                            <p class="mb-4 px-2">Priya leads our strategic initiatives, steering the company towards
+                                global
+                                competitiveness and innovation in clean energy.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div
+                        class="h-full flex flex-col items-center text-center bg-white rounded-lg overflow-hidden shadow-lg">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                            src="https://dummyimage.com/201x201">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-gray-900">Rohan Kulkarni</h2>
+                            <h3 class="text-gray-500 mb-3">Director of Technology</h3>
+                            <p class="mb-4 px-2">Rohan oversees all technical developments and is pivotal in deploying
+                                innovative technologies across our operations.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div
+                        class="h-full flex flex-col items-center text-center bg-white rounded-lg overflow-hidden shadow-lg">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                            src="https://dummyimage.com/202x202">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-gray-900">Ananya Singh</h2>
+                            <h3 class="text-gray-500 mb-3">Chief Financial Officer</h3>
+                            <p class="mb-4 px-2">Ananya ensures financial sustainability and oversees fiscal strategies
+                                that
+                                align with our environmental goals.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional cards -->
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div
+                        class="h-full flex flex-col items-center text-center bg-white rounded-lg overflow-hidden shadow-lg">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                            src="https://dummyimage.com/203x203">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-gray-900">Vikram Patel</h2>
+                            <h3 class="text-gray-500 mb-3">Operations Manager</h3>
+                            <p class="mb-4 px-2">Vikram expertly manages our project operations, ensuring efficiency and
+                                excellence in all production phases.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div
+                        class="h-full flex flex-col items-center text-center bg-white rounded-lg overflow-hidden shadow-lg">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                            src="https://dummyimage.com/204x204">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-gray-900">Geeta Reddy</h2>
+                            <h3 class="text-gray-500 mb-3">Human Resources Director</h3>
+                            <p class="mb-4 px-2">Geeta spearheads our HR department, focusing on fostering a dynamic,
+                                inclusive, and innovative workplace culture.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/4 md:w-1/2">
+                    <div
+                        class="h-full flex flex-col items-center text-center bg-white rounded-lg overflow-hidden shadow-lg">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4"
+                            src="https://dummyimage.com/205x205">
+                        <div class="w-full">
+                            <h2 class="title-font font-medium text-lg text-gray-900">Karan Malhotra</h2>
+                            <h3 class="text-gray-500 mb-3">Marketing Director</h3>
+                            <p class="mb-4 px-2">Karan drives our marketing strategies, enhancing our brand's presence
+                                both
+                                locally and globally.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-primary-dark mb-6">Educational & Social Initiatives</h2>
+            <!-- Biomass Education -->
+            <div class="mb-8">
+                <h3 class="text-2xl text-primary mb-4">Biomass Education</h3>
+                <p>Learn about the science behind biomass energy and its impact on sustainable development through our
+                    detailed articles and resources.</p>
+                <a href="/biomass-education" class="text-secondary hover:text-secondary-dark font-bold">Explore Biomass
+                    Resources</a>
+            </div>
+            <!-- Community Projects -->
+            <div>
+                <h3 class="text-2xl text-primary mb-4">Community Projects</h3>
+                <p>Discover how Enersol Biopower is making a difference in communities around the world with sustainable
+                    energy projects.</p>
+                <a href="/community-projects" class="text-secondary hover:text-secondary-dark font-bold">View Community
+                    Initiatives</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Featured Products Section -->
+    <section class="bg-gray-100 text-gray-700 body-font">
+        <div class="container mx-auto px-5 py-24">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary-dark">Our Innovative Products</h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    Explore our range of cutting-edge products designed to promote sustainable energy and improve lives
+                    worldwide.
+                </p>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product Card 1 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img class="h-48 w-full object-cover" src="../assets/home/biomass_gasifier.jpeg"
+                        alt="Biomass Gasifier" />
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-primary mb-2">Biomass Gasifiers</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Innovative gasifiers designed to harness the power of biomass for rural electrification and
+                            industrial
+                            use.
+                        </p>
+                        <a href="#"
+                            class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img class="h-48 w-full object-cover" src="../assets/home/Green Agnika10 (4).jpeg"
+                        alt="Improved Biomass Stoves" />
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-primary mb-2">Improved Biomass Stoves</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Advanced smokeless stoves offering efficiency and health benefits for households and
+                            communities.
+                        </p>
+                        <a href="#"
+                            class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                    <img class="h-48 w-full object-cover" src="../assets/home/IMG-20200708-WA0029.jpg"
+                        alt="Biomass Heat Burners" />
+                    <div class="p-6">
+                        <h3 class="text-lg font-bold text-primary mb-2">Biomass Heat Burners</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Versatile burners for thermal applications, replacing traditional fossil fuels with
+                            sustainable solutions.
+                        </p>
+                        <a href="#"
+                            class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="text-center mt-12">
+                <a href="#products"
+                    class="bg-blue-800 hover:bg-blue-500 text-white py-3 px-8 rounded text-lg inline-block">
+                    View All Products
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="py-16 bg-gradient-to-r from-primary to-secondary">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-white mb-12">Contact Us</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Details -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white">Head Office</h3>
+                        <p class="text-white mt-2">Plot No. 96-97, Kirti Sagar, Badarwas, Gopalpura Bypass, Jaipur,
+                            302020</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white">Factory</h3>
+                        <p class="text-white mt-2">Plot No.-1, Jaisalaya, Road No. - 17 Vishawkarma Industrial Area
+                            (Vki), Jaipur-
+                            302013</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white">Call Us</h3>
+                        <p class="text-white mt-2">
+                            <a href="tel:+919414535665" class="hover:underline">+91 9414535665</a> <br>
+                            <a href="tel:+917073495200" class="hover:underline">+91 7073495200</a>
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-white">Email Us</h3>
+                        <p class="text-white mt-2">
+                            <a href="mailto:info@enersolbiopower.com"
+                                class="hover:underline">info@enersolbiopower.com</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-white mb-4">Get in Touch</h3>
+                    <form action="#" method="POST" class="space-y-6">
+                        <div class="flex flex-col">
+                            <label for="name" class="text-white">Name</label>
+                            <input type="text" id="name" name="name"
+                                class="p-3 mt-2 border-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                                required>
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="email" class="text-white">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="p-3 mt-2 border-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                                required>
+                        </div>
+                        <div class="flex flex-col">
+                            <label for="message" class="text-white">Message</label>
+                            <textarea id="message" name="message" rows="5"
+                                class="p-3 mt-2 border-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                                required></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-blue-500 hover:bg-blue-700 text-white p-3 mt-4 rounded-md hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-primary-dark text-white body-font">
+        <div
+          class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <!-- Logo and Info Section -->
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+              <!-- Adjusted Logo -->
+              <div class="flex justify-start lg:w-0 lg:flex-1">
+                <a href="#">
+                  <img class="h-12 w-auto sm:h-14" src="../assets/logo/erersollogo.png" alt="Enersol Biopower"
+                    style="min-width: 150px;">
+                </a>
+              </div>
+    
+            </a>
+            <p class="mt-2 text-sm text-gray-300">Innovative Renewable Energy Solutions for a Sustainable Future</p>
+          </div>
+    
+          <!-- Column 1: Categories -->
+          <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Explore</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/">Home</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/about-us.html">About Us</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/our-story.html">Our Story</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/products.html">Products</a>
+                </li>
+              </nav>
+            </div>
+    
+            <!-- Column 2: Categories -->
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Company</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/contact-us.html">Contact Us</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/blogs-news.html">Blogs & News</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages">Privacy Policy</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-200">Terms of Service</a>
+                </li>
+              </nav>
+            </div>
+    
+            <!-- Column 3: Categories -->
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/#achievements">Our Achievements</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/#testimonials">Testimonials</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/about-us.html#our-history">Our History</a>
+                </li>
+                <li>
+                  <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/about-us.html#mission">Mission & Vission</a>
+                </li>
+              </nav>
+            </div>
+    
+            <!-- Contact Column (with icons) -->
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
+                Contact
+              </h2>
+              <nav class="list-none mb-10 footer-contact">
+                <!-- Address -->
+                <li class="text-gray-400 flex items-start">
+                  <!-- Address Icon -->
+                  <i class="ri-map-pin-fill mr-2 text-white"></i>
+                  <span class="block">Enersol Biopower Private Limited
+                    Plot No. 57 A, Vrindavan Vihar, Akeda Dunder, laxminarayanpura, VKI Road No .19, Jaipur-302013</span>
+                </li>
+                <!-- Phone -->
+                <li class="text-gray-400 flex items-start">
+                  <!-- Phone Icon -->
+                  <i class="ri-phone-fill mr-2 text-white"></i>
+                  <span class="block">+91-9414535665</span>
+                </li>
+                <li class="text-gray-400 flex items-start">
+                  <i class="ri-phone-fill mr-2 text-white"></i>
+                  <span class="block">+91-7073495200</span>
+                </li>
+                <!-- Email -->
+                <li class="text-gray-400 flex items-start">
+                  <!-- Email Icon -->
+                  <i class="ri-mail-fill mr-2 text-white"></i>
+                  <a href="mailto:info@enersolbiopower.com" class="block hover:text-white">info@enersolbiopower.com</a>
+                </li>
+              </nav>
+            </div>
+    
+          </div>
+        </div>
+    
+        <!-- Footer Bottom Section -->
+        <div class="bg-gray-800">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Enersol Biopower — All Rights Reserved</p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                  </path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none"
+                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+
+    <script src="../js/main.js"></script>
+
+
 </body>
+
 </html>

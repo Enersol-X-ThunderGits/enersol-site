@@ -133,96 +133,106 @@
     </div>
   </div>
 
- <!-- Navbar component -->
-<div class="bg-primary-dark sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
-      <!-- Logo -->
-      <div class="flex justify-start lg:w-0 lg:flex-1">
-        <a href="/">
-          <img class="h-12 w-auto sm:h-14" src="./assets/logo/erersollogo.png" alt="Enersol Biopower"
-            style="min-width: 150px;">
-        </a>
-      </div>
-      <!-- Navbar collapse button (visible on small screens) -->
-      <div class="-mr-2 -my-2 md:hidden">
-        <button type="button"
-          class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-          id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
-          <span class="sr-only">Open menu</span>
-          <!-- Icon for the button (hamburger icon) -->
-          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor" aria-hidden="true" style="color: white;">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-          </svg>
-        </button>
-      </div>
-
-      <!-- Links for large screens -->
-      <nav class="hidden md:flex space-x-10">
-        <a href="/enersol-site/" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
-        <a href="/enersol-site/pages/about-us.html" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
-        <a href="/enersol-site/pages/our-story.html" class="text-base font-medium text-white hover:text-accentYellow-light">Our Story</a>
-        <a href="/enersol-site/pages/products.html" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
-        <a href="/enersol-site/pages/blogs-news.html" class="text-base font-medium text-white hover:text-accentYellow-light">Blogs & News</a>
-        <a href="/enersol-site/pages/contact-us.html" class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
-      </nav>
-
-      <!-- Get a Quote button (visible on large screens) -->
-      <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-        <a href="#"
-          class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
-          Get a Quote
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Mobile menu, toggle classes based on menu state (open/closed) -->
-  <div
-    class="fixed inset-y-0 right-0 w-3/4 bg-white text-white transform translate-x-full transition-transform duration-300 ease-in-out"
-    id="mobile-menu" style="display: none;z-index: 10;">
-    <div class="">
-      <div class="pt-5 pb-6 ">
-        <div class="flex items-center justify-between px-5">
-          <div>
-            <img class="h-8 w-auto" src="./assets/logo/erersollogo.png" alt="Your Company">
-          </div>
-          <div class="-mr-2">
-            <button type="button"
-              class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-              onclick="toggleMobileMenu()">
-              <span class="sr-only">Close menu</span>
-              <!-- Close icon -->
-              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
+  <!-- Navbar component -->
+  <div class="bg-primary-dark sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+        <!-- Logo -->
+        <div class="flex justify-start lg:w-0 lg:flex-1">
+          <a href="/">
+            <img class="h-12 w-auto sm:h-14" src="./assets/logo/erersollogo.png" alt="Enersol Biopower"
+              style="min-width: 150px;">
+          </a>
         </div>
-        <div class="mt-6 px-5 border-t border-gray-300 pt-5">
-          <nav class="grid gap-y-8">
-            <a href="/enersol-site/" class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
-            <a href="/enersol-site/pages/about-us.html" class="text-base font-medium text-black hover:text-accentYellow-light">About Us</a>
-            <a href="/enersol-site/pages/our-story.html" class="text-base font-medium text-black hover:text-accentYellow-light">Our Story</a>
-            <a href="/enersol-site/pages/products.html" class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
-            <a href="/enersol-site/pages/blogs-news.html" class="text-base font-medium text-black hover:text-accentYellow-light">Blogs & News</a>
-            <a href="/enersol-site/pages/contact-us.html" class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
-          </nav>
+        <!-- Navbar collapse button (visible on small screens) -->
+        <div class="-mr-2 -my-2 md:hidden">
+          <button type="button"
+            class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="sr-only">Open menu</span>
+            <!-- Icon for the button (hamburger icon) -->
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true" style="color: white;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
         </div>
-      </div>
-      <div class="py-6 px-5 space-y-6">
-        <div>
+
+        <!-- Links for large screens -->
+        <nav class="hidden md:flex space-x-10">
+          <a href="/enersol-site/" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
+          <a href="/enersol-site/pages/about-us.html"
+            class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
+          <a href="/enersol-site/pages/our-story.html"
+            class="text-base font-medium text-white hover:text-accentYellow-light">Our Story</a>
+          <a href="/enersol-site/pages/products.html"
+            class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+          <a href="/enersol-site/pages/blogs-news.html"
+            class="text-base font-medium text-white hover:text-accentYellow-light">Blogs & News</a>
+          <a href="/enersol-site/pages/contact-us.html"
+            class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
+        </nav>
+
+        <!-- Get a Quote button (visible on large screens) -->
+        <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
           <a href="#"
-            class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
+            class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
             Get a Quote
           </a>
         </div>
       </div>
     </div>
+
+    <!-- Mobile menu, toggle classes based on menu state (open/closed) -->
+    <div
+      class="fixed inset-y-0 right-0 w-3/4 bg-white text-white transform translate-x-full transition-transform duration-300 ease-in-out"
+      id="mobile-menu" style="display: none;z-index: 10;">
+      <div class="">
+        <div class="pt-5 pb-6 ">
+          <div class="flex items-center justify-between px-5">
+            <div>
+              <img class="h-8 w-auto" src="./assets/logo/erersollogo.png" alt="Your Company">
+            </div>
+            <div class="-mr-2">
+              <button type="button"
+                class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                onclick="toggleMobileMenu()">
+                <span class="sr-only">Close menu</span>
+                <!-- Close icon -->
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="mt-6 px-5 border-t border-gray-300 pt-5">
+            <nav class="grid gap-y-8">
+              <a href="/enersol-site/" class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
+              <a href="/enersol-site/pages/about-us.html"
+                class="text-base font-medium text-black hover:text-accentYellow-light">About Us</a>
+              <a href="/enersol-site/pages/our-story.html"
+                class="text-base font-medium text-black hover:text-accentYellow-light">Our Story</a>
+              <a href="/enersol-site/pages/products.html"
+                class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
+              <a href="/enersol-site/pages/blogs-news.html"
+                class="text-base font-medium text-black hover:text-accentYellow-light">Blogs & News</a>
+              <a href="/enersol-site/pages/contact-us.html"
+                class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
+            </nav>
+          </div>
+        </div>
+        <div class="py-6 px-5 space-y-6">
+          <div>
+            <a href="#"
+              class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
+              Get a Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
 
 
 
@@ -496,10 +506,7 @@
       <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
         <div
           class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-primary-light text-primary flex-shrink-0">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-          </svg>
+          <img src="./assets/home/renewable-energy-svgrepo-com.svg" alt="">
         </div>
         <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
           <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Our Mission</h2>
@@ -517,10 +524,7 @@
         </div>
         <div
           class="sm:w-32 sm:ml-10 sm:h-32 h-20 w-20 inline-flex items-center justify-center rounded-full bg-primary-light text-primary flex-shrink-0">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
-            <path d="M3 12l2-2 4 4L21 3" />
-            <path d="M21 12v6H3" />
+          <img src="./assets/home/ecology-plant-svgrepo-com.svg" alt="">
           </svg>
         </div>
       </div>
@@ -657,7 +661,7 @@
     </div>
   </section>
   <!-- Stats Section -->
-  <section class="bg-primary-dark text-white body-font">
+  <section class="bg-primary-dark text-white body-font" id="achievements">
     <div class="container px-5 py-24 mx-auto">
       <!-- Section Header -->
       <div class="flex flex-col text-center w-full mb-20">
@@ -735,7 +739,7 @@
     </div>
   </section>
   <!-- Testimonials Section -->
-  <section class="bg-gray-100 text-primary-dark body-font">
+  <section class="bg-gray-100 text-primary-dark body-font" id="testimonials">
     <div class="container px-5 py-24 mx-auto">
       <!-- Section Title -->
       <h1 class="text-3xl font-medium title-font text-center mb-12 text-primary-dark">Testimonials</h1>
@@ -870,38 +874,38 @@
       <!-- Column 1: Categories -->
       <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Explore</h2>
           <nav class="list-none mb-10">
             <li>
-              <a class="text-gray-300 hover:text-gray-200">First Link</a>
+              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/">Home</a>
             </li>
             <li>
-              <a class="text-gray-300 hover:text-gray-200">Second Link</a>
+              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/about-us.html">About Us</a>
             </li>
             <li>
-              <a class="text-gray-300 hover:text-gray-200">Third Link</a>
+              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/our-story.html">Our Story</a>
             </li>
             <li>
-              <a class="text-gray-300 hover:text-gray-200">Fourth Link</a>
+              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/products.html">Products</a>
             </li>
           </nav>
         </div>
 
         <!-- Column 2: Categories -->
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Company</h2>
           <nav class="list-none mb-10">
             <li>
-              <a class="text-gray-300 hover:text-gray-200">First Link</a>
+              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/contact-us.html">Contact Us</a>
             </li>
             <li>
-              <a class="text-gray-300 hover:text-gray-200">Second Link</a>
+              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/blogs-news.html">Blogs & News</a>
             </li>
             <li>
-              <a class="text-gray-300 hover:text-gray-200">Third Link</a>
+              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages">Privacy Policy</a>
             </li>
             <li>
-              <a class="text-gray-300 hover:text-gray-200">Fourth Link</a>
+              <a class="text-gray-300 hover:text-gray-200">Terms of Service</a>
             </li>
           </nav>
         </div>
@@ -911,16 +915,16 @@
           <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
           <nav class="list-none mb-10">
             <li>
-              <a class="text-gray-300 hover:text-gray-200">First Link</a>
+              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/#achievements">Our Achievements</a>
             </li>
             <li>
-              <a class="text-gray-300 hover:text-gray-200">Second Link</a>
+              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/#testimonials">Testimonials</a>
             </li>
             <li>
-              <a class="text-gray-300 hover:text-gray-200">Third Link</a>
+              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/about-us.html#our-history">Our History</a>
             </li>
             <li>
-              <a class="text-gray-300 hover:text-gray-200">Fourth Link</a>
+              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/about-us.html#mission">Mission & Vission</a>
             </li>
           </nav>
         </div>
@@ -935,8 +939,8 @@
             <li class="text-gray-400 flex items-start">
               <!-- Address Icon -->
               <i class="ri-map-pin-fill mr-2 text-white"></i>
-              <span class="block">Plot No.-1, Jaisalaya, Road No. - 17, Vishawkarma Industrial Area (Vki), Jaipur-
-                302013 (Rajasthan)</span>
+              <span class="block">Enersol Biopower Private Limited
+                Plot No. 57 A, Vrindavan Vihar, Akeda Dunder, laxminarayanpura, VKI Road No .19, Jaipur-302013</span>
             </li>
             <!-- Phone -->
             <li class="text-gray-400 flex items-start">

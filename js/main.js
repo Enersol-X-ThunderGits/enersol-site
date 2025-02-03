@@ -25,6 +25,44 @@ var swiper = new Swiper('.mySwiper', {
     effect: 'coverflow',  // Optional effect
 });
 
+var productSwiper = new Swiper('.productSwiper', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,  // Optional: adds looping
+    autoplay: {
+        delay: 2500, // Delay in milliseconds before switching slides
+        disableOnInteraction: false, // Continue autoplay when interacting with controls
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        600: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        }
+    }
+});
+
+
+
 // JavaScript to toggle the mobile menu
 document.getElementById('mobile-menu-button').addEventListener('click', function () {
     var menu = document.getElementById('mobile-menu');

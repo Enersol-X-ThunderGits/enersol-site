@@ -321,14 +321,14 @@
     <!-- Footer Section -->
     <footer class="bg-primary-dark text-white body-font">
       <div
-        class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col justify-center">
         <!-- Logo and Info Section -->
         <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
             <!-- Adjusted Logo -->
             <div class="flex justify-start lg:w-0 lg:flex-1">
               <a href="#">
-                <img class="h-12 w-auto sm:h-14" src="../assets/logo/erersollogo.png" alt="Enersol Biopower"
+                <img class="h-12 w-auto sm:h-14" src="./assets/logo/erersollogo.png" alt="Enersol Biopower"
                   style="min-width: 150px;">
               </a>
             </div>
@@ -377,7 +377,7 @@
           </div>
   
           <!-- Column 3: Categories -->
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
             <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
             <nav class="list-none mb-10">
               <li>
@@ -387,43 +387,64 @@
                 <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/#testimonials">Testimonials</a>
               </li>
               <li>
-                <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/about-us.html#our-history">Our History</a>
+                <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/about-us.html#our-history">Our
+                  History</a>
               </li>
               <li>
-                <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/about-us.html#mission">Mission & Vission</a>
+                <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/about-us.html#mission">Mission &
+                  Vission</a>
               </li>
             </nav>
           </div>
   
           <!-- Contact Column (with icons) -->
-          <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
             <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
               Contact
             </h2>
-            <nav class="list-none mb-10 footer-contact">
+            <nav class="list-none mb-10 footer-contact ">
               <!-- Address -->
-              <li class="text-gray-400 flex items-start">
-                <!-- Address Icon -->
-                <i class="ri-map-pin-fill mr-2 text-white"></i>
-                <span class="block">Enersol Biopower Private Limited
-                  Plot No. 57 A, Vrindavan Vihar, Akeda Dunder, laxminarayanpura, VKI Road No .19, Jaipur-302013</span>
-              </li>
-              <!-- Phone -->
-              <li class="text-gray-400 flex items-start">
-                <!-- Phone Icon -->
-                <i class="ri-phone-fill mr-2 text-white"></i>
-                <span class="block">+91-9414535665</span>
-              </li>
-              <li class="text-gray-400 flex items-start">
-                <i class="ri-phone-fill mr-2 text-white"></i>
-                <span class="block">+91-7073495200</span>
-              </li>
-              <!-- Email -->
-              <li class="text-gray-400 flex items-start">
-                <!-- Email Icon -->
-                <i class="ri-mail-fill mr-2 text-white"></i>
-                <a href="mailto:info@enersolbiopower.com" class="block hover:text-white">info@enersolbiopower.com</a>
-              </li>
+              <style>
+                @media (max-width: 768px) {
+                  .addressList {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    /* Centers the list */
+                    text-align: center;
+                    /* Ensures text is centered */
+                  }
+  
+                  .addressList li {
+                    justify-content: center;
+                    /* Centers content horizontally */
+                  }
+                }
+              </style>
+              <div class="addressList justify-center">
+                <li class="text-gray-400 flex items-start">
+                  <!-- Address Icon -->
+                  <i class="ri-map-pin-fill mr-2 text-white"></i>
+                  <span class="block">Enersol Biopower Private Limited
+                    Plot No. 57 A, Vrindavan Vihar, Akeda Dunder, laxminarayanpura, VKI Road No .19, Jaipur-302013</span>
+                </li>
+                <!-- Phone -->
+                <li class="text-gray-400 flex items-start">
+                  <!-- Phone Icon -->
+                  <i class="ri-phone-fill mr-2 text-white"></i>
+                  <span class="block">+91-9414535665</span>
+                </li>
+                <li class="text-gray-400 flex items-start">
+                  <i class="ri-phone-fill mr-2 text-white"></i>
+                  <span class="block">+91-7073495200</span>
+                </li>
+                <!-- Email -->
+                <li class="text-gray-400 flex items-start">
+                  <!-- Email Icon -->
+                  <i class="ri-mail-fill mr-2 text-white"></i>
+                  <a href="mailto:info@enersolbiopower.com" class="block hover:text-white">info@enersolbiopower.com</a>
+                </li>
+              </div>
             </nav>
           </div>
   

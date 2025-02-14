@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENERSOL BIOPOWER PRIVATE LIMITED</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -80,6 +81,7 @@
             transform: translateY(0px);
         }
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
 </head>
 
 <body>
@@ -230,15 +232,15 @@
     </div>
     <div class="container mx-auto px-6 py-12">
         <!-- Product Detail Section -->
-        <section class="text-gray-600 body-font overflow-hidden">
+        <section class="text-gray-600 body-font">
             <div class="container px-5 py-6 mx-auto">
                 <div class=" flex flex-wrap">
                     <!-- Left: Product Image Gallery -->
-                    <div class="lg:w-1/2 w-full lg:h-auto object-cover object-center rounded mb-6">
+                    <div class="lg:w-1/2 w-full lg:h-auto object-cover object-center rounded mb-6 md:lg:sticky  lg:sticky top-0 self-start" style="top:100px">
                         <!-- Main Product Image -->
                         <img id="main-product-image"
                             src="../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.16.48s.jpeg"
-                            alt="Main Product Image" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                            alt="Main Product Image" style="height: 100%;max-height: 75vh;object-fit: contain;" class="w-full h-80 object-cover rounded-lg">
                         <!-- Thumbnail Images -->
                         <!-- <div class="overflow-x-auto flex justify-center space-x-4 mt-4">
                             <img src="../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.16.54.jpeg"
@@ -266,11 +268,13 @@
                             <!-- First Row: Contact Buttons -->
                             <div class="flex gap-4">
                                 <a href="https://api.whatsapp.com/send?phone=8239556677&text=I'm%20interested%20in%20your%20products"
-                                    class="inline-flex flex-grow justify-center items-center text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg" style="gap: 5px;">
+                                    class="inline-flex flex-grow justify-center items-center text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
+                                    style="gap: 5px;">
                                     <i class="ri-whatsapp-line"></i> Contact on WhatsApp
                                 </a>
                                 <a href="tel:+919414535665"
-                                    class="inline-flex flex-grow items-center justify-center text-center text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg" style="gap: 5px;">
+                                    class="inline-flex flex-grow items-center justify-center text-center text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"
+                                    style="gap: 5px;">
                                     <i class="ri-phone-line"></i> Call Us
                                 </a>
                             </div>
@@ -279,6 +283,7 @@
                                 class="inline-flex items-center justify-center text-white bg-primary-dark border-0 py-2 px-6 focus:outline-none hover:bg-primary-light rounded text-lg">
                                 Download Product Catalogue
                             </button>
+                            <div id="product-container"></div>
                         </div>
                     </div>
 
@@ -286,6 +291,9 @@
                 </div>
             </div>
         </section>
+
+      
+        
         <!-- Available Range of Biomass Gasifiers -->
         <section class="py-12 bg-gray-100">
             <div class="container px-5 mx-auto">
@@ -439,177 +447,190 @@
         <!-- Additional Information Section (Specifications, Reviews) -->
 
     </div>
-     <!-- Footer Section -->
-  <footer class="bg-primary-dark text-white body-font">
-    <div
-      class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col justify-center">
-      <!-- Logo and Info Section -->
-      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-          <!-- Adjusted Logo -->
-          <div class="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
-              <img class="h-12 w-auto sm:h-14" src="./assets/logo/erersollogo.png" alt="Enersol Biopower"
-                style="min-width: 150px;">
-            </a>
-          </div>
+    <!-- Footer Section -->
+    <footer class="bg-primary-dark text-white body-font">
+        <div
+            class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col justify-center">
+            <!-- Logo and Info Section -->
+            <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                    <!-- Adjusted Logo -->
+                    <div class="flex justify-start lg:w-0 lg:flex-1">
+                        <a href="#">
+                            <img class="h-12 w-auto sm:h-14" src="../assets/logo/erersollogo.png" alt="Enersol Biopower"
+                                style="min-width: 150px;">
+                        </a>
+                    </div>
 
-        </a>
-        <p class="mt-2 text-sm text-gray-300">Innovative Renewable Energy Solutions for a Sustainable Future</p>
-      </div>
-
-      <!-- Column 1: Categories -->
-      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Explore</h2>
-          <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/">Home</a>
-            </li>
-            <li>
-              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/about-us.html">About Us</a>
-            </li>
-            <li>
-              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/our-story.html">Our Story</a>
-            </li>
-            <li>
-              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/products.html">Products</a>
-            </li>
-          </nav>
-        </div>
-
-        <!-- Column 2: Categories -->
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Company</h2>
-          <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/contact-us.html">Contact Us</a>
-            </li>
-            <li>
-              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/blogs-news.html">Blogs & News</a>
-            </li>
-            <li>
-              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages">Privacy Policy</a>
-            </li>
-            <li>
-              <a class="text-gray-300 hover:text-gray-200">Terms of Service</a>
-            </li>
-          </nav>
-        </div>
-
-        <!-- Column 3: Categories -->
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
-          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
-          <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/#achievements">Our Achievements</a>
-            </li>
-            <li>
-              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/#testimonials">Testimonials</a>
-            </li>
-            <li>
-              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/about-us.html#our-history">Our
-                History</a>
-            </li>
-            <li>
-              <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/about-us.html#mission">Mission &
-                Vission</a>
-            </li>
-          </nav>
-        </div>
-
-        <!-- Contact Column (with icons) -->
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
-          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
-            Contact
-          </h2>
-          <nav class="list-none mb-10 footer-contact ">
-            <!-- Address -->
-            <style>
-              @media (max-width: 768px) {
-                .addressList {
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  /* Centers the list */
-                  text-align: center;
-                  /* Ensures text is centered */
-                }
-
-                .addressList li {
-                  justify-content: center;
-                  /* Centers content horizontally */
-                }
-              }
-            </style>
-            <div class="addressList justify-center">
-              <li class="text-gray-400 flex items-start">
-                <!-- Address Icon -->
-                <i class="ri-map-pin-fill mr-2 text-white"></i>
-                <span class="block">Enersol Biopower Private Limited
-                  Plot No. 57 A, Vrindavan Vihar, Akeda Dunder, laxminarayanpura, VKI Road No .19, Jaipur-302013</span>
-              </li>
-              <!-- Phone -->
-              <li class="text-gray-400 flex items-start">
-                <!-- Phone Icon -->
-                <i class="ri-phone-fill mr-2 text-white"></i>
-                <span class="block">+91-9414535665</span>
-              </li>
-              <li class="text-gray-400 flex items-start">
-                <i class="ri-phone-fill mr-2 text-white"></i>
-                <span class="block">+91-7073495200</span>
-              </li>
-              <!-- Email -->
-              <li class="text-gray-400 flex items-start">
-                <!-- Email Icon -->
-                <i class="ri-mail-fill mr-2 text-white"></i>
-                <a href="mailto:info@enersolbiopower.com" class="block hover:text-white">info@enersolbiopower.com</a>
-              </li>
+                </a>
+                <p class="mt-2 text-sm text-gray-300">Innovative Renewable Energy Solutions for a Sustainable Future</p>
             </div>
-          </nav>
+
+            <!-- Column 1: Categories -->
+            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Explore</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/">Home</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/about-us.html">About
+                                Us</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages/our-story.html">Our
+                                Story</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200"
+                                href="/enersol-site/pages/products.html">Products</a>
+                        </li>
+                    </nav>
+                </div>
+
+                <!-- Column 2: Categories -->
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Company</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200"
+                                href="/enersol-site/pages/contact-us.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200"
+                                href="/enersol-site/pages/blogs-news.html">Blogs & News</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/pages">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200">Terms of Service</a>
+                        </li>
+                    </nav>
+                </div>
+
+                <!-- Column 3: Categories -->
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="/enersol-site/#achievements">Our
+                                Achievements</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200"
+                                href="/enersol-site/#testimonials">Testimonials</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200"
+                                href="/enersol-site/pages/about-us.html#our-history">Our
+                                History</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200"
+                                href="/enersol-site/pages/about-us.html#mission">Mission &
+                                Vission</a>
+                        </li>
+                    </nav>
+                </div>
+
+                <!-- Contact Column (with icons) -->
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
+                        Contact
+                    </h2>
+                    <nav class="list-none mb-10 footer-contact ">
+                        <!-- Address -->
+                        <style>
+                            @media (max-width: 768px) {
+                                .addressList {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    /* Centers the list */
+                                    text-align: center;
+                                    /* Ensures text is centered */
+                                }
+
+                                .addressList li {
+                                    justify-content: center;
+                                    /* Centers content horizontally */
+                                }
+                            }
+                        </style>
+                        <div class="addressList justify-center">
+                            <li class="text-gray-400 flex items-start">
+                                <!-- Address Icon -->
+                                <i class="ri-map-pin-fill mr-2 text-white"></i>
+                                <span class="block">Enersol Biopower Private Limited
+                                    Plot No. 57 A, Vrindavan Vihar, Akeda Dunder, laxminarayanpura, VKI Road No .19,
+                                    Jaipur-302013</span>
+                            </li>
+                            <!-- Phone -->
+                            <li class="text-gray-400 flex items-start">
+                                <!-- Phone Icon -->
+                                <i class="ri-phone-fill mr-2 text-white"></i>
+                                <span class="block">+91-9414535665</span>
+                            </li>
+                            <li class="text-gray-400 flex items-start">
+                                <i class="ri-phone-fill mr-2 text-white"></i>
+                                <span class="block">+91-7073495200</span>
+                            </li>
+                            <!-- Email -->
+                            <li class="text-gray-400 flex items-start">
+                                <!-- Email Icon -->
+                                <i class="ri-mail-fill mr-2 text-white"></i>
+                                <a href="mailto:info@enersolbiopower.com"
+                                    class="block hover:text-white">info@enersolbiopower.com</a>
+                            </li>
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
         </div>
 
-      </div>
-    </div>
-
-    <!-- Footer Bottom Section -->
-    <div class="bg-gray-800">
-      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-        <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Enersol Biopower — All Rights Reserved</p>
-        <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-          <a class="text-gray-500">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
-              viewBox="0 0 24 24">
-              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-500">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
-              viewBox="0 0 24 24">
-              <path
-                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-              </path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-500">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              class="w-5 h-5" viewBox="0 0 24 24">
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-500">
-            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-              stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-              <path stroke="none"
-                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-              <circle cx="4" cy="4" r="2" stroke="none"></circle>
-            </svg>
-          </a>
-        </span>
-      </div>
-    </div>
-  </footer>
+        <!-- Footer Bottom Section -->
+        <div class="bg-gray-800">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Enersol Biopower — All Rights Reserved
+                </p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                    <a class="text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
     <script src="../js/main.js"></script>
     <script>
         function changeImage(imageSrc) {
@@ -617,105 +638,186 @@
         }
 
     </script>
+    <script id="product-template" type="text/x-handlebars-template">
+            
+                <div class="bg-white rounded-lg" >
+                    
+                    <p class="text-xl text-green-600">{{subtitle}}</p>
+                    <h3 class="text-lg font-semibold mt-4">Key Features</h3>
+                    <ul class="list-disc ml-8">
+                        {{#each features}}
+                            <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
+                        {{/each}}
+                    </ul>
+            
+                    <h3 class="text-lg font-semibold mt-4">Advanced Technology</h3>
+                    <ul class="list-disc ml-8">
+                        {{#each technology}}
+                            <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
+                        {{/each}}
+                    </ul>
+            
+                    <h3 class="text-lg font-semibold mt-5">Technical Specifications</h3>
+<table class="min-w-full table-auto">
+    <thead>
+        <tr class="bg-gray-100">
+            <th class="px-4 py-2 text-left">Specification</th>
+            <th class="px-4 py-2 text-left">Detail</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each specifications}}
+        <tr>
+            <td class="border px-4 py-2">{{label}}</td>
+            <td class="border px-4 py-2 flex items-center">
+                <i class="{{icon}} text-{{color}} mr-2"></i> {{value}}
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+            
+                    <h3 class="text-lg font-semibold mt-4">Applications</h3>
+                    <ul class="list-disc ml-8">
+                        {{#each applications}}
+                            <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
+                        {{/each}}
+                    </ul>
+            
+                    <h3 class="text-lg font-semibold mt-4">Why Choose {{title}}?</h3>
+                    <ul class="list-disc ml-8">
+                        {{#each benefits}}
+                            <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            
+            
+        </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const products = [
                 {
-                    "name": "2KVA Biomass Gasifier Set",
+                    "name": "2kW Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-Mini02",
                     "modelNumber": "ESB-R02",
-                    "image": "../assets/products/biomass-gasifiers/biomass-gasifier.jpeg",
-                    "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
-                    "productId": "productId001"
+                    "image": "../assets/products/img/2KVA Biomass Gasifier (21).jpeg",
+                    "subtitle": "Sustainable & Efficient Power Generation",
+                    "description": "The ESB-R02 2 kVA Biomass Gasifier is a compact, efficient, and eco-friendly energy solution designed for small-scale power generation and research applications. Utilizing biomass gasification technology, this system converts agricultural and forest waste into clean producer gas, making it an excellent alternative to conventional fossil fuel-based generators.",
+                    "productId": "productId001",
+                    "features": [
+                        { "icon": "ri-leaf-line", "color": "green-500", "text": "Eco-Friendly & Sustainable – Converts biomass waste into clean energy" },
+                        { "icon": "ri-handbag-line", "color": "blue-500", "text": "Compact & Portable – Ideal for research institutes and small-scale users" },
+                        { "icon": "ri-filter-fill", "color": "purple-500", "text": "Dry Filtration System – No water-based purification required" },
+                        { "icon": "ri-fire-fill", "color": "red-500", "text": "Multi-Fuel Compatibility – Runs on various agricultural and forest residues" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "text": "Automatic Initial Firing – Ensures easy and efficient startup" },
+                        { "icon": "ri-tools-line", "color": "gray-500", "text": "Reliable & Low Maintenance – Designed for continuous operation with minimal upkeep" }
+                    ],
+                    "technology": [
+                        { "icon": "ri-sun-line", "color": "yellow-500", "text": "Biomass Dryer Integration – Utilizes exhaust heat from the silencer to dry biomass, improving efficiency" },
+                        { "icon": "ri-haze-line", "color": "blue-500", "text": "Patented Filtration System – Extracts moisture from biomass and reuses it to clean the gas, increasing performance and extending filter cleaning intervals" }
+                    ],
+                    "specifications": [
+                        { "icon": "ri-bar-chart-box-line", "color": "green-500", "label": "Model", "value": "ESB-R02" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Power Output", "value": "2 kVA" },
+                        { "icon": "ri-plant-fill", "color": "green-500", "label": "Fuel Type", "value": "Agricultural & forest waste residues" },
+                        { "icon": "ri-fire-fill", "color": "red-500", "label": "Gas Production", "value": "On-demand producer gas generation" },
+                        { "icon": "ri-filter-fill", "color": "purple-500", "label": "Filtration System", "value": "Dry filtration technology (No costly water purification required)" },
+                        { "icon": "ri-building-2-line", "color": "blue-500", "label": "Application", "value": "Research institutes, rural electrification, and small-scale industrial use" }
+                    ],
+                    "applications": [
+                        { "icon": "ri-battery-2-charge-line", "color": "red-500", "text": "Off-grid power supply" },
+                        { "icon": "ri-lightbulb-flash-line", "color": "yellow-500", "text": "Renewable energy research" },
+                        { "icon": "ri-plug-line", "color": "blue-500", "text": "Backup power for small-scale operations" },
+                        { "icon": "ri-home-smile-line", "color": "green-500", "text": "Agricultural and rural electrification" }
+                    ],
+                    "benefits": [
+                        { "icon": "ri-earth-fill", "color": "green-500", "text": "Environmentally Friendly – Reduces carbon footprint and promotes green energy" },
+                        { "icon": "ri-money-dollar-circle-line", "color": "green-500", "text": "Cost-Effective – Saves fuel costs compared to diesel generators" },
+                        { "icon": "ri-settings-2-line", "color": "gray-500", "text": "Low Maintenance – Simple operation with minimal servicing required" },
+                        { "icon": "ri-award-fill", "color": "yellow-500", "text": "Proven Technology – Developed by Enersol Biopower Pvt Ltd, a leader in biomass energy solutions" }
+                    ]
                 },
                 {
-                    "name": "4kw Biomass Gasifier Set",
+                    "name": "4kW Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-04",
                     "modelNumber": "ESB-R04",
-                    "image": "../assets/products/biomass-gasifiers/biomass-gasifier.jpeg",
+                    "image": "../assets/products/img/4kw biomass gasifier.png",
                     "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
                     "productId": "productId002"
                 },
                 {
-                    "name": "5kw Biomass Gasifier Set",
+                    "name": "5kW Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-05",
                     "modelNumber": "ESB-R05",
-                    "image": "../assets/products/biomass-gasifiers/biomass-gasifier.jpeg",
+                    "image": "../assets/products/img/5KVA(4KW) Biomass Gasifier Set)5.png",
                     "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
                     "productId": "productId003"
                 },
                 {
-                    "name": "8kw Biomass Gasifier Set",
+                    "name": "8kW Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-08",
                     "modelNumber": "ESB-R08",
-                    "image": "../assets/products/biomass-gasifiers/biomass-gasifier.jpeg",
+                    "image": "../assets/products/img/8KW Biomass Gasifier.JPG",
                     "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
                     "productId": "productId004"
                 },
                 {
-                    "name": "10kw Biomass Gasifier Set",
+                    "name": "10kW Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-10",
                     "modelNumber": "ESB-R10",
-                    "image": "../assets/products/biomass-gasifiers/biomass-gasifier.jpeg",
+                    "image": "../assets/products/img/10KVA Biomass Gasifier.jpeg",
                     "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
                     "productId": "productId005"
                 },
                 {
-                    "name": "12.5 Kw Biomass Gasifier Set",
+                    "name": "12kW Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-12.5",
                     "modelNumber": "ESB-R12.5",
-                    "image": "../assets/products/biomass-gasifiers/biomass-gasifier.jpeg",
+                    "image": "../assets/products/img/10KVA Biomass Gasifier.jpeg",
                     "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
                     "productId": "productId006"
                 },
                 {
-                    "name": "24 Kw Biomass Gasifier Set",
+                    "name": "24kW Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-24",
                     "modelNumber": "ESB-R24",
-                    "image": "../assets/products/biomass-gasifiers/biomass-gasifier.jpeg",
+                    "image": "../assets/products/img/24KW Biomass Gasifier1.png",
                     "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
                     "productId": "productId007"
                 },
                 {
-                    "name": "28 Kw Biomass Gasifier Set",
+                    "name": "28kW Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-28",
                     "modelNumber": "ESB-R28",
-                    "image": "../assets/products/biomass-gasifiers/biomass-gasifier.jpeg",
+                    "image": "../assets/products/img/28KW Biomass Gasifier1.png",
                     "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
                     "productId": "productId008"
                 },
                 {
-                    "name": "40kw Biomass Gasifier Set",
-                    "category": "Biomass Gasifier for Power Production",
-                    "modelName": "ESB-R Bio-40",
-                    "modelNumber": "ESB-R40",
-                    "image": "../assets/products/biomass-gasifiers/biomass-gasifier.jpeg",
-                    "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
-                    "productId": "productId009"
-                },
-                {
-                    "name": "50kw Biomass Gasifier Set",
+                    "name": "50kW Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-50",
                     "modelNumber": "ESB-R50",
-                    "image": "../assets/products/biomass-gasifiers/biomass-gasifier.jpeg",
+                    "image": "../assets/products/img/50KW Biomass Gasifier1.png",
                     "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
                     "productId": "productId010"
                 },
                 {
-                    "name": "100 Kw Biomass Gasifier Set",
+                    "name": "100kW Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-100",
                     "modelNumber": "ESB-R100",
-                    "image": "../assets/products/biomass-gasifiers/biomass-gasifier.jpeg",
+                    "image": "../assets/products/img/100KW Biomass Gasifier4.png",
                     "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
                     "productId": "productId011"
                 },
@@ -724,7 +826,7 @@
                     "category": "Biomass Gasifier for Thermal Applications",
                     "modelName": "ESB-R Bio-T10k",
                     "modelNumber": "ESB-R T10k",
-                    "image": "../assets/products/thermal-applications/thermal-gasifier.jpeg",
+                    "image": "../assets/products/img/100KW Biomass Gasifier4.png",
                     "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
                     "productId": "productId012"
                 },
@@ -733,7 +835,7 @@
                     "category": "Biomass Gasifier for Thermal Applications",
                     "modelName": "ESB-R Bio-T50k",
                     "modelNumber": "ESB-R T50k",
-                    "image": "../assets/products/thermal-applications/thermal-gasifier.jpeg",
+                    "image": "../assets/products/img/ESB-R 12KW Biomass Gasifier 1.jpeg",
                     "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
                     "productId": "productId013"
                 },
@@ -742,7 +844,7 @@
                     "category": "Biomass Gasifier for Thermal Applications",
                     "modelName": "ESB-R Bio-T100k",
                     "modelNumber": "ESB-R T100k",
-                    "image": "../assets/products/thermal-applications/thermal-gasifier.jpeg",
+                    "image": "../assets/products/img/50KW Biomass Gasifier1.png",
                     "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
                     "productId": "productId014"
                 },
@@ -751,7 +853,7 @@
                     "category": "Biomass Gasifier for Thermal Applications",
                     "modelName": "ESB-R Bio-T200k",
                     "modelNumber": "ESB-R T200k",
-                    "image": "../assets/products/thermal-applications/thermal-gasifier.jpeg",
+                    "image": "../assets/products/img/2KVA Biogas Genset3.png",
                     "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
                     "productId": "productId015"
                 },
@@ -760,7 +862,7 @@
                     "category": "Biomass Gasifier for Thermal Applications",
                     "modelName": "ESB-R Bio-T500k",
                     "modelNumber": "ESB-R T500k",
-                    "image": "../assets/products/thermal-applications/thermal-gasifier.jpeg",
+                    "image": "../assets/products/img/5KW Biomass Gasifier 1.png",
                     "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
                     "productId": "productId016"
                 },
@@ -769,7 +871,7 @@
                     "category": "Biogas/Syngas Generators",
                     "modelName": "ESB-R Bio-Gen02",
                     "modelNumber": "ESB-R BG02",
-                    "image": "../assets/products/biogas-generators/biogas-genset.jpeg",
+                    "image": "../assets/products/img/2KVA Biogas Genset.png",
                     "description": "We convert branded diesel engine such as Kirloskar, Tata, Mahindra & Ashok Leyland to biogas or syngas engine. We assure high efficiency with 100% output. OVN Bioenergy, Shakti Veera Bioenergy, Achal Associates are few of our renowned customers of biogas genset. To know more about it, click here",
                     "productId": "productId017"
                 },
@@ -778,7 +880,7 @@
                     "category": "Biogas/Syngas Generators",
                     "modelName": "ESB-R Bio-Gen05",
                     "modelNumber": "ESB-R BG05",
-                    "image": "../assets/products/biogas-generators/biogas-genset.jpeg",
+                    "image": "../assets/products/img/Biogas Genset 5KW 4.jpg",
                     "description": "We convert branded diesel engine such as Kirloskar, Tata, Mahindra & Ashok Leyland to biogas or syngas engine. We assure high efficiency with 100% output. OVN Bioenergy, Shakti Veera Bioenergy, Achal Associates are few of our renowned customers of biogas genset. To know more about it, click here",
                     "productId": "productId018"
                 },
@@ -787,7 +889,7 @@
                     "category": "Biogas/Syngas Generators",
                     "modelName": "ESB-R Bio-Gen7.5",
                     "modelNumber": "ESB-R BG7.5",
-                    "image": "../assets/products/biogas-generators/biogas-genset.jpeg",
+                    "image": "../assets/products/img/Biogas Genset 5KW.jpg",
                     "description": "We convert branded diesel engine such as Kirloskar, Tata, Mahindra & Ashok Leyland to biogas or syngas engine. We assure high efficiency with 100% output. OVN Bioenergy, Shakti Veera Bioenergy, Achal Associates are few of our renowned customers of biogas genset. To know more about it, click here",
                     "productId": "productId019"
                 },
@@ -796,7 +898,7 @@
                     "category": "Biogas/Syngas Generators",
                     "modelName": "ESB-R Bio-Gen10",
                     "modelNumber": "ESB-R BG10",
-                    "image": "../assets/products/biogas-generators/biogas-genset.jpeg",
+                    "image": "../assets/products/img/ESB-R Biogas Genset (2).jpeg",
                     "description": "We convert branded diesel engine such as Kirloskar, Tata, Mahindra & Ashok Leyland to biogas or syngas engine. We assure high efficiency with 100% output. OVN Bioenergy, Shakti Veera Bioenergy, Achal Associates are few of our renowned customers of biogas genset. To know more about it, click here",
                     "productId": "productId020"
                 },
@@ -805,7 +907,7 @@
                     "category": "Biogas/Syngas Generators",
                     "modelName": "ESB-R Bio-Gen12.5",
                     "modelNumber": "ESB-R BG12.5",
-                    "image": "../assets/products/biogas-generators/biogas-genset.jpeg",
+                    "image": "../assets/products/img/ESB-R Biogas Genset (3).jpeg",
                     "description": "We convert branded diesel engine such as Kirloskar, Tata, Mahindra & Ashok Leyland to biogas or syngas engine. We assure high efficiency with 100% output. OVN Bioenergy, Shakti Veera Bioenergy, Achal Associates are few of our renowned customers of biogas genset. To know more about it, click here",
                     "productId": "productId021"
                 },
@@ -814,7 +916,7 @@
                     "category": "Biogas/Syngas Generators",
                     "modelName": "ESB-R Bio-Gen15",
                     "modelNumber": "ESB-R BG15",
-                    "image": "../assets/products/biogas-generators/biogas-genset.jpeg",
+                    "image": "../assets/products/img/ESB-R Biogas Genset (4).jpeg",
                     "description": "We convert branded diesel engine such as Kirloskar, Tata, Mahindra & Ashok Leyland to biogas or syngas engine. We assure high efficiency with 100% output. OVN Bioenergy, Shakti Veera Bioenergy, Achal Associates are few of our renowned customers of biogas genset. To know more about it, click here",
                     "productId": "productId022"
                 },
@@ -823,7 +925,7 @@
                     "category": "Biogas/Syngas Generators",
                     "modelName": "ESB-R Bio-Gen30",
                     "modelNumber": "ESB-R BG30",
-                    "image": "../assets/products/biogas-generators/biogas-genset.jpeg",
+                    "image": "../assets/products/img/ESB-R Biogas Genset (8).jpeg",
                     "description": "We convert branded diesel engine such as Kirloskar, Tata, Mahindra & Ashok Leyland to biogas or syngas engine. We assure high efficiency with 100% output. OVN Bioenergy, Shakti Veera Bioenergy, Achal Associates are few of our renowned customers of biogas genset. To know more about it, click here",
                     "productId": "productId023"
                 },
@@ -832,7 +934,7 @@
                     "category": "Biogas/Syngas Generators",
                     "modelName": "ESB-R Bio-Gen35",
                     "modelNumber": "ESB-R BG35",
-                    "image": "../assets/products/biogas-generators/biogas-genset.jpeg",
+                    "image": "../assets/products/img/ESB-R Biogas Genset.jpeg",
                     "description": "We convert branded diesel engine such as Kirloskar, Tata, Mahindra & Ashok Leyland to biogas or syngas engine. We assure high efficiency with 100% output. OVN Bioenergy, Shakti Veera Bioenergy, Achal Associates are few of our renowned customers of biogas genset. To know more about it, click here",
                     "productId": "productId024"
                 },
@@ -841,7 +943,7 @@
                     "category": "Biogas/Syngas Generators",
                     "modelName": "ESB-R Bio-Gen50",
                     "modelNumber": "ESB-R BG50",
-                    "image": "../assets/products/biogas-generators/biogas-genset.jpeg",
+                    "image": "../assets/products/img/ESB-R Biogas Genset (4).jpeg",
                     "description": "We convert branded diesel engine such as Kirloskar, Tata, Mahindra & Ashok Leyland to biogas or syngas engine. We assure high efficiency with 100% output. OVN Bioenergy, Shakti Veera Bioenergy, Achal Associates are few of our renowned customers of biogas genset. To know more about it, click here",
                     "productId": "productId025"
                 },
@@ -850,7 +952,7 @@
                     "category": "Biogas/Syngas Generators",
                     "modelName": "ESB-R Bio-Gen125",
                     "modelNumber": "ESB-R BG125",
-                    "image": "../assets/products/biogas-generators/biogas-genset.jpeg",
+                    "image": "../assets/products/img/ESB-R Biogas Genset.jpeg",
                     "description": "We convert branded diesel engine such as Kirloskar, Tata, Mahindra & Ashok Leyland to biogas or syngas engine. We assure high efficiency with 100% output. OVN Bioenergy, Shakti Veera Bioenergy, Achal Associates are few of our renowned customers of biogas genset. To know more about it, click here",
                     "productId": "productId026"
                 },
@@ -859,7 +961,7 @@
                     "category": "Smokeless Biomass Stoves/ Bhatti",
                     "modelName": "ESB-R Bio-Nature",
                     "modelNumber": "ESB-R/BN01",
-                    "image": "../assets/products/smokeless-stoves/smokeless-stove.jpeg",
+                    "image": "../assets/products/img/ESB-R Bio-Nature.jpeg",
                     "description": "Our domestic & commercial biomass stoves are highly appreciated by our clients especially by sweet confectioners. We have clients all over the country. Bharat Petroleum Corporation Limited (BPCL), Best Energy, France, Dhodha House, Gobind Industries are few of our biomass stove clients. To know more about it, click here ..",
                     "productId": "productId027"
                 },
@@ -868,7 +970,7 @@
                     "category": "Smokeless Biomass Stoves/ Bhatti",
                     "modelName": "ESB-R Bio-Mini",
                     "modelNumber": "ESB-R/BM01",
-                    "image": "../assets/products/smokeless-stoves/smokeless-stove.jpeg",
+                    "image": "../assets/products/img/ESB-R Bio-Mini4.png",
                     "description": "Our domestic & commercial biomass stoves are highly appreciated by our clients especially by sweet confectioners. We have clients all over the country. Bharat Petroleum Corporation Limited (BPCL), Best Energy, France, Dhodha House, Gobind Industries are few of our biomass stove clients. To know more about it, click here ..",
                     "productId": "productId028"
                 },
@@ -877,7 +979,7 @@
                     "category": "Smokeless Biomass Stoves/ Bhatti",
                     "modelName": "ESB-R Bio-Mini Solar",
                     "modelNumber": "ESB-R/BM01S",
-                    "image": "../assets/products/smokeless-stoves/smokeless-stove.jpeg",
+                    "image": "../assets/products/img/ESB-R Bio-Mini Solar2.jpg",
                     "description": "Our domestic & commercial biomass stoves are highly appreciated by our clients especially by sweet confectioners. We have clients all over the country. Bharat Petroleum Corporation Limited (BPCL), Best Energy, France, Dhodha House, Gobind Industries are few of our biomass stove clients. To know more about it, click here ..",
                     "productId": "productId029"
                 },
@@ -886,7 +988,7 @@
                     "category": "Smokeless Biomass Stoves/ Bhatti",
                     "modelName": "ESB-R Green-Agnika10",
                     "modelNumber": "ESB-R/GA10",
-                    "image": "../assets/products/smokeless-stoves/smokeless-stove.jpeg",
+                    "image": "../assets/products/img/Green Agnika10 (2).jpeg",
                     "description": "Our domestic & commercial biomass stoves are highly appreciated by our clients especially by sweet confectioners. We have clients all over the country. Bharat Petroleum Corporation Limited (BPCL), Best Energy, France, Dhodha House, Gobind Industries are few of our biomass stove clients. To know more about it, click here ..",
                     "productId": "productId030"
                 },
@@ -895,7 +997,7 @@
                     "category": "Smokeless Biomass Stoves/ Bhatti",
                     "modelName": "ESB-R Harit-Agni12",
                     "modelNumber": "ESB-R/HA12",
-                    "image": "../assets/products/smokeless-stoves/smokeless-stove.jpeg",
+                    "image": "../assets/products/img/Harit-Agni12 (6).jpeg",
                     "description": "Our domestic & commercial biomass stoves are highly appreciated by our clients especially by sweet confectioners. We have clients all over the country. Bharat Petroleum Corporation Limited (BPCL), Best Energy, France, Dhodha House, Gobind Industries are few of our biomass stove clients. To know more about it, click here ..",
                     "productId": "productId031"
                 },
@@ -904,7 +1006,7 @@
                     "category": "Smokeless Biomass Stoves/ Bhatti",
                     "modelName": "ESB-R Harit-Agni12b",
                     "modelNumber": "ESB-R/HA12b",
-                    "image": "../assets/products/smokeless-stoves/smokeless-stove.jpeg",
+                    "image": "../assets/products/img/Harit-Agni12B1.png",
                     "description": "Our domestic & commercial biomass stoves are highly appreciated by our clients especially by sweet confectioners. We have clients all over the country. Bharat Petroleum Corporation Limited (BPCL), Best Energy, France, Dhodha House, Gobind Industries are few of our biomass stove clients. To know more about it, click here ..",
                     "productId": "productId032"
                 },
@@ -913,7 +1015,7 @@
                     "category": "Smokeless Biomass Stoves/ Bhatti",
                     "modelName": "ESB-R Green-Magic15",
                     "modelNumber": "ESB-R/GM15",
-                    "image": "../assets/products/smokeless-stoves/smokeless-stove.jpeg",
+                    "image": "../assets/products/img/ESB-R Green-Magic15-1.png",
                     "description": "Our domestic & commercial biomass stoves are highly appreciated by our clients especially by sweet confectioners. We have clients all over the country. Bharat Petroleum Corporation Limited (BPCL), Best Energy, France, Dhodha House, Gobind Industries are few of our biomass stove clients. To know more about it, click here ..",
                     "productId": "productId033"
                 },
@@ -922,7 +1024,7 @@
                     "category": "Smokeless Biomass Stoves/ Bhatti",
                     "modelName": "ESB-R Bio-Virat18",
                     "modelNumber": "ESB-R/BV18",
-                    "image": "../assets/products/smokeless-stoves/smokeless-stove.jpeg",
+                    "image": "../assets/products/img/ESB-R Bio-Virat18.png",
                     "description": "Our domestic & commercial biomass stoves are highly appreciated by our clients especially by sweet confectioners. We have clients all over the country. Bharat Petroleum Corporation Limited (BPCL), Best Energy, France, Dhodha House, Gobind Industries are few of our biomass stove clients. To know more about it, click here ..",
                     "productId": "productId034"
                 },
@@ -931,7 +1033,7 @@
                     "category": "Smokeless Biomass Stoves/ Bhatti",
                     "modelName": "ESB-R Bio-Akash21",
                     "modelNumber": "ESB-R/BA21",
-                    "image": "../assets/products/smokeless-stoves/smokeless-stove.jpeg",
+                    "image": "../assets/products/img/ESB-R Bio-Akash21-1.png",
                     "description": "Our domestic & commercial biomass stoves are highly appreciated by our clients especially by sweet confectioners. We have clients all over the country. Bharat Petroleum Corporation Limited (BPCL), Best Energy, France, Dhodha House, Gobind Industries are few of our biomass stove clients. To know more about it, click here ..",
                     "productId": "productId035"
                 },
@@ -940,7 +1042,7 @@
                     "category": "Smokeless Biomass Stoves/ Bhatti",
                     "modelName": "ESB-R Bio-Prithvi24",
                     "modelNumber": "ESB-R/BP24",
-                    "image": "../assets/products/smokeless-stoves/smokeless-stove.jpeg",
+                    "image": "../assets/products/img/ESB-R Bio-Prithvi24-1.png",
                     "description": "Our domestic & commercial biomass stoves are highly appreciated by our clients especially by sweet confectioners. We have clients all over the country. Bharat Petroleum Corporation Limited (BPCL), Best Energy, France, Dhodha House, Gobind Industries are few of our biomass stove clients. To know more about it, click here ..",
                     "productId": "productId036"
                 },
@@ -949,7 +1051,7 @@
                     "category": "Smokeless Biomass Stoves/ Bhatti",
                     "modelName": "ESB-R Harit-Jumbo27",
                     "modelNumber": "ESB-R/HJ27",
-                    "image": "../assets/products/smokeless-stoves/smokeless-stove.jpeg",
+                    "image": "../assets/products/img/ESB-R Harit-Jumbo27-2.png",
                     "description": "Our domestic & commercial biomass stoves are highly appreciated by our clients especially by sweet confectioners. We have clients all over the country. Bharat Petroleum Corporation Limited (BPCL), Best Energy, France, Dhodha House, Gobind Industries are few of our biomass stove clients. To know more about it, click here ..",
                     "productId": "productId037"
                 },
@@ -958,7 +1060,7 @@
                     "category": "Smokeless Biomass Stoves/ Bhatti",
                     "modelName": "ESB-R Jumbo-Shakti36",
                     "modelNumber": "ESB-R/JS36",
-                    "image": "../assets/products/smokeless-stoves/smokeless-stove.jpeg",
+                    "image": "../assets/products/img/ESB-R Jumbo-Shakti36.png",
                     "description": "Our domestic & commercial biomass stoves are highly appreciated by our clients especially by sweet confectioners. We have clients all over the country. Bharat Petroleum Corporation Limited (BPCL), Best Energy, France, Dhodha House, Gobind Industries are few of our biomass stove clients. To know more about it, click here ..",
                     "productId": "productId038"
                 },
@@ -967,7 +1069,7 @@
                     "category": "Auto Bio-Mawa Machine",
                     "modelName": "ESB-R Auto Bio-Mawa Machine",
                     "modelNumber": "ESB-R/MM01",
-                    "image": "../assets/products/mawa-machines/mawa-machine.jpeg",
+                    "image": "../assets/products/img/ESB-R Mawa Machine.png",
                     "description": "Automated solution for mawa production, enhancing efficiency and quality in dairy processing.",
                     "productId": "productId039"
                 },
@@ -976,7 +1078,7 @@
                     "category": "Biomass Torrefaction / Bio-Char Plant",
                     "modelName": "Eco-Green Biochar05",
                     "modelNumber": "ESB-R/EGC/05",
-                    "image": "../assets/products/bio-char-plants/bio-char-plant.jpeg",
+                    "image": "../assets/products/img/Biomass Torrefaction Plant.jpeg",
                     "description": "Entry-level biochar producer for small-scale agricultural and environmental applications.",
                     "productId": "productId040"
                 },
@@ -985,7 +1087,7 @@
                     "category": "Biomass Torrefaction / Bio-Char Plant",
                     "modelName": "Eco-Green Biochar10",
                     "modelNumber": "ESB-R/EGC/10",
-                    "image": "../assets/products/bio-char-plants/bio-char-plant.jpeg",
+                    "image": "../assets/products/img/Biomass Torrefaction Plant2.jpeg",
                     "description": "Perfect for moderate-scale operations looking to improve soil health and reduce carbon footprint.",
                     "productId": "productId041"
                 },
@@ -994,7 +1096,7 @@
                     "category": "Biomass Torrefaction / Bio-Char Plant",
                     "modelName": "Eco-Green Biochar50",
                     "modelNumber": "ESB-R/EGC/50",
-                    "image": "../assets/products/bio-char-plants/bio-char-plant.jpeg",
+                    "image": "../assets/products/img/Biomass Torrefaction Plant13.jpeg",
                     "description": "Advanced system for significant biochar production, suitable for large farms and environmental projects.",
                     "productId": "productId042"
                 },
@@ -1003,7 +1105,7 @@
                     "category": "Biomass Torrefaction / Bio-Char Plant",
                     "modelName": "Eco-Green Biochar100",
                     "modelNumber": "ESB-R/EGC/100",
-                    "image": "../assets/products/bio-char-plants/bio-char-plant.jpeg",
+                    "image": "../assets/products/img/Biomass Torrefaction Plant22.jpeg",
                     "description": "High-capacity biochar production unit for industrial use, promoting sustainability and waste reduction.",
                     "productId": "productId043"
                 },
@@ -1012,7 +1114,7 @@
                     "category": "Biomass Torrefaction / Bio-Char Plant",
                     "modelName": "Eco-Green Biochar200",
                     "modelNumber": "ESB-R/EGC/200",
-                    "image": "../assets/products/bio-char-plants/bio-char-plant.jpeg",
+                    "image": "../assets/products/img/Biomass Torrefaction Plant24.jpeg",
                     "description": "Industrial-grade biochar solution for comprehensive environmental management and soil enhancement.",
                     "productId": "productId044"
                 },
@@ -1021,7 +1123,7 @@
                     "category": "Biomass Torrefaction / Bio-Char Plant",
                     "modelName": "Eco-Green Biochar500",
                     "modelNumber": "ESB-R/EGC/500",
-                    "image": "../assets/products/bio-char-plants/bio-char-plant.jpeg",
+                    "image": "../assets/products/img/Biomass Torrefaction Plant13.jpeg",
                     "description": "Top-tier, large-scale biochar production facility for maximum output and environmental impact reduction.",
                     "productId": "productId045"
                 },
@@ -1039,7 +1141,7 @@
                     "category": "Solid Liquid Separator (Dewatering Machine)",
                     "modelName": "ESB-R SLS",
                     "modelNumber": "ESB-R/SLS05",
-                    "image": "../assets/products/dewatering-machines/dewatering-machine.jpeg",
+                    "image": "../assets/products/img/Used Oil Distillation Machine1.png",
                     "description": "Efficient separation of solid and liquid components in agricultural and industrial waste.",
                     "productId": "productId047"
                 },
@@ -1048,7 +1150,7 @@
                     "category": "Used Oil (Black Engine Oil) Distillation Machine",
                     "modelName": "ESB-R DM200",
                     "modelNumber": "ESB-R/DM/200",
-                    "image": "../assets/products/oil-distillation/oil-distillation-machine.jpeg",
+                    "image": "../assets/products/img/Used Oil Distillation Machine2.png",
                     "description": "Waste engine oil is a high pollutant material that requires responsible management. We have designed a used oil distillation machine which is very easy to use & maintain. The process to re-refine used motor oil is easier than refining crude oil. To know more about it, click here ..",
                     "productId": "productId048"
                 },
@@ -1057,7 +1159,7 @@
                     "category": "Used Oil (Black Engine Oil) Distillation Machine",
                     "modelName": "ESB-R DM500",
                     "modelNumber": "ESB-R/DM/500",
-                    "image": "../assets/products/oil-distillation/oil-distillation-machine.jpeg",
+                    "image": "../assets/products/img/Used Oil Distillation Machine6.png",
                     "description": "Waste engine oil is a high pollutant material that requires responsible management. We have designed a used oil distillation machine which is very easy to use & maintain. The process to re-refine used motor oil is easier than refining crude oil. To know more about it, click here ..",
                     "productId": "productId049"
                 },
@@ -1066,7 +1168,7 @@
                     "category": "Used Oil (Black Engine Oil) Distillation Machine",
                     "modelName": "ESB-R DM1000",
                     "modelNumber": "ESB-R/DM/1000",
-                    "image": "../assets/products/oil-distillation/oil-distillation-machine.jpeg",
+                    "image": "../assets/products/img/Used Oil Distillation Machine1.png",
                     "description": "Waste engine oil is a high pollutant material that requires responsible management. We have designed a used oil distillation machine which is very easy to use & maintain. The process to re-refine used motor oil is easier than refining crude oil. To know more about it, click here ..",
                     "productId": "productId050"
                 },
@@ -1164,7 +1266,6 @@
                     }
                 });
             }
-
             function updateRelatedProducts(products, currentProduct) {
 
                 const relatedProducts = products.filter(product => product.category === currentProduct.category && product['productId'] !== currentProduct['productId']);
@@ -1189,18 +1290,67 @@
                 // Update the category name in the section header
                 document.getElementById('category-name').textContent = currentProduct.category;
             }
-
             function parseUrlParams() {
                 const params = new URLSearchParams(window.location.search);
                 return params.get('product-id'); // Extract the product ID from the URL
             }
-
             const productId = parseUrlParams();
             if (productId) {
                 getProductData(productId);
             }
 
         });
+    </script>
+    <script>
+        async function loadProductPage() {
+            // Fetch template
+            const templateSource = document.getElementById('product-template').innerHTML;
+            const template = Handlebars.compile(templateSource);
+            let data = {
+                "title": "2 kVA Biomass Gasifier – ESB-R02",
+                "subtitle": "Sustainable & Efficient Power Generation",
+                "overview": "The ESB-R02 2 kVA Biomass Gasifier is a compact, efficient, and eco-friendly energy solution designed for small-scale power generation and research applications. Utilizing biomass gasification technology, this system converts agricultural and forest waste into clean producer gas, making it an excellent alternative to conventional fossil fuel-based generators.",
+                "features": [
+                    { "icon": "ri-leaf-line", "color": "green-500", "text": "Eco-Friendly & Sustainable – Converts biomass waste into clean energy" },
+                    { "icon": "ri-handbag-line", "color": "blue-500", "text": "Compact & Portable – Ideal for research institutes and small-scale users" },
+                    { "icon": "ri-filter-fill", "color": "purple-500", "text": "Dry Filtration System – No water-based purification required" },
+                    { "icon": "ri-fire-fill", "color": "red-500", "text": "Multi-Fuel Compatibility – Runs on various agricultural and forest residues" },
+                    { "icon": "ri-flashlight-fill", "color": "yellow-500", "text": "Automatic Initial Firing – Ensures easy and efficient startup" },
+                    { "icon": "ri-tools-line", "color": "gray-500", "text": "Reliable & Low Maintenance – Designed for continuous operation with minimal upkeep" }
+                ],
+                "technology": [
+                    { "icon": "ri-sun-line", "color": "yellow-500", "text": "Biomass Dryer Integration – Utilizes exhaust heat from the silencer to dry biomass, improving efficiency" },
+                    { "icon": "ri-haze-line", "color": "blue-500", "text": "Patented Filtration System – Extracts moisture from biomass and reuses it to clean the gas, increasing performance and extending filter cleaning intervals" }
+                ],
+                "specifications": [
+                    { "icon": "ri-bar-chart-box-line", "color": "green-500", "label": "Model", "value": "ESB-R02" },
+                    { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Power Output", "value": "2 kVA" },
+                    { "icon": "ri-plant-fill", "color": "green-500", "label": "Fuel Type", "value": "Agricultural & forest waste residues" },
+                    { "icon": "ri-fire-fill", "color": "red-500", "label": "Gas Production", "value": "On-demand producer gas generation" },
+                    { "icon": "ri-filter-fill", "color": "purple-500", "label": "Filtration System", "value": "Dry filtration technology (No costly water purification required)" },
+                    { "icon": "ri-building-2-line", "color": "blue-500", "label": "Application", "value": "Research institutes, rural electrification, and small-scale industrial use" }
+                ],
+                "applications": [
+                    { "icon": "ri-battery-2-charge-line", "color": "red-500", "text": "Off-grid power supply" },
+                    { "icon": "ri-lightbulb-flash-line", "color": "yellow-500", "text": "Renewable energy research" },
+                    { "icon": "ri-plug-line", "color": "blue-500", "text": "Backup power for small-scale operations" },
+                    { "icon": "ri-home-smile-line", "color": "green-500", "text": "Agricultural and rural electrification" }
+                ],
+                "benefits": [
+                    { "icon": "ri-earth-fill", "color": "green-500", "text": "Environmentally Friendly – Reduces carbon footprint and promotes green energy" },
+                    { "icon": "ri-money-dollar-circle-line", "color": "green-500", "text": "Cost-Effective – Saves fuel costs compared to diesel generators" },
+                    { "icon": "ri-settings-2-line", "color": "gray-500", "text": "Low Maintenance – Simple operation with minimal servicing required" },
+                    { "icon": "ri-award-fill", "color": "yellow-500", "text": "Proven Technology – Developed by Enersol Biopower Pvt Ltd, a leader in biomass energy solutions" }
+                ]
+            }
+
+
+            // Render template with data
+            document.getElementById('product-container').innerHTML = template(data);
+        }
+
+        window.onload = loadProductPage;
+
     </script>
 
 </body>

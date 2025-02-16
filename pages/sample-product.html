@@ -232,70 +232,12 @@
     </div>
     <div class="container mx-auto px-6 py-12">
         <!-- Product Detail Section -->
-        <section class="text-gray-600 body-font">
-            <div class="container px-5 py-6 mx-auto">
-                <div class=" flex flex-wrap">
-                    <!-- Left: Product Image Gallery -->
-                    <div class="lg:w-1/2 w-full lg:h-auto object-cover object-center rounded mb-6 md:lg:sticky  lg:sticky top-0 self-start" style="top:100px">
-                        <!-- Main Product Image -->
-                        <img id="main-product-image"
-                            src="../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.16.48s.jpeg"
-                            alt="Main Product Image" style="height: 100%;max-height: 75vh;object-fit: contain;" class="w-full h-80 object-cover rounded-lg">
-                        <!-- Thumbnail Images -->
-                        <!-- <div class="overflow-x-auto flex justify-center space-x-4 mt-4">
-                            <img src="../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.16.54.jpeg"
-                                alt="Product Image 1" class="w-24 h-24 object-cover rounded-lg cursor-pointer"
-                                onclick="changeImage('../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.16.54.jpeg')">
-                            <img src="../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.17.01q.jpeg"
-                                alt="Product Image 2" class="w-24 h-24 object-cover rounded-lg cursor-pointer"
-                                onclick="changeImage('../assets/products/biomass-gasifier/WhatsApp Image 2024-04-29 at 15.17.01q.jpeg')">
-                            <img src="../assets/products/biomass-gasifier/xx.jpeg" alt="Product Image 3"
-                                class="w-24 h-24 object-cover rounded-lg cursor-pointer"
-                                onclick="changeImage('../assets/products/biomass-gasifier/xx.jpeg')">
+        <section id="product-container" class="text-gray-600 body-font">
 
-                            <img src="../assets/products/biomass-gasifier/xx.jpeg" alt="Product Image 3"
-                                class="w-24 h-24 object-cover rounded-lg cursor-pointer"
-                                onclick="changeImage('../assets/products/biomass-gasifier/xx.jpeg')">
-                        </div> -->
-                    </div>
-                    <!-- Right: Product Information -->
-                    <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                        <h2 class="text-sm title-font text-gray-500 tracking-widest">ENERSOL BIOPOWER</h2>
-                        <h1 id="product-title" class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-                        </h1>
-                        <p id="product-description" class="mb-8 leading-relaxed"></p>
-                        <div class="flex flex-col gap-4">
-                            <!-- First Row: Contact Buttons -->
-                            <div class="flex gap-4">
-                                <a href="https://api.whatsapp.com/send?phone=8239556677&text=I'm%20interested%20in%20your%20products"
-                                    class="inline-flex flex-grow justify-center items-center text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
-                                    style="gap: 5px;">
-                                    <i class="ri-whatsapp-line"></i> Contact on WhatsApp
-                                </a>
-                                <a href="tel:+919414535665"
-                                    class="inline-flex flex-grow items-center justify-center text-center text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"
-                                    style="gap: 5px;">
-                                    <i class="ri-phone-line"></i> Call Us
-                                </a>
-                            </div>
-                            <!-- Second Row: Download Catalogue Button -->
-                            
-                                <a class="inline-flex items-center justify-center text-white bg-primary-dark border-0 py-2 px-6 focus:outline-none hover:bg-primary-light rounded text-lg" href="https://drive.google.com/uc?export=download&id=1SEaOz-6eJiArf4fvznWdcDMN7rxfYVWS">
-                                    Download Product Catalogue
-                                </a>
-                                
-                            
-                            <div id="product-container"></div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
         </section>
 
-      
-        
+
+
         <!-- Available Range of Biomass Gasifiers -->
         <section class="py-12 bg-gray-100">
             <div class="container px-5 mx-auto">
@@ -308,44 +250,7 @@
         </section>
 
         <section class="mt-12">
-            <!-- Specifications -->
-            <div class="bg-white p-6 rounded-lg shadow-lg mb-8">
-                <h2 class="text-2xl font-semibold text-primary mb-6">Technical Specifications</h2>
-                <table class="min-w-full bg-white border border-gray-300 rounded-lg">
-                    <thead>
-                        <tr class="bg-primary text-white">
-                            <th class="px-4 py-2 text-left">Specification</th>
-                            <th class="px-4 py-2 text-left">Details</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="px-4 py-2 font-semibold">Model Name</td>
-                            <td class="px-4 py-2" id="product-model-name">Model Name Here</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-2 font-semibold">Model Number</td>
-                            <td class="px-4 py-2" id="product-model-number">Model Number Here</td>
-                        </tr>
-                        <!-- <tr>
-                            <td class="px-4 py-2 font-semibold">Power Output</td>
-                            <td class="px-4 py-2">100 kW</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-2 font-semibold">Dimensions</td>
-                            <td class="px-4 py-2">2.5m x 2.0m x 3.0m</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-2 font-semibold">Fuel Type</td>
-                            <td class="px-4 py-2">Biomass (agricultural residue)</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-2 font-semibold">Operational Temperature</td>
-                            <td class="px-4 py-2">500°C - 700°C</td>
-                        </tr> -->
-                    </tbody>
-                </table>
-            </div>
+
 
 
             <!-- Reviews -->
@@ -641,71 +546,114 @@
 
     </script>
     <script id="product-template" type="text/x-handlebars-template">
-            
-                <div class="bg-white rounded-lg" >
-                    
-                    <p class="text-xl text-green-600">{{subtitle}}</p>
-                    <h3 class="text-lg font-semibold mt-4">Key Features</h3>
-                    <ul class="list-disc ml-8">
-                        {{#each features}}
-                            <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
+        <div class="container px-5 py-6 mx-auto">
+            <div class="flex flex-wrap">
+                <!-- Left: Product Image Gallery -->
+                <div class="lg:w-1/2 w-full lg:h-auto object-cover object-center rounded mb-6 md:lg:sticky lg:sticky top-0 self-start"
+                    style="top:100px">
+                    <!-- Main Product Image -->
+                    <img id="main-product-image" src="{{image}}" alt="Main Product Image"
+                        style="height: 100%;max-height: 75vh;object-fit: contain;" class="w-full h-80 object-cover rounded-lg">
+                    <!-- Thumbnail Images -->
+                    <div class="overflow-x-auto flex justify-center space-x-4 mt-4">
+                        {{#each thumbnails}}
+                        <img src="{{this.url}}" alt="{{this.alt}}" class="w-24 h-24 object-cover rounded-lg cursor-pointer"
+                            onclick="changeImage('{{this.url}}')">
                         {{/each}}
-                    </ul>
-            
-                    <h3 class="text-lg font-semibold mt-4">Advanced Technology</h3>
-                    <ul class="list-disc ml-8">
-                        {{#each technology}}
-                            <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
-                        {{/each}}
-                    </ul>
-            
-                    <h3 class="text-lg font-semibold mt-5">Technical Specifications</h3>
-<table class="min-w-full table-auto">
-    <thead>
-        <tr class="bg-gray-100">
-            <th class="px-4 py-2 text-left">Specification</th>
-            <th class="px-4 py-2 text-left">Detail</th>
-        </tr>
-    </thead>
-    <tbody>
-        {{#each specifications}}
-        <tr>
-            <td class="border px-4 py-2">{{label}}</td>
-            <td class="border px-4 py-2 flex items-center">
-                <i class="{{icon}} text-{{color}} mr-2"></i> {{value}}
-            </td>
-        </tr>
-        {{/each}}
-    </tbody>
-</table>
-
-            
-                    <h3 class="text-lg font-semibold mt-4">Applications</h3>
-                    <ul class="list-disc ml-8">
-                        {{#each applications}}
-                            <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
-                        {{/each}}
-                    </ul>
-            
-                    <h3 class="text-lg font-semibold mt-4">Why Choose {{title}}?</h3>
-                    <ul class="list-disc ml-8">
-                        {{#each benefits}}
-                            <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
-                        {{/each}}
-                    </ul>
+                    </div>
                 </div>
-            
-            
-        </script>
+                <!-- Right: Product Information -->
+                <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                    <h2 class="text-sm title-font text-gray-500 tracking-widest">ENERSOL BIOPOWER</h2>
+                    <h1 id="product-title" class="title-font sm:text-4xl text-3xl font-medium text-gray-900">
+                        {{name}}
+                    </h1>
+                    <p class="text-xl text-green-600 mb-4">{{subtitle}}</p>
+                    <p id="product-description" class="mb-8 leading-relaxed">
+                        {{description}}
+                    </p>
+                    <div class="flex flex-col gap-4">
+                        <!-- First Row: Contact Buttons -->
+                        <div class="flex gap-4">
+                            <a href="https://api.whatsapp.com/send?phone=8239556677&text=I'm%20interested%20in%20your%20products"
+                                class="inline-flex flex-grow justify-center items-center text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
+                                style="gap: 5px;">
+                                <i class="ri-whatsapp-line"></i> Contact on WhatsApp
+                            </a>
+                            <a href="tel:+919414535665"
+                                class="inline-flex flex-grow items-center justify-center text-center text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"
+                                style="gap: 5px;">
+                                <i class="ri-phone-line"></i> Call Us
+                            </a>
+                        </div>
+                        <!-- Second Row: Download Catalogue Button -->
+                        <a class="inline-flex items-center justify-center text-white bg-primary-dark border-0 py-2 px-6 focus:outline-none hover:bg-primary-light rounded text-lg"
+                            href="{{catalogueLink}}">
+                            Download Product Catalogue
+                        </a>
+                        <div class="bg-white rounded-lg">
+        
+                            
+                            <h3 class="text-lg font-semibold mt-4">Key Features</h3>
+                            <ul class="list-disc ml-8">
+                                {{#each features}}
+                                <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
+                                {{/each}}
+                            </ul>
+                            <h3 class="text-lg font-semibold mt-4">Advanced Technology</h3>
+                            <ul class="list-disc ml-8">
+                                {{#each technology}}
+                                <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
+                                {{/each}}
+                            </ul>
+                            <h3 class="text-lg font-semibold mt-5">Technical Specifications</h3>
+                            <table class="min-w-full table-auto">
+                                <thead>
+                                    <tr class="bg-gray-100">
+                                        <th class="px-4 py-2 text-left">Specification</th>
+                                        <th class="px-4 py-2 text-left">Detail</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {{#each specifications}}
+                                    <tr>
+                                        <td class="border px-4 py-2">{{label}}</td>
+                                        <td class="border px-4 py-2 flex items-center">
+                                            <i class="{{icon}} text-{{color}} mr-2"></i> {{value}}
+                                        </td>
+                                    </tr>
+                                    {{/each}}
+                                </tbody>
+                            </table>
+                            <h3 class="text-lg font-semibold mt-4">Applications</h3>
+                            <ul class="list-disc ml-8">
+                                {{#each applications}}
+                                <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
+                                {{/each}}
+                            </ul>
+                            <h3 class="text-lg font-semibold mt-4">Why Choose {{title}}?</h3>
+                            <ul class="list-disc ml-8">
+                                {{#each benefits}}
+                                <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const products = [
+
                 {
-                    "name": "2kW Biomass Gasifier",
+                    "name": "2kVA Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-Mini02",
                     "modelNumber": "ESB-R02",
-                    "image": "../assets/products/img/2KVA Biomass Gasifier (21).jpeg",
+                    "catalogueLink": "https://drive.google.com/uc?export=download&id=1SEaOz-6eJiArf4fvznWdcDMN7rxfYVWS",
+                    "image": "../assets/products/bio-gasifier-power/2KVA-Biomass-Gasifier.jpeg",
                     "subtitle": "Sustainable & Efficient Power Generation",
                     "description": "The ESB-R02 2 kVA Biomass Gasifier is a compact, efficient, and eco-friendly energy solution designed for small-scale power generation and research applications. Utilizing biomass gasification technology, this system converts agricultural and forest waste into clean producer gas, making it an excellent alternative to conventional fossil fuel-based generators.",
                     "productId": "productId001",
@@ -747,82 +695,441 @@
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-04",
                     "modelNumber": "ESB-R04",
-                    "image": "../assets/products/img/4kw biomass gasifier.png",
-                    "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
-                    "productId": "productId002"
-                },
+                    "catalogueLink": "https://drive.google.com/uc?export=download&id=1Zqh0aWG81Arns0rT2vdaGhNkBb-Q62Q_",
+                    "image": "../assets/products/bio-gasifier-power/4kw-biomass-gasifier.jpeg",
+                    "subtitle": "Transforming Biomass into Reliable Energy",
+                    "description": "The ESB-R04 4 kW (5 kVA) Biomass Gasifier is an advanced, eco-friendly, and cost-effective power solution designed for research institutes, rural electrification, and small-scale energy needs. This gasifier operates on biomass gasification technology, converting agricultural and forest waste into clean producer gas for efficient power generation.",
+                    "productId": "productId002",
+                    "features": [
+                        { "icon": "ri-leaf-line", "color": "green-500", "text": "Sustainable & Cost-Effective – Uses abundant agro-waste for power generation" },
+                        { "icon": "ri-handbag-line", "color": "blue-500", "text": "Compact & Portable – Easy to transport and install in remote locations" },
+                        { "icon": "ri-sound-module-line", "color": "blue-500", "text": "Soundproof Design – Ensures quiet operation, ideal for residential and rural applications" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "text": "Automatic Initial Firing – Reduces manual effort with advanced atomization technology" },
+                        { "icon": "ri-filter-fill", "color": "purple-500", "text": "Dry Filtration System – No need for water-based purification, minimizing maintenance costs" },
+                        { "icon": "ri-settings-2-line", "color": "gray-500", "text": "User-Friendly Controls – Simple and intuitive operation for all users" }
+                    ],
+                    "technology": [
+                        { "icon": "ri-fire-fill", "color": "red-500", "text": "Multi-Fuel Compatibility – Works with various agricultural and forest residues" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "text": "Efficient Gas Production – On-demand producer gas generation with minimal tar content" },
+                        { "icon": "ri-tools-line", "color": "gray-500", "text": "Low Maintenance & Durable – Rugged construction for long-term reliability" },
+                        { "icon": "ri-sun-line", "color": "yellow-500", "text": "Smart Biomass Utilization – Optimized fuel efficiency for maximum power output" }
+                    ],
+                    "specifications": [
+                        { "icon": "ri-bar-chart-box-line", "color": "green-500", "label": "Model", "value": "ESB-R04" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Power Output", "value": "4 kW (5 kVA)" },
+                        { "icon": "ri-plant-fill", "color": "green-500", "label": "Fuel Type", "value": "Agricultural & forest waste residues" },
+                        { "icon": "ri-fire-fill", "color": "red-500", "label": "Gas Production", "value": "12 NM³/hr" },
+                        { "icon": "ri-filter-fill", "color": "purple-500", "label": "Filtration System", "value": "Dry filtration technology (No costly water purification required)" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Dimensions", "value": "Gasifier: L10 x W7 x H7 ft, Genset: L6 x W3.5 x H6 ft" }
+                    ],
+                    "applications": [
+                        { "icon": "ri-battery-2-charge-line", "color": "red-500", "text": "Rural electrification & off-grid power supply" },
+                        { "icon": "ri-lightbulb-flash-line", "color": "yellow-500", "text": "Renewable energy research & development" },
+                        { "icon": "ri-plug-line", "color": "blue-500", "text": "Industrial & agricultural backup power" },
+                        { "icon": "ri-home-smile-line", "color": "green-500", "text": "Cost-effective alternative to diesel generators" }
+                    ],
+                    "benefits": [
+                        { "icon": "ri-earth-fill", "color": "green-500", "text": "Eco-Friendly Energy Solution – Reduces carbon footprint and promotes green energy" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "text": "Highly Efficient & Affordable – Converts waste into energy at a lower cost than conventional generators" },
+                        { "icon": "ri-settings-2-line", "color": "gray-500", "text": "Low Maintenance & Hassle-Free Operation – Easy to use with minimal servicing required" },
+                        { "icon": "ri-award-fill", "color": "yellow-500", "text": "Proven & Trusted Technology – Developed by Enersol Biopower Pvt Ltd, a pioneer in biomass energy" }
+                    ]
+                }
+                ,
                 {
                     "name": "5kW Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-05",
                     "modelNumber": "ESB-R05",
-                    "image": "../assets/products/img/5KVA(4KW) Biomass Gasifier Set)5.png",
-                    "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
-                    "productId": "productId003"
-                },
-                {
+                    "catalogueLink": "https://drive.google.com/uc?export=download&id=[YourGoogleDriveFileID]",
+                    "image": "../assets/products/bio-gasifier-power/5kw-Biomass-Gasifier.png",
+                    "subtitle": "Transform Your Energy, Transform Your World!",
+                    "description": "The ESB-R05 Biomass Gasifier is a compact, high-efficiency renewable energy solution designed for small-scale electricity needs. Whether for research institutes, rural communities, or standalone power generation, this gasifier offers a cost-effective and eco-friendly alternative by utilizing abundant agricultural and forest waste as fuel. Built with advanced technology, it ensures minimal tar production and hassle-free operation.",
+
+                    "productId": "productId003",
+                    "features": [
+                        { "icon": "ri-handbag-line", "color": "blue-500", "text": "Portable & Compact Design – Easy to transport and install anywhere" },
+                        { "icon": "ri-sound-module-line", "color": "blue-500", "text": "Soundproof Operation – Quiet performance, suitable for residential and rural areas" },
+                        { "icon": "ri-leaf-line", "color": "green-500", "text": "Sustainable Fuel Source – Runs on agro-waste, reducing dependency on fossil fuels" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "text": "Automatic Initial Firing – Equipped with atomization technology for easy ignition" },
+                        { "icon": "ri-filter-fill", "color": "purple-500", "text": "Dry Filtration System – Eliminates the need for water-based purification" },
+                        { "icon": "ri-settings-2-line", "color": "gray-500", "text": "User-Friendly Controls – Simple operation, even for unskilled users" },
+                        { "icon": "ri-tools-line", "color": "gray-500", "text": "Rugged & Reliable Build – Designed for durability and long-term use" }
+                    ],
+                    "technology": [
+                        { "icon": "ri-fire-fill", "color": "red-500", "text": "Advanced Combustion – Efficient gas production with minimal emissions" }
+                    ],
+                    "specifications": [
+                        { "icon": "ri-bar-chart-box-line", "color": "green-500", "label": "Model", "value": "ESB-R BIO-05" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Power Output", "value": "5kW (7.5 kVA)" },
+                        { "icon": "ri-plant-fill", "color": "green-500", "label": "Fuel Type", "value": "Agricultural & forest waste residues" },
+                        { "icon": "ri-fire-fill", "color": "red-500", "label": "Gas Production", "value": "15m³/hr" },
+                        { "icon": "ri-battery-2-charge-line", "color": "red-500", "label": "Auxiliary Power Requirement", "value": "2.5 HP" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Dimensions", "value": "Gasifier: L10 x W7 x H7 ft, Genset: L6 x W3.5 x H6 ft" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Weight", "value": "1.8 - 2 Tons" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Ignition Type", "value": "Spark Ignition" }
+                    ],
+                    "applications": [
+                        { "icon": "ri-battery-2-charge-line", "color": "red-500", "text": "Rural electrification" },
+                        { "icon": "ri-lightbulb-flash-line", "color": "yellow-500", "text": "Small-scale industries" },
+                        { "icon": "ri-plug-line", "color": "blue-500", "text": "Research & development institutes" },
+                        { "icon": "ri-home-smile-line", "color": "green-500", "text": "Backup power solutions" }
+                    ],
+                    "benefits": [
+                        { "icon": "ri-earth-fill", "color": "green-500", "text": "Eco-Friendly Energy Solution – Reduces carbon footprint and promotes green energy" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "text": "Highly Efficient & Affordable – Converts waste into energy at a lower cost than conventional generators" },
+                        { "icon": "ri-settings-2-line", "color": "gray-500", "text": "Low Maintenance & Hassle-Free Operation – Easy to use with minimal servicing required" },
+                        { "icon": "ri-award-fill", "color": "yellow-500", "text": "Proven & Trusted Technology – Developed by Enersol Biopower Pvt Ltd, a pioneer in biomass energy" }
+                    ]
+                }
+                , {
                     "name": "8kW Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-08",
                     "modelNumber": "ESB-R08",
-                    "image": "../assets/products/img/8KW Biomass Gasifier.JPG",
-                    "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
-                    "productId": "productId004"
-                },
+                    "catalogueLink": "https://drive.google.com/uc?export=download&id=[YourGoogleDriveFileID]",
+                    "image": "../assets/products/bio-gasifier-power/8kw-Biomass-Gasifier4.png",
+                    "subtitle": "Efficient. Sustainable. Reliable – Powering a Greener Future!",
+                    "description": "The ESB-R08 Biomass Gasifier is an ultra-compact, portable, and soundproof gasifier system that efficiently converts biomass waste into clean energy. Designed for rural electrification, irrigation pumps, and small-scale industries, it offers a low-maintenance and eco-friendly alternative to fossil fuels. The dry filtration system eliminates the need for water-based purification, making it a cost-effective and hassle-free solution.",
+                    "productId": "productId004",
+                    "features": [
+                        { "icon": "ri-handbag-line", "color": "blue-500", "text": "India’s Smallest & Most Portable Biomass Gasifier – Easy to transport and install anywhere" },
+                        { "icon": "ri-sound-module-line", "color": "blue-500", "text": "Soundproof & Silent Operation – Suitable for rural and urban applications" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "text": "Automatic Initial Firing – No manual startup effort required" },
+                        { "icon": "ri-filter-fill", "color": "purple-500", "text": "Dry Filtration System – No water needed, reducing operational and maintenance costs" },
+                        { "icon": "ri-leaf-line", "color": "green-500", "text": "High Fuel Flexibility – Works with agricultural residues, firewood, bamboo, biomass briquettes, and pellets" },
+                        { "icon": "ri-earth-fill", "color": "green-500", "text": "Eco-Friendly & Cost-Effective – Reduces dependence on fossil fuels and LPG" },
+                        { "icon": "ri-tools-line", "color": "gray-500", "text": "Reliable & Durable – Built to last in challenging environments" }
+                    ],
+                    "technology": [],
+                    "specifications": [
+                        { "icon": "ri-bar-chart-box-line", "color": "green-500", "label": "Model Name", "value": "ESB-R BIO-08" },
+                        { "icon": "ri-bar-chart-box-line", "color": "green-500", "label": "Model No.", "value": "ESB-R08" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Power Output", "value": "8kW (10kVA)" },
+                        { "icon": "ri-fire-fill", "color": "red-500", "label": "Producer Gas Consumption", "value": "24NM³/hr" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Ignition Type", "value": "Spark Ignition" },
+                        { "icon": "ri-battery-2-charge-line", "color": "red-500", "label": "Auxiliary Power Requirement", "value": "2.5 HP" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Weight", "value": "1.8 - 2 Ton" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Dimensions (Gasifier)", "value": "L10 x W7 x H7 ft" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Dimensions (Genset)", "value": "L6 x W3.5 x H6 ft" }
+                    ],
+                    "applications": [
+                        { "icon": "ri-battery-2-charge-line", "color": "red-500", "text": "Rural & Urban Electrification – Ideal for off-grid power solutions" },
+                        { "icon": "ri-plug-line", "color": "blue-500", "text": "Agricultural Irrigation Pumps – Efficiently powers farm irrigation systems" },
+                        { "icon": "ri-building-2-line", "color": "blue-500", "text": "Small-Scale Manufacturing Units – Provides cost-effective energy for industries" },
+                        { "icon": "ri-lightbulb-flash-line", "color": "yellow-500", "text": "Research & Development Institutes – Used for scientific and renewable energy projects" },
+                        { "icon": "ri-home-smile-line", "color": "green-500", "text": "Backup Power Generation – Reliable power source for emergencies and remote locations" }
+                    ],
+                    "benefits": [
+                        { "icon": "ri-earth-fill", "color": "green-500", "text": "Sustainable & Renewable – Uses readily available biomass, making it a carbon-neutral energy source" },
+                        { "icon": "ri-award-fill", "color": "yellow-500", "text": "Compact & Rugged Design – Works in extreme environments with minimal operational issues" }
+                    ],
+                    "fuelCompatibility": [
+                        { "text": "Woody Biomass – Firewood, bamboo, wood chips" },
+                        { "text": "Agricultural Waste – Crop residues, forestry waste" },
+                        { "text": "Biomass Pellets & Briquettes – Compressed agro-waste for efficient combustion" },
+                        { "text": "Energy Crops & Agro-Industrial Waste" }
+                    ],
+                    "fuelRequirements": [
+                        { "label": "Net Calorific Value", "value": "Minimum 3,600 Kcal/kg" },
+                        { "label": "Bulk Density", "value": "Above 200 kg/m³" },
+                        { "label": "Moisture Content", "value": "Below 20%" },
+                        { "label": "Ash Content", "value": "Less than 5%" }
+                    ]
+                }
+                ,
                 {
                     "name": "10kW Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-10",
                     "modelNumber": "ESB-R10",
-                    "image": "../assets/products/img/10KVA Biomass Gasifier.jpeg",
-                    "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
-                    "productId": "productId005"
-                },
+                    "catalogueLink": "https://drive.google.com/uc?export=download&id=[YourGoogleDriveFileID]",
+                    "image": "../assets/products/bio-gasifier-power/10kw-Biomass-Gasifier1.png",
+                    "subtitle": "Turning Waste into Watts – From Field to Fuel",
+                    "description": "The ESB-R10 Biomass Gasifier by Enersol Biopower Pvt. Ltd. is a cutting-edge, small-scale renewable energy solution designed to convert agricultural and forestry waste into clean, efficient energy. With patented technology and a rugged, compact design, it provides a sustainable and cost-effective alternative to conventional energy sources, making it ideal for villages, research institutions, and small-scale industries.",
+                    "productId": "productId005",
+                    "features": [
+                        { "icon": "ri-handbag-line", "color": "blue-500", "text": "Portable & Soundproof – The smallest, fully enclosed biomass gasifier for quiet operation" },
+                        { "icon": "ri-earth-fill", "color": "green-500", "text": "Multi-Purpose Use – Powers farm irrigation, homes, and small industries with ease" },
+                        { "icon": "ri-leaf-line", "color": "green-500", "text": "Eco-Friendly – Low emissions, high efficiency, and zero water wastage" },
+                        { "icon": "ri-filter-fill", "color": "purple-500", "text": "Dry Filtration System – Eliminates the need for costly water-based purification" },
+                        { "icon": "ri-settings-2-line", "color": "gray-500", "text": "User-Friendly & Low Maintenance – Simple design with automatic ignition for easy operation" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "text": "Versatile Biomass Compatibility – Works with wood chips, pellets, briquettes, agro-waste, and forestry waste" }
+                    ],
+                    "technology": [
+                        { "icon": "ri-award-fill", "color": "yellow-500", "text": "Patented Technology – Advanced RS Filter for tar cracking & CO₂ emission reduction" }
+                    ],
+                    "specifications": [
+                        { "icon": "ri-bar-chart-box-line", "color": "green-500", "label": "Model Name", "value": "ESB-R Bio-10" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Power Output", "value": "10kW (12.5kVA)" },
+                        { "icon": "ri-fire-fill", "color": "red-500", "label": "Fuel Consumption", "value": "30m³/hr producer gas" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Engine Type", "value": "Spark Ignition" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Weight", "value": "2 Tons" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Dimensions (Gasifier Unit)", "value": "L10ft × W7ft × H7ft" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Dimensions (Genset Unit)", "value": "L6ft × W3.5ft × H6ft" }
+                    ],
+                    "applications": [
+                        { "icon": "ri-battery-2-charge-line", "color": "red-500", "text": "Rural Electrification – A reliable energy source for villages and off-grid communities" },
+                        { "icon": "ri-plug-line", "color": "blue-500", "text": "Farming & Irrigation – Powers water pumps, grain processing, and agro-machinery" },
+                        { "icon": "ri-building-2-line", "color": "blue-500", "text": "Small-Scale Industries – Supports workshops, micro-enterprises, and cottage industries" },
+                        { "icon": "ri-lightbulb-flash-line", "color": "yellow-500", "text": "Research & Academic Use – Ideal for universities and institutions studying renewable energy" }
+                    ],
+                    "benefits": [
+                        { "icon": "ri-earth-fill", "color": "green-500", "text": "Sustainable & Cost-Effective – Converts waste into energy, reducing reliance on fossil fuels" },
+                        { "icon": "ri-award-fill", "color": "yellow-500", "text": "Proven Innovation – Established in 2013 by industry pioneer Rai Singh Dahiya" },
+                        { "icon": "ri-settings-2-line", "color": "gray-500", "text": "Trusted Partner – Recognized for excellence in biomass gasification technology" },
+                        { "icon": "ri-service-line", "color": "blue-500", "text": "Dedicated Support – Expert assistance for setup, training, and maintenance" }
+                    ]
+                }
+                ,
                 {
                     "name": "12kW Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-12.5",
                     "modelNumber": "ESB-R12.5",
-                    "image": "../assets/products/img/10KVA Biomass Gasifier.jpeg",
-                    "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
-                    "productId": "productId006"
-                },
+                    "catalogueLink": "https://drive.google.com/uc?export=download&id=[YourGoogleDriveFileID]",
+                    "image": "../assets/products/bio-gasifier-power/12-kw-Biomass-Gasifier.jpeg",
+                    "subtitle": "Empowering Sustainability – Clean Energy from Biomass",
+                    "description": "The ESB-R12 Biomass Gasifier by Enersol Biopower Pvt. Ltd. is a next-generation renewable energy solution designed to efficiently convert agricultural and forestry waste into clean power. Engineered with advanced downdraft gasification technology, this system provides an eco-friendly, cost-effective, and versatile energy source, ideal for off-grid communities, farms, industries, and research institutions.",
+                    "productId": "productId006",
+                    "features": [
+                        { "icon": "ri-handbag-line", "color": "blue-500", "text": "Compact & Silent Operation – The smallest and most portable biomass gasifier with noise reduction features" },
+                        { "icon": "ri-leaf-line", "color": "green-500", "text": "Multi-Purpose Energy Solution – Powers agriculture, small industries, and rural electrification projects" },
+                        { "icon": "ri-earth-fill", "color": "green-500", "text": "Eco-Conscious Design – Low tar emissions and high thermal efficiency with CO₂ reduction technology" },
+                        { "icon": "ri-filter-fill", "color": "purple-500", "text": "Water-Free Filtration – Dry filtration system eliminates water contamination and reduces maintenance" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "text": "Hassle-Free Operation – Automatic ignition for quick startup and minimal upkeep" },
+                        { "icon": "ri-tools-line", "color": "gray-500", "text": "Compatible with Various Biomass Types – Runs on wood chips, pellets, briquettes, agro-industrial waste, and forestry residues" }
+                    ],
+                    "technology": [
+                        { "icon": "ri-award-fill", "color": "yellow-500", "text": "Patented Filtration Technology – Advanced RS Filter for tar removal and longer filter lifespan" }
+                    ],
+                    "specifications": [
+                        { "icon": "ri-bar-chart-box-line", "color": "green-500", "label": "Model Name", "value": "ESB-R Bio-12" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Power Output", "value": "12kW (15kVA)" },
+                        { "icon": "ri-fire-fill", "color": "red-500", "label": "Fuel Consumption", "value": "36m³/hr producer gas" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Engine Type", "value": "Spark Ignition" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Weight", "value": "2 Tons" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Dimensions (Gasifier Unit)", "value": "L10ft × W7ft × H8ft" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Dimensions (Genset Unit)", "value": "L6ft × W3.5ft × H6ft" }
+                    ],
+                    "applications": [
+                        { "icon": "ri-battery-2-charge-line", "color": "red-500", "text": "Rural Electrification – Provides reliable power for villages, homes, and community centers" },
+                        { "icon": "ri-plug-line", "color": "blue-500", "text": "Agricultural & Irrigation Systems – Supports water pumps, grain milling, and farm operations" },
+                        { "icon": "ri-building-2-line", "color": "blue-500", "text": "Small & Medium Enterprises – Powers workshops, micro-industries, and commercial setups" },
+                        { "icon": "ri-lightbulb-flash-line", "color": "yellow-500", "text": "Educational & Research Institutes – Ideal for universities and labs researching renewable energy" }
+                    ],
+                    "benefits": [
+                        { "icon": "ri-earth-fill", "color": "green-500", "text": "Sustainable & Cost-Effective – Uses locally available biomass to generate electricity" },
+                        { "icon": "ri-award-fill", "color": "yellow-500", "text": "Proven Innovation – Innovating clean energy solutions since 2013" },
+                        { "icon": "ri-settings-2-line", "color": "gray-500", "text": "Trusted by Clients Worldwide – Backed by a strong reputation in renewable energy technology" },
+                        { "icon": "ri-service-line", "color": "blue-500", "text": "Dedicated Support & Training – Complete guidance on installation, operation, and maintenance" }
+                    ]
+                }
+                ,
                 {
                     "name": "24kW Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-24",
                     "modelNumber": "ESB-R24",
-                    "image": "../assets/products/img/24KW Biomass Gasifier1.png",
-                    "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
-                    "productId": "productId007"
-                },
+                    "catalogueLink": "https://drive.google.com/uc?export=download&id=[YourGoogleDriveFileID]",
+                    "image": "../assets/products/bio-gasifier-power/24-kw-biomass-gasifier.jpg",
+                    "subtitle": "Harness the Power of Biomass – A Sustainable Energy Solution",
+                    "description": "The ESB-R24 Biomass Gasifier by Enersol Biopower Pvt. Ltd. is a revolutionary renewable energy system designed to convert organic waste into a reliable and cost-efficient power source. Built with advanced gasification technology, this system offers clean energy for rural electrification, industries, and agricultural applications. With its compact, portable, and low-maintenance design, it is an ideal choice for those seeking off-grid and eco-friendly power solutions.",
+                    "productId": "productId007",
+                    "features": [
+                        { "icon": "ri-handbag-line", "color": "blue-500", "text": "Space-Saving & Easy to Transport – A lightweight and compact system that can be easily relocated" },
+                        { "icon": "ri-sound-module-line", "color": "blue-500", "text": "Silent & Efficient Operation – Designed for low-noise performance, making it perfect for homes and businesses" },
+                        { "icon": "ri-leaf-line", "color": "green-500", "text": "Eco-Friendly Energy Source – Uses agricultural and forestry waste to generate clean energy" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "text": "Automated Ignition Technology – Ensures a quick and hassle-free startup with minimal user intervention" },
+                        { "icon": "ri-filter-fill", "color": "purple-500", "text": "Water-Free Filtration System – Eliminates the need for water-based purification, reducing maintenance efforts" },
+                        { "icon": "ri-settings-2-line", "color": "gray-500", "text": "User-Friendly Controls – Simple interface, making it accessible for both urban and rural users" }
+                    ],
+                    "technology": [
+                        { "icon": "ri-award-fill", "color": "yellow-500", "text": "Proprietary Filtration System – Patented RS Filter ensures efficient tar cracking and emission reduction" }
+                    ],
+                    "specifications": [
+                        { "icon": "ri-bar-chart-box-line", "color": "green-500", "label": "Model Name", "value": "ESB-R BIO24" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Power Output", "value": "24kW (30kVA)" },
+                        { "icon": "ri-fire-fill", "color": "red-500", "label": "Fuel Consumption", "value": "72Nm³/hr producer gas" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Engine Type", "value": "Spark Ignition" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Weight", "value": "3-3.5 Tons" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Dimensions (Gasifier Unit)", "value": "L18ft × W15ft × H20ft" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Dimensions (Genset Unit)", "value": "L8ft × W4ft × H6ft" }
+                    ],
+                    "applications": [
+                        { "icon": "ri-battery-2-charge-line", "color": "red-500", "text": "Rural & Off-Grid Electrification – Empowers villages and remote communities with sustainable energy" },
+                        { "icon": "ri-plug-line", "color": "blue-500", "text": "Agricultural & Farm Use – Supports water pumping, grain processing, and other farm operations" },
+                        { "icon": "ri-building-2-line", "color": "blue-500", "text": "Industrial & Commercial Use – Provides power for small factories, workshops, and business setups" },
+                        { "icon": "ri-lightbulb-flash-line", "color": "yellow-500", "text": "Research & Educational Institutions – An ideal tool for universities and labs exploring clean energy solutions" }
+                    ],
+                    "benefits": [
+                        { "icon": "ri-earth-fill", "color": "green-500", "text": "Sustainable & Economical – Uses locally available biomass, reducing dependency on fossil fuels" },
+                        { "icon": "ri-award-fill", "color": "yellow-500", "text": "Innovators in Renewable Energy – Leading biomass gasification experts since 2013" },
+                        { "icon": "ri-settings-2-line", "color": "gray-500", "text": "Trusted Worldwide – Backed by industry recognition and trusted by businesses and governments alike" },
+                        { "icon": "ri-service-line", "color": "blue-500", "text": "Expert Support & Assistance – Dedicated customer support and training for smooth operation" }
+                    ]
+                }
+                ,
                 {
                     "name": "28kW Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-28",
                     "modelNumber": "ESB-R28",
-                    "image": "../assets/products/img/28KW Biomass Gasifier1.png",
-                    "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
-                    "productId": "productId008"
-                },
+                    "catalogueLink": "https://drive.google.com/uc?export=download&id=[YourGoogleDriveFileID]",
+                    "image": "../assets/products/bio-gasifier-power/28kw-biomass-gasifier.jpg",
+                    "subtitle": "Turning Waste into Watts",
+                    "description": "The ESB-R28 Biomass Gasifier is a compact, reliable, and highly efficient energy solution designed to convert biomass into clean and sustainable power. Ideal for farms, remote areas, and small businesses, this 28kW gasifier ensures a cost-effective and eco-friendly alternative to conventional energy sources.",
+                    "productId": "productId008",
+                    "features": [
+                        { "icon": "ri-handbag-line", "color": "blue-500", "text": "Compact & Reliable – Easy to install with consistent performance" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "text": "High Efficiency – Optimized fuel utilization for maximum output" },
+                        { "icon": "ri-leaf-line", "color": "green-500", "text": "Eco-Friendly – Converts biomass into clean energy" },
+                        { "icon": "ri-settings-2-line", "color": "gray-500", "text": "User-Friendly Operation – Simple controls requiring minimal expertise" },
+                        { "icon": "ri-tools-line", "color": "gray-500", "text": "Low Maintenance – Durable construction with reduced servicing needs" },
+                        { "icon": "ri-fire-fill", "color": "red-500", "text": "Versatile Fuel Compatibility – Supports various biomass fuels like wood chips, pellets, and agricultural waste" },
+                        { "icon": "ri-plant-fill", "color": "green-500", "text": "Ideal for Small-Scale Applications – Perfect for farms, businesses, and off-grid locations" },
+                        { "icon": "ri-earth-fill", "color": "green-500", "text": "Sustainable Energy Source – Uses renewable biomass fuel" }
+                    ],
+                    "applications": [
+                        { "icon": "ri-battery-2-charge-line", "color": "red-500", "text": "Rural Electrification – Reliable power for villages and remote locations" },
+                        { "icon": "ri-plug-line", "color": "blue-500", "text": "Agricultural Use – Supports farm operations and irrigation systems" },
+                        { "icon": "ri-building-2-line", "color": "blue-500", "text": "Industrial Applications – Suitable for small-scale manufacturing units" },
+                        { "icon": "ri-home-smile-line", "color": "green-500", "text": "Backup Power Supply – Alternative energy source for uninterrupted power" },
+                        { "icon": "ri-leaf-fill", "color": "green-500", "text": "Eco-Friendly Solutions – Sustainable energy for environment-conscious businesses" }
+                    ],
+                    "technology": [
+                        { "icon": "ri-award-fill", "color": "yellow-500", "text": "Proven Technology – Engineered with advanced biomass gasification techniques" },
+                        { "icon": "ri-filter-fill", "color": "purple-500", "text": "Low Tar Content – Ensures cleaner fuel for gas engines" }
+                    ],
+                    "specifications": [
+                        { "icon": "ri-bar-chart-box-line", "color": "green-500", "label": "Model Name", "value": "ESB-R BIO28" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Power Output", "value": "28kW (35kVA)" },
+                        { "icon": "ri-fire-fill", "color": "red-500", "label": "Fuel Consumption", "value": "84Nm³/hr producer gas" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Engine Type", "value": "Spark Ignition" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Weight", "value": "3-3.5 Tons" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Dimensions (Gasifier Unit)", "value": "L18ft × W15ft × H20ft" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Dimensions (Genset Unit)", "value": "L8ft × W4ft × H6ft" }
+                    ],
+                    "gasComposition": [
+                        { "label": "Carbon Monoxide (CO)", "value": "21.4%" },
+                        { "label": "Hydrogen (H₂)", "value": "18.9%" },
+                        { "label": "Nitrogen (N₂)", "value": "46%" },
+                        { "label": "Carbon Dioxide (CO₂)", "value": "10.2%" },
+                        { "label": "Methane (CH₄)", "value": "3.4%" }
+                    ],
+                    "benefits": [
+                        { "icon": "ri-earth-fill", "color": "green-500", "text": "Cost-Effective – Reduces reliance on expensive fossil fuels" },
+                        { "icon": "ri-settings-2-line", "color": "gray-500", "text": "Customizable & Scalable – Adaptable to various power needs" },
+                        { "icon": "ri-service-line", "color": "blue-500", "text": "Backed by Expertise – Designed by industry leaders in renewable energy solutions" }
+                    ]
+                }
+                ,
                 {
                     "name": "50kW Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-50",
                     "modelNumber": "ESB-R50",
-                    "image": "../assets/products/img/50KW Biomass Gasifier1.png",
-                    "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
-                    "productId": "productId010"
-                },
+                    "catalogueLink": "https://drive.google.com/uc?export=download&id=[YourGoogleDriveFileID]",
+                    "image": "../assets/products/bio-gasifier-power/50KW-Biomass-Gasifier.jpeg",
+                    "subtitle": "Transforming Biomass into Power",
+                    "description": "The ESB-R50 Biomass Gasifier is a powerful, efficient, and environmentally friendly energy solution that converts biomass into clean, renewable electricity. Delivering 50kW (62.5KVA) of output, this system is perfect for village electrification, agricultural sites, and off-grid power applications. Its cutting-edge gasification process ensures minimal tar production and high fuel efficiency, making it a cost-effective and sustainable alternative to traditional energy sources.",
+                    "productId": "productId010",
+                    "features": [
+                        { "icon": "ri-leaf-line", "color": "green-500", "text": "Eco-Friendly Energy Generation – Uses biomass fuels such as wood chips and agricultural waste, reducing reliance on conventional fuels" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "text": "Consistent & Efficient Performance – Produces 50kW of power, suitable for rural communities and essential operations" },
+                        { "icon": "ri-settings-2-line", "color": "gray-500", "text": "Advanced Gasification Process – Low-tar technology ensures clean and optimized fuel combustion" },
+                        { "icon": "ri-battery-2-charge-line", "color": "red-500", "text": "Independent & Off-Grid Power – Supports microgrid setups, allowing communities to become self-sufficient in energy production" },
+                        { "icon": "ri-handbag-line", "color": "blue-500", "text": "Simple to Operate & Maintain – User-friendly controls designed for hassle-free operation with minimal upkeep" },
+                        { "icon": "ri-earth-fill", "color": "green-500", "text": "Economic & Sustainable Solution – Reduces fuel costs, cuts emissions, and promotes local employment" },
+                        { "icon": "ri-tools-line", "color": "gray-500", "text": "Scalable & Adaptable Design – Can be integrated with solar or wind power for a hybrid renewable energy system" }
+                    ],
+                    "applications": [
+                        { "icon": "ri-battery-2-charge-line", "color": "red-500", "text": "Rural Electrification – Reliable power for villages, farms, and remote areas" },
+                        { "icon": "ri-plug-line", "color": "blue-500", "text": "Agricultural Operations – Supports irrigation, storage, and processing units" },
+                        { "icon": "ri-building-2-line", "color": "blue-500", "text": "Industrial & Commercial Use – Ideal for small-scale manufacturing and production facilities" },
+                        { "icon": "ri-home-smile-line", "color": "green-500", "text": "Emergency & Backup Power – Provides stable electricity during grid outages" },
+                        { "icon": "ri-earth-fill", "color": "green-500", "text": "Eco-Friendly Energy Solutions – A sustainable choice for businesses aiming to reduce their carbon footprint" }
+                    ],
+                    "technology": [
+                        { "icon": "ri-award-fill", "color": "yellow-500", "text": "Proven & Trusted Technology – Designed using innovative biomass gasification techniques" },
+                        { "icon": "ri-filter-fill", "color": "purple-500", "text": "Low Tar Output – Ensures cleaner fuel for enhanced engine performance" }
+                    ],
+                    "specifications": [
+                        { "icon": "ri-bar-chart-box-line", "color": "green-500", "label": "Model Name", "value": "ESB-R BIO50" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Power Output", "value": "50kW (62.5kVA)" },
+                        { "icon": "ri-fire-fill", "color": "red-500", "label": "Fuel Consumption", "value": "150Nm³/hr producer gas" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Engine Type", "value": "Spark Ignition" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Weight", "value": "8 Tons" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Dimensions (Gasifier Unit)", "value": "L25ft × W18ft × H22ft" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Dimensions (Genset Unit)", "value": "L13ft × W4ft × H6ft" }
+                    ],
+                    "gasComposition": [
+                        { "label": "Carbon Monoxide (CO)", "value": "21.4%" },
+                        { "label": "Hydrogen (H₂)", "value": "18.9%" },
+                        { "label": "Nitrogen (N₂)", "value": "46%" },
+                        { "label": "Carbon Dioxide (CO₂)", "value": "10.2%" },
+                        { "label": "Methane (CH₄)", "value": "3.4%" }
+                    ],
+                    "benefits": [
+                        { "icon": "ri-earth-fill", "color": "green-500", "text": "Cost-Effective Solution – Reduces dependence on costly fossil fuels" },
+                        { "icon": "ri-settings-2-line", "color": "gray-500", "text": "Versatile & Scalable – Easily adaptable for different power demands" },
+                        { "icon": "ri-service-line", "color": "blue-500", "text": "Industry-Leading Expertise – Developed by specialists in renewable energy solutions" }
+                    ]
+                }
+                ,
                 {
                     "name": "100kW Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-100",
                     "modelNumber": "ESB-R100",
-                    "image": "../assets/products/img/100KW Biomass Gasifier4.png",
-                    "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
-                    "productId": "productId011"
+                    "catalogueLink": "https://drive.google.com/uc?export=download&id=[YourGoogleDriveFileID]",
+                    "image": "../assets/products/bio-gasifier-power/100kw-biomass-gasifier.jpeg",
+                    "subtitle": "Powering Communities with Sustainable Energy",
+                    "description": "The ESB-R100 Biomass Gasifier is a robust, efficient, and eco-conscious power solution that transforms biomass into renewable energy. Delivering 100kW (125KVA) of output, this system is an excellent choice for village electrification, industrial applications, and off-grid installations. With advanced gasification technology, it ensures low tar emissions, reliable performance, and high energy efficiency, making it a cost-effective and sustainable alternative to conventional power sources.",
+                    "productId": "productId011",
+                    "features": [
+                        { "icon": "ri-leaf-line", "color": "green-500", "text": "Environmentally Friendly Energy Generation – Uses biomass fuels such as wood chips and agricultural residues, cutting down fossil fuel use" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "text": "Consistent & High-Performance Output – Produces 100kW of electricity, perfect for rural communities, businesses, and essential operations" },
+                        { "icon": "ri-settings-2-line", "color": "gray-500", "text": "Innovative Gasification System – Low-tar gasification process for cleaner and more efficient combustion" },
+                        { "icon": "ri-battery-2-charge-line", "color": "red-500", "text": "Off-Grid & Independent Power Solution – Supports microgrid networks, providing self-sufficient energy for remote locations" },
+                        { "icon": "ri-handbag-line", "color": "blue-500", "text": "User-Friendly & Low Maintenance – Designed for simple operation with minimal upkeep required" },
+                        { "icon": "ri-earth-fill", "color": "green-500", "text": "Economic & Sustainable Alternative – Reduces fuel costs, lowers emissions, and supports local job creation" },
+                        { "icon": "ri-tools-line", "color": "gray-500", "text": "Scalable & Versatile Design – Can be integrated with solar or wind energy for a hybrid renewable system" }
+                    ],
+                    "applications": [
+                        { "icon": "ri-battery-2-charge-line", "color": "red-500", "text": "Village Electrification – Delivers consistent power to rural areas and off-grid communities" },
+                        { "icon": "ri-plug-line", "color": "blue-500", "text": "Agricultural Operations – Supports irrigation, processing units, and farm equipment" },
+                        { "icon": "ri-building-2-line", "color": "blue-500", "text": "Industrial & Commercial Use – Ideal for factories, workshops, and processing plants" },
+                        { "icon": "ri-home-smile-line", "color": "green-500", "text": "Backup & Emergency Power – Ensures uninterrupted power supply during outages" },
+                        { "icon": "ri-earth-fill", "color": "green-500", "text": "Green Energy Solutions – A sustainable choice for businesses focused on reducing environmental impact" }
+                    ],
+                    "technology": [
+                        { "icon": "ri-award-fill", "color": "yellow-500", "text": "Proven & Reliable Technology – Engineered with state-of-the-art biomass gasification techniques" },
+                        { "icon": "ri-filter-fill", "color": "purple-500", "text": "Low Tar Output – Ensures cleaner fuel for enhanced generator efficiency" }
+                    ],
+                    "specifications": [
+                        { "icon": "ri-bar-chart-box-line", "color": "green-500", "label": "Model Name", "value": "ESB-R BIO100" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Power Output", "value": "100kW (125kVA)" },
+                        { "icon": "ri-fire-fill", "color": "red-500", "label": "Fuel Consumption", "value": "300Nm³/hr producer gas" },
+                        { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Engine Type", "value": "Spark Ignition" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Weight", "value": "10-12 Tons" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Dimensions (Gasifier Unit)", "value": "L32ft × W20ft × H25ft" },
+                        { "icon": "ri-ruler-line", "color": "blue-500", "label": "Dimensions (Genset Unit)", "value": "L16ft × W7ft × H8.5ft" }
+                    ],
+                    "gasComposition": [
+                        { "label": "Carbon Monoxide (CO)", "value": "21.4%" },
+                        { "label": "Hydrogen (H₂)", "value": "18.9%" },
+                        { "label": "Nitrogen (N₂)", "value": "46%" },
+                        { "label": "Carbon Dioxide (CO₂)", "value": "10.2%" },
+                        { "label": "Methane (CH₄)", "value": "3.4%" }
+                    ],
+                    "benefits": [
+                        { "icon": "ri-earth-fill", "color": "green-500", "text": "Cost-Effective Energy Solution – Reduces dependence on expensive fossil fuels" },
+                        { "icon": "ri-settings-2-line", "color": "gray-500", "text": "Adaptable & Scalable – Customizable to meet various energy demands" },
+                        { "icon": "ri-service-line", "color": "blue-500", "text": "Industry-Leading Expertise – Designed by professionals in renewable energy innovation" }
+                    ]
                 },
+
                 {
                     "name": "10000kcal/hr Based Biomass Gasifier",
                     "category": "Biomass Gasifier for Thermal Applications",
@@ -1251,22 +1558,12 @@
                 }
             }
             function updateProductDetails(product) {
-                document.getElementById('product-title').textContent = product.name;
-                document.getElementById('product-description').textContent = product.description;
-                document.getElementById('main-product-image').src = product.image;
+                console.log(product);
 
-                // Update model name and number
-                document.getElementById('product-model-name').textContent = product.modelName || 'Not specified';
-                document.getElementById('product-model-number').textContent = product.modelNumber || 'Not specified';
-
-                document.querySelectorAll('.thumbnail').forEach((elem, index) => {
-                    if (product.images && index < product.images.length) {
-                        elem.src = product.images[index];
-                        elem.style.display = 'block';
-                    } else {
-                        elem.style.display = 'none';
-                    }
-                });
+                const templateSource = document.getElementById('product-template').innerHTML;
+                const template = Handlebars.compile(templateSource);
+                // Render template with data
+                document.getElementById('product-container').innerHTML = template(product);
             }
             function updateRelatedProducts(products, currentProduct) {
 
@@ -1303,57 +1600,7 @@
 
         });
     </script>
-    <script>
-        async function loadProductPage() {
-            // Fetch template
-            const templateSource = document.getElementById('product-template').innerHTML;
-            const template = Handlebars.compile(templateSource);
-            let data = {
-                "title": "2 kVA Biomass Gasifier – ESB-R02",
-                "subtitle": "Sustainable & Efficient Power Generation",
-                "overview": "The ESB-R02 2 kVA Biomass Gasifier is a compact, efficient, and eco-friendly energy solution designed for small-scale power generation and research applications. Utilizing biomass gasification technology, this system converts agricultural and forest waste into clean producer gas, making it an excellent alternative to conventional fossil fuel-based generators.",
-                "features": [
-                    { "icon": "ri-leaf-line", "color": "green-500", "text": "Eco-Friendly & Sustainable – Converts biomass waste into clean energy" },
-                    { "icon": "ri-handbag-line", "color": "blue-500", "text": "Compact & Portable – Ideal for research institutes and small-scale users" },
-                    { "icon": "ri-filter-fill", "color": "purple-500", "text": "Dry Filtration System – No water-based purification required" },
-                    { "icon": "ri-fire-fill", "color": "red-500", "text": "Multi-Fuel Compatibility – Runs on various agricultural and forest residues" },
-                    { "icon": "ri-flashlight-fill", "color": "yellow-500", "text": "Automatic Initial Firing – Ensures easy and efficient startup" },
-                    { "icon": "ri-tools-line", "color": "gray-500", "text": "Reliable & Low Maintenance – Designed for continuous operation with minimal upkeep" }
-                ],
-                "technology": [
-                    { "icon": "ri-sun-line", "color": "yellow-500", "text": "Biomass Dryer Integration – Utilizes exhaust heat from the silencer to dry biomass, improving efficiency" },
-                    { "icon": "ri-haze-line", "color": "blue-500", "text": "Patented Filtration System – Extracts moisture from biomass and reuses it to clean the gas, increasing performance and extending filter cleaning intervals" }
-                ],
-                "specifications": [
-                    { "icon": "ri-bar-chart-box-line", "color": "green-500", "label": "Model", "value": "ESB-R02" },
-                    { "icon": "ri-flashlight-fill", "color": "yellow-500", "label": "Power Output", "value": "2 kVA" },
-                    { "icon": "ri-plant-fill", "color": "green-500", "label": "Fuel Type", "value": "Agricultural & forest waste residues" },
-                    { "icon": "ri-fire-fill", "color": "red-500", "label": "Gas Production", "value": "On-demand producer gas generation" },
-                    { "icon": "ri-filter-fill", "color": "purple-500", "label": "Filtration System", "value": "Dry filtration technology (No costly water purification required)" },
-                    { "icon": "ri-building-2-line", "color": "blue-500", "label": "Application", "value": "Research institutes, rural electrification, and small-scale industrial use" }
-                ],
-                "applications": [
-                    { "icon": "ri-battery-2-charge-line", "color": "red-500", "text": "Off-grid power supply" },
-                    { "icon": "ri-lightbulb-flash-line", "color": "yellow-500", "text": "Renewable energy research" },
-                    { "icon": "ri-plug-line", "color": "blue-500", "text": "Backup power for small-scale operations" },
-                    { "icon": "ri-home-smile-line", "color": "green-500", "text": "Agricultural and rural electrification" }
-                ],
-                "benefits": [
-                    { "icon": "ri-earth-fill", "color": "green-500", "text": "Environmentally Friendly – Reduces carbon footprint and promotes green energy" },
-                    { "icon": "ri-money-dollar-circle-line", "color": "green-500", "text": "Cost-Effective – Saves fuel costs compared to diesel generators" },
-                    { "icon": "ri-settings-2-line", "color": "gray-500", "text": "Low Maintenance – Simple operation with minimal servicing required" },
-                    { "icon": "ri-award-fill", "color": "yellow-500", "text": "Proven Technology – Developed by Enersol Biopower Pvt Ltd, a leader in biomass energy solutions" }
-                ]
-            }
 
-
-            // Render template with data
-            document.getElementById('product-container').innerHTML = template(data);
-        }
-
-        window.onload = loadProductPage;
-
-    </script>
 
 </body>
 

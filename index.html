@@ -6,6 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ENERSOL BIOPOWER PRIVATE LIMITED</title>
   <style>
+    @keyframes scrollLeft {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
   </style>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -45,6 +54,16 @@
               DEFAULT: 'linear-gradient(90deg, #FED400 0%, #C7D110 100%)',
             },
           },
+          keyframes: {
+            scrollLeft: {
+              '0%': { transform: 'translateX(100%)' },
+              '100%': { transform: 'translateX(-100%)' },
+            }
+          },
+          animation: {
+            scroll: 'scrollLeft 20s linear infinite',
+          }
+
         },
       },
     };
@@ -244,8 +263,7 @@
     <div class="swiper mySwiper h-full">
       <div class="swiper-wrapper">
         <!-- Slide 2 with Full-Screen Placeholder Image -->
-        <div class="swiper-slide bg-cover bg-center h-full"
-          style="background-image: url('./assets/home/burning.jpg');">
+        <div class="swiper-slide bg-cover bg-center h-full" style="background-image: url('./assets/home/burning.jpg');">
           <div class="slide-overlay"></div>
           <div class="container relative mx-auto px-4 py-5 mb-5 h-full flex items-center justify-start">
             <div class="text-white text-left px-5 fade-up-enter">
@@ -283,8 +301,7 @@
           </div>
         </div>
         <!-- Slide 2 with Full-Screen Placeholder Image -->
-        <div class="swiper-slide bg-cover bg-center h-full"
-          style="background-image: url('./assets/home/hero-03.jpg');">
+        <div class="swiper-slide bg-cover bg-center h-full" style="background-image: url('./assets/home/hero-03.jpg');">
           <div class="slide-overlay"></div>
           <div class="container relative mx-auto px-4 py-5 mb-5 h-full flex items-center justify-start">
             <div class="text-white text-left px-5 fade-up-enter">
@@ -412,8 +429,7 @@
         </div>
       </div>
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-        <img class="object-cover object-center rounded" alt="Enersol Biopower"
-          src="./assets/home/About-us.jpg">
+        <img class="object-cover object-center rounded" alt="Enersol Biopower" src="./assets/home/About-us.jpg">
       </div>
     </div>
   </section>
@@ -576,16 +592,16 @@
     </div>
   </section>
   <!-- Mission and Vision Section with "Who We Are" Header -->
-  <section class="text-gray-600 body-font">
+  <!-- <section class="text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto">
-      <!-- Section Header -->
+      
       <div class="text-center mb-12">
         <h1 class="text-3xl font-bold text-primary-dark mb-4">Who We Are</h1>
         <p class="text-lg leading-relaxed text-gray-600">Learn more about what drives us at ENERSOL BIOPOWER PRIVATE
           LIMITED.</p>
       </div>
 
-      <!-- Mission Statement -->
+      
       <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
         <div
           class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-primary-light text-primary flex-shrink-0">
@@ -598,7 +614,7 @@
             transition to a cleaner energy future.</p>
         </div>
       </div>
-      <!-- Vision Statement -->
+      
       <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
         <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
           <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Our Vision</h2>
@@ -612,7 +628,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Renewable Energy Sources Section -->
   <section class="bg-primary-dark text-white body-font">
     <div class="container mx-auto px-5 py-24">
@@ -676,6 +692,9 @@
       </div>
     </div>
   </section>
+
+
+
   <!-- Our Innovative Products-->
   <section class="bg-gray-100 text-gray-700 body-font">
     <div class="container mx-auto px-5 py-24">
@@ -734,7 +753,8 @@
               alt="Biomass Gasifier for Thermal Applications" />
             <div class="p-4">
               <h3 class="text-lg font-bold text-primary mb-2">Auto Bio-Mawa Machine</h3>
-              <p class="text-gray-600 text-sm mb-4">Automates mawa (khoya) production using biomass energy, improving efficiency.</p>
+              <p class="text-gray-600 text-sm mb-4">Automates mawa (khoya) production using biomass energy, improving
+                efficiency.</p>
               <a href="./products.html#products"
                 class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">Learn
                 More</a>
@@ -745,20 +765,22 @@
               alt="Biomass Gasifier for Thermal Applications" />
             <div class="p-4">
               <h3 class="text-lg font-bold text-primary mb-2">Biogas Genset</h3>
-              <p class="text-gray-600 text-sm mb-4"> Uses biogas to generate electricity, offering a renewable power solution.</p>
+              <p class="text-gray-600 text-sm mb-4"> Uses biogas to generate electricity, offering a renewable power
+                solution.</p>
               <a href="./products.html#products"
                 class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">Learn
                 More</a>
             </div>
           </div>
-          
+
 
           <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
             <img class="h-[220px] w-full object-cover" src="./assets/home/Biomass Torrefaction  Bio-Char Plant.jpeg"
               alt="Biomass Gasifier for Thermal Applications" />
             <div class="p-4">
               <h3 class="text-lg font-bold text-primary mb-2">Biomass Torrefaction / Bio-Char Plant</h3>
-              <p class="text-gray-600 text-sm mb-4"> Converts biomass into biochar or torrefied fuel for improved combustion.</p>
+              <p class="text-gray-600 text-sm mb-4"> Converts biomass into biochar or torrefied fuel for improved
+                combustion.</p>
               <a href="./products.html#products"
                 class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">Learn
                 More</a>
@@ -766,22 +788,23 @@
           </div>
 
           <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-            <img class="h-[220px] w-full object-cover" src="./assets/home/Solid Liquid Separator (Dewatering Machine).jpeg"
-              alt="Biogas/Syngas Generators" />
+            <img class="h-[220px] w-full object-cover"
+              src="./assets/home/Solid Liquid Separator (Dewatering Machine).jpeg" alt="Biogas/Syngas Generators" />
             <div class="p-4">
               <h3 class="text-lg font-bold text-primary mb-2">Solid Liquid Separator (Dewatering Machine)</h3>
-              <p class="text-gray-600 text-sm mb-4"> Separates solids from liquids in wastewater or slurry processing..</p>
+              <p class="text-gray-600 text-sm mb-4"> Separates solids from liquids in wastewater or slurry processing..
+              </p>
               <a href="./products.html#products"
                 class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">Learn
                 More</a>
             </div>
           </div>
 
-         
+
 
           <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-            <img class="h-[220px] w-full object-cover" src="./assets/home/Used Oil (Black Engine Oil) Distillation Machine.jpeg"
-              alt="Auto Bio-Mawa Machine" />
+            <img class="h-[220px] w-full object-cover"
+              src="./assets/home/Used Oil (Black Engine Oil) Distillation Machine.jpeg" alt="Auto Bio-Mawa Machine" />
             <div class="p-4">
               <h3 class="text-lg font-bold text-primary mb-2">Used Oil (Black Engine Oil) Distillation Machine</h3>
               <p class="text-gray-600 text-sm mb-4"> Recycles used engine oil into reusable fuel or base oil.
@@ -797,7 +820,8 @@
               alt="Biomass Torrefaction / Bio-Char Plant" />
             <div class="p-4">
               <h3 class="text-lg font-bold text-primary mb-2">Control Panels</h3>
-              <p class="text-gray-600 text-sm mb-4">Electrical panels for industrial automation and power management.</p>
+              <p class="text-gray-600 text-sm mb-4">Electrical panels for industrial automation and power management.
+              </p>
               <a href="./products.html#products"
                 class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">Learn
                 More</a>
@@ -809,7 +833,8 @@
               alt="Biomass Torrefaction / Bio-Char Plant" />
             <div class="p-4">
               <h3 class="text-lg font-bold text-primary mb-2">Biomass Shredder</h3>
-              <p class="text-gray-600 text-sm mb-4"> Reduces biomass waste into smaller particles for easier processing.</p>
+              <p class="text-gray-600 text-sm mb-4"> Reduces biomass waste into smaller particles for easier processing.
+              </p>
               <a href="./products.html#products"
                 class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">Learn
                 More</a>
@@ -821,7 +846,8 @@
               alt="Biomass Gasifier for Thermal Applications" />
             <div class="p-4">
               <h3 class="text-lg font-bold text-primary mb-2">CNC/ Hydraulic Bending Machine Job Work</h3>
-              <p class="text-gray-600 text-sm mb-4"> Precision metal bending services using CNC or hydraulic machines.</p>
+              <p class="text-gray-600 text-sm mb-4"> Precision metal bending services using CNC or hydraulic machines.
+              </p>
               <a href="./products.html#products"
                 class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">Learn
                 More</a>
@@ -863,57 +889,79 @@
           <div class="h-1 w-20 bg-indigo-500 rounded"></div>
         </div>
         <p class="lg:w-1/2 w-full leading-relaxed text-white">
-          A glimpse of our success. We take pride in our journey and the milestones we’ve reached while working relentlessly towards a sustainable future.
+          A glimpse of our success. We take pride in our journey and the milestones we’ve reached while working
+          relentlessly towards a sustainable future.
         </p>
       </div>
-  
+
       <div class="flex flex-wrap -m-4">
         <div class="xl:w-1/2 md:w-1/2 p-4">
           <div class="bg-gray-100 p-6 rounded-lg h-[450px] w-full">
-            <img class="h-64 w-full rounded object-cover object-center mb-6" src="./assets/home/WhatsApp Image 2021-08-05 at 18.56.08.jpeg" alt="content">
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">100KW Biomass Gasifier</h2>
-            <h2 class="text-lg text-primary-dark font-medium title-font">UNDP -Yemen (United Nations Development Programme)</h2>
+            <img class="h-64 w-full rounded object-cover object-center mb-6"
+              src="./assets/home/WhatsApp Image 2021-08-05 at 18.56.08.jpeg" alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">100kW Biomass Gasifier</h2>
+            <h2 class="text-lg text-primary-dark font-medium title-font">UNDP -Yemen (United Nations Development
+              Programme)</h2>
           </div>
         </div>
-  
+
         <div class="xl:w-1/2 md:w-1/2 p-4">
           <div class="bg-gray-100 p-6 rounded-lg h-[450px] w-full">
-            <img class="h-64 w-full rounded object-cover object-center mb-6" src="./assets/home/achievements/5KW Biomaass gasifier KNUST, Ghana (1).jpeg" alt="content">
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">5KW Biomass Gasifier</h2>
-            <h2 class="text-lg text-primary-dark font-medium title-font">KNUST-Ghana (Kwame Nkrumah University of Science and Technology)</h2>
+            <img class="h-64 w-full rounded object-cover object-center mb-6"
+              src="./assets/home/achievements/5KW Biomaass gasifier KNUST, Ghana (1).jpeg" alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">5kW Biomass Gasifier</h2>
+            <h2 class="text-lg text-primary-dark font-medium title-font">KNUST-Ghana (Kwame Nkrumah University of
+              Science and Technology)</h2>
           </div>
         </div>
       </div>
-  
+
       <div class="flex flex-wrap -m-4">
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div class="bg-gray-100 p-6 rounded-lg h-[450px] w-full">
-            <img class="h-48 w-full rounded object-cover object-center mb-6" src="./assets/home/achievements/50KW ESB Biomass Gasifier (1).jpeg" alt="content">
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">50KW Biomass Gasifier</h2>
-            <h2 class="text-lg text-primary-dark font-medium title-font">NIT-Tiruchirappalli (National Institute of Technology)</h2>
+            <img class="h-48 w-full rounded object-cover object-center mb-6"
+              src="./assets/home/achievements/50KW ESB Biomass Gasifier (1).jpeg" alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">50kW Biomass Gasifier</h2>
+            <h2 class="text-lg text-primary-dark font-medium title-font">NIT-Tiruchirappalli (National Institute of
+              Technology)</h2>
           </div>
         </div>
-  
+
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div class="bg-gray-100 p-6 rounded-lg h-[450px] w-full">
-            <img class="h-48 w-full rounded object-cover object-center mb-6" src="./assets/home/Biomass Gasifier.jpeg" alt="content">
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">10KW Biomass Gasifier</h2>
+            <img class="h-48 w-full rounded object-cover object-center mb-6" src="./assets/home/Biomass Gasifier.jpeg"
+              alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">10kW Biomass Gasifier</h2>
             <h2 class="text-lg text-primary-dark font-medium title-font">IIT-Ropar (lndian Institute of Technology)</h2>
           </div>
         </div>
-  
+
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div class="bg-gray-100 p-6 rounded-lg h-[450px] w-full">
-            <img class="h-48 w-full rounded object-cover object-center mb-6" src="./assets/home/IMG_20200629_184750_Bokeh.jpg" alt="content">
-            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">ESB-R Bio-MiniSolar-Smokeless Domestic Biomass Stove</h2>
-            <h2 class="text-lg text-primary-dark font-medium title-font">TREDA (Tripura Renewable Energy Development Agency)</h2>
+            <img class="h-48 w-full rounded object-cover object-center mb-6"
+              src="./assets/home/IMG_20200629_184750_Bokeh.jpg" alt="content">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">ESB-R Bio-MiniSolar-Smokeless Domestic Biomass
+              Stove</h2>
+            <h2 class="text-lg text-primary-dark font-medium title-font">TREDA (Tripura Renewable Energy Development
+              Agency)</h2>
           </div>
         </div>
       </div>
     </div>
   </section>
-  
 
+  <div class=" py-5 my-5">
+    <h2 class="text-center text-4xl font-bold text-gray-800 mb-4">Our Clients</h2>
+    <div class="overflow-hidden">
+      <div class="flex whitespace-nowrap animate-scroll">
+        <img src="https://placehold.co/400x300" alt="Client 1 Logo" class="w-24 h-24 mx-5 my-2 shadow-lg rounded-md">
+        <img src="https://placehold.co/400x300" alt="Client 2 Logo" class="w-24 h-24 mx-5 my-2 shadow-lg rounded-md">
+        <img src="https://placehold.co/400x300" alt="Client 3 Logo" class="w-24 h-24 mx-5 my-2 shadow-lg rounded-md">
+        <img src="https://placehold.co/400x300" alt="Client 4 Logo" class="w-24 h-24 mx-5 my-2 shadow-lg rounded-md">
+        <!-- Add more logos as needed -->
+      </div>
+    </div>
+  </div>
 
   <!-- Testimonials Section -->
   <section class="bg-gray-100 text-primary-dark body-font" id="testimonials">

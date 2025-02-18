@@ -1582,7 +1582,6 @@
         "description": "We are best known for compact & portable biomass gasifier with our tradition of best manufacturing standards. Our biomass gasifier range starts from 2KW to 200KW. With the help of a strong technical support, we are known for our high standard products & services. We have installed more than 100 biomass gasifiers ranging from 5KW to 200KW with successful operational record. Our prime customer are National Thermal Power Corporation Limited (NTPC), Tata Power Limited (TATA), Indian Oil Corporation Limited (IOCL), Avani Bio Energy Private Limited, KNUST University, Ghana, CSIR, Durgapur, & Junagadh University. To know more about it, click here ..",
         "productId": "productId016"
     },
-
     {
         "name": "2kVA Biogas Genset",
         "category": "Biogas/Syngas Generators",
@@ -3056,7 +3055,7 @@
     },
     {
         "name": "Smokeless Domestic Biomass Stove - Bio-Nature",
-        "category": "Smokeless Biomass Stoves/ Bhatti",
+        "category": "Smokeless Biomass Stoves / Bhatti",
         "modelName": "ESB-R Bio-Nature",
         "modelNumber": "ESB-R/BN01",
         "image": "../assets/products/bhatti/bio-nature.jpg",
@@ -3144,14 +3143,14 @@
     },
     {
         "name": "Forced Draft – Bio-Mini",
-        "category": "Smokeless Biomass Stoves/ Bhatti",
+        "category": "Smokeless Biomass Stoves / Bhatti",
         "modelName": "ESB-R Bio-Mini",
         "modelNumber": "ESB-R/BM01",
         "image": "../assets/products/bhatti/bio-mini.jpg",
         "description": "The ESB-R Bio-Mini is an innovative smokeless biomass stove designed to replace traditional chulhas, providing a clean, energy-efficient, and eco-friendly cooking solution. Manufactured by Enersol Biopower, this compact and durable stove reduces smoke emissions, improves fuel efficiency, and enhances safety, making it ideal for households, street food vendors, and small commercial kitchens.",
         "productId": "productId028",
-        "tagline": "Efficient Cooking, Healthier Homes, Greener Future",
-        "keyFeatures": [
+        "subtitle": "Efficient Cooking, Healthier Homes, Greener Future",
+        "features": [
             {
                 "icon": "ri-leaf-line",
                 "color": "green-500",
@@ -3173,18 +3172,13 @@
                 "text": "Eco-Friendly – Uses biomass fuels like wood pellets and agricultural residues, reducing dependency on fossil fuels."
             },
             {
-                "icon": "ri-money-dollar-circle-line",
-                "color": "green-500",
-                "text": "Cost-Effective – Cuts down on fuel costs with optimized combustion technology."
+                "icon": "ri-settings-2-line",
+                "color": "gray-500",
+                "text": "Safe & User-Friendly – Designed with enclosed combustion chambers to prevent accidental burns."
             },
             {
                 "icon": "ri-shield-flash-line",
                 "color": "red-500",
-                "text": "Safe & User-Friendly – Designed with enclosed combustion chambers to prevent accidental burns."
-            },
-            {
-                "icon": "ri-tools-line",
-                "color": "gray-500",
                 "text": "Low Maintenance – Requires minimal servicing, making it an economical long-term investment."
             }
         ],
@@ -3195,67 +3189,156 @@
                 "text": "Home Kitchens – A sustainable alternative to traditional firewood stoves."
             },
             {
-                "icon": "ri-store-line",
-                "color": "blue-500",
+                "icon": "ri-plant-fill",
+                "color": "green-500",
                 "text": "Tea & Coffee Stalls – Perfect for street vendors and small cafes."
             },
             {
-                "icon": "ri-restaurant-line",
-                "color": "red-500",
+                "icon": "ri-hotel-line",
+                "color": "blue-500",
                 "text": "Dhabas & Small Restaurants – Reliable for cooking bulk meals efficiently."
             },
             {
-                "icon": "ri-community-line",
-                "color": "green-500",
+                "icon": "ri-building-2-line",
+                "color": "blue-500",
+                "text": "Rural & Urban Households – Provides an affordable and sustainable cooking option."
+            },
+            {
+                "icon": "ri-group-line",
+                "color": "yellow-500",
                 "text": "Community Cooking – Ideal for preparing food for 5-25 people in villages and social events."
             }
         ],
-        "technicalSpecifications": {
-            "Fuel Type": "100% Biomass",
-            "Fuel Consumption": "1.5-2 kg/hr",
-            "Accepted Fuel Moisture": "Less than 20%",
-            "Ignition System": "12V DC Fan (Forced Draft)",
-            "Ash Removal Mode": "Manual",
-            "Flame Regulator": "Adjustable for precise cooking control",
-            "Thermal Efficiency": "35.5%",
-            "Material": "Mild Steel & Cast Iron",
-            "Weight": "Approx. 14kg",
-            "Dimensions": "H12\" x W12\" x L18\"",
-            "Additional Details": {
-                "Gas Temperature": "≤40°C",
-                "Moisture Content": "≤20 mg/Nm³",
-                "Impurity Particle Size & Content": "≤5μm, ≤30 mg/Nm³",
-                "Heat Value Requirement": "≥4MJ/Nm³",
-                "Gas Pressure Range": "3-5 kPa",
-                "Pressure Fluctuation": "≤1 kPa/min",
-                "H₂S Content": "≤200 PPM",
-                "CO & CO₂ Levels": "≤30%"
+        "benefits": [
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Smokeless Cooking: Eliminates harmful smoke, reducing respiratory diseases."
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Fuel Efficient: Uses less biomass while generating more heat."
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "gray-500",
+                "text": "Cost-Effective: Lowers fuel expenses with optimized combustion."
+            },
+            {
+                "icon": "ri-heart-2-fill",
+                "color": "red-500",
+                "text": "Healthier Kitchen: Prevents smoke-related illnesses in women and children."
+            },
+            {
+                "icon": "ri-shield-check-line",
+                "color": "blue-500",
+                "text": "Safe & User-Friendly: Enclosed flame minimizes burn risks."
+            },
+            {
+                "icon": "ri-earthquake-fill",
+                "color": "yellow-500",
+                "text": "Eco-Friendly: Reduces deforestation by utilizing sustainable biomass."
+            },
+            {
+                "icon": "ri-dashboard-3-line",
+                "color": "blue-500",
+                "text": "Low Maintenance: Produces minimal ash and requires easy cleaning."
+            },
+            {
+                "icon": "ri-handbag-line",
+                "color": "blue-500",
+                "text": "Compact & Portable: Lightweight design for convenient use anywhere."
             }
-        },
-        "whyChoose": {
-            "Eco-Friendly Power Generation": "Reduces carbon footprint and fuel dependency.",
-            "Highly Efficient Performance": "Designed for long-term and continuous usage.",
-            "Built for Durability": "Ideal for heavy-duty operations.",
-            "Trusted by Industry Experts": "Manufactured by Enersol Biopower, a leader in renewable energy solutions."
-        }
+        ],
+        "specifications": [
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Fuel Type",
+                "value": "100% Biomass"
+            },
+            {
+                "icon": "ri-dashboard-line",
+                "color": "blue-500",
+                "label": "Fuel Consumption",
+                "value": "1.5-2 kg/hr"
+            },
+            {
+                "icon": "ri-drop-fill",
+                "color": "blue-500",
+                "label": "Accepted Fuel Moisture",
+                "value": "Less than 20%"
+            },
+            {
+                "icon": "ri-temp-cold-line",
+                "color": "blue-500",
+                "label": "Ignition System",
+                "value": "12V DC Fan (Forced Draft)"
+            },
+            {
+                "icon": "ri-award-fill",
+                "color": "yellow-500",
+                "label": "Ash Removal Mode",
+                "value": "Manual"
+            },
+            {
+                "icon": "ri-tools-line",
+                "color": "gray-500",
+                "label": "Flame Regulator",
+                "value": "Adjustable for precise cooking control"
+            },
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Thermal Efficiency",
+                "value": "35.5%"
+            },
+            {
+                "icon": "ri-building-2-line",
+                "color": "blue-500",
+                "label": "Material",
+                "value": "Mild Steel & Cast Iron"
+            },
+            {
+                "icon": "ri-dashboard-3-line",
+                "color": "blue-500",
+                "label": "Weight",
+                "value": "Approx. 14kg"
+            },
+            {
+                "icon": "ri-ruler-line",
+                "color": "blue-500",
+                "label": "Dimensions",
+                "value": "H12\" x W12\" x L18\""
+            }
+        ],
+        "technology": [
+            {
+                "icon": "ri-sun-line",
+                "color": "yellow-500",
+                "text": "Join the Green Energy Movement Today!"
+            }
+        ]
     },
     {
         "name": "Forced Draft – Bio-Mini Solar",
-        "category": "Smokeless Biomass Stoves/ Bhatti",
+        "category": "Smokeless Biomass Stoves / Bhatti",
         "modelName": "ESB-R Bio-Mini Solar",
         "modelNumber": "ESB-R/BM01S",
         "image": "../assets/products/bhatti/bio-mini-solar.jpg",
+        "catalogueLink": "https://drive.google.com/uc?export=download&id=1wcaw32Jc8bEVkENfLyxAOHKa9UIUhT_e",
         "description": "The ESB-R Bio-Mini Solar is a next-generation smokeless biomass stove, designed to revolutionize traditional cooking methods while also providing solar-powered lighting. This dual-purpose innovation eliminates harmful smoke emissions, enhances fuel efficiency, and serves as an eco-friendly alternative to conventional biomass stoves and kerosene lamps. Perfect for households, small businesses, and rural communities, it ensures clean cooking and reliable lighting in areas with limited electricity access.",
         "productId": "productId029",
-        "tagline": "Effortless Cooking & Sustainable Illumination",
-        "keyFeatures": [
+        "subtitle": "Effortless Cooking & Sustainable Illumination",
+        "features": [
             {
                 "icon": "ri-leaf-line",
                 "color": "green-500",
                 "text": "Smokeless Cooking: Eliminates indoor air pollution, promoting a healthier home."
             },
             {
-                "icon": "ri-sun-line",
+                "icon": "ri-flashlight-fill",
                 "color": "yellow-500",
                 "text": "Solar-Powered Lighting: Comes with a 10W solar panel and LED light for nighttime use."
             },
@@ -3270,18 +3353,13 @@
                 "text": "Eco-Friendly & Sustainable: Supports renewable biomass fuels, lowering environmental impact."
             },
             {
-                "icon": "ri-flashlight-fill",
-                "color": "yellow-500",
-                "text": "Low Maintenance & Durable: Built for long-term reliability with minimal upkeep."
+                "icon": "ri-settings-2-line",
+                "color": "gray-500",
+                "text": "Safe & User-Friendly: Designed with temperature control and an enclosed combustion chamber to prevent accidental burns."
             },
             {
                 "icon": "ri-shield-flash-line",
                 "color": "red-500",
-                "text": "Advanced Safety Measures: Includes temperature control and an enclosed combustion chamber."
-            },
-            {
-                "icon": "ri-tools-line",
-                "color": "gray-500",
                 "text": "Reliable Backup Power: Ideal for areas with frequent power cuts, ensuring uninterrupted light and cooking."
             }
         ],
@@ -3292,54 +3370,149 @@
                 "text": "Home Kitchens – Perfect for daily cooking in rural and urban households."
             },
             {
-                "icon": "ri-store-line",
-                "color": "blue-500",
+                "icon": "ri-plant-fill",
+                "color": "green-500",
                 "text": "Small Businesses & Tea Stalls – Reliable for cafes, street vendors, and small eateries."
             },
             {
-                "icon": "ri-restaurant-line",
-                "color": "red-500",
+                "icon": "ri-lightbulb-flash-line",
+                "color": "yellow-500",
                 "text": "Community Cooking – Efficient for preparing meals for 5-25 people."
             },
             {
-                "icon": "ri-community-line",
-                "color": "green-500",
+                "icon": "ri-hotel-line",
+                "color": "blue-500",
                 "text": "Rural & Off-Grid Areas – Provides an alternative power source for lighting and cooking."
+            },
+            {
+                "icon": "ri-building-2-line",
+                "color": "blue-500",
+                "text": "Emergency Use – Functions as a backup stove and lighting solution during power outages."
             }
         ],
-        "technicalSpecifications": {
-            "Fuel Type": "100% Biomass",
-            "Biomass Consumption": "1.5-2 kg/hr",
-            "Accepted Fuel Moisture": "Less than 20%",
-            "Ignition System": "12V DC Fan (Forced Draft)",
-            "Solar Panel": "10 Watt",
-            "LED Light": "Single LED for home illumination",
-            "Flame Control": "Adjustable regulator for cooking precision",
-            "Material": "Mild Steel & Cast Iron",
-            "Weight": "Approx. 14kg",
-            "Dimensions": "H12\" x W12\" x L18\"",
-            "Thermal Efficiency": "35.5%"
-        },
-        "whyChoose": {
-            "Smoke-Free Cooking": "Reduces exposure to harmful fumes, protecting women and children from respiratory diseases.",
-            "Energy-Saving Solar Light": "Provides lighting for up to 12 hours, replacing kerosene lamps.",
-            "Fuel Efficiency": "Uses less biomass while generating more heat, cutting down on fuel costs.",
-            "Sustainable Solution": "Utilizes agricultural residues and wood pellets, reducing deforestation.",
-            "Enhanced Safety Features": "The enclosed combustion system minimizes the risk of burns and fire hazards.",
-            "Low Maintenance": "Simple cleaning and manual ash removal for effortless operation.",
-            "Ideal for Remote Locations": "Works in electricity-deficient areas, ensuring both cooking and lighting convenience."
-        }
+        "benefits": [
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Smoke-Free Cooking: Reduces exposure to harmful fumes, protecting women and children from respiratory diseases."
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Energy-Saving Solar Light: Provides lighting for up to 12 hours, replacing kerosene lamps."
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "gray-500",
+                "text": "Fuel Efficiency: Uses less biomass while generating more heat, cutting down on fuel costs."
+            },
+            {
+                "icon": "ri-heart-2-fill",
+                "color": "red-500",
+                "text": "Sustainable Solution: Utilizes agricultural residues and wood pellets, reducing deforestation."
+            },
+            {
+                "icon": "ri-shield-check-line",
+                "color": "blue-500",
+                "text": "Enhanced Safety Features: The enclosed combustion system minimizes the risk of burns and fire hazards."
+            },
+            {
+                "icon": "ri-dashboard-3-line",
+                "color": "blue-500",
+                "text": "Low Maintenance: Simple cleaning and manual ash removal for effortless operation."
+            },
+            {
+                "icon": "ri-handbag-line",
+                "color": "blue-500",
+                "text": "Ideal for Remote Locations: Works in electricity-deficient areas, ensuring both cooking and lighting convenience."
+            }
+        ],
+        "specifications": [
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Fuel Type",
+                "value": "100% Biomass"
+            },
+            {
+                "icon": "ri-dashboard-line",
+                "color": "blue-500",
+                "label": "Biomass Consumption",
+                "value": "1.5-2 kg/hr"
+            },
+            {
+                "icon": "ri-drop-fill",
+                "color": "blue-500",
+                "label": "Accepted Fuel Moisture",
+                "value": "Less than 20%"
+            },
+            {
+                "icon": "ri-temp-cold-line",
+                "color": "blue-500",
+                "label": "Ignition System",
+                "value": "12V DC Fan (Forced Draft)"
+            },
+            {
+                "icon": "ri-sun-line",
+                "color": "yellow-500",
+                "label": "Solar Panel",
+                "value": "10 Watt"
+            },
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "LED Light",
+                "value": "Single LED for home illumination"
+            },
+            {
+                "icon": "ri-tools-line",
+                "color": "gray-500",
+                "label": "Flame Control",
+                "value": "Adjustable regulator for cooking precision"
+            },
+            {
+                "icon": "ri-building-2-line",
+                "color": "blue-500",
+                "label": "Material",
+                "value": "Mild Steel & Cast Iron"
+            },
+            {
+                "icon": "ri-dashboard-3-line",
+                "color": "blue-500",
+                "label": "Weight",
+                "value": "Approx. 14kg"
+            },
+            {
+                "icon": "ri-ruler-line",
+                "color": "blue-500",
+                "label": "Dimensions",
+                "value": "H12\" x W12\" x L18\""
+            },
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Thermal Efficiency",
+                "value": "35.5%"
+            }
+        ],
+        "technology": [
+            {
+                "icon": "ri-sun-line",
+                "color": "yellow-500",
+                "text": "Upgrade to Smarter, Cleaner Cooking Today!"
+            }
+        ]
     },
     {
         "name": "Green-Agnika10",
-        "category": "Smokeless Biomass Stoves/ Bhatti",
+        "category": "Smokeless Biomass Stoves / Bhatti",
         "modelName": "ESB-R Green-Agnika10",
         "modelNumber": "ESB-R/GA10",
         "image": "../assets/products/bhatti/harit-agni-12.jpeg",
         "description": "The ESB-R Green-Agnika10 is a high-efficiency, smokeless biomass stove engineered for small businesses, street food vendors, and home kitchens. Designed by Enersol Biopower, this stove offers a cost-effective, eco-friendly alternative to LPG and traditional firewood stoves. Whether you're running a tea stall, preparing snacks, or cooking meals for a large group, the Green-Agnika10 delivers powerful heat output with minimal fuel consumption.",
         "productId": "productId030",
-        "tagline": "Smart Cooking, Sustainable Living",
-        "keyFeatures": [
+        "subtitle": "Smart Cooking, Sustainable Living",
+        "features": [
             {
                 "icon": "ri-leaf-line",
                 "color": "green-500",
@@ -3351,7 +3524,7 @@
                 "text": "Highly Fuel-Efficient – Uses up to 60% less fuel compared to LPG stoves."
             },
             {
-                "icon": "ri-fire-line",
+                "icon": "ri-fire-fill",
                 "color": "red-500",
                 "text": "Powerful Thermal Output – Generates 12,500-25,000 Kcal/hr of heat for faster cooking."
             },
@@ -3366,30 +3539,20 @@
                 "text": "Adjustable Flame Control – Allows precise temperature adjustments for different cooking needs."
             },
             {
-                "icon": "ri-tools-line",
-                "color": "gray-500",
-                "text": "Low Maintenance – Simple cleaning with manual ash removal."
-            },
-            {
                 "icon": "ri-earth-fill",
                 "color": "green-500",
                 "text": "Eco-Friendly & Sustainable – Uses biomass fuels like wood waste, coal, cow dung cakes, and briquettes."
-            },
-            {
-                "icon": "ri-money-dollar-circle-line",
-                "color": "green-500",
-                "text": "Quick Return on Investment – Pays for itself within 2 months through fuel savings."
             }
         ],
         "applications": [
             {
-                "icon": "ri-store-line",
-                "color": "blue-500",
+                "icon": "ri-home-smile-line",
+                "color": "green-500",
                 "text": "Tea & Coffee Stalls – Ideal for quick brewing and boiling."
             },
             {
-                "icon": "ri-restaurant-line",
-                "color": "red-500",
+                "icon": "ri-plant-fill",
+                "color": "green-500",
                 "text": "Snack Vendors & Street Food Stalls – Perfect for making pakoras, samosas, and kachoris."
             },
             {
@@ -3398,443 +3561,1189 @@
                 "text": "Small Hotels & Dhabas – Provides a reliable and consistent heat source."
             },
             {
-                "icon": "ri-community-line",
-                "color": "green-500",
+                "icon": "ri-building-2-line",
+                "color": "blue-500",
                 "text": "Mess & Canteens – Efficient for cooking meals for up to 50 people."
             },
             {
-                "icon": "ri-home-smile-line",
-                "color": "green-500",
+                "icon": "ri-group-line",
+                "color": "yellow-500",
                 "text": "Idli-Dosa Stalls – Great for South Indian cuisine preparation."
             }
         ],
-        "technicalSpecifications": {
-            "Model Name": "Green-Agnika10",
-            "Model No.": "ESB-R/GA10",
-            "Fuel Type": "100% Biomass",
-            "Stove Type": "Force-Draft",
-            "Feeding Mode": "Manual",
-            "Feeding System": "Top Feeding",
-            "Material": "Mild Steel (MS)",
-            "Thermal Output": "12,500-25,000 Kcal/hr",
-            "Biomass Consumption": "5-10 kg/hr",
-            "Accepted Fuel Moisture": "Less than 20%",
-            "Power Requirement": "4” AC Fan",
-            "Flame Adjustment": "Built-in regulator for heat control",
-            "Efficiency Rating": "35.5% Thermal Efficiency",
-            "Ash Removal Mode": "Manual",
-            "Weight": "40-50 kg Approx.",
-            "Dimensions": "H16” x W14”",
-            "Cost Savings Compared to LPG": {
-                "LPG Cylinder Price": "₹1,819 per commercial cylinder",
-                "Biomass Required to Replace 1 LPG Cylinder": "95 kg wood chips",
-                "Total Biomass Cost": "₹665 (Considering wood at ₹7/kg)",
-                "Savings per LPG Cylinder": "₹1,154"
+        "benefits": [
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Sustainable & Green Cooking: Uses renewable biomass fuels, reducing reliance on LPG."
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "More Affordable than LPG: 60% cost savings, ensuring faster ROI."
+            },
+            {
+                "icon": "ri-handbag-line",
+                "color": "blue-500",
+                "text": "Compact & Portable: Easy to transport and set up anywhere."
+            },
+            {
+                "icon": "ri-dashboard-3-line",
+                "color": "blue-500",
+                "text": "Heavy-Duty Performance: Designed for commercial and high-volume cooking."
+            },
+            {
+                "icon": "ri-award-fill",
+                "color": "yellow-500",
+                "text": "Backed by Innovation: Developed by Enersol Biopower, a leader in biomass-to-energy solutions."
             }
-        },
-        "whyChoose": {
-            "Sustainable & Green Cooking": "Uses renewable biomass fuels, reducing reliance on LPG.",
-            "More Affordable than LPG": "60% cost savings, ensuring faster ROI.",
-            "Compact & Portable": "Easy to transport and set up anywhere.",
-            "Heavy-Duty Performance": "Designed for commercial and high-volume cooking.",
-            "Backed by Innovation": "Developed by Enersol Biopower, a leader in biomass-to-energy solutions."
-        }
+        ],
+        "specifications": [
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Fuel Type",
+                "value": "100% Biomass"
+            },
+            {
+                "icon": "ri-dashboard-line",
+                "color": "blue-500",
+                "label": "Thermal Output",
+                "value": "12,500-25,000 Kcal/hr"
+            },
+            {
+                "icon": "ri-drop-fill",
+                "color": "blue-500",
+                "label": "Biomass Consumption",
+                "value": "5-10 kg/hr"
+            },
+            {
+                "icon": "ri-temp-cold-line",
+                "color": "blue-500",
+                "label": "Fuel Moisture",
+                "value": "Less than 20%"
+            },
+            {
+                "icon": "ri-tools-line",
+                "color": "gray-500",
+                "label": "Power Requirement",
+                "value": "4” AC Fan"
+            },
+            {
+                "icon": "ri-dashboard-3-line",
+                "color": "blue-500",
+                "label": "Flame Adjustment",
+                "value": "Built-in regulator for heat control"
+            },
+            {
+                "icon": "ri-building-2-line",
+                "color": "blue-500",
+                "label": "Material",
+                "value": "Mild Steel (MS)"
+            },
+            {
+                "icon": "ri-dashboard-3-line",
+                "color": "blue-500",
+                "label": "Weight",
+                "value": "40-50 kg Approx."
+            },
+            {
+                "icon": "ri-ruler-line",
+                "color": "blue-500",
+                "label": "Dimensions",
+                "value": "H16'' x W14''"
+            },
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Efficiency Rating",
+                "value": "35.5% Thermal Efficiency"
+            }
+        ],
+        "technology": [
+            {
+                "icon": "ri-sun-line",
+                "color": "yellow-500",
+                "text": "Upgrade to Cleaner, Smarter Cooking Today!"
+            }
+        ]
     },
     {
-        "name": "Harit-Agni12",
-        "category": "Smokeless Biomass Stoves/ Bhatti",
-        "modelName": "ESB-R Harit-Agni12",
-        "modelNumber": "ESB-R/HA12",
+        "name": "ESB-R Harit-Agni12 & Harit-Agni12B",
+        "category": "Smokeless Biomass Stoves / Bhatti",
+        "modelName": "Harit-Agni12 & Harit-Agni12B",
+        "modelNumber": "ESB-R/HA12 & ESB-R/HA12B",
         "image": "../assets/products/bhatti/harit-agni-12b.jpeg",
-        "description": "The ESB-R Harit-Agni12 is a high-performance smokeless biomass stove, designed to bring cost-efficient, eco-friendly, and powerful cooking solutions to food businesses, street vendors, and home kitchens. Built by Enersol Biopower, this stove ensures high combustion efficiency, reduced fuel consumption, and superior durability, making it ideal for commercial and community cooking.",
+        "description": "The ESB-R Harit-Agni12 & Harit-Agni12B are high-performance smokeless biomass stoves, designed to bring cost-efficient, eco-friendly, and powerful cooking solutions to food businesses, street vendors, and home kitchens. Built by Enersol Biopower, these stoves ensure high combustion efficiency, reduced fuel consumption, and superior durability, making them ideal for commercial and community cooking.",
         "productId": "productId031",
-        "tagline": "Efficient Cooking, Maximum Savings, Minimal Emissions",
-        "keyFeatures": [
-            "Smokeless & Healthy Cooking: Minimizes harmful smoke, improving indoor air quality.",
-            "Maximum Fuel Efficiency: Burns biomass with 35.5% thermal efficiency, reducing fuel costs.",
-            "Robust & Durable: Constructed from high-grade mild steel for long-lasting use.",
-            "Customizable Flame Control: Adjustable heat settings for different cooking requirements.",
-            "Low Maintenance: Designed for easy cleaning and minimal upkeep.",
-            "Eco-Friendly Choice: Uses biomass fuels like wood chips, cow dung cakes, and briquettes, cutting down on LPG dependency.",
-            "Perfect for Bulk Cooking: Efficiently cooks food for 50-60 people, making it a reliable choice for canteens, hotels, and food stalls."
+        "subtitle": "Efficient Cooking, Maximum Savings, Minimal Emissions",
+        "features": [
+            {
+                "icon": "ri-smoke-free-line",
+                "color": "green-500",
+                "text": "Smokeless & Healthy Cooking – Minimizes harmful smoke, improving indoor air quality"
+            },
+            {
+                "icon": "ri-flame-fill",
+                "color": "red-500",
+                "text": "Maximum Fuel Efficiency – Burns biomass with 35.5% thermal efficiency, reducing fuel costs"
+            },
+            {
+                "icon": "ri-hammer-fill",
+                "color": "gray-500",
+                "text": "Robust & Durable – Constructed from high-grade mild steel for long-lasting use"
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "blue-500",
+                "text": "Customizable Flame Control – Adjustable heat settings for different cooking requirements"
+            },
+            {
+                "icon": "ri-brush-2-line",
+                "color": "purple-500",
+                "text": "Low Maintenance – Designed for easy cleaning and minimal upkeep"
+            },
+            {
+                "icon": "ri-leaf-line",
+                "color": "green-500",
+                "text": "Eco-Friendly Choice – Uses biomass fuels like wood chips, cow dung cakes, and briquettes, cutting down on LPG dependency"
+            },
+            {
+                "icon": "ri-restaurant-line",
+                "color": "yellow-500",
+                "text": "Perfect for Bulk Cooking – Efficiently cooks food for 50-60 people, making it a reliable choice for canteens, hotels, and food stalls"
+            }
+        ],
+        "technology": [],
+        "specifications": [
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Model Numbers",
+                "value": "ESB-R/HA12, ESB-R/HA12B"
+            },
+            {
+                "icon": "ri-plant-fill",
+                "color": "green-500",
+                "label": "Fuel Type",
+                "value": "100% Biomass"
+            },
+            {
+                "icon": "ri-fire-fill",
+                "color": "red-500",
+                "label": "Stove Type",
+                "value": "Force-Draft"
+            },
+            {
+                "icon": "ri-hand-coin-line",
+                "color": "blue-500",
+                "label": "Feeding Mode",
+                "value": "Manual"
+            },
+            {
+                "icon": "ri-industrial-scale-line",
+                "color": "gray-500",
+                "label": "Thermal Output",
+                "value": "7-10 kg/hr, 8-12 kg/hr"
+            },
+            {
+                "icon": "ri-water-flash-fill",
+                "color": "blue-500",
+                "label": "Accepted Fuel Moisture",
+                "value": "Less than 20%"
+            },
+            {
+                "icon": "ri-plug-line",
+                "color": "yellow-500",
+                "label": "Power Requirement",
+                "value": "4” AC Fan, 100W Blower"
+            },
+            {
+                "icon": "ri-timer-flash-line",
+                "color": "purple-500",
+                "label": "Flame Adjustment",
+                "value": "Built-in flame regulator"
+            },
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Thermal Efficiency",
+                "value": "35.5%"
+            },
+            {
+                "icon": "ri-ruler-line",
+                "color": "gray-500",
+                "label": "Dimensions",
+                "value": "H22” x W18”"
+            },
+            {
+                "icon": "ri-dashboard-3-line",
+                "color": "gray-500",
+                "label": "Weight",
+                "value": "70 kg Approx., 72 kg Approx."
+            }
         ],
         "applications": [
-            "Tea & Coffee Stalls – Ideal for quick brewing and boiling.",
-            "Street Food Vendors – Perfect for pakoras, samosas, and kachoris.",
-            "Small Hotels & Dhabas – Ensures consistent and high-performance cooking.",
-            "Poha & Idli-Dosa Stalls – Provides the required heat for perfect texture and taste.",
-            "Mess & Canteens – A great option for preparing large-scale meals.",
-            "Sweet Shops & Snack Outlets – Supports continuous cooking with steady heat."
+            {
+                "icon": "ri-store-3-line",
+                "color": "red-500",
+                "text": "Tea & Coffee Stalls, Street Food Vendors, Small Hotels & Dhabas, Poha & Idli-Dosa Stalls, Mess & Canteens, Sweet Shops & Snack Outlets"
+            }
         ],
-        "technicalSpecifications": {
-            "Fuel Type": "100% Biomass",
-            "Stove Type": "Force-Draft",
-            "Feeding Mode": "Manual",
-            "Feeding System": "Top Feeding",
-            "Material": "Mild Steel",
-            "Thermal Output": "7-10 kg/hr",
-            "Biomass Consumption": "5-10 kg/hr",
-            "Accepted Fuel Moisture": "Less than 20%",
-            "Power Requirement": "4” AC Fan",
-            "Flame Adjustment": "Built-in flame regulator",
-            "Thermal Efficiency": "35.5%",
-            "Weight": "70 kg Approx.",
-            "Dimensions": "H22” x W18”"
-        }
-    },
-    {
-        "name": "Harit-Agni12B",
-        "category": "Smokeless Biomass Stoves/ Bhatti",
-        "modelName": "ESB-R Harit-Agni12B",
-        "modelNumber": "ESB-R/HA12B",
-        "image": "../assets/products/bhatti/harit-agni-12b.jpeg",
-        "description": "The ESB-R Harit-Agni12B extends the features of its counterpart by offering additional power and efficiency, suitable for high-volume cooking. Like the Harit-Agni12, it's designed for food businesses and vendors who need a durable, eco-friendly, and powerful cooking solution. It is particularly well-suited for larger setups needing consistent high heat.",
-        "productId": "productId032",
-        "tagline": "Efficient Cooking, Maximum Savings, Minimal Emissions",
-        "keyFeatures": [
-            "Smokeless & Healthy Cooking: Minimizes harmful smoke, improving indoor air quality.",
-            "Maximum Fuel Efficiency: Burns biomass with 35.5% thermal efficiency, reducing fuel costs.",
-            "Robust & Durable: Constructed from high-grade mild steel for long-lasting use.",
-            "Customizable Flame Control: Adjustable heat settings for different cooking requirements.",
-            "Low Maintenance: Designed for easy cleaning and minimal upkeep.",
-            "Eco-Friendly Choice: Uses biomass fuels like wood chips, cow dung cakes, and briquettes, cutting down on LPG dependency.",
-            "Perfect for Bulk Cooking: Efficiently cooks food for 50-60 people, making it a reliable choice for larger canteens, hotels, and food stalls."
-        ],
-        "applications": [
-            "Tea & Coffee Stalls – Ideal for quick brewing and boiling.",
-            "Street Food Vendors – Perfect for pakoras, samosas, and kachoris.",
-            "Small Hotels & Dhabas – Ensures consistent and high-performance cooking.",
-            "Poha & Idli-Dosa Stalls – Provides the required heat for perfect texture and taste.",
-            "Mess & Canteens – A great option for preparing large-scale meals.",
-            "Sweet Shops & Snack Outlets – Supports continuous cooking with steady heat."
-        ],
-        "technicalSpecifications": {
-            "Fuel Type": "100% Biomass",
-            "Stove Type": "Force-Draft",
-            "Feeding Mode": "Manual",
-            "Feeding System": "Top Feeding",
-            "Material": "Mild Steel",
-            "Thermal Output": "8-12 kg/hr",
-            "Biomass Consumption": "5-10 kg/hr",
-            "Accepted Fuel Moisture": "Less than 20%",
-            "Power Requirement": "100W Blower",
-            "Flame Adjustment": "Built-in flame regulator",
-            "Thermal Efficiency": "35.5%",
-            "Weight": "72 kg Approx.",
-            "Dimensions": "H22” x W18”"
-        }
+        "benefits": [
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Environmentally Friendly – Reduces carbon footprint and promotes green energy"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Cost-Effective – Saves fuel costs compared to diesel generators"
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "gray-500",
+                "text": "Low Maintenance – Simple operation with minimal servicing required"
+            },
+            {
+                "icon": "ri-award-fill",
+                "color": "yellow-500",
+                "text": "Proven Technology – Developed by Enersol Biopower, a leader in biomass energy solutions"
+            }
+        ]
     },
     {
         "name": "Green-Magic15",
-        "category": "Smokeless Biomass Stoves/ Bhatti",
+        "category": "Smokeless Biomass Stoves / Bhatti",
         "modelName": "ESB-R Green-Magic15",
         "modelNumber": "ESB-R/GM15",
         "image": "../assets/products/bhatti/green-magic-15.jpg",
         "description": "The ESB-R Green-Magic15 is a high-efficiency, smokeless biomass stove designed for commercial kitchens, food vendors, and confectionery businesses looking for an affordable and eco-friendly alternative to LPG. Developed by Enersol Biopower, this 15-inch fire zone biomass stove offers superior heat output, enabling faster and more cost-effective cooking while significantly reducing fuel expenses. With a return on investment in just 25 days, this stove is the perfect solution for businesses seeking sustainability without compromising performance.",
         "productId": "productId033",
-        "tagline": "Powerful Cooking, Maximum Savings, and a Greener Future",
-        "keyFeatures": [
-            "Smokeless & Healthier Cooking: Eliminates harmful fumes and soot, ensuring cleaner indoor air.",
-            "Exceptional Fuel Efficiency: Generates 30,000-62,500 Kcal/hr of heat while consuming less biomass.",
-            "Cost-Effective Alternative to LPG: Saves ₹34,620 per month compared to LPG expenses.",
-            "Heavy-Duty & Long-Lasting: Made from mild steel & ceramic brick for durability.",
-            "Customizable Heat Control: Integrated flame regulator for precise cooking temperatures.",
-            "Eco-Friendly & Sustainable: Works with wood chips, briquettes, cow dung cakes, and charcoal.",
-            "Low Maintenance: Features manual ash removal for easy cleaning and upkeep.",
-            "Perfect for Bulk Cooking: Suitable for confectioneries, sweet shops, and food vendors."
+        "catalogueLink": "https://drive.google.com/uc?export=download&id=1JHlfLqkh6Mpp9N0uzxfqYoEZwEzppQ7b",
+        "subtitle": "Powerful Cooking, Maximum Savings, and a Greener Future",
+        "features": [
+            {
+                "icon": "ri-smoke-free-line",
+                "color": "green-500",
+                "text": "Smokeless & Healthier Cooking – Eliminates harmful fumes and soot, ensuring cleaner indoor air"
+            },
+            {
+                "icon": "ri-flame-fill",
+                "color": "red-500",
+                "text": "Exceptional Fuel Efficiency – Generates 30,000-62,500 Kcal/hr of heat while consuming less biomass"
+            },
+            {
+                "icon": "ri-hammer-fill",
+                "color": "gray-500",
+                "text": "Heavy-Duty & Long-Lasting – Made from mild steel & ceramic brick for durability"
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "blue-500",
+                "text": "Customizable Heat Control – Integrated flame regulator for precise cooking temperatures"
+            },
+            {
+                "icon": "ri-leaf-line",
+                "color": "green-500",
+                "text": "Eco-Friendly & Sustainable – Works with wood chips, briquettes, cow dung cakes, and charcoal"
+            },
+            {
+                "icon": "ri-brush-2-line",
+                "color": "purple-500",
+                "text": "Low Maintenance – Features manual ash removal for easy cleaning and upkeep"
+            },
+            {
+                "icon": "ri-restaurant-line",
+                "color": "yellow-500",
+                "text": "Perfect for Bulk Cooking – Suitable for confectioneries, sweet shops, and food vendors"
+            }
+        ],
+        "technology": [],
+        "specifications": [
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Model No",
+                "value": "ESB-R/GM15"
+            },
+            {
+                "icon": "ri-fire-fill",
+                "color": "red-500",
+                "label": "Stove Type",
+                "value": "Force-Draft"
+            },
+            {
+                "icon": "ri-hand-coin-line",
+                "color": "blue-500",
+                "label": "Feeding Mode",
+                "value": "Manual"
+            },
+            {
+                "icon": "ri-building-2-line",
+                "color": "gray-500",
+                "label": "Feeding System",
+                "value": "Side Feeding"
+            },
+            {
+                "icon": "ri-thermometer-line",
+                "color": "red-500",
+                "label": "Thermal Output",
+                "value": "30,000-62,500 Kcal/hr"
+            },
+            {
+                "icon": "ri-plant-fill",
+                "color": "green-500",
+                "label": "Biomass Consumption",
+                "value": "12-25 kg/hr"
+            },
+            {
+                "icon": "ri-water-flash-fill",
+                "color": "blue-500",
+                "label": "Accepted Fuel Moisture",
+                "value": "Less than 20%"
+            },
+            {
+                "icon": "ri-plug-line",
+                "color": "yellow-500",
+                "label": "Power Requirement",
+                "value": "100W Blower"
+            },
+            {
+                "icon": "ri-timer-flash-line",
+                "color": "purple-500",
+                "label": "Flame Control",
+                "value": "Adjustable flame regulator"
+            },
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Thermal Efficiency",
+                "value": "35.5%"
+            },
+            {
+                "icon": "ri-ruler-line",
+                "color": "gray-500",
+                "label": "Dimensions",
+                "value": "H26” x W28”"
+            },
+            {
+                "icon": "ri-dashboard-3-line",
+                "color": "gray-500",
+                "label": "Weight",
+                "value": "190-200 kg Approx."
+            }
         ],
         "applications": [
-            "Jalebi & Sweet Shops – Ensures perfect temperature control for sugar syrup consistency.",
-            "Samosa & Kachori Vendors – Provides consistent and high heat for deep frying.",
-            "Hotel, Dhaba & Restaurants – A cost-efficient cooking solution for commercial use.",
-            "Mess & Canteens – Ideal for preparing large meals efficiently.",
-            "Fabric Dyeing Industry – Can be used for boiling and heating applications.",
-            "Daal-Bati-Churma Makers – Delivers steady heat for traditional Indian dishes."
+            {
+                "icon": "ri-store-3-line",
+                "color": "red-500",
+                "text": "Jalebi & Sweet Shops, Samosa & Kachori Vendors, Hotel, Dhaba & Restaurants, Mess & Canteens, Fabric Dyeing Industry, Daal-Bati-Churma Makers"
+            }
         ],
-        "technicalSpecifications": {
-            "Model Name": "Green-Magic15",
-            "Model No.": "ESB-R/GM15",
-            "Stove Type": "Force-Draft",
-            "Feeding Mode": "Manual",
-            "Feeding System": "Side Feeding",
-            "Fire Zone Size": "15 inches",
-            "Thermal Output": "30,000-62,500 Kcal/hr",
-            "Biomass Consumption": "12-25 kg/hr",
-            "Fuel Compatibility": "Wood chips, briquettes, cow dung cakes, pellets, charcoal",
-            "Accepted Fuel Moisture": "Less than 20%",
-            "Power Requirement": "100W Blower",
-            "Flame Control": "Adjustable flame regulator",
-            "Thermal Efficiency": "35.5%",
-            "Material": "Mild Steel & Ceramic Brick",
-            "Weight": "190-200 kg Approx.",
-            "Dimensions": "H26” x W28”"
-        },
-        "whyChoose": {
-            "Eco-Friendly Energy Solution": "Reduces fossil fuel dependency and promotes clean cooking.",
-            "Unmatched Affordability": "Cuts fuel costs by 50-60%, making it the best alternative to LPG.",
-            "Durable & Heavy-Duty": "Built for continuous, high-volume cooking operations.",
-            "Backed by Expertise": "Manufactured by Enersol Biopower, a trusted leader in biomass energy solutions."
-        }
+        "benefits": [
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Eco-Friendly Energy Solution – Reduces fossil fuel dependency and promotes clean cooking"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Unmatched Affordability – Cuts fuel costs by 50-60%, making it the best alternative to LPG"
+            },
+            {
+                "icon": "ri-hammer-fill",
+                "color": "gray-500",
+                "text": "Durable & Heavy-Duty – Built for continuous, high-volume cooking operations"
+            },
+            {
+                "icon": "ri-award-fill",
+                "color": "yellow-500",
+                "text": "Backed by Expertise – Manufactured by Enersol Biopower, a trusted leader in biomass energy solutions"
+            }
+        ]
     },
     {
         "name": "Bio-Virat18",
-        "category": "Smokeless Biomass Stoves/ Bhatti",
+        "category": "Smokeless Biomass Stoves / Bhatti",
         "modelName": "ESB-R Bio-Virat18",
         "modelNumber": "ESB-R/BV18",
         "image": "../assets/products/bhatti/virat-18.jpg",
         "description": "The ESB-R Bio-Virat18 is an advanced smokeless biomass stove designed for industrial kitchens, food vendors, and confectionery businesses looking for a cost-efficient and eco-friendly alternative to LPG. Manufactured by Enersol Biopower, this 18-inch fire zone biomass stove delivers powerful heat output, faster cooking, and significant savings, making it a game-changer for high-volume food preparation.",
         "productId": "productId034",
-        "tagline": "Cook Faster, Save More, and Go Green",
-        "keyFeatures": [
-            "Smokeless & Safe Cooking: Reduces harmful emissions, ensuring a healthier workspace.",
-            "Exceptional Heat Efficiency: Generates 40,000-75,000 Kcal/hr of thermal output.",
-            "Dramatic Fuel Cost Savings: Cuts down LPG costs by more than 60%.",
-            "Built to Last: Constructed from mild steel & ceramic bricks for durability.",
-            "Adjustable Heat Control: Integrated flame regulator for customized cooking needs.",
-            "Versatile Fuel Compatibility: Works with wood waste, charcoal, briquettes, and cow dung cakes.",
-            "Minimal Maintenance: Features manual ash removal for effortless upkeep.",
-            "Ideal for Bulk Cooking: Perfect for sweet shops, canteens, and large-scale food businesses."
+        "subtitle": "Cook Faster, Save More, and Go Green",
+        "features": [
+            {
+                "icon": "ri-smoke-free-line",
+                "color": "green-500",
+                "text": "Smokeless & Safe Cooking – Reduces harmful emissions, ensuring a healthier workspace"
+            },
+            {
+                "icon": "ri-flame-fill",
+                "color": "red-500",
+                "text": "Exceptional Heat Efficiency – Generates 40,000-75,000 Kcal/hr of thermal output"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Dramatic Fuel Cost Savings – Cuts down LPG costs by more than 60%"
+            },
+            {
+                "icon": "ri-hammer-fill",
+                "color": "gray-500",
+                "text": "Built to Last – Constructed from mild steel & ceramic bricks for durability"
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "blue-500",
+                "text": "Adjustable Heat Control – Integrated flame regulator for customized cooking needs"
+            },
+            {
+                "icon": "ri-leaf-line",
+                "color": "green-500",
+                "text": "Versatile Fuel Compatibility – Works with wood waste, charcoal, briquettes, and cow dung cakes"
+            },
+            {
+                "icon": "ri-brush-2-line",
+                "color": "purple-500",
+                "text": "Minimal Maintenance – Features manual ash removal for effortless upkeep"
+            },
+            {
+                "icon": "ri-restaurant-line",
+                "color": "yellow-500",
+                "text": "Ideal for Bulk Cooking – Perfect for sweet shops, canteens, and large-scale food businesses"
+            }
+        ],
+        "technology": [],
+        "specifications": [
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Model No",
+                "value": "ESB-R/BV18"
+            },
+            {
+                "icon": "ri-fire-fill",
+                "color": "red-500",
+                "label": "Stove Type",
+                "value": "Force-Draft"
+            },
+            {
+                "icon": "ri-building-2-line",
+                "color": "gray-500",
+                "label": "Fire Zone Size",
+                "value": "18 inches"
+            },
+            {
+                "icon": "ri-hand-coin-line",
+                "color": "blue-500",
+                "label": "Feeding Mode",
+                "value": "Manual"
+            },
+            {
+                "icon": "ri-industrial-scale-line",
+                "color": "gray-500",
+                "label": "Thermal Output",
+                "value": "40,000-75,000 Kcal/hr"
+            },
+            {
+                "icon": "ri-plant-fill",
+                "color": "green-500",
+                "label": "Biomass Consumption",
+                "value": "16-30 kg/hr"
+            },
+            {
+                "icon": "ri-water-flash-fill",
+                "color": "blue-500",
+                "label": "Accepted Fuel Moisture",
+                "value": "Less than 20%"
+            },
+            {
+                "icon": "ri-plug-line",
+                "color": "yellow-500",
+                "label": "Power Requirement",
+                "value": "165W Blower"
+            },
+            {
+                "icon": "ri-timer-flash-line",
+                "color": "purple-500",
+                "label": "Flame Control",
+                "value": "Adjustable flame regulator"
+            },
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Thermal Efficiency",
+                "value": "35.5%"
+            },
+            {
+                "icon": "ri-ruler-line",
+                "color": "gray-500",
+                "label": "Dimensions",
+                "value": "H26” x W31”"
+            },
+            {
+                "icon": "ri-dashboard-3-line",
+                "color": "gray-500",
+                "label": "Weight",
+                "value": "220 kg Approx."
+            }
         ],
         "applications": [
-            "Mithai & Sweet Shops – Ensures consistent temperature control for syrups & frying.",
-            "Samosa, Pakora & Kachori Vendors – Provides high, steady heat for deep frying.",
-            "Hotels, Dhabas & Restaurants – A cost-effective, high-performance cooking solution.",
-            "Langar & Temple Kitchens – Efficient for preparing large community meals.",
-            "Mawa & Khoya Makers – Ensures even heating for dairy product preparation.",
-            "Fabric Dyeing & Food Processing – Reliable for heat-based industrial applications."
+            {
+                "icon": "ri-store-3-line",
+                "color": "red-500",
+                "text": "Mithai & Sweet Shops, Samosa, Pakora & Kachori Vendors, Hotels, Dhabas & Restaurants, Langar & Temple Kitchens, Mawa & Khoya Makers, Fabric Dyeing & Food Processing"
+            }
         ],
-        "technicalSpecifications": {
-            "Model Name": "Bio-Virat18",
-            "Model No.": "ESB-R/BV18",
-            "Stove Type": "Force-Draft",
-            "Fire Zone Size": "18 inches",
-            "Feeding Mode": "Manual",
-            "Feeding System": "Side Feeding",
-            "Thermal Output": "40,000-75,000 Kcal/hr",
-            "Biomass Consumption": "16-30 kg/hr",
-            "Fuel Compatibility": "Wood chips, briquettes, charcoal, cow dung cakes",
-            "Accepted Fuel Moisture": "Less than 20%",
-            "Power Requirement": "165W Blower",
-            "Flame Control": "Adjustable flame regulator",
-            "Thermal Efficiency": "35.5%",
-            "Material": "Mild Steel & Ceramic Brick",
-            "Weight": "220 kg Approx.",
-            "Dimensions": "H26” x W31”"
-        },
-        "whyChoose": {
-            "Eco-Friendly Cooking": "Reduces fossil fuel dependency and cuts emissions.",
-            "Lower Fuel Costs, Higher Efficiency": "Saves money without sacrificing performance.",
-            "Reliable & Rugged Design": "Built for heavy-duty, continuous operation.",
-            "Trusted by Experts": "Developed by Enersol Biopower, a leader in biomass energy solutions."
-        }
+        "benefits": [
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Eco-Friendly Cooking – Reduces fossil fuel dependency and cuts emissions"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Lower Fuel Costs, Higher Efficiency – Saves money without sacrificing performance"
+            },
+            {
+                "icon": "ri-hammer-fill",
+                "color": "gray-500",
+                "text": "Reliable & Rugged Design – Built for heavy-duty, continuous operation"
+            },
+            {
+                "icon": "ri-award-fill",
+                "color": "yellow-500",
+                "text": "Trusted by Experts – Developed by Enersol Biopower, a leader in biomass energy solutions"
+            }
+        ]
     },
     {
         "name": "Bio-Akash21",
-        "category": "Smokeless Biomass Stoves/ Bhatti",
+        "category": "Smokeless Biomass Stoves / Bhatti",
         "modelName": "ESB-R Bio-Akash21",
         "modelNumber": "ESB-R/BA21",
         "image": "../assets/products/bhatti/akash-21.jpeg",
         "description": "The ESB-R Bio-Akash21 is a next-generation biomass stove designed to deliver high heat output, cost savings, and eco-friendly performance. Suitable for confectioneries, street food businesses, and commercial kitchens, this 21-inch smokeless stove is engineered to match LPG stove performance while cutting fuel costs by over 60%. Manufactured by Enersol Biopower, it combines durability, efficiency, and sustainability, making it perfect for bulk cooking and fuel savings.",
         "productId": "productId035",
-        "tagline": "High-Efficiency Cooking for a Greener Tomorrow",
-        "keyFeatures": [
-            "Smokeless & Cleaner Cooking: Reduces indoor air pollution and improves health conditions.",
-            "Unmatched Heat Performance: Delivers 50,000-87,500 Kcal/hr, suitable for high-demand kitchens.",
-            "Drastic Fuel Cost Reduction: Achieves over 60% savings compared to LPG stoves.",
-            "Heavy-Duty & Long-Lasting: Built with mild steel and ceramic bricks for durability.",
-            "Precise Flame Control: Integrated flame regulator for customized heat adjustment.",
-            "Multi-Fuel Compatibility: Works with wood pellets, crop residues, briquettes, and cow dung cakes.",
-            "Easy to Maintain: Features manual ash removal for effortless cleaning.",
-            "Best for Bulk Cooking: Ideal for commercial kitchens, sweet shops, and community meal preparations."
+        "subtitle": "High-Efficiency Cooking for a Greener Tomorrow",
+        "features": [
+            {
+                "icon": "ri-smoke-free-line",
+                "color": "green-500",
+                "text": "Smokeless & Cleaner Cooking – Reduces indoor air pollution and improves health conditions"
+            },
+            {
+                "icon": "ri-flame-fill",
+                "color": "red-500",
+                "text": "Unmatched Heat Performance – Delivers 50,000-87,500 Kcal/hr, suitable for high-demand kitchens"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Drastic Fuel Cost Reduction – Achieves over 60% savings compared to LPG stoves"
+            },
+            {
+                "icon": "ri-hammer-fill",
+                "color": "gray-500",
+                "text": "Heavy-Duty & Long-Lasting – Built with mild steel and ceramic bricks for durability"
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "blue-500",
+                "text": "Precise Flame Control – Integrated flame regulator for customized heat adjustment"
+            },
+            {
+                "icon": "ri-leaf-line",
+                "color": "green-500",
+                "text": "Multi-Fuel Compatibility – Works with wood pellets, crop residues, briquettes, and cow dung cakes"
+            },
+            {
+                "icon": "ri-brush-2-line",
+                "color": "purple-500",
+                "text": "Easy to Maintain – Features manual ash removal for effortless cleaning"
+            },
+            {
+                "icon": "ri-restaurant-line",
+                "color": "yellow-500",
+                "text": "Best for Bulk Cooking – Ideal for commercial kitchens, sweet shops, and community meal preparations"
+            }
+        ],
+        "technology": [],
+        "specifications": [
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Model No",
+                "value": "ESB-R/BA21"
+            },
+            {
+                "icon": "ri-fire-fill",
+                "color": "red-500",
+                "label": "Stove Type",
+                "value": "Force-Draft"
+            },
+            {
+                "icon": "ri-building-2-line",
+                "color": "gray-500",
+                "label": "Fire Zone Size",
+                "value": "21 inches"
+            },
+            {
+                "icon": "ri-hand-coin-line",
+                "color": "blue-500",
+                "label": "Feeding Mode",
+                "value": "Manual"
+            },
+            {
+                "icon": "ri-industrial-scale-line",
+                "color": "gray-500",
+                "label": "Thermal Output",
+                "value": "50,000-87,500 Kcal/hr"
+            },
+            {
+                "icon": "ri-plant-fill",
+                "color": "green-500",
+                "label": "Biomass Consumption",
+                "value": "20-35 kg/hr"
+            },
+            {
+                "icon": "ri-water-flash-fill",
+                "color": "blue-500",
+                "label": "Accepted Fuel Moisture",
+                "value": "Less than 20%"
+            },
+            {
+                "icon": "ri-plug-line",
+                "color": "yellow-500",
+                "label": "Power Requirement",
+                "value": "165W Blower"
+            },
+            {
+                "icon": "ri-timer-flash-line",
+                "color": "purple-500",
+                "label": "Flame Adjustment",
+                "value": "Adjustable regulator"
+            },
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Thermal Efficiency",
+                "value": "35.5%"
+            },
+            {
+                "icon": "ri-ruler-line",
+                "color": "gray-500",
+                "label": "Dimensions",
+                "value": "H26” x W34”"
+            },
+            {
+                "icon": "ri-dashboard-3-line",
+                "color": "gray-500",
+                "label": "Weight",
+                "value": "250-260 kg Approx."
+            }
         ],
         "applications": [
-            "Sweet & Confectionery Shops – Ensures consistent heat for syrup-based sweets.",
-            "Namkeen & Snack Vendors – Provides steady, high heat for deep frying.",
-            "Hotels, Dhabas & Restaurants – An efficient cooking solution for large-scale operations.",
-            "Gurudwaras & Temples – Ideal for preparing Langar and Prasad.",
-            "Mawa, Khoya & Dairy Processing – Ensures uniform heating for dairy products.",
-            "Street Food & Jalebi Makers – Offers faster frying and even cooking."
+            {
+                "icon": "ri-store-3-line",
+                "color": "red-500",
+                "text": "Sweet & Confectionery Shops, Namkeen & Snack Vendors, Hotels, Dhabas & Restaurants, Gurudwaras & Temples, Mawa, Khoya & Dairy Processing, Street Food & Jalebi Makers"
+            }
         ],
-        "technicalSpecifications": {
-            "Model Name": "Bio-Akash21",
-            "Model No.": "ESB-R/BA21",
-            "Stove Type": "Force-Draft",
-            "Fire Zone Size": "21 inches",
-            "Feeding Mode": "Manual",
-            "Feeding System": "Side Feeding",
-            "Thermal Output": "50,000-87,500 Kcal/hr",
-            "Biomass Consumption": "20-35 kg/hr",
-            "Fuel Compatibility": "Wood waste, briquettes, charcoal, crop residues",
-            "Accepted Fuel Moisture": "Less than 20%",
-            "Power Requirement": "165W Blower",
-            "Flame Adjustment": "Adjustable regulator",
-            "Thermal Efficiency": "35.5%",
-            "Material": "Mild Steel & Ceramic Brick",
-            "Weight": "250-260 kg Approx.",
-            "Dimensions": "H26” x W34”"
-        },
-        "whyChoose": {
-            "Sustainable & Renewable Energy Source": "Reduces dependency on LPG and fossil fuels.",
-            "Maximum Cost Efficiency": "Saves fuel expenses while maintaining high-performance cooking.",
-            "Reliable & Built to Last": "Perfect for continuous, high-volume food preparation.",
-            "Backed by Industry Experts": "Developed by Enersol Biopower, a leader in biomass-to-energy solutions."
-        }
+        "benefits": [
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Sustainable & Renewable Energy Source – Reduces dependency on LPG and fossil fuels"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Maximum Cost Efficiency – Saves fuel expenses while maintaining high-performance cooking"
+            },
+            {
+                "icon": "ri-hammer-fill",
+                "color": "gray-500",
+                "text": "Reliable & Built to Last – Perfect for continuous, high-volume food preparation"
+            },
+            {
+                "icon": "ri-award-fill",
+                "color": "yellow-500",
+                "text": "Backed by Industry Experts – Developed by Enersol Biopower, a leader in biomass-to-energy solutions"
+            }
+        ]
     },
     {
         "name": "Bio-Prithvi24",
-        "category": "Smokeless Biomass Stoves/ Bhatti",
+        "category": "Smokeless Biomass Stoves / Bhatti",
         "modelName": "ESB-R Bio-Prithvi24",
         "modelNumber": "ESB-R/BP24",
         "image": "../assets/products/bhatti/prithvi-24.jpg",
         "description": "The ESB-R Bio-Prithvi24 is a powerful, eco-friendly biomass stove designed for high efficiency and significant fuel cost savings. Ideal for commercial kitchens, food processing businesses, and large-scale community cooking, this 24-inch smokeless stove offers a cleaner, cost-effective alternative to LPG stoves.",
         "productId": "productId036",
-        "tagline": "Smart Cooking with Maximum Savings & Zero Emissions",
-        "keyFeatures": [
-            "Smokeless & Clean Cooking: Eliminates harmful fumes, improving indoor air quality.",
-            "Powerful Thermal Performance: Delivers 62,500-75,000 Kcal/hr of heat output.",
-            "Massive Cost Reduction: Saves over 60% on fuel expenses compared to LPG stoves.",
-            "Heavy-Duty & Long-Lasting: Constructed with mild steel & ceramic bricks for extended durability.",
-            "Flame Control Mechanism: Comes with an adjustable flame regulator for precise cooking.",
-            "Compatible with Multiple Fuels: Works with wood pellets, briquettes, crop waste, and cow dung cakes.",
-            "Low Maintenance & Easy Cleaning: Features manual ash removal, ensuring hassle-free operation.",
-            "Perfect for Bulk Cooking: Ideal for commercial kitchens, large-scale food production, and community cooking."
+        "subtitle": "Smart Cooking with Maximum Savings & Zero Emissions",
+        "features": [
+            {
+                "icon": "ri-smoke-free-line",
+                "color": "green-500",
+                "text": "Smokeless & Clean Cooking – Eliminates harmful fumes, improving indoor air quality"
+            },
+            {
+                "icon": "ri-flame-fill",
+                "color": "red-500",
+                "text": "Powerful Thermal Performance – Delivers 62,500-75,000 Kcal/hr of heat output"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Massive Cost Reduction – Saves over 60% on fuel expenses compared to LPG stoves"
+            },
+            {
+                "icon": "ri-hammer-fill",
+                "color": "gray-500",
+                "text": "Heavy-Duty & Long-Lasting – Constructed with mild steel & ceramic bricks for extended durability"
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "blue-500",
+                "text": "Flame Control Mechanism – Comes with an adjustable flame regulator for precise cooking"
+            },
+            {
+                "icon": "ri-leaf-line",
+                "color": "green-500",
+                "text": "Compatible with Multiple Fuels – Works with wood pellets, briquettes, crop waste, and cow dung cakes"
+            },
+            {
+                "icon": "ri-brush-2-line",
+                "color": "purple-500",
+                "text": "Low Maintenance & Easy Cleaning – Features manual ash removal, ensuring hassle-free operation"
+            },
+            {
+                "icon": "ri-restaurant-line",
+                "color": "yellow-500",
+                "text": "Perfect for Bulk Cooking – Ideal for commercial kitchens, large-scale food production, and community cooking"
+            }
+        ],
+        "technology": [],
+        "specifications": [
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Model No",
+                "value": "ESB-R/BP24"
+            },
+            {
+                "icon": "ri-fire-fill",
+                "color": "red-500",
+                "label": "Stove Type",
+                "value": "Force-Draft"
+            },
+            {
+                "icon": "ri-building-2-line",
+                "color": "gray-500",
+                "label": "Fire Zone Size",
+                "value": "24 inches"
+            },
+            {
+                "icon": "ri-hand-coin-line",
+                "color": "blue-500",
+                "label": "Feeding Mode",
+                "value": "Manual"
+            },
+            {
+                "icon": "ri-industrial-scale-line",
+                "color": "gray-500",
+                "label": "Thermal Output",
+                "value": "62,500-75,000 Kcal/hr"
+            },
+            {
+                "icon": "ri-plant-fill",
+                "color": "green-500",
+                "label": "Biomass Consumption",
+                "value": "25-30 kg/hr"
+            },
+            {
+                "icon": "ri-water-flash-fill",
+                "color": "blue-500",
+                "label": "Accepted Fuel Moisture",
+                "value": "Less than 20%"
+            },
+            {
+                "icon": "ri-plug-line",
+                "color": "yellow-500",
+                "label": "Power Requirement",
+                "value": "200W (100W + 100W) Blowers"
+            },
+            {
+                "icon": "ri-timer-flash-line",
+                "color": "purple-500",
+                "label": "Flame Adjustment",
+                "value": "Adjustable flame regulator"
+            },
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Thermal Efficiency",
+                "value": "35.5%"
+            },
+            {
+                "icon": "ri-ruler-line",
+                "color": "gray-500",
+                "label": "Dimensions",
+                "value": "H28” x W37”"
+            },
+            {
+                "icon": "ri-dashboard-3-line",
+                "color": "gray-500",
+                "label": "Weight",
+                "value": "320 kg Approx."
+            }
         ],
         "applications": [
-            "Sweet Shops & Confectioneries – Ensures consistent heat for perfect sugar syrup preparation.",
-            "Namkeen & Snack Makers – Provides steady heat for frying kachoris, samosas, and pakoras.",
-            "Dhabas & Restaurants – A cost-efficient, powerful cooking solution.",
-            "Gurudwaras & Temple Kitchens – Best for preparing Prasad & Langar for large gatherings.",
-            "Dairy & Mawa Processing – Ensures uniform heating for khoya and dairy products.",
-            "Fabric Dyeing & Food Processing – Suitable for heat-intensive industrial applications."
+            {
+                "icon": "ri-store-3-line",
+                "color": "red-500",
+                "text": "Sweet Shops & Confectioneries, Namkeen & Snack Makers, Dhabas & Restaurants, Gurudwaras & Temple Kitchens, Dairy & Mawa Processing, Fabric Dyeing & Food Processing"
+            }
         ],
-        "technicalSpecifications": {
-            "Model Name": "Bio-Prithvi24",
-            "Model No.": "ESB-R/BP24",
-            "Stove Type": "Force-Draft",
-            "Fire Zone Size": "24 inches",
-            "Feeding Mode": "Manual",
-            "Feeding System": "Side Feeding",
-            "Thermal Output": "62,500-75,000 Kcal/hr",
-            "Biomass Consumption": "25-30 kg/hr",
-            "Fuel Compatibility": "Wood waste, briquettes, charcoal, crop residues",
-            "Accepted Fuel Moisture": "Less than 20%",
-            "Power Requirement": "200W (100W + 100W) Blowers",
-            "Flame Adjustment": "Adjustable flame regulator",
-            "Thermal Efficiency": "35.5%",
-            "Material": "Mild Steel & Ceramic Brick",
-            "Weight": "320 kg Approx.",
-            "Dimensions": "H28” x W37”"
-        },
-        "whyChoose": {
-            "Eco-Friendly & Renewable Energy Solution": "Reduces dependency on fossil fuels.",
-            "Significant Cost Savings": "Cuts down fuel expenses while ensuring top performance.",
-            "Rugged & Reliable": "Designed for heavy-duty, high-volume cooking operations.",
-            "Trusted by Experts": "Manufactured by Enersol Biopower, a leader in biomass-to-energy innovations."
-        }
+        "benefits": [
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Eco-Friendly & Renewable Energy Solution – Reduces dependency on fossil fuels"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Significant Cost Savings – Cuts down fuel expenses while ensuring top performance"
+            },
+            {
+                "icon": "ri-hammer-fill",
+                "color": "gray-500",
+                "text": "Rugged & Reliable – Designed for heavy-duty, high-volume cooking operations"
+            },
+            {
+                "icon": "ri-award-fill",
+                "color": "yellow-500",
+                "text": "Trusted by Experts – Manufactured by Enersol Biopower, a leader in biomass-to-energy innovations"
+            }
+        ]
     },
     {
         "name": "Harit-Jumbo27",
-        "category": "Smokeless Biomass Stoves/ Bhatti",
+        "category": "Smokeless Biomass Stoves / Bhatti",
         "modelName": "ESB-R Harit-Jumbo27",
         "modelNumber": "ESB-R/HJ27",
         "image": "../assets/products/bhatti/jumbo-27.jpeg",
         "description": "The ESB-R Harit-Jumbo27 is a powerful and eco-friendly biomass stove designed for large-scale food businesses, confectioneries, and commercial kitchens. This 27-inch smokeless bhatti provides consistent, high-performance cooking while being a cost-effective alternative to LPG stoves, reducing fuel costs by more than 60%.",
         "productId": "productId037",
-        "tagline": "Unleash High-Efficiency Cooking with Sustainable Fuel",
-        "keyFeatures": [
-            "Smoke-Free & Healthier Cooking: Eliminates indoor air pollution, creating a safer kitchen environment.",
-            "High Thermal Efficiency: Generates an impressive 87,500-200,000 Kcal/hr, ensuring faster cooking.",
-            "Massive Cost Savings: Reduces fuel costs by 60%, making it an economical choice for businesses.",
-            "Durable & Heavy-Duty: Built with mild steel and ceramic bricks, ensuring a long lifespan.",
-            "Customizable Heat Control: Features an adjustable flame regulator for precise temperature adjustments.",
-            "Multi-Fuel Compatibility: Runs on wood pellets, briquettes, crop residues, and cow dung cakes.",
-            "Minimal Maintenance & Easy Cleaning: Includes manual ash removal for quick maintenance.",
-            "Designed for Large-Scale Cooking: Ideal for hotels, dhabas, sweet shops, and community kitchens."
+        "subtitle": "Unleash High-Efficiency Cooking with Sustainable Fuel",
+        "features": [
+            {
+                "icon": "ri-smoke-free-line",
+                "color": "green-500",
+                "text": "Smoke-Free & Healthier Cooking – Eliminates indoor air pollution, creating a safer kitchen environment"
+            },
+            {
+                "icon": "ri-flame-fill",
+                "color": "red-500",
+                "text": "High Thermal Efficiency – Generates 87,500-200,000 Kcal/hr, ensuring faster cooking"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Massive Cost Savings – Reduces fuel costs by 60%, making it an economical choice for businesses"
+            },
+            {
+                "icon": "ri-hammer-fill",
+                "color": "gray-500",
+                "text": "Durable & Heavy-Duty – Built with mild steel and ceramic bricks, ensuring a long lifespan"
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "blue-500",
+                "text": "Customizable Heat Control – Features an adjustable flame regulator for precise temperature adjustments"
+            },
+            {
+                "icon": "ri-leaf-line",
+                "color": "green-500",
+                "text": "Multi-Fuel Compatibility – Runs on wood pellets, briquettes, crop residues, and cow dung cakes"
+            },
+            {
+                "icon": "ri-brush-2-line",
+                "color": "purple-500",
+                "text": "Minimal Maintenance & Easy Cleaning – Includes manual ash removal for quick maintenance"
+            },
+            {
+                "icon": "ri-restaurant-line",
+                "color": "yellow-500",
+                "text": "Designed for Large-Scale Cooking – Ideal for hotels, dhabas, sweet shops, and community kitchens"
+            }
+        ],
+        "technology": [],
+        "specifications": [
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Model No",
+                "value": "ESB-R/HJ27"
+            },
+            {
+                "icon": "ri-fire-fill",
+                "color": "red-500",
+                "label": "Stove Type",
+                "value": "Force-Draft"
+            },
+            {
+                "icon": "ri-building-2-line",
+                "color": "gray-500",
+                "label": "Fire Zone Size",
+                "value": "27 inches"
+            },
+            {
+                "icon": "ri-hand-coin-line",
+                "color": "blue-500",
+                "label": "Feeding Mode",
+                "value": "Manual"
+            },
+            {
+                "icon": "ri-industrial-scale-line",
+                "color": "gray-500",
+                "label": "Thermal Output",
+                "value": "87,500-200,000 Kcal/hr"
+            },
+            {
+                "icon": "ri-plant-fill",
+                "color": "green-500",
+                "label": "Biomass Consumption",
+                "value": "35-80 kg/hr"
+            },
+            {
+                "icon": "ri-water-flash-fill",
+                "color": "blue-500",
+                "label": "Accepted Fuel Moisture",
+                "value": "Less than 20%"
+            },
+            {
+                "icon": "ri-plug-line",
+                "color": "yellow-500",
+                "label": "Power Requirement",
+                "value": "165W x 2 Blowers"
+            },
+            {
+                "icon": "ri-timer-flash-line",
+                "color": "purple-500",
+                "label": "Flame Adjustment",
+                "value": "Adjustable flame regulator"
+            },
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Thermal Efficiency",
+                "value": "35.5%"
+            },
+            {
+                "icon": "ri-ruler-line",
+                "color": "gray-500",
+                "label": "Dimensions",
+                "value": "H28” x W40”"
+            },
+            {
+                "icon": "ri-dashboard-3-line",
+                "color": "gray-500",
+                "label": "Weight",
+                "value": "400 kg Approx."
+            }
         ],
         "applications": [
-            "Sweet & Confectionery Industry – Ensures perfect consistency for sugar syrup and frying.",
-            "Snack & Namkeen Manufacturers – Provides steady heat for deep frying kachoris, samosas, and pakoras.",
-            "Hotels, Dhabas & Restaurants – A cost-effective, high-performance cooking solution.",
-            "Temple & Community Kitchens – Best for preparing Prasad, Langar, and mass meals.",
-            "Dairy & Mawa Production – Ensures even heating for khoya and milk-based sweets.",
-            "Food Processing & Fabric Dyeing Units – Reliable for heat-intensive industrial applications."
+            {
+                "icon": "ri-store-3-line",
+                "color": "red-500",
+                "text": "Sweet & Confectionery Industry, Snack & Namkeen Manufacturers, Hotels, Dhabas & Restaurants, Temple & Community Kitchens, Dairy & Mawa Production, Food Processing & Fabric Dyeing Units"
+            }
         ],
-        "technicalSpecifications": {
-            "Model Name": "Harit-Jumbo27",
-            "Model No.": "ESB-R/HJ27",
-            "Stove Type": "Force-Draft",
-            "Fire Zone Size": "27 inches",
-            "Feeding Mode": "Manual",
-            "Feeding System": "Side Feeding",
-            "Thermal Output": "87,500-200,000 Kcal/hr",
-            "Biomass Consumption": "35-80 kg/hr",
-            "Fuel Compatibility": "Wood waste, briquettes, charcoal, crop residues",
-            "Accepted Fuel Moisture": "Less than 20%",
-            "Power Requirement": "165W x 2 Blowers",
-            "Flame Adjustment": "Adjustable flame regulator",
-            "Thermal Efficiency": "35.5%",
-            "Material": "Mild Steel & Ceramic Brick",
-            "Weight": "400 kg Approx.",
-            "Dimensions": "H28” x W40”"
-        },
-        "whyChoose": {
-            "Eco-Friendly & Sustainable": "Reduces dependency on fossil fuels, supporting green energy.",
-            "Low Running Costs": "Saves fuel expenses without sacrificing efficiency.",
-            "Heavy-Duty Performance": "Designed for continuous, large-volume cooking operations.",
-            "Trusted by Industry Leaders": "Developed by Enersol Biopower, a pioneer in biomass-to-energy solutions."
-        }
+        "benefits": [
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Eco-Friendly & Sustainable – Reduces dependency on fossil fuels, supporting green energy"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Low Running Costs – Saves fuel expenses without sacrificing efficiency"
+            },
+            {
+                "icon": "ri-hammer-fill",
+                "color": "gray-500",
+                "text": "Heavy-Duty Performance – Designed for continuous, large-volume cooking operations"
+            },
+            {
+                "icon": "ri-award-fill",
+                "color": "yellow-500",
+                "text": "Trusted by Industry Leaders – Developed by Enersol Biopower, a pioneer in biomass-to-energy solutions"
+            }
+        ]
     },
     {
         "name": "Jumbo-Shakti36",
-        "category": "Smokeless Biomass Stoves/ Bhatti",
+        "category": "Smokeless Biomass Stoves / Bhatti",
         "modelName": "ESB-R Jumbo-Shakti36",
         "modelNumber": "ESB-R/JS36",
         "image": "../assets/products/bhatti/jumbo-36.jpeg",
         "description": "The ESB-R Jumbo Shakti36 is an innovative, high-performance smokeless biomass stove designed for large-scale cooking environments such as commercial kitchens, food processing units, and religious institutions. This 36-inch fire zone stove delivers exceptional heat output, reduces fuel costs, and supports eco-friendly cooking practices.",
         "productId": "productId038",
-        "tagline": "Powerful Cooking, Maximum Efficiency, and Sustainable Savings",
-        "keyFeatures": [
-            "Smokeless & Safe Cooking: Reduces harmful emissions, ensuring a cleaner and healthier workspace.",
-            "High-Performance Heating: Generates unmatched thermal output of 70,000-150,000 Kcal/hr.",
-            "Major Fuel Cost Reduction: Achieves over 60% savings compared to LPG-powered stoves.",
-            "Built to Last: Constructed from heavy-duty mild steel and ceramic bricks for maximum durability.",
-            "Customizable Flame Control: Integrated flame regulator allows for precise temperature adjustments.",
-            "Compatible with Various Biomass Fuels: Works with wood waste, briquettes, agricultural residues, and cow dung cakes.",
-            "Easy to Maintain & Operate: Features manual ash removal, simplifying cleanup and maintenance.",
-            "Designed for Large-Scale Cooking: Perfect for industrial kitchens, temples, and community meal preparations."
+        "subtitle": "Powerful Cooking, Maximum Efficiency, and Sustainable Savings",
+        "features": [
+            {
+                "icon": "ri-smoke-free-line",
+                "color": "green-500",
+                "text": "Smokeless & Safe Cooking – Reduces harmful emissions, ensuring a cleaner and healthier workspace"
+            },
+            {
+                "icon": "ri-flame-fill",
+                "color": "red-500",
+                "text": "High-Performance Heating – Generates unmatched thermal output of 70,000-150,000 Kcal/hr"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Major Fuel Cost Reduction – Achieves over 60% savings compared to LPG-powered stoves"
+            },
+            {
+                "icon": "ri-hammer-fill",
+                "color": "gray-500",
+                "text": "Built to Last – Constructed from heavy-duty mild steel and ceramic bricks for maximum durability"
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "blue-500",
+                "text": "Customizable Flame Control – Integrated flame regulator allows for precise temperature adjustments"
+            },
+            {
+                "icon": "ri-leaf-line",
+                "color": "green-500",
+                "text": "Compatible with Various Biomass Fuels – Works with wood waste, briquettes, agricultural residues, and cow dung cakes"
+            },
+            {
+                "icon": "ri-brush-2-line",
+                "color": "purple-500",
+                "text": "Easy to Maintain & Operate – Features manual ash removal, simplifying cleanup and maintenance"
+            },
+            {
+                "icon": "ri-restaurant-line",
+                "color": "yellow-500",
+                "text": "Designed for Large-Scale Cooking – Perfect for industrial kitchens, temples, and community meal preparations"
+            }
+        ],
+        "technology": [],
+        "specifications": [
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Model No",
+                "value": "ESB-R/JS36"
+            },
+            {
+                "icon": "ri-fire-fill",
+                "color": "red-500",
+                "label": "Stove Type",
+                "value": "Force-Draft"
+            },
+            {
+                "icon": "ri-building-2-line",
+                "color": "gray-500",
+                "label": "Fire Zone Size",
+                "value": "36 inches"
+            },
+            {
+                "icon": "ri-hand-coin-line",
+                "color": "blue-500",
+                "label": "Feeding Mode",
+                "value": "Manual"
+            },
+            {
+                "icon": "ri-industrial-scale-line",
+                "color": "gray-500",
+                "label": "Thermal Output",
+                "value": "70,000-150,000 Kcal/hr"
+            },
+            {
+                "icon": "ri-plant-fill",
+                "color": "green-500",
+                "label": "Biomass Consumption",
+                "value": "70-150 kg/hr"
+            },
+            {
+                "icon": "ri-water-flash-fill",
+                "color": "blue-500",
+                "label": "Accepted Fuel Moisture",
+                "value": "Less than 20%"
+            },
+            {
+                "icon": "ri-plug-line",
+                "color": "yellow-500",
+                "label": "Power Requirement",
+                "value": "415W (165W & 250W Blowers)"
+            },
+            {
+                "icon": "ri-timer-flash-line",
+                "color": "purple-500",
+                "label": "Flame Adjustment",
+                "value": "Adjustable flame regulator"
+            },
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Thermal Efficiency",
+                "value": "35.5%"
+            },
+            {
+                "icon": "ri-ruler-line",
+                "color": "gray-500",
+                "label": "Dimensions",
+                "value": "H50” x W50”"
+            },
+            {
+                "icon": "ri-dashboard-3-line",
+                "color": "gray-500",
+                "label": "Weight",
+                "value": "650 kg Approx."
+            }
         ],
         "applications": [
-            "Snack & Namkeen Manufacturers – Ensures steady, controlled heat for deep frying.",
-            "Sweet Shops & Confectioneries – Delivers consistent temperature for syrup-based sweets.",
-            "Hotels, Dhabas & Restaurants – A cost-effective solution for high-volume cooking.",
-            "Langar & Temple Kitchens – Ideal for mass food preparation with low operating costs.",
-            "Paneer (Chhena) Processing Units – Provides even heating for dairy-based products.",
-            "Food Processing & Ayurvedic Medicine Production – Suitable for heat-intensive industrial applications."
+            {
+                "icon": "ri-store-3-line",
+                "color": "red-500",
+                "text": "Snack & Namkeen Manufacturers, Sweet Shops & Confectioneries, Hotels, Dhabas & Restaurants, Langar & Temple Kitchens, Paneer (Chhena) Processing Units, Food Processing & Ayurvedic Medicine Production"
+            }
         ],
-        "technicalSpecifications": {
-            "Model Name": "Jumbo Shakti36",
-            "Model No.": "ESB-R/JS36",
-            "Stove Type": "Force-Draft",
-            "Fire Zone Size": "36 inches",
-            "Feeding Mode": "Manual",
-            "Feeding System": "Side Feeding",
-            "Thermal Output": "70,000-150,000 Kcal/hr",
-            "Biomass Consumption": "70-150 kg/hr",
-            "Fuel Compatibility": "Wood waste, briquettes, charcoal, crop residues",
-            "Accepted Fuel Moisture": "Less than 20%",
-            "Power Requirement": "415W (165W & 250W Blowers)",
-            "Flame Adjustment": "Adjustable flame regulator",
-            "Thermal Efficiency": "35.5%",
-            "Material": "Mild Steel & Ceramic Brick",
-            "Weight": "650 kg Approx.",
-            "Dimensions": "H50” x W50”"
-        },
-        "whyChoose": {
-            "Sustainable Energy Source": "Reduces dependency on LPG and fossil fuels, supporting green energy.",
-            "Huge Savings on Fuel": "Low-cost biomass fuels cut operating expenses significantly.",
-            "Rugged & Reliable": " Designed for heavy-duty, high-volume cooking operations.",
-            "Industry Leader": " Developed by Enersol Biopower, a trusted name in biomass-to-energy solutions."
-        }
+        "benefits": [
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Sustainable Energy Source – Reduces dependency on LPG and fossil fuels, supporting green energy"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Huge Savings on Fuel – Low-cost biomass fuels cut operating expenses significantly"
+            },
+            {
+                "icon": "ri-hammer-fill",
+                "color": "gray-500",
+                "text": "Rugged & Reliable – Designed for heavy-duty, high-volume cooking operations"
+            },
+            {
+                "icon": "ri-award-fill",
+                "color": "yellow-500",
+                "text": "Industry Leader – Developed by Enersol Biopower, a trusted name in biomass-to-energy solutions"
+            }
+        ]
     },
     {
         "name": "Auto Bio-Mawa Machine",
@@ -3844,56 +4753,123 @@
         "image": "../assets/products/bhatti/auto-bio-mawa.jpeg",
         "description": "The ESB-R Bio Mawa Machine is an automated mawa-making machine that combines traditional cooking methods with modern efficiency. Designed for sweet shops, dairy processing units, and commercial kitchens, this machine uses biomass fuel to ensure eco-friendly operation with reduced fuel costs.",
         "productId": "productId039",
-        "tagline": "Traditional Taste, Modern Efficiency – Authentic Mawa Made on a Wood Stove Without Smoke or Pollution",
-        "keyFeatures": [
-            "Traditional Taste, Modern Efficiency: Delivers authentic mawa flavor, just like slow-cooked over firewood, but without smoke.",
-            "Fuel-Saving Biomass Technology: Reduces fuel costs by up to 60% compared to LPG or diesel machines.",
-            "Even Heating for Perfect Texture: Ensures smooth, lump-free, and consistent mawa production.",
-            "Durable Stainless Steel Kettle: Built for longevity and continuous high-volume use.",
-            "Multi-Purpose Utility: Ideal for making mawa, milk cake, kalakand, and other dairy-based sweets.",
-            "Cost Recovery in Just 6 Months: Saves on fuel expenses, ensuring rapid return on investment.",
-            "Eco-Friendly & Sustainable: Uses biomass fuels like wood waste and briquettes, reducing reliance on fossil fuels.",
-            "User-Friendly & Low Maintenance: Designed for easy operation and minimal upkeep."
+        "subtitle": "Traditional Taste, Modern Efficiency – Authentic Mawa Made on a Wood Stove Without Smoke or Pollution",
+        "features": [
+            {
+                "icon": "ri-leaf-line",
+                "color": "green-500",
+                "text": "Traditional Taste, Modern Efficiency: Delivers authentic mawa flavor, just like slow-cooked over firewood, but without smoke."
+            },
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "text": "Fuel-Saving Biomass Technology: Reduces fuel costs by up to 60% compared to LPG or diesel machines."
+            },
+            {
+                "icon": "ri-fire-fill",
+                "color": "red-500",
+                "text": "Even Heating for Perfect Texture: Ensures smooth, lump-free, and consistent mawa production."
+            },
+            {
+                "icon": "ri-tools-line",
+                "color": "gray-500",
+                "text": "Durable Stainless Steel Kettle: Built for longevity and continuous high-volume use."
+            },
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Eco-Friendly & Sustainable: Uses biomass fuels like wood waste and briquettes, reducing reliance on fossil fuels."
+            },
+            {
+                "icon": "ri-handbag-line",
+                "color": "blue-500",
+                "text": "Cost Recovery in Just 6 Months: Saves on fuel expenses, ensuring rapid return on investment."
+            }
         ],
         "applications": [
-            "Sweet Shops & Mithaiwalas – Ensures rich, traditional texture for milk-based sweets.",
-            "Dairy Processing Units – Ideal for bulk mawa production with authentic slow-cooked taste.",
-            "Hotels & Restaurants – A cost-effective way to prepare traditional Indian desserts.",
-            "Mawa, Kalakand & Milk Cake Makers – Ensures smooth, flavorful results without burning.",
-            "Food Processing Businesses – Perfect for scaling up dairy-based production sustainably."
-        ],
-        "technicalSpecifications": {
-            "Model Name": "Bio Mawa Machine",
-            "Model No.": "ESB-R/MM01",
-            "Type of Kettle": "Automatic",
-            "Bottom Diameter": "25 mm",
-            "Top Diameter": "34 inch",
-            "Kettle Height": "16 inch",
-            "Material": "Stainless Steel",
-            "Kettle Body Thickness": "16MM",
-            "Gear Motor Power": "1 HP",
-            "Included Stove": {
-                "Model Name": "Green-Magic15",
-                "Model No.": "ESB-R/GM15",
-                "Biomass Consumption": "12-25 kg/hr",
-                "Feeding Mode": "Manual",
-                "Material": "Mild Steel & Ceramic Brick",
-                "Power Requirement": "100W Blower",
-                "Stove Dimensions": "H26” x W28”",
-                "Weight": "190-200 kg"
+            {
+                "icon": "ri-home-smile-line",
+                "color": "green-500",
+                "text": "Sweet Shops & Mithaiwalas – Ensures rich, traditional texture for milk-based sweets."
+            },
+            {
+                "icon": "ri-plant-fill",
+                "color": "green-500",
+                "text": "Dairy Processing Units – Ideal for bulk mawa production with authentic slow-cooked taste."
+            },
+            {
+                "icon": "ri-hotel-line",
+                "color": "blue-500",
+                "text": "Hotels & Restaurants – A cost-effective way to prepare traditional Indian desserts."
+            },
+            {
+                "icon": "ri-group-line",
+                "color": "yellow-500",
+                "text": "Mawa, Kalakand & Milk Cake Makers – Ensures smooth, flavorful results without burning."
+            },
+            {
+                "icon": "ri-building-2-line",
+                "color": "blue-500",
+                "text": "Food Processing Businesses – Perfect for scaling up dairy-based production sustainably."
             }
-        },
-        "costSavingsROI": [
-            "60% More Profitable – Compared to LPG and diesel-based mawa machines.",
-            "Uses Low-Cost Biomass Fuels – Cuts fuel costs while maintaining authentic wood-cooked taste.",
-            "ROI in Just 6 Months! – Savings quickly recover the machine cost."
         ],
-        "whyChoose": {
-            "Preserves Authentic Taste": "Delivers slow-cooked mawa flavor with modern efficiency.",
-            "Major Fuel Savings": "Cuts operational costs while enhancing productivity.",
-            "Rugged & Reliable": "Designed for continuous, high-volume production.",
-            "Backed by Expertise": "A trusted product from Enersol Biopower, a leader in biomass-to-energy solutions."
-        }
+        "specifications": [
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Model Name",
+                "value": "Bio Mawa Machine"
+            },
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Type of Kettle",
+                "value": "Automatic"
+            },
+            {
+                "icon": "ri-ruler-line",
+                "color": "blue-500",
+                "label": "Bottom Diameter",
+                "value": "25 mm"
+            },
+            {
+                "icon": "ri-ruler-line",
+                "color": "blue-500",
+                "label": "Top Diameter",
+                "value": "34 inch"
+            },
+            {
+                "icon": "ri-ruler-line",
+                "color": "blue-500",
+                "label": "Kettle Height",
+                "value": "16 inch"
+            },
+            {
+                "icon": "ri-dashboard-3-line",
+                "color": "blue-500",
+                "label": "Material",
+                "value": "Stainless Steel"
+            },
+            {
+                "icon": "ri-tools-line",
+                "color": "gray-500",
+                "label": "Kettle Body Thickness",
+                "value": "16MM"
+            },
+            {
+                "icon": "ri-tools-line",
+                "color": "gray-500",
+                "label": "Gear Motor Power",
+                "value": "1 HP"
+            }
+        ],
+        "technology": [
+            {
+                "icon": "ri-sun-line",
+                "color": "yellow-500",
+                "text": "Experience the True Taste of Tradition with Sustainable Cooking! Traditional Taste, Modern Savings—The Best of Both Worlds."
+            }
+        ]
     },
     {
         "name": "Eco-Green Biochar05 - 5kg/hr Biomass based Bio-char Plant",

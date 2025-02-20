@@ -4756,118 +4756,83 @@
         "subtitle": "Traditional Taste, Modern Efficiency – Authentic Mawa Made on a Wood Stove Without Smoke or Pollution",
         "features": [
             {
+                "icon": "ri-restaurant-line",
+                "color": "red-500",
+                "text": "Traditional Taste, Modern Efficiency: Delivers authentic mawa flavor with eco-friendly biomass technology."
+            },
+            {
+                "icon": "ri-fire-line",
+                "color": "orange-500",
+                "text": "Fuel-Saving Biomass Technology: Reduces fuel costs significantly compared to conventional methods."
+            },
+            {
+                "icon": "ri-temp-cold-line",
+                "color": "blue-500",
+                "text": "Even Heating for Perfect Texture: Achieves smooth, consistent mawa without burning or lumping."
+            },
+            {
+                "icon": "ri-hammer-fill",
+                "color": "green-500",
+                "text": "Durable Stainless Steel Kettle: Built for longevity and high-volume production."
+            },
+            {
                 "icon": "ri-leaf-line",
                 "color": "green-500",
-                "text": "Traditional Taste, Modern Efficiency: Delivers authentic mawa flavor, just like slow-cooked over firewood, but without smoke."
-            },
-            {
-                "icon": "ri-flashlight-fill",
-                "color": "yellow-500",
-                "text": "Fuel-Saving Biomass Technology: Reduces fuel costs by up to 60% compared to LPG or diesel machines."
-            },
-            {
-                "icon": "ri-fire-fill",
-                "color": "red-500",
-                "text": "Even Heating for Perfect Texture: Ensures smooth, lump-free, and consistent mawa production."
-            },
-            {
-                "icon": "ri-tools-line",
-                "color": "gray-500",
-                "text": "Durable Stainless Steel Kettle: Built for longevity and continuous high-volume use."
-            },
-            {
-                "icon": "ri-earth-fill",
-                "color": "green-500",
-                "text": "Eco-Friendly & Sustainable: Uses biomass fuels like wood waste and briquettes, reducing reliance on fossil fuels."
-            },
-            {
-                "icon": "ri-handbag-line",
-                "color": "blue-500",
-                "text": "Cost Recovery in Just 6 Months: Saves on fuel expenses, ensuring rapid return on investment."
-            }
-        ],
-        "applications": [
-            {
-                "icon": "ri-home-smile-line",
-                "color": "green-500",
-                "text": "Sweet Shops & Mithaiwalas – Ensures rich, traditional texture for milk-based sweets."
-            },
-            {
-                "icon": "ri-plant-fill",
-                "color": "green-500",
-                "text": "Dairy Processing Units – Ideal for bulk mawa production with authentic slow-cooked taste."
-            },
-            {
-                "icon": "ri-hotel-line",
-                "color": "blue-500",
-                "text": "Hotels & Restaurants – A cost-effective way to prepare traditional Indian desserts."
-            },
-            {
-                "icon": "ri-group-line",
-                "color": "yellow-500",
-                "text": "Mawa, Kalakand & Milk Cake Makers – Ensures smooth, flavorful results without burning."
-            },
-            {
-                "icon": "ri-building-2-line",
-                "color": "blue-500",
-                "text": "Food Processing Businesses – Perfect for scaling up dairy-based production sustainably."
+                "text": "Eco-Friendly & Sustainable: Utilizes wood waste and briquettes, minimizing fossil fuel dependence."
             }
         ],
         "specifications": [
             {
-                "icon": "ri-bar-chart-box-line",
-                "color": "green-500",
-                "label": "Model Name",
-                "value": "Bio Mawa Machine"
+                "icon": "ri-ruler-line",
+                "color": "blue-500",
+                "label": "Kettle Dimensions",
+                "value": "Bottom Diameter: 25 mm, Top Diameter: 34 inch, Height: 16 inch, Thickness: 16MM"
             },
             {
-                "icon": "ri-flashlight-fill",
+                "icon": "ri-time-line",
                 "color": "yellow-500",
-                "label": "Type of Kettle",
-                "value": "Automatic"
-            },
-            {
-                "icon": "ri-ruler-line",
-                "color": "blue-500",
-                "label": "Bottom Diameter",
-                "value": "25 mm"
-            },
-            {
-                "icon": "ri-ruler-line",
-                "color": "blue-500",
-                "label": "Top Diameter",
-                "value": "34 inch"
-            },
-            {
-                "icon": "ri-ruler-line",
-                "color": "blue-500",
-                "label": "Kettle Height",
-                "value": "16 inch"
-            },
-            {
-                "icon": "ri-dashboard-3-line",
-                "color": "blue-500",
                 "label": "Material",
-                "value": "Stainless Steel"
+                "value": "Stainless Steel kettle, Mild Steel & Ceramic Brick stove"
             },
             {
-                "icon": "ri-tools-line",
-                "color": "gray-500",
-                "label": "Kettle Body Thickness",
-                "value": "16MM"
-            },
-            {
-                "icon": "ri-tools-line",
-                "color": "gray-500",
-                "label": "Gear Motor Power",
-                "value": "1 HP"
+                "icon": "ri-battery-2-line",
+                "color": "red-500",
+                "label": "Gear Motor Power & Biomass Consumption",
+                "value": "1 HP motor, 12-25 kg/hr biomass consumption"
             }
         ],
-        "technology": [
+        "applications": [
             {
-                "icon": "ri-sun-line",
+                "icon": "ri-store-line",
                 "color": "yellow-500",
-                "text": "Experience the True Taste of Tradition with Sustainable Cooking! Traditional Taste, Modern Savings—The Best of Both Worlds."
+                "text": "Sweet Shops & Mithaiwalas: Ensures traditional mawa taste in high-volume settings."
+            },
+            {
+                "icon": "ri-building-2-line",
+                "color": "red-500",
+                "text": "Dairy Processing Units: Ideal for large-scale, authentic mawa production."
+            },
+            {
+                "icon": "ri-hotel-line",
+                "color": "blue-500",
+                "text": "Hotels & Restaurants: Provides cost-effective solutions for making traditional desserts."
+            }
+        ],
+        "benefits": [
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Cost Recovery in Just 6 Months: Rapid return on investment through significant fuel savings."
+            },
+            {
+                "icon": "ri-hand-coin-line",
+                "color": "blue-500",
+                "text": "60% More Profitable: Lower operational costs compared to LPG and diesel machines."
+            },
+            {
+                "icon": "ri-earth-line",
+                "color": "green-500",
+                "text": "Reduces Environmental Impact: Supports sustainability with reduced emissions."
             }
         ]
     },
@@ -4879,6 +4844,7 @@
         "image": "../assets/products/bio-char/05.jpeg",
         "description": "The ESB-R EcoGreen BioChar05 is an advanced biochar production system designed for small-scale agricultural and environmental applications. It converts agricultural residues into high-quality biochar, enhancing soil fertility and reducing pollution through sustainable crop waste management.",
         "productId": "productId040",
+        "catalogueLink":"https://drive.google.com/uc?export=download&id=1cQTCTxLAnpMIcJK_DLX85jEtM_LYQePi",
         "subtitle": "Sustainable Agriculture, Cleaner Air, and Higher Profits for Farmers",
         "features": [
             {
@@ -5294,6 +5260,7 @@
         "description": "The ESB-R Dewatering Machine is designed for efficient solid-liquid separation, optimizing waste management and enhancing recycling processes in agricultural and industrial applications.",
         "productId": "productId047",
         "subtitle": "Efficient Solid-Liquid Separation",
+        "catalogueLink":"https://drive.google.com/uc?export=download&id=1XOU5gCbjDqIPmD2JKPpI9jVU9n50RDsR",
         "features": [
             {
                 "icon": "ri-settings-2-line",
@@ -5388,100 +5355,95 @@
         "modelName": "ESB-R DM200",
         "modelNumber": "ESB-R/DM/200",
         "image": "../assets/products/bio-char/used-oil.jpeg",
-        "description": "The ESB-R 200LPD Used Oil Distillation Machine is designed to recycle waste engine oil, transforming it into usable fuel efficiently. This system is ideal for automobile service centers, industrial plants, and waste management facilities seeking a sustainable solution to manage waste oil.",
+        "catalogueLink":"https://drive.google.com/uc?export=download&id=13xTFyvN7reIJWjZrJI-7NEml5_TOHjJS",
+        "description": "The ESB-R Used Oil Distillation Machine recycles used motor oil, hydraulic oil, and other lubricants into high-grade diesel-like fuel. This system supports environmental sustainability by reducing waste and utilizing advanced filtration and distillation processes to restore oil quality and convert it into clean, reusable fuel.",
         "productId": "productId048",
         "subtitle": "Efficient, Sustainable, and Cost-Effective Oil Recycling",
         "features": [
             {
                 "icon": "ri-leaf-line",
                 "color": "green-500",
-                "text": "Eco-Friendly Solution – Prevents hazardous oil disposal"
+                "text": "Eco-Friendly Solution – Prevents hazardous oil disposal and protects the environment"
             },
             {
-                "icon": "ri-flashlight-fill",
-                "color": "yellow-500",
-                "text": "High-Quality Oil Recovery – Produces clean, reusable fuel"
+                "icon": "ri-refresh-line",
+                "color": "blue-500",
+                "text": "High-Quality Oil Recovery – Produces clean, reusable fuel, reducing reliance on crude oil"
             },
             {
-                "icon": "ri-money-dollar-circle-line",
+                "icon": "ri-hand-coin-line",
                 "color": "green-500",
-                "text": "Cost-Effective & Profitable – Converts waste oil into marketable fuel"
+                "text": "Cost-Effective & Profitable – Transforms waste into marketable fuel, lowering operational costs"
             },
             {
-                "icon": "ri-home-smile-line",
-                "color": "green-500",
-                "text": "Compact & Easy to Operate – Minimal maintenance required"
-            },
-            {
-                "icon": "ri-tools-line",
+                "icon": "ri-settings-line",
                 "color": "gray-500",
-                "text": "Versatile Processing – Works with various types of oils"
-            },
-            {
-                "icon": "ri-filter-fill",
-                "color": "purple-500",
-                "text": "Efficient Filtration & Purification – Restores oil properties effectively"
+                "text": "Efficient Filtration & Purification – Removes impurities and restores oil properties"
             },
             {
                 "icon": "ri-fire-fill",
                 "color": "red-500",
-                "text": "Sustainable & Energy-Efficient – Utilizes biomass heating"
-            }
-        ],
-        "technology": [
-            {
-                "icon": "ri-settings-2-line",
-                "color": "gray-500",
-                "text": "Advanced Filtration and Distillation Processes – Ensures high-quality fuel production"
+                "text": "Biomass Heating – Utilizes sustainable fuel sources like wood chips for energy efficiency"
             }
         ],
         "specifications": [
             {
-                "icon": "ri-bar-chart-box-line",
-                "color": "green-500",
-                "label": "Available Capacities",
+                "icon": "ri-dashboard-line",
+                "color": "blue-500",
+                "label": "Capacity",
                 "value": "200 L & 500 L per batch"
             },
             {
-                "icon": "ri-flashlight-fill",
-                "color": "yellow-500",
-                "label": "Fuel Source",
-                "value": "Biomass-based heating"
-            },
-            {
-                "icon": "ri-tools-line",
-                "color": "gray-500",
-                "label": "Process Type",
-                "value": "Vacuum Distillation & Filtration"
-            }
-        ],
-        "applications": [
-            {
-                "icon": "ri-bank-line",
+                "icon": "ri-fire-line",
                 "color": "red-500",
-                "text": "Automobile Service Centers – Recycles waste motor oil"
+                "label": "Fuel Source",
+                "value": "Biomass-based (wood chips, briquettes, gas)"
             },
             {
                 "icon": "ri-building-2-line",
                 "color": "blue-500",
+                "label": "Process Type",
+                "value": "Vacuum Distillation & Filtration"
+            },
+            {
+                "icon": "ri-temp-hot-line",
+                "color": "yellow-500",
+                "label": "Installation & Mobility",
+                "value": "Compact design, easy setup and mobility"
+            }
+        ],
+        "applications": [
+            {
+                "icon": "ri-tools-fill",
+                "color": "yellow-500",
+                "text": "Automobile Service Centers – Recycles waste motor oil"
+            },
+            {
+                "icon": "ri-industrial-scale-fill",
+                "color": "green-500",
                 "text": "Industrial Plants & Factories – Converts used hydraulic and transmission oil"
+            },
+            {
+                "icon": "ri-tractor-fill",
+                "color": "red-500",
+                "text": "Agricultural & Heavy Machinery – Restores lubricants for farm equipment"
             }
         ],
         "benefits": [
             {
                 "icon": "ri-earth-fill",
                 "color": "green-500",
-                "text": "Reduces Environmental Impact – Prevents oil contamination in ecosystems"
+                "text": "Reduces Environmental Impact – Prevents soil and water contamination"
             },
             {
                 "icon": "ri-money-dollar-circle-line",
                 "color": "green-500",
-                "text": "Saves Money – Eliminates the cost of disposing of used oil while generating fuel"
+                "text": "Saves Money – Eliminates disposal costs and generates usable fuel"
             },
             {
-                "icon": "ri-fire-line",
+                "icon": "ri-flame-fill",
                 "color": "red-500",
-                "text": "Energy-Efficient – Requires less energy than refining new crude oil"
+                "text": "Energy-Efficient – Less energy-intensive than crude oil refining"
             }
         ]
     },
@@ -5511,44 +5473,92 @@
         "image": "../assets/products/bio-char/Control Panel (1).jpeg",
         "description": "ESB-R Control Panels are engineered to deliver precision control, smart automation, and reliable power management for various applications. These panels, made with top-quality components, ensure safety, efficiency, and compliance with industrial standards. Perfect for small-scale to industrial setups, they provide seamless automation, overload protection, and a user-friendly interface.",
         "productId": "productId051",
-        "tagline": "Smart Automation, Safety, and Reliable Power Management",
-        "keyBenefits": [
-            "Smart Automation: Integrated with PLCs and relay controls for optimal performance.",
-            "Compact Design: Suitable for various environments, including small and industrial spaces.",
-            "Robust Construction: Made from durable materials, offering corrosion resistance and long-term reliability.",
-            "Overload Protection: Ensures safe operation and protects equipment from electrical hazards.",
-            "Energy Efficiency: Designed to minimize power losses and enhance operational efficiency.",
-            "Customization: Tailored solutions for diverse industrial, commercial, and residential needs.",
-            "User-Friendly: Equipped with intuitive controls, digital displays, and clear indicators."
+        "subtitle": "Smart Automation, Safety, and Reliable Power Management",
+        "features": [
+            {
+                "icon": "ri-dashboard-line",
+                "color": "blue-500",
+                "text": "Smart Automation: Integrated with advanced PLC & relay-based controls for optimal performance."
+            },
+            {
+                "icon": "ri-save-line",
+                "color": "green-500",
+                "text": "Compact Design: Available in small, wall-mounted, and industrial-grade enclosures."
+            },
+            {
+                "icon": "ri-shield-check-line",
+                "color": "red-500",
+                "text": "Durable and Robust: Constructed from powder-coated mild steel or stainless steel for corrosion resistance."
+            },
+            {
+                "icon": "ri-flashlight-line",
+                "color": "yellow-500",
+                "text": "Safe Operation: Features overload and short-circuit protection."
+            },
+            {
+                "icon": "ri-plug-line",
+                "color": "blue-500",
+                "text": "Energy Efficient: Designed to minimize power losses and enhance efficiency."
+            },
+            {
+                "icon": "ri-tools-line",
+                "color": "gray-500",
+                "text": "User-Friendly Interface: Equipped with LED indicators, digital displays, and simple switches."
+            }
+        ],
+        "specifications": [
+            {
+                "icon": "ri-building-line",
+                "color": "blue-500",
+                "label": "Types",
+                "value": "Available as small control panels and industrial control panels, including single and three-phase variants."
+            },
+            {
+                "icon": "ri-group-line",
+                "color": "red-500",
+                "label": "Construction",
+                "value": "Heavy-duty construction for industrial use and lightweight options for smaller setups."
+            },
+            {
+                "icon": "ri-global-line",
+                "color": "green-500",
+                "label": "Integration",
+                "value": "Integrated with PLC and SCADA for real-time monitoring and control."
+            }
         ],
         "applications": [
-            "Industrial Automation: Manages operations in manufacturing plants, enhancing productivity and safety.",
-            "Commercial Buildings: Controls HVAC, lighting, and power systems, ensuring energy efficiency.",
-            "Water Management: Operates pumps and manages water levels in treatment facilities and irrigation systems.",
-            "Energy Systems: Integrates with renewable energy sources for efficient power management.",
-            "Agricultural Operations: Automates farming processes, improving efficiency and crop management."
+            {
+                "icon": "ri-tools-fill",
+                "color": "yellow-500",
+                "text": "Industrial Manufacturing: Manages power for machinery, conveyors, and production lines."
+            },
+            {
+                "icon": "ri-hotel-line",
+                "color": "blue-500",
+                "text": "Commercial Buildings: Controls HVAC, lighting, and electrical systems."
+            },
+            {
+                "icon": "ri-plant-fill",
+                "color": "green-500",
+                "text": "Renewable Energy Systems: Integrates with solar, biogas, and other renewable energy sources."
+            }
         ],
-        "technicalSpecifications": {
-            "Types of Control Panels": [
-                "Small Control Panels: For residential and light commercial use.",
-                "Industrial Control Panels: For heavy-duty industrial applications."
-            ],
-            "Material": "Powder-coated mild steel or stainless steel",
-            "Protection Features": "Overload, short-circuit, and environmental protections",
-            "Energy Features": "High-efficiency designs to reduce power consumption",
-            "Customization Options": "Available in various sizes and configurations for different applications"
-        },
-        "advantages": [
-            "Enhanced Safety and Security: Features like overload protection and robust construction ensure safe operations.",
-            "Energy and Cost Efficiency: Reduces operational costs through efficient energy management.",
-            "Flexibility and Customization: Adaptable to specific needs and conditions of various industries.",
-            "Sustainability: Supports eco-friendly practices by enhancing energy efficiency and reducing waste."
-        ],
-        "whyChooseUs": [
-            "Expertise in Power Management: Leveraging years of experience in delivering high-quality power solutions.",
-            "Commitment to Innovation: Continuously improving products to meet the dynamic needs of modern industries.",
-            "Customer-Centric Approach: Focused on providing solutions that meet the specific requirements of clients.",
-            "Global Standards Compliance: Ensuring all products meet or exceed international safety and performance standards."
+        "benefits": [
+            {
+                "icon": "ri-battery-charge-line",
+                "color": "green-500",
+                "text": "Optimized Energy Management: Reduces power wastage and ensures efficient operations."
+            },
+            {
+                "icon": "ri-alarm-warning-line",
+                "color": "red-500",
+                "text": "Enhanced Equipment Protection: Safeguards against overloads, overheating, and electrical mishaps."
+            },
+            {
+                "icon": "ri-hand-coin-line",
+                "color": "blue-500",
+                "text": "Custom-Built Solutions: Tailored to meet the specific needs of any industry or application."
+            }
         ]
     },
     {
@@ -5560,44 +5570,123 @@
         "description": "The Acoustic Enclosure for DG Sets by Enersol Biopower is engineered to provide superior noise reduction, weather protection, and enhanced durability. Suitable for a range of applications from industrial to residential, these enclosures ensure your DG sets operate efficiently while complying with CPCB norms.",
         "productId": "productId052",
         "tagline": "Efficient Soundproofing, Weather Protection & Enhanced Durability",
-        "keyBenefits": [
-            "Superior Noise Reduction: Complies with CPCB-II norms, reducing noise levels to below 75 dB(A) at 1 meter.",
-            "Heavy-Duty Construction: Made from powder-coated steel for corrosion resistance and durability.",
-            "Weatherproof Design: Protects DG sets from rain, dust, and extreme temperatures, extending equipment lifespan.",
-            "Optimized Ventilation: Features high-efficiency louvers to prevent overheating.",
-            "Easy Access for Maintenance: Lockable doors and service windows facilitate easy upkeep.",
-            "Customizable Designs: Can be tailored for various generator capacities, ensuring a perfect fit."
+        "features": [
+            {
+                "icon": "ri-sound-module-line",
+                "color": "blue-500",
+                "text": "Superior Noise Reduction – Complies with CPCB-II norms to reduce noise below 75 dB(A) at 1 meter"
+            },
+            {
+                "icon": "ri-shield-check-line",
+                "color": "green-500",
+                "text": "Heavy-Duty Construction – Robust, powder-coated steel ensures durability and corrosion resistance"
+            },
+            {
+                "icon": "ri-umbrella-line",
+                "color": "blue-500",
+                "text": "Weatherproof Design – Full protection from rain, dust, and extreme temperatures"
+            },
+            {
+                "icon": "ri-wind-line",
+                "color": "gray-500",
+                "text": "Optimized Ventilation – High-efficiency louvers and airflow systems prevent overheating"
+            },
+            {
+                "icon": "ri-service-line",
+                "color": "yellow-500",
+                "text": "Easy Access & Maintenance – Lockable doors and service windows for easy upkeep"
+            },
+            {
+                "icon": "ri-flame-line",
+                "color": "red-500",
+                "text": "Fire & Heat Resistant – High-quality insulation materials enhance safety and efficiency"
+            }
+        ],
+        "specifications": [
+            {
+                "icon": "ri-battery-2-line",
+                "color": "yellow-500",
+                "label": "Capacity Range",
+                "value": "10 KVA to 1000+ KVA"
+            },
+            {
+                "icon": "ri-dashboard-line",
+                "color": "blue-500",
+                "label": "Noise Attenuation Level",
+                "value": "Below 75 dB(A) at 1m"
+            },
+            {
+                "icon": "ri-gallery-line",
+                "color": "gray-500",
+                "label": "Material",
+                "value": "Heavy-duty CRCA / Galvanized Steel"
+            },
+            {
+                "icon": "ri-ruler-line",
+                "color": "green-500",
+                "label": "Thickness",
+                "value": "1.6 mm to 2.5 mm (Customizable)"
+            },
+            {
+                "icon": "ri-brush-line",
+                "color": "purple-500",
+                "label": "Coating & Finish",
+                "value": "Powder-coated for rust & weather resistance"
+            },
+            {
+                "icon": "ri-fan-line",
+                "color": "blue-500",
+                "label": "Ventilation System",
+                "value": "Acoustically treated louvers for efficient airflow"
+            },
+            {
+                "icon": "ri-key-line",
+                "color": "red-500",
+                "label": "Access Features",
+                "value": "Lockable doors, service windows, and lifting hooks"
+            },
+            {
+                "icon": "ri-anchor-line",
+                "color": "green-500",
+                "label": "Mounting Type",
+                "value": "Skid-mounted / Baseframe-integrated design"
+            },
+            {
+                "icon": "ri-fire-line",
+                "color": "red-500",
+                "label": "Fire Resistance",
+                "value": "Heat-resistant insulation"
+            }
         ],
         "applications": [
-            "Industrial Sites: Ensures minimal noise disruption and protection against industrial conditions.",
-            "Commercial Areas: Suitable for businesses needing to maintain a quiet environment.",
-            "Residential Complexes: Ideal for installations near homes, reducing generator noise effectively."
+            {
+                "icon": "ri-error-warning-line",
+                "color": "red-500",
+                "text": "Off-grid power supply"
+            },
+            {
+                "icon": "ri-plug-line",
+                "color": "blue-500",
+                "text": "Backup power for small-scale operations"
+            }
         ],
-        "technicalSpecifications": {
-            "Capacity Range": "10 KVA to 1000+ KVA",
-            "Noise Attenuation Level": "Below 75 dB(A) at 1m",
-            "Material": "CRCA / Galvanized Steel",
-            "Thickness": "1.6 mm to 2.5 mm (customizable)",
-            "Coating & Finish": "Powder-coated for rust & weather resistance",
-            "Ventilation": "Acoustically treated louvers",
-            "Access Features": "Lockable doors, service windows, lifting hooks",
-            "Mounting Type": "Skid-mounted / Baseframe-integrated",
-            "Fire Resistance": "Heat-resistant insulation"
-        },
-        "economicAndEnvironmentalAdvantages": {
-            "Noise-Free Operations": "Significantly reduces generator sound levels, ensuring peace.",
-            "Extended Generator Life": "Protects against the elements, preventing wear and tear.",
-            "Compliance with Regulations": "Meets CPCB-II noise level norms.",
-            "Energy-Efficient Operation": "Maintains optimal cooling, preventing overheating.",
-            "Enhanced Security": "Provides theft protection and accident prevention."
-        },
-        "investmentHighlights": {
-            "High-Quality Soundproofing": "Multi-layer noise-dampening materials for optimal noise reduction.",
-            "Heavy-Duty & Weatherproof": "Built to withstand harsh conditions and ensure longevity.",
-            "Precision Engineering": "Designed for minimal maintenance and maximum efficiency.",
-            "Custom-Fit Solutions": "Available for all major DG set brands and sizes.",
-            "Trusted Expertise": "Manufactured by Enersol Biopower, a leader in power solutions."
-        }
+        "benefits": [
+            {
+                "icon": "ri-hand-coin-line",
+                "color": "green-500",
+                "text": "Cost-Effective – Saves operational costs compared to non-insulated alternatives"
+            },
+            {
+                "icon": "ri-heart-2-line",
+                "color": "red-500",
+                "text": "Enhanced Security & Safety – Provides theft protection and accident prevention"
+            },
+            {
+                "icon": "ri-global-line",
+                "color": "blue-500",
+                "text": "Compliance with CPCB Norms – Meets regulations for noise control"
+            }
+        ]
     },
     {
         "name": "ESB-R Biomass Shredder",
@@ -5607,68 +5696,98 @@
         "image": "../assets/products/bio-char/shredder.JPG",
         "description": "The ESB-R Biomass Shredder is an essential tool for efficient waste processing, transforming agricultural residues, wood chips, and organic waste into fine particles. Suitable for biogas plants, briquette manufacturing, and composting applications, this shredder is available in multiple capacities to suit various industrial and agricultural needs. It features high-speed rotary blades for precision cutting, ensuring high processing efficiency and reliability.",
         "productId": "productId053",
-        "tagline": "Precision Cutting, High Efficiency & Sustainable Biomass Management",
-        "keyBenefits": [
-            "Precision Cutting Technology: Ensures uniform shredding with high-speed rotary blades.",
-            "Heavy-Duty Performance: Durable construction allows for continuous operation in tough environments.",
-            "High Processing Efficiency: Fast and effective shredding with minimal power usage.",
-            "Low Maintenance: Simple design with replaceable blades for easy upkeep.",
-            "Versatile Applications: Suitable for biogas production, briquette manufacturing, and composting."
-        ],
-        "applications": [
-            "Biogas Plants: Prepares biomass for efficient energy production.",
-            "Agricultural Waste Management: Processes crop residues and farm waste.",
-            "Briquette Manufacturing: Converts biomass into compact briquettes.",
-            "Composting Facilities: Speeds up the decomposition process.",
-            "Wood Processing: Reduces wood waste for various uses."
-        ],
-        "models": [
+        "subtitle": "Precision Cutting, High Efficiency & Sustainable Biomass Management",
+        "features": [
             {
-                "model": "50 kg/hr",
-                "motorPower": "3 HP",
-                "materialSizeInput": "Up to 40 mm",
-                "materialSizeOutput": "2 mm - 20 mm",
-                "weight": "150 kg"
+                "icon": "ri-scissors-cut-line",
+                "color": "blue-500",
+                "text": "Precision Cutting Technology: Ensures uniform shredding with high-speed rotary blades."
             },
             {
-                "model": "100 kg/hr",
-                "motorPower": "5 HP",
-                "materialSizeInput": "Up to 60 mm",
-                "materialSizeOutput": "3 mm - 25 mm",
-                "weight": "250 kg"
+                "icon": "ri-hammer-fill",
+                "color": "green-500",
+                "text": "Heavy-Duty Performance: Built for continuous operation in tough environments."
             },
             {
-                "model": "200 kg/hr",
-                "motorPower": "10 HP",
-                "materialSizeInput": "Up to 100 mm",
-                "materialSizeOutput": "5 mm - 30 mm",
-                "weight": "400 kg"
+                "icon": "ri-dashboard-line",
+                "color": "yellow-500",
+                "text": "High Processing Efficiency: Quick and effective shredding with minimal power usage."
             },
             {
-                "model": "500 kg/hr",
-                "motorPower": "20 HP",
-                "materialSizeInput": "Up to 150 mm",
-                "materialSizeOutput": "10 mm - 50 mm",
-                "weight": "750 kg"
+                "icon": "ri-wrench-line",
+                "color": "gray-500",
+                "text": "Low Maintenance & Easy Operation: Simple design with replaceable blades for long-term use."
+            },
+            {
+                "icon": "ri-plant-line",
+                "color": "green-500",
+                "text": "Versatile Applications: Ideal for biogas plants, briquette making, and composting."
+            },
+            {
+                "icon": "ri-brush-fill",
+                "color": "purple-500",
+                "text": "Customizable Sizes & Capacities: Models available from 50 kg/hr to 500 kg/hr."
             }
         ],
-        "technicalSpecifications": {
-            "Cutting Blade Material": "High Carbon Steel, Alloy Steel, Hardened Steel, Tungsten Carbide",
-            "Shredding Mechanism": "Twin Shaft Rotating Blades, Dual Rotor System, Hammer Mill, Heavy-Duty Rotor",
-            "Applications": [
-                "Small farms",
-                "Biogas plants",
-                "Poultry farms",
-                "Municipal waste management",
-                "Large composting units",
-                "Agro-waste recycling"
-            ]
-        },
-        "whyChooseUs": [
-            "Engineered for Maximum Output: Continuous high-efficiency operation.",
-            "Optimized Power Consumption: Energy-efficient shredding capabilities.",
-            "Robust & Reliable: Built to handle heavy-duty use with minimal maintenance.",
-            "Expertise in Renewable Energy: Developed by Enersol Biopower, a leader in biomass solutions."
+        "specifications": [
+            {
+                "icon": "ri-stack-line",
+                "color": "red-500",
+                "label": "Available Models",
+                "value": "50 kg/hr, 100 kg/hr, 200 kg/hr, 500 kg/hr - Each with specific features suited for different scales of operation."
+            },
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Cutting Blade Material",
+                "value": "Variants include high carbon steel, alloy steel, hardened steel, and tungsten carbide blades."
+            },
+            {
+                "icon": "ri-motorbike-line",
+                "color": "blue-500",
+                "label": "Motor Power Range",
+                "value": "From 3 HP to 20 HP depending on the model."
+            },
+            {
+                "icon": "ri-ruler-line",
+                "color": "green-500",
+                "label": "Output Size Range",
+                "value": "Adjustable from 2 mm to 50 mm based on model specifications."
+            }
+        ],
+        "applications": [
+            {
+                "icon": "ri-factory-line",
+                "color": "yellow-500",
+                "text": "Biogas & Biomass Power Plants: Prepares fuel for energy generation."
+            },
+            {
+                "icon": "ri-leaf-line",
+                "color": "green-500",
+                "text": "Agricultural Waste Management: Shreds crop residues and farm waste."
+            },
+            {
+                "icon": "ri-building-2-line",
+                "color": "blue-500",
+                "text": "Briquette & Pellet Manufacturing: Converts biomass into fuel particles."
+            }
+        ],
+        "benefits": [
+            {
+                "icon": "ri-flashlight-line",
+                "color": "green-500",
+                "text": "Faster Biomass Processing: High-speed blades for quick shredding."
+            },
+            {
+                "icon": "ri-delete-bin-6-line",
+                "color": "red-500",
+                "text": "Reduces Waste Volume: Converts bulk waste into manageable material."
+            },
+            {
+                "icon": "ri-plant-fill",
+                "color": "blue-500",
+                "text": "Enhances Fuel Efficiency: Optimizes biomass for combustion and energy conversion."
+            }
         ]
     },
     {
@@ -5706,43 +5825,87 @@
         "image": "../assets/products/bio-char/cnc.jpg",
         "description": "Enersol Biopower provides high-quality CNC and hydraulic cutting & bending services for a variety of metals including steel, aluminum, and copper. Utilizing advanced technology such as CNC plasma cutting, hydraulic press bending, and laser cutting, we deliver precision metal fabrication suitable for industries like automotive, construction, and manufacturing. Our services ensure high-precision engineering, customized fabrication, and efficient production, tailored to both small and large-scale projects.",
         "productId": "productId057",
-        "serviceDetails": {
-            "Precision Engineering": "Achieve precise cuts and bends with minimal waste.",
-            "Technology": "State-of-the-art CNC and hydraulic machinery for top quality production.",
-            "Custom Fabrication": "Custom solutions to meet specific industrial requirements.",
-            "Applications": "Automotive, construction, industrial manufacturing, and more.",
-            "Capacity": "Handling small to large batch productions efficiently."
-        },
-        "capabilities": [
+        "subtitle": "Precision Metal Fabrication for High-Quality Industrial Solutions",
+        "features": [
             {
-                "Process": "CNC Plasma & Laser Cutting",
-                "Description": "High-speed precision for intricate designs and prototypes across various metals."
+                "icon": "ri-tools-line",
+                "color": "blue-500",
+                "text": "Precision Engineering: High-accuracy cutting and bending with minimal material wastage."
             },
             {
-                "Process": "Hydraulic Press Bending",
-                "Description": "Accurately forms metal sheets into complex angles and curves."
+                "icon": "ri-flashlight-fill",
+                "color": "red-500",
+                "text": "Advanced Equipment: CNC plasma, hydraulic press, and laser cutting machines for superior production quality."
             },
             {
-                "Process": "Shearing & Custom Fabrication",
-                "Description": "Offers clean cuts and custom shaping for diverse metalwork projects."
+                "icon": "ri-scissors-cut-line",
+                "color": "yellow-500",
+                "text": "Smooth Edge Finishing: Ensures safety and quality with reduced burrs and sharp edges."
+            },
+            {
+                "icon": "ri-dashboard-line",
+                "color": "green-500",
+                "text": "High-Speed & Cost-Effective: Efficient cutting and bending for complex shapes and designs."
+            },
+            {
+                "icon": "ri-group-line",
+                "color": "gray-500",
+                "text": "Versatile Applications: Suitable for automotive, construction, and other industries."
             }
         ],
-        "industriesServed": [
-            "Automobile",
-            "Construction",
-            "Manufacturing",
-            "Agriculture",
-            "Renewable Energy"
+        "specifications": [
+            {
+                "icon": "ri-ruler-line",
+                "color": "blue-500",
+                "label": "Cutting Thickness Range",
+                "value": "1mm to 50mm for CNC plasma & laser cutting"
+            },
+            {
+                "icon": "ri-tool-fill",
+                "color": "red-500",
+                "label": "Bending Capacity",
+                "value": "Up to 10mm thickness for hydraulic press bending"
+            },
+            {
+                "icon": "ri-stack-line",
+                "color": "green-500",
+                "label": "Machine Type",
+                "value": "Includes CNC plasma cutters, hydraulic presses, and laser cutters"
+            }
         ],
-        "keyBenefits": [
-            "High accuracy and efficiency",
-            "Customizable order sizes, from prototypes to full-scale production",
-            "Comprehensive metal processing services from cutting to final assembly"
+        "applications": [
+            {
+                "icon": "ri-car-line",
+                "color": "yellow-500",
+                "text": "Automobile & Heavy Machinery: Precision parts for vehicle frames and mechanical components."
+            },
+            {
+                "icon": "ri-building-line",
+                "color": "red-500",
+                "text": "Construction & Infrastructure: Metal bending for structural elements like gates and railings."
+            },
+            {
+                "icon": "ri-lightbulb-flash-line",
+                "color": "blue-500",
+                "text": "Manufacturing & Fabrication: Custom fabrication of industrial equipment."
+            }
         ],
-        "whyChooseUs": [
-            "Advanced machining capabilities for precise results",
-            "Experienced team ensuring quality and efficiency",
-            "Competitive pricing and reliable customer service"
+        "benefits": [
+            {
+                "icon": "ri-check-fill",
+                "color": "green-500",
+                "text": "Custom Fabrication: Tailored to meet specific industrial needs and project requirements."
+            },
+            {
+                "icon": "ri-price-tag-3-line",
+                "color": "blue-500",
+                "text": "Competitive Pricing: Cost-effective solutions with options for bulk order discounts."
+            },
+            {
+                "icon": "ri-medal-line",
+                "color": "yellow-500",
+                "text": "ISO-Standard Quality: Consistent, high-quality results ensured by strict quality controls."
+            }
         ]
     }
 ]

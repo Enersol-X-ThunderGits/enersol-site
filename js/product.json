@@ -4879,46 +4879,90 @@
         "image": "../assets/products/bio-char/05.jpeg",
         "description": "The ESB-R EcoGreen BioChar05 is an advanced biochar production system designed for small-scale agricultural and environmental applications. It converts agricultural residues into high-quality biochar, enhancing soil fertility and reducing pollution through sustainable crop waste management.",
         "productId": "productId040",
-        "tagline": "Sustainable Agriculture, Cleaner Air, and Higher Profits for Farmers",
-        "keyFeatures": [
-            "Eliminates Stubble Burning: Provides an eco-friendly solution for crop residue disposal.",
-            "High-Quality Biochar Production: Enhances soil health and increases crop yield by converting agricultural waste into biochar.",
-            "Profitable for Farmers: Allows farmers to generate additional income by selling biochar.",
-            "Compact & Portable Design: Facilitates easy installation and transportation, suitable for various farming scales.",
-            "Environmentally Friendly: Helps reduce carbon emissions and improve air quality.",
-            "Durable & Low Maintenance: Constructed with high-quality materials for durability and minimal upkeep.",
-            "User-Friendly Operation: Simple to operate, making it accessible to farmers with minimal training."
+        "subtitle": "Sustainable Agriculture, Cleaner Air, and Higher Profits for Farmers",
+        "features": [
+            {
+                "icon": "ri-leaf-line",
+                "color": "green-500",
+                "text": "Eliminates stubble burning – Provides an eco-friendly solution for crop residue disposal"
+            },
+            {
+                "icon": "ri-handbag-line",
+                "color": "blue-500",
+                "text": "High-Quality Biochar Production – Converts waste into a valuable soil enhancer"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Profitable for Farmers – Generates extra income by selling biochar"
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "gray-500",
+                "text": "Durable & Low Maintenance – Built with rugged, high-quality materials for long-term reliability"
+            },
+            {
+                "icon": "ri-home-smile-line",
+                "color": "green-500",
+                "text": "User-Friendly Operation – Designed for easy use with minimal training"
+            }
+        ],
+        "technology": [
+            {
+                "icon": "ri-fire-fill",
+                "color": "red-500",
+                "text": "Biomass Torrefaction – Heating at 300-600°C with limited oxygen to produce biochar"
+            }
+        ],
+        "specifications": [
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Biochar Production Capacity",
+                "value": "10 kg/hour"
+            },
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Biomass Material",
+                "value": "Rice straw (parali), wheat husk, and other crop residues"
+            },
+            {
+                "icon": "ri-plant-fill",
+                "color": "green-500",
+                "label": "Process Technology",
+                "value": "Biomass Torrefaction"
+            }
         ],
         "applications": [
-            "Agricultural Farms: Transforms rice straw, wheat husk, and other crop residues into valuable biochar.",
-            "Organic Farming: Uses biochar to improve soil fertility and structure, enhancing organic farming practices.",
-            "Horticulture & Landscaping: Serves as a soil amendment to improve water retention and soil health.",
-            "Greenhouses & Nurseries: Benefits plant growth by improving nutrient availability in soil.",
-            "Industrial Applications: Utilizes biochar in water filtration and carbon sequestration projects."
+            {
+                "icon": "ri-battery-2-charge-line",
+                "color": "red-500",
+                "text": "Agricultural Farms – Converts residues into biochar"
+            },
+            {
+                "icon": "ri-home-smile-line",
+                "color": "green-500",
+                "text": "Organic Farming – Enhances soil fertility and carbon retention"
+            }
         ],
-        "technicalSpecifications": {
-            "Model Name": "EcoGreen BioChar05",
-            "Biochar Production Capacity": "10 kg/hour",
-            "Biomass Material": "Rice straw, wheat husk, and various crop residues",
-            "Process Technology": "Biomass Torrefaction",
-            "Components": [
-                "Cutting Machine",
-                "Screw Conveyors",
-                "Preheater & Exhaust System",
-                "Torrefaction Reactor",
-                "Biomass-Fueled Combustion Chamber",
-                "Cooling Tower",
-                "Water Tank"
-            ],
-            "Portability": "Compact design for easy transport",
-            "Energy Efficiency": "Optimized for low fuel consumption",
-            "Maintenance": "Designed for minimal servicing"
-        },
-        "environmentalImpact": {
-            "Reduces Pollution": "Cuts down on stubble burning, mitigating air pollution.",
-            "Enhances Soil Fertility": "Biochar improves water retention and nutrient absorption, enriching soil health.",
-            "Increases Farmer Income": "Provides a new revenue stream through biochar sales."
-        }
+        "benefits": [
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Environmentally Friendly – Reduces carbon emissions and supports sustainable agriculture"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Cost-Effective – Saves on fuel costs and generates income from biochar sales"
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "gray-500",
+                "text": "Low Maintenance – Simple operation with minimal servicing required"
+            }
+        ]
     },
     {
         "name": "Eco-Green Biochar10 - 10kg/hr Biomass based Bio-char Plant",
@@ -4928,46 +4972,95 @@
         "image": "../assets/products/bio-char/10.jpeg",
         "description": "The ESB-R EcoGreen BioChar10 is an innovative biochar production plant designed for moderate-scale agricultural operations, aiming to enhance soil health and reduce carbon footprint. It converts agricultural residues into high-quality biochar, improving soil fertility and offering a clean alternative to stubble burning.",
         "productId": "productId041",
-        "tagline": "Sustainable Farming, Clean Energy, and Increased Profits",
-        "keyBenefits": [
-            "Eliminates Stubble Burning: Offers a sustainable solution for disposing of agricultural residues, significantly reducing air pollution.",
-            "High-Quality Biochar Production: Produces biochar that enhances soil fertility, increases water retention, and boosts crop yields.",
-            "Profitable for Farmers: Generates additional revenue by selling biochar to organic farms and horticulture businesses.",
-            "Compact and Easy to Operate: Portable and simple design makes it accessible for small to medium farm operations.",
-            "Eco-Friendly and Sustainable: Reduces greenhouse gas emissions and supports long-term environmental sustainability.",
-            "Durable and Reliable: Constructed from high-quality materials to ensure longevity and minimal maintenance.",
-            "User-Friendly: Designed to be easy to use with minimal training required, making it accessible for all farmers."
+        "subtitle": "Sustainable Farming, Clean Energy, and Increased Profits",
+        "features": [
+            {
+                "icon": "ri-leaf-line",
+                "color": "green-500",
+                "text": "Eliminates Stubble Burning – Provides a sustainable disposal method for crop residues"
+            },
+            {
+                "icon": "ri-handbag-line",
+                "color": "blue-500",
+                "text": "High-Quality Biochar Production – Enhances soil fertility and crop yields"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Profitable for Farmers – Creates a marketable product that can be sold to various sectors"
+            },
+            {
+                "icon": "ri-home-smile-line",
+                "color": "green-500",
+                "text": "Compact & Easy to Operate – Suitable for small to medium-sized farms"
+            },
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Eco-Friendly & Sustainable – Reduces greenhouse gas emissions and improves soil health"
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "gray-500",
+                "text": "Durable & Reliable – Constructed with high-quality materials for long-lasting performance"
+            }
+        ],
+        "technology": [
+            {
+                "icon": "ri-fire-fill",
+                "color": "red-500",
+                "text": "Biomass Torrefaction – Processes raw materials at 300-600°C with limited oxygen"
+            }
+        ],
+        "specifications": [
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Biochar Production Capacity",
+                "value": "10 kg/hour"
+            },
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Raw Material",
+                "value": "Rice straw, wheat husk, crop residues"
+            },
+            {
+                "icon": "ri-plant-fill",
+                "color": "green-500",
+                "label": "Processing Technology",
+                "value": "Biomass Torrefaction"
+            }
         ],
         "applications": [
-            "Agricultural Farms: Transforms stubble, husk, and other crop residues into valuable biochar.",
-            "Organic Farming: Utilizes biochar to enrich soil with a natural carbon-based fertilizer.",
-            "Horticulture and Landscaping: Improves soil conditions for healthier plant growth.",
-            "Greenhouses and Nurseries: Enhances soil structure and moisture retention capabilities.",
-            "Industrial Applications: Applies in areas like water filtration and carbon sequestration."
+            {
+                "icon": "ri-battery-2-charge-line",
+                "color": "red-500",
+                "text": "Agricultural Farms – Converts stubble and husk into biochar"
+            },
+            {
+                "icon": "ri-home-smile-line",
+                "color": "green-500",
+                "text": "Organic & Sustainable Farming – Enriches soil with natural carbon-based fertilizer"
+            }
         ],
-        "technicalSpecifications": {
-            "Model Name": "EcoGreen BioChar10",
-            "Biochar Production Capacity": "10 kg per hour",
-            "Raw Materials": "Suitable for rice straw, wheat husk, and various agricultural residues",
-            "Process Technology": "Employs biomass torrefaction at temperatures between 300-600°C under limited oxygen conditions",
-            "Components": [
-                "Cutting Machine",
-                "Multi-Stage Screw Conveyors",
-                "Preheater & Exhaust System",
-                "Torrefaction Reactor",
-                "Biomass-Fueled Combustion Chamber",
-                "Cooling Tower",
-                "Water Tank"
-            ],
-            "Portability": "Compact and portable design for easy installation and mobility",
-            "Energy Efficiency": "Optimized for low energy consumption while maintaining high operational efficiency",
-            "Maintenance": "Designed for easy cleaning and minimal routine maintenance"
-        },
-        "environmentalImpact": {
-            "Reduces Pollution": "Significantly cuts down on stubble burning, thus mitigating air pollution.",
-            "Enhances Soil Health": "Biochar improves soil quality, enhancing nutrient retention and supporting healthy crop growth.",
-            "Generates Additional Revenue": "Enables farmers to create a new source of income by selling biochar."
-        }
+        "benefits": [
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Improves Soil Health – Biochar enhances nutrient retention and soil quality"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Creates Additional Income – Farmers can sell biochar as a premium organic product"
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "gray-500",
+                "text": "Long-Lasting & Efficient – Designed for continuous, reliable operation"
+            }
+        ]
     },
     {
         "name": "Eco-Green Biochar50 - 50kg/hr Biomass based Bio-char Plant",
@@ -4977,46 +5070,95 @@
         "image": "../assets/products/bio-char/50.jpeg",
         "description": "The ESB-R EcoGreen BioChar50 is an advanced biochar production system for large-scale agricultural and environmental applications. It transforms agricultural waste into high-quality biochar, improving soil health and providing an eco-friendly solution to crop residue disposal.",
         "productId": "productId042",
-        "tagline": "Converting Crop Waste into a Profitable Resource",
-        "keyBenefits": [
-            "Eliminates Stubble Burning: Offers a sustainable method for disposing of agricultural residues without harming the environment.",
-            "High-Quality Biochar Production: Creates a valuable soil amendment that enhances soil fertility and retains water, promoting healthier crop growth.",
-            "Financial Benefits for Farmers: Opens up new revenue streams by selling biochar to organic farms, horticulturists, and industrial sectors.",
-            "Portable and Easy to Operate: Designed for easy transport and operation, making it suitable for various agricultural settings.",
-            "Eco-Friendly and Sustainable: Reduces carbon emissions and supports sustainable agricultural practices.",
-            "Durable and Low Maintenance: Engineered with high-quality materials to ensure durability and ease of maintenance.",
-            "User-Friendly: Simple to operate, allowing farmers and agro-businesses to easily adopt and benefit from the technology."
+        "subtitle": "Converting Crop Waste into a Profitable Resource",
+        "features": [
+            {
+                "icon": "ri-leaf-line",
+                "color": "green-500",
+                "text": "Say No to Stubble Burning – Provides a sustainable disposal method for crop residues"
+            },
+            {
+                "icon": "ri-handbag-line",
+                "color": "blue-500",
+                "text": "High-Quality Biochar Production – Converts biomass into a nutrient-rich soil amendment"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Financial Benefits for Farmers – Generates revenue by selling biochar to various sectors"
+            },
+            {
+                "icon": "ri-home-smile-line",
+                "color": "green-500",
+                "text": "Portable & Easy to Operate – Ideal for use across different farming locations"
+            },
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Eco-Friendly & Sustainable – Reduces greenhouse gas emissions and improves soil health"
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "gray-500",
+                "text": "Robust & Low Maintenance – Built with high-quality materials for durability"
+            }
+        ],
+        "technology": [
+            {
+                "icon": "ri-fire-fill",
+                "color": "red-500",
+                "text": "Biomass Torrefaction – Efficiently processes materials at high temperatures with limited oxygen"
+            }
+        ],
+        "specifications": [
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Processing Capacity",
+                "value": "50 kg/hour"
+            },
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Raw Materials",
+                "value": "Rice straw, wheat husk, crop residues"
+            },
+            {
+                "icon": "ri-plant-fill",
+                "color": "green-500",
+                "label": "Technology Used",
+                "value": "Biomass Torrefaction"
+            }
         ],
         "applications": [
-            "Agricultural Farms: Converts rice straw, wheat husk, and other crop residues into biochar.",
-            "Organic Farming and Horticulture: Supplies a carbon-rich natural fertilizer that improves soil quality.",
-            "Greenhouses and Nurseries: Enhances soil structure and moisture retention, aiding in plant growth.",
-            "Water Filtration and Industrial Uses: Biochar is used as a filtration medium and for carbon sequestration.",
-            "Carbon Sequestration and Renewable Energy: Assists in reducing the carbon footprint and improving energy efficiency."
+            {
+                "icon": "ri-battery-2-charge-line",
+                "color": "red-500",
+                "text": "Agricultural Farms – Converts agricultural waste into biochar for soil enhancement"
+            },
+            {
+                "icon": "ri-home-smile-line",
+                "color": "green-500",
+                "text": "Organic Farming & Horticulture – Improves soil quality and plant health"
+            }
         ],
-        "technicalSpecifications": {
-            "Model Name": "EcoGreen BioChar50",
-            "Biochar Production Capacity": "50 kg per hour",
-            "Raw Materials": "Suitable for processing a variety of agricultural residues",
-            "Technology Used": "Biomass Torrefaction ranging from 300-800°C under limited oxygen conditions",
-            "Components": [
-                "Cutting Machine",
-                "Multi-Stage Screw Conveyors",
-                "Preheater & Exhaust System",
-                "Torrefaction Reactor",
-                "Wood-Burning Chamber",
-                "Cooling Tower",
-                "Water Tank"
-            ],
-            "Energy Consumption": "Optimized for low fuel consumption with maximum efficiency",
-            "Maintenance": "Designed for easy cleaning and minimal routine maintenance",
-            "Portability": "Compact and easy to transport, allowing for flexible use across locations"
-        },
-        "environmentalImpact": {
-            "Reduces Pollution": "Significantly decreases stubble burning, directly reducing air pollution.",
-            "Enhances Soil Health": "Biochar from the system increases nutrient retention and promotes healthier crops.",
-            "Generates Additional Revenue": "Provides farmers with the opportunity to sell biochar as a premium organic product."
-        }
+        "benefits": [
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Boosts Soil Productivity – Enhances nutrient retention and soil fertility"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Creates a Profitable Byproduct – Generates income from biochar sales"
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "gray-500",
+                "text": "Durable & Built to Last – Ensures long-term efficiency and reliability"
+            }
+        ]
     },
     {
         "name": "Eco-Green Biochar100 - 100kg/hr Biomass based Bio-char Plant",
@@ -5027,45 +5169,94 @@
         "description": "The ESB-R EcoGreen BioChar100 is a large-scale biochar production system for industrial use, enabling sustainable management of agricultural waste and significant soil health improvement.",
         "productId": "productId043",
         "tagline": "From Crop Waste to Valuable Biochar",
-        "keyBenefits": [
-            "Eliminates Stubble Burning: Provides a sustainable and environmentally friendly alternative to burning agricultural residues.",
-            "High-Quality Biochar Production: Produces biochar that enhances soil fertility, moisture retention, and crop yields.",
-            "Economic Opportunity: Creates additional revenue streams for farmers and businesses through the sale of biochar.",
-            "Portable and Convenient: Easy to install and operate, suitable for various operational scales.",
-            "Eco-Friendly: Reduces carbon emissions and contributes to environmental sustainability.",
-            "Durability and Low Maintenance: Constructed from high-quality materials to ensure long-term reliability and minimal upkeep.",
-            "User-Friendly: Simple to operate, making advanced biochar production accessible to a wide range of users."
+        "features": [
+            {
+                "icon": "ri-leaf-line",
+                "color": "green-500",
+                "text": "Say Goodbye to Stubble Burning – Offers a smart alternative to crop residue disposal without harming the environment"
+            },
+            {
+                "icon": "ri-handbag-line",
+                "color": "blue-500",
+                "text": "Produces High-Quality Biochar – Enriches soil health and enhances plant growth"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Profitable for Farmers & Businesses – High market demand in organic farming and industrial filtration"
+            },
+            {
+                "icon": "ri-home-smile-line",
+                "color": "green-500",
+                "text": "Portable & Easy to Deploy – Easy transport and simple setup for various locations"
+            },
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Environmentally Friendly – Reduces air pollution and supports climate-resilient agriculture"
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "gray-500",
+                "text": "Built for Efficiency & Longevity – High-grade materials ensure durability and minimal maintenance"
+            }
+        ],
+        "technology": [
+            {
+                "icon": "ri-fire-fill",
+                "color": "red-500",
+                "text": "Biomass Torrefaction – Efficient processing of materials at 300-800°C with limited oxygen"
+            }
+        ],
+        "specifications": [
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Processing Capacity",
+                "value": "100 kg/hour"
+            },
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Raw Materials",
+                "value": "Rice straw, wheat husk, crop residues"
+            },
+            {
+                "icon": "ri-plant-fill",
+                "color": "green-500",
+                "label": "Technology Used",
+                "value": "Biomass Torrefaction"
+            }
         ],
         "applications": [
-            "Agricultural Farms: Converts agricultural waste such as rice straw and wheat husk into valuable biochar.",
-            "Organic Farming: Supplies a premium organic soil amendment that enhances soil health and productivity.",
-            "Horticulture and Landscaping: Improves soil properties, supporting healthier and more robust plant growth.",
-            "Industrial Applications: Utilizes biochar in filtration and remediation processes.",
-            "Environmental Projects: Contributes to carbon sequestration initiatives and renewable energy projects."
+            {
+                "icon": "ri-battery-2-charge-line",
+                "color": "red-500",
+                "text": "Agricultural Farms – Converts crop residues into valuable biochar"
+            },
+            {
+                "icon": "ri-home-smile-line",
+                "color": "green-500",
+                "text": "Organic Farming & Sustainable Agriculture – Boosts soil carbon levels and productivity"
+            }
         ],
-        "technicalSpecifications": {
-            "Model Name": "EcoGreen BioChar100",
-            "Biochar Production Capacity": "100 kg per hour",
-            "Raw Material Compatibility": "Rice straw, wheat husk, and other crop residues",
-            "Process Technology": "Biomass Torrefaction at temperatures between 300-800°C, under limited oxygen conditions",
-            "Key Components": [
-                "Cutting Machine",
-                "Multi-Stage Screw Conveyors",
-                "Preheater & Exhaust System",
-                "Torrefaction Reactor",
-                "Biomass-Fueled Combustion Chamber",
-                "Cooling Tower",
-                "Water Tank"
-            ],
-            "Energy Efficiency": "Designed for high efficiency with a low fuel requirement",
-            "Maintenance": "Engineered for easy maintenance with minimal routine needs",
-            "Mobility": "Features a compact and transportable design for easy relocation"
-        },
-        "environmentalImpact": {
-            "Reduces Air Pollution": "Significantly decreases stubble burning, thereby reducing air pollution.",
-            "Enhances Soil Fertility": "Biochar from the system increases nutrient retention and promotes healthier crops.",
-            "Generates Additional Revenue": "Enables farmers to sell biochar as a high-value product in various markets."
-        }
+        "benefits": [
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Reduces Air Pollution & Soil Degradation – Enhances agricultural productivity"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Creates a New Income Stream – Biochar can be sold for organic agriculture and industrial use"
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "gray-500",
+                "text": "Engineered for Efficiency & Reliability – Long-term performance with rugged components"
+            }
+        ]
     },
     {
         "name": "Eco-Green Biochar200 - 200kg/hr Biomass based Bio-char Plant",
@@ -5102,41 +5293,94 @@
         "image": "../assets/products/bio-char/dewater.jpeg",
         "description": "The ESB-R Dewatering Machine is designed for efficient solid-liquid separation, optimizing waste management and enhancing recycling processes in agricultural and industrial applications.",
         "productId": "productId047",
-        "tagline": "Efficient Solid-Liquid Separation",
-        "keyBenefits": [
-            "Automated Operation: Facilitates smooth and continuous operation with minimal manual intervention.",
-            "Energy Efficiency: Utilizes advanced technology to minimize energy consumption while maximizing output.",
-            "High Processing Capacity: Capable of handling large volumes of organic waste, manure, sludge, and agricultural residues efficiently.",
-            "Durable Construction: Features a stainless steel build that is corrosion-resistant and designed for long-term use.",
-            "Customizable Design: Adaptable to different operational needs, suitable for farms, biogas plants, and waste treatment facilities.",
-            "User-Friendly and Low Maintenance: Simple to operate and easy to maintain, reducing operational hassle.",
-            "Continuous Operation: Supports 24/7 processing, enhancing productivity and throughput."
+        "subtitle": "Efficient Solid-Liquid Separation",
+        "features": [
+            {
+                "icon": "ri-settings-2-line",
+                "color": "gray-500",
+                "text": "Automated Operation – Minimal manual handling required"
+            },
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "text": "Energy-Efficient Performance – Low power consumption with maximum output"
+            },
+            {
+                "icon": "ri-handbag-line",
+                "color": "blue-500",
+                "text": "High Processing Capacity – Efficiently handles large volumes of waste"
+            },
+            {
+                "icon": "ri-shield-check-line",
+                "color": "blue-500",
+                "text": "Durable Stainless Steel Build – Corrosion-resistant and reliable"
+            },
+            {
+                "icon": "ri-tools-line",
+                "color": "gray-500",
+                "text": "Customizable Design – Adaptable to different industry needs"
+            },
+            {
+                "icon": "ri-smile-line",
+                "color": "green-500",
+                "text": "User-Friendly & Low Maintenance – Easy to operate and maintain"
+            },
+            {
+                "icon": "ri-time-line",
+                "color": "purple-500",
+                "text": "24/7 Continuous Operation – Maximizes productivity"
+            }
+        ],
+        "technology": [
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "text": "Advanced Filtration Technology – Ensures efficient separation of solids from liquids"
+            }
+        ],
+        "specifications": [
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Efficiency",
+                "value": "Optimized for high throughput with minimal energy use"
+            },
+            {
+                "icon": "ri-tools-line",
+                "color": "gray-500",
+                "label": "Build Quality",
+                "value": "High-grade stainless steel construction for durability"
+            }
         ],
         "applications": [
-            "Livestock and Poultry Farms: Separates manure into solid and liquid components for better waste management.",
-            "Agricultural Processing Units: Used for dewatering cassava residue and other agricultural by-products.",
-            "Biogas Plants: Prepares cleaner liquid feedstock, improving biogas production and efficiency.",
-            "Sludge Management Facilities: Provides efficient solid-liquid separation for municipal and industrial sludge.",
-            "Organic Waste Recycling Centers: Processes large volumes of organic waste into compostable materials."
+            {
+                "icon": "ri-bank-line",
+                "color": "red-500",
+                "text": "Livestock & Poultry Farms – Manages waste efficiently"
+            },
+            {
+                "icon": "ri-plant-fill",
+                "color": "green-500",
+                "text": "Agricultural Processing Units – Prepares organic fertilizer"
+            }
         ],
-        "technicalSpecifications": {
-            "Waste Handling Efficiency": "Separates solid manure, enhancing storage, transportation, and resale options.",
-            "Organic Fertilizer Production": "Facilitates conversion of waste into high-quality organic compost, boosting soil fertility.",
-            "Soil Health Improvement": "Processed solids improve soil structure and nutrient content.",
-            "Biogas Plant Efficiency": "Ensures cleaner feedstock for biogas production, optimizing gas output and reducing maintenance issues."
-        },
-        "economicAndEnvironmentalAdvantages": {
-            "Market Value Increase": "Processed solid waste can be sold as high-value organic fertilizer, generating additional revenue.",
-            "Energy Cost Reduction": "Energy-efficient operation reduces overall power consumption.",
-            "Sustainable Farming Support": "Enhances eco-friendly waste management practices, supporting sustainable agricultural developments.",
-            "Operational Cost Reduction": "Lowers expenses related to waste storage, disposal, and transportation."
-        },
-        "investmentHighlights": {
-            "Eco-Friendly Waste Solution": "Minimizes environmental impact while maximizing resource utilization.",
-            "Cost-Effectiveness": "Transforms waste into valuable products, enhancing profitability for users.",
-            "Durability and Reliability": "Industrial-grade construction ensures longevity and reliable performance.",
-            "Trusted Technology": "Backed by Enersol Biopower's expertise in renewable energy and waste management solutions."
-        }
+        "benefits": [
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Enhances Soil Health – Improves soil fertility with processed organic waste"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Economic Advantages – Generates revenue from sale of separated solid waste"
+            },
+            {
+                "icon": "ri-fire-line",
+                "color": "red-500",
+                "text": "Reduces Operational Costs – Cuts costs on storage, disposal, and transportation"
+            }
+        ]
     },
     {
         "name": "Used Oil (Black Engine Oil) Distillation Machine",
@@ -5146,46 +5390,100 @@
         "image": "../assets/products/bio-char/used-oil.jpeg",
         "description": "The ESB-R 200LPD Used Oil Distillation Machine is designed to recycle waste engine oil, transforming it into usable fuel efficiently. This system is ideal for automobile service centers, industrial plants, and waste management facilities seeking a sustainable solution to manage waste oil.",
         "productId": "productId048",
-        "tagline": "Efficient, Sustainable, and Cost-Effective Oil Recycling",
-        "keyBenefits": [
-            "Eco-Friendly Solution: Reduces hazardous oil disposal, aiding environmental protection.",
-            "High-Quality Oil Recovery: Converts used oil into clean, reusable fuel, minimizing the need for fresh crude oil.",
-            "Cost-Effective & Profitable: Generates marketable fuel from waste oil, reducing operational costs.",
-            "Compact & Easy to Operate: User-friendly design with minimal maintenance required.",
-            "Versatile Processing: Effective for various types of lubricants including engine oil, hydraulic oil, and gear oils.",
-            "Efficient Filtration & Purification: Advanced processes remove impurities, restoring oil quality.",
-            "Sustainable & Energy-Efficient: Utilizes biomass for heating, reducing fossil fuel reliance."
+        "subtitle": "Efficient, Sustainable, and Cost-Effective Oil Recycling",
+        "features": [
+            {
+                "icon": "ri-leaf-line",
+                "color": "green-500",
+                "text": "Eco-Friendly Solution – Prevents hazardous oil disposal"
+            },
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "text": "High-Quality Oil Recovery – Produces clean, reusable fuel"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Cost-Effective & Profitable – Converts waste oil into marketable fuel"
+            },
+            {
+                "icon": "ri-home-smile-line",
+                "color": "green-500",
+                "text": "Compact & Easy to Operate – Minimal maintenance required"
+            },
+            {
+                "icon": "ri-tools-line",
+                "color": "gray-500",
+                "text": "Versatile Processing – Works with various types of oils"
+            },
+            {
+                "icon": "ri-filter-fill",
+                "color": "purple-500",
+                "text": "Efficient Filtration & Purification – Restores oil properties effectively"
+            },
+            {
+                "icon": "ri-fire-fill",
+                "color": "red-500",
+                "text": "Sustainable & Energy-Efficient – Utilizes biomass heating"
+            }
+        ],
+        "technology": [
+            {
+                "icon": "ri-settings-2-line",
+                "color": "gray-500",
+                "text": "Advanced Filtration and Distillation Processes – Ensures high-quality fuel production"
+            }
+        ],
+        "specifications": [
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Available Capacities",
+                "value": "200 L & 500 L per batch"
+            },
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Fuel Source",
+                "value": "Biomass-based heating"
+            },
+            {
+                "icon": "ri-tools-line",
+                "color": "gray-500",
+                "label": "Process Type",
+                "value": "Vacuum Distillation & Filtration"
+            }
         ],
         "applications": [
-            "Automobile Service Centers: Recycles waste motor oil from vehicle maintenance.",
-            "Industrial Plants & Factories: Processes used hydraulic and transmission oils into fuel.",
-            "Agricultural & Heavy Machinery Units: Restores and recycles lubricants used in farm equipment.",
-            "Fleet Management Companies: Lowers oil replacement costs and extends vehicle maintenance intervals.",
-            "Recycling & Waste Management Facilities: Processes large volumes of used oil, converting it into a profitable product."
+            {
+                "icon": "ri-bank-line",
+                "color": "red-500",
+                "text": "Automobile Service Centers – Recycles waste motor oil"
+            },
+            {
+                "icon": "ri-building-2-line",
+                "color": "blue-500",
+                "text": "Industrial Plants & Factories – Converts used hydraulic and transmission oil"
+            }
         ],
-        "technicalSpecifications": {
-            "Process Type": "Vacuum Distillation & Filtration",
-            "Available Capacities": "200 liters per batch",
-            "Fuel Source": "Biomass-based heating system",
-            "Key Components": [
-                "Reactor",
-                "Condenser & Cooling System",
-                "Filtration Unit",
-                "Diesel Storage Tank"
-            ],
-            "Output Quality": "Diesel-like fuel, comparable to standard diesel",
-            "Installation & Mobility": "Compact design facilitates easy installation and setup"
-        },
-        "economicAndEnvironmentalAdvantages": {
-            "Reduces Environmental Impact": "Prevents oil contamination in ecosystems.",
-            "Saves Money": "Converts waste into valuable fuel, reducing disposal and raw material costs.",
-            "Energy Efficiency": "More energy-efficient than crude oil refining, with less input energy required for processing."
-        },
-        "investmentHighlights": {
-            "Cost-Effective & Profitable": "Recycles waste oil into valuable fuel, ensuring quick ROI.",
-            "Robust & Reliable": "Industrial-grade design ensures durability and long-term operation.",
-            "Trusted Technology": "Developed by Enersol Biopower, recognized for innovative clean energy solutions."
-        }
+        "benefits": [
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Reduces Environmental Impact – Prevents oil contamination in ecosystems"
+            },
+            {
+                "icon": "ri-money-dollar-circle-line",
+                "color": "green-500",
+                "text": "Saves Money – Eliminates the cost of disposing of used oil while generating fuel"
+            },
+            {
+                "icon": "ri-fire-line",
+                "color": "red-500",
+                "text": "Energy-Efficient – Requires less energy than refining new crude oil"
+            }
+        ]
     },
     {
         "name": "ESB-R 500LPD Used Oil Distillation Machine",

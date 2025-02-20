@@ -15,6 +15,38 @@
         transform: translateX(-100%);
       }
     }
+
+    .client-logos {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .logos {
+  display: flex;
+  width: calc(144px * 27); /* Correctly attaches 'px' to '144' and adds proper spacing */
+  animation: scroll 30s linear infinite;
+}
+
+
+    .logos img {
+      
+      /* Adjust based on your image dimensions */
+      
+      /* Adjust based on your image dimensions */
+      flex-shrink: 0;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-120%);
+        /* Moves the logos by half of the total width over the animation duration */
+      }
+    }
   </style>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -950,15 +982,39 @@
     </div>
   </section>
 
-  <div class=" py-5 my-5">
+  <div class="py-5 my-5 client-logos">
     <h2 class="text-center text-4xl font-bold text-gray-800 mb-4">Our Clients</h2>
     <div class="overflow-hidden">
-      <div class="flex whitespace-nowrap animate-scroll">
-        <img src="https://placehold.co/400x300" alt="Client 1 Logo" class="w-24 h-24 mx-5 my-2 shadow-lg rounded-md">
-        <img src="https://placehold.co/400x300" alt="Client 2 Logo" class="w-24 h-24 mx-5 my-2 shadow-lg rounded-md">
-        <img src="https://placehold.co/400x300" alt="Client 3 Logo" class="w-24 h-24 mx-5 my-2 shadow-lg rounded-md">
-        <img src="https://placehold.co/400x300" alt="Client 4 Logo" class="w-24 h-24 mx-5 my-2 shadow-lg rounded-md">
-        <!-- Add more logos as needed -->
+      <div class="flex whitespace-nowrap logos">
+        <img src="./assets/clients/1.png" alt="Client 1 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/2.png" alt="Client 2 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/3.png" alt="Client 3 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/4.png" alt="Client 4 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <!-- Continue adding more images -->
+        <img src="./assets/clients/5.png" alt="Client 5 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/6.png" alt="Client 6 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/7.png" alt="Client 7 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/8.png" alt="Client 8 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/9.png" alt="Client 9 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/10.png" alt="Client 10 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <!-- Add more images until 27 -->
+        <img src="./assets/clients/11.png" alt="Client 11 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/12.png" alt="Client 12 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/13.png" alt="Client 13 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/14.png" alt="Client 14 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/15.png" alt="Client 15 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/16.png" alt="Client 16 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/17.png" alt="Client 17 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/18.png" alt="Client 18 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/19.png" alt="Client 19 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/20.png" alt="Client 20 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/21.png" alt="Client 21 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/22.png" alt="Client 22 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/23.png" alt="Client 23 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/24.png" alt="Client 24 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/25.png" alt="Client 25 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/26.png" alt="Client 26 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
+        <img src="./assets/clients/27.png" alt="Client 27 Logo" class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md">
       </div>
     </div>
   </div>
@@ -1250,7 +1306,31 @@
   </footer>
 
   <script src="./js/main.js"></script>
+  <script>
+    const logosDiv = document.querySelector('.logos');
+    let isScrolling;
 
+    function startScrolling() {
+      isScrolling = setTimeout(function () {
+        const firstImg = logosDiv.firstElementChild;
+        logosDiv.appendChild(firstImg);
+        logosDiv.style.transition = 'none';
+        logosDiv.insertBefore(firstImg, logosDiv.firstChild);
+        logosDiv.style.transition = 'transform 1s';
+        startScrolling();
+      }, 2000); // Adjust timing to control scroll speed
+    }
+
+    function stopScrolling() {
+      clearTimeout(isScrolling);
+    }
+
+    logosDiv.addEventListener('mouseover', stopScrolling);
+    logosDiv.addEventListener('mouseout', startScrolling);
+
+    startScrolling();
+
+  </script>
 
 </body>
 

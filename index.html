@@ -668,7 +668,7 @@
         <h2 class="text-3xl font-bold">Renewable Energy Sources</h2>
       </div>
 
-      <div class="flex flex-wrap lg:flex-nowrap items-center">
+      <div class="flex flex-wrap lg:flex-nowrap items-center justify-between">
         <!-- Text Content -->
         <div class="w-full lg:pr-10">
           <!-- <h3 class="text-2xl font-semibold text-secondary mb-4">Major Types of Renewable Energy Sources</h3>
@@ -697,15 +697,18 @@
             While wood remains a major source, modern biomass energy leverages a wide range of resources, making it an
             adaptable and sustainable energy option.
           </p> -->
-
+          <img @click="open = true" class="object-cover object-center rounded-lg shadow-md cursor-pointer mx-auto my-5"
+          src="https://img.brainkart.com/imagebk45/SXuMv3R.jpg" alt="Renewable Energy" />
           
         </div>
 
         <!-- Image with Click-to-Enlarge and Overlay -->
         <div class="w-full lg:mt-0 mt-8 relative group" x-data="{ open: false }">
-          <div class="flex flex-wrap lg:flex-nowrap items-center justify-around">
-            <img src="https://placehold.co/200" alt="">  
-            <img src="https://placehold.co/200" alt="">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29sYXIlMjBlbmVyZ3l8ZW58MHx8MHx8fDA%3D" class="border border-white p-2 bg-white rounded-lg mx-auto" alt="">  
+            <img src="https://plus.unsplash.com/premium_photo-1681488432824-cae8c038ccb1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2luZG1pbGx8ZW58MHx8MHx8fDA%3D" class="mx-auto p-2 bg-white rounded-lg" alt="">
+            <img src="https://plus.unsplash.com/premium_photo-1678167657805-36fb1c27cbd4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aHlkcm9wb3dlcnxlbnwwfHwwfHx8MA%3D%3D" class="p-2 bg-white rounded-lg mx-auto" alt="">  
+            <img src="https://images.unsplash.com/photo-1625569181760-034e10765531?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJpb21hc3MlMjBlbmVyZ3l8ZW58MHx8MHx8fDA%3D" class="mx-auto p-2 bg-white rounded-lg" alt="">
             </div>
 
           <!-- Overlay with Animation -->
@@ -731,8 +734,7 @@
         </div>
         
       </div>
-      <img @click="open = true" class="object-cover object-center rounded-lg shadow-md cursor-pointer mx-auto my-5 w-10/12"
-      src="https://img.brainkart.com/imagebk45/SXuMv3R.jpg" alt="Renewable Energy" />
+  
     </div>
   </section>
 

@@ -269,7 +269,7 @@
                     <!-- Search Bar -->
                     <div class="mb-6">
                         <input type="text" id="search-bar" class="w-full p-3 border border-gray-300 rounded-lg"
-                            placeholder="Search products..." oninput="filterProducts()">
+                            placeholder="Search products..." oninput="filterProductWithNewPage()">
                     </div>
 
 
@@ -279,77 +279,77 @@
                         <ul>
                             <li class="flex items-start gap-2 mb-1">
                                 <input type="checkbox" class="category-filter mt-1"
-                                    value="Biomass Gasifier for Power Production" onclick="filterProducts()">
+                                    value="Biomass Gasifier for Power Production" onclick="filterProductWithNewPage()">
                                 <p>Biomass Gasifier for Power Production</p>
                             </li>
                             <li class="flex items-start gap-2 mb-1">
                                 <input type="checkbox" class="category-filter mt-1" value="Biogas/Syngas Generators"
-                                    onclick="filterProducts()">
+                                    onclick="filterProductWithNewPage()">
                                 <p>Biogas/Syngas Generators</p>
                             </li>
                             <li class="flex items-start gap-2 mb-1">
                                 <input type="checkbox" class="category-filter mt-1"
-                                    value="Smokeless Biomass Stoves / Bhatti" onclick="filterProducts()">
+                                    value="Smokeless Biomass Stoves / Bhatti" onclick="filterProductWithNewPage()">
                                 <p>Smokeless Biomass Stoves / Bhatti</p>
                             </li>
                             <li class="flex items-start gap-2 mb-1">
                                 <input type="checkbox" class="category-filter mt-1" value="Auto Bio-Mawa Machine"
-                                    onclick="filterProducts()">
+                                    onclick="filterProductWithNewPage()">
                                 <p>Auto Bio-Mawa Machine</p>
                             </li>
                             <li class="flex items-start gap-2 mb-1">
                                 <input type="checkbox" class="category-filter mt-1"
-                                    value="Biomass Torrefaction / Bio-Char Plant" onclick="filterProducts()">
+                                    value="Biomass Torrefaction / Bio-Char Plant" onclick="filterProductWithNewPage()">
                                 <p>Biomass Torrefaction / Bio-Char Plant</p>
                             </li>
                             <li class="flex items-start gap-2 mb-1">
                                 <input type="checkbox" class="category-filter mt-1" value="85M³ Biogas Dome"
-                                    onclick="filterProducts()">
+                                    onclick="filterProductWithNewPage()">
                                 <p>85M³ Biogas Dome</p>
                             </li>
                             <li class="flex items-start gap-2 mb-1">
                                 <input type="checkbox" class="category-filter mt-1"
-                                    value="Solid Liquid Separator (Dewatering Machine)" onclick="filterProducts()">
+                                    value="Solid Liquid Separator (Dewatering Machine)" onclick="filterProductWithNewPage()">
                                 <p>Solid Liquid Separator (Dewatering Machine)</p>
                             </li>
                             <li class="flex items-start gap-2 mb-1">
                                 <input type="checkbox" class="category-filter mt-1"
-                                    value="Used Oil (Black Engine Oil) Distillation Machine" onclick="filterProducts()">
+                                    value="Used Oil (Black Engine Oil) Distillation Machine" onclick="filterProductWithNewPage()">
                                 <p>Used Oil (Black Engine Oil) Distillation Machine</p>
                             </li>
                             <li class="flex items-start gap-2 mb-1">
                                 <input type="checkbox" class="category-filter mt-1" value="Control Panels"
-                                    onclick="filterProducts()">
+                                    onclick="filterProductWithNewPage()">
                                 <p>Control Panels</p>
                             </li>
                             <li class="flex items-start gap-2 mb-1">
                                 <input type="checkbox" class="category-filter mt-1"
-                                    value="Acoustic Enclosure (Canopy) for DG Sets" onclick="filterProducts()">
+                                    value="Acoustic Enclosure (Canopy) for DG Sets" onclick="filterProductWithNewPage()">
                                 <p>Acoustic Enclosure (Canopy) for DG Sets</p>
                             </li>
                             <li class="flex items-start gap-2 mb-1">
                                 <input type="checkbox" class="category-filter mt-1" value="Biomass Shredder"
-                                    onclick="filterProducts()">
+                                    onclick="filterProductWithNewPage()">
                                 <p>Biomass Shredder</p>
                             </li>
                             <li class="flex items-start gap-2 mb-1">
                                 <input type="checkbox" class="category-filter mt-1" value="Wood Cutter"
-                                    onclick="filterProducts()">
+                                    onclick="filterProductWithNewPage()">
                                 <p>Wood Cutter</p>
                             </li>
                             <li class="flex items-start gap-2 mb-1">
                                 <input type="checkbox" class="category-filter mt-1" value="Biomass Drier"
-                                    onclick="filterProducts()">
+                                    onclick="filterProductWithNewPage()">
                                 <p>Biomass Drier</p>
                             </li>
                             <li class="flex items-start gap-2 mb-1">
                                 <input type="checkbox" class="category-filter mt-1" value="Charcoal Briquette Machine"
-                                    onclick="filterProducts()">
+                                    onclick="filterProductWithNewPage()">
                                 <p>Charcoal Briquette Machine</p>
                             </li>
                             <li class="flex items-start gap-2 mb-1">
                                 <input type="checkbox" class="category-filter mt-1"
-                                    value="CNC/ Hydraulic Cutting/Bending Machine Job Work" onclick="filterProducts()">
+                                    value="CNC/ Hydraulic Cutting/Bending Machine Job Work" onclick="filterProductWithNewPage()">
                                 <p>CNC/ Hydraulic Cutting/Bending Machine Job Work</p>
                             </li>
                         </ul>
@@ -5113,6 +5113,11 @@
         }
         // Call filterProducts on page load
         filterProducts();
+
+        function filterProductWithNewPage(){
+            currentPage = 1;
+            filterProducts()
+        }
     </script>
 
 </body>

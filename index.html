@@ -28,6 +28,7 @@
       /* Correctly attaches 'px' to '144' and adds proper spacing */
       animation: scroll 30s linear infinite;
     }
+
     .logos img {
 
       /* Adjust based on your image dimensions */
@@ -665,48 +666,56 @@
     <div class="container mx-auto px-5 py-24">
       <div class="text-center mb-12">
         <h2 class="text-3xl font-bold">Renewable Energy Sources</h2>
-        <p class="mt-4 text-lg">
-          Renewable energy is collected from resources that are naturally replenished on a human timescale. It plays a
-          crucial role in reducing greenhouse gas emissions and the use of fossil fuels, which are major contributors to
-          global carbon dioxide emissions.
-        </p>
       </div>
 
       <div class="flex flex-wrap lg:flex-nowrap items-center">
         <!-- Text Content -->
-        <div class="lg:w-2/3 w-full lg:pr-10">
-          <h3 class="text-2xl font-semibold text-secondary mb-4">Major Types of Renewable Energy Sources</h3>
-          <ul class="list-disc list-inside text-lg mb-8">
-            <li>Solar Energy</li>
-            <li>Wind Energy</li>
-            <li>Hydropower Energy</li>
-            <li>Biomass Energy</li>
-          </ul>
-          <h3 class="text-2xl font-semibold text-secondary mb-4">Biomass - Renewable Energy from Plants and Animals</h3>
+        <div class="w-full lg:pr-10">
+          <!-- <h3 class="text-2xl font-semibold text-secondary mb-4">Major Types of Renewable Energy Sources</h3>
+          -->
+          <!-- <h3 class="text-2xl font-semibold text-secondary mb-4">Biomass - Renewable Energy from Plants and Animals</h3> -->
           <p class="leading-relaxed mb-6">
-            Biomass energy is renewable energy derived from biological sources such as plants and animal residues.
-            Humans have used biomass for thousands of years, from burning wood for cooking and warmth to utilizing
-            agricultural residues, forestry waste, and organic components of municipal and industrial waste.
+            Renewable energy is defined as energy
+            that comes from naturally regenerated
+            resources
+            and
+            is
+            infinitely
+            useful
+            throughout a human lifetime. Sustainable
+            substitutes for finite fossil fuels include
+            these resources, which include sunlight,
+            wind, water, and biomass. These resources
+            are also abundant and naturally renewed.
+            Energy security and independence are
+            promoted while greenhouse gas emissions
+            are decreased and climate change is
+            mitigated through the usage of renewable
+            energy.
           </p>
-          <p class="leading-relaxed">
+          <!-- <p class="leading-relaxed">
             While wood remains a major source, modern biomass energy leverages a wide range of resources, making it an
             adaptable and sustainable energy option.
-          </p>
+          </p> -->
+
+          
         </div>
 
         <!-- Image with Click-to-Enlarge and Overlay -->
-        <div class="lg:w-1/3 w-full lg:mt-0 mt-8 relative group" x-data="{ open: false }">
-          <img @click="open = true" class="object-cover object-center rounded-lg shadow-md cursor-pointer"
-            src="./assets/home/How-energy-works.jpg" alt="Renewable Energy" />
+        <div class="w-full lg:mt-0 mt-8 relative group" x-data="{ open: false }">
+          <div class="flex flex-wrap lg:flex-nowrap items-center justify-around">
+            <img src="https://placehold.co/200" alt="">  
+            <img src="https://placehold.co/200" alt="">
+            </div>
 
           <!-- Overlay with Animation -->
-          <div
+          <!-- <div
             class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg pointer-events-none">
             <span class="text-white text-lg font-semibold animate-pulse">Click to Enlarge</span>
-          </div>
+          </div> -->
 
           <!-- Lightbox -->
-          <div x-show="open" x-cloak class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+          <!-- <div x-show="open" x-cloak class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
             <div class="relative max-h-screen max-w-screen">
               <img class="rounded-lg max-h-screen max-w-full object-contain" src="./assets/home/How-energy-works.jpg"
                 alt="Infographic" />
@@ -718,9 +727,12 @@
                 </svg>
               </button>
             </div>
-          </div>
+          </div> -->
         </div>
+        
       </div>
+      <img @click="open = true" class="object-cover object-center rounded-lg shadow-md cursor-pointer mx-auto my-5 w-10/12"
+      src="https://img.brainkart.com/imagebk45/SXuMv3R.jpg" alt="Renewable Energy" />
     </div>
   </section>
 
@@ -780,8 +792,8 @@
           </div>
 
           <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-            <img class="h-[220px] w-full object-cover" src="./assets/home/Auto Bio-Mawa Machine.png"
-              alt="Biomass Gasifier for Thermal Applications" />
+            <img class="h-[220px] w-full object-cover" style="background-color: rgb(42,159,211);"
+              src="./assets/home/Auto Bio-Mawa Machine.png" alt="Biomass Gasifier for Thermal Applications" />
             <div class="p-4">
               <h3 class="text-lg font-bold text-primary mb-2">Auto Bio-Mawa Machine</h3>
               <p class="text-gray-600 text-sm mb-4">Automates mawa (khoya) production using biomass energy, improving
@@ -873,7 +885,8 @@
           </div>
 
           <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-            <img class="h-[220px] w-full object-cover" src="./assets/home/CNC Hydraulic Bending Machine Job Work.jpg"
+            <img class="h-[220px] w-full object-cover" style="background-color: rgb(42,159,211);"
+              src="./assets/home/CNC Hydraulic Bending Machine Job Work.jpg"
               alt="Biomass Gasifier for Thermal Applications" />
             <div class="p-4">
               <h3 class="text-lg font-bold text-primary mb-2">CNC/ Hydraulic Bending Machine Job Work</h3>
@@ -1099,7 +1112,7 @@
           <div>
             <h3 class="text-2xl font-semibold text-white">Email Us</h3>
             <p class="text-white mt-2">
-              <a href="mailto:info@enersolbiopower.com" class="hover:underline">info@enersolbiopower.com</a>
+              <a href="mailto:info@enersolbiopower.com" class="hover:underline text-wrap">info@enersolbiopower.com</a>
             </p>
           </div>
         </div>

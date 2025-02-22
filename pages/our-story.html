@@ -2,355 +2,404 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Story - Enersol Biopower</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        // Primary Colors
-                        primary: {
-                            DEFAULT: '#299FD3', // Blue
-                            light: '#4FB5E0',  // Lighter shade of blue
-                            dark: 'rgb(3 69 155)',   // Darker shade of blue
-                        },
-                        secondary: {
-                            DEFAULT: '#C7D110', // Green
-                            light: '#D4DB50',   // Lighter green
-                            dark: '#909B0B',    // Darker green
-                        },
-
-                        // Accent Colors
-                        accentYellow: {
-                            DEFAULT: '#FED400',
-                            light: '#FFE766',
-                            dark: '#CCAA00',
-                        },
-                        accentRed: {
-                            DEFAULT: '#9B1418',
-                            light: '#C91B1F',
-                            dark: '#740F12',
-                        },
-
-                        // Gradients
-                        gradientBlueGreen: {
-                            DEFAULT: 'linear-gradient(90deg, #299FD3 0%, #C7D110 100%)',
-                        },
-                        gradientYellowGreen: {
-                            DEFAULT: 'linear-gradient(90deg, #FED400 0%, #C7D110 100%)',
-                        },
-                    },
-                },
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Story - Enersol Biopower</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // Primary Colors
+            primary: {
+              DEFAULT: '#299FD3', // Blue
+              light: '#4FB5E0',  // Lighter shade of blue
+              dark: 'rgb(3 69 155)',   // Darker shade of blue
             },
-        };
-    </script>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <!-- Link Swiper's CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+            secondary: {
+              DEFAULT: '#C7D110', // Green
+              light: '#D4DB50',   // Lighter green
+              dark: '#909B0B',    // Darker green
+            },
+
+            // Accent Colors
+            accentYellow: {
+              DEFAULT: '#FED400',
+              light: '#FFE766',
+              dark: '#CCAA00',
+            },
+            accentRed: {
+              DEFAULT: '#9B1418',
+              light: '#C91B1F',
+              dark: '#740F12',
+            },
+
+            // Gradients
+            gradientBlueGreen: {
+              DEFAULT: 'linear-gradient(90deg, #299FD3 0%, #C7D110 100%)',
+            },
+            gradientYellowGreen: {
+              DEFAULT: 'linear-gradient(90deg, #FED400 0%, #C7D110 100%)',
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 </head>
 
 <body>
 
-    <!-- Top Bar -->
-    <div class="bg-gray-800 py-2">
-        <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
-            <!-- Right: Social Links and Languages -->
-            <div class="flex flex-wrap justify-between w-full md:w-auto items-center space-x-4 ">
-                <div class="flex items-center space-x-2 text-white">
-                    <i class="ri-mail-line"></i>
-                    <a href="mailto:info@example.com">info@enersolbiopower.com</a>
-                </div>
-                <div class="flex space-x-2">
-                    <a href="#" class="text-white">
-                        <i class="ri-facebook-fill"></i>
-                    </a>
-                    <a href="#" class="text-white">
-                        <i class="ri-twitter-fill"></i>
-                    </a>
-                    <a href="#" class="text-white">
-                        <i class="ri-instagram-fill"></i>
-                    </a>
-                    <a href="#" class="text-white">
-                        <i class="ri-linkedin-fill"></i>
-                    </a>
-                </div>
-
-            </div>
-            <!-- Left: Contact Info -->
-            <div class="flex flex-wrap justify-between w-full md:w-auto space-x-4 mt-4 md:mt-0">
-
-                <div class="flex items-center space-x-2 text-white">
-                    <i class="ri-phone-line"></i>
-                    <a href="tel:+21236547898">+91-9414535665</a>
-                </div>
-                <div class="flex items-center space-x-2 text-white">
-                    <i class="ri-phone-line"></i>
-                    <a href="tel:+21236547898">+91-7073495200</a>
-                </div>
-
-            </div>
-
-
+  <!-- Top Bar -->
+  <div class="bg-gray-800 py-2">
+    <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+      <!-- Right: Social Links and Languages -->
+      <div class="flex flex-wrap justify-between w-full md:w-auto items-center space-x-4 ">
+        <div class="flex items-center space-x-2 text-white">
+          <i class="ri-mail-line"></i>
+          <a href="mailto:info@example.com">info@enersolbiopower.com</a>
         </div>
+        <div class="flex space-x-2">
+          <a href="#" class="text-white">
+            <i class="ri-facebook-fill"></i>
+          </a>
+          <a href="#" class="text-white">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a href="#" class="text-white">
+            <i class="ri-instagram-fill"></i>
+          </a>
+          <a href="#" class="text-white">
+            <i class="ri-linkedin-fill"></i>
+          </a>
+        </div>
+
+      </div>
+      <!-- Left: Contact Info -->
+      <div class="flex flex-wrap justify-between w-full md:w-auto space-x-4 mt-4 md:mt-0">
+
+        <div class="flex items-center space-x-2 text-white">
+          <i class="ri-phone-line"></i>
+          <a href="tel:+21236547898">+91-9414535665</a>
+        </div>
+        <div class="flex items-center space-x-2 text-white">
+          <i class="ri-phone-line"></i>
+          <a href="tel:+21236547898">+91-7073495200</a>
+        </div>
+
+      </div>
+
+
     </div>
-    <!-- Navbar component -->
-    <div class="bg-primary-dark sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
-                <!-- Logo -->
-                <div class="flex justify-start lg:w-0 lg:flex-1">
-                    <a href="/">
-                        <img class="h-12 w-auto sm:h-14" src="../assets/logo/erersollogo.png" alt="Enersol Biopower"
-                            style="min-width: 150px;">
-                    </a>
-                </div>
-                <!-- Navbar collapse button (visible on small screens) -->
-                <div class="-mr-2 -my-2 md:hidden">
-                    <button type="button"
-                        class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                        id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
-                        <span class="sr-only">Open menu</span>
-                        <!-- Icon for the button (hamburger icon) -->
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" aria-hidden="true" style="color: white;">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16m-7 6h7" />
-                        </svg>
-                    </button>
-                </div>
-
-                <!-- Links for large screens -->
-                <nav class="hidden md:flex space-x-10">
-                    <a href="/enersol-site/"
-                        class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
-                    <a href="/enersol-site/pages/about-us.html"
-                        class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
-                    <a href="/enersol-site/pages/our-story.html"
-                        class="text-base font-medium text-white hover:text-accentYellow-light">Our Story</a>
-                    <a href="/enersol-site/pages/products.html"
-                        class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
-                    <a href="/enersol-site/pages/blogs.html"
-                        class="text-base font-medium text-white hover:text-accentYellow-light">Blogs & News</a>
-                    <a href="/enersol-site/pages/contact-us.html"
-                        class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
-                </nav>
-
-                <!-- Get a Quote button (visible on large screens) -->
-                <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                    <a href="#"
-                        class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
-                        Get a Quote
-                    </a>
-                </div>
-            </div>
+  </div>
+  <!-- Navbar component -->
+  <div class="bg-primary-dark sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+        <!-- Logo -->
+        <div class="flex justify-start lg:w-0 lg:flex-1">
+          <a href="/">
+            <img class="h-12 w-auto sm:h-14" src="../assets/logo/erersollogo.png" alt="Enersol Biopower"
+              style="min-width: 150px;">
+          </a>
+        </div>
+        <!-- Navbar collapse button (visible on small screens) -->
+        <div class="-mr-2 -my-2 md:hidden">
+          <button type="button"
+            class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="sr-only">Open menu</span>
+            <!-- Icon for the button (hamburger icon) -->
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true" style="color: white;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
         </div>
 
-        <!-- Mobile menu, toggle classes based on menu state (open/closed) -->
-        <div class="fixed inset-y-0 right-0 w-3/4 bg-white text-white transform translate-x-full transition-transform duration-300 ease-in-out"
-            id="mobile-menu" style="display: none;z-index: 10;">
-            <div class="">
-                <div class="pt-5 pb-6 ">
-                    <div class="flex items-center justify-between px-5">
-                        <div>
-                            <img class="h-8 w-auto" src="../assets/logo/erersollogo.png" alt="Your Company">
-                        </div>
-                        <div class="-mr-2">
-                            <button type="button"
-                                class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                                onclick="toggleMobileMenu()">
-                                <span class="sr-only">Close menu</span>
-                                <!-- Close icon -->
-                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M6 18L18 6M6 6l12 12" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="mt-6 px-5 border-t border-gray-300 pt-5">
-                        <nav class="grid gap-y-8">
-                            <a href="/enersol-site/"
-                                class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
-                            <a href="/enersol-site/pages/about-us.html"
-                                class="text-base font-medium text-black hover:text-accentYellow-light">About Us</a>
-                            <a href="/enersol-site/pages/our-story.html"
-                                class="text-base font-medium text-black hover:text-accentYellow-light">Our Story</a>
-                            <a href="/enersol-site/pages/products.html"
-                                class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
-                            <a href="/enersol-site/pages/blogs.html"
-                                class="text-base font-medium text-black hover:text-accentYellow-light">Blogs & News</a>
-                            <a href="/enersol-site/pages/contact-us.html"
-                                class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
-                        </nav>
-                    </div>
-                </div>
-                <div class="py-6 px-5 space-y-6">
-                    <div>
-                        <a href="#"
-                            class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
-                            Get a Quote
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <!-- Links for large screens -->
+        <nav class="hidden md:flex space-x-10">
+          <a href="/enersol-site/" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
+          <a href="/enersol-site/pages/about-us.html"
+            class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
+          <a href="/enersol-site/pages/our-story.html"
+            class="text-base font-medium text-white hover:text-accentYellow-light">Our Story</a>
+          <a href="/enersol-site/pages/products.html"
+            class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+          <a href="/enersol-site/pages/blogs.html"
+            class="text-base font-medium text-white hover:text-accentYellow-light">Blogs & News</a>
+          <a href="/enersol-site/pages/contact-us.html"
+            class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
+        </nav>
+
+        <!-- Get a Quote button (visible on large screens) -->
+        <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+          <a href="#"
+            class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
+            Get a Quote
+          </a>
         </div>
+      </div>
     </div>
 
-    <section class="relative overflow-hidden text-white">
-        <div class="absolute inset-0">
-            <iframe class="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/_Hw083-jXuM?autoplay=1&controls=0&loop=1&playlist=_Hw083-jXuM&modestbranding=1&rel=00&mute=1"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen title="Our Story Video" style="height: 100%; width: 100%;"></iframe>
-            <div class="absolute inset-0 bg-black opacity-50"></div>
-        </div>
-        <div class="container mx-auto px-6 md:px-12 relative z-10 flex items-center py-32 xl:py-40">
-            <div class="lg:w-3/5 xl:w-2/5">
-                <h2 class="font-bold text-3xl sm:text-4xl xl:text-5xl leading-tight">Our Journey to Sustainability</h2>
-                <p class="mt-2 text-lg sm:text-xl">Explore the story of Enersol Biopower, from our early beginnings to
-                    becoming a leader in sustainable energy solutions.</p>
-                <a href="./about-us.html#mission"
-                    class="mt-4 inline-block bg-primary hover:bg-primary-dark text-white font-bold py-3 px-6 rounded-lg transition duration-300">Learn
-                    More</a>
+    <!-- Mobile menu, toggle classes based on menu state (open/closed) -->
+    <div
+      class="fixed inset-y-0 right-0 w-3/4 bg-white text-white transform translate-x-full transition-transform duration-300 ease-in-out"
+      id="mobile-menu" style="display: none;z-index: 10;">
+      <div class="">
+        <div class="pt-5 pb-6 ">
+          <div class="flex items-center justify-between px-5">
+            <div>
+              <img class="h-8 w-auto" src="../assets/logo/erersollogo.png" alt="Your Company">
             </div>
+            <div class="-mr-2">
+              <button type="button"
+                class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                onclick="toggleMobileMenu()">
+                <span class="sr-only">Close menu</span>
+                <!-- Close icon -->
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="mt-6 px-5 border-t border-gray-300 pt-5">
+            <nav class="grid gap-y-8">
+              <a href="/enersol-site/" class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
+              <a href="/enersol-site/pages/about-us.html"
+                class="text-base font-medium text-black hover:text-accentYellow-light">About Us</a>
+              <a href="/enersol-site/pages/our-story.html"
+                class="text-base font-medium text-black hover:text-accentYellow-light">Our Story</a>
+              <a href="/enersol-site/pages/products.html"
+                class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
+              <a href="/enersol-site/pages/blogs.html"
+                class="text-base font-medium text-black hover:text-accentYellow-light">Blogs & News</a>
+              <a href="/enersol-site/pages/contact-us.html"
+                class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
+            </nav>
+          </div>
         </div>
-    </section>
-    <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto flex flex-col">
-            <!-- Header with Title -->
-            <div class="text-center mb-5">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Our Founder</h1>
-                <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Discover the visionary behind Enersol
-                    Biopower and the personal journey that inspired our mission to deliver sustainable energy solutions.
+        <div class="py-6 px-5 space-y-6">
+          <div>
+            <a href="#"
+              class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
+              Get a Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="relative overflow-hidden text-white">
+    <div class="absolute inset-0">
+      <iframe class="absolute top-0 left-0 w-full h-full"
+        src="https://www.youtube.com/embed/_Hw083-jXuM?autoplay=1&controls=0&loop=1&playlist=_Hw083-jXuM&modestbranding=1&rel=00&mute=1"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen title="Our Story Video" style="height: 100%; width: 100%;"></iframe>
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+    </div>
+    <div class="container mx-auto px-6 md:px-12 relative z-10 flex items-center py-32 xl:py-40">
+      <div class="lg:w-3/5 xl:w-2/5">
+        <h2 class="font-bold text-3xl sm:text-4xl xl:text-5xl leading-tight">Our Journey to Sustainability</h2>
+        <p class="mt-2 text-lg sm:text-xl">Explore the story of Enersol Biopower, from our early beginnings to
+          becoming a leader in sustainable energy solutions.</p>
+        <a href="./about-us.html#mission"
+          class="mt-4 inline-block bg-primary hover:bg-primary-dark text-white font-bold py-3 px-6 rounded-lg transition duration-300">Learn
+          More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-col">
+      <!-- Header with Title -->
+      <div class="text-center mb-5" >
+        <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">Our Founder</h1>
+        <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">Discover the visionary behind Enersol
+          Biopower and the personal journey that inspired our mission to deliver sustainable energy solutions.
+        </p>
+      </div>
+      <div class="lg:w-5/6 mx-auto">
+        <div class="flex flex-col sm:flex-row mt-10">
+          <!-- Founder's Photo and Info -->
+          <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8 md:lg:sticky lg:sticky top-0 self-start" style="top:100px">
+            <div
+              class="w-40 h-40 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400 "
+              >
+              <!-- Replace SVG with actual photo if available -->
+              <img src="../assets/about-us/1N5A8423-removebg-preview.png" alt="Founder"
+                class="rounded-full object-cover h-full w-full">
+            </div>
+            <div class="flex flex-col items-center text-center justify-center">
+              <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Rai Singh Dahiya</h2>
+              <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+              <p class="text-base"> A remarkable journey from a village to the president's house</p>
+            </div>
+          </div>
+          <!-- Vision Statement Text -->
+          <div
+            class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+            <section class="bg-white text-gray-800 p-6">
+              <div class="max-w-4xl mx-auto">
+                <h2 class="text-2xl font-semibold mb-4">The Journey of Rai Singh Dahiya: From Sand Dunes to Rashtrapati Bhavan
+                </h2>
+                <p class="mb-3">
+                  In the sun-drenched landscapes of Rajasthan, a young boy named Rai Singh Dahiya embarked on a journey that would
+                  take him from the humble sands of his village to the esteemed halls of Rashtrapati Bhavan. Born in January 1963
+                  to Sri Ranjit Ram Dahiya and Smt. Manidevi, his life was marked by challenges—limited resources, no formal
+                  education, and the responsibilities of working on his family farm. But what he lacked in conventional schooling,
+                  he made up for with an insatiable curiosity and an inventive spirit.
                 </p>
-            </div>
-            <div class="lg:w-4/6 mx-auto">
-                <!-- Image representing the founder's vision -->
-                <!-- <div class="rounded-lg h-64 overflow-hidden">
-                    <img alt="Founder Enersol Biopower" class="object-cover object-center h-full w-full"
-                        src="https://dummyimage.com/1200x500">
-                </div> -->
-                <div class="flex flex-col sm:flex-row mt-10">
-                    <!-- Founder's Photo and Info -->
-                    <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
-                        <div
-                            class="w-40 h-40 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
-                            <!-- Replace SVG with actual photo if available -->
-                            <img src="../assets/about-us/1N5A8423-removebg-preview.png" alt="Founder"
-                                class="rounded-full object-cover h-full w-full">
-                        </div>
-                        <div class="flex flex-col items-center text-center justify-center">
-                            <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Rai Singh Dahiya</h2>
-                            <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
-                            <p class="text-base">Dedicated to pioneering sustainable energy solutions that empower rural
-                                communities and reduce environmental impact.</p>
-                        </div>
-                    </div>
-                    <!-- Vision Statement Text -->
-                    <div
-                        class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                        <p class="leading-relaxed text-lg mb-4">With a focus on renewable energy and sustainable
-                            practices, our founder, Phoebe Caulfield, has steered Enersol Biopower from a modest startup
-                            to a leader in biomass energy solutions. Her vision encompasses not only technological
-                            innovation but also a commitment to social responsibility and community development.</p>
-                    </div>
-                </div>
-            </div>
+          
+                <h3 class="text-xl font-semibold mt-4 mb-2">Learning Amidst Sand Dunes</h3>
+                <p class="mb-3">
+                  While other children attended school, Rai Singh helped his parents in the fields, working tirelessly to support
+                  his family. He never had the opportunity to sit in a classroom, yet he was determined to learn. Using the sand
+                  dunes as his chalkboard, he traced letters and numbers, slowly teaching himself the basics of reading and
+                  writing.
+                </p>
+          
+                <h3 class="text-xl font-semibold mt-4 mb-2">Revolutionizing Energy with Biomass Gasifiers</h3>
+                <p class="mb-3">
+                  As Rai Singh continued repairing agricultural machinery, he observed the struggles of farmers who relied on
+                  expensive diesel engines. This inspired him to explore alternative energy solutions. He began experimenting with
+                  biomass gasification, a process that converts organic material into combustible gas. Through years of trial and
+                  error, he redesigned conventional gasifiers to be more efficient and cost-effective, making sustainable energy
+                  accessible to rural communities.
+                </p>
+          
+                <h3 class="text-xl font-semibold mt-4 mb-2">Support from NIF and GIAN North</h3>
+                <ul class="list-disc pl-5 mb-4">
+                  <li>Providing funding for product development</li>
+                  <li>Helping with large-scale production and commercialization</li>
+                  <li>Connecting him with stakeholders in the sustainable energy sector</li>
+                </ul>
+          
+                <h3 class="text-xl font-semibold mt-4 mb-2">Recognition at Rashtrapati Bhavan</h3>
+                <p class="mb-3">
+                  In 2009, Rai Singh’s remarkable contribution to sustainable energy solutions was honored with the Fifth National
+                  Grassroots Innovation Award, presented by President Pratibha Patil at Rashtrapati Bhavan. This momentous
+                  occasion recognized his work in biomass gasification and validated his years of perseverance and dedication.
+                </p>
+          
+                <h3 class="text-xl font-semibold mt-4 mb-2">A Special Invitation to Stay at Rashtrapati Bhavan</h3>
+                <p class="mb-3">
+                  In 2015, Rai Singh Dahiya received one of the most prestigious honors of his life. He was selected as one of ten
+                  grassroots innovators for the Innovation Scholars In-Residence Programme at Rashtrapati Bhavan. From March 7 to
+                  March 20, 2015, Rai Singh stayed at Rashtrapati Bhavan, where he engaged with fellow innovators, policymakers,
+                  and scientists.
+                </p>
+          
+                <h3 class="text-xl font-semibold mt-4 mb-2">A Legacy of Innovation and Growth</h3>
+                <p class="mb-3">
+                  Today, Rai Singh Dahiya continues his mission through Enersol Biopower, a company dedicated to developing
+                  sustainable energy solutions for rural and industrial use. His journey—from learning ABCD on sand dunes to
+                  staying at Rashtrapati Bhavan—is an extraordinary tale of determination, self-learning, and unwavering
+                  commitment to innovation.
+                </p>
+              </div>
+            </section>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Key Milestones</h1>
-                <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Explore the significant milestones that have
-                    shaped our journey and defined our contribution to renewable energy solutions.</p>
-            </div>
-            <div class="flex flex-wrap -m-4">
-                <div class="p-4 md:w-1/2 w-full">
-                    <div class="h-full bg-gray-100 p-8 rounded">
-                        <svg fill="currentColor" data-name="Layer 1" class="w-5 h-5 mb-4 text-indigo-500"
-                            viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10" class="primary-fill"></circle>
-                            <path class="secondary-fill"
-                                d="M12 8a1 1 0 110-2 1 1 0 010 2zm0 6a1 1 0 110-2 1 1 0 010 2zm1 5h-2v-2h2v2z"></path>
-                        </svg>
-                        <p class="leading-relaxed mb-6">1999 - Enersol Biopower was founded with the vision to harness
-                            the potential of biomass energy.</p>
-                        <a class="inline-flex items-center">
-                            <span class="flex-grow flex flex-col pl-4">
-                                <span class="title-font font-medium text-gray-900">Founding of Enersol Biopower</span>
-                                <span class="text-gray-500 text-sm">April 1999</span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                <div class="p-4 md:w-1/2 w-full">
-                    <div class="h-full bg-gray-100 p-8 rounded">
-                        <svg fill="currentColor" data-name="Layer 1" class="w-5 h-5 mb-4 text-indigo-500"
-                            viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10" class="primary-fill"></circle>
-                            <path class="secondary-fill"
-                                d="M12 8a1 1 0 110-2 1 1 0 010 2zm0 6a1 1 0 110-2 1 1 0 010 2zm1 5h-2v-2h2v2z"></path>
-                        </svg>
-                        <p class="leading-relaxed mb-6">2005 - Launched our first commercially successful biomass
-                            gasifier, revolutionizing local energy markets.</p>
-                        <a class="inline-flex items-center">
-                            <span class="flex-grow flex flex-col pl-4">
-                                <span class="title-font font-medium text-gray-900">Launch of First Biomass
-                                    Gasifier</span>
-                                <span class="text-gray-500 text-sm">June 2005</span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
 
-                <!-- Add more milestones as needed -->
-            </div>
-
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Key Milestones</h1>
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Explore the significant milestones that have
+          shaped our journey and defined our contribution to renewable energy solutions.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 md:w-1/2 w-full">
+          <div class="h-full bg-gray-100 p-8 rounded">
+            <svg fill="currentColor" data-name="Layer 1" class="w-5 h-5 mb-4 text-indigo-500" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" class="primary-fill"></circle>
+              <path class="secondary-fill"
+                d="M12 8a1 1 0 110-2 1 1 0 010 2zm0 6a1 1 0 110-2 1 1 0 010 2zm1 5h-2v-2h2v2z"></path>
+            </svg>
+            <p class="leading-relaxed mb-6">1999 - Enersol Biopower was founded with the vision to harness
+              the potential of biomass energy.</p>
+            <a class="inline-flex items-center">
+              <span class="flex-grow flex flex-col pl-4">
+                <span class="title-font font-medium text-gray-900">Founding of Enersol Biopower</span>
+                <span class="text-gray-500 text-sm">April 1999</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 md:w-1/2 w-full">
+          <div class="h-full bg-gray-100 p-8 rounded">
+            <svg fill="currentColor" data-name="Layer 1" class="w-5 h-5 mb-4 text-indigo-500" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" class="primary-fill"></circle>
+              <path class="secondary-fill"
+                d="M12 8a1 1 0 110-2 1 1 0 010 2zm0 6a1 1 0 110-2 1 1 0 010 2zm1 5h-2v-2h2v2z"></path>
+            </svg>
+            <p class="leading-relaxed mb-6">2005 - Launched our first commercially successful biomass
+              gasifier, revolutionizing local energy markets.</p>
+            <a class="inline-flex items-center">
+              <span class="flex-grow flex flex-col pl-4">
+                <span class="title-font font-medium text-gray-900">Launch of First Biomass
+                  Gasifier</span>
+                <span class="text-gray-500 text-sm">June 2005</span>
+              </span>
+            </a>
+          </div>
         </div>
 
-    </section>
+        <!-- Add more milestones as needed -->
+      </div>
+
+    </div>
+
+  </section>
 
 
-    <section class="bg-gray-100 py-12">
-        <div class="container mx-auto px-5">
-            <h2 class="text-2xl font-semibold text-center text-gray-800 mb-6">Gallery</h2>
-            <!-- Swiper -->
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="../assets/about-us/2.JPG" alt="Project Image" class="w-full object-cover" style="height: 400px;">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../assets/about-us/team.jpeg" alt="Event Image" class="w-full object-cover" style="height: 400px;">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../assets/about-us/president house.jpg" alt="Community Engagement" class="w-full object-cover" style="height: 400px;">
-                    </div>
-                    <!-- More images can be added here -->
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Navigation -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
+  <section class="bg-gray-100 py-12">
+    <div class="container mx-auto px-5">
+      <h2 class="text-2xl font-semibold text-center text-gray-800 mb-6">Gallery</h2>
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../assets/about-us/2.JPG" alt="Project Image" class="w-full object-cover" style="height: 400px;">
+          </div>
+          <div class="swiper-slide">
+            <img src="../assets/about-us/team.jpeg" alt="Event Image" class="w-full object-cover"
+              style="height: 400px;">
+          </div>
+          <div class="swiper-slide">
+            <img src="../assets/about-us/president house.jpg" alt="Community Engagement" class="w-full object-cover"
+              style="height: 400px;">
+          </div>
+          <!-- More images can be added here -->
         </div>
-    </section>
-    
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
 
-     <!-- Footer Section -->
+
+  <!-- Footer Section -->
   <footer class="bg-primary-dark text-white body-font">
     <div
       class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col justify-center">
@@ -521,28 +570,28 @@
       </div>
     </div>
   </footer>
-    <script>
-        var swiper = new Swiper('.mySwiper', {
-            loop: true,
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-              delay: 2500,
-              disableOnInteraction: false,
-            },
-            pagination: {
-              el: '.swiper-pagination',
-              clickable: true,
-            },
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            },
-        });
-    </script>
-    
+  <script>
+    var swiper = new Swiper('.mySwiper', {
+      loop: true,
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 
-    <script src="../js/main.js"></script>
+
+  <script src="../js/main.js"></script>
 </body>
 
 </html>

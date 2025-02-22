@@ -711,26 +711,66 @@
             <img src="https://images.unsplash.com/photo-1625569181760-034e10765531?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJpb21hc3MlMjBlbmVyZ3l8ZW58MHx8MHx8fDA%3D" class="mx-auto p-2 bg-white rounded-lg" alt="">
             </div>
 
-          <!-- Overlay with Animation -->
-          <!-- <div
-            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg pointer-events-none">
-            <span class="text-white text-lg font-semibold animate-pulse">Click to Enlarge</span>
-          </div> -->
 
-          <!-- Lightbox -->
-          <!-- <div x-show="open" x-cloak class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
-            <div class="relative max-h-screen max-w-screen">
-              <img class="rounded-lg max-h-screen max-w-full object-contain" src="./assets/home/How-energy-works.jpg"
-                alt="Infographic" />
-              <button @click="open = false"
-                class="absolute top-4 right-4 text-white bg-gray-800 bg-opacity-50 hover:bg-gray-900 rounded-full p-2 focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                  class="w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
+        </div>
+        
+      </div>
+  
+    </div>
+  </section>
+  <section class="bg-white text-dark body-font">
+    <div class="container mx-auto px-5 py-24">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">BIOMASS ENERGY SOURCES</h2>
+      </div>
+
+      <div class="flex flex-wrap lg:flex-nowrap items-center justify-between">
+        <!-- Text Content -->
+        <div class="w-full lg:pr-10">
+          <!-- <h3 class="text-2xl font-semibold text-secondary mb-4">Major Types of Renewable Energy Sources</h3>
+          -->
+          <!-- <h3 class="text-2xl font-semibold text-secondary mb-4">Biomass - Renewable Energy from Plants and Animals</h3> -->
+          <p class="leading-relaxed mb-6">
+            Renewable energy is defined as energy
+            that comes from naturally regenerated
+            resources
+            and
+            is
+            infinitely
+            useful
+            throughout a human lifetime. Sustainable
+            substitutes for finite fossil fuels include
+            these resources, which include sunlight,
+            wind, water, and biomass. These resources
+            are also abundant and naturally renewed.
+            Energy security and independence are
+            promoted while greenhouse gas emissions
+            are decreased and climate change is
+            mitigated through the usage of renewable
+            energy.
+          </p>
+          <!-- <p class="leading-relaxed">
+            While wood remains a major source, modern biomass energy leverages a wide range of resources, making it an
+            adaptable and sustainable energy option.
+          </p> -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <img @click="open = true" class="object-cover object-center shadow-md cursor-pointer mx-auto my-5"
+            src="https://images.unsplash.com/photo-1607214272279-00bfdae4574d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWdyaWN1bHR1cmFsJTIwcmVzaWR1ZXxlbnwwfHwwfHx8MA%3D%3D" alt="Renewable Energy" />
+            <img @click="open = true" class="object-cover object-center shadow-md cursor-pointer mx-auto my-5"
+            src="https://images.unsplash.com/flagged/photo-1572213426852-0e4ed8f41ff6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2FzdGV8ZW58MHx8MHx8fDA%3D" alt="Renewable Energy" />
+            
+          </div>
+        
+        </div>
+
+        <!-- Image with Click-to-Enlarge and Overlay -->
+        <div class="w-full lg:mt-0 mt-8 relative group" x-data="{ open: false }">
+          <div class="w-full">
+            <img src="./assets/home/biomass/biomass.png" class=" w-full border border-white p-2 bg-white rounded-lg mx-auto" alt="">  
+            
             </div>
-          </div> -->
+
+
         </div>
         
       </div>

@@ -54,7 +54,6 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
     <style>
         [x-cloak] {
             display: none;
@@ -94,6 +93,20 @@
             transform: translateY(0px);
         }
     </style>
+      <!-- Swiper Initialization Script -->
+      <!-- <style>
+        @media (max-width: 768px) {
+            .swiper-slide {
+                background-size: contain !important;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            .relative.w-full {
+                height: 60vh !important;
+            }
+        }
+    </style> -->
 </head>
 
 <body>
@@ -242,17 +255,14 @@
             </div>
         </div>
     </div>
-
-
-
     <!-- Slider Section -->
-    <div class="relative w-full h-[85vh] md:h-[75vh] sm:h-[40vh]">
+    <div class="relative w-full h-[85vh]">
         <!-- Swiper Container -->
         <div class="swiper mySwiper h-full">
             <div class="swiper-wrapper">
                 <!-- Slide 01 -->
-                <div class="swiper-slide bg-center h-full flex items-end justify-start"
-                    style="background-image: url('../assets/about-us/2.JPG'); background-size: cover;">
+                <div class="swiper-slide bg-[length:100%_100%] bg-no-repeat bg-center h-full flex items-end justify-start"
+                    style="background-image: url('../assets/about-us/2.JPG');">
                     <div class="slide-overlay"></div>
                     <div class="container relative mx-auto px-6 py-8 md:py-12 lg:py-16 h-full flex items-end">
                         <div class="text-white px-6 md:px-10 fade-up-enter">
@@ -266,8 +276,8 @@
                 </div>
 
                 <!-- Slide 02 -->
-                <div class="swiper-slide bg-center h-full flex items-end justify-start"
-                    style="background-image: url('../assets/about-us/About-slider-02.JPG'); background-size: cover;">
+                <div class="swiper-slide bg-[length:100%_100%] bg-no-repeat bg-center h-full flex items-end justify-start"
+                    style="background-image: url('../assets/about-us/About-slider-02.JPG'); ">
                     <div class="slide-overlay"></div>
                     <div class="container relative mx-auto px-6 py-8 md:py-12 lg:py-16 h-full flex items-end">
                         <div class="text-white px-6 md:px-10 fade-up-enter">
@@ -281,8 +291,8 @@
                 </div>
 
                 <!-- Slide 03 -->
-                <div class="swiper-slide bg-center h-full flex items-end justify-start"
-                    style="background-image: url('../assets/home/hero-03.jpg'); background-size: cover;">
+                <div class="swiper-slide bg-[length:100%_100%] bg-no-repeat bg-center h-full flex items-end justify-start"
+                    style="background-image: url('../assets/home/hero-03.jpg');">
                     <div class="slide-overlay"></div>
                     <div class="container relative mx-auto px-6 py-8 md:py-12 lg:py-16 h-full flex items-end">
                         <div class="text-white px-6 md:px-10 fade-up-enter">
@@ -296,8 +306,8 @@
                 </div>
 
                 <!-- Slide 04 -->
-                <div class="swiper-slide bg-center h-full flex items-end justify-start"
-                    style="background-image: url('../assets/about-us/Certificate of Appreciation as “Farmer Scientist”.jpg'); background-size: cover;">
+                <div class="swiper-slide bg-[length:100%_100%] bg-no-repeat bg-center h-full flex items-end justify-start"
+                    style="background-image: url('../assets/about-us/Certificate of Appreciation as “Farmer Scientist”.jpg');">
                     <div class="slide-overlay"></div>
                     <div class="container relative mx-auto px-6 py-8 md:py-12 lg:py-16 h-full flex items-end">
                         <div class="text-white px-6 md:px-10 fade-up-enter">
@@ -311,8 +321,8 @@
                 </div>
 
                 <!-- Slide 05 -->
-                <div class="swiper-slide bg-center h-full flex items-end justify-start"
-                    style="background-image: url('../assets/about-us/Certificate from Department of Science.JPG'); background-size: cover;">
+                <div class="swiper-slide bg-[length:100%_100%] bg-no-repeat bg-center h-full flex items-end justify-start"
+                    style="background-image: url('../assets/about-us/Certificate from Department of Science.JPG');">
                     <div class="slide-overlay"></div>
                     <div class="container relative mx-auto px-6 py-8 md:py-12 lg:py-16 h-full flex items-end">
                         <div class="text-white px-6 md:px-10 fade-up-enter">
@@ -332,30 +342,8 @@
         </div>
     </div>
 
-    <!-- Swiper Initialization Script -->
-    <style>
-        @media (max-width: 768px) {
-            .swiper-slide {
-                background-size: contain !important;
-                background-repeat: no-repeat;
-                background-position: center;
-            }
-
-            .relative.w-full {
-                height: 60vh !important;
-            }
-        }
-    </style>
-
-
-
-
-
-
-
-
+  
     <!-- Our Mission -->
-
     <section class="text-gray-600 body-font" id="mission">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div
@@ -383,8 +371,6 @@
             </div>
         </div>
     </section>
-
-
     <section class="text-gray-600 body-font">
         <div class="container mx-auto flex px-5 py-12 md:flex-row-reverse flex-col items-center">
             <div
@@ -691,13 +677,6 @@
             </div>
         </div> -->
     </div>
-
-
-
-
-
-
-
     <!-- Awards & Recognitions -->
     <section class="bg-white py-12">
         <div class="container mx-auto px-5">
@@ -734,8 +713,6 @@
             </div>
         </div>
     </section>
-
-
     <!-- Company History Section -->
     <div class="bg-primary-dark py-8 text-white" id="our-history">
         <div class="max-w-6xl mx-auto px-4">
@@ -768,7 +745,7 @@
                         <img src="../assets/about-us/our-history/2nd Biomass Gasifier.JPG"
                             alt="Standalone Stainless Steel Gasifier" class="rounded-lg shadow-lg mb-4 md:mb-0">
                     </div>
-                 
+
                 </div>
                 <div class="flex flex-col md:flex-row items-center text-center md:text-left">
                     <div class="md:w-1/3">
@@ -792,7 +769,7 @@
                         <img src="../assets/about-us/our-history/Final Biomass Gasifier.png"
                             alt="Soundproof Portable Gasifier" class="rounded-lg shadow-lg mb-4 md:mb-0">
                     </div>
-                   
+
                 </div>
                 <div class="flex flex-col md:flex-row items-center text-center md:text-left">
                     <div class="md:w-1/3">
@@ -809,10 +786,7 @@
             </div>
         </div>
     </div>
-
-
     <!-- Team-section Start -->
-
     <section class="text-gray-600 body-font bg-gray-100">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-20">

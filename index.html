@@ -135,6 +135,37 @@
       opacity: 1;
       transform: translateY(0px);
     }
+
+    .slide-1 {
+      background-image: url("./assets/home/burning1.jpeg");
+    }
+
+    .slide-2 {
+      background-image: url("./assets/home/galegi-02.jpg");
+    }
+
+    .slide-3 {
+      background-image: url("./assets/home/hero-03.jpg");
+    }
+
+    .slide-4 {
+      background-image: url("./assets/home/carolien-van-oijen-Md1Fk5K9F7c-unsplash.jpg");
+    }
+
+    .slide-5 {
+      background-image: url("./assets/home/carolien-van-oijen-Md1Fk5K9F7c-unsplash.jpg");
+    }
+    @media screen and (max-width: 768px) {
+      .slide-1{
+        background-image: url('./assets/phone/5.png');
+      }
+      .slide-2{
+        background-image: url('./assets/phone/6.png');
+      }
+      .slide-3{
+        background-image: url('./assets/phone/7.png');
+      }
+    }
   </style>
 </head>
 
@@ -295,7 +326,8 @@
     <div class="swiper mySwiper h-full">
       <div class="swiper-wrapper">
         <!-- Slide 2 with Full-Screen Placeholder Image -->
-        <div class="swiper-slide bg-[length:100%_100%] bg-no-repeat bg-center h-full" style="background-image: url('./assets/home/burning1.jpeg');">
+        <div class="slide-1 swiper-slide bg-[length:100%_100%] bg-no-repeat bg-center h-full"
+          >
           <div class="slide-overlay"></div>
           <div class="container relative mx-auto px-4 py-5 mb-5 h-full flex items-center justify-start">
             <div class="text-white text-left px-5 fade-up-enter">
@@ -313,8 +345,8 @@
           </div>
         </div>
         <!-- Slide 1 with Full-Screen Placeholder Image -->
-        <div class="swiper-slide bg-[length:100%_100%] bg-no-repeat bg-center h-full"
-          style="background-image: url('./assets/home/galegi-02.jpg');">
+        <div class="slide-2 swiper-slide bg-[length:100%_100%] bg-no-repeat bg-center h-full"
+          >
           <div class="slide-overlay"></div>
           <div class="container relative mx-auto px-4 py-5 mb-5 h-full flex items-center justify-start">
             <div class="text-white text-left px-5 fade-up-enter">
@@ -333,7 +365,8 @@
           </div>
         </div>
         <!-- Slide 2 with Full-Screen Placeholder Image -->
-        <div class="swiper-slide bg-[length:100%_100%] bg-no-repeat bg-center h-full" style="background-image: url('./assets/home/hero-03.jpg');">
+        <div class="slide-3 swiper-slide bg-[length:100%_100%] bg-no-repeat bg-center h-full"
+          style="background-image: url('./assets/home/hero-03.jpg');">
           <div class="slide-overlay"></div>
           <div class="container relative mx-auto px-4 py-5 mb-5 h-full flex items-center justify-start">
             <div class="text-white text-left px-5 fade-up-enter">
@@ -358,7 +391,7 @@
           </div>
         </div>
         <!-- Slider 4 -->
-        <div class="swiper-slide bg-[length:100%_100%] bg-no-repeat bg-center h-full"
+        <div class="slide-4 swiper-slide bg-[length:100%_100%] bg-no-repeat bg-center h-full"
           style="background-image: url('./assets/home/carolien-van-oijen-Md1Fk5K9F7c-unsplash.jpg');">
           <div class="slide-overlay"></div>
           <div class="container relative mx-auto px-4 py-5 mb-5 h-full flex items-center justify-start">
@@ -378,7 +411,7 @@
         </div>
 
         <!-- Slider 5 -->
-        <div class="swiper-slide bg-[length:100%_100%] bg-no-repeat bg-center h-full"
+        <div class="slide-5 swiper-slide bg-[length:100%_100%] bg-no-repeat bg-center h-full"
           style="background-image: url('./assets/home/carolien-van-oijen-Md1Fk5K9F7c-unsplash.jpg');">
           <div class="slide-overlay"></div>
           <div class="container relative mx-auto px-4 py-5 mb-5 h-full flex items-center justify-start">
@@ -698,24 +731,32 @@
             adaptable and sustainable energy option.
           </p> -->
           <img @click="open = true" class="object-cover object-center rounded-lg shadow-md cursor-pointer mx-auto my-5"
-          src="https://img.brainkart.com/imagebk45/SXuMv3R.jpg" alt="Renewable Energy" />
-          
+            src="https://img.brainkart.com/imagebk45/SXuMv3R.jpg" alt="Renewable Energy" />
+
         </div>
 
         <!-- Image with Click-to-Enlarge and Overlay -->
         <div class="w-full lg:mt-0 mt-8 relative group" x-data="{ open: false }">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
-            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29sYXIlMjBlbmVyZ3l8ZW58MHx8MHx8fDA%3D" class="border border-white p-2 bg-white rounded-lg mx-auto" alt="">  
-            <img src="https://plus.unsplash.com/premium_photo-1681488432824-cae8c038ccb1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2luZG1pbGx8ZW58MHx8MHx8fDA%3D" class="mx-auto p-2 bg-white rounded-lg" alt="">
-            <img src="https://plus.unsplash.com/premium_photo-1678167657805-36fb1c27cbd4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aHlkcm9wb3dlcnxlbnwwfHwwfHx8MA%3D%3D" class="p-2 bg-white rounded-lg mx-auto" alt="">  
-            <img src="https://images.unsplash.com/photo-1625569181760-034e10765531?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJpb21hc3MlMjBlbmVyZ3l8ZW58MHx8MHx8fDA%3D" class="mx-auto p-2 bg-white rounded-lg" alt="">
-            </div>
+            <img
+              src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29sYXIlMjBlbmVyZ3l8ZW58MHx8MHx8fDA%3D"
+              class="border border-white p-2 bg-white rounded-lg mx-auto" alt="">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1681488432824-cae8c038ccb1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2luZG1pbGx8ZW58MHx8MHx8fDA%3D"
+              class="mx-auto p-2 bg-white rounded-lg" alt="">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1678167657805-36fb1c27cbd4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aHlkcm9wb3dlcnxlbnwwfHwwfHx8MA%3D%3D"
+              class="p-2 bg-white rounded-lg mx-auto" alt="">
+            <img
+              src="https://images.unsplash.com/photo-1625569181760-034e10765531?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJpb21hc3MlMjBlbmVyZ3l8ZW58MHx8MHx8fDA%3D"
+              class="mx-auto p-2 bg-white rounded-lg" alt="">
+          </div>
 
 
         </div>
-        
+
       </div>
-  
+
     </div>
   </section>
   <section class="bg-white text-dark body-font">
@@ -755,26 +796,29 @@
           </p> -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <img @click="open = true" class="object-cover object-center shadow-md cursor-pointer mx-auto my-5"
-            src="https://images.unsplash.com/photo-1607214272279-00bfdae4574d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWdyaWN1bHR1cmFsJTIwcmVzaWR1ZXxlbnwwfHwwfHx8MA%3D%3D" alt="Renewable Energy" />
+              src="https://images.unsplash.com/photo-1607214272279-00bfdae4574d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWdyaWN1bHR1cmFsJTIwcmVzaWR1ZXxlbnwwfHwwfHx8MA%3D%3D"
+              alt="Renewable Energy" />
             <img @click="open = true" class="object-cover object-center shadow-md cursor-pointer mx-auto my-5"
-            src="https://images.unsplash.com/flagged/photo-1572213426852-0e4ed8f41ff6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2FzdGV8ZW58MHx8MHx8fDA%3D" alt="Renewable Energy" />
-            
+              src="https://images.unsplash.com/flagged/photo-1572213426852-0e4ed8f41ff6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2FzdGV8ZW58MHx8MHx8fDA%3D"
+              alt="Renewable Energy" />
+
           </div>
-        
+
         </div>
 
         <!-- Image with Click-to-Enlarge and Overlay -->
         <div class="w-full lg:mt-0 mt-8 relative group" x-data="{ open: false }">
           <div class="w-full">
-            <img src="./assets/home/biomass/biomass.png" class=" w-full border border-white p-2 bg-white rounded-lg mx-auto" alt="">  
-            
-            </div>
+            <img src="./assets/home/biomass/biomass.png"
+              class=" w-full border border-white p-2 bg-white rounded-lg mx-auto" alt="">
+
+          </div>
 
 
         </div>
-        
+
       </div>
-  
+
     </div>
   </section>
 
@@ -967,7 +1011,7 @@
   </section>
   <!-- Achievments-sections -->
 
-  <section class="bg-primary-dark text-white body-font">
+  <section id="achievements" class="bg-primary-dark text-white body-font">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-wrap w-full mb-20">
         <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -1025,7 +1069,7 @@
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div class="bg-gray-100 p-6 rounded-lg h-[450px] w-full">
             <img class="h-48 w-full rounded object-cover object-center mb-6"
-              src="./assets/home/IMG_20200629_184750_Bokeh.jpg" alt="content">
+              src="./assets/home/IMG_20250629_184750_Bokeh.jpg" alt="content">
             <h2 class="text-lg text-gray-900 font-medium title-font mb-2">ESB-R Bio-MiniSolar-Smokeless Domestic Biomass
               Stove</h2>
             <h2 class="text-lg text-primary-dark font-medium title-font">TREDA (Tripura Renewable Energy Development
@@ -1129,7 +1173,7 @@
   </section>
 
 
-  <section class="py-16 bg-gradient-to-r from-primary to-secondary">
+  <section class="py-16 bg-gray-500">
     <div class="max-w-7xl mx-auto px-6">
       <h2 class="text-4xl font-bold text-center text-white mb-12">Contact Us</h2>
       <div class="grid md:grid-cols-2 gap-12">
@@ -1137,12 +1181,13 @@
         <div class="space-y-8">
           <div>
             <h3 class="text-2xl font-semibold text-white">Head Office</h3>
-            <p class="text-white mt-2">Plot No. 96-97, Kirti Sagar, Badarwas, Gopalpura Bypass, Jaipur, 302020</p>
+            <p class="text-white mt-2">Enersol Biopower Private Limited
+              Plot No. 57 A, Vrindavan Vihar, Akeda Dunder, laxminarayanpura, VKI Road No .19, Jaipur-302013</p>
           </div>
           <div>
             <h3 class="text-2xl font-semibold text-white">Factory</h3>
-            <p class="text-white mt-2">Plot No.-1, Jaisalaya, Road No. - 17 Vishawkarma Industrial Area (Vki), Jaipur-
-              302013</p>
+            <p class="text-white mt-2">Enersol Biopower Private Limited
+              Plot No. 57 A, Vrindavan Vihar, Akeda Dunder, laxminarayanpura, VKI Road No .19, Jaipur-302013</p>
           </div>
           <div>
             <h3 class="text-2xl font-semibold text-white">Call Us</h3>
@@ -1323,30 +1368,32 @@
     <!-- Footer Bottom Section -->
     <div class="bg-gray-800">
       <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-        <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Enersol Biopower — All Rights Reserved</p>
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2025 Enersol Biopower — All Rights Reserved</p>
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-          <a class="text-gray-500">
+          <a class="text-gray-500" target="_blank" href="https://www.facebook.com/enersolbiopwr">
             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
               viewBox="0 0 24 24">
               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
             </svg>
           </a>
-          <a class="ml-3 text-gray-500">
-            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
-              viewBox="0 0 24 24">
-              <path
-                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
-              </path>
+          <a class="ml-3 text-gray-500" target="_blank" href="https://www.youtube.com/@enersolbiopower-wastetoenergy">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd"
+                d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
+                clip-rule="evenodd" />
             </svg>
+
           </a>
-          <a class="ml-3 text-gray-500">
+          <a class="ml-3 text-gray-500" target="_blank" href="https://www.instagram.com/enersol_biopower/">
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               class="w-5 h-5" viewBox="0 0 24 24">
               <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
             </svg>
           </a>
-          <a class="ml-3 text-gray-500">
+          <a class="ml-3 text-gray-500" target="_blank"
+            href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/">
             <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
               stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
               <path stroke="none"

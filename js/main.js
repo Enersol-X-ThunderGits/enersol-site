@@ -11,7 +11,7 @@ const testimonialSwiper = new Swiper('.testimonialSwiper', {
 var swiper = new Swiper('.mySwiper', {
     loop: true,
     autoplay: {
-        delay: 2500,
+        delay: 7500,
         disableOnInteraction: false,
     },
     pagination: {
@@ -30,7 +30,7 @@ var productSwiper = new Swiper('.productSwiper', {
     spaceBetween: 30,
     loop: true,  // Optional: adds looping
     autoplay: {
-        delay: 2500, // Delay in milliseconds before switching slides
+        delay: 5000, // Delay in milliseconds before switching slides
         disableOnInteraction: false, // Continue autoplay when interacting with controls
     },
     pagination: {

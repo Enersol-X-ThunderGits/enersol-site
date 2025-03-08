@@ -582,10 +582,12 @@
                             </a>
                         </div>
                         <!-- Second Row: Download Catalogue Button -->
+                        {{#if catalogueLink}}
                         <a class="inline-flex items-center justify-center text-white bg-primary-dark border-0 py-2 px-6 focus:outline-none hover:bg-primary-light rounded text-lg"
                             target="_blank" href="{{catalogueLink}}">
                             Download Product Catalogue
                         </a>
+                        {{/if}}
                         <div class="bg-white rounded-lg">
         
                             
@@ -3701,7 +3703,7 @@
                     "modelName": "ESB-R Bio-Nature",
                     "modelNumber": "ESB-R/BN01",
                     "image": "../assets/products/bhatti/bio-nature.jpg",
-                    "catalogueLink": "https://enersolbiopower.com/enersol_catalogue/Bio%20Nature%20Enersol%20x%20thundergits%20%282%29.pdf",
+                    "catalogueLink": "https://enersolbiopower.com/enersol_catalogue/Bio%20Nature%20Enersol.pdf",
                     "description": "The ESB-R Bio-Nature is a nature-draft smokeless biomass stove designed for both rural and urban settings. It offers an eco-friendly alternative to traditional chulhas, utilizing agricultural residues and other sustainable fuels to deliver clean combustion and high fuel efficiency. This stove is perfect for households, street vendors, and community cooking, providing a healthier, safer, and more environmentally friendly way to cook.",
                     "productId": "productId027",
                     "subtitle": "Eco-Friendly Cooking for a Healthier Tomorrow",
@@ -3792,6 +3794,7 @@
                     "image": "../assets/products/bhatti/bio-mini.jpg",
                     "description": "The ESB-R Bio-Mini is an innovative smokeless biomass stove designed to replace traditional chulhas, providing a clean, energy-efficient, and eco-friendly cooking solution. Manufactured by Enersol Biopower, this compact and durable stove reduces smoke emissions, improves fuel efficiency, and enhances safety, making it ideal for households, street food vendors, and small commercial kitchens.",
                     "productId": "productId028",
+                    catalogueLink: "https://enersolbiopower.com/enersol_catalogue/ESB-R%20BIO%20MINI%20ENERSOl.pdf",
                     "subtitle": "Efficient Cooking, Healthier Homes, Greener Future",
                     "features": [
                         {
@@ -3970,7 +3973,7 @@
                     "modelName": "ESB-R Bio-Mini Solar",
                     "modelNumber": "ESB-R/BM01S",
                     "image": "../assets/products/bhatti/bio-mini-solar.jpg",
-                    "catalogueLink": "https://enersolbiopower.com/catalogue/ESB-R%20Domestic%20Stove%20-Bio-Mini%20Solar.pdf",
+                    "catalogueLink": "https://enersolbiopower.com/enersol_catalogue/Catalogue-bio-mini-solar.pdf",
                     "description": "The ESB-R Bio-Mini Solar is a next-generation smokeless biomass stove, designed to revolutionize traditional cooking methods while also providing solar-powered lighting. This dual-purpose innovation eliminates harmful smoke emissions, enhances fuel efficiency, and serves as an eco-friendly alternative to conventional biomass stoves and kerosene lamps. Perfect for households, small businesses, and rural communities, it ensures clean cooking and reliable lighting in areas with limited electricity access.",
                     "productId": "productId029",
                     "subtitle": "Effortless Cooking & Sustainable Illumination",
@@ -4153,6 +4156,7 @@
                     "modelNumber": "ESB-R/GA10",
                     "image": "../assets/products/bhatti/harit-agni-12.jpeg",
                     "description": "The ESB-R Green-Agnika10 is a high-efficiency, smokeless biomass stove engineered for small businesses, street food vendors, and home kitchens. Designed by Enersol Biopower, this stove offers a cost-effective, eco-friendly alternative to LPG and traditional firewood stoves. Whether you're running a tea stall, preparing snacks, or cooking meals for a large group, the Green-Agnika10 delivers powerful heat output with minimal fuel consumption.",
+                    catalogueLink: "https://enersolbiopower.com/enersol_catalogue/green%20agnika%20enersol.pdf",
                     "productId": "productId030",
                     "subtitle": "Smart Cooking, Sustainable Living",
                     "features": [
@@ -4317,7 +4321,7 @@
                     "modelName": "Harit-Agni12 & Harit-Agni12B",
                     "modelNumber": "ESB-R/HA12 & ESB-R/HA12B",
                     "image": "../assets/products/bhatti/harit-agni-12b.jpeg",
-                    "catalogueLink": "https://enersolbiopower.com/catalogue/ESB-R%20Harit-Agni12%20%26%20Harit-Agni12B.pdf",
+                    "catalogueLink": "https://enersolbiopower.com/enersol_catalogue/Harit%20Agni%20enersol.pdf",
 
                     "description": "The ESB-R Harit-Agni12 & Harit-Agni12B are high-performance smokeless biomass stoves, designed to bring cost-efficient, eco-friendly, and powerful cooking solutions to food businesses, street vendors, and home kitchens. Built by Enersol Biopower, these stoves ensure high combustion efficiency, reduced fuel consumption, and superior durability, making them ideal for commercial and community cooking.",
                     "productId": "productId031",
@@ -4616,6 +4620,7 @@
                     "modelNumber": "ESB-R/BV18",
                     "image": "../assets/products/bhatti/virat-18.jpg",
                     "description": "The ESB-R Bio-Virat18 is an advanced smokeless biomass stove designed for industrial kitchens, food vendors, and confectionery businesses looking for a cost-efficient and eco-friendly alternative to LPG. Manufactured by Enersol Biopower, this 18-inch fire zone biomass stove delivers powerful heat output, faster cooking, and significant savings, making it a game-changer for high-volume food preparation.",
+                    catalogueLink: "https://enersolbiopower.com/enersol_catalogue/Bio%20Virat18%20enersol.pdf",
                     "productId": "productId034",
                     "subtitle": "Cook Faster, Save More, and Go Green",
                     "features": [
@@ -4772,6 +4777,7 @@
                     "modelNumber": "ESB-R/BA21",
                     "image": "../assets/products/bhatti/akash-21.jpeg",
                     "description": "The ESB-R Bio-Akash21 is a next-generation biomass stove designed to deliver high heat output, cost savings, and eco-friendly performance. Suitable for confectioneries, street food businesses, and commercial kitchens, this 21-inch smokeless stove is engineered to match LPG stove performance while cutting fuel costs by over 60%. Manufactured by Enersol Biopower, it combines durability, efficiency, and sustainability, making it perfect for bulk cooking and fuel savings.",
+                    catalogueLink: "https://enersolbiopower.com/enersol_catalogue/Bio-Akash21%20enersol.pdf",
                     "productId": "productId035",
                     "subtitle": "High-Efficiency Cooking for a Greener Tomorrow",
                     "features": [
@@ -4928,6 +4934,7 @@
                     "modelNumber": "ESB-R/BP24",
                     "image": "../assets/products/bhatti/prithvi-24.jpg",
                     "description": "The ESB-R Bio-Prithvi24 is a powerful, eco-friendly biomass stove designed for high efficiency and significant fuel cost savings. Ideal for commercial kitchens, food processing businesses, and large-scale community cooking, this 24-inch smokeless stove offers a cleaner, cost-effective alternative to LPG stoves.",
+                    catalogueLink: "https://enersolbiopower.com/enersol_catalogue/Bio%20Prithvi%2024%20Enersol.pdf",
                     "productId": "productId036",
                     "subtitle": "Smart Cooking with Maximum Savings & Zero Emissions",
                     "features": [
@@ -5084,6 +5091,7 @@
                     "modelNumber": "ESB-R/HJ27",
                     "image": "../assets/products/bhatti/jumbo-27.jpeg",
                     "description": "The ESB-R Harit-Jumbo27 is a powerful and eco-friendly biomass stove designed for large-scale food businesses, confectioneries, and commercial kitchens. This 27-inch smokeless bhatti provides consistent, high-performance cooking while being a cost-effective alternative to LPG stoves, reducing fuel costs by more than 60%.",
+                    catalogueLink: "https://enersolbiopower.com/enersol_catalogue/BIO-JUMBO%20SHAKTI36%20CATALOGUE%20ENERSOL.pdf",
                     "productId": "productId037",
                     "subtitle": "Unleash High-Efficiency Cooking with Sustainable Fuel",
                     "features": [
@@ -5239,6 +5247,7 @@
                     "modelName": "ESB-R Jumbo-Shakti36",
                     "modelNumber": "ESB-R/JS36",
                     "image": "../assets/products/bhatti/jumbo-36.jpeg",
+                    catalogueLink: "https://enersolbiopower.com/enersol_catalogue/BIO-JUMBO%20SHAKTI36%20CATALOGUE%20ENERSOL%20X%20THUNDERGITS%20%282%29.pdf",
                     "description": "The ESB-R Jumbo Shakti36 is an innovative, high-performance smokeless biomass stove designed for large-scale cooking environments such as commercial kitchens, food processing units, and religious institutions. This 36-inch fire zone stove delivers exceptional heat output, reduces fuel costs, and supports eco-friendly cooking practices.",
                     "productId": "productId038",
                     "subtitle": "Powerful Cooking, Maximum Efficiency, and Sustainable Savings",
@@ -5402,7 +5411,7 @@
                     "image": "../assets/products/bhatti/auto-bio-mawa.jpeg",
                     "description": "The ESB-R Bio Mawa Machine is an automated mawa-making machine that combines traditional cooking methods with modern efficiency. Designed for sweet shops, dairy processing units, and commercial kitchens, this machine uses biomass fuel to ensure eco-friendly operation with reduced fuel costs.",
                     "productId": "productId039",
-                    "catalogueLink": "https://enersolbiopower.com/catalogue/ESB-R%20Bio%20Mawa%20Machine%20%281%29.pdf",
+                    "catalogueLink": "https://enersolbiopower.com/enersol_catalogue/mawa%20machine%20catalogue%20enersol.pdf",
                     "subtitle": "Traditional Taste, Modern Efficiency – Authentic Mawa Made on a Wood Stove Without Smoke or Pollution",
                     "features": [
                         {

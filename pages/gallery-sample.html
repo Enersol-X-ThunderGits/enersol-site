@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Image Slider</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .slider-container {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            position: relative;
+        }
+
+        .slide img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Navigation Buttons */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 50%;
+            z-index: 10;
+        }
+
+        .prev { left: 10px; }
+        .next { right: 10px; }
+
+        .prev:hover, .next:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Dots Navigation */
+        .dots {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .dot.active {
+            background-color: #333;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .prev, .next {
+                padding: 5px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide"><img src="../assets/about-us/2.webp" alt="Project Image"></div>
+            <div class="slide"><img src="../assets/about-us/team.jpeg" alt="Event Image"></div>
+            <div class="slide"><img src="../assets/about-us/president house.webp" alt="Community Engagement"></div>
+            <div class="slide"><img src="../assets/our-story/1N5A9081.webp" alt="Image 1N5A9081"></div>
+            <div class="slide"><img src="../assets/our-story/DSC_0032.jpg" alt="DSC 0032"></div>
+            <div class="slide"><img src="../assets/our-story/DSC_0071.jpg" alt="DSC 0071"></div>
+            <div class="slide"><img src="../assets/our-story/DSC_0095.jpg" alt="DSC 0095"></div>
+            <div class="slide"><img src="../assets/our-story/DSC_1264.jpg" alt="DSC 1264"></div>
+            <div class="slide"><img src="../assets/our-story/DSC_2035.webp" alt="DSC 2035"></div>
+            <div class="slide"><img src="../assets/our-story/DSC_8001.jpg" alt="DSC 8001"></div>
+            <div class="slide"><img src="../assets/our-story/DSC_9067.webp" alt="DSC 9067"></div>
+            <div class="slide"><img src="../assets/our-story/IMAG0158.webp" alt="IMAG0158"></div>
+            <div class="slide"><img src="../assets/our-story/Mr Dahiya With James Camron.webp" alt="Mr Dahiya with James Cameron"></div>
+            <div class="slide"><img src="../assets/our-story/Mr. Dahiya with Prithviraj Chouhan.webp" alt="Mr. Dahiya with Prithviraj Chauhan"></div>
+            <div class="slide"><img src="../assets/our-story/With APJ Abdul Kalam.webp" alt="With APJ Abdul Kalam"></div>
+            <div class="slide"><img src="../assets/our-story/With APJ Abdul Kalam1.webp" alt="With APJ Abdul Kalam 2"></div>
+            <div class="slide"><img src="../assets/our-story/With APJ Abdul Kalam2.webp" alt="With APJ Abdul Kalam 3"></div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <!-- Dots Navigation -->
+    <div class="dots"></div>
+
+    <script>
+        const slider = document.querySelector(".slider");
+        const slides = document.querySelectorAll(".slide");
+        const prevBtn = document.querySelector(".prev");
+        const nextBtn = document.querySelector(".next");
+        const dotsContainer = document.querySelector(".dots");
+
+        let index = 0;
+        let autoSlideInterval;
+
+        // Create dots dynamically
+        slides.forEach((_, i) => {
+            const dot = document.createElement("span");
+            dot.classList.add("dot");
+            dot.dataset.index = i;
+            dotsContainer.appendChild(dot);
+        });
+
+        const dots = document.querySelectorAll(".dot");
+        dots[index].classList.add("active");
+
+        function updateSlider() {
+            slider.style.transform = `translateX(-${index * 100}%)`;
+            dots.forEach(dot => dot.classList.remove("active"));
+            dots[index].classList.add("active");
+        }
+
+        function nextSlide() {
+            index = (index + 1) % slides.length;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            index = (index - 1 + slides.length) % slides.length;
+            updateSlider();
+        }
+
+        // Autoplay
+        function startAutoSlide() {
+            autoSlideInterval = setInterval(nextSlide, 3000);
+        }
+
+        function stopAutoSlide() {
+            clearInterval(autoSlideInterval);
+        }
+
+        // Swipe Gesture Support
+        let startX = 0;
+        slider.addEventListener("touchstart", (e) => { startX = e.touches[0].clientX; });
+        slider.addEventListener("touchend", (e) => {
+            let endX = e.changedTouches[0].clientX;
+            if (startX - endX > 50) nextSlide();
+            if (endX - startX > 50) prevSlide();
+        });
+
+        // Event Listeners
+        nextBtn.addEventListener("click", () => { stopAutoSlide(); nextSlide(); startAutoSlide(); });
+        prevBtn.addEventListener("click", () => { stopAutoSlide(); prevSlide(); startAutoSlide(); });
+
+        dots.forEach(dot => {
+            dot.addEventListener("click", (e) => {
+                index = parseInt(e.target.dataset.index);
+                updateSlider();
+                stopAutoSlide();
+                startAutoSlide();
+            });
+        });
+
+        // Start the slider
+        updateSlider();
+        startAutoSlide();
+    </script>
+
+</body>
+</html>

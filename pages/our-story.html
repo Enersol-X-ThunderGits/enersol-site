@@ -53,17 +53,36 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+
   <style>
     .gallery img {
       height: 600px;
     }
+    .glider-next, .glider-prev{
+      top: 45%;
+    }
 
+    @media screen and (min-width: 768px) {
+      .glider-contain {
+      width: 600px;
+      margin: auto;
+    }
+
+    .glider-slide img {
+      width: 100%;
+      height: auto;
+    }
+    }
     @media screen and (max-width: 768px) {
       .gallery img {
         height: 400px;
       }
     }
+
+
   </style>
 
 </head>
@@ -423,43 +442,38 @@
     <div class="container mx-auto px-5">
       <h2 class="text-2xl font-semibold text-center text-gray-800 mb-6">Gallery</h2>
       <!-- Swiper -->
-      <div class="flex justify-center items-center mb-5 w-full">
-        <div class="relative w-90">
-          <div class="overflow-hidden relative">
-            <div id="gallerySlider" class="whitespace-nowrap transition ease-in-out duration-700">
-              <!-- Add your images here -->
-              <img class="inline-block w-full" src="../assets/about-us/2.webp" alt="Image 1">
-              <img class="inline-block w-full" src="../assets/about-us/team.jpeg" alt="Image 2">
-              <img class="inline-block w-full" src="../assets/about-us/president house.webp" alt="Image 3">
-              <img class="inline-block w-full" src="../assets/our-story/1N5A9081.webp" alt="Image 4">
-              <img class="inline-block w-full" src="../assets/our-story/DSC_0032.jpg" alt="Image 5">
-              <img class="inline-block w-full" src="../assets/our-story/DSC_0071.jpg" alt="Image 6">
-              <img class="inline-block w-full" src="../assets/our-story/DSC_0095.jpg" alt="Image 7">
-              <img class="inline-block w-full" src="../assets/our-story/DSC_1264.jpg" alt="Image 8">
-              <img class="inline-block w-full" src="../assets/our-story/DSC_2035.webp" alt="Image 9">
-              <img class="inline-block w-full" src="../assets/our-story/DSC_8001.jpg" alt="Image 10">
-              <img class="inline-block w-full" src="../assets/our-story/IMAG0158.webp" alt="Image 11">
-              <img class="inline-block w-full" src="../assets/our-story/Mr Dahiya With  James Camron; Director of Hollywood Hits Titanic & Awtar.webp"
-                alt="Image 12">
-              <img class="inline-block w-full" src="../assets/our-story/Mr. Dahiya with Prithviraj Chouhan @ President House, India.webp"
-                alt="Image 13">
-              <img class="inline-block w-full" src="../assets/our-story/With APJ Abdul Kalam.webp" alt="Image 14">
-              <img class="inline-block w-full" src="../assets/our-story/With APJ Abdul Kalam1.webp" alt="Image 15">
-              <img class="inline-block w-full" src="../assets/our-story/With APJ Abdul Kalam2.webp" alt="Image 16">
-
-              <!-- <img class="inline-block w-full" src="../assets/about-us/2.webp" alt="Image 3"> -->
-            </div>
+      <div class="glider-contain">
+        <div class="glider">
+          <div><img class="inline-block w-full" src="../assets/about-us/2.webp" alt="Image 1"></div>
+          <div><img class="inline-block w-full" src="../assets/about-us/team.jpeg" alt="Image 2"></div>
+          <div><img class="inline-block w-full" src="../assets/about-us/president house.webp" alt="Image 3"></div>
+          <div><img class="inline-block w-full" src="../assets/our-story/1N5A9081.webp" alt="Image 4"></div>
+          <div><img class="inline-block w-full" src="../assets/our-story/DSC_0032.jpg" alt="Image 5"></div>
+          <div><img class="inline-block w-full" src="../assets/our-story/DSC_0071.jpg" alt="Image 6"></div>
+          <div><img class="inline-block w-full" src="../assets/our-story/DSC_0095.jpg" alt="Image 7"></div>
+          <div><img class="inline-block w-full" src="../assets/our-story/DSC_1264.jpg" alt="Image 8"></div>
+          <div><img class="inline-block w-full" src="../assets/our-story/DSC_2035.webp" alt="Image 9"></div>
+          <div><img class="inline-block w-full" src="../assets/our-story/DSC_8001.jpg" alt="Image 10"></div>
+          <div><img class="inline-block w-full" src="../assets/our-story/IMAG0158.webp" alt="Image 11"></div>
+          <div><img class="inline-block w-full"
+              src="../assets/our-story/Mr Dahiya With  James Camron; Director of Hollywood Hits Titanic & Awtar.webp"
+              alt="Image 12"></div>
+          <div><img class="inline-block w-full"
+              src="../assets/our-story/Mr. Dahiya with Prithviraj Chouhan @ President House, India.webp" alt="Image 13">
           </div>
-          <div class="absolute top-1/2 left-2 transform -translate-y-1/2">
-            <button id="gallery-prev"
-              class="text-white bg-gray-800 p-2 rounded-full focus:outline-none hover:bg-gray-600">&#10094;</button>
+          <div><img class="inline-block w-full" src="../assets/our-story/With APJ Abdul Kalam.webp" alt="Image 14">
           </div>
-          <div class="absolute top-1/2 right-2 transform -translate-y-1/2">
-            <button id="gallery-next"
-              class="text-white bg-gray-800 p-2 rounded-full focus:outline-none hover:bg-gray-600">&#10095;</button>
+          <div><img class="inline-block w-full" src="../assets/our-story/With APJ Abdul Kalam1.webp" alt="Image 15">
+          </div>
+          <div><img class="inline-block w-full" src="../assets/our-story/With APJ Abdul Kalam2.webp" alt="Image 16">
           </div>
         </div>
+
+        <button role="button" aria-label="Previous" class="glider-prev">«</button>
+        <button role="button" aria-label="Next" class="glider-next">»</button>
+        <div role="tablist" class="dots"></div>
       </div>
+
     </div>
   </section>
 
@@ -710,7 +724,19 @@
     }
 
     // Automatic slide change every 3 seconds
-     setInterval(nextGallerySlide, 6000);
+    //  setInterval(nextGallerySlide, 6000);
+  </script>
+  <script>
+    new Glider(document.querySelector('.glider'), {
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      draggable: true,
+      dots: '.dots',
+      arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
+      }
+    });
   </script>
 
 

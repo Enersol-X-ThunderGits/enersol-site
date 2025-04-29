@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogs & News - Enersol Biopower</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // Primary Colors
+            primary: {
+              DEFAULT: '#299FD3', // Blue
+              light: '#4FB5E0',  // Lighter shade of blue
+              dark: 'rgb(3 69 155)',   // Darker shade of blue
+            },
+            secondary: {
+              DEFAULT: '#C7D110', // Green
+              light: '#D4DB50',   // Lighter green
+              dark: '#909B0B',    // Darker green
+            },
+
+            // Accent Colors
+            accentYellow: {
+              DEFAULT: '#FED400',
+              light: '#FFE766',
+              dark: '#CCAA00',
+            },
+            accentRed: {
+              DEFAULT: '#9B1418',
+              light: '#C91B1F',
+              dark: '#740F12',
+            },
+
+            // Gradients
+            gradientBlueGreen: {
+              DEFAULT: 'linear-gradient(90deg, #299FD3 0%, #C7D110 100%)',
+            },
+            gradientYellowGreen: {
+              DEFAULT: 'linear-gradient(90deg, #FED400 0%, #C7D110 100%)',
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+  <!-- Top Bar and Navbar (same as About Us) -->
+<!-- Top Bar -->
+<div class="bg-gray-800 py-2">
+  <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+      <!-- Right: Social Links and Languages -->
+      <div class="flex flex-wrap justify-between w-full md:w-auto items-center space-x-4 ">
+          <div class="flex items-center space-x-2 text-white">
+              <i class="ri-mail-line"></i>
+              <a href="mailto:info@example.com">info@enersolbiopower.com</a>
+          </div>
+          <div class="flex space-x-2">
+            <a href="https://www.facebook.com/enersolbiopwr" class="text-white">
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy" class="text-white">
+              <i class="ri-youtube-fill"></i>
+            </a>
+            <a href="https://www.instagram.com/enersol_biopower/" class="text-white">
+              <i class="ri-instagram-fill"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/" class="text-white">
+              <i class="ri-linkedin-fill"></i>
+            </a>
+          </div>
+
+      </div>
+      <!-- Left: Contact Info -->
+      <div class="flex flex-wrap justify-between w-full md:w-auto space-x-4 mt-4 md:mt-0">
+
+          <div class="flex items-center space-x-2 text-white">
+              <i class="ri-phone-line"></i>
+              <a href="tel:+919414535665">+91-9414535665</a>
+          </div>
+          <div class="flex items-center space-x-2 text-white">
+              <i class="ri-phone-line"></i>
+              <a href="tel:+917073495200">+91-7073495200</a>
+          </div>
+
+      </div>
+
+
+  </div>
+</div>
+   <!-- Navbar component -->
+   <div class="bg-primary-dark sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+            <!-- Logo -->
+            <div class="flex justify-start lg:w-0 lg:flex-1">
+                <a href="/">
+                    <img class="h-12 w-auto sm:h-14" src="../../assets/logo/erersollogo.png" alt="Enersol Biopower"
+                        >
+                </a>
+            </div>
+            <!-- Navbar collapse button (visible on small screens) -->
+            <div class="-mr-2 -my-2 md:hidden">
+                <button type="button"
+                    class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                    id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
+                    <span class="sr-only">Open menu</span>
+                    <!-- Icon for the button (hamburger icon) -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" aria-hidden="true" style="color: white;">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Links for large screens -->
+            <nav class="hidden md:flex space-x-10">
+                <a href="/" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
+                <a href="../about-us.html"
+                    class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
+                <a href="../our-story.html"
+                    class="text-base font-medium text-white hover:text-accentYellow-light">Our Story</a>
+                <a href="../products.html"
+                    class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+                <a href="../blogs.html"
+                    class="text-base font-medium text-white hover:text-accentYellow-light">Blogs & News</a>
+                <a href="../contact-us.html"
+                    class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
+            </nav>
+
+            <!-- Get a Quote button (visible on large screens) -->
+            <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                <a href="#"
+                    class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
+                    Get a Quote
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile menu, toggle classes based on menu state (open/closed) -->
+    <div class="fixed inset-y-0 right-0 w-3/4 bg-white text-white transform translate-x-full transition-transform duration-300 ease-in-out"
+        id="mobile-menu" style="display: none;z-index: 10;">
+        <div class="">
+            <div class="pt-5 pb-6 ">
+                <div class="flex items-center justify-between px-5">
+                    <div>
+                        <img class="h-8 w-auto" src="../../assets/logo/erersollogo.png" alt="Your Company">
+                    </div>
+                    <div class="-mr-2">
+                        <button type="button"
+                            class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                            onclick="toggleMobileMenu()">
+                            <span class="sr-only">Close menu</span>
+                            <!-- Close icon -->
+                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-6 px-5 border-t border-gray-300 pt-5">
+                    <nav class="grid gap-y-8">
+                        <a href="/" class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
+                        <a href="../about-us.html"
+                            class="text-base font-medium text-black hover:text-accentYellow-light">About Us</a>
+                        <a href="../our-story.html"
+                            class="text-base font-medium text-black hover:text-accentYellow-light">Our Story</a>
+                        <a href="../products.html"
+                            class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
+                        <a href="../blogs.html"
+                            class="text-base font-medium text-black hover:text-accentYellow-light">Blogs & News</a>
+                        <a href="../contact-us.html"
+                            class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="py-6 px-5 space-y-6">
+                <div>
+                    <a href="#"
+                        class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
+                        Get a Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="container mx-auto px-5 py-12">
+ 
+
+  <!-- Content Section -->
+  <div class="flex flex-wrap -mx-4">
+     <!-- Main Article Section -->
+<div class="w-full lg:w-2/3 px-4">
+    <h1 class="text-4xl font-bold text-gray-800 mb-7">
+      Revolutionizing Rural Cooking: The Shift from Traditional Chulhas to Modern Biomass Stoves
+    </h1>
+  
+    <!-- Article Entry -->
+    <article class="mb-10">
+      <img class="w-full rounded-lg" src="https://dkprodimages.gumlet.io/Chulha_Body2.jpg?format=webp&w=400&dpr=2.6" alt="Modern Biomass Stove">
+  
+      <div class="max-w-4xl mx-auto bg-white mt-10">
+        <p class="mt-4 text-lg">
+          For centuries, traditional chulhas have been the cornerstone of cooking in rural areas. Made from simple materials like clay and mud, these stoves are deeply rooted in local cultures. However, they come with significant drawbacks—notably the high levels of smoke they produce, posing serious health and environmental risks.
+        </p>
+  
+        <p class="mt-4 text-lg">
+          In response, many communities have transitioned to LPG stoves, aiming for cleaner and faster cooking. While LPG reduces indoor smoke, it introduces new concerns, such as respiratory issues due to prolonged exposure and changes in food flavor, raising fresh health and cultural challenges.
+        </p>
+  
+        <h2 class="text-2xl font-semibold mt-6 text-green-600">The Health and Environmental Toll</h2>
+        <ul class="list-disc list-inside mt-3 space-y-2">
+          <li><strong>Health Risks:</strong> Traditional chulhas emit smoke that can cause respiratory diseases, eye problems, and long-term complications, especially for women and children.</li>
+          <li><strong>Environmental Impact:</strong> Inefficient combustion leads to deforestation and increased air pollution.</li>
+          <li><strong>Fuel Inefficiency:</strong> These stoves consume a large amount of biomass, wasting valuable natural resources.</li>
+        </ul>
+  
+        <h2 class="text-2xl font-semibold mt-6 text-green-600">Transition to Modern Solutions</h2>
+        <p class="mt-2">
+          The need for safer and more sustainable cooking solutions has led to the development of modern biomass stoves. These stoves are designed to burn biomass fuel more efficiently and continuously, drastically reducing smoke emissions and improving air quality inside homes.
+        </p>
+  
+        <h2 class="text-2xl font-semibold mt-6 text-green-600">Showcasing Enersol Biopower’s Innovations</h2>
+  
+        <h3 class="text-xl font-semibold mt-4 text-green-500">1. Smokeless Domestic Biomass Stove - Bio-Nature</h3>
+        <p>
+          This stove eliminates smoke exposure, drastically reducing health risks such as respiratory diseases and chronic eye conditions prevalent in rural settings.
+        </p>
+  
+        <h3 class="text-xl font-semibold mt-4 text-green-500">2. Forced Draft – Bio-Mini</h3>
+        <p>
+          By improving combustion efficiency, this stove minimizes smoke and increases heat output, providing a safer cooking environment and reducing time spent on cooking.
+        </p>
+  
+        <h3 class="text-xl font-semibold mt-4 text-green-500">3. Forced Draft – Bio-Mini Solar</h3>
+        <p>
+          This model not only improves cooking efficiency but also incorporates a solar-powered system that can power a light bulb. This is crucial in areas with frequent power outages, allowing women to cook in well-lit conditions and reducing eye strain. It provides both cooking and lighting solutions in one device.
+        </p>
+  
+        <img class="w-full rounded-lg mt-6" src="https://fabacademy.org/2020/labs/vigyanashram/students/nikhilkumar-more/assignment/img/learn-img.jpg" alt="Stove Use">
+        <img class="w-full rounded-lg mt-6" src="https://enersolbiopower.com/assets/about-us/Our-vissions.jpeg" alt="Enersol Vision">
+  
+        <h2 class="text-2xl font-semibold mt-6 text-green-600">Use Cases in Rural Settings</h2>
+        <p class="mt-2">
+          These stoves have been successfully implemented in various rural settings, where they have replaced traditional chulhas, bringing substantial health and environmental benefits. The acceptance and positive feedback from these communities underscore the effectiveness of these solutions in real-world conditions.
+        </p>
+  
+        <h2 class="text-2xl font-semibold mt-6 text-green-600">Expanding to Commercial Applications</h2>
+        <p class="mt-2">
+          In addition to residential models, Enersol Biopower offers a range of commercial biomass stoves designed to meet the higher demands of businesses and community facilities. These robust models provide the same eco-friendly benefits but are scaled for larger volume cooking, making them ideal for schools, restaurants, sweets shops, and community centers.
+        </p>
+  
+        <h2 class="text-2xl font-semibold mt-6 text-green-600">Conclusion</h2>
+        <p class="mt-2">
+          The transition from traditional chulhas to modern biomass stoves represents a significant step forward in rural sustainable development. By adopting these technologies, communities can enjoy safer, cleaner, and more efficient cooking methods.
+        </p>
+  
+        <h2 class="text-xl font-bold text-center mt-6 text-green-700">Say Goodbye to Smoke, Welcome Sustainable Cooking!</h2>
+  
+        <div class="mt-6 text-center">
+          <a href="../products.html" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg shadow">
+            Explore Enersol’s Biomass Stoves
+          </a>
+        </div>
+      </div>
+    </article>
+  </div>
+  
+      <!-- Sidebar -->
+      <div class="w-full lg:w-1/3 px-4">
+          <div class="p-6 bg-white rounded-lg shadow-md sticky top-20">
+              <!-- Search -->
+              <div class="mb-6">
+                  <label for="search" class="block text-sm font-medium text-gray-700">Search</label>
+                  <input type="text" id="search" name="search" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+              </div>
+
+              <!-- Categories -->
+              <div class="mb-6">
+                  <h3 class="font-semibold text-gray-700 mb-3">Categories</h3>
+                  <ul class="text-gray-600">
+                      <li class="mb-2"><a href="#" class="hover:text-indigo-600">Renewable Energy</a></li>
+                      <li class="mb-2"><a href="#" class="hover:text-indigo-600">Technology Innovations</a></li>
+                      <li class="mb-2"><a href="#" class="hover:text-indigo-600">Company News</a></li>
+                  </ul>
+              </div>
+
+              <!-- Recent Posts -->
+              <div class="mb-6">
+                  <h3 class="font-semibold text-gray-700 mb-3">Recent Posts</h3>
+                  <ul class="text-gray-600">
+                      <li class="mb-2"><a href="#" class="hover:text-indigo-600">The Future of Bioenergy in 2025</a></li>
+                      <li class="mb-2"><a href="#" class="hover:text-indigo-600">Enersol's New Biogas Plant Initiative</a></li>
+                      <li class="mb-2"><a href="#" class="hover:text-indigo-600">Sustainability and Energy Efficiency</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+
+      <!-- News Section with Smaller News Cards -->
+<section class="my-12">
+  <h2 class="text-3xl font-bold text-gray-800 mb-5">Latest News</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <!-- News Card -->
+      <div class="bg-white rounded-lg shadow p-4">
+          <img class="w-full h-32 object-cover rounded" src="https://plus.unsplash.com/premium_photo-1707080369554-359143c6aa0b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmV3c3xlbnwwfHwwfHx8MA%3D%3D" alt="News Image">
+          <div class="mt-2">
+              <h3 class="text-lg font-semibold text-gray-800"><a href="#" class="hover:underline">Enersol Launches New Product Line</a></h3>
+              <p class="text-sm text-gray-500">June 25, 2025</p>
+              <p class="text-gray-600 text-sm">Enersol Biopower introduces a new range of eco-friendly biogas systems tailored for small farms.</p>
+              <a href="#" class="text-indigo-600 hover:text-indigo-800 text-sm mt-2 inline-block">Read More →</a>
+          </div>
+      </div>
+
+      <!-- More News Cards -->
+      <div class="bg-white rounded-lg shadow p-4">
+          <img class="w-full h-32 object-cover rounded" src="https://plus.unsplash.com/premium_photo-1707080369554-359143c6aa0b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmV3c3xlbnwwfHwwfHx8MA%3D%3D" alt="News Image">
+          <div class="mt-2">
+              <h3 class="text-lg font-semibold text-gray-800"><a href="#" class="hover:underline">Sustainability Conference 2025</a></h3>
+              <p class="text-sm text-gray-500">May 15, 2025</p>
+              <p class="text-gray-600 text-sm">Join us at the annual Sustainability Conference to discuss the future of renewable energy.</p>
+              <a href="#" class="text-indigo-600 hover:text-indigo-800 text-sm mt-2 inline-block">Read More →</a>
+          </div>
+      </div>
+
+      <!-- Additional News Cards -->
+      <!-- Add more cards with similar structure -->
+  </div>
+</section>
+
+  </div>
+
+
+<!-- Pagination Controls -->
+<div class="mt-10">
+  <div class="flex justify-between items-center">
+      <a href="#" class="bg-white border border-gray-300 py-2 px-4 text-gray-500 hover:bg-gray-100 rounded">Previous</a>
+      <a href="#" class="bg-white border border-gray-300 py-2 px-4 text-gray-500 hover:bg-gray-100 rounded">Next</a>
+  </div>
+</div>
+
+
+
+
+</main>
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,10 +1,19 @@
-const testimonialSwiper = new Swiper('.testimonialSwiper', {
+const testimonialSwiper = new Swiper('.testimonials', {
     loop: true,
     spaceBetween: 30,
-    slidesPerView: 1,  // Display 2 testimonials per slide
+    slidesPerView: 1,
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        }
+    },
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
+    },
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
     },
 });
 

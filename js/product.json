@@ -4746,13 +4746,13 @@
         ]
     },
     {
-        "name": "Auto Bio-Mawa Machine",
-        "category": "Auto Bio-Mawa Machine",
-        "modelName": "ESB-R Auto Bio-Mawa Machine",
+        "name": "Auto Bio-Mawa/Khoya Machine",
+        "category": "Auto Bio-Mawa/Khoya Machine",
+        "modelName": "ESB-R Auto Bio-Mawa/Khoya Machine",
         "modelNumber": "ESB-R/MM01",
         "image": "../assets/products/bhatti/auto-bio-mawa.jpeg",
         "description": "The ESB-R Bio Mawa Machine is an automated mawa-making machine that combines traditional cooking methods with modern efficiency. Designed for sweet shops, dairy processing units, and commercial kitchens, this machine uses biomass fuel to ensure eco-friendly operation with reduced fuel costs.",
-        "catalogueLink":"https://drive.google.com/uc?export=download&id=1QPWUqc8r7TL8xdvftiJTC-I1rIHUq60U",
+        "catalogueLink": "https://drive.google.com/uc?export=download&id=1QPWUqc8r7TL8xdvftiJTC-I1rIHUq60U",
         "productId": "productId039",
         "subtitle": "Traditional Taste, Modern Efficiency – Authentic Mawa Made on a Wood Stove Without Smoke or Pollution",
         "features": [
@@ -4839,13 +4839,13 @@
     },
     {
         "name": "Eco-Green Biochar05 - 5kg/hr Biomass based Bio-char Plant",
-        "category": "Biomass Torrefaction / Bio-Char Plant",
+        "category": "Biomass Pyrolysis Plant (Bio-char Plant)",
         "modelName": "Eco-Green Biochar05",
         "modelNumber": "ESB-R/EGC/05",
         "image": "../assets/products/bio-char/05.jpeg",
         "description": "The ESB-R EcoGreen BioChar05 is an advanced biochar production system designed for small-scale agricultural and environmental applications. It converts agricultural residues into high-quality biochar, enhancing soil fertility and reducing pollution through sustainable crop waste management.",
         "productId": "productId040",
-        "catalogueLink":"https://drive.google.com/uc?export=download&id=1cQTCTxLAnpMIcJK_DLX85jEtM_LYQePi",
+        "catalogueLink": "https://drive.google.com/uc?export=download&id=1cQTCTxLAnpMIcJK_DLX85jEtM_LYQePi",
         "subtitle": "Sustainable Agriculture, Cleaner Air, and Higher Profits for Farmers",
         "features": [
             {
@@ -4933,7 +4933,7 @@
     },
     {
         "name": "Eco-Green Biochar10 - 10kg/hr Biomass based Bio-char Plant",
-        "category": "Biomass Torrefaction / Bio-Char Plant",
+        "category": "Biomass Pyrolysis Plant (Bio-char Plant)",
         "modelName": "Eco-Green Biochar10",
         "modelNumber": "ESB-R/EGC/10",
         "image": "../assets/products/bio-char/10.jpeg",
@@ -5031,7 +5031,7 @@
     },
     {
         "name": "Eco-Green Biochar50 - 50kg/hr Biomass based Bio-char Plant",
-        "category": "Biomass Torrefaction / Bio-Char Plant",
+        "category": "Biomass Pyrolysis Plant (Bio-char Plant)",
         "modelName": "Eco-Green Biochar50",
         "modelNumber": "ESB-R/EGC/50",
         "image": "../assets/products/bio-char/50.jpeg",
@@ -5129,7 +5129,7 @@
     },
     {
         "name": "Eco-Green Biochar100 - 100kg/hr Biomass based Bio-char Plant",
-        "category": "Biomass Torrefaction / Bio-Char Plant",
+        "category": "Biomass Pyrolysis Plant (Bio-char Plant)",
         "modelName": "Eco-Green Biochar100",
         "modelNumber": "ESB-R/EGC/100",
         "image": "../assets/products/bio-char/8.jpeg",
@@ -5227,7 +5227,7 @@
     },
     {
         "name": "Eco-Green Biochar200 - 200kg/hr Biomass based Bio-char Plant",
-        "category": "Biomass Torrefaction / Bio-Char Plant",
+        "category": "Biomass Pyrolysis Plant (Bio-char Plant)",
         "modelName": "Eco-Green Biochar200",
         "modelNumber": "ESB-R/EGC/200",
         "image": "../assets/products/img/Biomass Torrefaction Plant24.jpeg",
@@ -5236,7 +5236,7 @@
     },
     {
         "name": "Eco-Green Biochar500 - 500kg/hr Biomass based Bio-char Plant",
-        "category": "Biomass Torrefaction / Bio-Char Plant",
+        "category": "Biomass Pyrolysis Plant (Bio-char Plant)",
         "modelName": "Eco-Green Biochar500",
         "modelNumber": "ESB-R/EGC/500",
         "image": "../assets/products/img/Biomass Torrefaction Plant13.jpeg",
@@ -5261,7 +5261,7 @@
         "description": "The ESB-R Dewatering Machine is designed for efficient solid-liquid separation, optimizing waste management and enhancing recycling processes in agricultural and industrial applications.",
         "productId": "productId047",
         "subtitle": "Efficient Solid-Liquid Separation",
-        "catalogueLink":"https://drive.google.com/uc?export=download&id=1XOU5gCbjDqIPmD2JKPpI9jVU9n50RDsR",
+        "catalogueLink": "https://drive.google.com/uc?export=download&id=1XOU5gCbjDqIPmD2JKPpI9jVU9n50RDsR",
         "features": [
             {
                 "icon": "ri-settings-2-line",
@@ -5356,7 +5356,7 @@
         "modelName": "ESB-R DM200",
         "modelNumber": "ESB-R/DM/200",
         "image": "../assets/products/bio-char/used-oil.jpeg",
-        "catalogueLink":"https://drive.google.com/uc?export=download&id=13xTFyvN7reIJWjZrJI-7NEml5_TOHjJS",
+        "catalogueLink": "https://drive.google.com/uc?export=download&id=13xTFyvN7reIJWjZrJI-7NEml5_TOHjJS",
         "description": "The ESB-R Used Oil Distillation Machine recycles used motor oil, hydraulic oil, and other lubricants into high-grade diesel-like fuel. This system supports environmental sustainability by reducing waste and utilizing advanced filtration and distillation processes to restore oil quality and convert it into clean, reusable fuel.",
         "productId": "productId048",
         "subtitle": "Efficient, Sustainable, and Cost-Effective Oil Recycling",
@@ -5819,8 +5819,8 @@
         "productId": "productId056"
     },
     {
-        "name": "CNC/ Hydraulic Bending Machine Job Work",
-        "category": "CNC/ Hydraulic Bending Machine Job Work",
+        "name": "CNC / Hydraulic Cutting and Bending Machine Job Work Job Work",
+        "category": "CNC / Hydraulic Cutting and Bending Machine Job Work Job Work",
         "modelName": "",
         "modelNumber": "",
         "image": "../assets/products/bio-char/cnc.jpg",

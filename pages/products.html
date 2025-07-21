@@ -5169,6 +5169,53 @@
             filterProducts()
         }
     </script>
+    <script>
+
+        function getQueryParam(key) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(key);
+        }
+
+        function applyQueryCategoryIfNeeded() {
+            const categoryFromQuery = getQueryParam('category');
+            if (categoryFromQuery) {
+                const selectedValues = categoryFromQuery.toLowerCase().split(',');
+                const checkboxes = document.querySelectorAll('.category-filter');
+                checkboxes.forEach(cb => {
+                    cb.checked = selectedValues.includes(cb.value.toLowerCase());
+                });
+            }
+        }
+
+        function updateCategoryInURL() {
+            const selectedCategories = Array.from(document.querySelectorAll('.category-filter:checked')).map(cb => cb.value);
+            const params = new URLSearchParams(window.location.search);
+
+            if (selectedCategories.length > 0) {
+                params.set('category', selectedCategories.join(','));
+            } else {
+                params.delete('category');
+            }
+
+            const newUrl = `${window.location.pathname}?${params.toString()}`;
+            window.history.replaceState({}, '', newUrl);
+        }
+
+        // Checkbox change listeners
+        document.querySelectorAll('.category-filter').forEach(checkbox => {
+            checkbox.addEventListener('change', () => {
+                updateCategoryInURL();
+                filterProductWithNewPage();
+            });
+        });
+
+        window.addEventListener('DOMContentLoaded', () => {
+            applyQueryCategoryIfNeeded();
+            filterProducts();
+        });
+
+
+    </script>
 
 </body>
 

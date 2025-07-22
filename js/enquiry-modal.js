@@ -36,15 +36,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Claim Offer - Redirect to WhatsApp
-    claimOffer.addEventListener("click", () => {
-        const whatsappMessage = `Hello Team! I am interested in B.Ed admission at ₹80,000/- for both years. Please guide me with the admission process.`;
-        const whatsappNumber = "919414535665";
-        const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
-        window.open(whatsappLink, "_blank");
-    });
+    // claimOffer.addEventListener("click", () => {
+    //     const whatsappMessage = `Hello Team! I am interested in B.Ed admission at ₹80,000/- for both years. Please guide me with the admission process.`;
+    //     const whatsappNumber = "919414535665";
+    //     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    //     window.open(whatsappLink, "_blank");
+    // });
 
     // Handle form submission
     document.getElementById("inquiry-form").addEventListener("submit", (e) => {
+        console.log("Form submitted");
         e.preventDefault();
 
         // Get form values

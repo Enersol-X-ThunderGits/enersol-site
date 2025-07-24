@@ -44,31 +44,84 @@ document.addEventListener("DOMContentLoaded", () => {
     // });
 
     // Handle form submission
-    document.getElementById("inquiry-form").addEventListener("submit", (e) => {
-        console.log("Form submitted");
-        e.preventDefault();
+    const form = document.getElementById("inquiry-form");
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn.innerHTML;
 
-        // Get form values
-        const name = document.getElementById("name").value;
-        const mobile = document.getElementById("mobile").value;
-        const email = document.getElementById("email").value;
+    const showToast = (message, isSuccess = true) => {
+        const toast = document.createElement("div");
+        toast.textContent = message;
+        toast.className = `fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-${isSuccess ? "green" : "red"}-600 text-white px-4 py-2 rounded shadow z-50 text-sm`;
+        document.body.appendChild(toast);
+        setTimeout(() => toast.remove(), 3000);
+    };
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = "Submitting...";
+
+        const name = document.getElementById("name").value.trim();
+        const mobile = document.getElementById("mobile").value.trim();
+        const email = document.getElementById("email").value.trim();
         const selectedCourse = document.getElementById("course").value;
 
-        // Create WhatsApp message
-        const whatsappMessage = `Hello Team! I am ${name}. My mobile number is ${mobile} and my email is ${email}. I am interested in the course: ${selectedCourse}`;
 
-        const whatsappNumber = "919414535665";
+        // Prepare HTML email
+        const htmlContent = `
+      <div style="max-width:600px;margin:0 auto;font-family:'Segoe UI',Roboto,sans-serif;color:#333;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;">
+        <div style="background:#15803d;padding:16px;text-align:center;">
+          <h2 style="color:#fff;margin:0;">New Contact Form Submission</h2>
+        </div>
+        <div style="padding:24px;background-color:#ffffff;">
+          <p><strong>Date:</strong> ${new Date().toLocaleString()}</p>
+          <hr style="border:none;border-top:1px solid #eee;margin:20px 0;">
+          <p><strong>Name:</strong> ${name}</p>
+          <p><strong>Mobile:</strong> ${mobile}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Interested Product:</strong> ${selectedCourse}</p>
+          <hr style="border:none;border-top:1px solid #eee;margin:20px 20px;">
+          <p style="font-size:13px;color:#6b7280;text-align:center;">
+            This message was submitted via the contact form on <strong>enersolbiopower.com</strong>.
+          </p>
+        </div>
+        <div style="background:#f9fafb;padding:12px;text-align:center;font-size:12px;color:#9ca3af;">
+          &copy; ${new Date().getFullYear()} Enersol Biopower Pvt. Ltd. | www.enersolbiopower.com
+        </div>
+      </div>
+    `;
 
-        // WhatsApp link
-        const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-            whatsappMessage
-        )}`;
+        const emailData = {
+            to: "info@enersolbiopower.com",
+            subject: "Enersol Inquiry Form Submission",
+            siteKey: "enersol",
+            html: htmlContent
+        };
 
-        // Open WhatsApp
-        window.open(whatsappLink, "_blank");
+        try {
+            const response = await fetch("https://tg-email-service.thundergits.com/api/email/send", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(emailData)
+            });
 
-        // Close the modal
+            if (response.ok) {
+                showToast("Submitted successfully ✅", true);
+                form.reset();
+                modal.classList.add("hidden");
+            } else {
+                showToast("Failed to send email. Please try again.", false);
+            }
+        } catch (error) {
+            showToast("An error occurred. Please try again later.", false);
+        }
+
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+    });
+
+    // Close modal on button click
+    document.getElementById("close-modal").addEventListener("click", () => {
         modal.classList.add("hidden");
-        enquiryClosed = true;
     });
 });

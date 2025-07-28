@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./assets/logo/fav-icon.png">
+  <title>Blogs & News - Enersol Biopower</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // Primary Colors
+            primary: {
+              DEFAULT: '#299FD3', // Blue
+              light: '#4FB5E0',  // Lighter shade of blue
+              dark: 'rgb(3 69 155)',   // Darker shade of blue
+            },
+            secondary: {
+              DEFAULT: '#C7D110', // Green
+              light: '#D4DB50',   // Lighter green
+              dark: '#909B0B',    // Darker green
+            },
+
+            // Accent Colors
+            accentYellow: {
+              DEFAULT: '#FED400',
+              light: '#FFE766',
+              dark: '#CCAA00',
+            },
+            accentRed: {
+              DEFAULT: '#9B1418',
+              light: '#C91B1F',
+              dark: '#740F12',
+            },
+
+            // Gradients
+            gradientBlueGreen: {
+              DEFAULT: 'linear-gradient(90deg, #299FD3 0%, #C7D110 100%)',
+            },
+            gradientYellowGreen: {
+              DEFAULT: 'linear-gradient(90deg, #FED400 0%, #C7D110 100%)',
+            },
+
+            // Accent Colors
+            accentYellow: {
+              DEFAULT: '#FED400',
+              light: '#FFE766',
+              dark: '#CCAA00',
+            },
+            accentRed: {
+              DEFAULT: '#9B1418',
+              light: '#C91B1F',
+              dark: '#740F12',
+            },
+
+            // Gradients
+            gradientBlueGreen: {
+              DEFAULT: 'linear-gradient(90deg, #299FD3 0%, #C7D110 100%)',
+            },
+            gradientYellowGreen: {
+              DEFAULT: 'linear-gradient(90deg, #FED400 0%, #C7D110 100%)',
+            },
+          },
+          boxShadow: {
+            'card': '0 10px 30px -15px rgba(0, 0, 0, 0.1)',
+            'highlight': '0 0 0 4px rgba(41, 159, 211, 0.2)',
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-in forwards',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0 },
+              '100%': { opacity: 1 },
+            }
+          },
+        },
+      },
+    };
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+  <!-- Top Bar and Navbar (same as About Us) -->
+  <!-- Top Bar -->
+  <div class="bg-gray-800 py-2">
+    <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+      <!-- Right: Social Links and Languages -->
+      <div class="flex flex-wrap justify-between w-full md:w-auto items-center space-x-4 ">
+        <div class="flex items-center space-x-2 text-white">
+          <i class="ri-mail-line"></i>
+          <a href="mailto:info@example.com">info@enersolbiopower.com</a>
+        </div>
+        <div class="flex space-x-2">
+          <a href="https://www.facebook.com/enersolbiopwr" class="text-white">
+            <i class="ri-facebook-fill"></i>
+          </a>
+          <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy" class="text-white">
+            <i class="ri-youtube-fill"></i>
+          </a>
+          <a href="https://www.instagram.com/enersol_biopower/" class="text-white">
+            <i class="ri-instagram-fill"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/" class="text-white">
+            <i class="ri-linkedin-fill"></i>
+          </a>
+        </div>
+
+      </div>
+      <!-- Left: Contact Info -->
+      <div class="flex flex-wrap justify-between w-full md:w-auto space-x-4 mt-4 md:mt-0">
+
+        <div class="flex items-center space-x-2 text-white">
+          <i class="ri-phone-line"></i>
+          <a href="tel:+919414535665">+91-9414535665</a>
+        </div>
+        <div class="flex items-center space-x-2 text-white">
+          <i class="ri-phone-line"></i>
+          <a href="tel:+917073495200">+91-8239554433</a>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <!-- Sticky Social Bar -->
+  <div id="sticky-social"
+    class="fixed top-1/3 left-2 z-50 hidden flex-col space-y-4 bg-black bg-opacity-60 p-2 rounded-lg">
+    <a href="https://www.facebook.com/enersolbiopwr" class="text-white text-2xl">
+      <i class="ri-facebook-fill"></i>
+    </a>
+    <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy" class="text-white text-2xl">
+      <i class="ri-youtube-fill"></i>
+    </a>
+    <a href="https://www.instagram.com/enersol_biopower/" class="text-white text-2xl">
+      <i class="ri-instagram-fill"></i>
+    </a>
+    <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/" class="text-white text-2xl">
+      <i class="ri-linkedin-fill"></i>
+    </a>
+  </div>
+  <script>
+    const stickySocial = document.getElementById('sticky-social');
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+
+      if (currentScroll > 100) {
+        // User scrolled up past 100px
+        stickySocial.classList.add('flex');
+        stickySocial.classList.remove('hidden');
+      } else {
+        // User scrolling down or still near top
+        stickySocial.classList.add('hidden');
+        stickySocial.classList.remove('flex');
+      }
+
+      lastScroll = currentScroll;
+    });
+  </script>
+
+
+  <!-- Navbar component -->
+  <div class="bg-primary-dark sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+        <!-- Logo -->
+        <div class="flex justify-start lg:w-0 lg:flex-1">
+          <a href="/">
+            <img class="h-12 w-auto sm:h-14" src="../../assets/logo/erersollogo.png" alt="Enersol Biopower">
+          </a>
+        </div>
+        <!-- Navbar collapse button (visible on small screens) -->
+        <div class="-mr-2 -my-2 md:hidden">
+          <button type="button"
+            class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="sr-only">Open menu</span>
+            <!-- Icon for the button (hamburger icon) -->
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true" style="color: white;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Links for large screens -->
+        <nav class="hidden md:flex space-x-10">
+          <a href="/" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
+          <a href="../about-us.html" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
+          <a href="../our-story.html" class="text-base font-medium text-white hover:text-accentYellow-light">Our
+            Story</a>
+          <a href="../products.html" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+          <a href="../blogs.html" class="text-base font-medium text-white hover:text-accentYellow-light">Blogs &
+            News</a>
+          <a href="../contact-us.html" class="text-base font-medium text-white hover:text-accentYellow-light">Contact
+            Us</a>
+        </nav>
+
+        <!-- Get a Quote button (visible on large screens) -->
+        <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+          <a href="#"
+            class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
+            Get a Quote
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu, toggle classes based on menu state (open/closed) -->
+    <div
+      class="fixed inset-y-0 right-0 w-3/4 bg-white text-white transform translate-x-full transition-transform duration-300 ease-in-out"
+      id="mobile-menu" style="display: none;z-index: 10;">
+      <div class="">
+        <div class="pt-5 pb-6 ">
+          <div class="flex items-center justify-between px-5">
+            <div>
+              <img class="h-8 w-auto" src="../../assets/logo/erersollogo.png" alt="Your Company">
+            </div>
+            <div class="-mr-2">
+              <button type="button"
+                class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                onclick="toggleMobileMenu()">
+                <span class="sr-only">Close menu</span>
+                <!-- Close icon -->
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="mt-6 px-5 border-t border-gray-300 pt-5">
+            <nav class="grid gap-y-8">
+              <a href="/" class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
+              <a href="../about-us.html" class="text-base font-medium text-black hover:text-accentYellow-light">About
+                Us</a>
+              <a href="../our-story.html" class="text-base font-medium text-black hover:text-accentYellow-light">Our
+                Story</a>
+              <a href="../products.html"
+                class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
+              <a href="../blogs.html" class="text-base font-medium text-black hover:text-accentYellow-light">Blogs &
+                News</a>
+              <a href="../contact-us.html"
+                class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
+            </nav>
+          </div>
+        </div>
+        <div class="py-6 px-5 space-y-6">
+          <div>
+            <a href="#"
+              class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
+              Get a Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <main class="max-w-4xl mx-auto px-4 py-10">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4 text-blue-700">
+        Biomass Gasifier: Harnessing Clean Energy from Crop Residue
+      </h1>
+      <p class="text-lg mb-6 italic text-gray-600">
+        From Smoke to Spark – The Green Energy Revolution in Rural India
+      </p>
+
+      <img
+        src="http://127.0.0.1:5501/assets/products/bio-gasifier-power/8kw-Biomass-Gasifier4.png"
+        alt="Biomass Gasifier"
+        class="rounded-xl shadow-lg mb-8 w-full"
+      />
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold mb-2 text-blue-600">
+          The Energy Challenge & the Untapped Opportunity
+        </h2>
+        <p>
+          India generates over 500 million tonnes of agricultural residue every year—much of which is either burned in the open or left to decay, releasing CO₂, methane, and harmful particulates. Meanwhile, rural and industrial users still rely heavily on expensive fossil fuels and unreliable grid power. Converting crop residue into clean, affordable energy through biomass gasification turns an environmental liability into a valuable, low-carbon resource.
+        </p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold mb-2 text-blue-600">
+          What is a Biomass Gasifier?
+        </h2>
+        <p>
+          A biomass gasifier is an engineered reactor that converts solid organic matter—such as paddy straw, wheat stubble, cotton stalk, coconut shells, or sawdust—into a combustible gas called producer gas (a mix of CO, H₂, CH₄, and N₂). Think of it as a high-efficiency, controlled bonfire inside a sealed chamber: instead of smoke and ash, you get a versatile gaseous fuel. This green technology offers a cost-effective and eco-friendly alternative to traditional fuels like LPG and diesel, especially in remote or off-grid locations.
+        </p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold mb-2 text-blue-600">
+          How Does It Work?
+        </h2>
+        <ul class="list-disc ml-6 space-y-2">
+          <li>Crop residue is fed into the gasifier.</li>
+          <li>Inside, the fuel is heated at high temperatures in low oxygen.</li>
+          <li>This produces a clean-burning gas called producer gas.</li>
+          <li>The gas runs a generator, giving electricity, or is used directly for heating.</li>
+          <li><strong>No LPG, No Diesel – just pure Power from Agricultural Waste!</strong></li>
+        </ul>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold mb-2 text-blue-600">Why Crop Residue?</h2>
+        <ul class="list-disc ml-6 space-y-2">
+          <li><strong>Abundant & Affordable:</strong> India generates millions of tons of crop residue each year—much of which is left unused or mismanaged.</li>
+          <li><strong>Reduces Open-Field Burning:</strong> Helps reduce PM₂.₅ and NOₓ pollutants.</li>
+          <li><strong>Creates Income for Farmers:</strong> Agricultural residue becomes a valuable, sellable resource.</li>
+          <li><strong>Promotes Circular Economy:</strong> Biochar improves soil and locks carbon into the ground.</li>
+        </ul>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold mb-2 text-blue-600">Common Types of Crop Residue</h2>
+        <p>Biomass gasifiers can use:</p>
+        <ul class="list-disc ml-6 space-y-1">
+          <li>Cotton stalks</li>
+          <li>Paddy straw & wheat straw</li>
+          <li>Maize cobs & sugarcane bagasse</li>
+          <li>Mustard stalks & groundnut shells</li>
+          <li>Coconut shells & husk</li>
+          <li>Wood chips & sawdust</li>
+        </ul>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold mb-2 text-blue-600">
+          Environmental & Economic Benefits
+        </h2>
+        <p class="font-medium"> Environmental:</p>
+        <ul class="list-disc ml-6 mb-4">
+          <li>Reduces greenhouse gas emissions and black carbon</li>
+          <li>Replaces fossil fuels with renewable alternatives</li>
+          <li>Helps meet carbon credit targets</li>
+        </ul>
+
+        <p class="font-medium"> Economic:</p>
+        <ul class="list-disc ml-6">
+          <li>Saves 60–70% on LPG/diesel/furnace oil</li>
+          <li>Lowers cooking and process heat expenses</li>
+          <li>Creates rural employment opportunities</li>
+        </ul>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold mb-2 text-blue-600">Applications in India</h2>
+        <ul class="list-disc ml-6">
+          <li>Commercial Kitchens – dhabas, hostels, food stalls</li>
+          <li>Rural Microgrids – decentralized electricity generation</li>
+          <li>Agro-Processing Units – tea dryers, spice mills, rice mills</li>
+          <li>Industrial Heat – ceramic kilns, foundries</li>
+          <li>Carbon Farming – biochar for sustainable agriculture</li>
+        </ul>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold mb-2 text-blue-600">Why Choose ESB-R Gasifier?</h2>
+        <ul class="list-disc ml-6">
+          <li>100% flexibility: wood, pellets, briquettes, crop residue</li>
+          <li>Capacity from 5 kW to 1 MW+</li>
+          <li>Smokeless, low-maintenance, over 80% efficiency</li>
+          <li>Corrosion-resistant build, portable options available</li>
+          <li>Strong service support & training</li>
+        </ul>
+      </section>
+
+      <section class="bg-yellow-50 p-6 rounded-lg shadow mt-10">
+        <h2 class="text-xl font-bold text-yellow-700 mb-3">Conclusion: Powering the Future</h2>
+        <p>
+          A Biomass Gasifier is not just a machine—it’s a solution to India's dual challenge of crop waste and rural energy. It helps cut fuel costs, reduce pollution, empower communities, and unlock carbon credits.
+        </p>
+        <p class="mt-4 font-semibold text-gray-700">
+          👉 Switch to smart energy. Switch to a Biomass Gasifier.
+        </p>
+      </section>
+
+     <footer class="mt-16 bg-gradient-to-r from-blue-50 via-white to-yellow-50 py-6 shadow-inner rounded-lg">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h4 class="text-lg font-semibold text-gray-700 mb-2">Get in Touch with Enersol Biopower</h4>
+    <p class="text-gray-600 flex justify-center items-center gap-2 mb-1">
+       <span class="underline underline-offset-2">info@enersolbiopower.com</span>
+    </p>
+    <p class="text-gray-600 flex justify-center items-center gap-2 mb-1">
+      📞 +91-9414535665
+    </p>
+    <p class="text-gray-600 flex justify-center items-center gap-2 mb-3">
+      📍 Jaipur, Rajasthan
+    </p>
+    <a
+      href="https://www.enersolbiopower.com"
+      target="_blank"
+      class="inline-block mt-2 px-5 py-2 text-white bg-gradient-to-r from-blue-600 to-green-500 rounded-full font-medium hover:from-blue-700 hover:to-green-600 transition"
+    >
+      🌐 Visit enersolbiopower.com
+    </a>
+  </div>
+</footer>
+
+    </main>
+
+
+
+
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

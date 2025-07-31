@@ -411,12 +411,6 @@
           submitBtn.innerHTML = "Sending...";
 
           try {
-            // Send to FormSubmit.co
-            const response = await fetch("https://formsubmit.co/ajax/b9ece7636fd83d9b415825bb871c2ac2", {
-              method: "POST",
-              body: formData,
-            });
-
             // Create Email HTML
             const htmlContent = `
         <div style="max-width:600px;margin:0 auto;font-family:'Segoe UI',Roboto,sans-serif;color:#333;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;">
@@ -664,6 +658,30 @@
     </div>
   </footer>
   <script src="../js/main.js"></script>
+  <script>
+    window.ThundergitsBotConfig = {
+      apiUrl: 'https://custom-domain.com/api/',
+      conversationFlowUrl: 'https://bot-backend.thundergits.com/cdn/conversation/enersole-conversation-flow.json',
+      position: 'bottom-left', // bottom-right, bottom-left, top-right, top-left
+      theme: {
+        primaryColor: '#03459b',
+        secondaryColor: '#03459b',
+        textColor: '#1F2937',
+        backgroundColor: '#FFFFFF'
+      },
+      name: "Enersol Bio Power"
+    };
+  </script>
+  <script src="https://bot-backend.thundergits.com/cdn/bot.js"></script>
+
+
+  <!-- WhatsApp Floating Button -->
+  <div id="whatsApp-floating-btn"
+    class="fixed right-5 bottom-[10px] sm:right-4 sm:bottom-[10px] z-40 w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-full shadow-xl cursor-pointer flex items-center justify-center border border-green-600 transition-transform transform hover:scale-110 hover:shadow-2xl"
+    title="Chat on WhatsApp">
+    <img src="../assets/whatsApp-icon.png" alt="WhatsApp" class="w-12  sm:w-16" />
+  </div>
+  <script src="../js/whatsapp-btn.js"></script>
 </body>
 
 </html>

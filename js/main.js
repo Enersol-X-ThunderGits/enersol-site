@@ -32,6 +32,20 @@ var swiper = new Swiper('.mySwiper', {
         prevEl: '.swiper-button-prev',
     },
     effect: 'coverflow',  // Optional effect
+    // on: {
+    //     slideChangeTransitionEnd: function () {
+    //         // Reset all slides
+    //         this.slides.forEach(slide => {
+    //             slide.style.transform = 'scale(1)';
+    //             slide.style.zIndex = '1';
+    //         });
+
+    //         // Scale the active slide
+    //         const activeSlide = this.slides[this.activeIndex];
+    //         activeSlide.style.transform = 'scale(1.2)';
+    //         activeSlide.style.zIndex = '2';
+    //     }
+    // }
 });
 
 var productSwiper = new Swiper('.productSwiper', {

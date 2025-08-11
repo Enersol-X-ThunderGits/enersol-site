@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../assets/logo/fav-icon.png">
+    <link rel="icon" type="image/png" href="./assets/logo/fav-icon.png">
     <title>Blogs - Enersol Biopower</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -137,7 +137,7 @@
                 <!-- Logo -->
                 <div class="flex justify-start lg:w-0 lg:flex-1">
                     <a href="/">
-                        <img class="h-12 w-auto sm:h-14 object-contain" src="https://ik.imagekit.io/enersolbiopower/enersol/blogs-news/erersollogo.webp" alt="Enersol Biopower" style="min-width: 150px;">
+                        <img class="h-12 w-auto sm:h-14" src="../../assets/logo/erersollogo.webp" alt="Enersol Biopower">
                     </a>
                 </div>
                 <!-- Navbar collapse button (visible on small screens) -->
@@ -154,19 +154,19 @@
                 <!-- Links for large screens -->
                 <nav class="hidden md:flex space-x-10">
                     <a href="/" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
-                    <a href="./pages/about-us.html" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
-                    <a href="./pages/our-story.html" class="text-base font-medium text-white hover:text-accentYellow-light">Our Story</a>
-                    <a href="./pages/products.html" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
-                    <a href="./pages/blogs.html" class="text-base font-medium text-white hover:text-accentYellow-light">Blogs</a>
-                    <a href="./pages/contact-us.html" class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
+                    <a href="../about-us.html" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
+                    <a href="../our-story.html" class="text-base font-medium text-white hover:text-accentYellow-light">Our Story</a>
+                    <a href="../products.html" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+                    <a href="../blogs.html" class="text-base font-medium text-white hover:text-accentYellow-light">Blogs
+                    </a>
+                    <a href="../contact-us.html" class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
                 </nav>
 
                 <!-- Get a Quote button (visible on large screens) -->
                 <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                    <a href="mailto:info@example.com?subject=Quote%20Request&amp;body=Hi%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
+                    <a href="#" class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
                         Get a Quote
                     </a>
-
                 </div>
             </div>
         </div>
@@ -177,7 +177,7 @@
                 <div class="pt-5 pb-6 ">
                     <div class="flex items-center justify-between px-5">
                         <div>
-                            <img class="h-8 w-auto" src="https://ik.imagekit.io/enersolbiopower/enersol/blogs-news/erersollogo.webp" alt="Your Company">
+                            <img class="h-8 w-auto" src="../../assets/logo/erersollogo.webp" alt="Your Company">
                         </div>
                         <div class="-mr-2">
                             <button type="button" class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" onclick="toggleMobileMenu()">
@@ -192,20 +192,19 @@
                     <div class="mt-6 px-5 border-t border-gray-300 pt-5">
                         <nav class="grid gap-y-8">
                             <a href="/" class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
-                            <a href="./pages/about-us.html" class="text-base font-medium text-black hover:text-accentYellow-light">About Us</a>
-                            <a href="./pages/our-story.html" class="text-base font-medium text-black hover:text-accentYellow-light">Our Story</a>
-                            <a href="./pages/products.html" class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
-                            <a href="./pages/blogs.html" class="text-base font-medium text-black hover:text-accentYellow-light">Blogs</a>
-                            <a href="./pages/contact-us.html" class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
+                            <a href="../about-us.html" class="text-base font-medium text-black hover:text-accentYellow-light">About Us</a>
+                            <a href="../our-story.html" class="text-base font-medium text-black hover:text-accentYellow-light">Our Story</a>
+                            <a href="../products.html" class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
+                            <a href="../blogs.html" class="text-base font-medium text-black hover:text-accentYellow-light">Blogs</a>
+                            <a href="../contact-us.html" class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
                         </nav>
                     </div>
                 </div>
                 <div class="py-6 px-5 space-y-6">
                     <div>
-                        <a href="mailto:info@example.com?subject=Quote%20Request&amp;body=Hi%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
+                        <a href="#" class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
                             Get a Quote
                         </a>
-
                     </div>
                 </div>
             </div>
@@ -223,7 +222,7 @@
                     into Income</h1>
                 <!-- Article Entry -->
                 <article class="mb-10">
-                    <img class="w-full rounded-lg" src="https://ik.imagekit.io/enersolbiopower/enersol/blogs-news/parali-se-dhua-nhi.webp" alt="Sample Article">
+                    <img class="w-full rounded-lg" src="../../assets/blogs/parali-se-dhua-nhi.webp" alt="Sample Article">
 
 
 
@@ -402,28 +401,6 @@
 
     </main>
     <script src="../js/main.js"></script>
-    <script>
-        window.ThundergitsBotConfig = {
-            apiUrl: 'https://custom-domain.com/api/',
-            conversationFlowUrl: 'https://bot-backend.thundergits.com/cdn/conversation/enersole-conversation-flow.json',
-            position: 'bottom-left', // bottom-right, bottom-left, top-right, top-left
-            theme: {
-                primaryColor: '#03459b',
-                secondaryColor: '#03459b',
-                textColor: '#1F2937',
-                backgroundColor: '#FFFFFF'
-            },
-            name: "Enersol Bio Power"
-        };
-    </script>
-    <script src="https://bot-backend.thundergits.com/cdn/bot.js"></script>
-
-
-    <!-- WhatsApp Floating Button -->
-    <div id="whatsApp-floating-btn" class="fixed right-5 bottom-[10px] sm:right-4 sm:bottom-[10px] z-40 w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-full shadow-xl cursor-pointer flex items-center justify-center border border-green-600 transition-transform transform hover:scale-110 hover:shadow-2xl" title="Chat on WhatsApp">
-        <img src="https://ik.imagekit.io/enersolbiopower/enersol/blogs-news/whatsApp-icon.webp" alt="WhatsApp" class="w-12  sm:w-16">
-    </div>
-    <script src="../js/whatsapp-btn.js"></script>
 
 
 </body></html>

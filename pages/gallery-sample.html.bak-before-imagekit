@@ -102,25 +102,25 @@
 
     <div class="slider-container">
         <div class="slider">
-            <div class="slide"><img src="https://ik.imagekit.io/enersolbiopower/enersol/gallery-sample/2.webp" alt="Project Image"></div>
-            <div class="slide"><img src="https://ik.imagekit.io/enersolbiopower/enersol/gallery-sample/team.webp" alt="Event Image"></div>
-            <div class="slide"><img src="https://ik.imagekit.io/enersolbiopower/enersol/gallery-sample/president_house.webp" alt="Community Engagement"></div>
-            <div class="slide"><img src="https://ik.imagekit.io/enersolbiopower/enersol/gallery-sample/1N5A9081.webp" alt="Image 1N5A9081"></div>
-            <div class="slide"><img src="https://ik.imagekit.io/enersolbiopower/enersol/gallery-sample/DSC_0032.webp" alt="DSC 0032"></div>
-            <div class="slide"><img src="https://ik.imagekit.io/enersolbiopower/enersol/gallery-sample/DSC_0071.webp" alt="DSC 0071"></div>
-            <div class="slide"><img src="https://ik.imagekit.io/enersolbiopower/enersol/gallery-sample/DSC_0095.webp" alt="DSC 0095"></div>
-            <div class="slide"><img src="https://ik.imagekit.io/enersolbiopower/enersol/gallery-sample/DSC_1264.webp" alt="DSC 1264"></div>
-            <div class="slide"><img src="https://ik.imagekit.io/enersolbiopower/enersol/gallery-sample/DSC_2035.webp" alt="DSC 2035"></div>
-            <div class="slide"><img src="https://ik.imagekit.io/enersolbiopower/enersol/gallery-sample/DSC_8001.webp" alt="DSC 8001"></div>
-            <div class="slide"><img src="https://ik.imagekit.io/enersolbiopower/enersol/gallery-sample/DSC_9067.webp" alt="DSC 9067"></div>
-            <div class="slide"><img src="https://ik.imagekit.io/enersolbiopower/enersol/gallery-sample/IMAG0158.webp" alt="IMAG0158"></div>
+            <div class="slide"><img src="../assets/about-us/2.webp" alt="Project Image"></div>
+            <div class="slide"><img src="../assets/about-us/team.webp" alt="Event Image"></div>
+            <div class="slide"><img src="../assets/about-us/president house.webp" alt="Community Engagement"></div>
+            <div class="slide"><img src="../assets/our-story/1N5A9081.webp" alt="Image 1N5A9081"></div>
+            <div class="slide"><img src="../assets/our-story/DSC_0032.webp" alt="DSC 0032"></div>
+            <div class="slide"><img src="../assets/our-story/DSC_0071.webp" alt="DSC 0071"></div>
+            <div class="slide"><img src="../assets/our-story/DSC_0095.webp" alt="DSC 0095"></div>
+            <div class="slide"><img src="../assets/our-story/DSC_1264.webp" alt="DSC 1264"></div>
+            <div class="slide"><img src="../assets/our-story/DSC_2035.webp" alt="DSC 2035"></div>
+            <div class="slide"><img src="../assets/our-story/DSC_8001.webp" alt="DSC 8001"></div>
+            <div class="slide"><img src="../assets/our-story/DSC_9067.webp" alt="DSC 9067"></div>
+            <div class="slide"><img src="../assets/our-story/IMAG0158.webp" alt="IMAG0158"></div>
             <div class="slide"><img src="../assets/our-story/Mr Dahiya With James Camron.webp" alt="Mr Dahiya with James Cameron"></div>
             <div class="slide"><img src="../assets/our-story/Mr. Dahiya with Prithviraj Chouhan.webp" alt="Mr. Dahiya with Prithviraj Chauhan"></div>
-            <div class="slide"><img src="https://ik.imagekit.io/enersolbiopower/enersol/gallery-sample/With_APJ_Abdul_Kalam.webp" alt="With APJ Abdul Kalam">
+            <div class="slide"><img src="../assets/our-story/With APJ Abdul Kalam.webp" alt="With APJ Abdul Kalam">
             </div>
-            <div class="slide"><img src="https://ik.imagekit.io/enersolbiopower/enersol/gallery-sample/With_APJ_Abdul_Kalam1.webp" alt="With APJ Abdul Kalam 2">
+            <div class="slide"><img src="../assets/our-story/With APJ Abdul Kalam1.webp" alt="With APJ Abdul Kalam 2">
             </div>
-            <div class="slide"><img src="https://ik.imagekit.io/enersolbiopower/enersol/gallery-sample/With_APJ_Abdul_Kalam2.webp" alt="With APJ Abdul Kalam 3">
+            <div class="slide"><img src="../assets/our-story/With APJ Abdul Kalam2.webp" alt="With APJ Abdul Kalam 3">
             </div>
         </div>
 
@@ -224,7 +224,7 @@
 
     <!-- WhatsApp Floating Button -->
     <div id="whatsApp-floating-btn" class="fixed right-5 bottom-[10px] sm:right-4 sm:bottom-[10px] z-40 w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-full shadow-xl cursor-pointer flex items-center justify-center border border-green-600 transition-transform transform hover:scale-110 hover:shadow-2xl" title="Chat on WhatsApp">
-        <img src="https://ik.imagekit.io/enersolbiopower/enersol/gallery-sample/whatsApp-icon.webp" alt="WhatsApp" class="w-12  sm:w-16">
+        <img src="../assets/whatsApp-icon.webp" alt="WhatsApp" class="w-12  sm:w-16">
     </div>
     <script src="../js/whatsapp-btn.js"></script>
 

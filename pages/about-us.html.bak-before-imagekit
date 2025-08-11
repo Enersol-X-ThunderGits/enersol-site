@@ -232,7 +232,7 @@
                 <!-- Logo -->
                 <div class="flex justify-start lg:w-0 lg:flex-1">
                     <a href="/">
-                        <img class="h-12 w-auto sm:h-14" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/erersollogo.webp" alt="Enersol Biopower">
+                        <img class="h-12 w-auto sm:h-14" src="../assets/logo/erersollogo.webp" alt="Enersol Biopower">
                     </a>
                 </div>
                 <!-- Navbar collapse button (visible on small screens) -->
@@ -273,7 +273,7 @@
                 <div class="pt-5 pb-6 ">
                     <div class="flex items-center justify-between px-5">
                         <div>
-                            <img class="h-8 w-auto" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/erersollogo.webp" alt="Your Company">
+                            <img class="h-8 w-auto" src="../assets/logo/erersollogo.webp" alt="Your Company">
                         </div>
                         <div class="-mr-2">
                             <button type="button" class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" onclick="toggleMobileMenu()">
@@ -408,7 +408,7 @@
                 </div>
             </div>
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                <img class="object-cover object-center rounded" alt="sustainable energy" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/mission-01.webp">
+                <img class="object-cover object-center rounded" alt="sustainable energy" src="../assets/mission-01.webp">
             </div>
         </div>
     </section>
@@ -431,7 +431,7 @@
                 </div>
             </div>
             <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                <img class="object-cover object-center rounded" alt="community engagement" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Our-vissions.webp">
+                <img class="object-cover object-center rounded" alt="community engagement" src="../assets/about-us/Our-vissions.webp">
             </div>
         </div>
     </section>
@@ -443,7 +443,7 @@
 
         <div class="flex flex-wrap justify-center lg:space-x-10 space-y-10 items-center">
             <div class="flex justify-center mb-10">
-                <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/core_values_tree.webp" alt="Core Values Tree" class="w-full  h-auto object-contain rounded-lg ">
+                <img src="../assets/about-us/core_values_tree.webp" alt="Core Values Tree" class="w-full  h-auto object-contain rounded-lg ">
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full lg:w-1/2 position-relative">
 
@@ -451,7 +451,7 @@
                     <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center shadow-md core-value-icon">
                         <span class="text-3xl font-bold text-white">T</span>
                     </div>
-                    <img class="mt-5" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/team_works.webp" alt="">
+                    <img class="mt-5" src="../assets/core-values/team works.webp" alt="">
 
                 </div>
 
@@ -459,7 +459,7 @@
                     <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center shadow-md core-value-icon">
                         <span class="text-3xl font-bold text-white">E</span>
                     </div>
-                    <img class="mt-5" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Environment.webp" alt="">
+                    <img class="mt-5" src="../assets/core-values/Environment.webp" alt="">
 
                 </div>
 
@@ -467,7 +467,7 @@
                     <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center shadow-md core-value-icon">
                         <span class="text-3xl font-bold text-white">C</span>
                     </div>
-                    <img class="mt-5" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/customer_satisfactions.webp" alt="">
+                    <img class="mt-5" src="../assets/core-values/customer satisfactions.webp" alt="">
 
                 </div>
 
@@ -475,42 +475,42 @@
                     <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center shadow-md core-value-icon">
                         <span class="text-3xl font-bold text-white">H</span>
                     </div>
-                    <img class="mt-5" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Honesty___Integrity.webp" alt="">
+                    <img class="mt-5" src="../assets/core-values/Honesty &amp; Integrity.webp" alt="">
                 </div>
 
                 <div class="flex flex-col items-center bg-white shadow-lg rounded-lg px-8 py-6 border border-gray-300 core-value-alpha">
                     <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center shadow-md core-value-icon">
                         <span class="text-3xl font-bold text-white">N</span>
                     </div>
-                    <img class="mt-5" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Nature_Love.webp" alt="">
+                    <img class="mt-5" src="../assets/core-values/Nature Love.webp" alt="">
                 </div>
 
                 <div class="flex flex-col items-center bg-white shadow-lg rounded-lg px-8 py-6 border border-gray-300 core-value-alpha">
                     <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center shadow-md core-value-icon">
                         <span class="text-3xl font-bold text-white">I</span>
                     </div>
-                    <img class="mt-5" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/innovasion.webp" alt="">
+                    <img class="mt-5" src="../assets/core-values/innovasion.webp" alt="">
                 </div>
 
                 <div class="flex flex-col items-center bg-white shadow-lg rounded-lg px-8 py-6 border border-gray-300 core-value-alpha">
                     <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center shadow-md core-value-icon">
                         <span class="text-3xl font-bold text-white">Q</span>
                     </div>
-                    <img class="mt-5" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Quality_Assurance.webp" alt="">
+                    <img class="mt-5" src="../assets/core-values/Quality Assurance.webp" alt="">
                 </div>
 
                 <div class="flex flex-col items-center bg-white shadow-lg rounded-lg px-8 py-6 border border-gray-300 core-value-alpha">
                     <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center shadow-md core-value-icon">
                         <span class="text-3xl font-bold text-white">U</span>
                     </div>
-                    <img class="mt-5" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Unique_Culture.webp" alt="">
+                    <img class="mt-5" src="../assets/core-values/Unique Culture.webp" alt="">
                 </div>
 
                 <div class="flex flex-col items-center bg-white shadow-lg rounded-lg px-8 py-6 border border-gray-300 core-value-alpha">
                     <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center shadow-md core-value-icon">
                         <span class="text-3xl font-bold text-white">E</span>
                     </div>
-                    <img class="mt-5" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Excellence.webp" alt="">
+                    <img class="mt-5" src="../assets/core-values/Excellence.webp" alt="">
                 </div>
             </div>
         </div>
@@ -743,7 +743,7 @@
                 <!-- Additional content as detailed milestones -->
                 <div class="flex flex-col md:flex-row items-center text-center md:text-left">
                     <div class="md:w-1/3">
-                        <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/1st_Biomass_Gasifier.webp" alt="Cement-Based Underground Model" class="rounded-lg shadow-lg mb-4 md:mb-0">
+                        <img src="../assets/about-us/our-history/1st Biomass Gasifier.webp" alt="Cement-Based Underground Model" class="rounded-lg shadow-lg mb-4 md:mb-0">
                     </div>
                     <div class="md:w-2/3 md:pl-6">
                         <h3 class="text-xl font-semibold mb-2">Beginnings with Cement-Based Models</h3>
@@ -759,13 +759,13 @@
                             durability and efficiency, setting a new standard in the biomass energy sector.</p>
                     </div>
                     <div class="md:w-1/3 md:pl-6">
-                        <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/2nd_Biomass_Gasifier.JPG.webp" alt="Standalone Stainless Steel Gasifier" class="rounded-lg shadow-lg mb-4 md:mb-0">
+                        <img src="../assets/about-us/our-history/2nd Biomass Gasifier.JPG.webp" alt="Standalone Stainless Steel Gasifier" class="rounded-lg shadow-lg mb-4 md:mb-0">
                     </div>
 
                 </div>
                 <div class="flex flex-col md:flex-row items-center text-center md:text-left">
                     <div class="md:w-1/3">
-                        <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/3rd_Biomass_Gasifier.JPG.webp" alt="Portable Stainless Steel Gasifier" class="rounded-lg shadow-lg mb-4 md:mb-0">
+                        <img src="../assets/about-us/our-history/3rd Biomass Gasifier.JPG.webp" alt="Portable Stainless Steel Gasifier" class="rounded-lg shadow-lg mb-4 md:mb-0">
                     </div>
                     <div class="md:w-2/3 md:pl-6">
                         <h3 class="text-xl font-semibold mb-2">Innovation in Portability</h3>
@@ -781,13 +781,13 @@
                             technology suitable for residential areas and enhancing user comfort.</p>
                     </div>
                     <div class="md:w-1/3 md:pl-6">
-                        <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Final_Biomass_Gasifier.webp" alt="Soundproof Portable Gasifier" class="rounded-lg shadow-lg mb-4 md:mb-0">
+                        <img src="../assets/about-us/our-history/Final Biomass Gasifier.webp" alt="Soundproof Portable Gasifier" class="rounded-lg shadow-lg mb-4 md:mb-0">
                     </div>
 
                 </div>
                 <div class="flex flex-col md:flex-row items-center text-center md:text-left">
                     <div class="md:w-1/3">
-                        <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Final_Biomass_Gasifier.webp" alt="Dual Purpose Gasifier" class="rounded-lg shadow-lg mb-4 md:mb-0">
+                        <img src="../assets/about-us/our-history/Final Biomass Gasifier.webp" alt="Dual Purpose Gasifier" class="rounded-lg shadow-lg mb-4 md:mb-0">
                     </div>
                     <div class="md:w-2/3 md:pl-6">
                         <h3 class="text-xl font-semibold mb-2">Dual Purpose for Rural Empowerment</h3>
@@ -812,7 +812,7 @@
                 <!-- Team Member 1 -->
                 <div class="p-4 lg:w-1/4 md:w-1/2">
                     <div class="h-full flex flex-col items-center text-center bg-white rounded-lg overflow-hidden shadow-lg">
-                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Profile.webp">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="../assets/about-us/Profile.webp">
                         <div class="w-full">
                             <h2 class="title-font font-medium text-lg text-gray-900">Mr. Rai Singh Dahiya
                                 <br>(Grassroots
@@ -828,7 +828,7 @@
                 <!-- Team Member 2 -->
                 <div class="p-4 lg:w-1/4 md:w-1/2">
                     <div class="h-full flex flex-col items-center text-center bg-white rounded-lg overflow-hidden shadow-lg">
-                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Profile.webp">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="../assets/about-us/Profile.webp">
                         <div class="w-full">
                             <h2 class="title-font font-medium text-lg text-gray-900">Mrs. Neeru Chahar</h2>
                             <h3 class="text-gray-500 mb-3">Marketing Director</h3>
@@ -841,7 +841,7 @@
                 <!-- Team Member 3 -->
                 <div class="p-4 lg:w-1/4 md:w-1/2">
                     <div class="h-full flex flex-col items-center text-center bg-white rounded-lg overflow-hidden shadow-lg">
-                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Profile.webp">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="../assets/about-us/Profile.webp">
                         <div class="w-full">
                             <h2 class="title-font font-medium text-lg text-gray-900">Mr. Jai Dahiya</h2>
                             <h3 class="text-gray-500 mb-3">Director and Product Designer</h3>
@@ -854,7 +854,7 @@
                 <!-- Team Member 4 -->
                 <div class="p-4 lg:w-1/4 md:w-1/2">
                     <div class="h-full flex flex-col items-center text-center bg-white rounded-lg overflow-hidden shadow-lg">
-                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Profile.webp">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="../assets/about-us/Profile.webp">
                         <div class="w-full">
                             <h2 class="title-font font-medium text-lg text-gray-900">Dr. Raj Dahiya</h2>
                             <h3 class="text-gray-500 mb-3">Finance Director</h3>
@@ -867,7 +867,7 @@
                 <!-- Team Member 5 -->
                 <div class="p-4 lg:w-1/4 md:w-1/2">
                     <div class="h-full flex flex-col items-center text-center bg-white rounded-lg overflow-hidden shadow-lg">
-                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Profile.webp">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="../assets/about-us/Profile.webp">
                         <div class="w-full">
                             <h2 class="title-font font-medium text-lg text-gray-900">Mrs. Gayatri Dahiya</h2>
                             <h3 class="text-gray-500 mb-3">Marketing Head- Biomass Stove</h3>
@@ -881,7 +881,7 @@
                 <!-- Team Member 6 -->
                 <div class="p-4 lg:w-1/4 md:w-1/2">
                     <div class="h-full flex flex-col items-center text-center bg-white rounded-lg overflow-hidden shadow-lg">
-                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Profile.webp">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="../assets/about-us/Profile.webp">
                         <div class="w-full">
                             <h2 class="title-font font-medium text-lg text-gray-900">Mr. Monu Jakhar</h2>
                             <h3 class="text-gray-500 mb-3">Production Manager</h3>
@@ -937,7 +937,7 @@
                 <div class="swiper-wrapper">
                     <!-- Product Cards -->
                     <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-                        <img class="h-[220px] w-full object-cover" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/b1.webp" alt="Biomass Gasifier for Power Production">
+                        <img class="h-[220px] w-full object-cover" src="../assets/home/b1.webp" alt="Biomass Gasifier for Power Production">
                         <div class="p-4">
                             <h3 class="text-lg font-bold text-primary mb-2">Biomass Gasifier</h3>
                             <p class="text-gray-600 text-sm mb-4">Efficiently generates power using biomass as fuel,
@@ -948,7 +948,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-                        <img class="h-[220px] w-full object-cover" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Smokeless_Domestic_Biomass_Stove.webp" alt="Smokeless Biomass Stoves / Bhatti">
+                        <img class="h-[220px] w-full object-cover" src="../assets/home/Smokeless Domestic Biomass Stove.webp" alt="Smokeless Biomass Stoves / Bhatti">
                         <div class="p-4">
                             <h3 class="text-lg font-bold text-primary mb-2">Smokeless Domestic Biomass Stove </h3>
                             <p class="text-gray-600 text-sm mb-4">Provides an eco-friendly cooking solution with minimal
@@ -960,7 +960,7 @@
                     </div>
 
                     <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-                        <img class="h-[220px] w-full object-cover" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Smokeless_Commercial_Biomass_Stoves.webp" alt="Biomass Gasifier for Thermal Applications">
+                        <img class="h-[220px] w-full object-cover" src="../assets/home/Smokeless Commercial Biomass Stoves.webp" alt="Biomass Gasifier for Thermal Applications">
                         <div class="p-4">
                             <h3 class="text-lg font-bold text-primary mb-2">Smokeless Commercial Biomass Stoves</h3>
                             <p class="text-gray-600 text-sm mb-4">Converting biomass into a clean energy source.</p>
@@ -970,7 +970,7 @@
                     </div>
 
                     <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-                        <img class="h-[220px] w-full object-cover" style="background-color: rgb(42,159,211);" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Auto_Bio-Mawa_Machine.webp" alt="Biomass Gasifier for Thermal Applications">
+                        <img class="h-[220px] w-full object-cover" style="background-color: rgb(42,159,211);" src="../assets/home/Auto Bio-Mawa Machine.webp" alt="Biomass Gasifier for Thermal Applications">
                         <div class="p-4">
                             <h3 class="text-lg font-bold text-primary mb-2">Auto Bio-Mawa/Khoya Machine</h3>
                             <p class="text-gray-600 text-sm mb-4">Automates mawa (khoya) production using biomass
@@ -981,7 +981,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-                        <img class="h-[220px] w-full object-cover" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Biogas_Genset.webp" alt="Biomass Gasifier for Thermal Applications">
+                        <img class="h-[220px] w-full object-cover" src="../assets/home/Biogas Genset.webp" alt="Biomass Gasifier for Thermal Applications">
                         <div class="p-4">
                             <h3 class="text-lg font-bold text-primary mb-2">Biogas Genset</h3>
                             <p class="text-gray-600 text-sm mb-4"> Uses biogas to generate electricity, offering a
@@ -994,7 +994,7 @@
 
 
                     <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-                        <img class="h-[220px] w-full object-cover" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Biomass_Torrefaction__Bio-Char_Plant.webp" alt="Biomass Gasifier for Thermal Applications">
+                        <img class="h-[220px] w-full object-cover" src="../assets/home/Biomass Torrefaction  Bio-Char Plant.webp" alt="Biomass Gasifier for Thermal Applications">
                         <div class="p-4">
                             <h3 class="text-lg font-bold text-primary mb-2">Biomass Pyrolysis Plant (Bio-char Plant)
                             </h3>
@@ -1007,7 +1007,7 @@
                     </div>
 
                     <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-                        <img class="h-[220px] w-full object-cover" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Solid_Liquid_Separator__Dewatering_Machine_.webp" alt="Biogas/Syngas Generators">
+                        <img class="h-[220px] w-full object-cover" src="../assets/home/Solid Liquid Separator (Dewatering Machine).webp" alt="Biogas/Syngas Generators">
                         <div class="p-4">
                             <h3 class="text-lg font-bold text-primary mb-2">Solid Liquid Separator (Dewatering Machine)
                             </h3>
@@ -1022,7 +1022,7 @@
 
 
                     <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-                        <img class="h-[220px] w-full object-cover" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Used_Oil__Black_Engine_Oil__Distillation_Machine.webp" alt="Auto Bio-Mawa/Khoya Machine">
+                        <img class="h-[220px] w-full object-cover" src="../assets/home/Used Oil (Black Engine Oil) Distillation Machine.webp" alt="Auto Bio-Mawa/Khoya Machine">
                         <div class="p-4">
                             <h3 class="text-lg font-bold text-primary mb-2">Used Oil (Black Engine Oil) Distillation
                                 Machine</h3>
@@ -1035,7 +1035,7 @@
                     </div>
 
                     <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-                        <img class="h-[220px] w-full object-cover" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Control_Panel.webp" alt="Biomass Pyrolysis Plant (Bio-char Plant)">
+                        <img class="h-[220px] w-full object-cover" src="../assets/home/Control Panel.webp" alt="Biomass Pyrolysis Plant (Bio-char Plant)">
                         <div class="p-4">
                             <h3 class="text-lg font-bold text-primary mb-2">Control Panels</h3>
                             <p class="text-gray-600 text-sm mb-4">Electrical panels for industrial automation and power
@@ -1047,7 +1047,7 @@
                     </div>
 
                     <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-                        <img class="h-[220px] w-full object-cover" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Biomass_Shredder.JPG.webp" alt="Biomass Pyrolysis Plant (Bio-char Plant)">
+                        <img class="h-[220px] w-full object-cover" src="../assets/home/Biomass Shredder.JPG.webp" alt="Biomass Pyrolysis Plant (Bio-char Plant)">
                         <div class="p-4">
                             <h3 class="text-lg font-bold text-primary mb-2">Biomass Shredder</h3>
                             <p class="text-gray-600 text-sm mb-4"> Reduces biomass waste into smaller particles for
@@ -1059,7 +1059,7 @@
                     </div>
 
                     <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-                        <img class="h-[220px] w-full object-cover" style="background-color: rgb(42,159,211);" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/CNC_Hydraulic_Bending_Machine_Job_Work.webp" alt="Biomass Gasifier for Thermal Applications">
+                        <img class="h-[220px] w-full object-cover" style="background-color: rgb(42,159,211);" src="../assets/home/CNC Hydraulic Bending Machine Job Work.webp" alt="Biomass Gasifier for Thermal Applications">
                         <div class="p-4">
                             <h3 class="text-lg font-bold text-primary mb-2">CNC / Hydraulic Cutting and Bending Machine
                                 Job Work Job
@@ -1073,7 +1073,7 @@
                     </div>
 
                     <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-                        <img class="h-[220px] w-full object-cover" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/DG_Set_Canopy.webp" alt="Biomass Gasifier for Thermal Applications">
+                        <img class="h-[220px] w-full object-cover" src="../assets/home/DG Set Canopy.webp" alt="Biomass Gasifier for Thermal Applications">
                         <div class="p-4">
                             <h3 class="text-lg font-bold text-primary mb-2">DG Set Canopy</h3>
                             <p class="text-gray-600 text-sm mb-4">Converting biomass into a clean energy source.</p>
@@ -1161,7 +1161,7 @@
                     <!-- Adjusted Logo -->
                     </a><div class="flex justify-start lg:w-0 lg:flex-1"><a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
                         </a><a href="#">
-                            <img class="h-12 w-auto sm:h-14 object-contain" src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/erersollogo.webp" alt="Enersol Biopower" style="min-width: 150px;">
+                            <img class="h-12 w-auto sm:h-14 object-contain" src="../assets/logo/erersollogo.webp" alt="Enersol Biopower" style="min-width: 150px;">
                         </a>
                     </div>
 
@@ -1293,12 +1293,12 @@
         </div>
 
         <div class="brand-logo flex h-10 sm:h-14 bg-white p-3 justify-center gap-3 sm:gap-5">
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/nif-logo-1.webp" alt="">
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/gian.webp" alt="">
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp" alt="">
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/junagadh_agriculture_university.webp" alt="">
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/sustainable-energy.webp" alt="">
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Make_In_India_new.webp" alt="">
+            <img src="../assets/footer-logo/nif-logo-1.webp" alt="">
+            <img src="../assets/footer-logo/gian.webp" alt="">
+            <img src="../assets/footer-logo/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp" alt="">
+            <img src="../assets/footer-logo/junagadh_agriculture_university.webp" alt="">
+            <img src="../assets/footer-logo/sustainable-energy.webp" alt="">
+            <img src="../assets/footer-logo/Make_In_India_new.webp" alt="">
 
         </div>
         <!-- Footer Bottom Section -->
@@ -1356,7 +1356,7 @@
 
     <!-- WhatsApp Floating Button -->
     <div id="whatsApp-floating-btn" class="fixed right-5 bottom-[10px] sm:right-4 sm:bottom-[10px] z-40 w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-full shadow-xl cursor-pointer flex items-center justify-center border border-green-600 transition-transform transform hover:scale-110 hover:shadow-2xl" title="Chat on WhatsApp">
-        <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/whatsApp-icon.webp" alt="WhatsApp" class="w-12  sm:w-16">
+        <img src="../assets/whatsApp-icon.webp" alt="WhatsApp" class="w-12  sm:w-16">
     </div>
 
 

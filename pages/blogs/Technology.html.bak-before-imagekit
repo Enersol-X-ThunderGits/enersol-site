@@ -175,7 +175,7 @@
         <!-- Logo -->
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <a href="/">
-            <img class="h-12 w-auto sm:h-14" src="https://ik.imagekit.io/enersolbiopower/enersol/Technology/erersollogo.webp" alt="Enersol Biopower">
+            <img class="h-12 w-auto sm:h-14" src="../../assets/logo/erersollogo.webp" alt="Enersol Biopower">
           </a>
         </div>
         <!-- Navbar collapse button (visible on small screens) -->
@@ -216,7 +216,7 @@
         <div class="pt-5 pb-6 ">
           <div class="flex items-center justify-between px-5">
             <div>
-              <img class="h-8 w-auto" src="https://ik.imagekit.io/enersolbiopower/enersol/Technology/erersollogo.webp" alt="Your Company">
+              <img class="h-8 w-auto" src="../../assets/logo/erersollogo.webp" alt="Your Company">
             </div>
             <div class="-mr-2">
               <button type="button" class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" onclick="toggleMobileMenu()">
@@ -263,7 +263,7 @@
       Choosing the Right Technology for Sustainable Power in Rural &amp; Agro Applications
     </p>
 
-    <img src="https://ik.imagekit.io/enersolbiopower/enersol/Technology/difference_between_biogas_genset_and_biogas_gasifier.webp" alt="Biogas vs Biomass Gasifier" class="rounded-xl shadow-lg mb-8 w-full">
+    <img src="../../assets/blogs/difference_between_biogas_genset_and_biogas_gasifier.webp" alt="Biogas vs Biomass Gasifier" class="rounded-xl shadow-lg mb-8 w-full">
 
     <section class="mb-8">
       <h2 class="text-xl font-semibold mb-2 text-blue-600">What is a Biogas Genset?</h2>
@@ -429,7 +429,7 @@
 
   <!-- WhatsApp Floating Button -->
   <div id="whatsApp-floating-btn" class="fixed right-5 bottom-[10px] sm:right-4 sm:bottom-[10px] z-40 w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-full shadow-xl cursor-pointer flex items-center justify-center border border-green-600 transition-transform transform hover:scale-110 hover:shadow-2xl" title="Chat on WhatsApp">
-    <img src="https://ik.imagekit.io/enersolbiopower/enersol/Technology/whatsApp-icon.webp" alt="WhatsApp" class="w-12  sm:w-16">
+    <img src="../../assets/whatsApp-icon.webp" alt="WhatsApp" class="w-12  sm:w-16">
     <script src="../../js/whatsapp-btn.js"></script>
   </div>
 

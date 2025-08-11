@@ -165,7 +165,7 @@
                 <!-- Logo -->
                 <div class="flex justify-start lg:w-0 lg:flex-1">
                     <a href="/">
-                        <img class="h-12 w-auto sm:h-14" src="https://ik.imagekit.io/enersolbiopower/enersol/products/erersollogo.webp" alt="Enersol Biopower">
+                        <img class="h-12 w-auto sm:h-14" src="../assets/logo/erersollogo.webp" alt="Enersol Biopower">
                     </a>
                 </div>
                 <!-- Navbar collapse button (visible on small screens) -->
@@ -206,7 +206,7 @@
                 <div class="pt-5 pb-6 ">
                     <div class="flex items-center justify-between px-5">
                         <div>
-                            <img class="h-8 w-auto" src="https://ik.imagekit.io/enersolbiopower/enersol/products/erersollogo.webp" alt="Your Company">
+                            <img class="h-8 w-auto" src="../assets/logo/erersollogo.webp" alt="Your Company">
                         </div>
                         <div class="-mr-2">
                             <button type="button" class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" onclick="toggleMobileMenu()">
@@ -410,7 +410,7 @@
                     <!-- Adjusted Logo -->
                     </a><div class="flex justify-start lg:w-0 lg:flex-1"><a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
                         </a><a href="#">
-                            <img class="h-12 w-auto sm:h-14 object-contain" src="https://ik.imagekit.io/enersolbiopower/enersol/products/erersollogo.webp" alt="Enersol Biopower" style="min-width: 150px;">
+                            <img class="h-12 w-auto sm:h-14 object-contain" src="../assets/logo/erersollogo.webp" alt="Enersol Biopower" style="min-width: 150px;">
                         </a>
                     </div>
 
@@ -543,12 +543,12 @@
         </div>
 
         <div class="brand-logo flex h-10 sm:h-14 bg-white p-3 justify-center gap-3 sm:gap-5">
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/products/nif-logo-1.webp" alt="">
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/products/gian.webp" alt="">
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/products/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp" alt="">
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/products/junagadh_agriculture_university.webp" alt="">
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/products/sustainable-energy.webp" alt="">
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/products/Make_In_India_new.webp" alt="">
+            <img src="../assets/footer-logo/nif-logo-1.webp" alt="">
+            <img src="../assets/footer-logo/gian.webp" alt="">
+            <img src="../assets/footer-logo/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp" alt="">
+            <img src="../assets/footer-logo/junagadh_agriculture_university.webp" alt="">
+            <img src="../assets/footer-logo/sustainable-energy.webp" alt="">
+            <img src="../assets/footer-logo/Make_In_India_new.webp" alt="">
 
         </div>
         <!-- Footer Bottom Section -->
@@ -5176,7 +5176,7 @@
 
     <!-- WhatsApp Floating Button -->
     <div id="whatsApp-floating-btn" class="fixed right-5 bottom-[10px] sm:right-4 sm:bottom-[10px] z-40 w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-full shadow-xl cursor-pointer flex items-center justify-center border border-green-600 transition-transform transform hover:scale-110 hover:shadow-2xl" title="Chat on WhatsApp">
-        <img src="https://ik.imagekit.io/enersolbiopower/enersol/products/whatsApp-icon.webp" alt="WhatsApp" class="w-12  sm:w-16">
+        <img src="../assets/whatsApp-icon.webp" alt="WhatsApp" class="w-12  sm:w-16">
     </div>
     <script src="../js/whatsapp-btn.js"></script>
 

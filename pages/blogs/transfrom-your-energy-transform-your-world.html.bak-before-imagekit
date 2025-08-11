@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../assets/logo/fav-icon.png">
+    <link rel="icon" type="image/png" href="./assets/logo/fav-icon.png">
     <title>Blogs - Enersol Biopower</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -137,7 +137,7 @@
                 <!-- Logo -->
                 <div class="flex justify-start lg:w-0 lg:flex-1">
                     <a href="/">
-                        <img class="h-12 w-auto sm:h-14 object-contain" src="https://ik.imagekit.io/enersolbiopower/enersol/blogs-news/erersollogo.webp" alt="Enersol Biopower" style="min-width: 150px;">
+                        <img class="h-12 w-auto sm:h-14" src="../../assets/logo/erersollogo.webp" alt="Enersol Biopower">
                     </a>
                 </div>
                 <!-- Navbar collapse button (visible on small screens) -->
@@ -154,19 +154,19 @@
                 <!-- Links for large screens -->
                 <nav class="hidden md:flex space-x-10">
                     <a href="/" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
-                    <a href="./pages/about-us.html" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
-                    <a href="./pages/our-story.html" class="text-base font-medium text-white hover:text-accentYellow-light">Our Story</a>
-                    <a href="./pages/products.html" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
-                    <a href="./pages/blogs.html" class="text-base font-medium text-white hover:text-accentYellow-light">Blogs</a>
-                    <a href="./pages/contact-us.html" class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
+                    <a href="../about-us.html" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
+                    <a href="../our-story.html" class="text-base font-medium text-white hover:text-accentYellow-light">Our Story</a>
+                    <a href="../products.html" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+                    <a href="../blogs.html" class="text-base font-medium text-white hover:text-accentYellow-light">Blogs
+                    </a>
+                    <a href="../contact-us.html" class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
                 </nav>
 
                 <!-- Get a Quote button (visible on large screens) -->
                 <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                    <a href="mailto:info@example.com?subject=Quote%20Request&amp;body=Hi%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
+                    <a href="#" class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
                         Get a Quote
                     </a>
-
                 </div>
             </div>
         </div>
@@ -177,7 +177,7 @@
                 <div class="pt-5 pb-6 ">
                     <div class="flex items-center justify-between px-5">
                         <div>
-                            <img class="h-8 w-auto" src="https://ik.imagekit.io/enersolbiopower/enersol/blogs-news/erersollogo.webp" alt="Your Company">
+                            <img class="h-8 w-auto" src="../assets/logo/erersollogo.png" alt="Your Company">
                         </div>
                         <div class="-mr-2">
                             <button type="button" class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" onclick="toggleMobileMenu()">
@@ -192,20 +192,19 @@
                     <div class="mt-6 px-5 border-t border-gray-300 pt-5">
                         <nav class="grid gap-y-8">
                             <a href="/" class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
-                            <a href="./pages/about-us.html" class="text-base font-medium text-black hover:text-accentYellow-light">About Us</a>
-                            <a href="./pages/our-story.html" class="text-base font-medium text-black hover:text-accentYellow-light">Our Story</a>
-                            <a href="./pages/products.html" class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
-                            <a href="./pages/blogs.html" class="text-base font-medium text-black hover:text-accentYellow-light">Blogs</a>
-                            <a href="./pages/contact-us.html" class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
+                            <a href="../about-us.html" class="text-base font-medium text-black hover:text-accentYellow-light">About Us</a>
+                            <a href="../our-story.html" class="text-base font-medium text-black hover:text-accentYellow-light">Our Story</a>
+                            <a href="../products.html" class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
+                            <a href="../blogs.html" class="text-base font-medium text-black hover:text-accentYellow-light">Blogs</a>
+                            <a href="../contact-us.html" class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
                         </nav>
                     </div>
                 </div>
                 <div class="py-6 px-5 space-y-6">
                     <div>
-                        <a href="mailto:info@example.com?subject=Quote%20Request&amp;body=Hi%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
+                        <a href="#" class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
                             Get a Quote
                         </a>
-
                     </div>
                 </div>
             </div>
@@ -219,98 +218,95 @@
         <div class="flex flex-wrap -mx-4">
             <!-- Main Article Section -->
             <div class="w-full lg:w-2/3 px-4">
-                <h1 class="text-4xl font-bold text-gray-800 mb-7">From Stubble to Sustainability: Turning Crop Waste
-                    into Income</h1>
+                <h1 class="text-4xl font-bold text-gray-800 mb-7">Transform Your Energy, Transform Your World</h1>
                 <!-- Article Entry -->
                 <article class="mb-10">
-                    <img class="w-full rounded-lg" src="https://ik.imagekit.io/enersolbiopower/enersol/blogs-news/parali-se-dhua-nhi.webp" alt="Sample Article">
+                    <img class="w-full rounded-lg" src="https://images.unsplash.com/photo-1600150806237-a7dffed6b53c?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGluZGlhJTIwZmFybXxlbnwwfHwwfHx8MA%3D%3D" alt="Sample Article">
 
 
 
-                    <div class="max-w-4xl mx-auto bg-white mt-10">
+                    <div class="py-8 container mx-auto">
+                        <h2 class="text-2xl font-semibold text-gray-800">Introduction</h2>
+                        <p class="mt-2 text-gray-600">Energy is the driving force behind our daily lives, industries,
+                            and economies. However, our reliance on fossil fuels has led to severe environmental
+                            consequences, including pollution, climate change, and resource depletion. The solution lies
+                            in transforming our energy sources—shifting towards renewable and sustainable alternatives
+                            that not only power our lives but also preserve our planet for future generations.
 
-
-                        <p class="mt-4 text-lg">Agriculture is the backbone of India's economy, but it also generates a
-                            significant amount of crop residue, especially paddy stubble. Traditionally, farmers have
-                            resorted to burning this stubble, leading to severe environmental pollution, soil
-                            degradation, and health hazards. However, with technological advancements and sustainable
-                            solutions, farmers can now convert this waste into a profitable resource instead of letting
-                            it go up in smoke.</p>
-
-                        <h2 class="text-2xl font-semibold mt-6 text-green-600">The Problem: Stubble Burning and Its
-                            Consequences</h2>
-                        <ul class="list-disc list-inside mt-3 space-y-2">
-                            <li><strong>Air Pollution:</strong> Stubble burning releases harmful pollutants like carbon
-                                monoxide, nitrogen oxides, and particulate matter, leading to smog and respiratory
-                                diseases.</li>
-                            <li><strong>Soil Degradation:</strong> The heat from burning destroys essential soil
-                                microbes, reducing fertility and crop yield.</li>
-                            <li><strong>Climate Change:</strong> The release of greenhouse gases contributes to global
-                                warming.</li>
-                            <li><strong>Health Hazards:</strong> Increased respiratory issues, eye irritation, and
-                                cardiovascular diseases, especially in urban areas like Delhi.</li>
-                        </ul>
-
-                        <h2 class="text-2xl font-semibold mt-6 text-green-600">The Solution: Converting Crop Residue
-                            into a Profitable Resource</h2>
-                        <p class="mt-2">Instead of burning stubble, farmers can now leverage biomass technologies to
-                            transform agricultural waste into valuable products like <strong>biogas, biochar, pellets,
-                                and briquettes</strong>. Companies like <strong>Enersol Biopower Pvt. Ltd.</strong> are
-                            pioneering innovative waste-to-energy solutions that benefit both farmers and the
-                            environment.</p>
-
-                        <h3 class="text-xl font-semibold mt-4 text-green-500">1. Biogas Production</h3>
-                        <p>Biogas plants convert crop residue into <strong>clean energy</strong> for cooking, heating,
-                            and electricity generation. The by-product, digestate, serves as an excellent organic
-                            fertilizer.</p>
-
-                        <h3 class="text-xl font-semibold mt-4 text-green-500">2. Biochar: Enhancing Soil Fertility</h3>
-                        <p>Biochar, a carbon-rich material derived from crop residue, improves soil fertility, enhances
-                            water retention, and reduces the need for chemical fertilizers. It also sequesters carbon,
-                            mitigating climate change effects.</p>
-
-                        <h3 class="text-xl font-semibold mt-4 text-green-500">3. Biomass Pellets and Briquettes</h3>
-                        <p>Crop residue can be compressed into biomass pellets and briquettes, which serve as an
-                            eco-friendly alternative to coal in industries and power plants. This creates an additional
-                            income stream for farmers.</p>
-
-                        <h3 class="text-xl font-semibold mt-4 text-green-500">4. Biomass Gasification for Rural
-                            Electrification</h3>
-                        <p>Advanced biomass gasifiers, like those developed by <strong>Enersol Biopower</strong>,
-                            convert crop waste into producer gas, which can be used for <strong>off-grid power
-                                generation, irrigation, and community electrification</strong>.</p>
-
-                        <h2 class="text-2xl font-semibold mt-6 text-green-600">Economic Benefits for Farmers</h2>
-                        <ul class="list-disc list-inside mt-3 space-y-2">
-                            <li><strong>Earn Additional Income:</strong> Selling crop residue for biochar, pellets, or
-                                biogas can generate substantial revenue.</li>
-                            <li><strong>Reduce Fertilizer Costs:</strong> Biochar and digestate improve soil quality,
-                                reducing dependency on expensive chemical fertilizers.</li>
-                            <li><strong>Utilize On-Farm Energy:</strong> Biogas and biomass gasification provide
-                                affordable energy for farms, reducing reliance on costly diesel and electricity.</li>
-                        </ul>
-
-                        <h2 class="text-2xl font-semibold mt-6 text-green-600">Government Initiatives &amp; Support</h2>
-                        <ul class="list-disc list-inside mt-3 space-y-2">
-                            <li><strong>National Policy on Bio-Energy</strong> promoting biomass-based power generation.
-                            </li>
-                            <li><strong>Subsidies on Biogas and Biomass Pellet Machines</strong> under various rural
-                                development programs.</li>
-                            <li><strong>Happy Seeder and Super Straw Management System (SMS)</strong> machines at
-                                subsidized rates to manage stubble effectively.</li>
-                        </ul>
-
-                        <h2 class="text-2xl font-semibold mt-6 text-green-600">Conclusion</h2>
-                        <p class="mt-2">The transition from stubble burning to sustainable biomass utilization is not
-                            just an environmental necessity but an economic opportunity for farmers. By embracing
-                            <strong>waste-to-energy technologies</strong>, they can turn crop residue into a valuable
-                            asset, ensuring cleaner air, healthier soil, and increased income. The future lies in
-                            harnessing the power of biomass, and with the right support and technology, we can transform
-                            India's agricultural sector into a model of sustainability.
                         </p>
 
-                        <h2 class="text-xl font-bold text-center mt-6 text-green-700">Say No to Burning, Say Yes to
-                            Earning!</h2>
+                        <h2 class="text-2xl font-semibold text-gray-800 mt-6">The Need for Energy Transformation</h2>
+                        <h3 class="text-xl font-medium text-gray-700 mt-4">1. Environmental Impact</h3>
+                        <p class="text-gray-600">Fossil fuels contribute to greenhouse gas emissions, leading to global
+                            warming and environmental degradation. By adopting renewable energy, we can significantly
+                            reduce carbon footprints and create a healthier planet.</p>
+
+                        <h3 class="text-xl font-medium text-gray-700 mt-4">2. Economic Benefits</h3>
+                        <p class="text-gray-600">Investing in clean energy solutions such as biomass, solar, and wind
+                            reduces dependency on imported fossil fuels, creates jobs, and promotes energy independence.
+
+                        </p>
+
+                        <h3 class="text-xl font-medium text-gray-700 mt-4">3. Energy Accessibility</h3>
+                        <p class="text-gray-600">In many remote and rural areas, traditional power sources are
+                            unreliable or unavailable. Renewable energy provides a decentralized and accessible solution
+                            for electrification and economic growth.
+
+                        </p>
+
+                        <h2 class="text-2xl font-semibold text-gray-800 mt-6">Transforming Energy with Biomass Solutions
+                        </h2>
+                        <p class="text-gray-600">One of the most promising renewable energy sources is biomass, which
+                            converts organic waste into usable energy. Companies like <strong>Enersol Biopower Pvt.
+                                Ltd.</strong> are leading the way by providing innovative biomass gasifiers, biogas
+                            plants, and smokeless biomass stoves.
+
+                        </p>
+
+                        <h3 class="text-xl font-medium text-gray-700 mt-4">1. Biomass Gasifiers</h3>
+                        <p class="text-gray-600">These convert agricultural and forestry waste into producer gas, which
+                            can be used for electricity generation and industrial applications. This helps reduce
+                            reliance on diesel and coal.
+
+                        </p>
+
+                        <h3 class="text-xl font-medium text-gray-700 mt-4">2. Biogas Plants</h3>
+                        <p class="text-gray-600">By harnessing the power of organic waste, biogas plants produce clean
+                            cooking fuel and electricity while reducing landfill waste and methane emissions.
+
+                        </p>
+
+                        <h3 class="text-xl font-medium text-gray-700 mt-4">3. Smokeless Biomass Stoves</h3>
+                        <p class="text-gray-600">Designed for households and commercial use, these stoves provide an
+                            eco-friendly alternative to traditional firewood and LPG, reducing indoor air pollution and
+                            deforestation.
+
+                        </p>
+
+                        <h2 class="text-2xl font-semibold text-gray-800 mt-6">How You Can Transform Your World</h2>
+                        <h3 class="text-xl font-medium text-gray-700 mt-4">1. Adopt Renewable Energy</h3>
+                        <p class="text-gray-600">Switch to sustainable solutions like solar panels, wind turbines, and
+                            biomass energy for your home, business, or community.</p>
+
+                        <h3 class="text-xl font-medium text-gray-700 mt-4">2. Reduce Energy Waste</h3>
+                        <p class="text-gray-600">Simple actions such as using energy-efficient appliances, turning off
+                            unused lights, and insulating homes can lead to significant savings and environmental
+                            benefits.</p>
+
+                        <h3 class="text-xl font-medium text-gray-700 mt-4">3. Support Green Innovations</h3>
+                        <p class="text-gray-600">Encourage and invest in businesses and technologies that promote clean
+                            energy, such as Enersol Biopower’s waste-to-energy solutions.</p>
+
+                        <h3 class="text-xl font-medium text-gray-700 mt-4">4. Educate &amp; Advocate</h3>
+                        <p class="text-gray-600">Spread awareness about the importance of energy transformation in
+                            fighting climate change and achieving sustainability.</p>
+
+                        <h2 class="text-2xl font-semibold text-gray-800 mt-6">Conclusion</h2>
+                        <p class="text-gray-600">The transition to clean and renewable energy is no longer an option—it
+                            is a necessity. By transforming our energy sources, we can transform our world, creating a
+                            future that is sustainable, prosperous, and healthy for generations to come.</p>
+                        <p class="mt-4 text-center text-green-600 font-semibold">Join the movement—transform your
+                            energy, transform your world!</p>
                     </div>
                 </article>
                 <!-- Additional article entries can be added here with different placeholder images -->
@@ -402,28 +398,6 @@
 
     </main>
     <script src="../js/main.js"></script>
-    <script>
-        window.ThundergitsBotConfig = {
-            apiUrl: 'https://custom-domain.com/api/',
-            conversationFlowUrl: 'https://bot-backend.thundergits.com/cdn/conversation/enersole-conversation-flow.json',
-            position: 'bottom-left', // bottom-right, bottom-left, top-right, top-left
-            theme: {
-                primaryColor: '#03459b',
-                secondaryColor: '#03459b',
-                textColor: '#1F2937',
-                backgroundColor: '#FFFFFF'
-            },
-            name: "Enersol Bio Power"
-        };
-    </script>
-    <script src="https://bot-backend.thundergits.com/cdn/bot.js"></script>
-
-
-    <!-- WhatsApp Floating Button -->
-    <div id="whatsApp-floating-btn" class="fixed right-5 bottom-[10px] sm:right-4 sm:bottom-[10px] z-40 w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-full shadow-xl cursor-pointer flex items-center justify-center border border-green-600 transition-transform transform hover:scale-110 hover:shadow-2xl" title="Chat on WhatsApp">
-        <img src="https://ik.imagekit.io/enersolbiopower/enersol/blogs-news/whatsApp-icon.webp" alt="WhatsApp" class="w-12  sm:w-16">
-    </div>
-    <script src="../js/whatsapp-btn.js"></script>
 
 
 </body></html>

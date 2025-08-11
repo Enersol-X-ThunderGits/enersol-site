@@ -171,7 +171,7 @@
         <!-- Logo -->
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <a href="/">
-            <img class="h-12 w-auto sm:h-14" src="https://ik.imagekit.io/enersolbiopower/enersol/biogas-new-source-of-energy/erersollogo.webp" alt="Enersol Biopower">
+            <img class="h-12 w-auto sm:h-14" src="../../assets/logo/erersollogo.webp" alt="Enersol Biopower">
           </a>
         </div>
         <!-- Navbar collapse button (visible on small screens) -->
@@ -213,7 +213,7 @@
         <div class="pt-5 pb-6 ">
           <div class="flex items-center justify-between px-5">
             <div>
-              <img class="h-8 w-auto" src="https://ik.imagekit.io/enersolbiopower/enersol/biogas-new-source-of-energy/erersollogo.webp" alt="Your Company">
+              <img class="h-8 w-auto" src="../../assets/logo/erersollogo.webp" alt="Your Company">
             </div>
             <div class="-mr-2">
               <button type="button" class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" onclick="toggleMobileMenu()">

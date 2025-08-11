@@ -2,7 +2,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../assets/logo/fav-icon.png">
-    <title>Terms and Conditions - Enersol Biopower</title>
+    <title>Refund Policy - Enersol Biopower</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -128,7 +128,7 @@
                 <!-- Logo -->
                 <div class="flex justify-start lg:w-0 lg:flex-1">
                     <a href="/">
-                        <img class="h-12 w-auto sm:h-14" src="https://ik.imagekit.io/enersolbiopower/enersol/term-and-condition/erersollogo.webp" alt="Enersol Biopower">
+                        <img class="h-12 w-auto sm:h-14" src="../assets/logo/erersollogo.webp" alt="Enersol Biopower">
                     </a>
                 </div>
                 <!-- Navbar collapse button (visible on small screens) -->
@@ -158,6 +158,7 @@
                     <a href="mailto:info@example.com?subject=Quote%20Request&amp;body=Hi%2C%20I%20would%20like%20to%20get%20a%20quote." target="_blank" class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
                         Get a Quote
                     </a>
+
                 </div>
             </div>
         </div>
@@ -168,7 +169,7 @@
                 <div class="pt-5 pb-6 ">
                     <div class="flex items-center justify-between px-5">
                         <div>
-                            <img class="h-8 w-auto" src="https://ik.imagekit.io/enersolbiopower/enersol/term-and-condition/erersollogo.webp" alt="Your Company">
+                            <img class="h-8 w-auto" src="../assets/logo/erersollogo.webp" alt="Your Company">
                         </div>
                         <div class="-mr-2">
                             <button type="button" class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" onclick="toggleMobileMenu()">
@@ -204,93 +205,58 @@
     </div>
 
     <main class="max-w-4xl mx-auto px-4 py-10">
-        <h1 class="text-3xl font-bold text-primary-dark mb-4">Terms and Conditions</h1>
+        <h1 class="text-3xl font-bold text-primary-dark mb-4">Refund Policy</h1>
         <p class="text-sm text-gray-600 mb-8">Effective Date: June 13, 2025</p>
 
-        <p class="mb-4">These Terms and Conditions ("Terms") govern your use of the Enersol Biopower Pvt Ltd website
-            (<strong>enersolbiopower.com</strong>) and the purchase of products and services from Enersol Biopower Pvt
-            Ltd (“Company,” “we,” “us,” or “our”). By accessing our website or purchasing our products/services, you
-            agree to comply with and be bound by these Terms.</p>
+        <p class="mb-4">At Enersol Biopower Pvt Ltd, we are committed to delivering high-quality, innovative bioenergy
+            solutions and ensuring customer satisfaction. Please review our refund policy below, which applies to all
+            products and services purchased directly from Enersol Biopower Pvt Ltd through our official website or
+            authorized representatives.</p>
 
-        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">1. Acceptance of Terms</h2>
-        <p class="mb-4">By using this website or placing an order, you acknowledge that you have read, understood, and
-            agree to be bound by these Terms and Conditions. If you do not agree, please do not use our website or
-            services.</p>
-
-        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">2. Products and Services</h2>
+        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">1. Eligibility for Refunds</h2>
         <ul class="list-disc list-inside mb-4 space-y-1">
-            <li>All descriptions, images, and specifications of products on our website are for informational purposes
-                only. We reserve the right to modify or discontinue products at any time without notice.</li>
-            <li>Orders are subject to acceptance and availability. We may refuse or cancel any order at our discretion.
+            <li>Refunds are only applicable to products purchased directly from Enersol Biopower Pvt Ltd.</li>
+            <li>Custom-built or specially ordered equipment is generally non-refundable unless found to be defective or
+                not as described.</li>
+            <li>To be eligible for a refund, the product must be unused, in its original packaging, and returned within
+                7 days of delivery.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">2. Non-Refundable Items</h2>
+        <ul class="list-disc list-inside mb-4 space-y-1">
+            <li>Products damaged due to misuse, improper installation, or unauthorized modifications are not eligible
+                for a refund.</li>
+            <li>Consumables, spare parts, and any items marked as “final sale” or “non-returnable” are excluded from
+                refunds.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">3. Return Process</h2>
+        <ul class="list-disc list-inside mb-4 space-y-1">
+            <li>To initiate a return and request a refund, please contact our customer support team within 7 days of
+                receiving your order, providing your order number, details of the product, and the reason for return.
             </li>
+            <li>Our team will review your request and, if approved, provide instructions for returning the product.</li>
+            <li>The customer is responsible for return shipping costs unless the item is defective or the return is due
+                to an error on our part.</li>
         </ul>
 
-        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">3. Pricing and Payment</h2>
+        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">4. Inspection and Approval</h2>
         <ul class="list-disc list-inside mb-4 space-y-1">
-            <li>All prices are listed in Indian Rupees (INR) unless otherwise specified and are exclusive of applicable
-                taxes and shipping charges.</li>
-            <li>Payment must be made in full before the dispatch of products unless otherwise agreed in writing.</li>
+            <li>Once the returned product is received, it will be inspected for eligibility.</li>
+            <li>If the return is approved, a refund will be processed to your original payment method within 7–14
+                business days.</li>
+            <li>If the product is found ineligible for a refund, we will notify you and arrange for the product to be
+                returned to you at your expense.</li>
         </ul>
 
-        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">4. Delivery</h2>
+        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">5. Damaged or Defective Products</h2>
         <ul class="list-disc list-inside mb-4 space-y-1">
-            <li>Estimated delivery timelines are provided for reference and are not binding. Delays may occur due to
-                unforeseen circumstances.</li>
-            <li>Risk of loss and title for products pass to you upon delivery.</li>
+            <li>If you receive a damaged or defective product, please notify us within 48 hours of delivery with
+                photographic evidence.</li>
+            <li>We will arrange for a replacement, repair, or refund as appropriate at no additional cost to you.</li>
         </ul>
 
-        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">5. Returns and Refunds</h2>
-        <p class="mb-4">Please refer to our Refund Policy for details on eligibility, process, and conditions for
-            returns and refunds.</p>
-
-        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">6. Warranty</h2>
-        <ul class="list-disc list-inside mb-4 space-y-1">
-            <li>Our products are warranted to be free from defects in material and workmanship under normal use for a
-                period specified in the product documentation.</li>
-            <li>The warranty does not cover damage due to misuse, unauthorized modifications, or improper installation.
-            </li>
-        </ul>
-
-        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">7. Limitation of Liability</h2>
-        <ul class="list-disc list-inside mb-4 space-y-1">
-            <li>To the fullest extent permitted by law, Enersol Biopower Pvt Ltd shall not be liable for any indirect,
-                incidental, special, or consequential damages arising out of or related to the use or inability to use
-                our products or website.</li>
-            <li>Our total liability for any claim arising from your use of our products or services shall not exceed the
-                amount paid for the product or service in question.</li>
-        </ul>
-
-        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">8. Intellectual Property</h2>
-        <ul class="list-disc list-inside mb-4 space-y-1">
-            <li>All content on this website, including text, images, logos, and product designs, is the property of
-                Enersol Biopower Pvt Ltd or its licensors and is protected by applicable intellectual property laws.
-            </li>
-            <li>You may not copy, reproduce, distribute, or create derivative works from any content on this website
-                without our prior written consent.</li>
-        </ul>
-
-        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">9. User Conduct</h2>
-        <p class="mb-4">You agree not to use the website for any unlawful purpose or in any way that could harm,
-            disable, overburden, or impair our website or interfere with any other party’s use of the website.</p>
-
-        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">10. Privacy</h2>
-        <p class="mb-4">Your use of our website and services is subject to our Privacy Policy, which describes how we
-            collect, use, and protect your information.</p>
-
-        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">11. Force Majeure</h2>
-        <p class="mb-4">We are not liable for any failure or delay in performance due to causes beyond our reasonable
-            control, including natural disasters, strikes, or governmental actions.</p>
-
-        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">12. Governing Law and Dispute Resolution</h2>
-        <p class="mb-4">These Terms are governed by the laws of India. Any disputes arising under these Terms shall be
-            subject to the exclusive jurisdiction of the courts in Jaipur, Rajasthan, India.</p>
-
-        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">13. Changes to Terms</h2>
-        <p class="mb-4">We reserve the right to update or modify these Terms at any time. Changes will be effective upon
-            posting on our website. Your continued use of the website or services constitutes acceptance of the revised
-            Terms.</p>
-
-        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">14. Contact Information</h2>
+        <h2 class="text-xl font-semibold text-primary-dark mb-2 mt-6">6. Contact Information</h2>
         <p class="mb-1 font-medium">Enersol Biopower Private Limited</p>
         <p class="mb-1">Plot No. 57 A, Vrindavan Vihar, Akeda Dunder, Laxminarayanpura, VKI Road No. 19, Jaipur-302013
         </p>
@@ -307,7 +273,7 @@
                     <!-- Adjusted Logo -->
                     </a><div class="flex justify-start lg:w-0 lg:flex-1"><a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
                         </a><a href="#">
-                            <img class="h-12 w-auto sm:h-14 object-contain" src="https://ik.imagekit.io/enersolbiopower/enersol/term-and-condition/erersollogo.webp" alt="Enersol Biopower" style="min-width: 150px;">
+                            <img class="h-12 w-auto sm:h-14 object-contain" src="../assets/logo/erersollogo.webp" alt="Enersol Biopower" style="min-width: 150px;">
                         </a>
                     </div>
 
@@ -440,12 +406,12 @@
         </div>
 
         <div class="brand-logo flex h-10 sm:h-14 bg-white p-3 justify-center gap-3 sm:gap-5">
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/term-and-condition/nif-logo-1.webp" alt="">
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/term-and-condition/gian.webp" alt="">
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/term-and-condition/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp" alt="">
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/term-and-condition/junagadh_agriculture_university.webp" alt="">
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/term-and-condition/sustainable-energy.webp" alt="">
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/term-and-condition/Make_In_India_new.webp" alt="">
+            <img src="../assets/footer-logo/nif-logo-1.webp" alt="">
+            <img src="../assets/footer-logo/gian.webp" alt="">
+            <img src="../assets/footer-logo/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp" alt="">
+            <img src="../assets/footer-logo/junagadh_agriculture_university.webp" alt="">
+            <img src="../assets/footer-logo/sustainable-energy.webp" alt="">
+            <img src="../assets/footer-logo/Make_In_India_new.webp" alt="">
 
         </div>
         <!-- Footer Bottom Section -->
@@ -482,7 +448,6 @@
             </div>
         </div>
     </footer>
-
     <script>
         window.ThundergitsBotConfig = {
             apiUrl: 'https://custom-domain.com/api/',
@@ -502,7 +467,7 @@
 
     <!-- WhatsApp Floating Button -->
     <div id="whatsApp-floating-btn" class="fixed right-5 bottom-[10px] sm:right-4 sm:bottom-[10px] z-40 w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-full shadow-xl cursor-pointer flex items-center justify-center border border-green-600 transition-transform transform hover:scale-110 hover:shadow-2xl" title="Chat on WhatsApp">
-        <img src="./assets/whatsApp-icon.png" alt="WhatsApp" class="w-12  sm:w-16">
+        <img src="../assets/whatsApp-icon.webp" alt="WhatsApp" class="w-12  sm:w-16">
     </div>
     <script src="../js/whatsapp-btn.js"></script>
 

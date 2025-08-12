@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /imagekit-upload-log.txt
+Disallow: /*.bak-*
+Disallow: /assets/product.csv
+Disallow: /assets/product.mp4
+Disallow: /assets/Renewable%20Energy%20101%20%20National%20Geographic%20-%20National%20Geographic%20(720p,%20h264).mp4
+Disallow: /assets/videoplayback.mp4
+Disallow: /assets/catelogue-pdf/
+Disallow: /js/
+Disallow: /pages/*.bak-*
+
+Sitemap: https://enersolbiopower.com/sitemap.xml

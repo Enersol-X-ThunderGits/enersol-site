@@ -56,6 +56,21 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => toast.remove(), 3000);
     };
 
+    function showModal(title, bodyHtml) {
+        const modal = document.createElement("div");
+        modal.className = "fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50";
+        modal.innerHTML = `
+    <div class="bg-white p-6 rounded-lg max-w-md text-center shadow-lg animate-fadeIn">
+      <h3 class="text-xl font-semibold text-green-600 mb-2">${title}</h3>
+      <p class="text-gray-700 mb-4">${bodyHtml}</p>
+      <button class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded focus:outline-none close-modal">Close</button>
+    </div>
+  `;
+
+        document.body.appendChild(modal);
+        modal.querySelector(".close-modal").addEventListener("click", () => modal.remove());
+    }
+
     form.addEventListener("submit", async (e) => {
         e.preventDefault();
         submitBtn.disabled = true;
@@ -106,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
             if (response.ok) {
-                showToast("Submitted successfully ✅", true);
+                showModal("Submitted successfully", "Thank you for contacting <strong>Enersol Biopower</strong>! Our team will get back to you shortly via email.");
                 form.reset();
                 modal.classList.add("hidden");
             } else {

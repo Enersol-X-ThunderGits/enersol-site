@@ -1543,8 +1543,8 @@
           fetchpriority="low">
         <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 28 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
-          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/united_nations_development.webp" loading="lazy"
-          decoding="async" fetchpriority="low">
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/united_nations_development.webp"
+          loading="lazy" decoding="async" fetchpriority="low">
         <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 29 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/iiab.webp" loading="lazy" decoding="async"

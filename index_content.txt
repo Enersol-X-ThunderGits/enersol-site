@@ -2,192 +2,190 @@
 <html lang="en">
 
 <head>
-  <!DOCTYPE html>
-  <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link style="border-radius: 10px;" rel="icon" type="image/png"
-      href="https://ik.imagekit.io/enersolbiopower/enersol-bio-power-favicon.webp">
-    <link style="border-radius: 10px;" rel="icon" type="image/png"
-      href="https://ik.imagekit.io/enersolbiopower/enersol-bio-power-favicon.webp">
-    <title>ENERSOL BIOPOWER PRIVATE LIMITED</title>
-    <meta name="description"
-      content="Enersol Biopower: Your source for biomass energy solutions. We offer biomass gasifiers, gensets, stoves, and more for sustainable power.">
-    <link rel="preload" as="image"
-      href="https://ik.imagekit.io/enersolbiopower/biomass-burning-energy.webp?tr=w-1600,q-60,f-auto"
-      fetchpriority="high" imagesrcset="https://ik.imagekit.io/enersolbiopower/biomass-burning-energy.webp?tr=w-600,q-60,f-auto 600w,
-                   https://ik.imagekit.io/enersolbiopower/biomass-burning-energy.webp?tr=w-1600,q-60,f-auto 1600w"
-      imagesizes="100vw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link style="border-radius: 10px;" rel="icon" type="image/png"
+    href="https://ik.imagekit.io/enersolbiopower/enersol-bio-power-favicon.webp">
+  <link style="border-radius: 10px;" rel="icon" type="image/png"
+    href="https://ik.imagekit.io/enersolbiopower/enersol-bio-power-favicon.webp">
+  <title>ENERSOL BIOPOWER PRIVATE LIMITED</title>
+  <meta name="description"
+    content="Enersol Biopower: Your source for biomass energy solutions. We offer biomass gasifiers, gensets, stoves, and more for sustainable power.">
+  <link rel="preload" as="image" href="https://ik.imagekit.io/enersolbiopower/biomass-burning-energy.webp?tr=w-1600,q-60,f-auto"
+    fetchpriority="high" imagesrcset="https://ik.imagekit.io/enersolbiopower/biomass-burning-energy.webp?tr=w-600,q-60,f-auto 600w,
+                   https://ik.imagekit.io/enersolbiopower/biomass-burning-energy.webp?tr=w-1600,q-60,f-auto 1600w" imagesizes="100vw">
 
-    <meta name="google-site-verification" content="8K-i-0n7brdcI-LD3t2SC7ME6-w3lyMvILVnVbi-y2Y" />
+	<meta name="google-site-verification" content="8K-i-0n7brdcI-LD3t2SC7ME6-w3lyMvILVnVbi-y2Y" />
 
-    <style>
-      @keyframes scrollLeft {
-        0% {
-          transform: translateX(100%);
-        }
-
-        100% {
-          transform: translateX(-100%);
-        }
+  <style>
+    @keyframes scrollLeft {
+      0% {
+        transform: translateX(100%);
       }
 
-      .client-logos {
-        width: 100%;
-        overflow: hidden;
-        position: relative;
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .client-logos {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .logos {
+      display: flex;
+      width: calc(144px * 27);
+      /* Correctly attaches 'px' to '144' and adds proper spacing */
+      animation: scroll 30s linear infinite;
+    }
+
+    .logos img {
+
+      /* Adjust based on your image dimensions */
+
+      /* Adjust based on your image dimensions */
+      flex-shrink: 0;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
       }
 
-      .logos {
-        display: flex;
-        width: calc(144px * 27);
-        /* Correctly attaches 'px' to '144' and adds proper spacing */
-        animation: scroll 30s linear infinite;
+      100% {
+        transform: translateX(-120%);
+        /* Moves the logos by half of the total width over the animation duration */
       }
-
-      .logos img {
-
-        /* Adjust based on your image dimensions */
-
-        /* Adjust based on your image dimensions */
-        flex-shrink: 0;
-      }
-
-      @keyframes scroll {
-        0% {
-          transform: translateX(0);
-        }
-
-        100% {
-          transform: translateX(-120%);
-          /* Moves the logos by half of the total width over the animation duration */
-        }
-      }
-    </style>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              // Primary Colors
-              primary: {
-                DEFAULT: '#299FD3', // Blue
-                light: '#4FB5E0',  // Lighter shade of blue
-                dark: 'rgb(3 69 155)',   // Darker shade of blue
-              },
-              secondary: {
-                DEFAULT: '#C7D110', // Green
-                light: '#D4DB50',   // Lighter green
-                dark: '#909B0B',    // Darker green
-              },
-
-              // Accent Colors
-              accentYellow: {
-                DEFAULT: '#FED400',
-                light: '#FFE766',
-                dark: '#CCAA00',
-              },
-              accentRed: {
-                DEFAULT: '#9B1418',
-                light: '#C91B1F',
-                dark: '#740F12',
-              },
-
-              // Gradients
-              gradientBlueGreen: {
-                DEFAULT: 'linear-gradient(90deg, #299FD3 0%, #C7D110 100%)',
-              },
-              gradientYellowGreen: {
-                DEFAULT: 'linear-gradient(90deg, #FED400 0%, #C7D110 100%)',
-              },
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // Primary Colors
+            primary: {
+              DEFAULT: '#299FD3', // Blue
+              light: '#4FB5E0',  // Lighter shade of blue
+              dark: 'rgb(3 69 155)',   // Darker shade of blue
             },
-            keyframes: {
-              scrollLeft: {
-                '0%': { transform: 'translateX(100%)' },
-                '100%': { transform: 'translateX(-100%)' },
-              }
+            secondary: {
+              DEFAULT: '#C7D110', // Green
+              light: '#D4DB50',   // Lighter green
+              dark: '#909B0B',    // Darker green
             },
-            animation: {
-              scroll: 'scrollLeft 20s linear infinite',
-            }
 
+            // Accent Colors
+            accentYellow: {
+              DEFAULT: '#FED400',
+              light: '#FFE766',
+              dark: '#CCAA00',
+            },
+            accentRed: {
+              DEFAULT: '#9B1418',
+              light: '#C91B1F',
+              dark: '#740F12',
+            },
+
+            // Gradients
+            gradientBlueGreen: {
+              DEFAULT: 'linear-gradient(90deg, #299FD3 0%, #C7D110 100%)',
+            },
+            gradientYellowGreen: {
+              DEFAULT: 'linear-gradient(90deg, #FED400 0%, #C7D110 100%)',
+            },
           },
+          keyframes: {
+            scrollLeft: {
+              '0%': { transform: 'translateX(100%)' },
+              '100%': { transform: 'translateX(-100%)' },
+            }
+          },
+          animation: {
+            scroll: 'scrollLeft 20s linear infinite',
+          }
+
         },
-      };
-    </script>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer=""></script> -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
+      },
+    };
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer=""></script> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
 
-    <style>
-      [x-cloak] {
-        display: none;
-      }
+  <style>
+    [x-cloak] {
+      display: none;
+    }
 
-      .swiper-slide .slide-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
-        /* Gradient from transparent on the left to black with 50% opacity on the right */
-        z-index: 0;
-        /* Ensures overlay is below text content but above the image */
-      }
+    .swiper-slide .slide-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+      /* Gradient from transparent on the left to black with 50% opacity on the right */
+      z-index: 0;
+      /* Ensures overlay is below text content but above the image */
+    }
 
-      /* Initial state */
-      .fade-up-enter {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.9s ease-out, transform 0.9s ease-out;
-      }
+    /* Initial state */
+    .fade-up-enter {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+    }
 
-      /* Final state */
-      .fade-up-enter-active {
-        opacity: 1;
-        transform: translateY(0px);
-      }
+    /* Final state */
+    .fade-up-enter-active {
+      opacity: 1;
+      transform: translateY(0px);
+    }
 
+    .slide-1 {
+      background-image: url("https://ik.imagekit.io/enersolbiopower/biomass-burning-energy.webp");
+    }
+
+    .slide-2 {
+      background-image: url("https://ik.imagekit.io/enersolbiopower/agriculture-crop-residue-biofuel.webp");
+    }
+
+    .slide-3 {
+      background-image: url("https://ik.imagekit.io/enersolbiopower/affordable-efficient.webp");
+    }
+
+    .slide-4 {
+      background-image: url("https://ik.imagekit.io/enersolbiopower/sustainable-biomass-harvest.webp");
+    }
+
+    .slide-5 {
+      background-image: url("https://ik.imagekit.io/enersolbiopower/sustainable-biomass-harvest.webp");
+    }
+
+    @media screen and (max-width: 768px) {
       .slide-1 {
-        background-image: url("https://ik.imagekit.io/enersolbiopower/biomass-burning-energy.webp");
+        background-image: url('https://ik.imagekit.io/enersolbiopower/mobile-biomass-burning.webp?tr=w-600,q-60,f-auto');
       }
 
-      .slide-2 {
-        background-image: url("https://ik.imagekit.io/enersolbiopower/agriculture-crop-residue-biofuel.webp");
-      }
+
 
       .slide-3 {
-        background-image: url("https://ik.imagekit.io/enersolbiopower/affordable-efficient.webp");
+        background-image: url('https://ik.imagekit.io/enersolbiopower/mobile-galegi-plant.webp');
       }
-
-      .slide-4 {
-        background-image: url("https://ik.imagekit.io/enersolbiopower/sustainable-biomass-harvest.webp");
-      }
-
-      .slide-5 {
-        background-image: url("https://ik.imagekit.io/enersolbiopower/sustainable-biomass-harvest.webp");
-      }
-
-      @media screen and (max-width: 768px) {
-        .slide-1 {
-          background-image: url('https://ik.imagekit.io/enersolbiopower/mobile-biomass-burning.webp?tr=w-600,q-60,f-auto');
-        }
-
-
-
-        .slide-3 {
-          background-image: url('https://ik.imagekit.io/enersolbiopower/mobile-galegi-plant.webp');
-        }
-      }
-    </style>
-
-  </head>
+    }
+  </style>
+	
+</head>
 
 <body>
   <!-- Top bar above the main navbar -->
@@ -1545,8 +1543,8 @@
           fetchpriority="low">
         <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 28 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
-          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/united_nations_development.webp" loading="lazy"
-          decoding="async" fetchpriority="low">
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/united_nations_development.webp"
+          loading="lazy" decoding="async" fetchpriority="low">
         <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 29 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/iiab.webp" loading="lazy" decoding="async"

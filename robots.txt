@@ -1,0 +1,20 @@
+User-agent: *
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /imagekit-upload-log.txt
+Disallow: /*.bak-*
+Disallow: /assets/product.csv
+Disallow: /assets/product.mp4
+Disallow: /assets/Renewable%20Energy%20101%20%20National%20Geographic%20-%20National%20Geographic%20(720p,%20h264).mp4
+Disallow: /assets/videoplayback.mp4
+Disallow: /assets/catelogue-pdf/
+Disallow: /pages/*.bak-*
+
+# Make sure Google can see JS/CSS for rendering
+Allow: /js/
+Allow: /css/
+
+# Explicitly allow the new category page (optional)
+Allow: /pages/biomass-gasifier.html
+
+Sitemap: https://enersolbiopower.com/sitemap.xml

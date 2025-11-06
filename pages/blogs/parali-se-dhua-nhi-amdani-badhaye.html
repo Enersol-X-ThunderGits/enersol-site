@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/logo/fav-icon.png">
+    <title>Blogs - Enersol Biopower</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Primary Colors
+                        primary: {
+                            DEFAULT: '#299FD3', // Blue
+                            light: '#4FB5E0',  // Lighter shade of blue
+                            dark: 'rgb(3 69 155)',   // Darker shade of blue
+                        },
+                        secondary: {
+                            DEFAULT: '#C7D110', // Green
+                            light: '#D4DB50',   // Lighter green
+                            dark: '#909B0B',    // Darker green
+                        },
+
+                        // Accent Colors
+                        accentYellow: {
+                            DEFAULT: '#FED400',
+                            light: '#FFE766',
+                            dark: '#CCAA00',
+                        },
+                        accentRed: {
+                            DEFAULT: '#9B1418',
+                            light: '#C91B1F',
+                            dark: '#740F12',
+                        },
+
+                        // Gradients
+                        gradientBlueGreen: {
+                            DEFAULT: 'linear-gradient(90deg, #299FD3 0%, #C7D110 100%)',
+                        },
+                        gradientYellowGreen: {
+                            DEFAULT: 'linear-gradient(90deg, #FED400 0%, #C7D110 100%)',
+                        },
+                    },
+                },
+            },
+        };
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <!-- Top Bar and Navbar (same as About Us) -->
+    <!-- Top Bar -->
+    <div class="bg-gray-800 py-2">
+        <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+            <!-- Right: Social Links and Languages -->
+            <div class="flex flex-wrap justify-between w-full md:w-auto items-center space-x-4 ">
+                <div class="flex items-center space-x-2 text-white">
+                    <i class="ri-mail-line"></i>
+                    <a href="mailto:info@example.com">info@enersolbiopower.com</a>
+                </div>
+                <div class="flex space-x-2">
+                    <a href="https://www.facebook.com/enersolbiopwr" class="text-white">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy" class="text-white">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/enersol_biopower/" class="text-white">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/" class="text-white">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                </div>
+
+            </div>
+            <!-- Left: Contact Info -->
+            <div class="flex flex-wrap justify-between w-full md:w-auto space-x-4 mt-4 md:mt-0">
+
+                <div class="flex items-center space-x-2 text-white">
+                    <i class="ri-phone-line"></i>
+                    <a href="tel:+919414535665">+91-9414535665</a>
+                </div>
+                <div class="flex items-center space-x-2 text-white">
+                    <i class="ri-phone-line"></i>
+                    <a href="tel:+917073495200">+91-8239554433</a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Sticky Social Bar -->
+    <div id="sticky-social"
+        class="fixed top-1/3 left-2 z-50 hidden flex-col space-y-4 bg-black bg-opacity-60 p-2 rounded-lg">
+        <a href="https://www.facebook.com/enersolbiopwr" class="text-white text-2xl">
+            <i class="ri-facebook-fill"></i>
+        </a>
+        <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy" class="text-white text-2xl">
+            <i class="ri-youtube-fill"></i>
+        </a>
+        <a href="https://www.instagram.com/enersol_biopower/" class="text-white text-2xl">
+            <i class="ri-instagram-fill"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/" class="text-white text-2xl">
+            <i class="ri-linkedin-fill"></i>
+        </a>
+    </div>
+    <script>
+        const stickySocial = document.getElementById('sticky-social');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.scrollY;
+
+            if (currentScroll > 100) {
+                // User scrolled up past 100px
+                stickySocial.classList.add('flex');
+                stickySocial.classList.remove('hidden');
+            } else {
+                // User scrolling down or still near top
+                stickySocial.classList.add('hidden');
+                stickySocial.classList.remove('flex');
+            }
+
+            lastScroll = currentScroll;
+        });
+    </script>
+    <!-- Navbar component -->
+    <div class="bg-primary-dark sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+                <!-- Logo -->
+                <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <a href="/">
+                        <img class="h-12 w-auto sm:h-14" src="../../assets/logo/erersollogo.png" alt="Enersol Biopower">
+                    </a>
+                </div>
+                <!-- Navbar collapse button (visible on small screens) -->
+                <div class="-mr-2 -my-2 md:hidden">
+                    <button type="button"
+                        class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
+                        <span class="sr-only">Open menu</span>
+                        <!-- Icon for the button (hamburger icon) -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true" style="color: white;">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Links for large screens -->
+                <nav class="hidden md:flex space-x-10">
+                    <a href="/" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
+                    <a href="../about-us.html"
+                        class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
+                    <a href="../our-story.html"
+                        class="text-base font-medium text-white hover:text-accentYellow-light">Our Story</a>
+                    <a href="../products.html"
+                        class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+                    <a href="../blogs.html" class="text-base font-medium text-white hover:text-accentYellow-light">Blogs
+                    </a>
+                    <a href="../contact-us.html"
+                        class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
+                </nav>
+
+                <!-- Get a Quote button (visible on large screens) -->
+                <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                    <a href="#"
+                        class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
+                        Get a Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu, toggle classes based on menu state (open/closed) -->
+        <div class="fixed inset-y-0 right-0 w-3/4 bg-white text-white transform translate-x-full transition-transform duration-300 ease-in-out"
+            id="mobile-menu" style="display: none;z-index: 10;">
+            <div class="">
+                <div class="pt-5 pb-6 ">
+                    <div class="flex items-center justify-between px-5">
+                        <div>
+                            <img class="h-8 w-auto" src="../../assets/logo/erersollogo.png" alt="Your Company">
+                        </div>
+                        <div class="-mr-2">
+                            <button type="button"
+                                class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                                onclick="toggleMobileMenu()">
+                                <span class="sr-only">Close menu</span>
+                                <!-- Close icon -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-6 px-5 border-t border-gray-300 pt-5">
+                        <nav class="grid gap-y-8">
+                            <a href="/" class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
+                            <a href="../about-us.html"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">About Us</a>
+                            <a href="../our-story.html"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">Our Story</a>
+                            <a href="../products.html"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
+                            <a href="../blogs.html"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">Blogs</a>
+                            <a href="../contact-us.html"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="py-6 px-5 space-y-6">
+                    <div>
+                        <a href="#"
+                            class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
+                            Get a Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container mx-auto px-5 py-12">
+
+
+        <!-- Content Section -->
+        <div class="flex flex-wrap -mx-4">
+            <!-- Main Article Section -->
+            <div class="w-full lg:w-2/3 px-4">
+                <h1 class="text-4xl font-bold text-gray-800 mb-7">From Stubble to Sustainability: Turning Crop Waste
+                    into Income</h1>
+                <!-- Article Entry -->
+                <article class="mb-10">
+                    <img class="w-full rounded-lg" src="../../assets/blogs/parali-se-dhua-nhi.jpeg"
+                        alt="Sample Article">
+
+
+
+                    <div class="max-w-4xl mx-auto bg-white mt-10">
+
+
+                        <p class="mt-4 text-lg">Agriculture is the backbone of India's economy, but it also generates a
+                            significant amount of crop residue, especially paddy stubble. Traditionally, farmers have
+                            resorted to burning this stubble, leading to severe environmental pollution, soil
+                            degradation, and health hazards. However, with technological advancements and sustainable
+                            solutions, farmers can now convert this waste into a profitable resource instead of letting
+                            it go up in smoke.</p>
+
+                        <h2 class="text-2xl font-semibold mt-6 text-green-600">The Problem: Stubble Burning and Its
+                            Consequences</h2>
+                        <ul class="list-disc list-inside mt-3 space-y-2">
+                            <li><strong>Air Pollution:</strong> Stubble burning releases harmful pollutants like carbon
+                                monoxide, nitrogen oxides, and particulate matter, leading to smog and respiratory
+                                diseases.</li>
+                            <li><strong>Soil Degradation:</strong> The heat from burning destroys essential soil
+                                microbes, reducing fertility and crop yield.</li>
+                            <li><strong>Climate Change:</strong> The release of greenhouse gases contributes to global
+                                warming.</li>
+                            <li><strong>Health Hazards:</strong> Increased respiratory issues, eye irritation, and
+                                cardiovascular diseases, especially in urban areas like Delhi.</li>
+                        </ul>
+
+                        <h2 class="text-2xl font-semibold mt-6 text-green-600">The Solution: Converting Crop Residue
+                            into a Profitable Resource</h2>
+                        <p class="mt-2">Instead of burning stubble, farmers can now leverage biomass technologies to
+                            transform agricultural waste into valuable products like <strong>biogas, biochar, pellets,
+                                and briquettes</strong>. Companies like <strong>Enersol Biopower Pvt. Ltd.</strong> are
+                            pioneering innovative waste-to-energy solutions that benefit both farmers and the
+                            environment.</p>
+
+                        <h3 class="text-xl font-semibold mt-4 text-green-500">1. Biogas Production</h3>
+                        <p>Biogas plants convert crop residue into <strong>clean energy</strong> for cooking, heating,
+                            and electricity generation. The by-product, digestate, serves as an excellent organic
+                            fertilizer.</p>
+
+                        <h3 class="text-xl font-semibold mt-4 text-green-500">2. Biochar: Enhancing Soil Fertility</h3>
+                        <p>Biochar, a carbon-rich material derived from crop residue, improves soil fertility, enhances
+                            water retention, and reduces the need for chemical fertilizers. It also sequesters carbon,
+                            mitigating climate change effects.</p>
+
+                        <h3 class="text-xl font-semibold mt-4 text-green-500">3. Biomass Pellets and Briquettes</h3>
+                        <p>Crop residue can be compressed into biomass pellets and briquettes, which serve as an
+                            eco-friendly alternative to coal in industries and power plants. This creates an additional
+                            income stream for farmers.</p>
+
+                        <h3 class="text-xl font-semibold mt-4 text-green-500">4. Biomass Gasification for Rural
+                            Electrification</h3>
+                        <p>Advanced biomass gasifiers, like those developed by <strong>Enersol Biopower</strong>,
+                            convert crop waste into producer gas, which can be used for <strong>off-grid power
+                                generation, irrigation, and community electrification</strong>.</p>
+
+                        <h2 class="text-2xl font-semibold mt-6 text-green-600">Economic Benefits for Farmers</h2>
+                        <ul class="list-disc list-inside mt-3 space-y-2">
+                            <li><strong>Earn Additional Income:</strong> Selling crop residue for biochar, pellets, or
+                                biogas can generate substantial revenue.</li>
+                            <li><strong>Reduce Fertilizer Costs:</strong> Biochar and digestate improve soil quality,
+                                reducing dependency on expensive chemical fertilizers.</li>
+                            <li><strong>Utilize On-Farm Energy:</strong> Biogas and biomass gasification provide
+                                affordable energy for farms, reducing reliance on costly diesel and electricity.</li>
+                        </ul>
+
+                        <h2 class="text-2xl font-semibold mt-6 text-green-600">Government Initiatives & Support</h2>
+                        <ul class="list-disc list-inside mt-3 space-y-2">
+                            <li><strong>National Policy on Bio-Energy</strong> promoting biomass-based power generation.
+                            </li>
+                            <li><strong>Subsidies on Biogas and Biomass Pellet Machines</strong> under various rural
+                                development programs.</li>
+                            <li><strong>Happy Seeder and Super Straw Management System (SMS)</strong> machines at
+                                subsidized rates to manage stubble effectively.</li>
+                        </ul>
+
+                        <h2 class="text-2xl font-semibold mt-6 text-green-600">Conclusion</h2>
+                        <p class="mt-2">The transition from stubble burning to sustainable biomass utilization is not
+                            just an environmental necessity but an economic opportunity for farmers. By embracing
+                            <strong>waste-to-energy technologies</strong>, they can turn crop residue into a valuable
+                            asset, ensuring cleaner air, healthier soil, and increased income. The future lies in
+                            harnessing the power of biomass, and with the right support and technology, we can transform
+                            India's agricultural sector into a model of sustainability.
+                        </p>
+
+                        <h2 class="text-xl font-bold text-center mt-6 text-green-700">Say No to Burning, Say Yes to
+                            Earning!</h2>
+                    </div>
+                </article>
+                <!-- Additional article entries can be added here with different placeholder images -->
+            </div>
+
+            <!-- Sidebar -->
+            <div class="w-full lg:w-1/3 px-4">
+                <div class="p-6 bg-white rounded-lg shadow-md sticky top-20">
+                    <!-- Search -->
+                    <div class="mb-6">
+                        <label for="search" class="block text-sm font-medium text-gray-700">Search</label>
+                        <input type="text" id="search" name="search"
+                            class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="mb-6">
+                        <h3 class="font-semibold text-gray-700 mb-3">Categories</h3>
+                        <ul class="text-gray-600">
+                            <li class="mb-2"><a href="#" class="hover:text-indigo-600">Renewable Energy</a></li>
+                            <li class="mb-2"><a href="#" class="hover:text-indigo-600">Technology Innovations</a></li>
+                            <li class="mb-2"><a href="#" class="hover:text-indigo-600">Company News</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Recent Posts -->
+                    <div class="mb-6">
+                        <h3 class="font-semibold text-gray-700 mb-3">Recent Posts</h3>
+                        <ul class="text-gray-600">
+                            <li class="mb-2"><a href="#" class="hover:text-indigo-600">The Future of Bioenergy in
+                                    2025</a></li>
+                            <li class="mb-2"><a href="#" class="hover:text-indigo-600">Enersol's New Biogas Plant
+                                    Initiative</a></li>
+                            <li class="mb-2"><a href="#" class="hover:text-indigo-600">Sustainability and Energy
+                                    Efficiency</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Section with Smaller News Cards -->
+            <section class="my-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-5">Latest News</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- News Card -->
+                    <div class="bg-white rounded-lg shadow p-4">
+                        <img class="w-full h-32 object-cover rounded"
+                            src="https://plus.unsplash.com/premium_photo-1707080369554-359143c6aa0b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmV3c3xlbnwwfHwwfHx8MA%3D%3D"
+                            alt="News Image">
+                        <div class="mt-2">
+                            <h3 class="text-lg font-semibold text-gray-800"><a href="#" class="hover:underline">Enersol
+                                    Launches New Product Line</a></h3>
+                            <p class="text-sm text-gray-500">June 25, 2025</p>
+                            <p class="text-gray-600 text-sm">Enersol Biopower introduces a new range of eco-friendly
+                                biogas systems tailored for small farms.</p>
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 text-sm mt-2 inline-block">Read
+                                More →</a>
+                        </div>
+                    </div>
+
+                    <!-- More News Cards -->
+                    <div class="bg-white rounded-lg shadow p-4">
+                        <img class="w-full h-32 object-cover rounded"
+                            src="https://plus.unsplash.com/premium_photo-1707080369554-359143c6aa0b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmV3c3xlbnwwfHwwfHx8MA%3D%3D"
+                            alt="News Image">
+                        <div class="mt-2">
+                            <h3 class="text-lg font-semibold text-gray-800"><a href="#"
+                                    class="hover:underline">Sustainability Conference 2025</a></h3>
+                            <p class="text-sm text-gray-500">May 15, 2025</p>
+                            <p class="text-gray-600 text-sm">Join us at the annual Sustainability Conference to discuss
+                                the future of renewable energy.</p>
+                            <a href="#" class="text-indigo-600 hover:text-indigo-800 text-sm mt-2 inline-block">Read
+                                More →</a>
+                        </div>
+                    </div>
+
+                    <!-- Additional News Cards -->
+                    <!-- Add more cards with similar structure -->
+                </div>
+            </section>
+
+        </div>
+
+
+        <!-- Pagination Controls -->
+        <div class="mt-10">
+            <div class="flex justify-between items-center">
+                <a href="#"
+                    class="bg-white border border-gray-300 py-2 px-4 text-gray-500 hover:bg-gray-100 rounded">Previous</a>
+                <a href="#"
+                    class="bg-white border border-gray-300 py-2 px-4 text-gray-500 hover:bg-gray-100 rounded">Next</a>
+            </div>
+        </div>
+
+
+
+
+    </main>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="./assets/logo/fav-icon.png">
-  <title>Blogs & News - Enersol Biopower</title>
+  <title>Blogs &amp; News - Enersol Biopower</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -49,8 +49,8 @@
     };
   </script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer=""></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
@@ -100,21 +100,29 @@
     </div>
   </div>
   <!-- Sticky Social Bar -->
-  <div id="sticky-social"
-    class="fixed top-1/3 left-2 z-50 hidden flex-col space-y-4 bg-black bg-opacity-60 p-2 rounded-lg">
-    <a href="https://www.facebook.com/enersolbiopwr" class="text-white text-2xl">
-      <i class="ri-facebook-fill"></i>
-    </a>
-    <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy" class="text-white text-2xl">
-      <i class="ri-youtube-fill"></i>
-    </a>
-    <a href="https://www.instagram.com/enersol_biopower/" class="text-white text-2xl">
-      <i class="ri-instagram-fill"></i>
-    </a>
-    <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/" class="text-white text-2xl">
-      <i class="ri-linkedin-fill"></i>
-    </a>
-  </div>
+<div id="sticky-social"
+  class="fixed top-1/3 left-2 z-50 hidden flex-col space-y-2 bg-black bg-opacity-60 p-2.5 rounded-lg shadow-md">
+  
+  <a href="https://www.facebook.com/enersolbiopwr" 
+     class="text-white text-[28px] hover:text-blue-500 transition duration-300">
+    <i class="ri-facebook-fill"></i>
+  </a>
+
+  <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy" 
+     class="text-white text-[28px] hover:text-red-500 transition duration-300">
+    <i class="ri-youtube-fill"></i>
+  </a>
+
+  <a href="https://www.instagram.com/enersol_biopower/" 
+     class="text-white text-[28px] hover:text-pink-500 transition duration-300">
+    <i class="ri-instagram-fill"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/" 
+     class="text-white text-[28px] hover:text-blue-400 transition duration-300">
+    <i class="ri-linkedin-fill"></i>
+  </a>
+</div>
   <script>
     const stickySocial = document.getElementById('sticky-social');
 
@@ -141,7 +149,10 @@
         <!-- Logo -->
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <a href="/">
-            <img class="h-12 w-auto sm:h-14" src="../../assets/logo/erersollogo.png" alt="Enersol Biopower">
+            <img class="h-12 w-auto sm:h-14 lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              alt="Enersol Biopower"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/revolutionizing-urban-cooking/erersollogo.webp"
+              loading="lazy" decoding="async" fetchpriority="low">
           </a>
         </div>
         <!-- Navbar collapse button (visible on small screens) -->
@@ -153,7 +164,7 @@
             <!-- Icon for the button (hamburger icon) -->
             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
               stroke="currentColor" aria-hidden="true" style="color: white;">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
           </button>
         </div>
@@ -165,7 +176,7 @@
           <a href="../our-story.html" class="text-base font-medium text-white hover:text-accentYellow-light">Our
             Story</a>
           <a href="../products.html" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
-          <a href="../blogs.html" class="text-base font-medium text-white hover:text-accentYellow-light">Blogs &
+          <a href="../blogs.html" class="text-base font-medium text-white hover:text-accentYellow-light">Blogs &amp;
             News</a>
           <a href="../contact-us.html" class="text-base font-medium text-white hover:text-accentYellow-light">Contact
             Us</a>
@@ -189,7 +200,9 @@
         <div class="pt-5 pb-6 ">
           <div class="flex items-center justify-between px-5">
             <div>
-              <img class="h-8 w-auto" src="../../assets/logo/erersollogo.png" alt="Your Company">
+              <img class="h-8 w-auto lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Your Company"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/revolutionizing-urban-cooking/erersollogo.webp"
+                loading="lazy" decoding="async" fetchpriority="low">
             </div>
             <div class="-mr-2">
               <button type="button"
@@ -199,7 +212,7 @@
                 <!-- Close icon -->
                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
               </button>
             </div>
@@ -213,7 +226,7 @@
                 Story</a>
               <a href="../products.html"
                 class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
-              <a href="../blogs.html" class="text-base font-medium text-black hover:text-accentYellow-light">Blogs &
+              <a href="../blogs.html" class="text-base font-medium text-black hover:text-accentYellow-light">Blogs &amp;
                 News</a>
               <a href="../contact-us.html"
                 class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
@@ -243,12 +256,9 @@
           Commercial Biomass Stoves</h1>
         <!-- Article Entry -->
         <article class="mb-10">
-          <img class="w-full rounded-lg" src="../../assets/products/bhatti/bio-nature.jpg"
-            alt="Commercial Biomass Stove in Urban Kitchen">
 
           <div class="max-w-4xl mx-auto bg-white mt-10">
             <p class="mt-4 text-lg">
-              Urban kitchens, from restaurants and canteens to sweet shops and schools, have long relied on LPG as the
               primary fuel source. While LPG offers convenience and fast heating, it also brings challenges such as
               rising fuel costs, safety concerns, and environmental impact. As sustainability becomes a priority, the
               shift toward <strong>commercial biomass stoves</strong> presents a practical and eco-friendly alternative.
@@ -309,14 +319,14 @@
               <li><strong>Energy Security:</strong> Independence from LPG supply chains and imports.</li>
             </ul>
 
-            <h2 class="text-2xl font-semibold mt-6 text-green-600">Use Cases & Real-World Impact</h2>
+            <h2 class="text-2xl font-semibold mt-6 text-green-600">Use Cases &amp; Real-World Impact</h2>
             <p class="mt-2">
               Enersol’s commercial biomass stoves have been successfully deployed in numerous urban kitchens across
               India. These systems have not only lowered operational costs but also enhanced kitchen safety and reduced
               air pollution. Positive feedback from business owners highlights their efficiency and ease of adoption.
             </p>
 
-            <h2 class="text-2xl font-semibold mt-6 text-green-600">Government Support & Subsidies</h2>
+            <h2 class="text-2xl font-semibold mt-6 text-green-600">Government Support &amp; Subsidies</h2>
             <ul class="list-disc list-inside mt-3 space-y-2">
               <li><strong>Subsidies for Biomass Equipment:</strong> Offered through rural and urban energy programs.
               </li>
@@ -380,9 +390,10 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <!-- News Card -->
           <div class="bg-white rounded-lg shadow p-4">
-            <img class="w-full h-32 object-cover rounded"
-              src="https://plus.unsplash.com/premium_photo-1707080369554-359143c6aa0b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmV3c3xlbnwwfHwwfHx8MA%3D%3D"
-              alt="News Image">
+            <img class="w-full h-32 object-cover rounded lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              alt="News Image"
+              data-src="https://plus.unsplash.com/premium_photo-1707080369554-359143c6aa0b?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmV3c3xlbnwwfHwwfHx8MA%3D%3D"
+              loading="lazy" decoding="async" fetchpriority="low">
             <div class="mt-2">
               <h3 class="text-lg font-semibold text-gray-800"><a href="#" class="hover:underline">Enersol Launches New
                   Product Line</a></h3>
@@ -395,9 +406,10 @@
 
           <!-- More News Cards -->
           <div class="bg-white rounded-lg shadow p-4">
-            <img class="w-full h-32 object-cover rounded"
-              src="https://plus.unsplash.com/premium_photo-1707080369554-359143c6aa0b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmV3c3xlbnwwfHwwfHx8MA%3D%3D"
-              alt="News Image">
+            <img class="w-full h-32 object-cover rounded lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              alt="News Image"
+              data-src="https://plus.unsplash.com/premium_photo-1707080369554-359143c6aa0b?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmV3c3xlbnwwfHwwfHx8MA%3D%3D"
+              loading="lazy" decoding="async" fetchpriority="low">
             <div class="mt-2">
               <h3 class="text-lg font-semibold text-gray-800"><a href="#" class="hover:underline">Sustainability
                   Conference 2025</a></h3>
@@ -430,6 +442,42 @@
 
   </main>
   <script src="../js/main.js"></script>
+
+
+
+  <style data-lazy-css="1">
+    img.lazy {
+      opacity: 0;
+      transition: opacity .35s ease;
+    }
+
+    img.lazy.loaded {
+      opacity: 1;
+    }
+  </style>
+
+  <script data-lazy-loader="1">
+    (function () {
+      const SEL = "img.lazy[data-src]";
+      function loadNow(img) {
+        img.src = img.dataset.src;
+        img.onload = function () { img.classList.add("loaded"); };
+        img.removeAttribute("data-src");
+      }
+      if (!("IntersectionObserver" in window)) {
+        document.querySelectorAll(SEL).forEach(loadNow);
+        return;
+      }
+      const io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          loadNow(entry.target);
+          io.unobserve(entry.target);
+        });
+      }, { rootMargin: "250px 0px" });
+      document.querySelectorAll(SEL).forEach(function (img) { io.observe(img); });
+    })();
+  </script>
 </body>
 
 </html>

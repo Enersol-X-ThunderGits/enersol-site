@@ -8,6 +8,7 @@ Disallow: /assets/product.mp4
 Disallow: /assets/Renewable%20Energy%20101%20%20National%20Geographic%20-%20National%20Geographic%20(720p,%20h264).mp4
 Disallow: /assets/videoplayback.mp4
 Disallow: /assets/catelogue-pdf/
+<<<<<<< HEAD
 Disallow: /pages/*.bak-*
 
 # Make sure Google can see JS/CSS for rendering
@@ -18,3 +19,9 @@ Allow: /css/
 Allow: /pages/biomass-gasifier.html
 
 Sitemap: https://enersolbiopower.com/sitemap.xml
+=======
+Disallow: /js/
+Disallow: /pages/*.bak-*
+
+Sitemap: https://enersolbiopower.com/sitemap.xml
+>>>>>>> dev

@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
     rel="stylesheet">
   <script>
     tailwind.config = {
@@ -75,8 +75,8 @@
     };
   </script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer=""></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <style>
@@ -174,21 +174,29 @@
 
 
   <!-- Sticky Social Bar -->
-  <div id="sticky-social"
-    class="fixed top-1/3 left-2 z-50 hidden flex-col space-y-4 bg-black bg-opacity-60 p-2 rounded-lg">
-    <a href="https://www.facebook.com/enersolbiopwr" class="text-white text-2xl">
-      <i class="ri-facebook-fill"></i>
-    </a>
-    <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy" class="text-white text-2xl">
-      <i class="ri-youtube-fill"></i>
-    </a>
-    <a href="https://www.instagram.com/enersol_biopower/" class="text-white text-2xl">
-      <i class="ri-instagram-fill"></i>
-    </a>
-    <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/" class="text-white text-2xl">
-      <i class="ri-linkedin-fill"></i>
-    </a>
-  </div>
+<div id="sticky-social"
+  class="fixed top-1/3 left-2 z-50 hidden flex-col space-y-2 bg-black bg-opacity-60 p-2.5 rounded-lg shadow-md">
+  
+  <a href="https://www.facebook.com/enersolbiopwr" 
+     class="text-white text-[28px] hover:text-blue-500 transition duration-300">
+    <i class="ri-facebook-fill"></i>
+  </a>
+
+  <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy" 
+     class="text-white text-[28px] hover:text-red-500 transition duration-300">
+    <i class="ri-youtube-fill"></i>
+  </a>
+
+  <a href="https://www.instagram.com/enersol_biopower/" 
+     class="text-white text-[28px] hover:text-pink-500 transition duration-300">
+    <i class="ri-instagram-fill"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/" 
+     class="text-white text-[28px] hover:text-blue-400 transition duration-300">
+    <i class="ri-linkedin-fill"></i>
+  </a>
+</div>
   <script>
 
     window.addEventListener('scroll', () => {
@@ -216,7 +224,10 @@
         <!-- Logo -->
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <a href="/">
-            <img class="h-12 w-auto sm:h-14" src="../../assets/logo/erersollogo.png" alt="Enersol Biopower">
+            <img class="h-12 w-auto sm:h-14 lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              alt="Enersol Biopower"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/erersollogo.webp" loading="lazy"
+              decoding="async" fetchpriority="low">
           </a>
         </div>
         <!-- Navbar collapse button (visible on small screens) -->
@@ -228,7 +239,7 @@
             <!-- Icon for the button (hamburger icon) -->
             <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
               stroke="currentColor" aria-hidden="true" style="color: white;">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
           </button>
         </div>
@@ -263,7 +274,9 @@
         <div class="pt-5 pb-6 ">
           <div class="flex items-center justify-between px-5">
             <div>
-              <img class="h-8 w-auto" src="../../assets/logo/erersollogo.png" alt="Your Company">
+              <img class="h-8 w-auto lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Your Company"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/erersollogo.webp"
+                loading="lazy" decoding="async" fetchpriority="low">
             </div>
             <div class="-mr-2">
               <button type="button"
@@ -273,7 +286,7 @@
                 <!-- Close icon -->
                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor" aria-hidden="true">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
               </button>
             </div>
@@ -309,7 +322,7 @@
 
   <!-- Hero Section -->
   <div class="relative bg-cover bg-center h-[300px] mb-10"
-    style="background-image: url('../../assets/blogs/biomass/banner.jpg');">
+    style="background-image: url('../../assets/blogs/biomass/banner.webp');">
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black/[.5]"></div>
 
@@ -352,8 +365,10 @@
         </p>
 
         <figure class="mb-8">
-          <img src="../../assets/blogs/blog-01.png" alt="Biomass Gasifier"
-            class="rounded-xl shadow-lg w-full max-h-[420px] border-4 border-white" />
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Biomass Gasifier"
+            class="rounded-xl shadow-lg w-full max-h-[420px] border-4 border-white lazy"
+            data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/biomass_gassifuer_01.webp"
+            loading="lazy" decoding="async" fetchpriority="low">
           <figcaption class="text-center text-gray-500 mt-2 text-sm">A biomass gasifier converting crop residue into
             clean energy.</figcaption>
         </figure>
@@ -365,7 +380,7 @@
                 <i class="ri-lightbulb-flash-line text-white text-xl"></i>
               </div>
               <h2 class="text-3xl font-bold text-primary-dark font-poppins mt-1">
-                The Energy Challenge & the Untapped Opportunity
+                The Energy Challenge &amp; the Untapped Opportunity
               </h2>
             </div>
             <p class="text-gray-700">
@@ -416,8 +431,10 @@
               </h2>
             </div>
             <figure class="mb-8 mx-auto max-w-lg">
-              <img src="../../assets/home/biomass/biomass.png" alt="ESB-R10 Biomass Gasifier"
-                class="rounded-xl w-full border-4 border-white floating" />
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="ESB-R10 Biomass Gasifier"
+                class="rounded-xl w-full border-4 border-white floating lazy"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/biomass.webp" loading="lazy"
+                decoding="async" fetchpriority="low">
               <figcaption class="text-center text-gray-500 mt-2 text-sm">The powerful and efficient ESB-R10 Biomass
                 Gasifier.</figcaption>
             </figure>
@@ -482,7 +499,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="bg-gray-50 p-5 rounded-lg">
                 <h3 class="text-xl font-semibold mb-3 text-primary flex items-center">
-                  <i class="ri-database-2-line mr-2"></i>Abundant & Affordable
+                  <i class="ri-database-2-line mr-2"></i>Abundant &amp; Affordable
                 </h3>
                 <p class="text-gray-700">India generates <span class="font-semibold">millions of tons of crop residue
                     each year</span>, much of which is left unused
@@ -543,23 +560,23 @@
               </div>
               <div class="bg-gray-50 p-4 rounded-lg flex items-center">
                 <i class="ri-checkbox-circle-fill text-primary-light mr-2"></i>
-                <span>Paddy straw & wheat straw</span>
+                <span>Paddy straw &amp; wheat straw</span>
               </div>
               <div class="bg-gray-50 p-4 rounded-lg flex items-center">
                 <i class="ri-checkbox-circle-fill text-primary-light mr-2"></i>
-                <span>Maize cobs & sugarcane bagasse</span>
+                <span>Maize cobs &amp; sugarcane bagasse</span>
               </div>
               <div class="bg-gray-50 p-4 rounded-lg flex items-center">
                 <i class="ri-checkbox-circle-fill text-primary-light mr-2"></i>
-                <span>Mustard stalks & groundnut shells</span>
+                <span>Mustard stalks &amp; groundnut shells</span>
               </div>
               <div class="bg-gray-50 p-4 rounded-lg flex items-center">
                 <i class="ri-checkbox-circle-fill text-primary-light mr-2"></i>
-                <span>Coconut shells & husk</span>
+                <span>Coconut shells &amp; husk</span>
               </div>
               <div class="bg-gray-50 p-4 rounded-lg flex items-center">
                 <i class="ri-checkbox-circle-fill text-primary-light mr-2"></i>
-                <span>Wood chips & sawdust</span>
+                <span>Wood chips &amp; sawdust</span>
               </div>
             </div>
             <p class="text-gray-700">These fuels are <span class="font-semibold">low-cost, non-toxic, and widely
@@ -568,36 +585,46 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="text-center">
-                    <img src="../../assets/blogs/biomass/bush-in-hand.png" alt="Rice husk"
-                      class="rounded-xl shadow-lg w-full h-64 object-cover">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Rice husk"
+                      class="rounded-xl shadow-lg w-full h-64 object-cover lazy"
+                      data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/bush-in-hand.webp"
+                      loading="lazy" decoding="async" fetchpriority="low">
                     <p class="text-gray-500 mt-2">Rice husk</p>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="text-center">
-                    <img src="../../assets/blogs/biomass/sugarcane.png" alt="Sugarcane bagasse"
-                      class="rounded-xl shadow-lg w-full h-64 object-cover">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Sugarcane bagasse"
+                      class="rounded-xl shadow-lg w-full h-64 object-cover lazy"
+                      data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/sugarcane.webp"
+                      loading="lazy" decoding="async" fetchpriority="low">
                     <p class="text-gray-500 mt-2">Sugarcane bagasse</p>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="text-center">
-                    <img src="../../assets/blogs/biomass/bush.png" alt="Mustard stalk"
-                      class="rounded-xl shadow-lg w-full h-64 object-cover">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Mustard stalk"
+                      class="rounded-xl shadow-lg w-full h-64 object-cover lazy"
+                      data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/bush.webp" loading="lazy"
+                      decoding="async" fetchpriority="low">
                     <p class="text-gray-500 mt-2">Mustard stalk</p>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="text-center">
-                    <img src="../../assets/blogs/biomass/makka.png" alt="Corn cobs"
-                      class="rounded-xl shadow-lg w-full h-64 object-cover">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Corn cobs"
+                      class="rounded-xl shadow-lg w-full h-64 object-cover lazy"
+                      data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/makka.webp"
+                      loading="lazy" decoding="async" fetchpriority="low">
                     <p class="text-gray-500 mt-2">Corn cobs</p>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="text-center">
-                    <img src="../../assets/blogs/biomass/bush.png" alt="Wood chips"
-                      class="rounded-xl shadow-lg w-full h-64 object-cover">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Wood chips"
+                      class="rounded-xl shadow-lg w-full h-64 object-cover lazy"
+                      data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/bush.webp" loading="lazy"
+                      decoding="async" fetchpriority="low">
                     <p class="text-gray-500 mt-2">Wood chips</p>
                   </div>
                 </div>
@@ -619,7 +646,8 @@
               <div class="bg-primary-light p-2 rounded-full mr-3">
                 <i class="ri-earth-line text-white text-xl"></i>
               </div>
-              <h2 class="text-3xl font-bold text-primary-dark font-poppins mt-1">Environmental & Economic Benefits</h2>
+              <h2 class="text-3xl font-bold text-primary-dark font-poppins mt-1">Environmental &amp; Economic Benefits
+              </h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div class="bg-gray-50 p-6 rounded-lg">
@@ -763,7 +791,7 @@
               </div>
               <div class="flex items-start">
                 <i class="ri-checkbox-circle-fill text-primary-light text-xl mt-1 mr-2"></i>
-                <span><span class="font-semibold">Smokeless & low-maintenance design</span></span>
+                <span><span class="font-semibold">Smokeless &amp; low-maintenance design</span></span>
               </div>
               <div class="flex items-start">
                 <i class="ri-checkbox-circle-fill text-primary-light text-xl mt-1 mr-2"></i>
@@ -781,7 +809,7 @@
               </div>
               <div class="flex items-start">
                 <i class="ri-checkbox-circle-fill text-primary-light text-xl mt-1 mr-2"></i>
-                <span><span class="font-semibold">Backed by strong service support & training</span></span>
+                <span><span class="font-semibold">Backed by strong service support &amp; training</span></span>
               </div>
             </div>
             <p class="mt-6 text-gray-700">Whether it’s for a <span class="font-semibold">small tea stall or a 1 MW rural
@@ -905,7 +933,9 @@
     <h2 class="text-3xl font-bold mb-8 text-primary-dark text-center">Related Articles</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div class="bg-white rounded-xl shadow-section overflow-hidden">
-        <img src="../../assets/blogs/blog-02.png" alt="Biomass Energy" class="w-full h-48 object-cover">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Biomass Energy" class="w-full h-48 object-cover lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/image_with_presedent.webp"
+          loading="lazy" decoding="async" fetchpriority="low">
         <div class="p-6">
           <div class="text-primary-light text-sm font-medium mb-2">RENEWABLE ENERGY</div>
           <h3 class="text-xl font-bold mb-3">The Future of Biomass Energy in India</h3>
@@ -917,7 +947,10 @@
         </div>
       </div>
       <div class="bg-white rounded-xl shadow-section overflow-hidden">
-        <img src="../../assets/blogs/blog-03.png" alt="Sustainable Farming" class="w-full h-48 object-cover">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Sustainable Farming"
+          class="w-full h-48 object-cover lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/difference_between_biogas_genset_and_biogas_gasifier.webp"
+          loading="lazy" decoding="async" fetchpriority="low">
         <div class="p-6">
           <div class="text-primary-light text-sm font-medium mb-2">SUSTAINABILITY</div>
           <h3 class="text-xl font-bold mb-3">Sustainable Farming with Biochar</h3>
@@ -929,7 +962,9 @@
         </div>
       </div>
       <div class="bg-white rounded-xl shadow-section overflow-hidden">
-        <img src="../../assets/blogs/parali-se-dhua-nhi.jpeg" alt="Crop Residue" class="w-full h-48 object-cover">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Crop Residue" class="w-full h-48 object-cover lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/parali-se-dhua-nhi.webp"
+          loading="lazy" decoding="async" fetchpriority="low">
         <div class="p-6">
           <div class="text-primary-light text-sm font-medium mb-2">AGRICULTURE</div>
           <h3 class="text-xl font-bold mb-3">Solving India's Crop Residue Problem</h3>
@@ -951,14 +986,18 @@
       <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
           <!-- Adjusted Logo -->
-          <div class="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
-              <img class="h-12 w-auto sm:h-14 object-contain" src="../../assets/logo/erersollogo.png"
-                alt="Enersol Biopower" style="min-width: 150px;">
-            </a>
-          </div>
-
         </a>
+        <div class="flex justify-start lg:w-0 lg:flex-1"><a
+            class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          </a><a href="#">
+            <img class="h-12 w-auto sm:h-14 object-contain lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              alt="Enersol Biopower" style="min-width: 150px;"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/erersollogo.webp" loading="lazy"
+              decoding="async" fetchpriority="low">
+          </a>
+        </div>
+
+
         <p class="mt-2 text-sm text-gray-300">Innovative Renewable Energy Solutions for a Sustainable Future</p>
       </div>
 
@@ -992,7 +1031,7 @@
               <a class="text-gray-300 hover:text-gray-200" href="../contact-us.html">Contact Us</a>
             </li>
             <li>
-              <a class="text-gray-300 hover:text-gray-200" href="../blogs.html">Blogs &
+              <a class="text-gray-300 hover:text-gray-200" href="../blogs.html">Blogs &amp;
                 News</a>
             </li>
             <li>
@@ -1025,7 +1064,7 @@
                 History</a>
             </li>
             <li>
-              <a class="text-gray-300 hover:text-gray-200" href="./about-us.html#mission">Mission &
+              <a class="text-gray-300 hover:text-gray-200" href="./about-us.html#mission">Mission &amp;
                 Vission</a>
             </li>
           </nav>
@@ -1086,15 +1125,47 @@
       </div>
     </div>
 
-    <div class="brand-logo flex h-10 sm:h-14 bg-white p-3 justify-center gap-3 sm:gap-5">
-      <img src="../../assets/footer-logo/nif-logo-1.jpg" alt="">
-      <img src="../../assets/footer-logo/gian.png" alt="">
-      <img src="../../assets/footer-logo/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.png" alt="">
-      <img src="../../assets/footer-logo/1.jpg" alt="">
-      <img src="../../assets/footer-logo/sustainable-energy.jpg" alt="">
-      <img src="../../assets/footer-logo/Make_In_India_new.png" alt="">
+    <div class="brand-logo flex flex-wrap items-center justify-center bg-white p-2 sm:p-4 gap-3 sm:gap-6">
 
-    </div>
+    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" 
+         alt="NIF Logo" 
+         data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/nif-logo-1.webp" 
+         loading="lazy" decoding="async" fetchpriority="low"
+         class="lazy h-auto sm:h-32">
+
+    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" 
+         alt="GIAN" 
+         data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/gian.webp" 
+         loading="lazy" decoding="async" fetchpriority="low"
+         class="lazy h-auto sm:h-32">
+
+    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" 
+         alt="Swachh Bharat" 
+         data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp" 
+         loading="lazy" decoding="async" fetchpriority="low"
+         class="lazy h-auto sm:h-32">
+
+    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" 
+         alt="Junagadh Agriculture University" 
+         data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/junagadh_agriculture_university.webp" 
+         loading="lazy" decoding="async" fetchpriority="low"
+         class="lazy h-auto sm:h-32">
+
+    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" 
+         alt="Sustainable Energy" 
+         data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/sustainable-energy.webp" 
+         loading="lazy" decoding="async" fetchpriority="low"
+         class="lazy h-auto sm:h-32">
+
+    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" 
+         alt="Make in India" 
+         data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Make_In_India_new.webp?updatedAt=1754911304078" 
+         loading="lazy" decoding="async" fetchpriority="low"
+         class="lazy h-auto sm:h-32">
+
+</div>
+
+
     <!-- Footer Bottom Section -->
     <div class="bg-gray-800">
       <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
@@ -1108,11 +1179,11 @@
             </svg>
           </a>
           <a class="ml-3 text-gray-500" target="_blank" href="https://www.youtube.com/@enersolbiopower-wastetoenergy">
-            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            <svg class="w-6 h-6 text-gray-500 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
               width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
               <path fill-rule="evenodd"
                 d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
-                clip-rule="evenodd" />
+                clip-rule="evenodd"></path>
             </svg>
 
           </a>
@@ -1159,7 +1230,9 @@
   <div id="whatsApp-floating-btn"
     class="fixed right-5 bottom-[10px] sm:right-4 sm:bottom-[10px] z-40 w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-full shadow-xl cursor-pointer flex items-center justify-center border border-green-600 transition-transform transform hover:scale-110 hover:shadow-2xl"
     title="Chat on WhatsApp">
-    <img src="../../assets/whatsApp-icon.png" alt="WhatsApp" class="w-12  sm:w-16" />
+    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="WhatsApp" class="w-12  sm:w-16 lazy"
+      data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/whatsApp-icon.webp" loading="lazy"
+      decoding="async" fetchpriority="low">
   </div>
   <script src="../../js/whatsapp-btn.js"></script>
 
@@ -1234,6 +1307,44 @@
 
       lastScroll = currentScroll;
     });
+  </script>
+
+
+
+
+
+  <style data-lazy-css="1">
+    img.lazy {
+      opacity: 0;
+      transition: opacity .35s ease;
+    }
+
+    img.lazy.loaded {
+      opacity: 1;
+    }
+  </style>
+
+  <script data-lazy-loader="1">
+    (function () {
+      const SEL = "img.lazy[data-src]";
+      function loadNow(img) {
+        img.src = img.dataset.src;
+        img.onload = function () { img.classList.add("loaded"); };
+        img.removeAttribute("data-src");
+      }
+      if (!("IntersectionObserver" in window)) {
+        document.querySelectorAll(SEL).forEach(loadNow);
+        return;
+      }
+      const io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          loadNow(entry.target);
+          io.unobserve(entry.target);
+        });
+      }, { rootMargin: "250px 0px" });
+      document.querySelectorAll(SEL).forEach(function (img) { io.observe(img); });
+    })();
   </script>
 </body>
 

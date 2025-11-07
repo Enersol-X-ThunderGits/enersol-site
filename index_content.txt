@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link style="border-radius: 10px;" rel="icon" type="image/png"
+    href="https://ik.imagekit.io/enersolbiopower/enersol-bio-power-favicon.webp">
+  <link style="border-radius: 10px;" rel="icon" type="image/png"
+    href="https://ik.imagekit.io/enersolbiopower/enersol-bio-power-favicon.webp">
+  <title>ENERSOL BIOPOWER PRIVATE LIMITED</title>
+  <meta name="description"
+    content="Enersol Biopower: Your source for biomass energy solutions. We offer biomass gasifiers, gensets, stoves, and more for sustainable power.">
+  <link rel="preload" as="image" href="https://ik.imagekit.io/enersolbiopower/biomass-burning-energy.webp?tr=w-1600,q-60,f-auto"
+    fetchpriority="high" imagesrcset="https://ik.imagekit.io/enersolbiopower/biomass-burning-energy.webp?tr=w-600,q-60,f-auto 600w,
+                   https://ik.imagekit.io/enersolbiopower/biomass-burning-energy.webp?tr=w-1600,q-60,f-auto 1600w" imagesizes="100vw">
+
+	<meta name="google-site-verification" content="8K-i-0n7brdcI-LD3t2SC7ME6-w3lyMvILVnVbi-y2Y" />
+
+  <style>
+    @keyframes scrollLeft {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .client-logos {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .logos {
+      display: flex;
+      width: calc(144px * 27);
+      /* Correctly attaches 'px' to '144' and adds proper spacing */
+      animation: scroll 30s linear infinite;
+    }
+
+    .logos img {
+
+      /* Adjust based on your image dimensions */
+
+      /* Adjust based on your image dimensions */
+      flex-shrink: 0;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-120%);
+        /* Moves the logos by half of the total width over the animation duration */
+      }
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            // Primary Colors
+            primary: {
+              DEFAULT: '#299FD3', // Blue
+              light: '#4FB5E0',  // Lighter shade of blue
+              dark: 'rgb(3 69 155)',   // Darker shade of blue
+            },
+            secondary: {
+              DEFAULT: '#C7D110', // Green
+              light: '#D4DB50',   // Lighter green
+              dark: '#909B0B',    // Darker green
+            },
+
+            // Accent Colors
+            accentYellow: {
+              DEFAULT: '#FED400',
+              light: '#FFE766',
+              dark: '#CCAA00',
+            },
+            accentRed: {
+              DEFAULT: '#9B1418',
+              light: '#C91B1F',
+              dark: '#740F12',
+            },
+
+            // Gradients
+            gradientBlueGreen: {
+              DEFAULT: 'linear-gradient(90deg, #299FD3 0%, #C7D110 100%)',
+            },
+            gradientYellowGreen: {
+              DEFAULT: 'linear-gradient(90deg, #FED400 0%, #C7D110 100%)',
+            },
+          },
+          keyframes: {
+            scrollLeft: {
+              '0%': { transform: 'translateX(100%)' },
+              '100%': { transform: 'translateX(-100%)' },
+            }
+          },
+          animation: {
+            scroll: 'scrollLeft 20s linear infinite',
+          }
+
+        },
+      },
+    };
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer=""></script> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
+
+  <style>
+    [x-cloak] {
+      display: none;
+    }
+
+    .swiper-slide .slide-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+      /* Gradient from transparent on the left to black with 50% opacity on the right */
+      z-index: 0;
+      /* Ensures overlay is below text content but above the image */
+    }
+
+    /* Initial state */
+    .fade-up-enter {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+    }
+
+    /* Final state */
+    .fade-up-enter-active {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+
+    .slide-1 {
+      background-image: url("https://ik.imagekit.io/enersolbiopower/biomass-burning-energy.webp");
+    }
+
+    .slide-2 {
+      background-image: url("https://ik.imagekit.io/enersolbiopower/agriculture-crop-residue-biofuel.webp");
+    }
+
+    .slide-3 {
+      background-image: url("https://ik.imagekit.io/enersolbiopower/affordable-efficient.webp");
+    }
+
+    .slide-4 {
+      background-image: url("https://ik.imagekit.io/enersolbiopower/sustainable-biomass-harvest.webp");
+    }
+
+    .slide-5 {
+      background-image: url("https://ik.imagekit.io/enersolbiopower/sustainable-biomass-harvest.webp");
+    }
+
+    @media screen and (max-width: 768px) {
+      .slide-1 {
+        background-image: url('https://ik.imagekit.io/enersolbiopower/mobile-biomass-burning.webp?tr=w-600,q-60,f-auto');
+      }
+
+
+
+      .slide-3 {
+        background-image: url('https://ik.imagekit.io/enersolbiopower/mobile-galegi-plant.webp');
+      }
+    }
+  </style>
+	
+</head>
+
+<body>
+  <!-- Top bar above the main navbar -->
+
+  <!-- Top Bar -->
+  <div class="bg-gray-800 py-2">
+    <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+      <!-- Right: Social Links and Languages -->
+      <div class="flex flex-wrap justify-between w-full md:w-auto items-center space-x-4 ">
+        <div class="flex items-center space-x-2 text-white">
+          <i class="ri-mail-line"></i>
+          <a href="mailto:info@example.com">info@enersolbiopower.com</a>
+        </div>
+        <div class="flex space-x-2">
+          <a href="https://www.facebook.com/enersolbiopwr" class="text-white">
+            <i class="ri-facebook-fill"></i>
+          </a>
+          <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy" class="text-white">
+            <i class="ri-youtube-fill"></i>
+          </a>
+          <a href="https://www.instagram.com/enersol_biopower/" class="text-white">
+            <i class="ri-instagram-fill"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/" class="text-white">
+            <i class="ri-linkedin-fill"></i>
+          </a>
+        </div>
+
+      </div>
+      <!-- Left: Contact Info -->
+      <div class="flex flex-col sm:flex-col md:flex-row lg:flex-row text-white sm:space-y-2 md:space-y-0 md:space-x-6">
+        <div class="flex items-center space-x-2">
+          <i class="ri-phone-line text-lg leading-none"></i>
+          <a href="tel:+919414535665" class="hover:underline">+91-9414535665</a>
+        </div>
+        <div class="flex items-center space-x-2">
+          <i class="ri-phone-line text-lg leading-none"></i>
+          <a href="tel:+918239554433" class="hover:underline">+91-8239554433</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Social Bar -->
+<div id="sticky-social"
+  class="fixed top-1/3 left-2 z-50 hidden flex-col space-y-2 bg-black bg-opacity-60 p-2.5 rounded-lg shadow-md">
+  
+  <a href="https://www.facebook.com/enersolbiopwr" 
+     class="text-white text-[28px] hover:text-blue-500 transition duration-300">
+    <i class="ri-facebook-fill"></i>
+  </a>
+
+  <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy" 
+     class="text-white text-[28px] hover:text-red-500 transition duration-300">
+    <i class="ri-youtube-fill"></i>
+  </a>
+
+  <a href="https://www.instagram.com/enersol_biopower/" 
+     class="text-white text-[28px] hover:text-pink-500 transition duration-300">
+    <i class="ri-instagram-fill"></i>
+  </a>
+
+  <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/" 
+     class="text-white text-[28px] hover:text-blue-400 transition duration-300">
+    <i class="ri-linkedin-fill"></i>
+  </a>
+</div>
+  <script>
+    const stickySocial = document.getElementById('sticky-social');
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.scrollY;
+
+      if (currentScroll > 100) {
+        // User scrolled up past 100px
+        stickySocial.classList.add('flex');
+        stickySocial.classList.remove('hidden');
+      } else {
+        // User scrolling down or still near top
+        stickySocial.classList.add('hidden');
+        stickySocial.classList.remove('flex');
+      }
+
+      lastScroll = currentScroll;
+    });
+  </script>
+
+
+  <!-- Navbar component -->
+  <div class="bg-primary-dark sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+        <!-- Logo -->
+        <div class="flex justify-start lg:w-0 lg:flex-1">
+          <a href="/">
+            <img class="h-12 w-auto sm:h-14 lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              alt="Enersol Biopower" data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
+              loading="lazy" decoding="async" fetchpriority="low">
+          </a>
+        </div>
+        <!-- Navbar collapse button (visible on small screens) -->
+        <div class="-mr-2 -my-2 md:hidden">
+          <button type="button"
+            class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
+            <span class="sr-only">Open menu</span>
+            <!-- Icon for the button (hamburger icon) -->
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true" style="color: white;">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Links for large screens -->
+        <nav class="hidden md:flex space-x-10">
+          <a href="/" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
+          <a href="./pages/about-us.html" class="text-base font-medium text-white hover:text-accentYellow-light">About
+            Us</a>
+          <a href="./pages/our-story.html" class="text-base font-medium text-white hover:text-accentYellow-light">Our
+            Story</a>
+          <a href="./pages/products.html"
+            class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+          <a href="./pages/blogs.html" class="text-base font-medium text-white hover:text-accentYellow-light">Blogs
+            &amp;
+            News</a>
+          <a href="./pages/contact-us.html"
+            class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
+        </nav>
+
+        <!-- Get a Quote button (visible on large screens) -->
+        <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+          <a href="mailto:info@example.com?subject=Quote%20Request&amp;body=Hi%2C%20I%20would%20like%20to%20get%20a%20quote."
+            target="_blank"
+            class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
+            Get a Quote
+          </a>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu, toggle classes based on menu state (open/closed) -->
+    <div
+      class="fixed inset-y-0 right-0 w-3/4 bg-white text-white transform translate-x-full transition-transform duration-300 ease-in-out"
+      id="mobile-menu" style="display: none;z-index: 10;">
+      <div class="">
+        <div class="pt-5 pb-6 ">
+          <div class="flex items-center justify-between px-5">
+            <div>
+              <img class="h-8 w-auto lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Your Company"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" loading="lazy"
+                decoding="async" fetchpriority="low">
+            </div>
+            <div class="-mr-2">
+              <button type="button"
+                class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                onclick="toggleMobileMenu()">
+                <span class="sr-only">Close menu</span>
+                <!-- Close icon -->
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="mt-6 px-5 border-t border-gray-300 pt-5">
+            <nav class="grid gap-y-8">
+              <a href="/" class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
+              <a href="./pages/about-us.html"
+                class="text-base font-medium text-black hover:text-accentYellow-light">About Us</a>
+              <a href="./pages/our-story.html"
+                class="text-base font-medium text-black hover:text-accentYellow-light">Our Story</a>
+              <a href="./pages/products.html"
+                class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
+              <a href="./pages/blogs.html" class="text-base font-medium text-black hover:text-accentYellow-light">Blogs
+              </a>
+              <a href="./pages/contact-us.html"
+                class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
+            </nav>
+          </div>
+        </div>
+        <div class="py-6 px-5 space-y-6">
+          <div>
+            <a href="mailto:info@example.com?subject=Quote%20Request&amp;body=Hi%2C%20I%20would%20like%20to%20get%20a%20quote."
+              target="_blank"
+              class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
+              Get a Quote
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- chat bot  -->
+
+  <!-- <script src="https://bot-backend.thundergits.com/cdn/chatbot-widget.js" data-bot-id="enersolBotId"
+    data-position="right">
+    </script> -->
+  <script>
+    window.ThundergitsBotConfig = {
+      apiUrl: 'https://custom-domain.com/api/',
+      conversationFlowUrl: 'https://bot-backend.thundergits.com/cdn/conversation/enersole-conversation-flow.json',
+      position: 'bottom-left', // bottom-right, bottom-left, top-right, top-left
+      theme: {
+        primaryColor: '#03459b',
+        secondaryColor: '#03459b',
+        textColor: '#1F2937',
+        backgroundColor: '#FFFFFF'
+      },
+      name: "Enersol Bio Power"
+    };
+  </script>
+  <script src="https://bot-backend.thundergits.com/cdn/bot.js" defer=""></script>
+
+
+  <!-- WhatsApp Floating Button -->
+  <div id="whatsApp-floating-btn"
+    class="fixed right-5 bottom-[10px] sm:right-4 sm:bottom-[10px] z-40 w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-full shadow-xl cursor-pointer flex items-center justify-center border border-green-600 transition-transform transform hover:scale-110 hover:shadow-2xl"
+    title="Chat on WhatsApp">
+    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="WhatsApp" class="w-12  sm:w-16 lazy"
+      data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/whatsApp-icon.webp" loading="lazy" decoding="async"
+      fetchpriority="low">
+  </div>
+
+
+
+
+  <!-- Quick Enquiry Floating Button -->
+  <div id="quick-enquiry" class="fixed top-1/2 right-0 transform -translate-y-1/2 translate-x-1/3 rotate-90 
+         bg-red-600 text-white z-40 py-3 px-4 rounded-b-lg cursor-pointer shadow-lg">
+    Quick Enquiry
+  </div>
+
+  <!-- Enquiry Form Modal -->
+  <div id="inquiry-modal"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm px-3 py-6 hidden">
+    <div
+      class="relative bg-white rounded-xl shadow-2xl px-4 py-6 sm:p-8 w-full max-w-sm sm:max-w-md mx-auto text-sm sm:text-base">
+
+      <!-- Close Button -->
+      <button id="close-modal" class="absolute top-3 right-3 text-gray-500 hover:text-red-700 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+
+      <!-- Modal Header -->
+      <h2 class="text-xl sm:text-2xl font-bold text-primary-dark mb-2 text-center">
+        Enquiry Form
+      </h2>
+      <p class="text-gray-600 text-center mb-4 sm:mb-6 text-xs sm:text-sm">
+        Please fill out the form below, and we’ll get back to you shortly.
+      </p>
+
+      <!-- Form -->
+      <form id="inquiry-form">
+        <!-- Name Field -->
+        <div class="mb-3 sm:mb-4">
+          <label for="name" class="block text-xs sm:text-sm font-medium text-gray-700 mb-1">Name</label>
+          <input type="text" id="name" name="name"
+            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-dark focus:border-primary transition text-sm"
+            placeholder="Enter your name" required="">
+        </div>
+
+        <!-- Mobile Number Field -->
+        <div class="mb-3 sm:mb-4">
+          <label for="mobile" class="block text-xs sm:text-sm font-medium text-gray-700 mb-1">Mobile Number</label>
+          <input type="tel" id="mobile" name="mobile"
+            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-dark focus:border-primary transition text-sm"
+            placeholder="Enter your mobile number" required="">
+        </div>
+
+        <!-- Email Field -->
+        <div class="mb-3 sm:mb-4">
+          <label for="email" class="block text-xs sm:text-sm font-medium text-gray-700 mb-1">Email</label>
+          <input type="email" id="email" name="email"
+            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-dark focus:border-primary transition text-sm"
+            placeholder="Enter your email" required="">
+        </div>
+
+        <!-- Course Dropdown -->
+        <div class="mb-5 sm:mb-6">
+          <label for="course" class="block text-xs sm:text-sm font-medium text-gray-700 mb-1">Select Product</label>
+          <select id="course" name="course"
+            class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-dark focus:border-primary transition text-sm"
+            required="">
+            <option value="" disabled="" selected="">Select a product</option>
+            <option value="biomass-gasifier">Biomass Gasifier for Power Production</option>
+            <option value="biogas-generators">Biogas/Syngas Generators</option>
+            <option value="smokeless-stove">Smokeless Biomass Stoves / Bhatti</option>
+            <option value="auto-mawa-machine">Auto Bio-Mawa Machine</option>
+            <option value="biochar-plant">Biomass Pyrolysis Plant (Bio-char Plant)</option>
+            <option value="biogas-dome">85M³ Biogas Dome</option>
+            <option value="solid-liquid-separator">Solid Liquid Separator (Dewatering Machine)</option>
+            <option value="oil-distillation">Used Oil (Black Engine Oil) Distillation Machine</option>
+            <option value="control-panels">Control Panels</option>
+            <option value="acoustic-enclosure">Acoustic Enclosure (Canopy) for DG Sets</option>
+            <option value="biomass-shredder">Biomass Shredder</option>
+            <option value="wood-cutter">Wood Cutter</option>
+            <option value="biomass-drier">Biomass Drier</option>
+            <option value="briquette-machine">Charcoal Briquette Machine</option>
+            <option value="cnc-jobwork">CNC/ Hydraulic Cutting/Bending Machine Job Work</option>
+          </select>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit"
+          class="w-full bg-primary-dark text-white py-2 sm:py-3 rounded-lg text-sm sm:text-base font-medium transition focus:outline-none">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Offer Popup -->
+  <div id="offer-popup"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm hidden px-4">
+    <div
+      class="relative rounded-xl shadow-2xl p-4 sm:p-6 md:p-10 max-w-xs sm:max-w-md md:max-w-xl w-full text-center bg-gradient-to-br from-gray-900 via-black to-gray-800 border border-gray-700">
+
+      <!-- Close Button -->
+      <div class="absolute top-3 right-3 sm:top-4 sm:right-4">
+        <button id="close-offer" class="text-white hover:text-red-300 transition-all duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Offer Title -->
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-extrabold text-yellow-400 mt-4 sm:mt-6 leading-snug">
+        🎉 Exclusive Launch Offer!
+      </h2>
+
+      <!-- Subheading -->
+      <p class="text-lg sm:text-xl font-bold text-white mt-2">
+        2kVA Biomass Gasifier
+      </p>
+
+      <!-- Tagline -->
+      <p class="text-sm sm:text-base font-medium text-white mt-4 leading-relaxed">
+        Perfect for Colleges, Agricultural &amp; Research Institutes
+      </p>
+
+      <!-- Description -->
+      <p class="text-sm sm:text-base font-normal text-white mt-2 leading-relaxed">
+        An affordable solution for institutions ready to lead in biomass innovation.
+      </p>
+
+      <!-- Price -->
+      <p class="text-xl sm:text-2xl font-bold text-green-400 mt-4">
+        Limited-time launch price: ₹3,99,000/-
+      </p>
+      <p class="text-white text-[10px] sm:text-xs italic mt-1">
+        Special pricing for early adopters – T&amp;C apply
+      </p>
+
+      <!-- Closing Line -->
+      <p class="text-base sm:text-lg text-yellow-300 font-semibold leading-relaxed mt-4">
+        Power your research. Fuel a greener tomorrow.
+      </p>
+
+      <!-- Contact -->
+      <p class="text-white text-sm sm:text-base font-medium mt-6">
+        📞 Call Now: <a href="tel:+919414535665" class="underline hover:text-yellow-300">+91 94145 35665</a>
+      </p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="relative w-full" style="height: 85vh;">
+    <!-- Swiper -->
+    <div class="swiper mySwiper h-full">
+      <div class="swiper-wrapper">
+        <!-- Slide 2 with Full-Screen Placeholder Image -->
+        <div
+          class="slide-1 swiper-slide bg-[length:100%_100%] bg-no-repeat bg-center h-full swiper-slide transform transition-transform duration-500 ease-in-out hover:scale-105 hover:z-10 hover:shadow-xl">
+          <div class="slide-overlay"></div>
+
+          <!-- Text content -->
+          <div class="container relative mx-auto px-4 py-5 mb-5 h-full flex items-center justify-start">
+            <div class="text-white text-left px-5 fade-up-enter">
+              <h2 class="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold mb-4">Stop Burning, Start Earning!</h2>
+
+              <h2 class="text-3xl sm:text-3xl md:text-6xl lg:text-7xl font-bold">अब पराली से धुआँ नहीं, <br> आमदनी
+                बढ़ाएं।</h2>
+              <p class="text-base sm:text-base md:text-xl lg:text-xl mt-2 lg:w-1/2">Process agricultural residue in our
+                biochar plant to create biochar, which enhances soil fertility, increases crop yield by up to 20%, and
+                boosts your income.</p>
+              <a href="./pages/products.html" class="mt-4 inline-block py-2 px-4 rounded text-lg sm:text-xl md:text-2xl"
+                style="background-color: #38b322;">Our
+                Products</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 1 with Full-Screen Placeholder Image -->
+        <div class="slide-2 swiper-slide bg-no-repeat bg-cover bg-center h-full">
+          <div class="slide-overlay"></div>
+          <div class="container relative mx-auto px-4 py-5 mb-5 h-full flex items-center justify-start">
+            <div class="text-white text-left px-5 fade-up-enter">
+              <h2 class="text-3xl sm:text-3xl md:text-6xl lg:text-7xl font-bold">Turning Waste into Watts: <br> <span
+                  class="text-2xl sm:text-2xl md:text-3xl lg:text-5xl">From
+                  Field to Fuel</span> </h2>
+              <p class="text-base sm:text-base md:text-xl lg:text-xl mt-2 lg:w-1/2">we revolutionize energy by
+                transforming agricultural waste into sustainable, clean power. From the fields to your homes and
+                businesses, our innovative solutions drive renewable energy while reducing waste and promoting a
+                greener planet. Join us in shaping a future fuelled by sustainability!</p>
+              <a href="./pages/products.html"
+                class="mt-4 inline-block bg-gray-600 py-2 px-4 rounded text-lg sm:text-xl md:text-2xl"
+                style="background-color: #38b322;">Our
+                Products</a>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 with Full-Screen Placeholder Image -->
+        <div class="slide-3 swiper-slide bg-[length:100%_100%] bg-no-repeat bg-center h-full">
+          <div class="slide-overlay"></div>
+          <div class="container relative mx-auto px-4 py-5 mb-5 h-full flex items-center justify-start">
+            <div class="text-white text-left px-5 fade-up-enter">
+              <h2 class="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold mb-4">Affordable, Efficient, and
+                Eco-Friendly Cooking</h2>
+
+              <h2 class="text-3xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-4">
+                खर्चा आधा, काम ज्यादा <br> <span class="text-2xl sm:text-2xl md:text-3xl lg:text-4xl">धुआँरहित बायोमास
+                  स्टोव</span>
+              </h2>
+
+              <h2 class="text-xl sm:text-xl md:text-2xl lg:text-2xl font-bold mb-4">स्वाद वही पुराना, तरीका नया</h2>
+              <p class="text-base sm:text-base md:text-xl lg:text-xl mt-2 lg:w-1/2">Cut your costs in half and double
+                your efficiency with our smokeless biomass stove. Enjoy the same authentic taste of traditional cooking
+                with a modern, innovative approach that’s healthier for you and the environment. Experience sustainable
+                living without compromising on flavor or convenience!</p>
+              <a href="./pages/products.html"
+                class="mt-4 inline-block bg-gray-600 py-2 px-4 rounded text-lg sm:text-xl md:text-2xl"
+                style="background-color: #38b322;">Our
+                Products</a>
+            </div>
+          </div>
+        </div>
+        <!-- Slider 4 -->
+        <div class="slide-4 swiper-slide bg-cover bg-no-repeat bg-center h-full"
+          style="background-image: url('https://ik.imagekit.io/enersolbiopower/enersol/index/carolien-van-oijen-Md1Fk5K9F7c-unsplash.webp');">
+          <div class="slide-overlay"></div>
+          <div class="container relative mx-auto px-4 py-5 mb-5 h-full flex items-center justify-start">
+            <div class="text-white text-left px-5 fade-up-enter">
+              <h2 class="text-3xl sm:text-3xl md:text-5xl lg:text-6xl font-bold">From Waste to Wonder: <br> <span
+                  class="text-2xl sm:text-2xl md:text-3xl lg:text-5xl">Harnessing Biomass</span>
+                <br> <span class="text-xl sm:text-xl md:text-2xl lg:text-4xl">for a Greener Future</span>
+              </h2>
+              <p class="text-base sm:text-base md:text-xl lg:text-xl mt-2 lg:w-1/2">Transforming waste into timeless
+                energy and eco-friendly solutions, we deliver sustainable innovations that drive progress, reduce
+                emissions, and protect the planet for generations to come.</p>
+              <a href="./pages/products.html"
+                class="mt-4 inline-block bg-gray-600 py-2 px-4 rounded text-lg sm:text-xl md:text-2xl"
+                style="background-color: #38b322;">Our Products</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider 5 -->
+        <div class="slide-5 swiper-slide bg-[length:100%_100%] bg-no-repeat bg-center h-full"
+          style="background-image: url('https://ik.imagekit.io/enersolbiopower/enersol/index/biochar.webp');">
+          <div class="slide-overlay"></div>
+          <div class="container relative mx-auto px-4 py-5 mb-5 h-full flex items-center justify-start">
+            <div class="text-white text-left px-5 fade-up-enter">
+              <h2 class="text-3xl sm:text-3xl md:text-5xl lg:text-6xl font-bold">Unlock the Power of Biochar: <br> <span
+                  class="text-2xl sm:text-2xl md:text-3xl lg:text-5xl">
+                  Feed
+                  Your Soil. Boost Your Farm.
+                </span> <br> <span class="text-xl sm:text-xl md:text-2xl lg:text-4xl">Grow 20% More. </span> </h2>
+              <p class="text-base sm:text-base md:text-xl lg:text-xl mt-2 lg:w-1/2">Revolutionize your farming with
+                eco-friendly biochar. Enhance soil health, improve crop yields, and reduce your carbon footprint.
+                Discover the sustainable solution trusted by farmers worldwide.</p>
+              <a href="./pages/products.html"
+                class="mt-4 inline-block bg-gray-600 py-2 px-4 rounded text-lg sm:text-xl md:text-2xl"
+                style="background-color: #38b322;">Our Products</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional slides as needed -->
+      </div>
+      <!-- Swiper Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Swiper Navigation -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+
+  <!-- About US -->
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <h2 class="text-2xl font-semibold text-primary mb-3">About Us</h2>
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-primary-dark">
+          Enersol Biopower Pvt Ltd
+          <br class="hidden lg:inline-block">Pioneering Sustainable Bioenergy Solutions
+        </h1>
+        <p class="mb-4 leading-relaxed">
+          At Enersol Biopower Pvt Ltd, we lead the way in bioenergy innovation, offering cutting-edge solutions that
+          redefine how energy is produced and consumed. As a trusted designer, manufacturer, supplier &amp; exporter, we
+          specialize in biomass gasifiers, biomass torrefaction plants, smokeless biomass stoves, biogas gensets etc.
+        </p>
+        <h4 class="text-xl font-semibold mb-3">Our Legecy of Innovation</h4>
+        <p class="mb-4 leading-relaxed">We introduced India’s first portable biomass gasifier, setting a new benchmark
+          in clean and efficient energy. Our solutions power rural electrification, replace diesel generators for
+          telecom towers, and provide eco-friendly energy alternatives for agro-industries.</p>
+        <p class="mb-4 leading-relaxed">Beyond gasification, our expertise extends to solar-powered smokeless biomass
+          stoves, thoughtfully designed
+          to address the frequent power outages in villages, especially during evening hours when women and children
+          need electricity the most. Our biomass stoves come equipped with a solar panel and battery, providing an
+          alternative power source for the household. Women can cook smokeless meals on the stove while children study
+          under its light, promoting health, convenience, and sustainability.</p>
+
+        <h4 class="text-xl font-semibold mb-3">Our Comprehensive Offerings</h4>
+        <ul class="list-disc list-inside mb-8 text-left">
+          <li>Biomass gasifiers</li>
+          <li>Biogas gensets and biogas plants</li>
+          <li>Smokeless Biomass Cook Stoves</li>
+          <li>Biomass torrefaction (biochar) plants</li>
+          <li>Solid-liquid separators (dewatering plants)</li>
+          <li>Biogas balloons</li>
+          <li>Biomass cutters and shredders</li>
+          <li>Dryers</li>
+          <li>Used oil distillation machines</li>
+          <li>Biomass Heat Burner</li>
+        </ul>
+        <div class="flex justify-center">
+          <a href="./pages/about-us.html"><button
+              class="inline-flex text-white bg-gradient-to-r from-primary to-secondary border-0 py-2 px-6 focus:outline-none hover:from-primary-dark hover:to-secondary-dark rounded text-lg">Learn
+              More</button></a>
+          <a href="./pages/contact-us.html">
+            <button
+              class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Contact
+              Us</button>
+          </a>
+
+        </div>
+      </div>
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded lazy" alt="Enersol Biopower"
+          src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/About-us.webp" loading="lazy" decoding="async"
+          fetchpriority="low">
+      </div>
+    </div>
+  </section>
+  <!-- Why US -->
+  <section class="text-gray-600 body-font bg-primary-dark">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="text-center mb-20">
+        <h2 class="sm:text-3xl text-2xl font-medium text-center title-font text-white mb-4">Why Us</h2>
+        <p class="text-white leading-relaxed mx-auto">At Enersol Biopower Pvt Ltd, we are dedicated to delivering
+          cutting-edge, sustainable bioenergy solutions that align with India's commitment to achieving net-zero
+          emissions by 2070. Our innovative technologies, including biomass gasifiers, biogas systems, and biomass
+          torrefaction plants, contribute to reducing carbon footprints and promoting environmental sustainability. By
+          providing clean, renewable energy solutions, we support India's ambitious climate goals and strive to create a
+          greener, more sustainable future for all.</p>
+      </div>
+      <div class="flex flex-wrap -mx-2 justify-center">
+        <!-- Feature 1: Innovative Technologies -->
+        <div class="p-2  w-full md:w-1/2 lg:w-1/3">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-secondary-dark w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M12 2L12 22"></path>
+              <path d="M19 12L5 12"></path>
+            </svg>
+            <span class="title-font font-medium">Innovative Technologies</span>
+          </div>
+        </div>
+        <!-- Feature 2: Tailored Solutions -->
+        <div class="p-2 w-full md:w-1/2 lg:w-1/3">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-secondary-dark w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+              <path d="M3 12H21"></path>
+              <path d="M12 3V21"></path>
+            </svg>
+            <span class="title-font font-medium">Tailored Solutions - Custom-designed products</span>
+          </div>
+        </div>
+        <!-- Feature 3: Eco-Friendly Impact -->
+        <div class="p-2 w-full md:w-1/2 lg:w-1/3">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-secondary-dark w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+              <path d="M22 4L12 14.01l-3-3"></path>
+            </svg>
+            <span class="title-font font-medium">Eco-Friendly Impact</span>
+          </div>
+        </div>
+        <!-- Feature 4: Cost-Effective -->
+        <div class="p-2 w-full md:w-1/2 lg:w-1/3">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-secondary-dark w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="16"></line>
+              <line x1="8" y1="12" x2="16" y2="12"></line>
+            </svg>
+            <span class="title-font font-medium">Cost-Effective</span>
+          </div>
+        </div>
+        <!-- Feature 5: Versatility -->
+        <div class="p-2  w-full md:w-1/2 lg:w-1/3">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-secondary-dark w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <polyline points="23 4 23 10 17 10"></polyline>
+              <polyline points="1 20 1 14 7 14"></polyline>
+              <path d="M3.51 9a9 9 0 0113.98 0"></path>
+              <path d="M14.48 15a9 9 0 01-13.96 0"></path>
+              <path d="M12 2a9.77 9.77 0 018.49 4"></path>
+              <path d="M12 22a9.77 9.77 0 01-8.49-4"></path>
+            </svg>
+            <span class="title-font font-medium">Versatility</span>
+          </div>
+        </div>
+        <!-- Feature 6: Quality and Reliability -->
+        <div class="p-2 w-full md:w-1/2 lg:w-1/3">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-secondary-dark w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+            <span class="title-font font-medium">Quality and Reliability</span>
+          </div>
+        </div>
+        <!-- Feature 7: Global Reach -->
+        <div class="p-2  w-full md:w-1/2 lg:w-1/3">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-secondary-dark w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"></path>
+            </svg>
+            <span class="title-font font-medium">Global Reach</span>
+          </div>
+        </div>
+        <!-- Feature 8: Sustainability-Driven -->
+        <div class="p-2 w-full md:w-1/2 lg:w-1/3">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-secondary-dark w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <path d="M6 22h12M6 18l6-9 6 9M18 18a6 6 0 00-12 0"></path>
+            </svg>
+            <span class="title-font font-medium">Sustainability-Driven</span>
+          </div>
+        </div>
+        <!-- Feature 9: Comprehensive Support -->
+        <div class="p-2 w-full md:w-1/2 lg:w-1/3">
+          <div class="bg-white rounded flex p-4 h-full items-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              class="text-secondary-dark w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+              <circle cx="18" cy="18" r="3"></circle>
+              <circle cx="6" cy="6" r="3"></circle>
+              <path d="M6 9v3a9 9 0 009 9h3"></path>
+            </svg>
+            <span class="title-font font-medium">Comprehensive Support</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="./pages/about-us.html">
+
+
+        <button
+          class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow flex mx-auto mt-16 border-0 py-2 px-8 focus:outline-none rounded text-lg">Learn
+          More</button>
+      </a>
+    </div>
+  </section>
+  <!-- Green Energy Statement Section -->
+  <section class="text-gray-600 body-font bg-gray-100">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <h2 class="sm:text-3xl text-2xl text-primary-dark font-bold title-font mb-4 md:w-2/5">
+        <span class="text-green-700">GREEN ENERGY: </span> Compact Biomass Gasifier &amp; Improved Smokeless Biomass
+        Stove
+      </h2>
+      <div class="md:w-3/5 md:pl-6">
+        <p class="leading-relaxed text-base text-gray-700">
+          Helping hand for rural electrification &amp; supporting social development of the people with good health
+          around
+          the world.
+        </p>
+        <div class="flex md:mt-4 mt-6">
+          <a href="./pages/products.html">
+            <button
+              class="inline-flex text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-primary-dark rounded">
+              Explore Products
+            </button>
+          </a>
+          <a class="text-primary inline-flex items-center ml-4" href="./pages/about-us.html">
+            Learn More
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Renewable Energy Sources Section -->
+  <section class="bg-primary-dark text-white body-font">
+    <div class="container mx-auto px-5 py-24">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">Renewable Energy Sources</h2>
+      </div>
+
+      <div class="flex flex-wrap lg:flex-nowrap items-center justify-between">
+        <!-- Text Content -->
+        <div class="w-full lg:pr-10">
+          <!-- <h3 class="text-2xl font-semibold text-secondary mb-4">Major Types of Renewable Energy Sources</h3>
+          -->
+          <!-- <h3 class="text-2xl font-semibold text-secondary mb-4">Biomass - Renewable Energy from Plants and Animals</h3> -->
+          <p class="leading-relaxed mb-6">
+            Renewable energy is defined as energy
+            that comes from naturally regenerated
+            resources
+            and
+            is
+            infinitely
+            useful
+            throughout a human lifetime. Sustainable
+            substitutes for finite fossil fuels include
+            these resources, which include sunlight,
+            wind, water, and biomass. These resources
+            are also abundant and naturally renewed.
+            Energy security and independence are
+            promoted while greenhouse gas emissions
+            are decreased and climate change is
+            mitigated through the usage of renewable
+            energy.
+          </p>
+          <!-- <p class="leading-relaxed">
+            While wood remains a major source, modern biomass energy leverages a wide range of resources, making it an
+            adaptable and sustainable energy option.
+          </p> -->
+          <img @click="open = true"
+            class="object-cover object-center rounded-lg shadow-md cursor-pointer mx-auto my-5 lazy"
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Renewable Energy"
+            data-src="https://img.brainkart.com/imagebk45/SXuMv3R.jpg" loading="lazy" decoding="async"
+            fetchpriority="low">
+
+        </div>
+
+        <!-- Image with Click-to-Enlarge and Overlay -->
+        <div class="w-full lg:mt-0 mt-8 relative group" x-data="{ open: false }">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              class="border border-white p-2 bg-white rounded-lg mx-auto lazy" alt=""
+              data-src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29sYXIlMjBlbmVyZ3l8ZW58MHx8MHx8fDA%3D"
+              loading="lazy" decoding="async" fetchpriority="low">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="mx-auto p-2 bg-white rounded-lg lazy" alt=""
+              data-src="https://plus.unsplash.com/premium_photo-1681488432824-cae8c038ccb1?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2luZG1pbGx8ZW58MHx8MHx8fDA%3D"
+              loading="lazy" decoding="async" fetchpriority="low">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="p-2 bg-white rounded-lg mx-auto lazy" alt=""
+              data-src="https://plus.unsplash.com/premium_photo-1678167657805-36fb1c27cbd4?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aHlkcm9wb3dlcnxlbnwwfHwwfHx8MA%3D%3D"
+              loading="lazy" decoding="async" fetchpriority="low">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="mx-auto p-2 bg-white rounded-lg lazy" alt=""
+              data-src="https://images.unsplash.com/photo-1625569181760-034e10765531?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJpb21hc3MlMjBlbmVyZ3l8ZW58MHx8MHx8fDA%3D"
+              loading="lazy" decoding="async" fetchpriority="low">
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <section class="bg-white text-dark body-font">
+    <div class="container mx-auto px-5 py-24">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold">BIOMASS ENERGY SOURCES</h2>
+      </div>
+
+      <div class="flex flex-wrap lg:flex-nowrap items-center justify-between">
+        <!-- Text Content -->
+        <div class="w-full lg:pr-10">
+          <!-- <h3 class="text-2xl font-semibold text-secondary mb-4">Major Types of Renewable Energy Sources</h3>
+          -->
+          <!-- <h3 class="text-2xl font-semibold text-secondary mb-4">Biomass - Renewable Energy from Plants and Animals</h3> -->
+          <p class="leading-relaxed mb-6">
+            Renewable energy is defined as energy
+            that comes from naturally regenerated
+            resources
+            and
+            is
+            infinitely
+            useful
+            throughout a human lifetime. Sustainable
+            substitutes for finite fossil fuels include
+            these resources, which include sunlight,
+            wind, water, and biomass. These resources
+            are also abundant and naturally renewed.
+            Energy security and independence are
+            promoted while greenhouse gas emissions
+            are decreased and climate change is
+            mitigated through the usage of renewable
+            energy.
+          </p>
+          <!-- <p class="leading-relaxed">
+            While wood remains a major source, modern biomass energy leverages a wide range of resources, making it an
+            adaptable and sustainable energy option.
+          </p> -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <img @click="open = true" class="object-cover object-center shadow-md cursor-pointer mx-auto my-5 lazy"
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Renewable Energy"
+              data-src="https://images.unsplash.com/photo-1607214272279-00bfdae4574d?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWdyaWN1bHR1cmFsJTIwcmVzaWR1ZXxlbnwwfHwwfHx8MA%3D%3D"
+              loading="lazy" decoding="async" fetchpriority="low">
+            <img @click="open = true" class="object-cover object-center shadow-md cursor-pointer mx-auto my-5 lazy"
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Renewable Energy"
+              data-src="https://images.unsplash.com/flagged/photo-1572213426852-0e4ed8f41ff6?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2FzdGV8ZW58MHx8MHx8fDA%3D"
+              loading="lazy" decoding="async" fetchpriority="low">
+
+          </div>
+
+        </div>
+
+        <!-- Image with Click-to-Enlarge and Overlay -->
+        <div class="w-full lg:mt-0 mt-8 relative group" x-data="{ open: false }">
+          <div class="w-full">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              class="w-full border border-white p-2 bg-white rounded-lg mx-auto lazy" alt=""
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/biomass.webp" loading="lazy"
+              decoding="async" fetchpriority="low">
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- Our Innovative Products-->
+  <section class="bg-gray-100 text-gray-700 body-font">
+    <div class="container mx-auto px-5 py-24">
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-primary-dark">Our Innovative Products</h2>
+        <p class="mt-4 text-lg text-gray-600">
+          Explore our range of cutting-edge products designed to promote sustainable energy and improve lives worldwide.
+        </p>
+      </div>
+
+      <!-- Swiper -->
+      <!-- Swiper -->
+      <div class="swiper productSwiper p-10">
+        <div class="swiper-wrapper">
+          <!-- Product Cards -->
+          <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
+            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              alt="Biomass Gasifier for Power Production"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/b1.webp" loading="lazy" decoding="async"
+              fetchpriority="low">
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-primary mb-2">Biomass Gasifier</h3>
+              <p class="text-gray-600 text-sm mb-4">Efficiently generates power using biomass as fuel, ideal for rural
+                electrification.</p>
+              <a target="_blank" href="./pages/biomass-gasifier-exporter.html"
+                class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">Learn
+                More</a>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
+            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              alt="Smokeless Biomass Stoves / Bhatti"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Smokeless_Domestic_Biomass_Stove.webp"
+              loading="lazy" decoding="async" fetchpriority="low">
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-primary mb-2">Smokeless Domestic Biomass Stove </h3>
+              <p class="text-gray-600 text-sm mb-4">Provides an eco-friendly cooking solution with minimal smoke
+                emission.</p>
+              <a target="_blank" href="./pages/products.html?category=Smokeless+Biomass+Stoves+%2F+Bhatti#products"
+                class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">Learn
+                More</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
+            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              alt="Biomass Gasifier for Thermal Applications"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Smokeless_Commercial_Biomass_Stoves.webp"
+              loading="lazy" decoding="async" fetchpriority="low">
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-primary mb-2">Smokeless Commercial Biomass Stoves</h3>
+              <p class="text-gray-600 text-sm mb-4">Converting biomass into a clean energy source.</p>
+              <a target="_blank" href="./pages/products.html?category=Smokeless+Biomass+Stoves+%2F+Bhatti#products"
+                class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">Learn
+                More</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
+            <img class="h-[220px] w-full object-cover lazy" style="background-color: rgb(42,159,211);"
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Biomass Gasifier for Thermal Applications"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Auto_Bio-Mawa_Machine.webp" loading="lazy"
+              decoding="async" fetchpriority="low">
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-primary mb-2">Auto Bio-Mawa/Khoya Machine</h3>
+              <p class="text-gray-600 text-sm mb-4">Automates mawa (khoya) production using biomass energy, improving
+                efficiency.</p>
+              <a target="_blank" href="./pages/products.html?category=Auto+Bio-Mawa%2FKhoya+Machine#products"
+                class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">Learn
+                More</a>
+            </div>
+          </div>
+          <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
+            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              alt="Biomass Gasifier for Thermal Applications"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Biogas_Genset.webp" loading="lazy"
+              decoding="async" fetchpriority="low">
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-primary mb-2">Biogas Genset</h3>
+              <p class="text-gray-600 text-sm mb-4"> Uses biogas to generate electricity, offering a renewable power
+                solution.</p>
+              <a target="_blank" href="./pages/products.html?category=Biogas%2FSyngas+Generators#products"
+                class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">Learn
+                More</a>
+            </div>
+          </div>
+
+
+          <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
+            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              alt="Biomass Gasifier for Thermal Applications"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Biomass_Torrefaction__Bio-Char_Plant.webp"
+              loading="lazy" decoding="async" fetchpriority="low">
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-primary mb-2">Biomass Pyrolysis Plant (Bio-char Plant)</h3>
+              <p class="text-gray-600 text-sm mb-4"> Converts biomass into biochar or torrefied fuel for improved
+                combustion.</p>
+              <a target="_blank"
+                href="./pages/products.html?category=Biomass+Pyrolysis+Plant+%28Bio-char+Plant%29#products"
+                class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">Learn
+                More</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
+            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              alt="Biogas/Syngas Generators"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Solid_Liquid_Separator__Dewatering_Machine_.webp"
+              loading="lazy" decoding="async" fetchpriority="low">
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-primary mb-2">Solid Liquid Separator (Dewatering Machine)</h3>
+              <p class="text-gray-600 text-sm mb-4"> Separates solids from liquids in wastewater or slurry processing..
+              </p>
+              <a target="_blank"
+                href="./pages/products.html?category=Solid+Liquid+Separator+%28Dewatering+Machine%29#products"
+                class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">Learn
+                More</a>
+            </div>
+          </div>
+
+
+
+          <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
+            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              alt="Auto Bio-Mawa/Khoya Machine"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Used_Oil__Black_Engine_Oil__Distillation_Machine.webp"
+              loading="lazy" decoding="async" fetchpriority="low">
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-primary mb-2">Used Oil (Black Engine Oil) Distillation Machine</h3>
+              <p class="text-gray-600 text-sm mb-4"> Recycles used engine oil into reusable fuel or base oil.
+              </p>
+              <a target="_blank"
+                href="./pages/products.html?category=Used+Oil+%28Black+Engine+Oil%29+Distillation+Machine#products"
+                class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">Learn
+                More</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
+            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              alt="Biomass Pyrolysis Plant (Bio-char Plant)"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Control_Panel.webp" loading="lazy"
+              decoding="async" fetchpriority="low">
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-primary mb-2">Control Panels</h3>
+              <p class="text-gray-600 text-sm mb-4">Electrical panels for industrial automation and power management.
+              </p>
+              <a target="_blank" href="./pages/products.html?category=Control+Panels#products"
+                class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">Learn
+                More</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
+            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              alt="Biomass Pyrolysis Plant (Bio-char Plant)"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Biomass_Shredder.JPG.webp" loading="lazy"
+              decoding="async" fetchpriority="low">
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-primary mb-2">Biomass Shredder</h3>
+              <p class="text-gray-600 text-sm mb-4"> Reduces biomass waste into smaller particles for easier processing.
+              </p>
+              <a target="_blank" href="./pages/products.html?category=Biomass+Shredder#products"
+                class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">Learn
+                More</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
+            <img class="h-[220px] w-full object-cover lazy" style="background-color: rgb(42,159,211);"
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Biomass Gasifier for Thermal Applications"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/CNC_Hydraulic_Bending_Machine_Job_Work.webp"
+              loading="lazy" decoding="async" fetchpriority="low">
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-primary mb-2">CNC / Hydraulic Cutting and Bending Machine Job Work Job
+                Work</h3>
+              <p class="text-gray-600 text-sm mb-4"> Precision metal bending services using CNC or hydraulic machines.
+              </p>
+              <a target="_blank"
+                href="./pages/products.html?category=CNC%2F+Hydraulic+Cutting%2FBending+Machine+Job+Work#products"
+                class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">Learn
+                More</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
+            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              alt="Biomass Gasifier for Thermal Applications"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/DG_Set_Canopy.webp" loading="lazy"
+              decoding="async" fetchpriority="low">
+            <div class="p-4">
+              <h3 class="text-lg font-bold text-primary mb-2">DG Set Canopy</h3>
+              <p class="text-gray-600 text-sm mb-4">Converting biomass into a clean energy source.</p>
+              <a target="_blank"
+                href="./pages/products.html?category=Acoustic+Enclosure+%28Canopy%29+for+DG+Sets#products"
+                class="text-white bg-primary hover:bg-primary-dark py-2 px-4 rounded text-sm inline-block">Learn
+                More</a>
+            </div>
+          </div>
+
+          <!-- Add more product cards here following the same format -->
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <section class="bg-gray-100 text-gray-700 body-font">
+
+    <div class="container mx-auto px-5 py-24">
+      <!-- Section Header -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-primary-dark">Our Story</h2>
+        <p class="mt-4 text-lg text-gray-600">
+          Explore our story.
+        </p>
+      </div>
+
+      <!-- Videos Carousel -->
+      <div class="swiper storySwiper p-10">
+        <div class="swiper-wrapper">
+
+          <!-- 1 -->
+          <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[320px]">
+            <div class="relative pt-[56.25%]">
+              <iframe class="absolute inset-0 w-full h-full"
+                src="https://www.youtube-nocookie.com/embed/dEqKMbc6GAU?rel=0&amp;modestbranding=1&amp;playsinline=1"
+                title="YouTube video" loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[320px]">
+            <div class="relative pt-[56.25%]">
+              <iframe class="absolute inset-0 w-full h-full"
+                src="https://www.youtube-nocookie.com/embed/V3E_BG4QzPg?rel=0&amp;modestbranding=1&amp;playsinline=1"
+                title="YouTube video" loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[320px]">
+            <div class="relative pt-[56.25%]">
+              <iframe class="absolute inset-0 w-full h-full"
+                src="https://www.youtube-nocookie.com/embed/GTmOj_JRLVw?rel=0&amp;modestbranding=1&amp;playsinline=1"
+                title="YouTube video" loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[320px]">
+            <div class="relative pt-[56.25%]">
+              <iframe class="absolute inset-0 w-full h-full"
+                src="https://www.youtube-nocookie.com/embed/IAGaO9LRVOY?rel=0&amp;modestbranding=1&amp;playsinline=1"
+                title="YouTube video" loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Pagination & Nav -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <script>
+        const videoSwiper = new Swiper('.storySwiper', {
+          spaceBetween: 16,
+          slidesPerView: 1.1,
+          pagination: { el: '.storySwiper .swiper-pagination', clickable: true },
+          navigation: {
+            nextEl: '.storySwiper .swiper-button-next',
+            prevEl: '.storySwiper .swiper-button-prev',
+          },
+          breakpoints: {
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 }
+          }
+        });
+      </script>
+
+
+
+    </div>
+  </section>
+
+
+  <!-- Achievments-sections -->
+
+  <section id="achievements" class="bg-primary-dark text-white body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h2 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Our Achievements</h2>
+          <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+        </div>
+        <p class="lg:w-1/2 w-full leading-relaxed text-white">
+          A glimpse of our success. We take pride in our journey and the milestones we’ve reached while working
+          relentlessly towards a sustainable future.
+        </p>
+      </div>
+
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/2 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg h-[450px] w-full">
+            <img class="h-64 w-full rounded object-cover object-center mb-6 lazy"
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="content"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/WhatsApp_Image_2021-08-05_at_18.56.08.webp"
+              loading="lazy" decoding="async" fetchpriority="low">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">100kW Biomass Gasifier</h2>
+            <h2 class="text-lg text-primary-dark font-medium title-font">UNDP -Yemen (United Nations Development
+              Programme)</h2>
+          </div>
+        </div>
+
+        <div class="xl:w-1/2 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg h-[450px] w-full">
+            <img class="h-64 w-full rounded object-cover object-center mb-6 lazy"
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="content"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/5KW_Biomaass_gasifier_KNUST__Ghana__1_.webp"
+              loading="lazy" decoding="async" fetchpriority="low">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">5kW Biomass Gasifier</h2>
+            <h2 class="text-lg text-primary-dark font-medium title-font">KNUST-Ghana (Kwame Nkrumah University of
+              Science and Technology)</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg h-[450px] w-full">
+            <img class="h-48 w-full rounded object-cover object-center mb-6 lazy"
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="content"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/50KW_ESB_Biomass_Gasifier__1_.webp"
+              loading="lazy" decoding="async" fetchpriority="low">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">50kW Biomass Gasifier</h2>
+            <h2 class="text-lg text-primary-dark font-medium title-font">NIT-Tiruchirappalli (National Institute of
+              Technology)</h2>
+          </div>
+        </div>
+
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg h-[450px] w-full">
+            <img class="h-48 w-full rounded object-cover object-center mb-6 lazy"
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="content"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Biomass_Gasifier.webp" loading="lazy"
+              decoding="async" fetchpriority="low">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">10kW Biomass Gasifier</h2>
+            <h2 class="text-lg text-primary-dark font-medium title-font">IIT-Ropar (lndian Institute of Technology)</h2>
+          </div>
+        </div>
+
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg h-[450px] w-full">
+            <img class="h-48 w-full rounded object-cover object-center mb-6 lazy"
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="content"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/bio-mini-solar.webp" loading="lazy"
+              decoding="async" fetchpriority="low">
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">ESB-R Bio-MiniSolar-Smokeless Domestic Biomass
+              Stove</h2>
+            <h2 class="text-lg text-primary-dark font-medium title-font">TREDA (Tripura Renewable Energy Development
+              Agency)</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="py-5 my-5 client-logos">
+    <h2 class="text-center text-4xl font-bold text-gray-800 mb-4">Our Clients</h2>
+    <div class="overflow-hidden">
+      <div class="flex whitespace-nowrap logos">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 1 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/junagadh_agriculture_university.webp"
+          loading="lazy" decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 2 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/nit_mizoram.webp" loading="lazy"
+          decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 3 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/aims_aligha.webp" loading="lazy"
+          decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 4 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/ntpc.webp" loading="lazy" decoding="async"
+          fetchpriority="low">
+        <!-- Continue adding more images -->
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 5 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/sastra_demmed_university.webp" loading="lazy"
+          decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 6 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/nit_tiruchirappalli.webp" loading="lazy"
+          decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 7 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/indian_oil_corporation_limited.webp"
+          loading="lazy" decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 8 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/pv_narsimha_rao_telangna_veterinary_university.webp"
+          loading="lazy" decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 9 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/bits_pilani_hydrabaad.webp" loading="lazy"
+          decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 10 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/vit_vellore.webp" loading="lazy"
+          decoding="async" fetchpriority="low">
+        <!-- Add more images until 27 -->
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 11 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/csir_cmeri_durgapur.webp" loading="lazy"
+          decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 12 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/bharat_petrolium.webp" loading="lazy"
+          decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 13 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/gaya_college_of_engineering.webp"
+          loading="lazy" decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 14 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/gimt_guwahati.webp" loading="lazy"
+          decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 15 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/iit_roorkee.webp" loading="lazy"
+          decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 16 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/iit_ropar.webp" loading="lazy" decoding="async"
+          fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 17 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/lnmiit.webp" loading="lazy" decoding="async"
+          fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 18 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/maharaj_sayajirao_university_of_baroda.webp"
+          loading="lazy" decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 19 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/niist.webp" loading="lazy" decoding="async"
+          fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 20 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/nit_rourkela.webp" loading="lazy"
+          decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 21 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/tripura_renewable_energy_development.webp"
+          loading="lazy" decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 22 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/sardarkrushinagar_dantiwada_agriculture_university_gujrat.webp"
+          loading="lazy" decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 23 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/peda.webp" loading="lazy" decoding="async"
+          fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 24 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/oiiro.webp" loading="lazy" decoding="async"
+          fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 25 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/godavari_agro.webp" loading="lazy"
+          decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 26 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/msa_bio_energy.webp" loading="lazy"
+          decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 27 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/avani.webp" loading="lazy" decoding="async"
+          fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 28 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/united_nations_development.webp"
+          loading="lazy" decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 29 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/iiab.webp" loading="lazy" decoding="async"
+          fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 30 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/sardar_swan_sing_nation_institute.webp"
+          loading="lazy" decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 31 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/mnit_jaipur.webp" loading="lazy"
+          decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 32 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/nit_uttrakhand.webp" loading="lazy"
+          decoding="async" fetchpriority="low">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 33 Logo"
+          class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
+          data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/national_innovation_foundation.webp"
+          loading="lazy" decoding="async" fetchpriority="low">
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <section class="bg-gray-100 text-primary-dark body-font" id="testimonials">
+    <div class="container px-5 py-24 mx-auto">
+      <h2 class="text-3xl font-medium title-font text-center mb-12 text-primary-dark">Testimonials</h2>
+
+      <div class="swiper testimonials">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide p-4 md:w-1/2 w-full transform transition-transform duration-500 hover:scale-105">
+            <div class="h-full bg-white p-8 rounded-lg shadow-lg">
+              <p class="leading-relaxed mb-6 text-black">"Amazing service and team! They really helped us scale fast."
+              </p>
+              <a class="inline-flex items-center">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Alice Smith, CEO of AlphaTech"
+                  class="w-12 h-12 rounded-full object-cover lazy" data-src="https://dummyimage.com/106x106"
+                  loading="lazy" decoding="async" fetchpriority="low">
+                <span class="flex flex-col pl-4">
+                  <span class="font-medium text-primary-dark">Alice Smith</span>
+                  <span class="text-gray-500 text-sm">CEO, AlphaTech</span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide p-4 md:w-1/2 w-full transform transition-transform duration-500 hover:scale-105">
+            <div class="h-full bg-white p-8 rounded-lg shadow-lg">
+              <p class="leading-relaxed mb-6 text-black">"Very professional and supportive. Highly recommended."</p>
+              <a class="inline-flex items-center">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="John Doe, Marketing Head of BetaCorp"
+                  class="w-12 h-12 rounded-full object-cover lazy" data-src="https://dummyimage.com/107x107"
+                  loading="lazy" decoding="async" fetchpriority="low">
+                <span class="flex flex-col pl-4">
+                  <span class="font-medium text-primary-dark">John Doe</span>
+                  <span class="text-gray-500 text-sm">Marketing Head, BetaCorp</span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide p-4 md:w-1/2 w-full transform transition-transform duration-500 hover:scale-105">
+            <div class="h-full bg-white p-8 rounded-lg shadow-lg">
+              <p class="leading-relaxed mb-6 text-black">"Superb experience! Everything was smooth and efficient."</p>
+              <a class="inline-flex items-center">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Priya Verma, Founder of Startup Inc."
+                  class="w-12 h-12 rounded-full object-cover lazy" data-src="https://dummyimage.com/108x108"
+                  loading="lazy" decoding="async" fetchpriority="low">
+                <span class="flex flex-col pl-4">
+                  <span class="font-medium text-primary-dark">Priya Verma</span>
+                  <span class="text-gray-500 text-sm">Founder, Startup Inc.</span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="swiper-slide p-4 md:w-1/2 w-full transform transition-transform duration-500 hover:scale-105">
+            <div class="h-full bg-white p-8 rounded-lg shadow-lg">
+              <p class="leading-relaxed mb-6 text-black">"Their dedication and expertise exceeded our expectations."</p>
+              <a class="inline-flex items-center">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Rahul Singh, CTO of FutureSoft"
+                  class="w-12 h-12 rounded-full object-cover lazy" data-src="https://dummyimage.com/109x109"
+                  loading="lazy" decoding="async" fetchpriority="low">
+                <span class="flex flex-col pl-4">
+                  <span class="font-medium text-primary-dark">Rahul Singh</span>
+                  <span class="text-gray-500 text-sm">CTO, FutureSoft</span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <br>
+        <!-- Pagination Dots -->
+        <div class="swiper-pagination mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="py-16 bg-gray-500">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-white mb-12">Contact Us</h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Contact Details -->
+        <div class="space-y-8">
+          <div>
+            <h3 class="text-2xl font-semibold text-white">Head Office</h3>
+            <p class="text-white mt-2">Enersol Biopower Private Limited
+              Plot No. 57 A, Vrindavan Vihar, Akeda Dunder, laxminarayanpura, VKI Road No .19, Jaipur-302013</p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-white">Factory</h3>
+            <p class="text-white mt-2">Enersol Biopower Private Limited
+              Plot No. 57 A, Vrindavan Vihar, Akeda Dunder, laxminarayanpura, VKI Road No .19, Jaipur-302013</p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-white">Call Us</h3>
+            <p class="text-white mt-2">
+              <a href="tel:+919414535665" class="hover:underline">+91 9414535665</a> <br>
+              <a href="tel:+917073495200" class="hover:underline">+91 8239554433</a>
+            </p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold text-white">Email Us</h3>
+            <p class="text-white mt-2">
+              <a href="mailto:info@enersolbiopower.com" class="hover:underline text-wrap">info@enersolbiopower.com</a>
+            </p>
+          </div>
+        </div>
+        <!-- Contact Form -->
+        <div>
+          <h3 class="text-2xl font-semibold text-white mb-4">Get in Touch</h3>
+
+          <form id="contactForm" class="space-y-6">
+            <!-- Name -->
+            <div class="flex flex-col">
+              <label for="name" class="text-white">Name</label>
+              <input type="text" id="name" name="name"
+                class="p-3 mt-2 border-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                required="">
+            </div>
+
+            <!-- Mobile -->
+            <div class="flex flex-col">
+              <label for="mobile" class="text-white">Mobile No.</label>
+              <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}"
+                class="p-3 mt-2 border-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                required="">
+            </div>
+
+            <!-- Message -->
+            <div class="flex flex-col">
+              <label for="message" class="text-white">Message</label>
+              <textarea id="message" name="message" rows="5"
+                class="p-3 mt-2 border-2 border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                required=""></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit"
+              class="w-full bg-blue-500 hover:bg-blue-700 text-white p-3 mt-4 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+              Submit
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Footer Section -->
+  <footer class="bg-primary-dark text-white body-font">
+    <div
+      class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col justify-center">
+      <!-- Logo and Info Section -->
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          <!-- Adjusted Logo -->
+        </a>
+        <div class="flex justify-center lg:justify-start md:justify-start lg:w-0 lg:flex-1"><a
+            class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+          </a><a href="#">
+            <img class="h-12 w-auto sm:h-14 object-contain lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+              alt="Enersol Biopower" style="min-width: 150px;"
+              data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" loading="lazy"
+              decoding="async" fetchpriority="low">
+          </a>
+        </div>
+
+
+        <p class="mt-2 text-sm text-gray-300">Innovative Renewable Energy Solutions for a Sustainable Future</p>
+        <hr class="my-3">
+        <span class="inline-flex space-x-2 justify-center sm:justify-start">
+          <a href="https://www.facebook.com/enersolbiopwr" class="text-white text-xl">
+            <i class="ri-facebook-fill"></i>
+          </a>
+          <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy" class="text-white text-xl">
+            <i class="ri-youtube-fill"></i>
+          </a>
+          <a href="https://www.instagram.com/enersol_biopower/" class="text-white text-xl">
+            <i class="ri-instagram-fill"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/" class="text-white text-xl">
+            <i class="ri-linkedin-fill"></i>
+          </a>
+        </span>
+      </div>
+
+      <!-- Column 1: Categories -->
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Explore</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-300 hover:text-gray-200" href="/">Home</a>
+            </li>
+            <li>
+              <a class="text-gray-300 hover:text-gray-200" href="./pages/about-us.html">About Us</a>
+            </li>
+            <li>
+              <a class="text-gray-300 hover:text-gray-200" href="./pages/our-story.html">Our Story</a>
+            </li>
+            <li>
+              <a class="text-gray-300 hover:text-gray-200" href="./pages/products.html">Products</a>
+            </li>
+          </nav>
+        </div>
+
+        <!-- Column 2: Categories -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Company</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-300 hover:text-gray-200" href="./pages/contact-us.html">Contact Us</a>
+            </li>
+            <li>
+              <a class="text-gray-300 hover:text-gray-200" href="./pages/blogs.html">Blogs</a>
+            </li>
+            <li>
+              <a class="text-gray-300 hover:text-gray-200" href="./pages/privacy-policy.html">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="./pages/term-and-condition.html" class="text-gray-300 hover:text-gray-200">Terms of
+                Service</a>
+            </li>
+            <li>
+              <a href="./pages/refund-policy.html" class="text-gray-300 hover:text-gray-200">Refund
+                Policy</a>
+            </li>
+          </nav>
+        </div>
+
+        <!-- Column 3: Categories -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Categories</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-300 hover:text-gray-200" href="./#achievements">Our Achievements</a>
+            </li>
+            <li>
+              <a class="text-gray-300 hover:text-gray-200" href="./#testimonials">Testimonials</a>
+            </li>
+            <li>
+              <a class="text-gray-300 hover:text-gray-200" href="./pages/about-us.html#our-history">Our
+                History</a>
+            </li>
+            <li>
+              <a class="text-gray-300 hover:text-gray-200" href="./pages/about-us.html#mission">Mission &amp;
+                Vission</a>
+            </li>
+          </nav>
+        </div>
+
+        <!-- Contact Column (with icons) -->
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
+          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
+            Contact
+          </h2>
+          <nav class="list-none mb-10 footer-contact ">
+            <!-- Address -->
+            <style>
+              @media (max-width: 768px) {
+                .addressList {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  /* Centers the list */
+                  text-align: center;
+                  /* Ensures text is centered */
+                }
+
+                .addressList li {
+                  justify-content: center;
+                  /* Centers content horizontally */
+                }
+              }
+            </style>
+            <div class="addressList justify-center">
+              <li class="text-gray-300 flex items-start">
+                <!-- Address Icon -->
+                <i class="ri-map-pin-fill mr-2 text-white"></i>
+                <span class="block">Enersol Biopower Private Limited
+                  Plot No. 57 A, Vrindavan Vihar, Akeda Dunder, laxminarayanpura, VKI Road No .19, Jaipur-302013</span>
+              </li>
+              <!-- Phone -->
+              <li class="text-gray-300 flex items-start">
+                <!-- Phone Icon -->
+                <i class="ri-phone-fill mr-2 text-white"></i>
+                <span class="block">+91-9414535665</span>
+              </li>
+              <li class="text-gray-300 flex items-start">
+                <i class="ri-phone-fill mr-2 text-white"></i>
+                <span class="block">+91-8239554433</span>
+              </li>
+              <!-- Email -->
+              <li class="text-gray-300 flex items-start">
+                <!-- Email Icon -->
+                <i class="ri-mail-fill mr-2 text-white"></i>
+                <a href="mailto:info@enersolbiopower.com" class="block hover:text-white">info@enersolbiopower.com</a>
+              </li>
+            </div>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="brand-logo flex h-16 sm:h-24 bg-white p-4 justify-center gap-4 sm:gap-6">
+  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="NIF Logo"
+    data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/nif-logo-1.webp" 
+    loading="lazy" decoding="async" fetchpriority="low" class="lazy max-h-16 sm:max-h-24">
+  
+  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="GIAN"
+    data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/gian.webp" 
+    loading="lazy" decoding="async" fetchpriority="low" class="lazy max-h-16 sm:max-h-24">
+  
+  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Swachh Bharat"
+    data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp"
+    loading="lazy" decoding="async" fetchpriority="low" class="lazy max-h-16 sm:max-h-24">
+  
+  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Junagadh Agriculture University"
+    data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/junagadh_agriculture_university.webp" 
+    loading="lazy" decoding="async" fetchpriority="low" class="lazy max-h-16 sm:max-h-24">
+  
+  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Sustainable Energy"
+    data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/sustainable-energy.webp" 
+    loading="lazy" decoding="async" fetchpriority="low" class="lazy max-h-16 sm:max-h-24">
+  
+  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Make in India"
+    data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Make_In_India_new.webp?updatedAt=1754911304078" 
+    loading="lazy" decoding="async" fetchpriority="low" class="lazy max-h-16 sm:max-h-24">
+</div>
+
+    <!-- Footer Bottom Section -->
+    <div class="bg-gray-800">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap justify-between flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2025 Enersol Biopower — All Rights Reserved</p>
+        <p class="text-gray-500 text-sm text-center sm:text-left">Design &amp; Development By <a
+            href="https://www.thundergits.com" target="_blank">ThunderGits</a> </p>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="./js/main.js"></script>
+  <script>
+    const logosDiv = document.querySelector('.logos');
+    let isScrolling;
+
+    function startScrolling() {
+      isScrolling = setTimeout(function () {
+        const firstImg = logosDiv.firstElementChild;
+        logosDiv.appendChild(firstImg);
+        logosDiv.style.transition = 'none';
+        logosDiv.insertBefore(firstImg, logosDiv.firstChild);
+        logosDiv.style.transition = 'transform 1s';
+        startScrolling();
+      }, 2000); // Adjust timing to control scroll speed
+    }
+
+    function stopScrolling() {
+      clearTimeout(isScrolling);
+    }
+
+    logosDiv.addEventListener('mouseover', stopScrolling);
+    logosDiv.addEventListener('mouseout', startScrolling);
+
+    startScrolling();
+
+  </script>
+  <script src="./js//contact-us-form.js"></script>
+  <script src="./js/quick-enquiry-btn.js"></script>
+  <script src="./js/whatsapp-btn.js"></script>
+  <script src="./js/whatsApp-integration.js"></script>
+  <script type="module" src="./js/enquiry-modal.js"></script>
+
+
+
+
+
+
+  <style data-lazy-css="1">
+    img.lazy {
+      opacity: 0;
+      transition: opacity .35s ease;
+    }
+
+    img.lazy.loaded {
+      opacity: 1;
+    }
+  </style>
+
+  <script data-lazy-loader="1">
+    (function () {
+      const SEL = "img.lazy[data-src]";
+      function loadNow(img) {
+        img.src = img.dataset.src;
+        img.onload = function () { img.classList.add("loaded"); };
+        img.removeAttribute("data-src");
+      }
+      if (!("IntersectionObserver" in window)) {
+        document.querySelectorAll(SEL).forEach(loadNow);
+        return;
+      }
+      const io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          loadNow(entry.target);
+          io.unobserve(entry.target);
+        });
+      }, { rootMargin: "250px 0px" });
+      document.querySelectorAll(SEL).forEach(function (img) { io.observe(img); });
+    })();
+  </script>
+</body>
+
+</html>

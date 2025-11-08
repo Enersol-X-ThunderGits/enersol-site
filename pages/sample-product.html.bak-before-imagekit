@@ -412,7 +412,7 @@
                                 Achievements</a>
                         </li>
                         <li>
-                            <a class="text-gray-300 hover:text-gray-200" href="./#testimonials">Testimonials</a>
+                            <a class="text-gray-300 hover:text-gray-200" href="/#testimonials">Testimonials</a>
                         </li>
                         <li>
                             <a class="text-gray-300 hover:text-gray-200" href="./about-us.html#our-history">Our

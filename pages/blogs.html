@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../assets/logo/fav-icon.png">
     <title>Blogs - Enersol Biopower</title>
-    
+
     <!-- Optimized resource loading -->
     <link rel="preload" href="../assets/logo/erersollogo.webp" as="image" type="image/webp">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -53,8 +54,11 @@
         };
     </script>
     <!-- Load icon font async -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"></noscript>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" media="print"
+        onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css">
+    </noscript>
     <style>
         /* Font loaded via preload link above */
 
@@ -126,7 +130,7 @@
             height: 1px;
             background: linear-gradient(90deg, transparent, #cbd5e1, transparent);
         }
-        
+
         /* Removed heavy load-more-btn animations */
 
         /* Simple fade in animation */
@@ -139,6 +143,7 @@
                 opacity: 0;
                 transform: translateY(10px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -152,8 +157,8 @@
     <!-- <div id="pageLoader" class="page-loader">
         <div class="text-center">
             <img src="../assets/logo/erersollogo.webp" alt="Enersol Biopower" class="h-16 mb-4 mx-auto fade-in"> -->
-            <!-- <div class="spinner"></div> -->
-            <!-- <p class="loader-text">Loading blogs...</p>
+    <!-- <div class="spinner"></div> -->
+    <!-- <p class="loader-text">Loading blogs...</p>
             <div class="content-loader mt-4">
                 <div class="dots-loading">
                     <div></div>
@@ -258,9 +263,8 @@
                 <div class="flex justify-start lg:w-0 lg:flex-1">
                     <a href="/">
                         <img class="h-12 w-auto sm:h-14 lazy" src="../assets/logo/erersollogo.webp"
-                            alt="Enersol Biopower"
-                            data-src="../assets/logo/erersollogo.webp"
-                            loading="lazy" decoding="async" fetchpriority="low">
+                            alt="Enersol Biopower" data-src="../assets/logo/erersollogo.webp" loading="lazy"
+                            decoding="async" fetchpriority="low">
                     </a>
                 </div>
                 <!-- Navbar collapse button (visible on small screens) -->
@@ -285,8 +289,45 @@
                         class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
                     <a href="./our-story.html"
                         class="text-base font-medium text-white hover:text-accentYellow-light">Our Story</a>
-                    <a href="./products.html"
-                        class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+                    <div class="relative inline-block group">
+                        <!-- Products link -->
+                        <a href="./products.html"
+                            class="text-base font-medium text-white hover:text-accentYellow-light inline-flex items-center gap-1">
+                            Products
+                            <svg class="w-4 h-4 mt-0.5 transition-transform duration-200 group-hover:rotate-180"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+
+                        <!-- Dropdown (attached to Products) -->
+                        <div class="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200
+           opacity-0 invisible group-hover:opacity-100 group-hover:visible
+           transition-all duration-150 z-50">
+
+                            <a href="./biomass-gasifier-manufacturer-india.html"
+                                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary rounded-t-lg">
+                                Biomass Gasifier
+                            </a>
+
+                            <a href="./biomass-stove-manufacturer-india.html"
+                                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary">
+                                Biomass Stove
+                            </a>
+
+                            <a href="./biogas-genset-manufacturer-india.html"
+                                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary">
+                                Biogas Genset
+                            </a>
+
+                            <a href="./biomass-pyrolysis-plant-manufacturer-india.html"
+                                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary rounded-b-lg">
+                                Pyrolysis Plant
+                            </a>
+                        </div>
+                    </div>
+
                     <a href="./blogs.html" class="text-base font-medium text-white hover:text-accentYellow-light">Blogs
                     </a>
                     <a href="./contact-us.html"
@@ -446,7 +487,8 @@
                     <!-- Header -->
                     <div class="relative h-52">
                         <span class="category-tag">CLEAN ENERGY</span>
-                        <img src="https://ik.imagekit.io/enersolbiopower/blog/enersol-blog-2.png" alt="Biomass Gasifier Exporter from India"
+                        <img src="https://ik.imagekit.io/enersolbiopower/blog/enersol-blog-2.png"
+                            alt="Biomass Gasifier Exporter from India"
                             class="w-full h-full object-cover rounded-t-md lazy"
                             data-src="https://ik.imagekit.io/enersolbiopower/blog/enersol-blog-2.png" loading="lazy"
                             decoding="async" fetchpriority="low">
@@ -594,8 +636,7 @@
                     <!-- Header -->
                     <div class="relative h-52">
                         <span class="category-tag">CLEAN ENERGY</span>
-                        <img src="../assets/blogs/biomass-manufacturer.png"
-                            alt="Biomass Gasifier Manufacturer in India"
+                        <img src="../assets/blogs/biomass-manufacturer.png" alt="Biomass Gasifier Manufacturer in India"
                             class="w-full h-full object-cover rounded-t-md lazy"
                             data-src="../assets/blogs/biomass-manufacturer.png" loading="lazy" decoding="async"
                             fetchpriority="low">
@@ -641,8 +682,8 @@
                         <span class="category-tag">BIOCHAR TECHNOLOGY</span>
                         <img src="https://ik.imagekit.io/enersolbiopower/blog/biochar_pyrolysis_plant_working_benefits_technology_applications_models_and_pricing.webp"
                             alt="Biochar Pyrolysis Plant Working Benefits Technology Applications Models Pricing"
-                            class="w-full h-full object-cover rounded-t-md lazy"
-                            loading="lazy" decoding="async" fetchpriority="low">
+                            class="w-full h-full object-cover rounded-t-md lazy" loading="lazy" decoding="async"
+                            fetchpriority="low">
                     </div>
 
                     <!-- Body -->
@@ -687,8 +728,8 @@
                         <span class="category-tag">BIOCHAR INDUSTRY</span>
                         <img src="https://ik.imagekit.io/enersolbiopower/blog/biochar-pyrolysis-plant-manufacturer-in-india-biochar-from-agro-waste.webp"
                             alt="Biochar Pyrolysis Plant Manufacturer in India Biochar from Agro Waste"
-                            class="w-full h-full object-cover rounded-t-md lazy"
-                            loading="lazy" decoding="async" fetchpriority="low">
+                            class="w-full h-full object-cover rounded-t-md lazy" loading="lazy" decoding="async"
+                            fetchpriority="low">
                     </div>
 
                     <!-- Body -->
@@ -733,8 +774,8 @@
                         <span class="category-tag">PROJECT GUIDE</span>
                         <img src="https://ik.imagekit.io/enersolbiopower/blog/biochar-pyrolysis-plant-technology-benefits-project-planning-guide.webp"
                             alt="Biochar Pyrolysis Plant Technology Benefits Project Planning Guide"
-                            class="w-full h-full object-cover rounded-t-md lazy"
-                            loading="lazy" decoding="async" fetchpriority="low">
+                            class="w-full h-full object-cover rounded-t-md lazy" loading="lazy" decoding="async"
+                            fetchpriority="low">
                     </div>
 
                     <!-- Body -->
@@ -777,8 +818,8 @@
                     <!-- Header -->
                     <div class="relative h-52">
                         <span class="category-tag">BIOGAS POWER</span>
-                        <img src="https://ik.imagekit.io/enersolbiopower/blog/biogas-genset-working-design-benefits-buyers-guide-waste-to-energy.webp" alt="Biogas Genset Working and Design"
-                            class="w-full h-full object-cover rounded-t-md lazy"
+                        <img src="https://ik.imagekit.io/enersolbiopower/blog/biogas-genset-working-design-benefits-buyers-guide-waste-to-energy.webp"
+                            alt="Biogas Genset Working and Design" class="w-full h-full object-cover rounded-t-md lazy"
                             loading="lazy" decoding="async" fetchpriority="low">
                     </div>
 
@@ -821,9 +862,10 @@
                     <!-- Header -->
                     <div class="relative h-52">
                         <span class="category-tag">BIOGAS POWER</span>
-                        <img src="https://ik.imagekit.io/enersolbiopower/blog/troubleshooting-biogas-gensets-common-problems-causes-solutions.webp" alt="Biogas Genset Troubleshooting Guide"
-                            class="w-full h-full object-cover rounded-t-md lazy"
-                            loading="lazy" decoding="async" fetchpriority="low">
+                        <img src="https://ik.imagekit.io/enersolbiopower/blog/troubleshooting-biogas-gensets-common-problems-causes-solutions.webp"
+                            alt="Biogas Genset Troubleshooting Guide"
+                            class="w-full h-full object-cover rounded-t-md lazy" loading="lazy" decoding="async"
+                            fetchpriority="low">
                     </div>
 
                     <!-- Body + Footer -->
@@ -867,8 +909,8 @@
                         <span class="category-tag">CLEAN COOKING</span>
                         <img src="https://ik.imagekit.io/enersolbiopower/blog/smokeless-biomass-stove-manufacturer-in-india-clean-cooking.webp"
                             alt="Smokeless Biomass Stove Manufacturer in India"
-                            class="w-full h-full object-cover rounded-t-md lazy"
-                            loading="lazy" decoding="async" fetchpriority="low">
+                            class="w-full h-full object-cover rounded-t-md lazy" loading="lazy" decoding="async"
+                            fetchpriority="low">
                     </div>
 
                     <!-- Body -->
@@ -911,8 +953,8 @@
                         <span class="category-tag">TECH COMPARISON</span>
                         <img src="https://ik.imagekit.io/enersolbiopower/blog/biomass-stove-vs-biogas-vs-solar-cooking-comparison.webp"
                             alt="Biomass vs Biogas vs Solar Cooking Comparison"
-                            class="w-full h-full object-cover rounded-t-md lazy"
-                            loading="lazy" decoding="async" fetchpriority="low">
+                            class="w-full h-full object-cover rounded-t-md lazy" loading="lazy" decoding="async"
+                            fetchpriority="low">
                     </div>
 
                     <!-- Body -->
@@ -956,8 +998,8 @@
                         <span class="category-tag">CLEAN COOKING</span>
                         <img src="https://ik.imagekit.io/enersolbiopower/blog/institutional-biomass-stove-manufacturer-india-schools-hostels-community-kitchens.webp"
                             alt="Institutional Biomass Stove Manufacturer in India"
-                            class="w-full h-full object-cover rounded-t-md lazy"
-                            loading="lazy" decoding="async" fetchpriority="low">
+                            class="w-full h-full object-cover rounded-t-md lazy" loading="lazy" decoding="async"
+                            fetchpriority="low">
                     </div>
 
                     <!-- Body -->
@@ -1256,30 +1298,28 @@
         <div class="brand-logo flex flex-wrap items-center justify-center bg-white p-2 sm:p-4 gap-3 sm:gap-6">
 
             <img src="https://ik.imagekit.io/enersolbiopower/enersol/blogs/nif-logo-1.webp" alt="NIF Logo"
-             loading="lazy"
+                loading="lazy" decoding="async" fetchpriority="low"
+                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/blogs/gian.webp" alt="GIAN" loading="lazy"
                 decoding="async" fetchpriority="low"
                 class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
 
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/blogs/gian.webp" alt="GIAN"
-                loading="lazy"
-                decoding="async" fetchpriority="low"
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/blogs/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp"
+                alt="Swachh Bharat" loading="lazy" decoding="async" fetchpriority="low"
                 class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
 
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/blogs/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp" alt="Swachh Bharat"
-                loading="lazy" decoding="async" fetchpriority="low"
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/blogs/junagadh_agriculture_university.webp"
+                alt="Junagadh Agriculture University" loading="lazy" decoding="async" fetchpriority="low"
                 class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
 
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/blogs/junagadh_agriculture_university.webp" alt="Junagadh Agriculture University"
-                loading="lazy" decoding="async" fetchpriority="low"
-                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
-
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/sustainable-energy.webp?updatedAt=1762515792165" alt="Sustainable Energy"
-                loading="lazy" decoding="async" fetchpriority="low"
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/sustainable-energy.webp?updatedAt=1762515792165"
+                alt="Sustainable Energy" loading="lazy" decoding="async" fetchpriority="low"
                 class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
 
             <!-- Make in India local image -->
-            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Make_In_India_new.webp?updatedAt=1754911304078" alt="Make in India"
-                loading="lazy" decoding="async" fetchpriority="low"
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Make_In_India_new.webp?updatedAt=1754911304078"
+                alt="Make in India" loading="lazy" decoding="async" fetchpriority="low"
                 class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
 
         </div>
@@ -1369,7 +1409,7 @@
         }
     </style>
 
-    
+
 
 
 </body>

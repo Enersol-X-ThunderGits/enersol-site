@@ -177,29 +177,29 @@
 
 
   <!-- Sticky Social Bar -->
-<div id="sticky-social"
-  class="fixed top-1/3 left-2 z-50 hidden flex-col space-y-2 bg-black bg-opacity-60 p-2.5 rounded-lg shadow-md">
-  
-  <a href="https://www.facebook.com/enersolbiopwr" 
-     class="text-white text-[28px] hover:text-blue-500 transition duration-300">
-    <i class="ri-facebook-fill"></i>
-  </a>
+  <div id="sticky-social"
+    class="fixed top-1/3 left-2 z-50 hidden flex-col space-y-2 bg-black bg-opacity-60 p-2.5 rounded-lg shadow-md">
 
-  <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy" 
-     class="text-white text-[28px] hover:text-red-500 transition duration-300">
-    <i class="ri-youtube-fill"></i>
-  </a>
+    <a href="https://www.facebook.com/enersolbiopwr"
+      class="text-white text-[28px] hover:text-blue-500 transition duration-300">
+      <i class="ri-facebook-fill"></i>
+    </a>
 
-  <a href="https://www.instagram.com/enersol_biopower/" 
-     class="text-white text-[28px] hover:text-pink-500 transition duration-300">
-    <i class="ri-instagram-fill"></i>
-  </a>
+    <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy"
+      class="text-white text-[28px] hover:text-red-500 transition duration-300">
+      <i class="ri-youtube-fill"></i>
+    </a>
 
-  <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/" 
-     class="text-white text-[28px] hover:text-blue-400 transition duration-300">
-    <i class="ri-linkedin-fill"></i>
-  </a>
-</div>
+    <a href="https://www.instagram.com/enersol_biopower/"
+      class="text-white text-[28px] hover:text-pink-500 transition duration-300">
+      <i class="ri-instagram-fill"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/"
+      class="text-white text-[28px] hover:text-blue-400 transition duration-300">
+      <i class="ri-linkedin-fill"></i>
+    </a>
+  </div>
   <script>
 
     window.addEventListener('scroll', () => {
@@ -253,7 +253,44 @@
           <a href="../about-us.html" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
           <a href="../our-story.html" class="text-base font-medium text-white hover:text-accentYellow-light">Our
             Story</a>
-          <a href="../products.html" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+          <div class="relative inline-block group">
+            <!-- Products link -->
+            <a href="./products.html"
+              class="text-base font-medium text-white hover:text-accentYellow-light inline-flex items-center gap-1">
+              Products
+              <svg class="w-4 h-4 mt-0.5 transition-transform duration-200 group-hover:rotate-180" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+
+            <!-- Dropdown (attached to Products) -->
+            <div class="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200
+           opacity-0 invisible group-hover:opacity-100 group-hover:visible
+           transition-all duration-150 z-50">
+
+              <a href="./biomass-gasifier-manufacturer-india.html"
+                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary rounded-t-lg">
+                Biomass Gasifier
+              </a>
+
+              <a href="./biomass-stove-manufacturer-india.html"
+                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary">
+                Biomass Stove
+              </a>
+
+              <a href="./biogas-genset-manufacturer-india.html"
+                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary">
+                Biogas Genset
+              </a>
+
+              <a href="./biomass-pyrolysis-plant-manufacturer-india.html"
+                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary rounded-b-lg">
+                Pyrolysis Plant
+              </a>
+            </div>
+          </div>
+
           <a href="../blogs.html" class="text-base font-medium text-white hover:text-accentYellow-light">Blogs </a>
           <a href="../contact-us.html" class="text-base font-medium text-white hover:text-accentYellow-light">Contact
             Us</a>
@@ -296,7 +333,8 @@
           </div>
           <div class="mt-6 px-5 border-t border-gray-300 pt-5">
             <nav class="grid gap-y-8">
-              <a href="./../../index.html" class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
+              <a href="./../../index.html"
+                class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
               <a href="../about-us.html" class="text-base font-medium text-black hover:text-accentYellow-light">About
                 Us</a>
               <a href="../our-story.html" class="text-base font-medium text-black hover:text-accentYellow-light">Our
@@ -359,19 +397,15 @@
           Biogas Gensets & Biomass Gasifiers – Clean Alternatives to Diesel
         </h1>
         <p class="text-xl mb-8 italic text-gray-600">
-          Discover how Enersol Biopower’s biogas gensets and biomass gasifiers replace costly diesel generators with clean, renewable power. A trusted Indian manufacturer, supplier, and exporter delivering sustainable energy solutions worldwide.
+          Discover how Enersol Biopower’s biogas gensets and biomass gasifiers replace costly diesel generators with
+          clean, renewable power. A trusted Indian manufacturer, supplier, and exporter delivering sustainable energy
+          solutions worldwide.
         </p>
 
         <figure class="mb-8">
-         <img 
-        src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" 
-        alt="New Biomass Gasifier"
-        class="rounded-xl shadow-lg w-full max-h-[420px] border-4 border-white lazy"
-        data-src="./../../assets/blogs/biogas-biomass.png"
-        loading="lazy" 
-        decoding="async" 
-        fetchpriority="low"
-    >
+          <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="New Biomass Gasifier"
+            class="rounded-xl shadow-lg w-full max-h-[420px] border-4 border-white lazy"
+            data-src="./../../assets/blogs/biogas-biomass.png" loading="lazy" decoding="async" fetchpriority="low">
           <figcaption class="text-center text-gray-500 mt-2 text-sm">
             Biogas gensets and biomass gasifiers: powering rural and industrial communities with clean energy.
           </figcaption>
@@ -391,13 +425,17 @@
               </h2>
             </div>
             <p class="text-gray-700">
-              In rural areas across the world, diesel generators are still a common source of electricity. While they provide quick power, they are expensive, polluting, and dependent on imported fossil fuels.
+              In rural areas across the world, diesel generators are still a common source of electricity. While they
+              provide quick power, they are expensive, polluting, and dependent on imported fossil fuels.
             </p>
             <p class="text-gray-700">
-              Today, biogas gensets and biomass gasifiers are emerging as clean, cost-effective, and sustainable alternatives. By converting locally available organic waste and agricultural residues into power, these systems cut emissions and support a circular economy.
+              Today, biogas gensets and biomass gasifiers are emerging as clean, cost-effective, and sustainable
+              alternatives. By converting locally available organic waste and agricultural residues into power, these
+              systems cut emissions and support a circular economy.
             </p>
             <p class="text-gray-700">
-              At <strong>Enersol Biopower</strong>, we manufacture and supply biogas gensets and biomass gasifiers that help rural and industrial communities reduce diesel dependency and move toward renewable self-reliance.
+              At <strong>Enersol Biopower</strong>, we manufacture and supply biogas gensets and biomass gasifiers that
+              help rural and industrial communities reduce diesel dependency and move toward renewable self-reliance.
             </p>
           </section>
 
@@ -417,12 +455,16 @@
               A biogas genset is a generator powered by methane-rich biogas that produces reliable electricity.
             </p>
             <ul class="list-disc list-inside text-gray-700 mb-4">
-              <li><strong>Fuel Source:</strong> Biogas comes from anaerobic digestion of organic waste such as cattle dung, crop residue, or food waste.</li>
-              <li><strong>Technology:</strong> Works on an adapted internal combustion engine, similar to a diesel genset but optimized for biogas.</li>
-              <li><strong>Output:</strong> Affordable and renewable electricity for homes, farms, agro-industries, and communities.</li>
+              <li><strong>Fuel Source:</strong> Biogas comes from anaerobic digestion of organic waste such as cattle
+                dung, crop residue, or food waste.</li>
+              <li><strong>Technology:</strong> Works on an adapted internal combustion engine, similar to a diesel
+                genset but optimized for biogas.</li>
+              <li><strong>Output:</strong> Affordable and renewable electricity for homes, farms, agro-industries, and
+                communities.</li>
             </ul>
             <p class="text-gray-700">
-              Just as a biomass gasifier converts crop residues into clean producer gas, biogas gensets transform waste streams into sustainable rural power.
+              Just as a biomass gasifier converts crop residues into clean producer gas, biogas gensets transform waste
+              streams into sustainable rural power.
             </p>
           </section>
 
@@ -485,74 +527,74 @@
 
           <div class="section-divider my-10"></div>
 
-         <!-- Diesel vs Biogas Genset: Quick Comparison -->
-<section class="mb-12">
-  <!-- Heading -->
-  <div class="flex items-center mb-6">
-    <div class="bg-primary-light p-3 rounded-full mr-4 shadow-md">
-      <i class="ri-exchange-dollar-line text-white text-2xl"></i>
-    </div>
-    <h2 class="text-3xl font-bold text-primary-dark font-poppins">
-      Diesel vs Biogas Genset: Quick Comparison
-    </h2>
-  </div>
+          <!-- Diesel vs Biogas Genset: Quick Comparison -->
+          <section class="mb-12">
+            <!-- Heading -->
+            <div class="flex items-center mb-6">
+              <div class="bg-primary-light p-3 rounded-full mr-4 shadow-md">
+                <i class="ri-exchange-dollar-line text-white text-2xl"></i>
+              </div>
+              <h2 class="text-3xl font-bold text-primary-dark font-poppins">
+                Diesel vs Biogas Genset: Quick Comparison
+              </h2>
+            </div>
 
-  <!-- Table Wrapper -->
-  <div class="overflow-x-auto rounded-xl shadow-md border border-gray-200">
-    <table class="min-w-full bg-white">
-      <thead class="bg-primary-light text-white">
-        <tr>
-          <th class="px-6 py-3 text-left font-semibold text-sm uppercase tracking-wide">
-            Feature
-          </th>
-          <th class="px-6 py-3 text-left font-semibold text-sm uppercase tracking-wide">
-            Diesel Generator
-          </th>
-          <th class="px-6 py-3 text-left font-semibold text-sm uppercase tracking-wide">
-            Biogas Genset
-          </th>
-        </tr>
-      </thead>
-      <tbody class="divide-y divide-gray-200 text-gray-700">
-        <tr class="hover:bg-gray-50 transition">
-          <td class="px-6 py-4 font-medium">Fuel Source</td>
-          <td class="px-6 py-4">Imported fossil fuel</td>
-          <td class="px-6 py-4 text-primary-dark font-semibold">
-            Local organic waste
-          </td>
-        </tr>
-        <tr class="bg-gray-50 hover:bg-gray-100 transition">
-          <td class="px-6 py-4 font-medium">Operating Cost</td>
-          <td class="px-6 py-4">High &amp; volatile</td>
-          <td class="px-6 py-4 text-primary-dark font-semibold">
-            Low &amp; stable
-          </td>
-        </tr>
-        <tr class="hover:bg-gray-50 transition">
-          <td class="px-6 py-4 font-medium">Emissions</td>
-          <td class="px-6 py-4">High CO₂ + particulates</td>
-          <td class="px-6 py-4 text-primary-dark font-semibold">
-            Nearly carbon-neutral
-          </td>
-        </tr>
-        <tr class="bg-gray-50 hover:bg-gray-100 transition">
-          <td class="px-6 py-4 font-medium">Energy Security</td>
-          <td class="px-6 py-4">Dependent on imports</td>
-          <td class="px-6 py-4 text-primary-dark font-semibold">
-            Locally produced
-          </td>
-        </tr>
-        <tr class="hover:bg-gray-50 transition">
-          <td class="px-6 py-4 font-medium">By-products</td>
-          <td class="px-6 py-4">Pollutants</td>
-          <td class="px-6 py-4 text-primary-dark font-semibold">
-            Organic fertilizer
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
+            <!-- Table Wrapper -->
+            <div class="overflow-x-auto rounded-xl shadow-md border border-gray-200">
+              <table class="min-w-full bg-white">
+                <thead class="bg-primary-light text-white">
+                  <tr>
+                    <th class="px-6 py-3 text-left font-semibold text-sm uppercase tracking-wide">
+                      Feature
+                    </th>
+                    <th class="px-6 py-3 text-left font-semibold text-sm uppercase tracking-wide">
+                      Diesel Generator
+                    </th>
+                    <th class="px-6 py-3 text-left font-semibold text-sm uppercase tracking-wide">
+                      Biogas Genset
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200 text-gray-700">
+                  <tr class="hover:bg-gray-50 transition">
+                    <td class="px-6 py-4 font-medium">Fuel Source</td>
+                    <td class="px-6 py-4">Imported fossil fuel</td>
+                    <td class="px-6 py-4 text-primary-dark font-semibold">
+                      Local organic waste
+                    </td>
+                  </tr>
+                  <tr class="bg-gray-50 hover:bg-gray-100 transition">
+                    <td class="px-6 py-4 font-medium">Operating Cost</td>
+                    <td class="px-6 py-4">High &amp; volatile</td>
+                    <td class="px-6 py-4 text-primary-dark font-semibold">
+                      Low &amp; stable
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-gray-50 transition">
+                    <td class="px-6 py-4 font-medium">Emissions</td>
+                    <td class="px-6 py-4">High CO₂ + particulates</td>
+                    <td class="px-6 py-4 text-primary-dark font-semibold">
+                      Nearly carbon-neutral
+                    </td>
+                  </tr>
+                  <tr class="bg-gray-50 hover:bg-gray-100 transition">
+                    <td class="px-6 py-4 font-medium">Energy Security</td>
+                    <td class="px-6 py-4">Dependent on imports</td>
+                    <td class="px-6 py-4 text-primary-dark font-semibold">
+                      Locally produced
+                    </td>
+                  </tr>
+                  <tr class="hover:bg-gray-50 transition">
+                    <td class="px-6 py-4 font-medium">By-products</td>
+                    <td class="px-6 py-4">Pollutants</td>
+                    <td class="px-6 py-4 text-primary-dark font-semibold">
+                      Organic fertilizer
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
 
 
           <div class="section-divider my-10"></div>
@@ -574,14 +616,17 @@
                     <i class="ri-restaurant-line text-primary-light text-xl mr-3"></i>
                     <div>
                       <h4 class="font-semibold">Agriculture & Agro-Industries</h4>
-                      <p class="text-gray-600 text-sm">Power for rice mills, dairy units, poultry farms, and food processing.</p>
+                      <p class="text-gray-600 text-sm">Power for rice mills, dairy units, poultry farms, and food
+                        processing.</p>
                     </div>
                   </li>
                   <li class="flex items-start mt-4">
                     <i class="ri-lightbulb-line text-primary-light text-xl mr-3"></i>
                     <div>
                       <h4 class="font-semibold">Rural Electrification</h4>
-                      <p class="text-gray-600 text-sm">Off-grid microgrids for villages. Across Africa, South Asia, and Latin America, biogas gensets and biomass gasifiers are already powering schools, clinics, and community centers.</p>
+                      <p class="text-gray-600 text-sm">Off-grid microgrids for villages. Across Africa, South Asia, and
+                        Latin America, biogas gensets and biomass gasifiers are already powering schools, clinics, and
+                        community centers.</p>
                     </div>
                   </li>
                 </ul>
@@ -592,14 +637,16 @@
                     <i class="ri-community-line text-primary-light text-xl mr-3"></i>
                     <div>
                       <h4 class="font-semibold">Community Services</h4>
-                      <p class="text-gray-600 text-sm">Schools, health centers, and community halls run on sustainable energy.</p>
+                      <p class="text-gray-600 text-sm">Schools, health centers, and community halls run on sustainable
+                        energy.</p>
                     </div>
                   </li>
                   <li class="flex items-start mt-4">
                     <i class="ri-store-2-line text-primary-light text-xl mr-3"></i>
                     <div>
                       <h4 class="font-semibold">Commercial & Small Enterprises</h4>
-                      <p class="text-gray-600 text-sm">Rural shops, workshops, and businesses enjoy reliable, affordable power.</p>
+                      <p class="text-gray-600 text-sm">Rural shops, workshops, and businesses enjoy reliable, affordable
+                        power.</p>
                     </div>
                   </li>
                 </ul>
@@ -620,13 +667,18 @@
               </h2>
             </div>
             <p class="text-gray-700 mb-4">
-              At <strong>Enersol Biopower Pvt. Ltd.</strong>, we specialize in delivering robust renewable energy systems tailored to rural and industrial needs.
+              At <strong>Enersol Biopower Pvt. Ltd.</strong>, we specialize in delivering robust renewable energy
+              systems tailored to rural and industrial needs.
             </p>
             <ul class="list-disc list-inside text-gray-700 mb-4">
-              <li><strong>Range:</strong> From small-scale biogas gensets for villages to industrial biomass gasifiers up to 100 kW.</li>
+              <li><strong>Range:</strong> From small-scale biogas gensets for villages to industrial biomass gasifiers
+                up to 100 kW.</li>
               <li><strong>Expertise:</strong> 20+ years of manufacturing biomass gasifiers and biogas gensets.</li>
-              <li><strong>Global Reach:</strong> Recognized as a trusted biomass gasifier manufacturer in India, a reliable supplier for agro-industries, and a proven exporter serving Africa, South Asia, and Latin America.</li>
-              <li><strong>Sustainability:</strong> Designed to reduce emissions, improve waste utilization, and promote circular economies.</li>
+              <li><strong>Global Reach:</strong> Recognized as a trusted biomass gasifier manufacturer in India, a
+                reliable supplier for agro-industries, and a proven exporter serving Africa, South Asia, and Latin
+                America.</li>
+              <li><strong>Sustainability:</strong> Designed to reduce emissions, improve waste utilization, and promote
+                circular economies.</li>
             </ul>
           </section>
 
@@ -643,10 +695,14 @@
               </h2>
             </div>
             <p class="text-gray-700 mb-4">
-              Biogas gensets are more than replacements for diesel generators — they represent a pathway to rural empowerment, sustainable growth, and energy independence. Combined with biomass gasifiers, they create a powerful renewable energy mix for rural and industrial use.
+              Biogas gensets are more than replacements for diesel generators — they represent a pathway to rural
+              empowerment, sustainable growth, and energy independence. Combined with biomass gasifiers, they create a
+              powerful renewable energy mix for rural and industrial use.
             </p>
             <p class="text-gray-700">
-              By partnering with Enersol Biopower — a proven biomass gasifier manufacturer, supplier, and exporter, and an innovator in biogas gensets — communities worldwide can cut costs, improve health, and move closer to global climate goals.
+              By partnering with Enersol Biopower — a proven biomass gasifier manufacturer, supplier, and exporter, and
+              an innovator in biogas gensets — communities worldwide can cut costs, improve health, and move closer to
+              global climate goals.
             </p>
           </section>
 
@@ -654,7 +710,8 @@
             <h2 class="text-3xl font-bold text-white mb-4">Partner with Enersol Biopower</h2>
             <p class="text-white text-xl mb-6 max-w-2xl mx-auto">
               👉 India’s trusted manufacturer, supplier, and exporter of biomass gasifiers and biogas gensets.<br>
-              Request your free consultation today and explore customized renewable energy solutions for your rural, industrial, or international projects.
+              Request your free consultation today and explore customized renewable energy solutions for your rural,
+              industrial, or international projects.
             </p>
             <a href="../contact-us.html"
               class="inline-block bg-white text-primary-dark font-bold py-3 px-8 rounded-lg transition-all hover:bg-gray-100 transform hover:scale-105 shadow-md">
@@ -710,12 +767,13 @@
           <h3 class="text-2xl font-bold mb-4 text-primary-dark">Recent Posts</h3>
           <ul class="space-y-4">
             <li>
-              <a href="./biomassGasifier.html" class="text-gray-700 hover:text-primary transition-colors flex items-start">
+              <a href="./biomassGasifier.html"
+                class="text-gray-700 hover:text-primary transition-colors flex items-start">
                 <i class="ri-arrow-right-s-line text-primary mt-1 mr-2"></i>
                 <span>Biomass Gasifier: Harnessing Clean Energy from Crop Residue</span>
               </a>
             </li>
-            
+
           </ul>
 
           <hr class="my-6">
@@ -727,8 +785,8 @@
                 <i class="ri-folder-2-line mr-2"></i> Biomass Technology
               </a>
             </li>
-           
-            
+
+
           </ul>
 
           <hr class="my-6">
@@ -902,43 +960,31 @@
 
     <div class="brand-logo flex flex-wrap items-center justify-center bg-white p-2 sm:p-4 gap-3 sm:gap-6">
 
-    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" 
-         alt="NIF Logo" 
-         data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/nif-logo-1.webp" 
-         loading="lazy" decoding="async" fetchpriority="low"
-         class="lazy h-auto sm:h-32">
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="NIF Logo"
+        data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/nif-logo-1.webp" loading="lazy"
+        decoding="async" fetchpriority="low" class="lazy h-auto sm:h-32">
 
-    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" 
-         alt="GIAN" 
-         data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/gian.webp" 
-         loading="lazy" decoding="async" fetchpriority="low"
-         class="lazy h-auto sm:h-32">
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="GIAN"
+        data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/gian.webp" loading="lazy"
+        decoding="async" fetchpriority="low" class="lazy h-auto sm:h-32">
 
-    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" 
-         alt="Swachh Bharat" 
-         data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp" 
-         loading="lazy" decoding="async" fetchpriority="low"
-         class="lazy h-auto sm:h-32">
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Swachh Bharat"
+        data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp"
+        loading="lazy" decoding="async" fetchpriority="low" class="lazy h-auto sm:h-32">
 
-    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" 
-         alt="Junagadh Agriculture University" 
-         data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/junagadh_agriculture_university.webp" 
-         loading="lazy" decoding="async" fetchpriority="low"
-         class="lazy h-auto sm:h-32">
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Junagadh Agriculture University"
+        data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/junagadh_agriculture_university.webp"
+        loading="lazy" decoding="async" fetchpriority="low" class="lazy h-auto sm:h-32">
 
-    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" 
-         alt="Sustainable Energy" 
-         data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/sustainable-energy.webp?updatedAt=1762515792165" 
-         loading="lazy" decoding="async" fetchpriority="low"
-         class="lazy h-auto sm:h-32">
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Sustainable Energy"
+        data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/sustainable-energy.webp?updatedAt=1762515792165"
+        loading="lazy" decoding="async" fetchpriority="low" class="lazy h-auto sm:h-32">
 
-    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" 
-         alt="Make in India" 
-         data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Make_In_India_new.webp?updatedAt=1754911304078" 
-         loading="lazy" decoding="async" fetchpriority="low"
-         class="lazy h-auto sm:h-32">
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Make in India"
+        data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Make_In_India_new.webp?updatedAt=1754911304078"
+        loading="lazy" decoding="async" fetchpriority="low" class="lazy h-auto sm:h-32">
 
-</div>
+    </div>
 
 
     <!-- Footer Bottom Section -->

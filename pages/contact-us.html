@@ -106,29 +106,29 @@
     </div>
   </div>
   <!-- Sticky Social Bar -->
-<div id="sticky-social"
-  class="fixed top-1/3 left-2 z-50 hidden flex-col space-y-2 bg-black bg-opacity-60 p-2.5 rounded-lg shadow-md">
-  
-  <a href="https://www.facebook.com/enersolbiopwr" 
-     class="text-white text-[28px] hover:text-blue-500 transition duration-300">
-    <i class="ri-facebook-fill"></i>
-  </a>
+  <div id="sticky-social"
+    class="fixed top-1/3 left-2 z-50 hidden flex-col space-y-2 bg-black bg-opacity-60 p-2.5 rounded-lg shadow-md">
 
-  <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy" 
-     class="text-white text-[28px] hover:text-red-500 transition duration-300">
-    <i class="ri-youtube-fill"></i>
-  </a>
+    <a href="https://www.facebook.com/enersolbiopwr"
+      class="text-white text-[28px] hover:text-blue-500 transition duration-300">
+      <i class="ri-facebook-fill"></i>
+    </a>
 
-  <a href="https://www.instagram.com/enersol_biopower/" 
-     class="text-white text-[28px] hover:text-pink-500 transition duration-300">
-    <i class="ri-instagram-fill"></i>
-  </a>
+    <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy"
+      class="text-white text-[28px] hover:text-red-500 transition duration-300">
+      <i class="ri-youtube-fill"></i>
+    </a>
 
-  <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/" 
-     class="text-white text-[28px] hover:text-blue-400 transition duration-300">
-    <i class="ri-linkedin-fill"></i>
-  </a>
-</div>
+    <a href="https://www.instagram.com/enersol_biopower/"
+      class="text-white text-[28px] hover:text-pink-500 transition duration-300">
+      <i class="ri-instagram-fill"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/"
+      class="text-white text-[28px] hover:text-blue-400 transition duration-300">
+      <i class="ri-linkedin-fill"></i>
+    </a>
+  </div>
   <script>
     const stickySocial = document.getElementById('sticky-social');
 
@@ -155,10 +155,8 @@
         <!-- Logo -->
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <a href="/">
-            <img class="h-12 w-auto sm:h-14 lazy" src="../assets/logo/erersollogo.webp"
-                            alt="Enersol Biopower"
-                            data-src="../assets/logo/erersollogo.webp"
-                            loading="lazy" decoding="async" fetchpriority="low">
+            <img class="h-12 w-auto sm:h-14 lazy" src="../assets/logo/erersollogo.webp" alt="Enersol Biopower"
+              data-src="../assets/logo/erersollogo.webp" loading="lazy" decoding="async" fetchpriority="low">
           </a>
         </div>
         <!-- Navbar collapse button (visible on small screens) -->
@@ -181,7 +179,44 @@
           <a href="./about-us.html" class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
           <a href="./our-story.html" class="text-base font-medium text-white hover:text-accentYellow-light">Our
             Story</a>
-          <a href="./products.html" class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
+          <div class="relative inline-block group">
+            <!-- Products link -->
+            <a href="./products.html"
+              class="text-base font-medium text-white hover:text-accentYellow-light inline-flex items-center gap-1">
+              Products
+              <svg class="w-4 h-4 mt-0.5 transition-transform duration-200 group-hover:rotate-180" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+
+            <!-- Dropdown (attached to Products) -->
+            <div class="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200
+           opacity-0 invisible group-hover:opacity-100 group-hover:visible
+           transition-all duration-150 z-50">
+
+              <a href="./biomass-gasifier-manufacturer-india.html"
+                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary rounded-t-lg">
+                Biomass Gasifier
+              </a>
+
+              <a href="./biomass-stove-manufacturer-india.html"
+                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary">
+                Biomass Stove
+              </a>
+
+              <a href="./biogas-genset-manufacturer-india.html"
+                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary">
+                Biogas Genset
+              </a>
+
+              <a href="./biomass-pyrolysis-plant-manufacturer-india.html"
+                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary rounded-b-lg">
+                Pyrolysis Plant
+              </a>
+            </div>
+          </div>
+
           <a href="./blogs.html" class="text-base font-medium text-white hover:text-accentYellow-light">Blogs</a>
           <a href="./contact-us.html" class="text-base font-medium text-white hover:text-accentYellow-light">Contact
             Us</a>
@@ -277,7 +312,8 @@
       </div>
       <!-- Hero Image -->
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-        <img class="object-cover object-center rounded lazy" alt="hero" src="https://ik.imagekit.io/enersolbiopower/enersol/contact-us/5124556.webp"
+        <img class="object-cover object-center rounded lazy" alt="hero"
+          src="https://ik.imagekit.io/enersolbiopower/enersol/contact-us/5124556.webp"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/contact-us/5124556.webp" loading="lazy"
           decoding="async" fetchpriority="low">
       </div>
@@ -629,39 +665,38 @@
     </div>
 
     <div class="brand-logo flex flex-wrap items-center justify-center bg-white p-2 sm:p-4 gap-3 sm:gap-6">
-    
-    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="NIF Logo"
-        data-src="https://ik.imagekit.io/enersolbiopower/enersol/contact-us/nif-logo-1.webp"
-        loading="lazy" decoding="async" fetchpriority="low"
+
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="NIF Logo"
+        data-src="https://ik.imagekit.io/enersolbiopower/enersol/contact-us/nif-logo-1.webp" loading="lazy"
+        decoding="async" fetchpriority="low"
         class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
 
-    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="GIAN"
-        data-src="https://ik.imagekit.io/enersolbiopower/enersol/contact-us/gian.webp"
-        loading="lazy" decoding="async" fetchpriority="low"
-        class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="GIAN"
+        data-src="https://ik.imagekit.io/enersolbiopower/enersol/contact-us/gian.webp" loading="lazy" decoding="async"
+        fetchpriority="low" class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
 
-    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Swachh Bharat"
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Swachh Bharat"
         data-src="https://ik.imagekit.io/enersolbiopower/enersol/contact-us/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp"
         loading="lazy" decoding="async" fetchpriority="low"
         class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
 
-    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Junagadh Agriculture University"
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Junagadh Agriculture University"
         data-src="https://ik.imagekit.io/enersolbiopower/enersol/contact-us/junagadh_agriculture_university.webp"
         loading="lazy" decoding="async" fetchpriority="low"
         class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
 
-    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Sustainable Energy"
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Sustainable Energy"
         data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/sustainable-energy.webp?updatedAt=1762515792165"
         loading="lazy" decoding="async" fetchpriority="low"
         class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
 
-    <!-- Make in India local image -->
-    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Make in India"
+      <!-- Make in India local image -->
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Make in India"
         data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Make_In_India_new.webp?updatedAt=1754911304078"
         loading="lazy" decoding="async" fetchpriority="low"
         class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
 
-</div>
+    </div>
 
     <!-- Footer Bottom Section -->
     <div class="bg-gray-800">

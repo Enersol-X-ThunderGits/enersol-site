@@ -281,7 +281,7 @@
         <!-- Logo -->
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <a href="/">
-            <img class="h-12 w-auto sm:h-14 lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            <img class="h-12 w-auto sm:h-14 lazy" src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
               alt="Enersol Biopower" data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
               loading="lazy" decoding="async" fetchpriority="low">
           </a>
@@ -338,7 +338,7 @@
         <div class="pt-5 pb-6 ">
           <div class="flex items-center justify-between px-5">
             <div>
-              <img class="h-8 w-auto lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Your Company"
+              <img class="h-8 w-auto lazy" src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Your Company"
                 data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" loading="lazy"
                 decoding="async" fetchpriority="low">
             </div>
@@ -413,7 +413,7 @@
   <div id="whatsApp-floating-btn"
     class="fixed right-5 bottom-[10px] sm:right-4 sm:bottom-[10px] z-40 w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-full shadow-xl cursor-pointer flex items-center justify-center border border-green-600 transition-transform transform hover:scale-110 hover:shadow-2xl"
     title="Chat on WhatsApp">
-    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="WhatsApp" class="w-12  sm:w-16 lazy"
+    <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="WhatsApp" class="w-12  sm:w-16 lazy"
       data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/whatsApp-icon.webp" loading="lazy" decoding="async"
       fetchpriority="low">
   </div>
@@ -747,7 +747,7 @@
       </div>
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
         <img class="object-cover object-center rounded lazy" alt="Enersol Biopower"
-          src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+          src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/About-us.webp" loading="lazy" decoding="async"
           fetchpriority="low">
       </div>
@@ -952,7 +952,7 @@
           </p> -->
           <img @click="open = true"
             class="object-cover object-center rounded-lg shadow-md cursor-pointer mx-auto my-5 lazy"
-            src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Renewable Energy"
+            src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Renewable Energy"
             data-src="https://img.brainkart.com/imagebk45/SXuMv3R.jpg" loading="lazy" decoding="async"
             fetchpriority="low">
 
@@ -961,17 +961,17 @@
         <!-- Image with Click-to-Enlarge and Overlay -->
         <div class="w-full lg:mt-0 mt-8 relative group" x-data="{ open: false }">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
               class="border border-white p-2 bg-white rounded-lg mx-auto lazy" alt=""
               data-src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c29sYXIlMjBlbmVyZ3l8ZW58MHx8MHx8fDA%3D"
               loading="lazy" decoding="async" fetchpriority="low">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="mx-auto p-2 bg-white rounded-lg lazy" alt=""
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" class="mx-auto p-2 bg-white rounded-lg lazy" alt=""
               data-src="https://plus.unsplash.com/premium_photo-1681488432824-cae8c038ccb1?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2luZG1pbGx8ZW58MHx8MHx8fDA%3D"
               loading="lazy" decoding="async" fetchpriority="low">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="p-2 bg-white rounded-lg mx-auto lazy" alt=""
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" class="p-2 bg-white rounded-lg mx-auto lazy" alt=""
               data-src="https://plus.unsplash.com/premium_photo-1678167657805-36fb1c27cbd4?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aHlkcm9wb3dlcnxlbnwwfHwwfHx8MA%3D%3D"
               loading="lazy" decoding="async" fetchpriority="low">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" class="mx-auto p-2 bg-white rounded-lg lazy" alt=""
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" class="mx-auto p-2 bg-white rounded-lg lazy" alt=""
               data-src="https://images.unsplash.com/photo-1625569181760-034e10765531?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJpb21hc3MlMjBlbmVyZ3l8ZW58MHx8MHx8fDA%3D"
               loading="lazy" decoding="async" fetchpriority="low">
           </div>
@@ -1020,11 +1020,11 @@
           </p> -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <img @click="open = true" class="object-cover object-center shadow-md cursor-pointer mx-auto my-5 lazy"
-              src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Renewable Energy"
+              src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Renewable Energy"
               data-src="https://images.unsplash.com/photo-1607214272279-00bfdae4574d?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWdyaWN1bHR1cmFsJTIwcmVzaWR1ZXxlbnwwfHwwfHx8MA%3D%3D"
               loading="lazy" decoding="async" fetchpriority="low">
             <img @click="open = true" class="object-cover object-center shadow-md cursor-pointer mx-auto my-5 lazy"
-              src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Renewable Energy"
+              src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Renewable Energy"
               data-src="https://images.unsplash.com/flagged/photo-1572213426852-0e4ed8f41ff6?w=500&amp;auto=format&amp;fit=crop&amp;q=60&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2FzdGV8ZW58MHx8MHx8fDA%3D"
               loading="lazy" decoding="async" fetchpriority="low">
 
@@ -1035,7 +1035,7 @@
         <!-- Image with Click-to-Enlarge and Overlay -->
         <div class="w-full lg:mt-0 mt-8 relative group" x-data="{ open: false }">
           <div class="w-full">
-            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
               class="w-full border border-white p-2 bg-white rounded-lg mx-auto lazy" alt=""
               data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/biomass.webp" loading="lazy"
               decoding="async" fetchpriority="low">
@@ -1066,7 +1066,7 @@
         <div class="swiper-wrapper">
           <!-- Product Cards -->
           <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            <img class="h-[220px] w-full object-cover lazy" src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
               alt="Biomass Gasifier for Power Production"
               data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/b1.webp" loading="lazy" decoding="async"
               fetchpriority="low">
@@ -1080,7 +1080,7 @@
             </div>
           </div>
           <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            <img class="h-[220px] w-full object-cover lazy" src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
               alt="Smokeless Biomass Stoves / Bhatti"
               data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Smokeless_Domestic_Biomass_Stove.webp"
               loading="lazy" decoding="async" fetchpriority="low">
@@ -1095,7 +1095,7 @@
           </div>
 
           <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            <img class="h-[220px] w-full object-cover lazy" src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
               alt="Biomass Gasifier for Thermal Applications"
               data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Smokeless_Commercial_Biomass_Stoves.webp"
               loading="lazy" decoding="async" fetchpriority="low">
@@ -1110,7 +1110,7 @@
 
           <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
             <img class="h-[220px] w-full object-cover lazy" style="background-color: rgb(42,159,211);"
-              src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Biomass Gasifier for Thermal Applications"
+              src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Biomass Gasifier for Thermal Applications"
               data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Auto_Bio-Mawa_Machine.webp" loading="lazy"
               decoding="async" fetchpriority="low">
             <div class="p-4">
@@ -1123,7 +1123,7 @@
             </div>
           </div>
           <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            <img class="h-[220px] w-full object-cover lazy" src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
               alt="Biomass Gasifier for Thermal Applications"
               data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Biogas_Genset.webp" loading="lazy"
               decoding="async" fetchpriority="low">
@@ -1139,7 +1139,7 @@
 
 
           <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            <img class="h-[220px] w-full object-cover lazy" src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
               alt="Biomass Gasifier for Thermal Applications"
               data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Biomass_Torrefaction__Bio-Char_Plant.webp"
               loading="lazy" decoding="async" fetchpriority="low">
@@ -1155,7 +1155,7 @@
           </div>
 
           <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            <img class="h-[220px] w-full object-cover lazy" src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
               alt="Biogas/Syngas Generators"
               data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Solid_Liquid_Separator__Dewatering_Machine_.webp"
               loading="lazy" decoding="async" fetchpriority="low">
@@ -1173,7 +1173,7 @@
 
 
           <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            <img class="h-[220px] w-full object-cover lazy" src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
               alt="Auto Bio-Mawa/Khoya Machine"
               data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Used_Oil__Black_Engine_Oil__Distillation_Machine.webp"
               loading="lazy" decoding="async" fetchpriority="low">
@@ -1189,7 +1189,7 @@
           </div>
 
           <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            <img class="h-[220px] w-full object-cover lazy" src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
               alt="Biomass Pyrolysis Plant (Bio-char Plant)"
               data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Control_Panel.webp" loading="lazy"
               decoding="async" fetchpriority="low">
@@ -1204,7 +1204,7 @@
           </div>
 
           <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            <img class="h-[220px] w-full object-cover lazy" src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
               alt="Biomass Pyrolysis Plant (Bio-char Plant)"
               data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Biomass_Shredder.JPG.webp" loading="lazy"
               decoding="async" fetchpriority="low">
@@ -1220,7 +1220,7 @@
 
           <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
             <img class="h-[220px] w-full object-cover lazy" style="background-color: rgb(42,159,211);"
-              src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Biomass Gasifier for Thermal Applications"
+              src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Biomass Gasifier for Thermal Applications"
               data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/CNC_Hydraulic_Bending_Machine_Job_Work.webp"
               loading="lazy" decoding="async" fetchpriority="low">
             <div class="p-4">
@@ -1236,7 +1236,7 @@
           </div>
 
           <div class="swiper-slide bg-white shadow-md rounded-lg overflow-hidden w-[300px] h-[420px]">
-            <img class="h-[220px] w-full object-cover lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            <img class="h-[220px] w-full object-cover lazy" src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
               alt="Biomass Gasifier for Thermal Applications"
               data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/DG_Set_Canopy.webp" loading="lazy"
               decoding="async" fetchpriority="low">
@@ -1373,7 +1373,7 @@
         <div class="xl:w-1/2 md:w-1/2 p-4">
           <div class="bg-gray-100 p-6 rounded-lg h-[450px] w-full">
             <img class="h-64 w-full rounded object-cover object-center mb-6 lazy"
-              src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="content"
+              src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="content"
               data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/WhatsApp_Image_2021-08-05_at_18.56.08.webp"
               loading="lazy" decoding="async" fetchpriority="low">
             <h2 class="text-lg text-gray-900 font-medium title-font mb-2">100kW Biomass Gasifier</h2>
@@ -1385,7 +1385,7 @@
         <div class="xl:w-1/2 md:w-1/2 p-4">
           <div class="bg-gray-100 p-6 rounded-lg h-[450px] w-full">
             <img class="h-64 w-full rounded object-cover object-center mb-6 lazy"
-              src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="content"
+              src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="content"
               data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/5KW_Biomaass_gasifier_KNUST__Ghana__1_.webp"
               loading="lazy" decoding="async" fetchpriority="low">
             <h2 class="text-lg text-gray-900 font-medium title-font mb-2">5kW Biomass Gasifier</h2>
@@ -1399,7 +1399,7 @@
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div class="bg-gray-100 p-6 rounded-lg h-[450px] w-full">
             <img class="h-48 w-full rounded object-cover object-center mb-6 lazy"
-              src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="content"
+              src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="content"
               data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/50KW_ESB_Biomass_Gasifier__1_.webp"
               loading="lazy" decoding="async" fetchpriority="low">
             <h2 class="text-lg text-gray-900 font-medium title-font mb-2">50kW Biomass Gasifier</h2>
@@ -1411,7 +1411,7 @@
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div class="bg-gray-100 p-6 rounded-lg h-[450px] w-full">
             <img class="h-48 w-full rounded object-cover object-center mb-6 lazy"
-              src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="content"
+              src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="content"
               data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/Biomass_Gasifier.webp" loading="lazy"
               decoding="async" fetchpriority="low">
             <h2 class="text-lg text-gray-900 font-medium title-font mb-2">10kW Biomass Gasifier</h2>
@@ -1422,7 +1422,7 @@
         <div class="xl:w-1/3 md:w-1/2 p-4">
           <div class="bg-gray-100 p-6 rounded-lg h-[450px] w-full">
             <img class="h-48 w-full rounded object-cover object-center mb-6 lazy"
-              src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="content"
+              src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="content"
               data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/bio-mini-solar.webp" loading="lazy"
               decoding="async" fetchpriority="low">
             <h2 class="text-lg text-gray-900 font-medium title-font mb-2">ESB-R Bio-MiniSolar-Smokeless Domestic Biomass
@@ -1439,137 +1439,137 @@
     <h2 class="text-center text-4xl font-bold text-gray-800 mb-4">Our Clients</h2>
     <div class="overflow-hidden">
       <div class="flex whitespace-nowrap logos">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 1 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 1 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/junagadh_agriculture_university.webp"
           loading="lazy" decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 2 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 2 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/nit_mizoram.webp" loading="lazy"
           decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 3 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 3 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/aims_aligha.webp" loading="lazy"
           decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 4 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 4 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/ntpc.webp" loading="lazy" decoding="async"
           fetchpriority="low">
         <!-- Continue adding more images -->
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 5 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 5 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/sastra_demmed_university.webp" loading="lazy"
           decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 6 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 6 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/nit_tiruchirappalli.webp" loading="lazy"
           decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 7 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 7 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/indian_oil_corporation_limited.webp"
           loading="lazy" decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 8 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 8 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/pv_narsimha_rao_telangna_veterinary_university.webp"
           loading="lazy" decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 9 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 9 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/bits_pilani_hydrabaad.webp" loading="lazy"
           decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 10 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 10 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/vit_vellore.webp" loading="lazy"
           decoding="async" fetchpriority="low">
         <!-- Add more images until 27 -->
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 11 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 11 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/csir_cmeri_durgapur.webp" loading="lazy"
           decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 12 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 12 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/bharat_petrolium.webp" loading="lazy"
           decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 13 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 13 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/gaya_college_of_engineering.webp"
           loading="lazy" decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 14 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 14 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/gimt_guwahati.webp" loading="lazy"
           decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 15 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 15 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/iit_roorkee.webp" loading="lazy"
           decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 16 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 16 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/iit_ropar.webp" loading="lazy" decoding="async"
           fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 17 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 17 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/lnmiit.webp" loading="lazy" decoding="async"
           fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 18 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 18 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/maharaj_sayajirao_university_of_baroda.webp"
           loading="lazy" decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 19 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 19 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/niist.webp" loading="lazy" decoding="async"
           fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 20 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 20 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/nit_rourkela.webp" loading="lazy"
           decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 21 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 21 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/tripura_renewable_energy_development.webp"
           loading="lazy" decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 22 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 22 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/sardarkrushinagar_dantiwada_agriculture_university_gujrat.webp"
           loading="lazy" decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 23 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 23 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/peda.webp" loading="lazy" decoding="async"
           fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 24 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 24 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/oiiro.webp" loading="lazy" decoding="async"
           fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 25 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 25 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/godavari_agro.webp" loading="lazy"
           decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 26 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 26 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/msa_bio_energy.webp" loading="lazy"
           decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 27 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 27 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/avani.webp" loading="lazy" decoding="async"
           fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 28 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 28 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/united_nations_development.webp"
           loading="lazy" decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 29 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 29 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/iiab.webp" loading="lazy" decoding="async"
           fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 30 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 30 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/sardar_swan_sing_nation_institute.webp"
           loading="lazy" decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 31 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 31 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/mnit_jaipur.webp" loading="lazy"
           decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 32 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 32 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/nit_uttrakhand.webp" loading="lazy"
           decoding="async" fetchpriority="low">
-        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Client 33 Logo"
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Client 33 Logo"
           class="w-36 h-36 mx-5 my-2 shadow-lg rounded-md lazy"
           data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/national_innovation_foundation.webp"
           loading="lazy" decoding="async" fetchpriority="low">
@@ -1591,7 +1591,7 @@
               <p class="leading-relaxed mb-6 text-black">"Amazing service and team! They really helped us scale fast."
               </p>
               <a class="inline-flex items-center">
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Alice Smith, CEO of AlphaTech"
+                <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Alice Smith, CEO of AlphaTech"
                   class="w-12 h-12 rounded-full object-cover lazy" data-src="https://dummyimage.com/106x106"
                   loading="lazy" decoding="async" fetchpriority="low">
                 <span class="flex flex-col pl-4">
@@ -1607,7 +1607,7 @@
             <div class="h-full bg-white p-8 rounded-lg shadow-lg">
               <p class="leading-relaxed mb-6 text-black">"Very professional and supportive. Highly recommended."</p>
               <a class="inline-flex items-center">
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="John Doe, Marketing Head of BetaCorp"
+                <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="John Doe, Marketing Head of BetaCorp"
                   class="w-12 h-12 rounded-full object-cover lazy" data-src="https://dummyimage.com/107x107"
                   loading="lazy" decoding="async" fetchpriority="low">
                 <span class="flex flex-col pl-4">
@@ -1623,7 +1623,7 @@
             <div class="h-full bg-white p-8 rounded-lg shadow-lg">
               <p class="leading-relaxed mb-6 text-black">"Superb experience! Everything was smooth and efficient."</p>
               <a class="inline-flex items-center">
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Priya Verma, Founder of Startup Inc."
+                <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Priya Verma, Founder of Startup Inc."
                   class="w-12 h-12 rounded-full object-cover lazy" data-src="https://dummyimage.com/108x108"
                   loading="lazy" decoding="async" fetchpriority="low">
                 <span class="flex flex-col pl-4">
@@ -1639,7 +1639,7 @@
             <div class="h-full bg-white p-8 rounded-lg shadow-lg">
               <p class="leading-relaxed mb-6 text-black">"Their dedication and expertise exceeded our expectations."</p>
               <a class="inline-flex items-center">
-                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Rahul Singh, CTO of FutureSoft"
+                <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Rahul Singh, CTO of FutureSoft"
                   class="w-12 h-12 rounded-full object-cover lazy" data-src="https://dummyimage.com/109x109"
                   loading="lazy" decoding="async" fetchpriority="low">
                 <span class="flex flex-col pl-4">
@@ -1741,7 +1741,7 @@
         <div class="flex justify-center lg:justify-start md:justify-start lg:w-0 lg:flex-1"><a
             class="flex title-font font-medium items-center md:justify-start justify-center text-white">
           </a><a href="#">
-            <img class="h-12 w-auto sm:h-14 object-contain lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            <img class="h-12 w-auto sm:h-14 object-contain lazy" src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
               alt="Enersol Biopower" style="min-width: 150px;"
               data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" loading="lazy"
               decoding="async" fetchpriority="low">
@@ -1887,27 +1887,27 @@
     </div>
 
     <div class="brand-logo flex h-16 sm:h-24 bg-white p-4 justify-center gap-4 sm:gap-6">
-  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="NIF Logo"
+  <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="NIF Logo"
     data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/nif-logo-1.webp" 
     loading="lazy" decoding="async" fetchpriority="low" class="lazy max-h-16 sm:max-h-24">
   
-  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="GIAN"
+  <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="GIAN"
     data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/gian.webp" 
     loading="lazy" decoding="async" fetchpriority="low" class="lazy max-h-16 sm:max-h-24">
   
-  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Swachh Bharat"
+  <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Swachh Bharat"
     data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp"
     loading="lazy" decoding="async" fetchpriority="low" class="lazy max-h-16 sm:max-h-24">
   
-  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Junagadh Agriculture University"
+  <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Junagadh Agriculture University"
     data-src="https://ik.imagekit.io/enersolbiopower/enersol/index/junagadh_agriculture_university.webp" 
     loading="lazy" decoding="async" fetchpriority="low" class="lazy max-h-16 sm:max-h-24">
   
-  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Sustainable Energy"
+  <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Sustainable Energy"
     data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/sustainable-energy.webp?updatedAt=1762515792165" 
     loading="lazy" decoding="async" fetchpriority="low" class="lazy max-h-16 sm:max-h-24">
   
-  <img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="Make in India"
+  <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="Make in India"
     data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Make_In_India_new.webp?updatedAt=1754911304078" 
     loading="lazy" decoding="async" fetchpriority="low" class="lazy max-h-16 sm:max-h-24">
 </div>

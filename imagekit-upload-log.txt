@@ -304,7 +304,7 @@
   ✅ erersollogo.webp → https://ik.imagekit.io/enersolbiopower/enersol/importance-of-biogas-energy/erersollogo.webp
   💾 HTML updated
 
-📄 pages\blogs\biomassGasifier.html
+📄 pages\blogs\biomass-gasifier-clean-energy-crop-residue.html
   ✅ erersollogo.webp → https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/erersollogo.webp
   ✅ erersollogo.webp → https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/erersollogo.webp
   ✅ biomass_gassifuer_01.webp → https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/biomass_gassifuer_01.webp

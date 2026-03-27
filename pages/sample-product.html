@@ -740,10 +740,10 @@
                         </div>
                         <!-- Second Row: Download Catalogue Button -->
                         {{#if catalogueLink}}
-                        <a class="inline-flex items-center justify-center text-white bg-primary-dark border-0 py-2 px-6 focus:outline-none hover:bg-primary-light rounded text-lg"
-                            target="_blank" href="{{catalogueLink}}">
+                        <button class="inline-flex items-center justify-center text-white bg-primary-dark border-0 py-2 px-6 focus:outline-none hover:bg-primary-light rounded text-lg cursor-pointer"
+                            onclick="openCatalogueModal('{{catalogueLink}}', '{{name}}')">
                             Download Product Catalogue
-                        </a>
+                        </button>
                         {{/if}}
                         <div class="bg-white rounded-lg">
         
@@ -7060,6 +7060,7 @@
             document.querySelectorAll(SEL).forEach(function (img) { io.observe(img); });
         })();
     </script>
+    <script src="../js/catalogue-download.js"></script>
 </body>
 
 </html>

@@ -350,7 +350,11 @@
 
         <section class="mt-12">
 
-
+            <!-- FAQ Section — appears above reviews only when product has faq data -->
+            <div id="standalone-faq" class="bg-white  p-6 rounded-lg shadow-md mb-6 hidden">
+                <h2 class="text-2xl font-semibold text-primary mb-6">Frequently Asked Questions</h2>
+                <div id="standalone-faq-list" class="space-y-3"></div>
+            </div>
 
             <!-- Reviews -->
             <div class="bg-white p-6 rounded-lg shadow-lg">
@@ -368,13 +372,17 @@
                         <div class="w-10 h-10 bg-gray-300 rounded-full mr-4"></div>
                         <div>
                             <p class="font-semibold text-gray-800">Jane Smith</p>
-                            <p class="text-gray-600">"Highly recommend this product for rural businesses. It’s efficient
+                            <p class="text-gray-600">"Highly recommend this product for rural businesses. It's efficient
                                 and environmentally friendly."</p>
                         </div>
                     </div>
                 </div>
             </div>
+
         </section>
+
+
+
         <!-- Product Videos Section -->
         <section class="py-12 bg-white">
             <div class="container px-5 mx-auto">
@@ -690,113 +698,110 @@
 
     </script>
     <script id="product-template" type="text/x-handlebars-template">
-        <div class="container px-5 py-6 mx-auto">
-            <div class="flex flex-wrap">
-                <!-- Left: Product Image Gallery -->
-                <div class="lg:w-1/2 w-full lg:h-auto object-cover object-center rounded mb-6 md:lg:sticky lg:sticky top-0 self-start"
-                    style="top:100px">
-                    <!-- Main Product Image -->
-                    <img id="main-product-image" src="{{image}}" alt="Main Product Image"
-                        style="height: 100%;max-height: 75vh;object-fit: contain;" class="w-full h-80 object-cover rounded-lg">
-                    <!-- Thumbnail Images -->
-                    <div class="overflow-x-auto flex justify-center space-x-4 mt-4">
-                        {{#each thumbnails}}
-                        <img src="{{this.url}}" alt="{{this.alt}}" class="w-24 h-24 object-cover rounded-lg cursor-pointer"
-                            onclick="changeImage('{{this.url}}')">
-                        {{/each}}
-                    </div>
+    <div class="container px-5 py-6 mx-auto">
+        <div class="flex flex-wrap">
+            <!-- Left: Product Image Gallery -->
+            <div class="lg:w-1/2 w-full lg:h-auto object-cover object-center rounded mb-6 md:lg:sticky lg:sticky top-0 self-start"
+                style="top:100px">
+                <!-- Main Product Image -->
+                <img id="main-product-image" src="{{image}}" alt="Main Product Image"
+                    style="height: 100%;max-height: 75vh;object-fit: contain;" class="w-full h-80 object-cover rounded-lg">
+                <!-- Thumbnail Images -->
+                <div class="overflow-x-auto flex justify-center space-x-4 mt-4">
+                    {{#each thumbnails}}
+                    <img src="{{this.url}}" alt="{{this.alt}}" class="w-24 h-24 object-cover rounded-lg cursor-pointer"
+                        onclick="changeImage('{{this.url}}')">
+                    {{/each}}
                 </div>
-                <!-- Right: Product Information -->
-                <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                    <h2 class="text-sm title-font text-gray-500 tracking-widest">ENERSOL BIOPOWER</h2>
-                    <h1 id="product-title" class="title-font sm:text-4xl text-3xl font-medium text-gray-900">
-                        {{name}}
-                    </h1>
-                    <p class="text-xl text-green-600 mb-4">{{subtitle}}</p>
-                    {{#if price}}
-<div class="mb-4">
-    <span class="text-3xl font-bold text-gray-900">₹ {{price}}</span>
-</div>
-{{/if}}
-                    <p id="product-description" class="mb-8 leading-relaxed">
-                        {{description}}
-                    </p>
-                    <div class="flex flex-col gap-4">
-                        <!-- First Row: Contact Buttons -->
-                        <div class="flex gap-4">
-                            <a href="https://api.whatsapp.com/send?phone=+918239556677&amp;text=Hello,%20I'm%20very%20interested%20in%20learning%20more%20about%20the%20{{name}}%20product.%20Could%20you%20please%20provide%20more%20details%20or%20assist%20me%20further?"
+            </div>
+            <!-- Right: Product Information -->
+            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                <h2 class="text-sm title-font text-gray-500 tracking-widest">ENERSOL BIOPOWER</h2>
+                <h1 id="product-title" class="title-font sm:text-4xl text-3xl font-medium text-gray-900">
+                    {{name}}
+                </h1>
+                <p class="text-xl text-green-600 mb-4">{{subtitle}}</p>
+                {{#if price}}
+                <div class="mb-4">
+                    <span class="text-3xl font-bold text-gray-900">₹ {{price}}</span>
+                </div>
+                {{/if}}
+                <p id="product-description" class="mb-8 leading-relaxed">
+                    {{description}}
+                </p>
+                <div class="flex flex-col gap-4">
+                    <!-- First Row: Contact Buttons -->
+                    <div class="flex gap-4">
+                        <a href="https://api.whatsapp.com/send?phone=+918239556677&amp;text=Hello,%20I'm%20very%20interested%20in%20learning%20more%20about%20the%20{{name}}%20product.%20Could%20you%20please%20provide%20more%20details%20or%20assist%20me%20further?"
                             class="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-lg text-lg focus:outline-none"
                             style="gap: 5px;">
                             <i class="ri-whatsapp-line"></i>
                             Contact on WhatsApp
-                         </a>
-                         
-                        
-                            <a href="tel:+919414535665"
-                                class="inline-flex flex-grow items-center justify-center text-center text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"
-                                style="gap: 5px;">
-                                <i class="ri-phone-line"></i> Call Us
-                            </a>
-                        </div>
-                        <!-- Second Row: Download Catalogue Button -->
-                        {{#if catalogueLink}}
-                        <button class="inline-flex items-center justify-center text-white bg-primary-dark border-0 py-2 px-6 focus:outline-none hover:bg-primary-light rounded text-lg cursor-pointer"
-                            onclick="openCatalogueModal('{{catalogueLink}}', '{{name}}')">
-                            Download Product Catalogue
-                        </button>
-                        {{/if}}
-                        <div class="bg-white rounded-lg">
-        
-                            
-                            <h3 class="text-lg font-semibold mt-4">Key Features</h3>
-                            <ul class="list-disc ml-8">
-                                {{#each features}}
-                                <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
+                        </a>
+                        <a href="tel:+919414535665"
+                            class="inline-flex flex-grow items-center justify-center text-center text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"
+                            style="gap: 5px;">
+                            <i class="ri-phone-line"></i> Call Us
+                        </a>
+                    </div>
+                    <!-- Second Row: Download Catalogue Button -->
+                    {{#if catalogueLink}}
+                    <button class="inline-flex items-center justify-center text-white bg-primary-dark border-0 py-2 px-6 focus:outline-none hover:bg-primary-light rounded text-lg cursor-pointer"
+                        onclick="openCatalogueModal('{{catalogueLink}}', '{{name}}')">
+                        Download Product Catalogue
+                    </button>
+                    {{/if}}
+                    <div class="bg-white rounded-lg">
+                        <h3 class="text-lg font-semibold mt-4">Key Features</h3>
+                        <ul class="list-disc ml-8">
+                            {{#each features}}
+                            <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
+                            {{/each}}
+                        </ul>
+                        <h3 class="text-lg font-semibold mt-4">Advanced Technology</h3>
+                        <ul class="list-disc ml-8">
+                            {{#each technology}}
+                            <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
+                            {{/each}}
+                        </ul>
+                        <h3 class="text-lg font-semibold mt-5">Technical Specifications</h3>
+                        <table class="min-w-full table-auto">
+                            <thead>
+                                <tr class="bg-gray-100">
+                                    <th class="px-4 py-2 text-left">Specification</th>
+                                    <th class="px-4 py-2 text-left">Detail</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{#each specifications}}
+                                <tr>
+                                    <td class="border px-4 py-2">{{label}}</td>
+                                    <td class="border px-4 py-2 flex items-center">
+                                        <i class="{{icon}} text-{{color}} mr-2"></i> {{value}}
+                                    </td>
+                                </tr>
                                 {{/each}}
-                            </ul>
-                            <h3 class="text-lg font-semibold mt-4">Advanced Technology</h3>
-                            <ul class="list-disc ml-8">
-                                {{#each technology}}
-                                <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
-                                {{/each}}
-                            </ul>
-                            <h3 class="text-lg font-semibold mt-5">Technical Specifications</h3>
-                            <table class="min-w-full table-auto">
-                                <thead>
-                                    <tr class="bg-gray-100">
-                                        <th class="px-4 py-2 text-left">Specification</th>
-                                        <th class="px-4 py-2 text-left">Detail</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {{#each specifications}}
-                                    <tr>
-                                        <td class="border px-4 py-2">{{label}}</td>
-                                        <td class="border px-4 py-2 flex items-center">
-                                            <i class="{{icon}} text-{{color}} mr-2"></i> {{value}}
-                                        </td>
-                                    </tr>
-                                    {{/each}}
-                                </tbody>
-                            </table>
-                            <h3 class="text-lg font-semibold mt-4">Applications</h3>
-                            <ul class="list-disc ml-8">
-                                {{#each applications}}
-                                <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
-                                {{/each}}
-                            </ul>
-                            <h3 class="text-lg font-semibold mt-4">Why Choose {{title}}?</h3>
-                            <ul class="list-disc ml-8">
-                                {{#each benefits}}
-                                <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
-                                {{/each}}
-                            </ul>
-                        </div>
+                            </tbody>
+                        </table>
+                        <h3 class="text-lg font-semibold mt-4">Applications</h3>
+                        <ul class="list-disc ml-8">
+                            {{#each applications}}
+                            <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
+                            {{/each}}
+                        </ul>
+                        <h3 class="text-lg font-semibold mt-4">Why Choose {{name}}?</h3>
+                        <ul class="list-disc ml-8">
+                            {{#each benefits}}
+                            <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
+                            {{/each}}
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </script>
+    </div>
+</script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const products = [
@@ -3942,6 +3947,32 @@
                             "color": "red-500",
                             "text": "Supports healthier living conditions by minimizing smoke inhalation."
                         }
+                    ],
+                    "faq": [
+                        {
+                            "question": "Does the Bio-Nature stove require electricity?",
+                            "answer": "No, this is a natural-draft biomass stove and does not require electricity. It works using natural airflow (chimney effect) to support combustion."
+                        },
+                        {
+                            "question": "How does a natural-draft biomass stove work?",
+                            "answer": "It works on the principle of natural air movement, where hot air rises and draws fresh air into the combustion chamber. This airflow helps burn biomass fuel without using any fan or blower."
+                        },
+                        {
+                            "question": "Is this stove completely smokeless?",
+                            "answer": "It produces significantly less smoke than traditional chulhas, but not completely zero smoke. Smoke levels depend on airflow, fuel quality, and proper usage."
+                        },
+                        {
+                            "question": "What type of fuel can be used in this stove?",
+                            "answer": "You can use wood pieces, agricultural waste, briquettes, and other dry biomass fuels. Using dry fuel ensures better combustion and less smoke."
+                        },
+                        {
+                            "question": "Why does smoke sometimes come out while using the stove?",
+                            "answer": "Smoke can occur due to poor airflow, wet fuel, or improper loading. Natural draft stoves depend on consistent airflow, and factors like weather or fuel moisture can affect performance."
+                        },
+                        {
+                            "question": "Is this stove suitable for daily household use?",
+                            "answer": "Yes, it is designed for domestic use and is ideal for rural and semi-urban households as a replacement for traditional chulhas."
+                        }
                     ]
                 },
                 {
@@ -4122,6 +4153,32 @@
                             "icon": "ri-sun-line",
                             "color": "yellow-500",
                             "text": "Join the Green Energy Movement Today!"
+                        }
+                    ],
+                    "faq": [
+                        {
+                            "question": "Does the Bio-Mini stove require electricity to operate?",
+                            "answer": "No, it comes with an inbuilt battery backup, so it can operate without continuous electricity. The internal fan (forced-draft system) ensures efficient combustion even in power cuts."
+                        },
+                        {
+                            "question": "What type of fuel can be used in this stove?",
+                            "answer": "You can use multiple biomass fuels such as wood chips, briquettes, crop waste, and cow dung cakes. The stove is designed for flexibility with different fuel types."
+                        },
+                        {
+                            "question": "Is the stove completely smokeless?",
+                            "answer": "The stove uses a forced-draft system that significantly reduces smoke by improving air and fuel mixing, resulting in cleaner combustion compared to traditional stoves."
+                        },
+                        {
+                            "question": "How efficient is this biomass stove compared to traditional chulhas?",
+                            "answer": "Forced-draft biomass stoves are much more efficient because they control airflow using a fan, leading to better combustion, higher heat output, and lower fuel consumption. Studies show they can reduce fuel use and emissions significantly."
+                        },
+                        {
+                            "question": "Can it be used for daily household cooking?",
+                            "answer": "Yes, this model is specially designed for domestic use and is suitable for cooking for 5–25 people, making it ideal for homes, small gatherings, and rural kitchens."
+                        },
+                        {
+                            "question": "How much biomass fuel does it consume per hour?",
+                            "answer": "The stove typically consumes around 1.5–2 kg of biomass per hour, depending on the cooking load and fuel type."
                         }
                     ]
                 },
@@ -4471,6 +4528,32 @@
                             "color": "yellow-500",
                             "text": "Upgrade to Cleaner, Smarter Cooking Today!"
                         }
+                    ],
+                    "faq": [
+                        {
+                            "question": "Is the Green-Agnika10 suitable for small street food businesses like tea stalls and samosa shops?",
+                            "answer": "Yes, the Green-Agnika10 is specifically designed for small commercial setups such as tea stalls, coffee stalls, samosa/kachori shops, street food vendors, hotels, dhabas, and canteens. It can comfortably handle cooking for 50–60 people, making it the ideal entry-level commercial biomass stove for small food businesses looking to cut LPG costs."
+                        },
+                        {
+                            "question": "What type of fuel does the Green-Agnika10 use and where can I get it?",
+                            "answer": "The Green-Agnika10 runs on 100% biomass fuel including wood waste, wood chips, agricultural residues like rice husk, cotton stalks, sugarcane bagasse, and sawdust briquettes. It does not use LPG or diesel. Biomass fuel is easily and cheaply available across India, which is why this stove is highly cost-effective for daily commercial use."
+                        },
+                        {
+                            "question": "How much can I save on fuel costs compared to LPG with this stove?",
+                            "answer": "The Green-Agnika10 can save up to 60% on fuel costs compared to LPG. For a small tea stall or street food vendor spending ₹5,000–₹10,000 per month on LPG cylinders, this stove can cut that cost to nearly half. The return on investment is quick, typically within a few months, making it an extremely economical choice for small businesses."
+                        },
+                        {
+                            "question": "Does the Green-Agnika10 require electricity to operate?",
+                            "answer": "Yes, the stove uses a small 4-inch AC fan (blower) to supply forced-draft air into the combustion chamber for efficient, smokeless burning. The power requirement is very minimal compared to larger models. This fan ensures a strong, controllable flame and low smoke output. A basic single-phase power connection is sufficient to run it."
+                        },
+                        {
+                            "question": "Is the Green-Agnika10 truly smokeless and safe to use indoors?",
+                            "answer": "The Green-Agnika10 uses a forced-draft combustion system that enables complete burning of biomass, producing minimal smoke and no soot — unlike traditional wood chulhas. It has a thermal efficiency of 35.5% and a flame regulator to control heat levels. It can be used both indoors and outdoors. However, ensuring adequate ventilation in the cooking area is always recommended for the best air quality."
+                        },
+                        {
+                            "question": "What are the physical dimensions and weight of the Green-Agnika10 — is it easy to move?",
+                            "answer": "The Green-Agnika10 has compact dimensions of H16\" × W14\" and weighs approximately 40–45 kg, making it one of the lightest commercial biomass stoves in the Enersol range. Its small footprint and manageable weight mean it can be easily shifted between locations, making it a practical choice for street food vendors and small stalls that may need to relocate or rearrange their setup."
+                        }
                     ]
                 },
                 {
@@ -4618,7 +4701,42 @@
                             "color": "yellow-500",
                             "text": "Proven Technology – Developed by Enersol Biopower, a leader in biomass energy solutions"
                         }
+                    ],
+                    "faq": [
+                        {
+                            "question": "What type of fuel does the Harit-Agni12 use and is it easily available?",
+                            "answer": "The Harit-Agni12 runs on 100% biomass fuel including wood waste, sawdust briquettes, agricultural residues like rice husk, cotton stalks, and sugarcane bagasse. It does not use LPG, diesel, or any fossil fuel. Biomass feedstock is easily and cheaply available across India in both rural and urban areas. Using dry biomass always delivers better efficiency, lower smoke, and reduced fuel consumption per hour."
+                        },
+                        {
+                            "question": "How much money can a poha stall, tea stall, or mess canteen save by switching to the Harit-Agni12?",
+                            "answer": "The Harit-Agni12 is 60% more profitable than LPG stoves. For a small tea stall or poha vendor spending ₹4,000–₹8,000 per month on LPG cylinders, fuel costs can be reduced to nearly half. Cost recovery is achieved in just 2–3 months from the date of purchase, making it one of the most budget-friendly biomass stoves for street food vendors and small mess canteens that cook for 50–60 people daily."
+                        },
+                        {
+                            "question": "Does the Harit-Agni12 need electricity to work and how much power does it consume?",
+                            "answer": "Yes, the Harit-Agni12 uses a small 6-inch AC fan to power its forced-draft combustion system. The power consumption is extremely low — the fan draws very little electricity, costing just a few rupees per day to run. A basic single-phase household connection is sufficient. For areas with power outages, a small inverter or battery backup can easily support the fan to keep the stove running without interruption."
+                        },
+                        {
+                            "question": "Is the Harit-Agni12 truly smokeless and safe to use at indoor food stalls like idli-dosa or tea shops?",
+                            "answer": "Yes, the Harit-Agni12 uses a forced-draft combustion system that ensures complete burning of biomass, producing minimal smoke and no soot — far cleaner than a traditional wood chulha. It is safe for use at indoor and outdoor food stalls, mess canteens, and street food setups. A flame regulator is built in to control heat intensity as needed. Adequate ventilation in the cooking area is always recommended for the best cooking environment."
+                        },
+                        {
+                            "question": "How much biomass does the Harit-Agni12 consume per hour and how is the stove operated?",
+                            "answer": "The Harit-Agni12 has one of the lowest biomass consumption rates in the Enersol range — just 7–10 kg per hour — making it very economical for small food businesses with lighter cooking loads. Fuel is fed manually through a side-feeding system, which is simple to operate without any technical training. Ash removal is also manual. The built-in flame regulator allows the operator to easily increase or decrease heat as required."
+                        },
+                        {
+                            "question": "What are the dimensions, weight, and build quality of the Harit-Agni12 — is it durable enough for daily commercial use?",
+                            "answer": "The Harit-Agni12 has compact dimensions of H22\" × W18\" and weighs approximately 70 kg, making it the most compact mid-range model in the Enersol commercial stove lineup. It is constructed from high-quality mild steel (MS), which ensures a long service life and reliable performance even under continuous daily use at poha stalls, tea shops, idli-dosa stalls, street food carts, and mess canteens. Its rugged build requires low maintenance, making it a dependable long-term investment."
+                        },
+                        {
+                            "question": "What is the difference between the Harit-Agni12 and the Harit-Agni12B, and which one should I choose?",
+                            "answer": "The Harit-Agni12 and Harit-Agni12B are both 12-inch forced-draft smokeless biomass stoves from Enersol Biopower, sharing the same core combustion technology and fuel compatibility. The Harit-Agni12B is an upgraded variant designed for slightly heavier cooking loads and businesses that require a more robust build or additional structural support. If you run a basic tea stall, poha stall, or small canteen, the standard Harit-Agni12 is ideal. If your operation involves longer daily hours or heavier vessels, the Harit-Agni12B is the better choice for durability and sustained performance."
+                        },
+                        {
+                            "question": "Is after-sales service and spare parts support available for both the Harit-Agni12 and Harit-Agni12B across India?",
+                            "answer": "Yes, Enersol Biopower Private Limited provides after-sales service and spare parts support for both the Harit-Agni12 and Harit-Agni12B models across India. Being an ISO 9001:2015 certified manufacturer with over a decade of experience, Enersol has a dedicated support team for repairs, maintenance guidance, and component replacement. Both models are built from mild steel with minimal moving parts, which means low maintenance requirements and easy availability of spare components. You can reach their team at +91 9610103127 or +91 9414536665."
+                        }
                     ]
+
                 },
                 {
                     "name": "Green-Magic15",
@@ -4769,6 +4887,32 @@
                             "icon": "ri-award-fill",
                             "color": "yellow-500",
                             "text": "Backed by Expertise – Manufactured by Enersol Biopower, a trusted leader in biomass energy solutions"
+                        }
+                    ],
+                    "faq": [
+                        {
+                            "question": "What type of fuel can be used in the Green-Magic15 and where can I source it?",
+                            "answer": "The Green-Magic15 runs on 100% biomass fuel including wood waste, wood chips, sawdust briquettes, agricultural residues like rice husk, sugarcane bagasse, and cotton stalks. It does not require LPG, diesel, or any fossil fuel. Biomass feedstock is easily and cheaply available across India, which is the primary reason this stove delivers up to 60% savings in fuel costs for businesses. Using dry biomass always gives the best results in terms of efficiency and low smoke."
+                        },
+                        {
+                            "question": "How much can a sweet shop or canteen save on fuel costs by switching to the Green-Magic15?",
+                            "answer": "The Green-Magic15 is 60% more profitable than LPG stoves. For a mithai shop or canteen spending ₹20,000–₹40,000 per month on LPG cylinders, the savings can reach ₹12,000–₹24,000 every month. Product cost recovery is achieved in just 2–3 months, making it one of the fastest ROI stoves in the Enersol range. Over a year, the total savings can easily cross ₹1.5–₹2 lakh for a medium-sized sweet shop."
+                        },
+                        {
+                            "question": "Does the Green-Magic15 require electricity to operate, and how much power does it consume?",
+                            "answer": "Yes, the Green-Magic15 requires a 100-watt blower to run its forced-draft combustion system. This is a very low power requirement — running the 100W blower for 10 hours a day costs only around ₹8–₹10 in electricity. A standard single-phase power connection is sufficient. In areas with frequent power cuts, a small inverter or UPS can easily support the blower to keep the stove running without interruption."
+                        },
+                        {
+                            "question": "Is the Green-Magic15 smokeless and safe to use in a commercial kitchen like a hotel or restaurant?",
+                            "answer": "Yes, the Green-Magic15 uses a forced-draft combustion system that ensures complete burning of biomass, resulting in minimal smoke and zero soot — far cleaner than a traditional wood chulha. It is safe for use in hotels, restaurants, canteens, and catering kitchens both indoors and outdoors. A flame regulator is provided to control heat levels precisely, which is essential for maintaining cooking consistency in commercial food operations. Good ventilation in the kitchen is always recommended."
+                        },
+                        {
+                            "question": "How much biomass does the Green-Magic15 consume per hour and how is the fuel fed?",
+                            "answer": "The Green-Magic15 consumes 12–25 kg of biomass per hour depending on the cooking intensity and type of biomass used. Fuel is fed manually through a side-feeding system, which is simple and does not require any special training. Ash removal is also done manually. The stove has a flame regulator to fine-tune the heat output as needed. Dry biomass fuel is recommended for lower consumption and better efficiency."
+                        },
+                        {
+                            "question": "What businesses is the Green-Magic15 best suited for and what are its dimensions and weight?",
+                            "answer": "The Green-Magic15 is Enersol's top-selling model, ideal for mithai and sweet shops, samosa/kachori shops, mess and canteens, catering businesses, and hotels and restaurants. It sits between the smaller Green-Agnika10 and the larger Bio-Virat18 in the product range, making it perfect for medium-scale commercial cooking. Its dimensions are H26\" × W28\" and it weighs approximately 110 kg. Built from durable mild steel, it is designed for long-term, heavy-duty daily commercial use."
                         }
                     ]
                 },
@@ -4927,6 +5071,32 @@
                             "color": "yellow-500",
                             "text": "Trusted by Experts – Developed by Enersol Biopower, a leader in biomass energy solutions"
                         }
+                    ],
+                    "faq": [
+                        {
+                            "question": "What type of fuel can be used in the Bio-Virat 18?",
+                            "answer": "The Bio-Virat 18 runs on 100% biomass fuel including wood chips, wood waste, agricultural residues like rice husk and sugarcane bagasse, sawdust briquettes, and biomass pellets. It does not use LPG or any fossil fuel. Biomass is widely and cheaply available across India, which is why it saves up to 60% in fuel costs."
+                        },
+                        {
+                            "question": "How much fuel cost can be saved compared to LPG?",
+                            "answer": "Users can save up to 60% on fuel costs compared to LPG gas stoves. For a commercial business like a sweet shop spending ₹30,000–₹50,000 per month on LPG, savings can reach ₹18,000–₹30,000 every month. The return on investment is typically achieved within 3–4 months of purchase."
+                        },
+                        {
+                            "question": "Does the Bio-Virat 18 require electricity to operate?",
+                            "answer": "Yes, it requires a 165-watt electric blower running on standard single-phase electricity (230V) to power its forced-draft combustion system. The electricity cost is negligible — roughly ₹13–₹15 per day for 10 hours of operation. A small inverter can be used as backup during power cuts."
+                        },
+                        {
+                            "question": "Is the Bio-Virat 18 completely smokeless and safe for indoor use?",
+                            "answer": "The Bio-Virat 18 uses a forced-draft combustion system that enables complete burning of biomass with minimal smoke and soot, making it suitable for both indoor and outdoor commercial kitchens. Adequate ventilation is always recommended for best air quality and safety during operation."
+                        },
+                        {
+                            "question": "How much biomass does the stove consume per hour?",
+                            "answer": "The Bio-Virat 18 consumes 16–30 kg of biomass per hour depending on the intensity of cooking. Fuel is fed manually via a side-feeding system, and a flame regulator is provided to adjust heat levels as needed. Ash removal is also done manually, making daily operation simple for any kitchen worker."
+                        },
+                        {
+                            "question": "What businesses is the Bio-Virat 18 best suited for?",
+                            "answer": "The Bio-Virat 18 is designed for small to medium commercial food businesses including sweet shops, jalebi shops, namkeen units, ayurvedic medicine preparation units, and fabric dye shops. With an 18-inch fire zone, dimensions of H26\" × W31\", and a weight of approximately 150 kg, it is built for continuous heavy-duty commercial use."
+                        }
                     ]
                 },
                 {
@@ -5083,6 +5253,32 @@
                             "icon": "ri-award-fill",
                             "color": "yellow-500",
                             "text": "Backed by Industry Experts – Developed by Enersol Biopower, a leader in biomass-to-energy solutions"
+                        }
+                    ],
+                    "faq": [
+                        {
+                            "question": "What fuel can be used in the Bio-Akash21 biomass stove?",
+                            "answer": "The stove supports multiple biomass fuels such as wood, briquettes, crop residues, pellets, and cow dung cakes, making it highly flexible and cost-effective."
+                        },
+                        {
+                            "question": "How much fuel cost can I save compared to LPG?",
+                            "answer": "You can save over 60% on fuel costs compared to LPG, depending on usage and local biomass availability, with investment recovery typically in 3–4 months."
+                        },
+                        {
+                            "question": "Is the stove completely smokeless?",
+                            "answer": "The stove is designed for smokeless operation using a forced-draft system, which significantly reduces smoke and emissions compared to traditional stoves."
+                        },
+                        {
+                            "question": "Does the stove require electricity to operate?",
+                            "answer": "Yes, it requires a 165W power supply to run the blower, which ensures efficient combustion and high heat output."
+                        },
+                        {
+                            "question": "Is this stove suitable for home use?",
+                            "answer": "No, it is designed for commercial and bulk cooking applications such as hotels, temples, sweet shops, and community kitchens."
+                        },
+                        {
+                            "question": "How much biomass does the stove consume per hour?",
+                            "answer": "The stove typically consumes around 20–35 kg of biomass per hour, depending on cooking load and fuel type."
                         }
                     ]
                 },
@@ -5241,6 +5437,32 @@
                             "color": "yellow-500",
                             "text": "Trusted by Experts – Manufactured by Enersol Biopower, a leader in biomass-to-energy innovations"
                         }
+                    ],
+                    "faq": [
+                        {
+                            "question": "Is the Bio-Prithvi24 suitable for large-scale commercial cooking?",
+                            "answer": "Yes, this stove is specifically designed for commercial use such as sweet manufacturing, namkeen production, and bulk food processing. Its high thermal output makes it ideal for heavy-duty cooking operations."
+                        },
+                        {
+                            "question": "How much fuel cost can be saved compared to LPG?",
+                            "answer": "Users can save around 60% on fuel costs compared to LPG, depending on usage and fuel availability, making it highly economical for businesses."
+                        },
+                        {
+                            "question": "Does the stove require electricity to operate?",
+                            "answer": "Yes, it requires a power supply (around 200W) to run the blower, which ensures proper air supply for efficient combustion and high heat output."
+                        },
+                        {
+                            "question": "What type of fuel can be used in this stove?",
+                            "answer": "The stove supports multiple biomass fuels such as wood waste, briquettes, and agricultural residues. Using dry fuel improves efficiency and reduces smoke."
+                        },
+                        {
+                            "question": "Is the stove completely smokeless?",
+                            "answer": "The stove is designed for low-smoke operation using a forced-draft system. While it significantly reduces smoke compared to traditional stoves, proper fuel and airflow are required for best results."
+                        },
+                        {
+                            "question": "How much biomass does the stove consume per hour?",
+                            "answer": "The stove typically consumes around 25–30 kg of biomass per hour, depending on cooking load and fuel type."
+                        }
                     ]
                 },
                 {
@@ -5397,6 +5619,32 @@
                             "icon": "ri-award-fill",
                             "color": "yellow-500",
                             "text": "Trusted by Industry Leaders – Developed by Enersol Biopower, a pioneer in biomass-to-energy solutions"
+                        }
+                    ],
+                    "faq": [
+                        {
+                            "question": "What type of fuel does the Harit-Jumbo27 use and where can I source it?",
+                            "answer": "The Harit-Jumbo27 runs on 100% biomass fuel including wood waste, wood chips, sawdust briquettes, and agricultural residues like rice husk, sugarcane bagasse, and cotton stalks. It does not use LPG, diesel, or any fossil fuel. Biomass feedstock is widely and cheaply available across India, making this stove extremely cost-effective for high-volume commercial operations like sweet shops, banana chips units, and laddu makers."
+                        },
+                        {
+                            "question": "How much can a large sweet shop or confectionery unit save on fuel costs by using the Harit-Jumbo27?",
+                            "answer": "The Harit-Jumbo27 is 60% more profitable than LPG stoves. For a large sweet shop or confectionery unit spending ₹50,000–₹1,00,000 per month on LPG cylinders, the monthly savings can reach ₹30,000–₹60,000. Product cost recovery is achieved within 4–5 months of purchase. Over a year, total fuel savings can easily exceed ₹3–₹6 lakh, making it a highly rewarding investment for high-volume production businesses like laddu makers, banana chips manufacturers, and ayurvedic medicine shops."
+                        },
+                        {
+                            "question": "How much electricity does the Harit-Jumbo27 require and can it run during power cuts?",
+                            "answer": "The Harit-Jumbo27 requires two 165W blowers, totalling 330W of power, to run its dual forced-draft combustion system. This powers the large 27-inch fire zone for high-heat, heavy-duty output. The electricity cost is minimal — running both blowers for 10 hours costs approximately ₹26–₹30 per day. For areas with frequent power cuts, a medium-capacity inverter or diesel genset can easily support the blowers to keep production running without interruption."
+                        },
+                        {
+                            "question": "Is the Harit-Jumbo27 smokeless and suitable for use inside a commercial production kitchen?",
+                            "answer": "Yes, the Harit-Jumbo27 uses a forced-draft combustion system with dual blowers that ensures complete and efficient burning of biomass, resulting in minimal smoke and zero soot. It is safe for use in commercial production kitchens for sweet shops, banana chips units, ayurvedic medicine shops, and laddu makers. A flame regulator is provided to precisely control heat levels. Good ventilation in the production area is always recommended when running any high-capacity commercial cooking equipment."
+                        },
+                        {
+                            "question": "How much biomass does the Harit-Jumbo27 consume per hour and how is it managed?",
+                            "answer": "The Harit-Jumbo27 consumes 35–80 kg of biomass per hour depending on the cooking intensity and the type of biomass used. This higher consumption is expected given its large 27-inch fire zone designed for heavy-duty, high-volume commercial production. Fuel is fed manually through a side-feeding system, and ash is removed manually as well. Dry biomass is recommended for optimal efficiency and reduced consumption. The flame regulator allows operators to control heat output and manage fuel usage effectively."
+                        },
+                        {
+                            "question": "What are the dimensions, weight, and construction material of the Harit-Jumbo27 — is it built for long-term heavy use?",
+                            "answer": "The Harit-Jumbo27 has dimensions of H28\" × W40\" and weighs approximately 390 kg, making it one of the largest and most heavy-duty stoves in the Enersol commercial range. It is constructed from mild steel combined with ceramic brick lining inside the combustion chamber, which provides superior heat retention, higher thermal efficiency, and extended lifespan even under continuous high-temperature commercial production. Its rugged build is designed for long-term, all-day daily use in large sweet shops, confectionery units, banana chips factories, and ayurvedic processing units."
                         }
                     ]
                 },
@@ -6953,12 +7201,33 @@
                 }
             }
             function updateProductDetails(product) {
-                console.log(product);
-
                 const templateSource = document.getElementById('product-template').innerHTML;
                 const template = Handlebars.compile(templateSource);
-                // Render template with data
                 document.getElementById('product-container').innerHTML = template(product);
+
+                // Handle standalone FAQ above reviews
+                const faqSection = document.getElementById('standalone-faq');
+                const faqList = document.getElementById('standalone-faq-list');
+
+                if (product.faq && product.faq.length > 0) {
+                    faqSection.classList.remove('hidden');
+                    faqList.innerHTML = product.faq.map(function (item) {
+                        return `
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full flex justify-between items-center px-4 py-3 text-left font-medium text-gray-800 bg-gray-50 hover:bg-gray-100 transition-colors duration-200">
+                        <span class="pr-4">${item.question}</span>
+                        <i class="ri-arrow-down-s-line text-primary text-xl flex-shrink-0 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-4 py-3 text-gray-600 bg-white border-t border-gray-100 text-sm leading-relaxed">
+                        ${item.answer}
+                    </div>
+                </div>
+            `;
+                    }).join('');
+                } else {
+                    faqSection.classList.add('hidden');
+                }
             }
             function updateRelatedProducts(products, currentProduct) {
 
@@ -7012,6 +7281,26 @@
     </script>
     <script src="https://bot-backend.thundergits.com/cdn/bot.js"></script>
 
+    <script>
+        function toggleFaq(btn) {
+            const answer = btn.nextElementSibling;
+            const icon = btn.querySelector('i');
+            const isOpen = !answer.classList.contains('hidden');
+
+            // Close all open FAQs first
+            document.querySelectorAll('.faq-answer').forEach(function (a) {
+                a.classList.add('hidden');
+                a.previousElementSibling.querySelector('i').style.transform = '';
+            });
+
+            // If it was closed, open it
+            if (!isOpen) {
+                answer.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
+
 
     <!-- WhatsApp Floating Button -->
     <div id="whatsApp-floating-btn"
@@ -7037,6 +7326,7 @@
             opacity: 1;
         }
     </style>
+
 
     <script data-lazy-loader="1">
         (function () {

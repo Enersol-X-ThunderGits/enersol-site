@@ -1,0 +1,72 @@
+Set up a Google tag on your website
+
+
+You recently viewed instructions on how to set up a Google tag on your website. We haven't found a Google tag on your website, so we're sharing these instructions with you.
+Option 1: Install a tracking ID through your hosting service or commerce platform
+Sign in to your website builder, web hosting service, or commerce platform and paste your tracking ID into the analytics section.
+AW-18007502019
+Option 2: Install a Google tag in your website code
+Paste your Google tag before the closing </head> tag on every page of your website you want to track.
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18007502019"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-18007502019');
+</script>
+Lastly, install an event snippet for each of your goals to measure website conversions
+Copy the snippet below and paste it in between the <head></head> tags of the page(s) you'd like to track, right after the Google tag
+<!-- Event snippet for Phone call click - 9414535665 conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-18007502019/GWSiCJDXtakcEMPZ0opD'});
+</script>
+Copy the snippet below and paste it in between the <head></head> tags of the page(s) you'd like to track, right after the Google tag
+<!-- Event snippet for Page view- Home conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-18007502019/8h2kCPSauakcEMPZ0opD'});
+</script>
+Copy the snippet below and paste it in between the <head></head> tags of the page(s) you'd like to track, right after the Google tag
+<!-- Event snippet for Page view - 15 Inch Stove conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-18007502019/S4jnCOWyuakcEMPZ0opD'});
+</script>
+Copy the snippet below and paste it in between the <head></head> tags of the page(s) you'd like to track, right after the Google tag
+<!-- Event snippet for Page view - 18 Inch Stove conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-18007502019/g0h9CIq3uakcEMPZ0opD'});
+</script>
+Copy the snippet below and paste it in between the <head></head> tags of the page(s) you'd like to track, right after the Google tag
+<!-- Event snippet for Phone Click - 8239554433 conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-18007502019/u5hPCPO7zakcEMPZ0opD'});
+</script>
+Copy the snippet below and paste it in between the <head></head> tags of the page(s) you'd like to track, right after the Google tag
+<!-- Event snippet for Email Click conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-18007502019/AAh7CJSZz6kcEMPZ0opD'});
+</script>
+Copy the snippet below and paste it in between the <head></head> tags of the page(s) you'd like to track, right after the Google tag
+<!-- Event snippet for Page view - Biomass Stoves conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-18007502019/aoTcCP2K0akcEMPZ0opD'});
+</script>
+Copy the snippet below and paste it in between the <head></head> tags of the page(s) you'd like to track, right after the Google tag
+<!-- Event snippet for Whatsapp button click conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-18007502019/JOv4CJSf0qkcEMPZ0opD'});
+</script>
+Copy the snippet below and paste it in between the <head></head> tags of the page(s) you'd like to track, right after the Google tag
+<!-- Event snippet for Contact form Track conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-18007502019/D89dCJmw0qkcEMPZ0opD'});
+</script>
+Copy the snippet below and paste it in between the <head></head> tags of the page(s) you'd like to track, right after the Google tag
+<!-- Event snippet for Page view - 12 Inch Stove conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-18007502019/5nMeCKPb0qkcEMPZ0opD'});
+</script>
+Thanks,
+
+The Google Ads Team

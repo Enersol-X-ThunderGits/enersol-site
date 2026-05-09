@@ -77,6 +77,13 @@ form.addEventListener("submit", async function (e) {
         });
 
         if (response.ok) {
+            try {
+                window.dataLayer = window.dataLayer || [];
+                if (typeof window.gtag !== "function") {
+                    window.gtag = function () { window.dataLayer.push(arguments); };
+                }
+                window.gtag('event', 'conversion', { 'send_to': 'AW-18007502019/D89dCJmw0qkcEMPZ0opD' });
+            } catch (e) { }
             showModal("Thank You!", `
         Thank you for contacting <strong>Enersol Biopower</strong> — our team will get back to you shortly via email.
         <br>

@@ -84,6 +84,76 @@ var productSwiper = new Swiper('.productSwiper', {
     }
 });
 
+// Google Ads conversions (gtag) - implemented via existing Google tag loader on pages
+(function () {
+    const ADS_ID = "AW-18007502019";
+
+    const LABELS = {
+        phone_9414: "GWSiCJDXtakcEMPZ0opD",
+        phone_8239: "u5hPCPO7zakcEMPZ0opD",
+        email_click: "AAh7CJSZz6kcEMPZ0opD",
+        whatsapp_click: "JOv4CJSf0qkcEMPZ0opD",
+        contact_form: "D89dCJmw0qkcEMPZ0opD",
+        home_view: "8h2kCPSauakcEMPZ0opD",
+    };
+
+    function ensureGtag() {
+        window.dataLayer = window.dataLayer || [];
+        if (typeof window.gtag !== "function") {
+            window.gtag = function () { window.dataLayer.push(arguments); };
+        }
+    }
+
+    function fireConversion(label) {
+        try {
+            ensureGtag();
+            window.gtag("event", "conversion", { send_to: `${ADS_ID}/${label}` });
+        } catch (_) { }
+    }
+
+    // Base config for Google Ads (safe even if GA is already configured elsewhere)
+    try {
+        ensureGtag();
+        window.gtag("config", ADS_ID);
+    } catch (_) { }
+
+    // Home page view conversion (only fire on / or /index.html)
+    try {
+        const path = (window.location && window.location.pathname) ? window.location.pathname.toLowerCase() : "";
+        if (path === "/" || path.endsWith("/index.html")) {
+            fireConversion(LABELS.home_view);
+        }
+    } catch (_) { }
+
+    function digitsOnly(value) {
+        return (value || "").toString().replace(/\D/g, "");
+    }
+
+    document.addEventListener("click", function (e) {
+        const anchor = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+        if (!anchor) return;
+
+        const href = anchor.getAttribute("href") || "";
+        const hrefLower = href.toLowerCase();
+
+        if (hrefLower.startsWith("tel:")) {
+            const num = digitsOnly(hrefLower);
+            if (num.includes("9414535665")) fireConversion(LABELS.phone_9414);
+            else if (num.includes("8239554433")) fireConversion(LABELS.phone_8239);
+            return;
+        }
+
+        if (hrefLower.startsWith("mailto:")) {
+            fireConversion(LABELS.email_click);
+            return;
+        }
+
+        if (hrefLower.includes("wa.me") || hrefLower.includes("api.whatsapp.com")) {
+            fireConversion(LABELS.whatsapp_click);
+        }
+    }, true);
+})();
+
 
 
 // JavaScript to toggle the mobile menu

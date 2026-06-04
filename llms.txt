@@ -1,0 +1,39 @@
+# Enersol Biopower — llms.txt
+# https://llmstxt.org specification
+
+> Enersol Biopower Pvt. Ltd. is India's trusted manufacturer and exporter of biomass gasifiers,
+> smokeless biomass stoves, biogas generator sets (gensets), and biomass pyrolysis plants.
+> Founded in 1999 by Rai Singh Dahiya (National Innovation Award 2009), headquartered in Jaipur,
+> Rajasthan, India. Products serve agro-industries, rural electrification, food processing,
+> research institutions, and export markets across Africa, Middle East, and South Asia.
+
+## Core Pages
+
+- [Homepage](https://enersolbiopower.com/): Company overview, product range, client testimonials
+- [About Us](https://enersolbiopower.com/pages/about-us.html): Company history, awards, team
+- [Our Story](https://enersolbiopower.com/pages/our-story.html): Founder Rai Singh Dahiya's journey
+
+## Products
+
+- [Biomass Gasifier Manufacturer India](https://enersolbiopower.com/pages/biomass-gasifier-manufacturer-india.html): 2kW–250kW gasifiers for power & thermal applications
+- [Smokeless Biomass Stove Manufacturer](https://enersolbiopower.com/pages/biomass-stove-manufacturer-india.html): Domestic, institutional & industrial stoves
+- [Biogas Genset Manufacturer India](https://enersolbiopower.com/pages/biogas-genset-manufacturer-india.html): 2kVA–100kVA biogas generator sets
+- [Biomass Pyrolysis Plant Manufacturer](https://enersolbiopower.com/pages/biomass-pyrolysis-plant-manufacturer-india.html): Biochar & bio-oil production systems
+- [Biomass Gasifier Exporter](https://enersolbiopower.com/pages/biomass-gasifier-exporter.html): Global export capabilities
+
+## Blog & Knowledge Base
+
+- [Blog Index](https://enersolbiopower.com/pages/blogs.html): Articles on biomass energy, biogas, pyrolysis, clean cooking
+- [Biomass Gasifier for Agro-Industries](https://enersolbiopower.com/pages/blogs/biomass-gasifier-for-agro-industries.html)
+- [Biochar Sustainable Farming](https://enersolbiopower.com/pages/blogs/biochar-sustainable-farming-circular-economy.html)
+- [Biogas Genset Working & Design Guide](https://enersolbiopower.com/pages/blogs/biogas-genset-working-design-benefits-buyers-guide-waste-to-energy.html)
+- [LPG vs Biomass Stove ROI Guide](https://enersolbiopower.com/pages/blogs/lpg-vs-biomass-stove-cost-recovery-roi-guide.html)
+
+## Contact
+
+- [Contact Us](https://enersolbiopower.com/pages/contact-us.html): +91-9414535665 | info@enersolbiopower.com | Jaipur, Rajasthan 302013
+
+## Optional
+
+- [Privacy Policy](https://enersolbiopower.com/pages/privacy-policy.html)
+- [Terms of Service](https://enersolbiopower.com/pages/term-and-condition.html)

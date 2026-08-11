@@ -1337,8 +1337,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="bg-gray-800">
             <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                 <p class="text-gray-500 text-sm text-center sm:text-left">
-                    © 2025 Enersol Biopower — All Rights Reserved
-                </p>
+    © <span id="currentYear"></span> Enersol Biopower — All Rights Reserved
+</p>
+
+<script>
+    document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+</script>
                 <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
                     <a class="text-gray-500" target="_blank" href="https://www.facebook.com/enersolbiopwr">
                         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

@@ -2,8 +2,25 @@
 <html lang="en">
 
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MV8ZQKRT');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-59WXVBZ5RQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-59WXVBZ5RQ');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../assets/logo/fav-icon.png">
     <title>ENERSOL BIOPOWER PRIVATE LIMITED</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -47,8 +64,8 @@
         };
     </script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <style>
@@ -82,9 +99,18 @@
         }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+
+  <link rel="preconnect" href="https://ik.imagekit.io" />
+  <link rel="dns-prefetch" href="https://ik.imagekit.io" />
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV8ZQKRT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <!-- Top Bar -->
     <div class="bg-gray-800 py-2">
         <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
@@ -92,7 +118,7 @@
             <div class="flex flex-wrap justify-between w-full md:w-auto items-center space-x-4 ">
                 <div class="flex items-center space-x-2 text-white">
                     <i class="ri-mail-line"></i>
-                    <a href="mailto:info@example.com">info@enersolbiopower.com</a>
+                    <a href="mailto:info@enersolbiopower.com">info@enersolbiopower.com</a>
                 </div>
                 <div class="flex space-x-2">
                     <a href="https://www.facebook.com/enersolbiopwr" class="text-white">
@@ -119,7 +145,7 @@
                 </div>
                 <div class="flex items-center space-x-2 text-white">
                     <i class="ri-phone-line"></i>
-                    <a href="tel:+917073495200">+91-7073495200</a>
+                    <a href="tel:+917073495200">+91-8239554433</a>
                 </div>
 
             </div>
@@ -127,6 +153,49 @@
 
         </div>
     </div>
+    <!-- Sticky Social Bar -->
+    <div id="sticky-social"
+        class="fixed top-1/3 left-2 z-50 hidden flex-col space-y-2 bg-black bg-opacity-60 p-2.5 rounded-lg shadow-md">
+
+        <a href="https://www.facebook.com/enersolbiopwr"
+            class="text-white text-[28px] hover:text-blue-500 transition duration-300">
+            <i class="ri-facebook-fill"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy"
+            class="text-white text-[28px] hover:text-red-500 transition duration-300">
+            <i class="ri-youtube-fill"></i>
+        </a>
+
+        <a href="https://www.instagram.com/enersol_biopower/"
+            class="text-white text-[28px] hover:text-pink-500 transition duration-300">
+            <i class="ri-instagram-fill"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/"
+            class="text-white text-[28px] hover:text-blue-400 transition duration-300">
+            <i class="ri-linkedin-fill"></i>
+        </a>
+    </div>
+    <script>
+        const stickySocial = document.getElementById('sticky-social');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.scrollY;
+
+            if (currentScroll > 100) {
+                // User scrolled up past 100px
+                stickySocial.classList.add('flex');
+                stickySocial.classList.remove('hidden');
+            } else {
+                // User scrolling down or still near top
+                stickySocial.classList.add('hidden');
+                stickySocial.classList.remove('flex');
+            }
+
+            lastScroll = currentScroll;
+        });
+    </script>
     <!-- Navbar component -->
     <div class="bg-primary-dark sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -134,7 +203,11 @@
                 <!-- Logo -->
                 <div class="flex justify-start lg:w-0 lg:flex-1">
                     <a href="/">
-                        <img class="h-12 w-auto sm:h-14" src="../assets/logo/erersollogo.png" alt="Enersol Biopower">
+                        <img class="h-12 w-auto sm:h-14 lazy"
+                            src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
+                            alt="Enersol Biopower"
+                            data-src="https://ik.imagekit.io/enersolbiopower/enersol/sample-product/erersollogo.webp"
+                            loading="lazy" decoding="async" fetchpriority="low">
                     </a>
                 </div>
                 <!-- Navbar collapse button (visible on small screens) -->
@@ -147,7 +220,7 @@
                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" aria-hidden="true" style="color: white;">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16m-7 6h7" />
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
                         </svg>
                     </button>
                 </div>
@@ -159,20 +232,59 @@
                         class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
                     <a href="./our-story.html"
                         class="text-base font-medium text-white hover:text-accentYellow-light">Our Story</a>
-                    <a href="./products.html"
-                        class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
-                    <a href="./blogs-news.html"
-                        class="text-base font-medium text-white hover:text-accentYellow-light">Blogs & News</a>
+                    <div class="relative inline-block group">
+                        <!-- Products link -->
+                        <a href="./products.html"
+                            class="text-base font-medium text-white hover:text-accentYellow-light inline-flex items-center gap-1">
+                            Products
+                            <svg class="w-4 h-4 mt-0.5 transition-transform duration-200 group-hover:rotate-180"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+
+                        <!-- Dropdown (attached to Products) -->
+                        <div class="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200
+           opacity-0 invisible group-hover:opacity-100 group-hover:visible
+           transition-all duration-150 z-50">
+
+                            <a href="./biomass-gasifier-manufacturer-india.html"
+                                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary rounded-t-lg">
+                                Biomass Gasifier
+                            </a>
+
+                            <a href="./biomass-stove-manufacturer-india.html"
+                                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary">
+                                Biomass Stove
+                            </a>
+
+                            <a href="./biogas-genset-manufacturer-india.html"
+                                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary">
+                                Biogas Genset
+                            </a>
+
+                            <a href="./biomass-pyrolysis-plant-manufacturer-india.html"
+                                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary rounded-b-lg">
+                                Pyrolysis Plant
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="./blogs.html"
+                        class="text-base font-medium text-white hover:text-accentYellow-light">Blogs</a>
                     <a href="./contact-us.html"
                         class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
                 </nav>
 
                 <!-- Get a Quote button (visible on large screens) -->
                 <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                    <a href="#"
+                    <a href="mailto:info@enersolbiopower.com?subject=Quote%20Request&amp;body=Hi%2C%20I%20would%20like%20to%20get%20a%20quote."
+                        target="_blank"
                         class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
                         Get a Quote
                     </a>
+
                 </div>
             </div>
         </div>
@@ -184,7 +296,11 @@
                 <div class="pt-5 pb-6 ">
                     <div class="flex items-center justify-between px-5">
                         <div>
-                            <img class="h-8 w-auto" src="../assets/logo/erersollogo.png" alt="Your Company">
+                            <img class="h-8 w-auto lazy"
+                                src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
+                                alt="Enersol Biopower — Clean Energy Solutions"
+                                data-src="https://ik.imagekit.io/enersolbiopower/enersol/sample-product/erersollogo.webp"
+                                loading="lazy" decoding="async" fetchpriority="low">
                         </div>
                         <div class="-mr-2">
                             <button type="button"
@@ -195,7 +311,7 @@
                                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M6 18L18 6M6 6l12 12" />
+                                        d="M6 18L18 6M6 6l12 12"></path>
                                 </svg>
                             </button>
                         </div>
@@ -210,7 +326,7 @@
                             <a href="./products.html"
                                 class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
                             <a href="./blogs-news.html"
-                                class="text-base font-medium text-black hover:text-accentYellow-light">Blogs & News</a>
+                                class="text-base font-medium text-black hover:text-accentYellow-light">Blogs</a>
                             <a href="./contact-us.html"
                                 class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
                         </nav>
@@ -218,10 +334,12 @@
                 </div>
                 <div class="py-6 px-5 space-y-6">
                     <div>
-                        <a href="#"
+                        <a href="mailto:info@enersolbiopower.com?subject=Quote%20Request&amp;body=Hi%2C%20I%20would%20like%20to%20get%20a%20quote."
+                            target="_blank"
                             class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
                             Get a Quote
                         </a>
+
                     </div>
                 </div>
             </div>
@@ -248,31 +366,180 @@
 
         <section class="mt-12">
 
-
+            <!-- FAQ Section — appears above reviews only when product has faq data -->
+            <div id="standalone-faq" class="bg-white  p-6 rounded-lg shadow-md mb-6 hidden">
+                <h2 class="text-2xl font-semibold text-primary mb-6">Frequently Asked Questions</h2>
+                <div id="standalone-faq-list" class="space-y-3"></div>
+            </div>
 
             <!-- Reviews -->
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h2 class="text-2xl font-semibold text-primary mb-6">Customer Reviews</h2>
-                <div class="space-y-4">
-                    <div class="flex items-start">
-                        <div class="w-10 h-10 bg-gray-300 rounded-full mr-4"></div>
-                        <div>
-                            <p class="font-semibold text-gray-800">John Doe</p>
-                            <p class="text-gray-600">"Great product! It has significantly reduced our energy costs and
-                                is very easy to use."</p>
+            <div class="bg-gray-100 rounded-lg py-10 px-4">
+                <h2 class="text-2xl font-bold title-font text-center mb-2 text-primary-dark">Google Customer Reviews</h2>
+                <p class="text-center text-gray-600 mb-8 max-w-xl mx-auto">See what our verified customers have to say about Enersol Biopower's eco-friendly, sustainable, and smokeless cooking and energy solutions.</p>
+
+                <div class="swiper product-testimonials">
+                    <div class="swiper-wrapper">
+
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide p-4 md:w-1/2 w-full transform transition-transform duration-500 hover:scale-105">
+                            <div class="h-full bg-white p-8 rounded-lg shadow-lg flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center mb-4">
+                                        <div class="flex text-yellow-400 mr-2">
+                                            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                        </div>
+                                        <span class="text-xs font-semibold text-gray-400 bg-gray-100 px-2 py-0.5 rounded">5.0 Rating</span>
+                                    </div>
+                                    <p class="leading-relaxed mb-6 text-black italic">"Very nice product. I bought ESB-R Biomass stove for home use. It's totally smokeless easy to use and portable. It's a very compact and eco friendly product."</p>
+                                </div>
+                                <div class="flex justify-between items-center border-t border-gray-100 pt-4 mt-auto">
+                                    <a class="inline-flex items-center">
+                                        <div class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-lg shadow-inner">AS</div>
+                                        <span class="flex flex-col pl-4">
+                                            <span class="font-medium text-primary-dark">Aditya Saharan</span>
+                                            <span class="text-gray-500 text-xs">Verified Google Reviewer</span>
+                                        </span>
+                                    </a>
+                                    <span class="inline-flex items-center text-xs text-green-600 font-semibold bg-green-50 px-2.5 py-0.5 rounded-full"><i class="ri-checkbox-circle-fill mr-1"></i> Verified Buyer</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="w-10 h-10 bg-gray-300 rounded-full mr-4"></div>
-                        <div>
-                            <p class="font-semibold text-gray-800">Jane Smith</p>
-                            <p class="text-gray-600">"Highly recommend this product for rural businesses. It’s efficient
-                                and environmentally friendly."</p>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide p-4 md:w-1/2 w-full transform transition-transform duration-500 hover:scale-105">
+                            <div class="h-full bg-white p-8 rounded-lg shadow-lg flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center mb-4">
+                                        <div class="flex text-yellow-400 mr-2">
+                                            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                        </div>
+                                        <span class="text-xs font-semibold text-gray-400 bg-gray-100 px-2 py-0.5 rounded">5.0 Rating</span>
+                                    </div>
+                                    <p class="leading-relaxed mb-6 text-black italic">"I Purchased Smokeless Biomass Stove, The Product Quality is Very Good. The Performance of the Product is Excellent. It reduced use of LPG Gas, also it is free from Pollution."</p>
+                                </div>
+                                <div class="flex justify-between items-center border-t border-gray-100 pt-4 mt-auto">
+                                    <a class="inline-flex items-center">
+                                        <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center text-white font-bold text-lg shadow-inner">AG</div>
+                                        <span class="flex flex-col pl-4">
+                                            <span class="font-medium text-primary-dark">Arvind Ghodake</span>
+                                            <span class="text-gray-500 text-xs">Verified Google Reviewer</span>
+                                        </span>
+                                    </a>
+                                    <span class="inline-flex items-center text-xs text-green-600 font-semibold bg-green-50 px-2.5 py-0.5 rounded-full"><i class="ri-checkbox-circle-fill mr-1"></i> Verified Buyer</span>
+                                </div>
+                            </div>
                         </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide p-4 md:w-1/2 w-full transform transition-transform duration-500 hover:scale-105">
+                            <div class="h-full bg-white p-8 rounded-lg shadow-lg flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center mb-4">
+                                        <div class="flex text-yellow-400 mr-2">
+                                            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                        </div>
+                                        <span class="text-xs font-semibold text-gray-400 bg-gray-100 px-2 py-0.5 rounded">5.0 Rating</span>
+                                    </div>
+                                    <p class="leading-relaxed mb-6 text-black italic">"Enersol Biopower Pvt Ltd – ESB-R Green-Magic15 Review. As a restaurant owner, I tested this as an LPG alternative in a real kitchen. Excellent performance and heat efficiency."</p>
+                                </div>
+                                <div class="flex justify-between items-center border-t border-gray-100 pt-4 mt-auto">
+                                    <a class="inline-flex items-center">
+                                        <div class="w-12 h-12 rounded-full bg-purple-600 flex items-center justify-center text-white font-bold text-lg shadow-inner">VM</div>
+                                        <span class="flex flex-col pl-4">
+                                            <span class="font-medium text-primary-dark">VENKATESWARAN M</span>
+                                            <span class="text-gray-500 text-xs">Restaurant Owner</span>
+                                        </span>
+                                    </a>
+                                    <span class="inline-flex items-center text-xs text-green-600 font-semibold bg-green-50 px-2.5 py-0.5 rounded-full"><i class="ri-checkbox-circle-fill mr-1"></i> Verified Buyer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide p-4 md:w-1/2 w-full transform transition-transform duration-500 hover:scale-105">
+                            <div class="h-full bg-white p-8 rounded-lg shadow-lg flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center mb-4">
+                                        <div class="flex text-yellow-400 mr-2">
+                                            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                        </div>
+                                        <span class="text-xs font-semibold text-gray-400 bg-gray-100 px-2 py-0.5 rounded">5.0 Rating</span>
+                                    </div>
+                                    <p class="leading-relaxed mb-6 text-black italic">"The wood stove is excellent, it doesn't produce any smoke and is very easy to use. Staff behaviour was too good. I purchased 5 bhatti all working too good."</p>
+                                </div>
+                                <div class="flex justify-between items-center border-t border-gray-100 pt-4 mt-auto">
+                                    <a class="inline-flex items-center">
+                                        <div class="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center text-white font-bold text-lg shadow-inner">SA</div>
+                                        <span class="flex flex-col pl-4">
+                                            <span class="font-medium text-primary-dark">Sarwar Alam</span>
+                                            <span class="text-gray-500 text-xs">Verified Google Reviewer</span>
+                                        </span>
+                                    </a>
+                                    <span class="inline-flex items-center text-xs text-green-600 font-semibold bg-green-50 px-2.5 py-0.5 rounded-full"><i class="ri-checkbox-circle-fill mr-1"></i> Verified Buyer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5 -->
+                        <div class="swiper-slide p-4 md:w-1/2 w-full transform transition-transform duration-500 hover:scale-105">
+                            <div class="h-full bg-white p-8 rounded-lg shadow-lg flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center mb-4">
+                                        <div class="flex text-yellow-400 mr-2">
+                                            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                        </div>
+                                        <span class="text-xs font-semibold text-gray-400 bg-gray-100 px-2 py-0.5 rounded">5.0 Rating</span>
+                                    </div>
+                                    <p class="leading-relaxed mb-6 text-black italic">"Ms. Neeru and Ms. Raj Dahiya have provided excellent service by arranging the materials on time. We truly appreciate their proactive approach and effective communication with customers regarding their requirements."</p>
+                                </div>
+                                <div class="flex justify-between items-center border-t border-gray-100 pt-4 mt-auto">
+                                    <a class="inline-flex items-center">
+                                        <div class="w-12 h-12 rounded-full bg-teal-600 flex items-center justify-center text-white font-bold text-lg shadow-inner">MB</div>
+                                        <span class="flex flex-col pl-4">
+                                            <span class="font-medium text-primary-dark">Manjunath B V</span>
+                                            <span class="text-gray-500 text-xs">Verified Google Reviewer</span>
+                                        </span>
+                                    </a>
+                                    <span class="inline-flex items-center text-xs text-green-600 font-semibold bg-green-50 px-2.5 py-0.5 rounded-full"><i class="ri-checkbox-circle-fill mr-1"></i> Verified Buyer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 6 -->
+                        <div class="swiper-slide p-4 md:w-1/2 w-full transform transition-transform duration-500 hover:scale-105">
+                            <div class="h-full bg-white p-8 rounded-lg shadow-lg flex flex-col justify-between">
+                                <div>
+                                    <div class="flex items-center mb-4">
+                                        <div class="flex text-yellow-400 mr-2">
+                                            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                        </div>
+                                        <span class="text-xs font-semibold text-gray-400 bg-gray-100 px-2 py-0.5 rounded">5.0 Rating</span>
+                                    </div>
+                                    <p class="leading-relaxed mb-6 text-black italic">"Biomass stove is an excellent investment for anyone seeking an environmentally responsible, sustainable, and highly efficient cooking solution."</p>
+                                </div>
+                                <div class="flex justify-between items-center border-t border-gray-100 pt-4 mt-auto">
+                                    <a class="inline-flex items-center">
+                                        <div class="w-12 h-12 rounded-full bg-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-inner">SS</div>
+                                        <span class="flex flex-col pl-4">
+                                            <span class="font-medium text-primary-dark">Subhash Saharan</span>
+                                            <span class="text-gray-500 text-xs">Verified Google Reviewer</span>
+                                        </span>
+                                    </a>
+                                    <span class="inline-flex items-center text-xs text-green-600 font-semibold bg-green-50 px-2.5 py-0.5 rounded-full"><i class="ri-checkbox-circle-fill mr-1"></i> Verified Buyer</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
+                    <br>
+                    <div class="swiper-pagination mt-6"></div>
                 </div>
             </div>
+
         </section>
+
+
+
         <!-- Product Videos Section -->
         <section class="py-12 bg-white">
             <div class="container px-5 mx-auto">
@@ -285,14 +552,14 @@
                         <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/ShaprSOtlfc"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                            allowfullscreen=""></iframe>
                     </div>
                     <!-- Video 2 -->
                     <div class="w-full">
                         <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/_Hw083-jXuM"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                            allowfullscreen=""></iframe>
                     </div>
                 </div>
 
@@ -302,14 +569,14 @@
                         <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/dEqKMbc6GAU"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                            allowfullscreen=""></iframe>
                     </div>
                     <!-- Video 4 -->
                     <div class="w-full">
                         <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/rKM7wHr4N5E"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                            allowfullscreen=""></iframe>
                     </div>
                 </div>
 
@@ -319,14 +586,14 @@
                         <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/LburfRTFHZ8"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                            allowfullscreen=""></iframe>
                     </div>
                     <!-- Video 6 -->
                     <div class="w-full">
                         <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/9zru5K5FEes"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                            allowfullscreen=""></iframe>
                     </div>
                 </div>
 
@@ -336,14 +603,14 @@
                         <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/V3E_BG4QzPg"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                            allowfullscreen=""></iframe>
                     </div>
                     <!-- Video 8 -->
                     <div class="w-full">
                         <iframe class="w-full h-64 rounded-lg" src="https://www.youtube.com/embed/H0uSyU292FI"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                            allowfullscreen=""></iframe>
                     </div>
                 </div>
             </div>
@@ -359,14 +626,19 @@
             <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
                 <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
                     <!-- Adjusted Logo -->
-                    <div class="flex justify-start lg:w-0 lg:flex-1">
-                        <a href="#">
-                            <img class="h-12 w-auto sm:h-14 object-contain" src="../assets/logo/erersollogo.png"
-                                alt="Enersol Biopower" style="min-width: 150px;">
-                        </a>
-                    </div>
-
                 </a>
+                <div class="flex justify-start lg:w-0 lg:flex-1"><a
+                        class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                    </a><a href="#">
+                        <img class="h-12 w-auto sm:h-14 object-contain lazy"
+                            src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
+                            alt="Enersol Biopower" style="min-width: 150px;"
+                            data-src="https://ik.imagekit.io/enersolbiopower/enersol/sample-product/erersollogo.webp"
+                            loading="lazy" decoding="async" fetchpriority="low">
+                    </a>
+                </div>
+
+
                 <p class="mt-2 text-sm text-gray-300">Innovative Renewable Energy Solutions for a Sustainable Future</p>
             </div>
 
@@ -400,13 +672,18 @@
                             <a class="text-gray-300 hover:text-gray-200" href="./contact-us.html">Contact Us</a>
                         </li>
                         <li>
-                            <a class="text-gray-300 hover:text-gray-200" href="./blogs-news.html">Blogs & News</a>
+                            <a class="text-gray-300 hover:text-gray-200" href="./blogs-news.html">Blogs</a>
                         </li>
                         <li>
-                            <a class="text-gray-300 hover:text-gray-200" href=".">Privacy Policy</a>
+                            <a class="text-gray-300 hover:text-gray-200" href="./privacy-policy.html">Privacy Policy</a>
                         </li>
                         <li>
-                            <a class="text-gray-300 hover:text-gray-200">Terms of Service</a>
+                            <a href="./term-and-condition.html" class="text-gray-300 hover:text-gray-200">Terms of
+                                Service</a>
+                        </li>
+                        <li>
+                            <a href="./refund-policy.html" class="text-gray-300 hover:text-gray-200">Refund
+                                Policy</a>
                         </li>
                     </nav>
                 </div>
@@ -420,14 +697,14 @@
                                 Achievements</a>
                         </li>
                         <li>
-                            <a class="text-gray-300 hover:text-gray-200" href="./#testimonials">Testimonials</a>
+                            <a class="text-gray-300 hover:text-gray-200" href="/#testimonials">Testimonials</a>
                         </li>
                         <li>
                             <a class="text-gray-300 hover:text-gray-200" href="./about-us.html#our-history">Our
                                 History</a>
                         </li>
                         <li>
-                            <a class="text-gray-300 hover:text-gray-200" href="./about-us.html#mission">Mission &
+                            <a class="text-gray-300 hover:text-gray-200" href="./about-us.html#mission">Mission &amp;
                                 Vission</a>
                         </li>
                     </nav>
@@ -473,7 +750,7 @@
                             </li>
                             <li class="text-gray-300 flex items-start">
                                 <i class="ri-phone-fill mr-2 text-white"></i>
-                                <span class="block">+91-7073495200</span>
+                                <span class="block">+91-8239554433</span>
                             </li>
                             <!-- Email -->
                             <li class="text-gray-300 flex items-start">
@@ -489,11 +766,54 @@
             </div>
         </div>
 
+        <div class="brand-logo flex flex-wrap items-center justify-center bg-white p-2 sm:p-4 gap-3 sm:gap-6">
+
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/nif-logo-1.webp" alt="NIF Logo"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/nif-logo-1.webp" loading="lazy"
+                decoding="async" fetchpriority="low"
+                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/gian.webp" alt="GIAN"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/gian.webp" loading="lazy"
+                decoding="async" fetchpriority="low"
+                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp"
+                alt="Swachh Bharat"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp"
+                loading="lazy" decoding="async" fetchpriority="low"
+                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/junagadh_agriculture_university.webp"
+                alt="Junagadh Agriculture University"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/junagadh_agriculture_university.webp"
+                loading="lazy" decoding="async" fetchpriority="low"
+                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/sustainable-energy.webp?updatedAt=1762515792165"
+                alt="Sustainable Energy"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/sustainable-energy.webp?updatedAt=1762515792165"
+                loading="lazy" decoding="async" fetchpriority="low"
+                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Make_In_India_new.webp?updatedAt=1754911304078"
+                alt="Make in India"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Make_In_India_new.webp?updatedAt=1754911304078"
+                loading="lazy" decoding="async" fetchpriority="low"
+                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+
+        </div>
         <!-- Footer Bottom Section -->
         <div class="bg-gray-800">
             <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                <p class="text-gray-500 text-sm text-center sm:text-left">© 2025 Enersol Biopower — All Rights Reserved
-                </p>
+              <p class="text-gray-500 text-sm text-center sm:text-left">
+    © <span id="currentYear"></span> Enersol Biopower — All Rights Reserved
+</p>
+
+<script>
+    document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+</script>
                 <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
                     <a class="text-gray-500" target="_blank" href="https://www.facebook.com/enersolbiopwr">
                         <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -503,12 +823,12 @@
                     </a>
                     <a class="ml-3 text-gray-500" target="_blank"
                         href="https://www.youtube.com/@enersolbiopower-wastetoenergy">
-                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                        <svg class="w-6 h-6 text-gray-500 dark:text-white" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                             viewBox="0 0 24 24">
                             <path fill-rule="evenodd"
                                 d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
-                                clip-rule="evenodd" />
+                                clip-rule="evenodd"></path>
                         </svg>
 
                     </a>
@@ -541,108 +861,110 @@
 
     </script>
     <script id="product-template" type="text/x-handlebars-template">
-        <div class="container px-5 py-6 mx-auto">
-            <div class="flex flex-wrap">
-                <!-- Left: Product Image Gallery -->
-                <div class="lg:w-1/2 w-full lg:h-auto object-cover object-center rounded mb-6 md:lg:sticky lg:sticky top-0 self-start"
-                    style="top:100px">
-                    <!-- Main Product Image -->
-                    <img id="main-product-image" src="{{image}}" alt="Main Product Image"
-                        style="height: 100%;max-height: 75vh;object-fit: contain;" class="w-full h-80 object-cover rounded-lg">
-                    <!-- Thumbnail Images -->
-                    <div class="overflow-x-auto flex justify-center space-x-4 mt-4">
-                        {{#each thumbnails}}
-                        <img src="{{this.url}}" alt="{{this.alt}}" class="w-24 h-24 object-cover rounded-lg cursor-pointer"
-                            onclick="changeImage('{{this.url}}')">
-                        {{/each}}
-                    </div>
+    <div class="container px-5 py-6 mx-auto">
+        <div class="flex flex-wrap">
+            <!-- Left: Product Image Gallery -->
+            <div class="lg:w-1/2 w-full lg:h-auto object-cover object-center rounded mb-6 md:lg:sticky lg:sticky top-0 self-start"
+                style="top:100px">
+                <!-- Main Product Image -->
+                <img id="main-product-image" src="{{image}}" alt="Main Product Image"
+                    style="height: 100%;max-height: 75vh;object-fit: contain;" class="w-full h-80 object-cover rounded-lg">
+                <!-- Thumbnail Images -->
+                <div class="overflow-x-auto flex justify-center space-x-4 mt-4">
+                    {{#each thumbnails}}
+                    <img src="{{this.url}}" alt="{{this.alt}}" class="w-24 h-24 object-cover rounded-lg cursor-pointer"
+                        onclick="changeImage('{{this.url}}')">
+                    {{/each}}
                 </div>
-                <!-- Right: Product Information -->
-                <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                    <h2 class="text-sm title-font text-gray-500 tracking-widest">ENERSOL BIOPOWER</h2>
-                    <h1 id="product-title" class="title-font sm:text-4xl text-3xl font-medium text-gray-900">
-                        {{name}}
-                    </h1>
-                    <p class="text-xl text-green-600 mb-4">{{subtitle}}</p>
-                    <p id="product-description" class="mb-8 leading-relaxed">
-                        {{description}}
-                    </p>
-                    <div class="flex flex-col gap-4">
-                        <!-- First Row: Contact Buttons -->
-                        <div class="flex gap-4">
-                            <a href="https://api.whatsapp.com/send?phone=8239556677&amp;text=Hello,%20I'm%20very%20interested%20in%20learning%20more%20about%20the%20{{name}}%20product.%20Could%20you%20please%20provide%20more%20details%20or%20assist%20me%20further?"
+            </div>
+            <!-- Right: Product Information -->
+            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                <h2 class="text-sm title-font text-gray-500 tracking-widest">ENERSOL BIOPOWER</h2>
+                <h1 id="product-title" class="title-font sm:text-4xl text-3xl font-medium text-gray-900">
+                    {{name}}
+                </h1>
+                <p class="text-xl text-green-600 mb-4">{{subtitle}}</p>
+                {{#if price}}
+                <div class="mb-4">
+                    <span class="text-3xl font-bold text-gray-900">₹ {{price}}</span>
+                </div>
+                {{/if}}
+                <p id="product-description" class="mb-8 leading-relaxed">
+                    {{description}}
+                </p>
+                <div class="flex flex-col gap-4">
+                    <!-- First Row: Contact Buttons -->
+                    <div class="flex gap-4">
+                        <a href="https://api.whatsapp.com/send?phone=+918239556677&amp;text=Hello,%20I'm%20very%20interested%20in%20learning%20more%20about%20the%20{{name}}%20product.%20Could%20you%20please%20provide%20more%20details%20or%20assist%20me%20further?"
                             class="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-lg text-lg focus:outline-none"
                             style="gap: 5px;">
                             <i class="ri-whatsapp-line"></i>
                             Contact on WhatsApp
-                         </a>
-                         
-                        
-                            <a href="tel:+919414535665"
-                                class="inline-flex flex-grow items-center justify-center text-center text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"
-                                style="gap: 5px;">
-                                <i class="ri-phone-line"></i> Call Us
-                            </a>
-                        </div>
-                        <!-- Second Row: Download Catalogue Button -->
-                        {{#if catalogueLink}}
-                        <a class="inline-flex items-center justify-center text-white bg-primary-dark border-0 py-2 px-6 focus:outline-none hover:bg-primary-light rounded text-lg"
-                            target="_blank" href="{{catalogueLink}}">
-                            Download Product Catalogue
                         </a>
-                        {{/if}}
-                        <div class="bg-white rounded-lg">
-        
-                            
-                            <h3 class="text-lg font-semibold mt-4">Key Features</h3>
-                            <ul class="list-disc ml-8">
-                                {{#each features}}
-                                <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
+                        <a href="tel:+919414535665"
+                            class="inline-flex flex-grow items-center justify-center text-center text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"
+                            style="gap: 5px;">
+                            <i class="ri-phone-line"></i> Call Us
+                        </a>
+                    </div>
+                    <!-- Second Row: Download Catalogue Button -->
+                    {{#if catalogueLink}}
+                    <button class="inline-flex items-center justify-center text-white bg-primary-dark border-0 py-2 px-6 focus:outline-none hover:bg-primary-light rounded text-lg cursor-pointer"
+                        onclick="openCatalogueModal('{{catalogueLink}}', '{{name}}')">
+                        Download Product Catalogue
+                    </button>
+                    {{/if}}
+                    <div class="bg-white rounded-lg">
+                        <h3 class="text-lg font-semibold mt-4">Key Features</h3>
+                        <ul class="list-disc ml-8">
+                            {{#each features}}
+                            <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
+                            {{/each}}
+                        </ul>
+                        <h3 class="text-lg font-semibold mt-4">Advanced Technology</h3>
+                        <ul class="list-disc ml-8">
+                            {{#each technology}}
+                            <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
+                            {{/each}}
+                        </ul>
+                        <h3 class="text-lg font-semibold mt-5">Technical Specifications</h3>
+                        <table class="min-w-full table-auto">
+                            <thead>
+                                <tr class="bg-gray-100">
+                                    <th class="px-4 py-2 text-left">Specification</th>
+                                    <th class="px-4 py-2 text-left">Detail</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{#each specifications}}
+                                <tr>
+                                    <td class="border px-4 py-2">{{label}}</td>
+                                    <td class="border px-4 py-2 flex items-center">
+                                        <i class="{{icon}} text-{{color}} mr-2"></i> {{value}}
+                                    </td>
+                                </tr>
                                 {{/each}}
-                            </ul>
-                            <h3 class="text-lg font-semibold mt-4">Advanced Technology</h3>
-                            <ul class="list-disc ml-8">
-                                {{#each technology}}
-                                <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
-                                {{/each}}
-                            </ul>
-                            <h3 class="text-lg font-semibold mt-5">Technical Specifications</h3>
-                            <table class="min-w-full table-auto">
-                                <thead>
-                                    <tr class="bg-gray-100">
-                                        <th class="px-4 py-2 text-left">Specification</th>
-                                        <th class="px-4 py-2 text-left">Detail</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {{#each specifications}}
-                                    <tr>
-                                        <td class="border px-4 py-2">{{label}}</td>
-                                        <td class="border px-4 py-2 flex items-center">
-                                            <i class="{{icon}} text-{{color}} mr-2"></i> {{value}}
-                                        </td>
-                                    </tr>
-                                    {{/each}}
-                                </tbody>
-                            </table>
-                            <h3 class="text-lg font-semibold mt-4">Applications</h3>
-                            <ul class="list-disc ml-8">
-                                {{#each applications}}
-                                <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
-                                {{/each}}
-                            </ul>
-                            <h3 class="text-lg font-semibold mt-4">Why Choose {{title}}?</h3>
-                            <ul class="list-disc ml-8">
-                                {{#each benefits}}
-                                <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
-                                {{/each}}
-                            </ul>
-                        </div>
+                            </tbody>
+                        </table>
+                        <h3 class="text-lg font-semibold mt-4">Applications</h3>
+                        <ul class="list-disc ml-8">
+                            {{#each applications}}
+                            <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
+                            {{/each}}
+                        </ul>
+                        <h3 class="text-lg font-semibold mt-4">Why Choose {{name}}?</h3>
+                        <ul class="list-disc ml-8">
+                            {{#each benefits}}
+                            <li><i class="{{icon}} align-middle text-{{color}}"></i> {{text}}</li>
+                            {{/each}}
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </script>
+    </div>
+</script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const products = [
@@ -1394,14 +1716,15 @@
                     ]
                 },
                 {
-                    "name": "12kW Biomass Gasifier",
+                    "name": "12 kW (15 kVA) ESB-R Coal/Biomass Gasifier",
                     "category": "Biomass Gasifier for Power Production",
                     "modelName": "ESB-R Bio-12.5",
+                    "price": "Rs.19,20,900 (INR)",
                     "modelNumber": "ESB-R12.5",
-                    "catalogueLink": "https://enersolbiopower.com/catalogue/12KW%20Biomass%20Gasifier%20Catalogue.pdf",
+                    "catalogueLink": "https://enersolbiopower.com/catalogue/12kWCoalBiomassGasifier.pdf",
                     "image": "../assets/products/bio-gasifier-power/12-kw-Biomass-Gasifier.jpeg",
-                    "subtitle": "Empowering Sustainability – Clean Energy from Biomass",
-                    "description": "The ESB-R12 Biomass Gasifier by Enersol Biopower Pvt. Ltd. is a next-generation renewable energy solution designed to efficiently convert agricultural and forestry waste into clean power. Engineered with advanced downdraft gasification technology, this system provides an eco-friendly, cost-effective, and versatile energy source, ideal for off-grid communities, farms, industries, and research institutions.",
+                    "subtitle": "Empowering Sustainability – Clean Energy from Coal/Biomass",
+                    "description": "The ESB-R12 Coal/Biomass Gasifier by Enersol Biopower Pvt. Ltd. is a next-generation renewable energy solution designed to efficiently convert agricultural and forestry waste into clean power. Engineered with advanced downdraft gasification technology, this system provides an eco-friendly, cost-effective, and versatile energy source, ideal for off-grid communities, farms, industries, and research institutions.",
                     "productId": "productId006",
                     "features": [
                         {
@@ -3787,6 +4110,32 @@
                             "color": "red-500",
                             "text": "Supports healthier living conditions by minimizing smoke inhalation."
                         }
+                    ],
+                    "faq": [
+                        {
+                            "question": "Does the Bio-Nature stove require electricity?",
+                            "answer": "No, this is a natural-draft biomass stove and does not require electricity. It works using natural airflow (chimney effect) to support combustion."
+                        },
+                        {
+                            "question": "How does a natural-draft biomass stove work?",
+                            "answer": "It works on the principle of natural air movement, where hot air rises and draws fresh air into the combustion chamber. This airflow helps burn biomass fuel without using any fan or blower."
+                        },
+                        {
+                            "question": "Is this stove completely smokeless?",
+                            "answer": "It produces significantly less smoke than traditional chulhas, but not completely zero smoke. Smoke levels depend on airflow, fuel quality, and proper usage."
+                        },
+                        {
+                            "question": "What type of fuel can be used in this stove?",
+                            "answer": "You can use wood pieces, agricultural waste, briquettes, and other dry biomass fuels. Using dry fuel ensures better combustion and less smoke."
+                        },
+                        {
+                            "question": "Why does smoke sometimes come out while using the stove?",
+                            "answer": "Smoke can occur due to poor airflow, wet fuel, or improper loading. Natural draft stoves depend on consistent airflow, and factors like weather or fuel moisture can affect performance."
+                        },
+                        {
+                            "question": "Is this stove suitable for daily household use?",
+                            "answer": "Yes, it is designed for domestic use and is ideal for rural and semi-urban households as a replacement for traditional chulhas."
+                        }
                     ]
                 },
                 {
@@ -3967,6 +4316,32 @@
                             "icon": "ri-sun-line",
                             "color": "yellow-500",
                             "text": "Join the Green Energy Movement Today!"
+                        }
+                    ],
+                    "faq": [
+                        {
+                            "question": "Does the Bio-Mini stove require electricity to operate?",
+                            "answer": "No, it comes with an inbuilt battery backup, so it can operate without continuous electricity. The internal fan (forced-draft system) ensures efficient combustion even in power cuts."
+                        },
+                        {
+                            "question": "What type of fuel can be used in this stove?",
+                            "answer": "You can use multiple biomass fuels such as wood chips, briquettes, crop waste, and cow dung cakes. The stove is designed for flexibility with different fuel types."
+                        },
+                        {
+                            "question": "Is the stove completely smokeless?",
+                            "answer": "The stove uses a forced-draft system that significantly reduces smoke by improving air and fuel mixing, resulting in cleaner combustion compared to traditional stoves."
+                        },
+                        {
+                            "question": "How efficient is this biomass stove compared to traditional chulhas?",
+                            "answer": "Forced-draft biomass stoves are much more efficient because they control airflow using a fan, leading to better combustion, higher heat output, and lower fuel consumption. Studies show they can reduce fuel use and emissions significantly."
+                        },
+                        {
+                            "question": "Can it be used for daily household cooking?",
+                            "answer": "Yes, this model is specially designed for domestic use and is suitable for cooking for 5–25 people, making it ideal for homes, small gatherings, and rural kitchens."
+                        },
+                        {
+                            "question": "How much biomass fuel does it consume per hour?",
+                            "answer": "The stove typically consumes around 1.5–2 kg of biomass per hour, depending on the cooking load and fuel type."
                         }
                     ]
                 },
@@ -4157,7 +4532,7 @@
                     "category": "Smokeless Biomass Stoves / Bhatti",
                     "modelName": "ESB-R Green-Agnika10",
                     "modelNumber": "ESB-R/GA10",
-                    "image": "../assets/products/bhatti/harit-agni-12.jpeg",
+                    "image": "../assets/products/bhatti/harit-agni-12.png",
                     "description": "The ESB-R Green-Agnika10 is a high-efficiency, smokeless biomass stove engineered for small businesses, street food vendors, and home kitchens. Designed by Enersol Biopower, this stove offers a cost-effective, eco-friendly alternative to LPG and traditional firewood stoves. Whether you're running a tea stall, preparing snacks, or cooking meals for a large group, the Green-Agnika10 delivers powerful heat output with minimal fuel consumption.",
                     catalogueLink: "https://enersolbiopower.com/enersol_catalogue/green%20agnika%20enersol.pdf",
                     "productId": "productId030",
@@ -4316,6 +4691,32 @@
                             "color": "yellow-500",
                             "text": "Upgrade to Cleaner, Smarter Cooking Today!"
                         }
+                    ],
+                    "faq": [
+                        {
+                            "question": "Is the Green-Agnika10 suitable for small street food businesses like tea stalls and samosa shops?",
+                            "answer": "Yes, the Green-Agnika10 is specifically designed for small commercial setups such as tea stalls, coffee stalls, samosa/kachori shops, street food vendors, hotels, dhabas, and canteens. It can comfortably handle cooking for 50–60 people, making it the ideal entry-level commercial biomass stove for small food businesses looking to cut LPG costs."
+                        },
+                        {
+                            "question": "What type of fuel does the Green-Agnika10 use and where can I get it?",
+                            "answer": "The Green-Agnika10 runs on 100% biomass fuel including wood waste, wood chips, agricultural residues like rice husk, cotton stalks, sugarcane bagasse, and sawdust briquettes. It does not use LPG or diesel. Biomass fuel is easily and cheaply available across India, which is why this stove is highly cost-effective for daily commercial use."
+                        },
+                        {
+                            "question": "How much can I save on fuel costs compared to LPG with this stove?",
+                            "answer": "The Green-Agnika10 can save up to 60% on fuel costs compared to LPG. For a small tea stall or street food vendor spending ₹5,000–₹10,000 per month on LPG cylinders, this stove can cut that cost to nearly half. The return on investment is quick, typically within a few months, making it an extremely economical choice for small businesses."
+                        },
+                        {
+                            "question": "Does the Green-Agnika10 require electricity to operate?",
+                            "answer": "Yes, the stove uses a small 4-inch AC fan (blower) to supply forced-draft air into the combustion chamber for efficient, smokeless burning. The power requirement is very minimal compared to larger models. This fan ensures a strong, controllable flame and low smoke output. A basic single-phase power connection is sufficient to run it."
+                        },
+                        {
+                            "question": "Is the Green-Agnika10 truly smokeless and safe to use indoors?",
+                            "answer": "The Green-Agnika10 uses a forced-draft combustion system that enables complete burning of biomass, producing minimal smoke and no soot — unlike traditional wood chulhas. It has a thermal efficiency of 35.5% and a flame regulator to control heat levels. It can be used both indoors and outdoors. However, ensuring adequate ventilation in the cooking area is always recommended for the best air quality."
+                        },
+                        {
+                            "question": "What are the physical dimensions and weight of the Green-Agnika10 — is it easy to move?",
+                            "answer": "The Green-Agnika10 has compact dimensions of H16\" × W14\" and weighs approximately 40–45 kg, making it one of the lightest commercial biomass stoves in the Enersol range. Its small footprint and manageable weight mean it can be easily shifted between locations, making it a practical choice for street food vendors and small stalls that may need to relocate or rearrange their setup."
+                        }
                     ]
                 },
                 {
@@ -4323,7 +4724,7 @@
                     "category": "Smokeless Biomass Stoves / Bhatti",
                     "modelName": "Harit-Agni12 & Harit-Agni12B",
                     "modelNumber": "ESB-R/HA12 & ESB-R/HA12B",
-                    "image": "../assets/products/bhatti/harit-agni-12b.jpeg",
+                    "image": "../assets/products/bhatti/harit-agni-12b.png",
                     "catalogueLink": "https://enersolbiopower.com/enersol_catalogue/Harit%20Agni%20enersol.pdf",
 
                     "description": "The ESB-R Harit-Agni12 & Harit-Agni12B are high-performance smokeless biomass stoves, designed to bring cost-efficient, eco-friendly, and powerful cooking solutions to food businesses, street vendors, and home kitchens. Built by Enersol Biopower, these stoves ensure high combustion efficiency, reduced fuel consumption, and superior durability, making them ideal for commercial and community cooking.",
@@ -4463,14 +4864,50 @@
                             "color": "yellow-500",
                             "text": "Proven Technology – Developed by Enersol Biopower, a leader in biomass energy solutions"
                         }
+                    ],
+                    "faq": [
+                        {
+                            "question": "What type of fuel does the Harit-Agni12 use and is it easily available?",
+                            "answer": "The Harit-Agni12 runs on 100% biomass fuel including wood waste, sawdust briquettes, agricultural residues like rice husk, cotton stalks, and sugarcane bagasse. It does not use LPG, diesel, or any fossil fuel. Biomass feedstock is easily and cheaply available across India in both rural and urban areas. Using dry biomass always delivers better efficiency, lower smoke, and reduced fuel consumption per hour."
+                        },
+                        {
+                            "question": "How much money can a poha stall, tea stall, or mess canteen save by switching to the Harit-Agni12?",
+                            "answer": "The Harit-Agni12 is 60% more profitable than LPG stoves. For a small tea stall or poha vendor spending ₹4,000–₹8,000 per month on LPG cylinders, fuel costs can be reduced to nearly half. Cost recovery is achieved in just 2–3 months from the date of purchase, making it one of the most budget-friendly biomass stoves for street food vendors and small mess canteens that cook for 50–60 people daily."
+                        },
+                        {
+                            "question": "Does the Harit-Agni12 need electricity to work and how much power does it consume?",
+                            "answer": "Yes, the Harit-Agni12 uses a small 6-inch AC fan to power its forced-draft combustion system. The power consumption is extremely low — the fan draws very little electricity, costing just a few rupees per day to run. A basic single-phase household connection is sufficient. For areas with power outages, a small inverter or battery backup can easily support the fan to keep the stove running without interruption."
+                        },
+                        {
+                            "question": "Is the Harit-Agni12 truly smokeless and safe to use at indoor food stalls like idli-dosa or tea shops?",
+                            "answer": "Yes, the Harit-Agni12 uses a forced-draft combustion system that ensures complete burning of biomass, producing minimal smoke and no soot — far cleaner than a traditional wood chulha. It is safe for use at indoor and outdoor food stalls, mess canteens, and street food setups. A flame regulator is built in to control heat intensity as needed. Adequate ventilation in the cooking area is always recommended for the best cooking environment."
+                        },
+                        {
+                            "question": "How much biomass does the Harit-Agni12 consume per hour and how is the stove operated?",
+                            "answer": "The Harit-Agni12 has one of the lowest biomass consumption rates in the Enersol range — just 7–10 kg per hour — making it very economical for small food businesses with lighter cooking loads. Fuel is fed manually through a side-feeding system, which is simple to operate without any technical training. Ash removal is also manual. The built-in flame regulator allows the operator to easily increase or decrease heat as required."
+                        },
+                        {
+                            "question": "What are the dimensions, weight, and build quality of the Harit-Agni12 — is it durable enough for daily commercial use?",
+                            "answer": "The Harit-Agni12 has compact dimensions of H22\" × W18\" and weighs approximately 70 kg, making it the most compact mid-range model in the Enersol commercial stove lineup. It is constructed from high-quality mild steel (MS), which ensures a long service life and reliable performance even under continuous daily use at poha stalls, tea shops, idli-dosa stalls, street food carts, and mess canteens. Its rugged build requires low maintenance, making it a dependable long-term investment."
+                        },
+                        {
+                            "question": "What is the difference between the Harit-Agni12 and the Harit-Agni12B, and which one should I choose?",
+                            "answer": "The Harit-Agni12 and Harit-Agni12B are both 12-inch forced-draft smokeless biomass stoves from Enersol Biopower, sharing the same core combustion technology and fuel compatibility. The Harit-Agni12B is an upgraded variant designed for slightly heavier cooking loads and businesses that require a more robust build or additional structural support. If you run a basic tea stall, poha stall, or small canteen, the standard Harit-Agni12 is ideal. If your operation involves longer daily hours or heavier vessels, the Harit-Agni12B is the better choice for durability and sustained performance."
+                        },
+                        {
+                            "question": "Is after-sales service and spare parts support available for both the Harit-Agni12 and Harit-Agni12B across India?",
+                            "answer": "Yes, Enersol Biopower Private Limited provides after-sales service and spare parts support for both the Harit-Agni12 and Harit-Agni12B models across India. Being an ISO 9001:2015 certified manufacturer with over a decade of experience, Enersol has a dedicated support team for repairs, maintenance guidance, and component replacement. Both models are built from mild steel with minimal moving parts, which means low maintenance requirements and easy availability of spare components. You can reach their team at +91 9610103127 or +91 9414536665."
+                        }
                     ]
+
                 },
                 {
                     "name": "Green-Magic15",
                     "category": "Smokeless Biomass Stoves / Bhatti",
                     "modelName": "ESB-R Green-Magic15",
                     "modelNumber": "ESB-R/GM15",
-                    "image": "../assets/products/bhatti/green-magic-15.jpg",
+                    "catalogueLink": "https://enersolbiopower.com/enersol_catalogue/green-magic-15.pdf",
+                    "image": "../assets/products/bhatti/green-magic-15.png",
                     "description": "The ESB-R Green-Magic15 is a high-efficiency, smokeless biomass stove designed for commercial kitchens, food vendors, and confectionery businesses looking for an affordable and eco-friendly alternative to LPG. Developed by Enersol Biopower, this 15-inch fire zone biomass stove offers superior heat output, enabling faster and more cost-effective cooking while significantly reducing fuel expenses. With a return on investment in just 25 days, this stove is the perfect solution for businesses seeking sustainability without compromising performance.",
                     "productId": "productId033",
                     "subtitle": "Powerful Cooking, Maximum Savings, and a Greener Future",
@@ -4614,6 +5051,32 @@
                             "color": "yellow-500",
                             "text": "Backed by Expertise – Manufactured by Enersol Biopower, a trusted leader in biomass energy solutions"
                         }
+                    ],
+                    "faq": [
+                        {
+                            "question": "What type of fuel can be used in the Green-Magic15 and where can I source it?",
+                            "answer": "The Green-Magic15 runs on 100% biomass fuel including wood waste, wood chips, sawdust briquettes, agricultural residues like rice husk, sugarcane bagasse, and cotton stalks. It does not require LPG, diesel, or any fossil fuel. Biomass feedstock is easily and cheaply available across India, which is the primary reason this stove delivers up to 60% savings in fuel costs for businesses. Using dry biomass always gives the best results in terms of efficiency and low smoke."
+                        },
+                        {
+                            "question": "How much can a sweet shop or canteen save on fuel costs by switching to the Green-Magic15?",
+                            "answer": "The Green-Magic15 is 60% more profitable than LPG stoves. For a mithai shop or canteen spending ₹20,000–₹40,000 per month on LPG cylinders, the savings can reach ₹12,000–₹24,000 every month. Product cost recovery is achieved in just 2–3 months, making it one of the fastest ROI stoves in the Enersol range. Over a year, the total savings can easily cross ₹1.5–₹2 lakh for a medium-sized sweet shop."
+                        },
+                        {
+                            "question": "Does the Green-Magic15 require electricity to operate, and how much power does it consume?",
+                            "answer": "Yes, the Green-Magic15 requires a 100-watt blower to run its forced-draft combustion system. This is a very low power requirement — running the 100W blower for 10 hours a day costs only around ₹8–₹10 in electricity. A standard single-phase power connection is sufficient. In areas with frequent power cuts, a small inverter or UPS can easily support the blower to keep the stove running without interruption."
+                        },
+                        {
+                            "question": "Is the Green-Magic15 smokeless and safe to use in a commercial kitchen like a hotel or restaurant?",
+                            "answer": "Yes, the Green-Magic15 uses a forced-draft combustion system that ensures complete burning of biomass, resulting in minimal smoke and zero soot — far cleaner than a traditional wood chulha. It is safe for use in hotels, restaurants, canteens, and catering kitchens both indoors and outdoors. A flame regulator is provided to control heat levels precisely, which is essential for maintaining cooking consistency in commercial food operations. Good ventilation in the kitchen is always recommended."
+                        },
+                        {
+                            "question": "How much biomass does the Green-Magic15 consume per hour and how is the fuel fed?",
+                            "answer": "The Green-Magic15 consumes 12–25 kg of biomass per hour depending on the cooking intensity and type of biomass used. Fuel is fed manually through a side-feeding system, which is simple and does not require any special training. Ash removal is also done manually. The stove has a flame regulator to fine-tune the heat output as needed. Dry biomass fuel is recommended for lower consumption and better efficiency."
+                        },
+                        {
+                            "question": "What businesses is the Green-Magic15 best suited for and what are its dimensions and weight?",
+                            "answer": "The Green-Magic15 is Enersol's top-selling model, ideal for mithai and sweet shops, samosa/kachori shops, mess and canteens, catering businesses, and hotels and restaurants. It sits between the smaller Green-Agnika10 and the larger Bio-Virat18 in the product range, making it perfect for medium-scale commercial cooking. Its dimensions are H26\" × W28\" and it weighs approximately 110 kg. Built from durable mild steel, it is designed for long-term, heavy-duty daily commercial use."
+                        }
                     ]
                 },
                 {
@@ -4621,7 +5084,7 @@
                     "category": "Smokeless Biomass Stoves / Bhatti",
                     "modelName": "ESB-R Bio-Virat18",
                     "modelNumber": "ESB-R/BV18",
-                    "image": "../assets/products/bhatti/virat-18.jpg",
+                    "image": "../assets/products/bhatti/virat-18.png",
                     "description": "The ESB-R Bio-Virat18 is an advanced smokeless biomass stove designed for industrial kitchens, food vendors, and confectionery businesses looking for a cost-efficient and eco-friendly alternative to LPG. Manufactured by Enersol Biopower, this 18-inch fire zone biomass stove delivers powerful heat output, faster cooking, and significant savings, making it a game-changer for high-volume food preparation.",
                     catalogueLink: "https://enersolbiopower.com/enersol_catalogue/Bio%20Virat18%20enersol.pdf",
                     "productId": "productId034",
@@ -4771,6 +5234,32 @@
                             "color": "yellow-500",
                             "text": "Trusted by Experts – Developed by Enersol Biopower, a leader in biomass energy solutions"
                         }
+                    ],
+                    "faq": [
+                        {
+                            "question": "What type of fuel can be used in the Bio-Virat 18?",
+                            "answer": "The Bio-Virat 18 runs on 100% biomass fuel including wood chips, wood waste, agricultural residues like rice husk and sugarcane bagasse, sawdust briquettes, and biomass pellets. It does not use LPG or any fossil fuel. Biomass is widely and cheaply available across India, which is why it saves up to 60% in fuel costs."
+                        },
+                        {
+                            "question": "How much fuel cost can be saved compared to LPG?",
+                            "answer": "Users can save up to 60% on fuel costs compared to LPG gas stoves. For a commercial business like a sweet shop spending ₹30,000–₹50,000 per month on LPG, savings can reach ₹18,000–₹30,000 every month. The return on investment is typically achieved within 3–4 months of purchase."
+                        },
+                        {
+                            "question": "Does the Bio-Virat 18 require electricity to operate?",
+                            "answer": "Yes, it requires a 165-watt electric blower running on standard single-phase electricity (230V) to power its forced-draft combustion system. The electricity cost is negligible — roughly ₹13–₹15 per day for 10 hours of operation. A small inverter can be used as backup during power cuts."
+                        },
+                        {
+                            "question": "Is the Bio-Virat 18 completely smokeless and safe for indoor use?",
+                            "answer": "The Bio-Virat 18 uses a forced-draft combustion system that enables complete burning of biomass with minimal smoke and soot, making it suitable for both indoor and outdoor commercial kitchens. Adequate ventilation is always recommended for best air quality and safety during operation."
+                        },
+                        {
+                            "question": "How much biomass does the stove consume per hour?",
+                            "answer": "The Bio-Virat 18 consumes 16–30 kg of biomass per hour depending on the intensity of cooking. Fuel is fed manually via a side-feeding system, and a flame regulator is provided to adjust heat levels as needed. Ash removal is also done manually, making daily operation simple for any kitchen worker."
+                        },
+                        {
+                            "question": "What businesses is the Bio-Virat 18 best suited for?",
+                            "answer": "The Bio-Virat 18 is designed for small to medium commercial food businesses including sweet shops, jalebi shops, namkeen units, ayurvedic medicine preparation units, and fabric dye shops. With an 18-inch fire zone, dimensions of H26\" × W31\", and a weight of approximately 150 kg, it is built for continuous heavy-duty commercial use."
+                        }
                     ]
                 },
                 {
@@ -4778,7 +5267,7 @@
                     "category": "Smokeless Biomass Stoves / Bhatti",
                     "modelName": "ESB-R Bio-Akash21",
                     "modelNumber": "ESB-R/BA21",
-                    "image": "../assets/products/bhatti/akash-21.jpeg",
+                    "image": "../assets/products/bhatti/akash-21.png",
                     "description": "The ESB-R Bio-Akash21 is a next-generation biomass stove designed to deliver high heat output, cost savings, and eco-friendly performance. Suitable for confectioneries, street food businesses, and commercial kitchens, this 21-inch smokeless stove is engineered to match LPG stove performance while cutting fuel costs by over 60%. Manufactured by Enersol Biopower, it combines durability, efficiency, and sustainability, making it perfect for bulk cooking and fuel savings.",
                     catalogueLink: "https://enersolbiopower.com/enersol_catalogue/Bio-Akash21%20enersol.pdf",
                     "productId": "productId035",
@@ -4928,6 +5417,32 @@
                             "color": "yellow-500",
                             "text": "Backed by Industry Experts – Developed by Enersol Biopower, a leader in biomass-to-energy solutions"
                         }
+                    ],
+                    "faq": [
+                        {
+                            "question": "What fuel can be used in the Bio-Akash21 biomass stove?",
+                            "answer": "The stove supports multiple biomass fuels such as wood, briquettes, crop residues, pellets, and cow dung cakes, making it highly flexible and cost-effective."
+                        },
+                        {
+                            "question": "How much fuel cost can I save compared to LPG?",
+                            "answer": "You can save over 60% on fuel costs compared to LPG, depending on usage and local biomass availability, with investment recovery typically in 3–4 months."
+                        },
+                        {
+                            "question": "Is the stove completely smokeless?",
+                            "answer": "The stove is designed for smokeless operation using a forced-draft system, which significantly reduces smoke and emissions compared to traditional stoves."
+                        },
+                        {
+                            "question": "Does the stove require electricity to operate?",
+                            "answer": "Yes, it requires a 165W power supply to run the blower, which ensures efficient combustion and high heat output."
+                        },
+                        {
+                            "question": "Is this stove suitable for home use?",
+                            "answer": "No, it is designed for commercial and bulk cooking applications such as hotels, temples, sweet shops, and community kitchens."
+                        },
+                        {
+                            "question": "How much biomass does the stove consume per hour?",
+                            "answer": "The stove typically consumes around 20–35 kg of biomass per hour, depending on cooking load and fuel type."
+                        }
                     ]
                 },
                 {
@@ -4935,7 +5450,7 @@
                     "category": "Smokeless Biomass Stoves / Bhatti",
                     "modelName": "ESB-R Bio-Prithvi24",
                     "modelNumber": "ESB-R/BP24",
-                    "image": "../assets/products/bhatti/prithvi-24.jpg",
+                    "image": "../assets/products/bhatti/prithvi-24.png",
                     "description": "The ESB-R Bio-Prithvi24 is a powerful, eco-friendly biomass stove designed for high efficiency and significant fuel cost savings. Ideal for commercial kitchens, food processing businesses, and large-scale community cooking, this 24-inch smokeless stove offers a cleaner, cost-effective alternative to LPG stoves.",
                     catalogueLink: "https://enersolbiopower.com/enersol_catalogue/Bio%20Prithvi%2024%20Enersol.pdf",
                     "productId": "productId036",
@@ -5085,6 +5600,32 @@
                             "color": "yellow-500",
                             "text": "Trusted by Experts – Manufactured by Enersol Biopower, a leader in biomass-to-energy innovations"
                         }
+                    ],
+                    "faq": [
+                        {
+                            "question": "Is the Bio-Prithvi24 suitable for large-scale commercial cooking?",
+                            "answer": "Yes, this stove is specifically designed for commercial use such as sweet manufacturing, namkeen production, and bulk food processing. Its high thermal output makes it ideal for heavy-duty cooking operations."
+                        },
+                        {
+                            "question": "How much fuel cost can be saved compared to LPG?",
+                            "answer": "Users can save around 60% on fuel costs compared to LPG, depending on usage and fuel availability, making it highly economical for businesses."
+                        },
+                        {
+                            "question": "Does the stove require electricity to operate?",
+                            "answer": "Yes, it requires a power supply (around 200W) to run the blower, which ensures proper air supply for efficient combustion and high heat output."
+                        },
+                        {
+                            "question": "What type of fuel can be used in this stove?",
+                            "answer": "The stove supports multiple biomass fuels such as wood waste, briquettes, and agricultural residues. Using dry fuel improves efficiency and reduces smoke."
+                        },
+                        {
+                            "question": "Is the stove completely smokeless?",
+                            "answer": "The stove is designed for low-smoke operation using a forced-draft system. While it significantly reduces smoke compared to traditional stoves, proper fuel and airflow are required for best results."
+                        },
+                        {
+                            "question": "How much biomass does the stove consume per hour?",
+                            "answer": "The stove typically consumes around 25–30 kg of biomass per hour, depending on cooking load and fuel type."
+                        }
                     ]
                 },
                 {
@@ -5094,7 +5635,7 @@
                     "modelNumber": "ESB-R/HJ27",
                     "image": "../assets/products/bhatti/jumbo-27.jpeg",
                     "description": "The ESB-R Harit-Jumbo27 is a powerful and eco-friendly biomass stove designed for large-scale food businesses, confectioneries, and commercial kitchens. This 27-inch smokeless bhatti provides consistent, high-performance cooking while being a cost-effective alternative to LPG stoves, reducing fuel costs by more than 60%.",
-                    catalogueLink: "https://enersolbiopower.com/enersol_catalogue/BIO-JUMBO%20SHAKTI36%20CATALOGUE%20ENERSOL.pdf",
+                    "catalogueLink": "../assets/catelogue-pdf/HARIT-JUMBO27_Enersol.pdf",
                     "productId": "productId037",
                     "subtitle": "Unleash High-Efficiency Cooking with Sustainable Fuel",
                     "features": [
@@ -5242,6 +5783,32 @@
                             "color": "yellow-500",
                             "text": "Trusted by Industry Leaders – Developed by Enersol Biopower, a pioneer in biomass-to-energy solutions"
                         }
+                    ],
+                    "faq": [
+                        {
+                            "question": "What type of fuel does the Harit-Jumbo27 use and where can I source it?",
+                            "answer": "The Harit-Jumbo27 runs on 100% biomass fuel including wood waste, wood chips, sawdust briquettes, and agricultural residues like rice husk, sugarcane bagasse, and cotton stalks. It does not use LPG, diesel, or any fossil fuel. Biomass feedstock is widely and cheaply available across India, making this stove extremely cost-effective for high-volume commercial operations like sweet shops, banana chips units, and laddu makers."
+                        },
+                        {
+                            "question": "How much can a large sweet shop or confectionery unit save on fuel costs by using the Harit-Jumbo27?",
+                            "answer": "The Harit-Jumbo27 is 60% more profitable than LPG stoves. For a large sweet shop or confectionery unit spending ₹50,000–₹1,00,000 per month on LPG cylinders, the monthly savings can reach ₹30,000–₹60,000. Product cost recovery is achieved within 4–5 months of purchase. Over a year, total fuel savings can easily exceed ₹3–₹6 lakh, making it a highly rewarding investment for high-volume production businesses like laddu makers, banana chips manufacturers, and ayurvedic medicine shops."
+                        },
+                        {
+                            "question": "How much electricity does the Harit-Jumbo27 require and can it run during power cuts?",
+                            "answer": "The Harit-Jumbo27 requires two 165W blowers, totalling 330W of power, to run its dual forced-draft combustion system. This powers the large 27-inch fire zone for high-heat, heavy-duty output. The electricity cost is minimal — running both blowers for 10 hours costs approximately ₹26–₹30 per day. For areas with frequent power cuts, a medium-capacity inverter or diesel genset can easily support the blowers to keep production running without interruption."
+                        },
+                        {
+                            "question": "Is the Harit-Jumbo27 smokeless and suitable for use inside a commercial production kitchen?",
+                            "answer": "Yes, the Harit-Jumbo27 uses a forced-draft combustion system with dual blowers that ensures complete and efficient burning of biomass, resulting in minimal smoke and zero soot. It is safe for use in commercial production kitchens for sweet shops, banana chips units, ayurvedic medicine shops, and laddu makers. A flame regulator is provided to precisely control heat levels. Good ventilation in the production area is always recommended when running any high-capacity commercial cooking equipment."
+                        },
+                        {
+                            "question": "How much biomass does the Harit-Jumbo27 consume per hour and how is it managed?",
+                            "answer": "The Harit-Jumbo27 consumes 35–80 kg of biomass per hour depending on the cooking intensity and the type of biomass used. This higher consumption is expected given its large 27-inch fire zone designed for heavy-duty, high-volume commercial production. Fuel is fed manually through a side-feeding system, and ash is removed manually as well. Dry biomass is recommended for optimal efficiency and reduced consumption. The flame regulator allows operators to control heat output and manage fuel usage effectively."
+                        },
+                        {
+                            "question": "What are the dimensions, weight, and construction material of the Harit-Jumbo27 — is it built for long-term heavy use?",
+                            "answer": "The Harit-Jumbo27 has dimensions of H28\" × W40\" and weighs approximately 390 kg, making it one of the largest and most heavy-duty stoves in the Enersol commercial range. It is constructed from mild steel combined with ceramic brick lining inside the combustion chamber, which provides superior heat retention, higher thermal efficiency, and extended lifespan even under continuous high-temperature commercial production. Its rugged build is designed for long-term, all-day daily use in large sweet shops, confectionery units, banana chips factories, and ayurvedic processing units."
+                        }
                     ]
                 },
                 {
@@ -5249,8 +5816,8 @@
                     "category": "Smokeless Biomass Stoves / Bhatti",
                     "modelName": "ESB-R Jumbo-Shakti36",
                     "modelNumber": "ESB-R/JS36",
-                    "image": "../assets/products/bhatti/jumbo-36.jpeg",
-                    catalogueLink: "https://enersolbiopower.com/enersol_catalogue/BIO-JUMBO%20SHAKTI36%20CATALOGUE%20ENERSOL%20X%20THUNDERGITS%20%282%29.pdf",
+                    "image": "../assets/products/bhatti/jumbo-36.png",
+                    "catalogueLink": "https://enersolbiopower.com/enersol_catalogue/BIO-JUMBO%20SHAKTI36%20CATALOGUE%20ENERSOL.pdf",
                     "description": "The ESB-R Jumbo Shakti36 is an innovative, high-performance smokeless biomass stove designed for large-scale cooking environments such as commercial kitchens, food processing units, and religious institutions. This 36-inch fire zone stove delivers exceptional heat output, reduces fuel costs, and supports eco-friendly cooking practices.",
                     "productId": "productId038",
                     "subtitle": "Powerful Cooking, Maximum Efficiency, and Sustainable Savings",
@@ -5407,9 +5974,9 @@
 
 
                 {
-                    "name": "Auto Bio-Mawa Machine",
-                    "category": "Auto Bio-Mawa Machine",
-                    "modelName": "ESB-R Auto Bio-Mawa Machine",
+                    "name": "Auto Bio-Mawa/Khoya Machine",
+                    "category": "Auto Bio-Mawa/Khoya Machine",
+                    "modelName": "ESB-R Auto Bio-Mawa/Khoya Machine",
                     "modelNumber": "ESB-R/MM01",
                     "image": "../assets/products/bhatti/auto-bio-mawa.jpeg",
                     "description": "The ESB-R Bio Mawa Machine is an automated mawa-making machine that combines traditional cooking methods with modern efficiency. Designed for sweet shops, dairy processing units, and commercial kitchens, this machine uses biomass fuel to ensure eco-friendly operation with reduced fuel costs.",
@@ -5501,7 +6068,7 @@
 
                 {
                     "name": "Eco-Green Biochar05 - 5kg/hr Biomass based Bio-char Plant",
-                    "category": "Biomass Torrefaction / Bio-Char Plant",
+                    "category": "Biomass Pyrolysis Plant (Bio-char Plant)",
                     "modelName": "Eco-Green Biochar05",
                     "modelNumber": "ESB-R/EGC/05",
                     "image": "../assets/products/bio-char/05.jpeg",
@@ -5595,9 +6162,11 @@
                 },
                 {
                     "name": "Eco-Green Biochar10 - 10kg/hr Biomass based Bio-char Plant",
-                    "category": "Biomass Torrefaction / Bio-Char Plant",
+                    "category": "Biomass Pyrolysis Plant (Bio-char Plant)",
                     "modelName": "Eco-Green Biochar10",
                     "modelNumber": "ESB-R/EGC/10",
+                    "price": "21,00,000 (INR)",
+                    "catalogueLink": "https://enersolbiopower.com/catalogue/ESB-R-EcoGreen-BioChar10-Catalogue.pdf",
                     "image": "../assets/products/bio-char/10.jpeg",
                     "description": "The ESB-R EcoGreen BioChar10 is an innovative biochar production plant designed for moderate-scale agricultural operations, aiming to enhance soil health and reduce carbon footprint. It converts agricultural residues into high-quality biochar, improving soil fertility and offering a clean alternative to stubble burning.",
                     "productId": "productId041",
@@ -5693,7 +6262,7 @@
                 },
                 {
                     "name": "Eco-Green Biochar50 - 50kg/hr Biomass based Bio-char Plant",
-                    "category": "Biomass Torrefaction / Bio-Char Plant",
+                    "category": "Biomass Pyrolysis Plant (Bio-char Plant)",
                     "modelName": "Eco-Green Biochar50",
                     "modelNumber": "ESB-R/EGC/50",
                     "image": "../assets/products/bio-char/50.jpeg",
@@ -5792,7 +6361,7 @@
                 },
                 {
                     "name": "Eco-Green Biochar100 - 100kg/hr Biomass based Bio-char Plant",
-                    "category": "Biomass Torrefaction / Bio-Char Plant",
+                    "category": "Biomass Pyrolysis Plant (Bio-char Plant)",
                     "modelName": "Eco-Green Biochar100",
                     "modelNumber": "ESB-R/EGC/100",
                     "image": "../assets/products/bio-char/8.jpeg",
@@ -5890,7 +6459,7 @@
                 },
                 // {
                 //     "name": "Eco-Green Biochar200 - 200kg/hr Biomass based Bio-char Plant",
-                //     "category": "Biomass Torrefaction / Bio-Char Plant",
+                //     "category": "Biomass Pyrolysis Plant (Bio-char Plant)",
                 //     "modelName": "Eco-Green Biochar200",
                 //     "modelNumber": "ESB-R/EGC/200",
                 //     "image": "../assets/products/img/Biomass Torrefaction Plant24.jpeg",
@@ -5899,7 +6468,7 @@
                 // },
                 // {
                 //     "name": "Eco-Green Biochar500 - 500kg/hr Biomass based Bio-char Plant",
-                //     "category": "Biomass Torrefaction / Bio-Char Plant",
+                //     "category": "Biomass Pyrolysis Plant (Bio-char Plant)",
                 //     "modelName": "Eco-Green Biochar500",
                 //     "modelNumber": "ESB-R/EGC/500",
                 //     "image": "../assets/products/img/Biomass Torrefaction Plant13.jpeg",
@@ -6483,6 +7052,214 @@
                     "productId": "productId056"
                 },
                 {
+                    "name": "100 kg/hr Pellet Machine with Pulverizer",
+                    "category": "Biomass Pellet Machine",
+                    "modelName": "ESB-R-PM100",
+                    "modelNumber": "ESB-R-PM100",
+                    "catalogueLink": "https://enersolbiopower.com/catalogue/100kghrESBRPelletMachine.pdf",
+                    "image": "../assets/products/product060.png",
+                    "subtitle": "Sustainable Fuel | Compact Design | Reliable Performance",
+                    "description": "Enersol Biopower’s 100 kg/hr biomass pellet machine with suitable pulverizer is engineered for consistent output, high pellet density, and smooth operation. Designed for small to medium-scale pellet production units, it converts biomass waste into high-density fuel pellets suitable for industrial boilers, heating, gasification systems, and waste-to-energy projects.",
+                    "productId": "productId060",
+                    "price": "Rs.16,20,000 (INR)",
+                    "features": [
+                        {
+                            "icon": "ri-timer-flash-line",
+                            "color": "yellow-500",
+                            "text": "Production capacity of 100 kg/hr with continuous operation"
+                        },
+                        {
+                            "icon": "ri-settings-2-line",
+                            "color": "gray-500",
+                            "text": "Supports 8 mm and 12 mm pellet sizes with interchangeable dies"
+                        },
+                        {
+                            "icon": "ri-flashlight-fill",
+                            "color": "yellow-500",
+                            "text": "15 HP heavy-duty motor for stable and efficient performance (3-phase)"
+                        },
+                        {
+                            "icon": "ri-tools-line",
+                            "color": "gray-500",
+                            "text": "Robust MS fabricated structure for long service life"
+                        },
+                        {
+                            "icon": "ri-bar-chart-box-line",
+                            "color": "green-500",
+                            "text": "Produces high-density, uniform pellets with low breakage"
+                        },
+                        {
+                            "icon": "ri-leaf-line",
+                            "color": "green-500",
+                            "text": "Energy-efficient design with easy operation and low maintenance"
+                        },
+                        {
+                            "icon": "ri-recycle-line",
+                            "color": "green-500",
+                            "text": "Suitable for a wide range of biomass raw materials"
+                        }
+                    ],
+                    "technology": [
+                        {
+                            "icon": "ri-settings-2-line",
+                            "color": "gray-500",
+                            "text": "Optimized pelletizing system for consistent pellet density and smooth operation"
+                        },
+                        {
+                            "icon": "ri-tools-line",
+                            "color": "gray-500",
+                            "text": "Recommended suitable pulverizer pairing for pre-processing biomass feedstock"
+                        }
+                    ],
+                    "specifications": [
+                        {
+                            "icon": "ri-bar-chart-box-line",
+                            "color": "green-500",
+                            "label": "Pellet Machine Brand",
+                            "value": "Enersol Biopower"
+                        },
+                        {
+                            "icon": "ri-bar-chart-box-line",
+                            "color": "green-500",
+                            "label": "Pellet Machine Model",
+                            "value": "ESB-R-PM100"
+                        },
+                        {
+                            "icon": "ri-flashlight-fill",
+                            "color": "yellow-500",
+                            "label": "Pellet Machine Capacity",
+                            "value": "100 kg/hr"
+                        },
+                        {
+                            "icon": "ri-settings-2-line",
+                            "color": "gray-500",
+                            "label": "Pellet Size",
+                            "value": "8 mm & 12 mm"
+                        },
+                        {
+                            "icon": "ri-flashlight-fill",
+                            "color": "yellow-500",
+                            "label": "Power Required (Pellet Machine)",
+                            "value": "15 HP, 3-phase"
+                        },
+                        {
+                            "icon": "ri-ruler-line",
+                            "color": "blue-500",
+                            "label": "Input Size of Raw Material",
+                            "value": "2.5 x 5 mm (granulated form)"
+                        },
+                        {
+                            "icon": "ri-drop-line",
+                            "color": "blue-500",
+                            "label": "Acceptable Moisture in Raw Material",
+                            "value": "0–15%"
+                        },
+                        {
+                            "icon": "ri-bar-chart-box-line",
+                            "color": "green-500",
+                            "label": "Pulverizer Model",
+                            "value": "ESB-R-P120"
+                        },
+                        {
+                            "icon": "ri-flashlight-fill",
+                            "color": "yellow-500",
+                            "label": "Pulverizer Capacity",
+                            "value": "120 kg/hr"
+                        },
+                        {
+                            "icon": "ri-ruler-line",
+                            "color": "blue-500",
+                            "label": "Pulverizer Feeding Size",
+                            "value": "20–30 mm"
+                        },
+                        {
+                            "icon": "ri-filter-fill",
+                            "color": "purple-500",
+                            "label": "Pulverizer Output Mesh Size",
+                            "value": "10 mesh (~2 mm)"
+                        },
+                        {
+                            "icon": "ri-flashlight-fill",
+                            "color": "yellow-500",
+                            "label": "Power Required (Pulverizer)",
+                            "value": "5 HP, 3-phase"
+                        },
+                        {
+                            "icon": "ri-leaf-line",
+                            "color": "green-500",
+                            "label": "Pulverizer Material Compatibility",
+                            "value": "Wood chips, sawdust, crop residues, husk, straw"
+                        }
+                    ],
+                    "applications": [
+                        {
+                            "icon": "ri-leaf-line",
+                            "color": "green-500",
+                            "text": "Biomass fuel pellets production"
+                        },
+                        {
+                            "icon": "ri-building-2-line",
+                            "color": "blue-500",
+                            "text": "Industrial boilers"
+                        },
+                        {
+                            "icon": "ri-plug-line",
+                            "color": "blue-500",
+                            "text": "Gasifier systems"
+                        },
+                        {
+                            "icon": "ri-fire-fill",
+                            "color": "red-500",
+                            "text": "Heating and thermal applications"
+                        },
+                        {
+                            "icon": "ri-community-line",
+                            "color": "green-500",
+                            "text": "Institutional and rural energy solutions"
+                        },
+                        {
+                            "icon": "ri-recycle-line",
+                            "color": "green-500",
+                            "text": "Renewable energy and waste-to-energy projects"
+                        }
+                    ],
+                    "benefits": [
+                        {
+                            "icon": "ri-recycle-line",
+                            "color": "green-500",
+                            "text": "Converts waste into valuable fuel"
+                        },
+                        {
+                            "icon": "ri-oil-line",
+                            "color": "gray-500",
+                            "text": "Reduces dependency on fossil fuels"
+                        },
+                        {
+                            "icon": "ri-earth-fill",
+                            "color": "green-500",
+                            "text": "Eco-friendly and renewable energy solution"
+                        },
+                        {
+                            "icon": "ri-truck-line",
+                            "color": "blue-500",
+                            "text": "Easy handling, storage, and transportation"
+                        },
+                        {
+                            "icon": "ri-store-2-line",
+                            "color": "yellow-500",
+                            "text": "Ideal for decentralized pellet plants"
+                        }
+                    ],
+                    "fuelCompatibility": [
+                        { "text": "Sawdust" },
+                        { "text": "Agro waste (straw, husk, stalks)" },
+                        { "text": "Crop residues" },
+                        { "text": "Biomass powder" },
+                        { "text": "Dry RDF material" }
+                    ]
+                }
+                ,
+                {
                     "name": "CNC/ Hydraulic Bending Machine Job Work",
                     "category": "CNC/ Hydraulic Bending Machine Job Work",
                     "modelName": "",
@@ -6587,12 +7364,33 @@
                 }
             }
             function updateProductDetails(product) {
-                console.log(product);
-
                 const templateSource = document.getElementById('product-template').innerHTML;
                 const template = Handlebars.compile(templateSource);
-                // Render template with data
                 document.getElementById('product-container').innerHTML = template(product);
+
+                // Handle standalone FAQ above reviews
+                const faqSection = document.getElementById('standalone-faq');
+                const faqList = document.getElementById('standalone-faq-list');
+
+                if (product.faq && product.faq.length > 0) {
+                    faqSection.classList.remove('hidden');
+                    faqList.innerHTML = product.faq.map(function (item) {
+                        return `
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full flex justify-between items-center px-4 py-3 text-left font-medium text-gray-800 bg-gray-50 hover:bg-gray-100 transition-colors duration-200">
+                        <span class="pr-4">${item.question}</span>
+                        <i class="ri-arrow-down-s-line text-primary text-xl flex-shrink-0 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-4 py-3 text-gray-600 bg-white border-t border-gray-100 text-sm leading-relaxed">
+                        ${item.answer}
+                    </div>
+                </div>
+            `;
+                    }).join('');
+                } else {
+                    faqSection.classList.add('hidden');
+                }
             }
             function updateRelatedProducts(products, currentProduct) {
 
@@ -6630,7 +7428,102 @@
         });
     </script>
 
+    <script>
+        window.ThundergitsBotConfig = {
+            apiUrl: 'https://custom-domain.com/api/',
+            conversationFlowUrl: 'https://bot-backend.thundergits.com/cdn/conversation/enersole-conversation-flow.json',
+            position: 'bottom-left', // bottom-right, bottom-left, top-right, top-left
+            theme: {
+                primaryColor: '#03459b',
+                secondaryColor: '#03459b',
+                textColor: '#1F2937',
+                backgroundColor: '#FFFFFF'
+            },
+            name: "Enersol Bio Power"
+        };
+    </script>
+    <!-- <script src="https://bot-backend.thundergits.com/cdn/bot.js"></script> -->
 
+    <script>
+        function toggleFaq(btn) {
+            const answer = btn.nextElementSibling;
+            const icon = btn.querySelector('i');
+            const isOpen = !answer.classList.contains('hidden');
+
+            // Close all open FAQs first
+            document.querySelectorAll('.faq-answer').forEach(function (a) {
+                a.classList.add('hidden');
+                a.previousElementSibling.querySelector('i').style.transform = '';
+            });
+
+            // If it was closed, open it
+            if (!isOpen) {
+                answer.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+    </script>
+
+
+    <!-- WhatsApp Floating Button -->
+    <div id="whatsApp-floating-btn"
+        class="fixed right-5 bottom-[10px] sm:right-4 sm:bottom-[10px] z-40 w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-full shadow-xl cursor-pointer flex items-center justify-center border border-green-600 transition-transform transform hover:scale-110 hover:shadow-2xl"
+        title="Chat on WhatsApp">
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="WhatsApp"
+            class="w-12  sm:w-16 lazy"
+            data-src="https://ik.imagekit.io/enersolbiopower/enersol/sample-product/whatsApp-icon.webp" loading="lazy"
+            decoding="async" fetchpriority="low">
+    </div>
+    <script src="../js/whatsapp-btn.js"></script>
+
+
+
+
+    <style data-lazy-css="1">
+        img.lazy {
+            opacity: 0;
+            transition: opacity .35s ease;
+        }
+
+        img.lazy.loaded {
+            opacity: 1;
+        }
+    </style>
+
+
+    <script data-lazy-loader="1">
+        (function () {
+            const SEL = "img.lazy[data-src]";
+            function loadNow(img) {
+                img.src = img.dataset.src;
+                img.onload = function () { img.classList.add("loaded"); };
+                img.removeAttribute("data-src");
+            }
+            if (!("IntersectionObserver" in window)) {
+                document.querySelectorAll(SEL).forEach(loadNow);
+                return;
+            }
+            const io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) return;
+                    loadNow(entry.target);
+                    io.unobserve(entry.target);
+                });
+            }, { rootMargin: "250px 0px" });
+            document.querySelectorAll(SEL).forEach(function (img) { io.observe(img); });
+        })();
+    </script>
+    <script src="../js/catalogue-download.js"></script>
+    <script>
+        new Swiper('.product-testimonials', {
+            slidesPerView: 1,
+            spaceBetween: 16,
+            loop: true,
+            autoplay: { delay: 4000, disableOnInteraction: false },
+            pagination: { el: '.product-testimonials .swiper-pagination', clickable: true },
+            breakpoints: { 768: { slidesPerView: 2 } }
+        });
+    </script>
 </body>
 
 </html>

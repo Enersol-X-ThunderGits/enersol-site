@@ -107,13 +107,13 @@ function openCatalogueModal(downloadUrl, productName) {
             };
 
             try {
-                const response = await fetch("https://tg-email-service.thundergits.com/api/email/send", {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify(emailData)
-                });
-
-                if (response.ok) {
+                // const response = await fetch("https://tg-email-service.thundergits.com/api/email/send", {
+                //     method: "POST",
+                //     headers: { "Content-Type": "application/json" },
+                //     body: JSON.stringify(emailData)
+                // });
+let response = true
+                if (response) {
                     // Trigger download
                     const link = document.createElement("a");
                     link.href = downloadUrl;
@@ -143,15 +143,7 @@ function openCatalogueModal(downloadUrl, productName) {
                 }
             } catch (error) {
                 console.error("Error:", error);
-                // Trigger download
-                    const link = document.createElement("a");
-                    link.href = downloadUrl;
-                    link.target = "_blank";
-                    link.download = "";
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-
+                
                 alert("An error occurred. Please check your connection and try again.");
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = originalContent;

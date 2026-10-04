@@ -119,10 +119,12 @@ let response = true
                     link.href = downloadUrl;
                     link.target = "_blank";
                     link.download = "";
+
                     document.body.appendChild(link);
                     link.click();
                     document.body.removeChild(link);
-
+                    console.log(link);
+                    
                     // Success message
                     submitBtn.classList.remove("bg-primary-dark");
                     submitBtn.classList.add("bg-green-600");

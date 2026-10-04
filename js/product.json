@@ -747,11 +747,11 @@
         ]
     },
     {
-        "name": "12kW Biomass Gasifier",
+        "name": "12 kW (15 kVA) ESB-R Biomass Gasifier",
         "category": "Biomass Gasifier for Power Production",
         "modelName": "ESB-R Bio-12.5",
         "modelNumber": "ESB-R12.5",
-        "catalogueLink": "https://drive.google.com/uc?export=download&id=[YourGoogleDriveFileID]",
+        "catalogueLink": "https://enersolbiopower.com/catalogue/12kWCoalBiomassGasifier.pdf",
         "image": "../assets/products/bio-gasifier-power/12-kw-Biomass-Gasifier.jpeg",
         "subtitle": "Empowering Sustainability – Clean Energy from Biomass",
         "description": "The ESB-R12 Biomass Gasifier by Enersol Biopower Pvt. Ltd. is a next-generation renewable energy solution designed to efficiently convert agricultural and forestry waste into clean power. Engineered with advanced downdraft gasification technology, this system provides an eco-friendly, cost-effective, and versatile energy source, ideal for off-grid communities, farms, industries, and research institutions.",
@@ -3508,7 +3508,7 @@
         "category": "Smokeless Biomass Stoves / Bhatti",
         "modelName": "ESB-R Green-Agnika10",
         "modelNumber": "ESB-R/GA10",
-        "image": "../assets/products/bhatti/harit-agni-12.jpeg",
+        "image": "../assets/products/bhatti/harit-agni-12.png",
         "description": "The ESB-R Green-Agnika10 is a high-efficiency, smokeless biomass stove engineered for small businesses, street food vendors, and home kitchens. Designed by Enersol Biopower, this stove offers a cost-effective, eco-friendly alternative to LPG and traditional firewood stoves. Whether you're running a tea stall, preparing snacks, or cooking meals for a large group, the Green-Agnika10 delivers powerful heat output with minimal fuel consumption.",
         "productId": "productId030",
         "subtitle": "Smart Cooking, Sustainable Living",
@@ -3673,7 +3673,7 @@
         "category": "Smokeless Biomass Stoves / Bhatti",
         "modelName": "Harit-Agni12 & Harit-Agni12B",
         "modelNumber": "ESB-R/HA12 & ESB-R/HA12B",
-        "image": "../assets/products/bhatti/harit-agni-12b.jpeg",
+        "image": "../assets/products/bhatti/harit-agni-12b.png",
         "description": "The ESB-R Harit-Agni12 & Harit-Agni12B are high-performance smokeless biomass stoves, designed to bring cost-efficient, eco-friendly, and powerful cooking solutions to food businesses, street vendors, and home kitchens. Built by Enersol Biopower, these stoves ensure high combustion efficiency, reduced fuel consumption, and superior durability, making them ideal for commercial and community cooking.",
         "productId": "productId031",
         "subtitle": "Efficient Cooking, Maximum Savings, Minimal Emissions",
@@ -3818,7 +3818,7 @@
         "category": "Smokeless Biomass Stoves / Bhatti",
         "modelName": "ESB-R Green-Magic15",
         "modelNumber": "ESB-R/GM15",
-        "image": "../assets/products/bhatti/green-magic-15.jpg",
+        "image": "../assets/products/bhatti/green-magic-15.png",
         "description": "The ESB-R Green-Magic15 is a high-efficiency, smokeless biomass stove designed for commercial kitchens, food vendors, and confectionery businesses looking for an affordable and eco-friendly alternative to LPG. Developed by Enersol Biopower, this 15-inch fire zone biomass stove offers superior heat output, enabling faster and more cost-effective cooking while significantly reducing fuel expenses. With a return on investment in just 25 days, this stove is the perfect solution for businesses seeking sustainability without compromising performance.",
         "productId": "productId033",
         "catalogueLink": "https://drive.google.com/uc?export=download&id=1JHlfLqkh6Mpp9N0uzxfqYoEZwEzppQ7b",
@@ -3970,7 +3970,7 @@
         "category": "Smokeless Biomass Stoves / Bhatti",
         "modelName": "ESB-R Bio-Virat18",
         "modelNumber": "ESB-R/BV18",
-        "image": "../assets/products/bhatti/virat-18.jpg",
+        "image": "../assets/products/bhatti/virat-18.png",
         "description": "The ESB-R Bio-Virat18 is an advanced smokeless biomass stove designed for industrial kitchens, food vendors, and confectionery businesses looking for a cost-efficient and eco-friendly alternative to LPG. Manufactured by Enersol Biopower, this 18-inch fire zone biomass stove delivers powerful heat output, faster cooking, and significant savings, making it a game-changer for high-volume food preparation.",
         "productId": "productId034",
         "subtitle": "Cook Faster, Save More, and Go Green",
@@ -4126,7 +4126,7 @@
         "category": "Smokeless Biomass Stoves / Bhatti",
         "modelName": "ESB-R Bio-Akash21",
         "modelNumber": "ESB-R/BA21",
-        "image": "../assets/products/bhatti/akash-21.jpeg",
+        "image": "../assets/products/bhatti/akash-21.png",
         "description": "The ESB-R Bio-Akash21 is a next-generation biomass stove designed to deliver high heat output, cost savings, and eco-friendly performance. Suitable for confectioneries, street food businesses, and commercial kitchens, this 21-inch smokeless stove is engineered to match LPG stove performance while cutting fuel costs by over 60%. Manufactured by Enersol Biopower, it combines durability, efficiency, and sustainability, making it perfect for bulk cooking and fuel savings.",
         "productId": "productId035",
         "subtitle": "High-Efficiency Cooking for a Greener Tomorrow",
@@ -4282,7 +4282,7 @@
         "category": "Smokeless Biomass Stoves / Bhatti",
         "modelName": "ESB-R Bio-Prithvi24",
         "modelNumber": "ESB-R/BP24",
-        "image": "../assets/products/bhatti/prithvi-24.jpg",
+        "image": "../assets/products/bhatti/prithvi-24.png",
         "description": "The ESB-R Bio-Prithvi24 is a powerful, eco-friendly biomass stove designed for high efficiency and significant fuel cost savings. Ideal for commercial kitchens, food processing businesses, and large-scale community cooking, this 24-inch smokeless stove offers a cleaner, cost-effective alternative to LPG stoves.",
         "productId": "productId036",
         "subtitle": "Smart Cooking with Maximum Savings & Zero Emissions",
@@ -4594,7 +4594,7 @@
         "category": "Smokeless Biomass Stoves / Bhatti",
         "modelName": "ESB-R Jumbo-Shakti36",
         "modelNumber": "ESB-R/JS36",
-        "image": "../assets/products/bhatti/jumbo-36.jpeg",
+        "image": "../assets/products/bhatti/jumbo-36.png",
         "description": "The ESB-R Jumbo Shakti36 is an innovative, high-performance smokeless biomass stove designed for large-scale cooking environments such as commercial kitchens, food processing units, and religious institutions. This 36-inch fire zone stove delivers exceptional heat output, reduces fuel costs, and supports eco-friendly cooking practices.",
         "productId": "productId038",
         "subtitle": "Powerful Cooking, Maximum Efficiency, and Sustainable Savings",
@@ -4746,13 +4746,13 @@
         ]
     },
     {
-        "name": "Auto Bio-Mawa Machine",
-        "category": "Auto Bio-Mawa Machine",
-        "modelName": "ESB-R Auto Bio-Mawa Machine",
+        "name": "Auto Bio-Mawa/Khoya Machine",
+        "category": "Auto Bio-Mawa/Khoya Machine",
+        "modelName": "ESB-R Auto Bio-Mawa/Khoya Machine",
         "modelNumber": "ESB-R/MM01",
         "image": "../assets/products/bhatti/auto-bio-mawa.jpeg",
         "description": "The ESB-R Bio Mawa Machine is an automated mawa-making machine that combines traditional cooking methods with modern efficiency. Designed for sweet shops, dairy processing units, and commercial kitchens, this machine uses biomass fuel to ensure eco-friendly operation with reduced fuel costs.",
-        "catalogueLink":"https://drive.google.com/uc?export=download&id=1QPWUqc8r7TL8xdvftiJTC-I1rIHUq60U",
+        "catalogueLink": "https://drive.google.com/uc?export=download&id=1QPWUqc8r7TL8xdvftiJTC-I1rIHUq60U",
         "productId": "productId039",
         "subtitle": "Traditional Taste, Modern Efficiency – Authentic Mawa Made on a Wood Stove Without Smoke or Pollution",
         "features": [
@@ -4839,13 +4839,13 @@
     },
     {
         "name": "Eco-Green Biochar05 - 5kg/hr Biomass based Bio-char Plant",
-        "category": "Biomass Torrefaction / Bio-Char Plant",
+        "category": "Biomass Pyrolysis Plant (Bio-char Plant)",
         "modelName": "Eco-Green Biochar05",
         "modelNumber": "ESB-R/EGC/05",
         "image": "../assets/products/bio-char/05.jpeg",
         "description": "The ESB-R EcoGreen BioChar05 is an advanced biochar production system designed for small-scale agricultural and environmental applications. It converts agricultural residues into high-quality biochar, enhancing soil fertility and reducing pollution through sustainable crop waste management.",
         "productId": "productId040",
-        "catalogueLink":"https://drive.google.com/uc?export=download&id=1cQTCTxLAnpMIcJK_DLX85jEtM_LYQePi",
+        "catalogueLink": "https://drive.google.com/uc?export=download&id=1cQTCTxLAnpMIcJK_DLX85jEtM_LYQePi",
         "subtitle": "Sustainable Agriculture, Cleaner Air, and Higher Profits for Farmers",
         "features": [
             {
@@ -4933,7 +4933,7 @@
     },
     {
         "name": "Eco-Green Biochar10 - 10kg/hr Biomass based Bio-char Plant",
-        "category": "Biomass Torrefaction / Bio-Char Plant",
+        "category": "Biomass Pyrolysis Plant (Bio-char Plant)",
         "modelName": "Eco-Green Biochar10",
         "modelNumber": "ESB-R/EGC/10",
         "image": "../assets/products/bio-char/10.jpeg",
@@ -5031,7 +5031,7 @@
     },
     {
         "name": "Eco-Green Biochar50 - 50kg/hr Biomass based Bio-char Plant",
-        "category": "Biomass Torrefaction / Bio-Char Plant",
+        "category": "Biomass Pyrolysis Plant (Bio-char Plant)",
         "modelName": "Eco-Green Biochar50",
         "modelNumber": "ESB-R/EGC/50",
         "image": "../assets/products/bio-char/50.jpeg",
@@ -5129,7 +5129,7 @@
     },
     {
         "name": "Eco-Green Biochar100 - 100kg/hr Biomass based Bio-char Plant",
-        "category": "Biomass Torrefaction / Bio-Char Plant",
+        "category": "Biomass Pyrolysis Plant (Bio-char Plant)",
         "modelName": "Eco-Green Biochar100",
         "modelNumber": "ESB-R/EGC/100",
         "image": "../assets/products/bio-char/8.jpeg",
@@ -5227,7 +5227,7 @@
     },
     {
         "name": "Eco-Green Biochar200 - 200kg/hr Biomass based Bio-char Plant",
-        "category": "Biomass Torrefaction / Bio-Char Plant",
+        "category": "Biomass Pyrolysis Plant (Bio-char Plant)",
         "modelName": "Eco-Green Biochar200",
         "modelNumber": "ESB-R/EGC/200",
         "image": "../assets/products/img/Biomass Torrefaction Plant24.jpeg",
@@ -5236,7 +5236,7 @@
     },
     {
         "name": "Eco-Green Biochar500 - 500kg/hr Biomass based Bio-char Plant",
-        "category": "Biomass Torrefaction / Bio-Char Plant",
+        "category": "Biomass Pyrolysis Plant (Bio-char Plant)",
         "modelName": "Eco-Green Biochar500",
         "modelNumber": "ESB-R/EGC/500",
         "image": "../assets/products/img/Biomass Torrefaction Plant13.jpeg",
@@ -5261,7 +5261,7 @@
         "description": "The ESB-R Dewatering Machine is designed for efficient solid-liquid separation, optimizing waste management and enhancing recycling processes in agricultural and industrial applications.",
         "productId": "productId047",
         "subtitle": "Efficient Solid-Liquid Separation",
-        "catalogueLink":"https://drive.google.com/uc?export=download&id=1XOU5gCbjDqIPmD2JKPpI9jVU9n50RDsR",
+        "catalogueLink": "https://drive.google.com/uc?export=download&id=1XOU5gCbjDqIPmD2JKPpI9jVU9n50RDsR",
         "features": [
             {
                 "icon": "ri-settings-2-line",
@@ -5356,7 +5356,7 @@
         "modelName": "ESB-R DM200",
         "modelNumber": "ESB-R/DM/200",
         "image": "../assets/products/bio-char/used-oil.jpeg",
-        "catalogueLink":"https://drive.google.com/uc?export=download&id=13xTFyvN7reIJWjZrJI-7NEml5_TOHjJS",
+        "catalogueLink": "https://drive.google.com/uc?export=download&id=13xTFyvN7reIJWjZrJI-7NEml5_TOHjJS",
         "description": "The ESB-R Used Oil Distillation Machine recycles used motor oil, hydraulic oil, and other lubricants into high-grade diesel-like fuel. This system supports environmental sustainability by reducing waste and utilizing advanced filtration and distillation processes to restore oil quality and convert it into clean, reusable fuel.",
         "productId": "productId048",
         "subtitle": "Efficient, Sustainable, and Cost-Effective Oil Recycling",
@@ -5819,8 +5819,8 @@
         "productId": "productId056"
     },
     {
-        "name": "CNC/ Hydraulic Bending Machine Job Work",
-        "category": "CNC/ Hydraulic Bending Machine Job Work",
+        "name": "CNC / Hydraulic Cutting and Bending Machine Job Work Job Work",
+        "category": "CNC / Hydraulic Cutting and Bending Machine Job Work Job Work",
         "modelName": "",
         "modelNumber": "",
         "image": "../assets/products/bio-char/cnc.jpg",
@@ -5906,6 +5906,223 @@
                 "icon": "ri-medal-line",
                 "color": "yellow-500",
                 "text": "ISO-Standard Quality: Consistent, high-quality results ensured by strict quality controls."
+            }
+        ]
+    },
+    {
+        "name": "100 kg/hr Pellet Machine with Pulverizer",
+        "category": "Biomass Gasifier for Power Production",
+        "modelName": "ESB-R-PM100",
+        "modelNumber": "ESB-R-PM100",
+        "catalogueLink": "https://enersolbiopower.com/catalogue/100kghrESBRPelletMachine.pdf",
+        "image": "../assets/products/product060.png",
+        "subtitle": "Sustainable Fuel | Compact Design | Reliable Performance",
+        "description": "Enersol Biopower’s 100 kg/hr biomass pellet machine with suitable pulverizer is engineered for consistent output, high pellet density, and smooth operation. Designed for small to medium-scale pellet production units, it converts biomass waste into high-density fuel pellets suitable for industrial boilers, heating, gasification systems, and waste-to-energy projects.",
+        "productId": "productId060",
+        "price": "Rs.16,20,000 (INR)",
+        "features": [
+            {
+                "icon": "ri-timer-flash-line",
+                "color": "yellow-500",
+                "text": "Production capacity of 100 kg/hr with continuous operation"
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "gray-500",
+                "text": "Supports 8 mm and 12 mm pellet sizes with interchangeable dies"
+            },
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "text": "15 HP heavy-duty motor for stable and efficient performance (3-phase)"
+            },
+            {
+                "icon": "ri-tools-line",
+                "color": "gray-500",
+                "text": "Robust MS fabricated structure for long service life"
+            },
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "text": "Produces high-density, uniform pellets with low breakage"
+            },
+            {
+                "icon": "ri-leaf-line",
+                "color": "green-500",
+                "text": "Energy-efficient design with easy operation and low maintenance"
+            },
+            {
+                "icon": "ri-recycle-line",
+                "color": "green-500",
+                "text": "Suitable for a wide range of biomass raw materials"
+            }
+        ],
+        "technology": [
+            {
+                "icon": "ri-settings-2-line",
+                "color": "gray-500",
+                "text": "Optimized pelletizing system for consistent pellet density and smooth operation"
+            },
+            {
+                "icon": "ri-tools-line",
+                "color": "gray-500",
+                "text": "Recommended suitable pulverizer pairing for pre-processing biomass feedstock"
+            }
+        ],
+        "specifications": [
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Pellet Machine Brand",
+                "value": "Enersol Biopower"
+            },
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Pellet Machine Model",
+                "value": "ESB-R-PM100"
+            },
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Pellet Machine Capacity",
+                "value": "100 kg/hr"
+            },
+            {
+                "icon": "ri-settings-2-line",
+                "color": "gray-500",
+                "label": "Pellet Size",
+                "value": "8 mm & 12 mm"
+            },
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Power Required (Pellet Machine)",
+                "value": "15 HP, 3-phase"
+            },
+            {
+                "icon": "ri-ruler-line",
+                "color": "blue-500",
+                "label": "Input Size of Raw Material",
+                "value": "2.5 x 5 mm (granulated form)"
+            },
+            {
+                "icon": "ri-drop-line",
+                "color": "blue-500",
+                "label": "Acceptable Moisture in Raw Material",
+                "value": "0–15%"
+            },
+            {
+                "icon": "ri-bar-chart-box-line",
+                "color": "green-500",
+                "label": "Pulverizer Model",
+                "value": "ESB-R-P120"
+            },
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Pulverizer Capacity",
+                "value": "120 kg/hr"
+            },
+            {
+                "icon": "ri-ruler-line",
+                "color": "blue-500",
+                "label": "Pulverizer Feeding Size",
+                "value": "20–30 mm"
+            },
+            {
+                "icon": "ri-filter-fill",
+                "color": "purple-500",
+                "label": "Pulverizer Output Mesh Size",
+                "value": "10 mesh (~2 mm)"
+            },
+            {
+                "icon": "ri-flashlight-fill",
+                "color": "yellow-500",
+                "label": "Power Required (Pulverizer)",
+                "value": "5 HP, 3-phase"
+            },
+            {
+                "icon": "ri-leaf-line",
+                "color": "green-500",
+                "label": "Pulverizer Material Compatibility",
+                "value": "Wood chips, sawdust, crop residues, husk, straw"
+            }
+        ],
+        "applications": [
+            {
+                "icon": "ri-leaf-line",
+                "color": "green-500",
+                "text": "Biomass fuel pellets production"
+            },
+            {
+                "icon": "ri-building-2-line",
+                "color": "blue-500",
+                "text": "Industrial boilers"
+            },
+            {
+                "icon": "ri-plug-line",
+                "color": "blue-500",
+                "text": "Gasifier systems"
+            },
+            {
+                "icon": "ri-fire-fill",
+                "color": "red-500",
+                "text": "Heating and thermal applications"
+            },
+            {
+                "icon": "ri-community-line",
+                "color": "green-500",
+                "text": "Institutional and rural energy solutions"
+            },
+            {
+                "icon": "ri-recycle-line",
+                "color": "green-500",
+                "text": "Renewable energy and waste-to-energy projects"
+            }
+        ],
+        "benefits": [
+            {
+                "icon": "ri-recycle-line",
+                "color": "green-500",
+                "text": "Converts waste into valuable fuel"
+            },
+            {
+                "icon": "ri-oil-line",
+                "color": "gray-500",
+                "text": "Reduces dependency on fossil fuels"
+            },
+            {
+                "icon": "ri-earth-fill",
+                "color": "green-500",
+                "text": "Eco-friendly and renewable energy solution"
+            },
+            {
+                "icon": "ri-truck-line",
+                "color": "blue-500",
+                "text": "Easy handling, storage, and transportation"
+            },
+            {
+                "icon": "ri-store-2-line",
+                "color": "yellow-500",
+                "text": "Ideal for decentralized pellet plants"
+            }
+        ],
+        "fuelCompatibility": [
+            {
+                "text": "Sawdust"
+            },
+            {
+                "text": "Agro waste (straw, husk, stalks)"
+            },
+            {
+                "text": "Crop residues"
+            },
+            {
+                "text": "Biomass powder"
+            },
+            {
+                "text": "Dry RDF material"
             }
         ]
     }

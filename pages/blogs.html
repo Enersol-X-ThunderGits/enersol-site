@@ -1,10 +1,37 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MV8ZQKRT');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-59WXVBZ5RQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-59WXVBZ5RQ');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs & News - Enersol Biopower</title>
+    <link rel="icon" type="image/png" href="../assets/logo/fav-icon.png">
+    <title>Sustainable Bioenergy Solutions Blog & News | Enersol Biopower</title>
+    <meta name="description"
+        content="Read blog & news focused on green energy, biomass gasification systems, and sustainable power solutions from Enersol Biopower.">
+    <meta name="keywords"
+        content="biomass blog, renewable energy news, biochar updates, gasifier technology, enersol biopower blog">
+    <link rel="canonical" href="https://enersolbiopower.com/pages/blogs.html" />
+
+    <!-- Optimized resource loading -->
+    <link rel="preload" href="../assets/logo/erersollogo.webp" as="image" type="image/webp">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -47,14 +74,241 @@
             },
         };
     </script>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Load icon font async -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" media="print"
+        onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css">
+    </noscript>
+    <style>
+        /* Font loaded via preload link above */
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
+        }
+
+        .blog-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-radius: 14px;
+            overflow: hidden;
+            background: white;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px -8px rgba(0, 0, 0, 0.12);
+        }
+
+        .category-tag {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 10;
+            background: linear-gradient(90deg, #299FD3 0%, #C7D110 100%);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .blog-image {
+            height: 220px;
+        }
+
+        .read-time {
+            display: inline-flex;
+            align-items: center;
+            background: #f1f5f9;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .author-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .author-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: linear-gradient(90deg, #299FD3 0%, #C7D110 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+        }
+
+        .divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #cbd5e1, transparent);
+        }
+
+        /* Removed heavy load-more-btn animations */
+
+        /* Simple fade in animation */
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ── Tab Navigation ── */
+        .tab-btn {
+            border-bottom: 3px solid transparent;
+            transition: color 0.2s ease, border-color 0.2s ease;
+            color: #64748b;
+            background: none;
+            cursor: pointer;
+        }
+        .tab-btn:hover { color: #1e293b; }
+        .tab-btn.active-tab {
+            border-bottom: 3px solid rgb(3 69 155);
+            color: rgb(3 69 155);
+            font-weight: 700;
+        }
+
+        /* ── News Editorial ── */
+        .news-page      { background: #fdf9f0; font-family: Georgia, 'Times New Roman', serif; }
+        .news-headline  { font-family: Georgia, 'Times New Roman', serif; line-height: 1.15; }
+        .news-dateline  { font-family: Georgia, 'Times New Roman', serif; letter-spacing: 0.06em; }
+        .news-body-text { font-family: Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.78; color: #1a1a1a; }
+        .news-rule      { border: none; height: 2px; background: #1a1a1a; margin: 0; }
+        .news-rule-thin { border: none; height: 1px; background: #1a1a1a; margin: 3px 0 0; }
+        /* Double-border newspaper frame */
+        .clipping-wrap {
+            position: relative;
+            display: block;
+            width: 100%;
+            padding: 7px;
+            background: #fff;
+            border: 2px solid #1a1a1a;
+            box-shadow: 0 0 0 5px #f5efe0, 0 0 0 7px #1a1a1a, 6px 10px 24px rgba(0,0,0,0.28);
+        }
+        .clipping-wrap::before, .clipping-wrap::after {
+            content: '';
+            position: absolute;
+            width: 44px; height: 14px;
+            background: rgba(253,212,0,0.85);
+            z-index: 3;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+        }
+        .clipping-wrap::before { top: -8px;    left: 50%; transform: translateX(-50%) rotate(-2deg); }
+        .clipping-wrap::after  { bottom: -8px; right: 18%; transform: rotate(1.5deg); }
+        .clipping-img {
+            display: block;
+            width: 100%;
+            filter: sepia(15%) contrast(1.05);
+        }
+        .featured-in-badge {
+            display: inline-flex; align-items: center; gap: 6px;
+            background: #1a1a1a; color: #fdf9f0;
+            font-size: 0.65rem; font-weight: 700;
+            letter-spacing: 0.14em; text-transform: uppercase;
+            padding: 3px 10px 3px 8px;
+        }
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 4.4rem;
+            line-height: 0.76;
+            font-family: Georgia, serif;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-right: 7px;
+            margin-top: 5px;
+        }    </style>
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://enersolbiopower.com/pages/blogs.html" />
+  <meta property="og:title" content="Biomass Energy Blog & News | Enersol Biopower" />
+  <meta property="og:description" content="Expert articles on biomass gasification, biogas, pyrolysis, clean cooking & renewable energy. Stay updated with Enersol Biopower's knowledge hub." />
+  <meta property="og:image" content="https://ik.imagekit.io/enersolbiopower/biomass-burning-energy.webp?tr=w-1200,h-630,fo-auto" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Enersol Biopower" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Biomass Energy Blog & News | Enersol Biopower" />
+  <meta name="twitter:description" content="Expert articles on biomass gasification, biogas, pyrolysis, clean cooking & renewable energy. Stay updated with Enersol Biopower's knowledge hub." />
+  <meta name="twitter:image" content="https://ik.imagekit.io/enersolbiopower/biomass-burning-energy.webp?tr=w-1200,h-630,fo-auto" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://enersolbiopower.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://enersolbiopower.com/pages/blogs.html"
+    }
+  ]
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://enersolbiopower.com/pages/blogs.html",
+  "name": "Sustainable Bioenergy Solutions Blog & News | Enersol Biopower",
+  "url": "https://enersolbiopower.com/pages/blogs.html",
+  "description": "Expert articles on biomass energy, clean cooking, gasification technology, and sustainable power solutions by Rai Singh Dahiya, Founder of Enersol Biopower.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Enersol Biopower Pvt. Ltd.",
+    "url": "https://enersolbiopower.com"
+  },
+  "inLanguage": "en-IN"
+}
+  </script>
+
+  <link rel="preconnect" href="https://ik.imagekit.io" />
+  <link rel="dns-prefetch" href="https://ik.imagekit.io" />
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV8ZQKRT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Page Loader -->
+    <!-- <div id="pageLoader" class="page-loader">
+        <div class="text-center">
+            <img src="../assets/logo/erersollogo.webp" alt="Enersol Biopower" class="h-16 mb-4 mx-auto fade-in"> -->
+    <!-- <div class="spinner"></div> -->
+    <!-- <p class="loader-text">Loading blogs...</p>
+            <div class="content-loader mt-4">
+                <div class="dots-loading">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
     <!-- Top Bar and Navbar (same as About Us) -->
     <!-- Top Bar -->
     <div class="bg-gray-800 py-2">
@@ -63,22 +317,22 @@
             <div class="flex flex-wrap justify-between w-full md:w-auto items-center space-x-4 ">
                 <div class="flex items-center space-x-2 text-white">
                     <i class="ri-mail-line"></i>
-                    <a href="mailto:info@example.com">info@enersolbiopower.com</a>
+                    <a href="mailto:info@enersolbiopower.com">info@enersolbiopower.com</a>
                 </div>
                 <div class="flex space-x-2">
                     <a href="https://www.facebook.com/enersolbiopwr" class="text-white">
-                      <i class="ri-facebook-fill"></i>
+                        <i class="ri-facebook-fill"></i>
                     </a>
                     <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy" class="text-white">
-                      <i class="ri-youtube-fill"></i>
+                        <i class="ri-youtube-fill"></i>
                     </a>
                     <a href="https://www.instagram.com/enersol_biopower/" class="text-white">
-                      <i class="ri-instagram-fill"></i>
+                        <i class="ri-instagram-fill"></i>
                     </a>
                     <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/" class="text-white">
-                      <i class="ri-linkedin-fill"></i>
+                        <i class="ri-linkedin-fill"></i>
                     </a>
-                  </div>
+                </div>
 
             </div>
             <!-- Left: Contact Info -->
@@ -90,7 +344,7 @@
                 </div>
                 <div class="flex items-center space-x-2 text-white">
                     <i class="ri-phone-line"></i>
-                    <a href="tel:+917073495200">+91-7073495200</a>
+                    <a href="tel:+917073495200">+91-8239554433</a>
                 </div>
 
             </div>
@@ -98,6 +352,49 @@
 
         </div>
     </div>
+    <!-- Sticky Social Bar -->
+    <div id="sticky-social"
+        class="fixed top-1/3 left-2 z-50 hidden flex-col space-y-2 bg-black bg-opacity-60 p-2.5 rounded-lg shadow-md">
+
+        <a href="https://www.facebook.com/enersolbiopwr"
+            class="text-white text-[28px] hover:text-blue-500 transition duration-300">
+            <i class="ri-facebook-fill"></i>
+        </a>
+
+        <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy"
+            class="text-white text-[28px] hover:text-red-500 transition duration-300">
+            <i class="ri-youtube-fill"></i>
+        </a>
+
+        <a href="https://www.instagram.com/enersol_biopower/"
+            class="text-white text-[28px] hover:text-pink-500 transition duration-300">
+            <i class="ri-instagram-fill"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/"
+            class="text-white text-[28px] hover:text-blue-400 transition duration-300">
+            <i class="ri-linkedin-fill"></i>
+        </a>
+    </div>
+    <script>
+        const stickySocial = document.getElementById('sticky-social');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.scrollY;
+
+            if (currentScroll > 100) {
+                // User scrolled up past 100px
+                stickySocial.classList.add('flex');
+                stickySocial.classList.remove('hidden');
+            } else {
+                // User scrolling down or still near top
+                stickySocial.classList.add('hidden');
+                stickySocial.classList.remove('flex');
+            }
+
+            lastScroll = currentScroll;
+        });
+    </script>
     <!-- Navbar component -->
     <div class="bg-primary-dark sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -105,8 +402,9 @@
                 <!-- Logo -->
                 <div class="flex justify-start lg:w-0 lg:flex-1">
                     <a href="/">
-                        <img class="h-12 w-auto sm:h-14" src="../assets/logo/erersollogo.png" alt="Enersol Biopower"
-                            >
+                        <img class="h-12 w-auto sm:h-14 lazy" src="../assets/logo/erersollogo.webp"
+                            alt="Enersol Biopower" data-src="../assets/logo/erersollogo.webp" loading="lazy"
+                            decoding="async" fetchpriority="low">
                     </a>
                 </div>
                 <!-- Navbar collapse button (visible on small screens) -->
@@ -119,33 +417,71 @@
                         <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor" aria-hidden="true" style="color: white;">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16m-7 6h7" />
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
                         </svg>
                     </button>
                 </div>
 
                 <!-- Links for large screens -->
                 <nav class="hidden md:flex space-x-10">
-                    <a href="/"
-                        class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
+                    <a href="/" class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
                     <a href="./about-us.html"
                         class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
                     <a href="./our-story.html"
                         class="text-base font-medium text-white hover:text-accentYellow-light">Our Story</a>
-                    <a href="./products.html"
-                        class="text-base font-medium text-white hover:text-accentYellow-light">Products</a>
-                    <a href="./blogs.html"
-                        class="text-base font-medium text-white hover:text-accentYellow-light">Blogs & News</a>
+                    <div class="relative inline-block group">
+                        <!-- Products link -->
+                        <a href="./products.html"
+                            class="text-base font-medium text-white hover:text-accentYellow-light inline-flex items-center gap-1">
+                            Products
+                            <svg class="w-4 h-4 mt-0.5 transition-transform duration-200 group-hover:rotate-180"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+
+                        <!-- Dropdown (attached to Products) -->
+                        <div class="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200
+           opacity-0 invisible group-hover:opacity-100 group-hover:visible
+           transition-all duration-150 z-50">
+
+                            <a href="./biomass-gasifier-manufacturer-india.html"
+                                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary rounded-t-lg">
+                                Biomass Gasifier
+                            </a>
+
+                            <a href="./biomass-stove-manufacturer-india.html"
+                                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary">
+                                Biomass Stove
+                            </a>
+
+                            <a href="./biogas-genset-manufacturer-india.html"
+                                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary">
+                                Biogas Genset
+                            </a>
+
+                            <a href="./biomass-pyrolysis-plant-manufacturer-india.html"
+                                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary rounded-b-lg">
+                                Pyrolysis Plant
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="./blogs.html" class="text-base font-medium text-white hover:text-accentYellow-light">Blogs
+                    </a>
                     <a href="./contact-us.html"
                         class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
                 </nav>
 
                 <!-- Get a Quote button (visible on large screens) -->
                 <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-                    <a href="#"
+                    <a href="mailto:info@enersolbiopower.com?subject=Quote%20Request&amp;body=Hi%2C%20I%20would%20like%20to%20get%20a%20quote."
+                        target="_blank"
                         class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
                         Get a Quote
                     </a>
+
                 </div>
             </div>
         </div>
@@ -157,7 +493,11 @@
                 <div class="pt-5 pb-6 ">
                     <div class="flex items-center justify-between px-5">
                         <div>
-                            <img class="h-8 w-auto" src="../assets/logo/erersollogo.png" alt="Your Company">
+                            <img class="h-8 w-auto lazy"
+                                src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
+                                alt="Enersol Biopower — Clean Energy Solutions"
+                                data-src="https://ik.imagekit.io/enersolbiopower/enersol/blogs/erersollogo.webp"
+                                loading="lazy" decoding="async" fetchpriority="low">
                         </div>
                         <div class="-mr-2">
                             <button type="button"
@@ -168,15 +508,14 @@
                                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M6 18L18 6M6 6l12 12" />
+                                        d="M6 18L18 6M6 6l12 12"></path>
                                 </svg>
                             </button>
                         </div>
                     </div>
                     <div class="mt-6 px-5 border-t border-gray-300 pt-5">
                         <nav class="grid gap-y-8">
-                            <a href="/"
-                                class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
+                            <a href="/" class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
                             <a href="./about-us.html"
                                 class="text-base font-medium text-black hover:text-accentYellow-light">About Us</a>
                             <a href="./our-story.html"
@@ -184,7 +523,7 @@
                             <a href="./products.html"
                                 class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
                             <a href="./blogs.html"
-                                class="text-base font-medium text-black hover:text-accentYellow-light">Blogs & News</a>
+                                class="text-base font-medium text-black hover:text-accentYellow-light">Blogs</a>
                             <a href="./contact-us.html"
                                 class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
                         </nav>
@@ -192,10 +531,12 @@
                 </div>
                 <div class="py-6 px-5 space-y-6">
                     <div>
-                        <a href="#"
+                        <a href="mailto:info@enersolbiopower.com?subject=Quote%20Request&amp;body=Hi%2C%20I%20would%20like%20to%20get%20a%20quote."
+                            target="_blank"
                             class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
                             Get a Quote
                         </a>
+
                     </div>
                 </div>
             </div>
@@ -206,218 +547,2326 @@
 
     <main class="container mx-auto px-5 py-12">
 
-        <header class="bg-white pb-5 mb-5">
+        <!-- Page heading -->
+        <header class="bg-white p-10 mb-0">
             <div class="container mx-auto px-6 py-3">
-                <h1 class="text-center text-gray-700 text-4xl sm:text-4xl text-6xl font-bold">Blogs & News</h1>
+                <h1 class="text-center text-gray-700 text-4xl sm:text-5xl lg:text-6xl font-bold">Blogs &amp; News</h1>
             </div>
         </header>
 
-        <div class="pt-4 mb-5 ">
-            <form action="#" method="GET">
-                <div class="relative">
-                    <input type="text" class="w-full p-4 pr-12 text-sm border-2 border-gray-300 rounded-lg shadow-sm"
-                        placeholder="Search blog posts...">
-                    <button type="submit"
-                        class="absolute inset-y-0 right-0 p-4 text-white bg-blue-500 rounded-r-lg hover:bg-blue-600 focus:bg-blue-700 focus:outline-none">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                        </svg>
-                    </button>
-                </div>
-            </form>
+        <!-- Tab buttons -->
+        <div class="flex border-b-2 border-gray-200 mb-8 bg-white px-2">
+            <button id="tab-blog" onclick="switchTab('blog')"
+                class="tab-btn active-tab flex items-center gap-2 px-8 py-4 text-sm font-semibold">
+                <i class="ri-article-line text-base"></i> Blogs
+            </button>
+            <button id="tab-news" onclick="switchTab('news')"
+                class="tab-btn flex items-center gap-2 px-8 py-4 text-sm font-semibold">
+                <i class="ri-newspaper-line text-base"></i> News
+            </button>
         </div>
 
-
+        <!-- ── BLOGS PANEL ── -->
+        <div id="panel-blog">
         <section class="text-gray-600 body-font overflow-hidden">
-            <div class="container px-5 py-24 mx-auto">
-                <div class="-my-8 divide-y-2 divide-gray-100">
-                    <!-- Example Blog Post 1 -->
-                    <div class="py-8 flex flex-wrap md:flex-nowrap space-x-5">
-                        <div class="w-full md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
-                                src="../assets/blogs/parali-se-dhua-nhi.jpeg" alt="Crop Waste Management">
-                        </div>
-                        <div class="md:flex-grow">
-                            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">From Stubble to
-                                Sustainability: Turning Crop Waste into Income</h2>
-                            <p class="leading-relaxed">Agriculture generates vast amounts of crop residue, often burned,
-                                leading to pollution and soil degradation. Innovative solutions like biogas, biochar,
-                                and biomass pellets offer sustainable alternatives, turning waste into profit.</p>
-                            <span class="text-sm text-gray-500">Updated: 16 Feb 2025</span><br>
-                            <a href="./blogs/parali-se-dhua-nhi-amdani-badhaye.html" class="text-indigo-500 inline-flex items-center mt-4" href="#">Learn More
-                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h14"></path>
-                                    <path d="M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Repeat this block for more articles -->
-                    <!-- Example Blog Post 1 -->
-                    <div class="py-8 flex flex-wrap md:flex-nowrap space-x-5">
-                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                            <img class="w-full lg:h-48 md:h-36 w-full object-cover object-center"
-                                src="https://images.unsplash.com/photo-1600150806237-a7dffed6b53c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGluZGlhJTIwZmFybXxlbnwwfHwwfHx8MA%3D%3D" alt="blog thumbnail">
-                        </div>
-                        <div class="md:flex-grow">
-                            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Transform Your Energy, Transform Your World</h2>
-                            <p class="leading-relaxed">Energy is the driving force behind our daily lives, industries,
-                                and economies. However, our reliance on fossil fuels has led to severe environmental
-                                consequences, including pollution, climate change, and resource depletion.</p>
-                            <span class="text-sm text-gray-500">16 Feb 2025</span><br>
-                            <a href="./blogs/transfrom-your-energy-transform-your-world.html" class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h14"></path>
-                                    <path d="M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Repeat this block for more articles -->
-                    <!-- Example Blog Post 1 -->
-                    <!-- <div class="py-8 flex flex-wrap md:flex-nowrap space-x-5">
-                        <div class="w-full md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
-                                src="https://dummyimage.com/600x400" alt="blog thumbnail">
 
+            <!-- Blog List -->
+            <div id="blogList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
 
-                        </div>
-                        <div class="md:flex-grow">
-                            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Bitters hashtag waistcoat
-                                fashion axe chia unicorn</h2>
-                            <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel
-                                vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag
-                                selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft
-                                beer.</p>
-                            <span class="text-sm text-gray-500">12 Jun 2019</span><br>
-                            <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h14"></path>
-                                    <path d="M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div> -->
-                    <!-- Repeat this block for more articles -->
-                    <!-- Example Blog Post 1 -->
-                    <!-- <div class="py-8 flex flex-wrap md:flex-nowrap space-x-5">
-                        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
-                                src="https://dummyimage.com/600x400" alt="blog thumbnail">
-                        </div>
-                        <div class="md:flex-grow">
-                            <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Bitters hashtag waistcoat
-                                fashion axe chia unicorn</h2>
-                            <p class="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel
-                                vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag
-                                selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft
-                                beer.</p>
-                            <span class="text-sm text-gray-500">12 Jun 2019</span><br>
-                            <a class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                                <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M5 12h14"></path>
-                                    <path d="M12 5l7 7-7 7"></path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div> -->
-                    <!-- Repeat this block for more articles -->
-                     <!-- Blog 3: Biogas from Crop Residue -->
-                <div class="py-8 flex flex-wrap md:flex-nowrap space-x-5">
-                    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                        <img class="w-full lg:h-48 md:h-36 object-cover object-center"
-                            src="https://images.unsplash.com/photo-1674592139040-edfa0c23806c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNyb3AlMjByZXNpZHVlfGVufDB8fDB8fHww" alt="Biogas from Crop Residue">
-                    </div>
-                    <div class="md:flex-grow">
-                        <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Biogas: A New Source of Energy from Crop Residue</h2>
-                        <p class="leading-relaxed">By utilizing crop residues like straw, husk, and stubble, biogas production not only addresses the energy crisis but also offers a sustainable solution to agricultural waste management.</p>
-                        <span class="text-sm text-gray-500">Updated: 4 Apr 2025</span><br>
-                        <a href="./blogs/biogas-new-source-of-energy.html" class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
+                <!-- Blog 8: Harit Agni — 26 Jun 2026 -->
+<a href="./blogs/how-harit-agni-is-changing-clean-cooking-in-rural-india.html"
+    class="blog-card lazy shadow-card group flex flex-col h-full">
+    <div class="relative h-52">
+        <span class="category-tag">CLEAN COOKING</span>
+        <img src="../assets/blogs/how-harit-agni-is-changing-clean-cooking-in-rural-india.png"
+            alt="Harit Agni smokeless biomass stove changing clean cooking in rural India"
+            class="w-full h-full object-cover rounded-t-md"
+            loading="lazy" decoding="async" fetchpriority="low">
+    </div>
+    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+        <div class="flex items-center text-xs text-gray-500 mb-3 space-x-2">
+            <span>26 Jun 2026</span><span>•</span><span>6 min read</span>
+        </div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+            How Harit Agni Is Changing Clean Cooking in Rural India
+        </h3>
+        <p class="text-sm text-gray-600 flex-grow">
+            Harit Agni — India's forced-draft smokeless biomass stove. 35.5% thermal efficiency, 60–70% lower fuel cost than LPG, zero black smoke. How it's replacing traditional chulhas across rural dhabas, schools, and community kitchens.
+        </p>
+        <div class="mt-4 text-primary font-semibold text-sm group-hover:underline">Read More &rarr;</div>
+    </div>
+</a>
 
-                <!-- Blog 4: Urban Cooking Revolution -->
-                <div class="py-8 flex flex-wrap md:flex-nowrap space-x-5">
-                    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                        <img class="w-full lg:h-48 md:h-36 object-cover object-center"
-                            src="../../assets/products/bhatti/bio-nature.jpg" alt="Urban Cooking Revolution">
-                    </div>
-                    <div class="md:flex-grow">
-                        <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Revolutionizing Urban Cooking: The Shift from LPG to Commercial Biomass Stoves</h2>
-                        <p class="leading-relaxed">Urban kitchens are witnessing a transformation with commercial biomass stoves replacing conventional LPG, offering a cleaner, greener, and cost-effective alternative for a sustainable future.</p>
-                        <span class="text-sm text-gray-500">Updated: 12 Apr 2025</span><br>
-                        <a href="./blogs/revolutionizing-urban-cooking.html" class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Blog 5: Bioenergy in Agriculture -->
-                <div class="py-8 flex flex-wrap md:flex-nowrap space-x-5">
-                    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                        <img class="w-full lg:h-48 md:h-36 object-cover object-center"
-                            src="https://plus.unsplash.com/premium_photo-1661962692059-55d5a4319814?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YWdyaWN1bHR1cmV8ZW58MHx8MHx8fDA%3D" alt="Bioenergy in Agriculture">
-                    </div>
-                    <div class="md:flex-grow">
-                        <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">Importance of Bioenergy in Agriculture: Towards a Sustainable Future</h2>
-                        <p class="leading-relaxed">Embracing bioenergy in agriculture is not just about generating clean energy—it’s about building resilient farming communities, protecting the environment, and paving the way for a sustainable future.</p>
-                        <span class="text-sm text-gray-500">Updated: 16 Apr 2025</span><br>
-                        <a href="./blogs/importance-of-biogas-energy.html" class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                 <!-- Blog 5: Bioenergy in Agriculture -->
-                 <div class="py-8 flex flex-wrap md:flex-nowrap space-x-5">
-                    <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                        <img class="w-full lg:h-48 md:h-36 object-cover object-center"
-                            src="https://dkprodimages.gumlet.io/Chulha_Body2.jpg?format=webp&w=400&dpr=2.6" alt="Bioenergy in Agriculture">
-                    </div>
-                    <div class="md:flex-grow">
-                        <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">   Revolutionizing Rural Cooking: The Shift from Traditional Chulhas to Modern Biomass Stoves</h2>
-                        <p class="leading-relaxed">For centuries, traditional chulhas have been the cornerstone of cooking in rural areas. Made from simple materials like clay and mud, these stoves are deeply rooted in local cultures. However, they come with significant drawbacks—notably the high levels of smoke they produce, posing serious health and environmental risks.</p>
-                        <span class="text-sm text-gray-500">Updated: 20 Apr 2025</span><br>
-                        <a href="./blogs/revolutionize-cooking.html" class="text-indigo-500 inline-flex items-center mt-4">Learn More
-                            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
-                                fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M5 12h14"></path>
-                                <path d="M12 5l7 7-7 7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-
+                <!-- Blog 7: Myth vs Fact — 24 Jun 2026 -->
+<a href="./blogs/myth-vs-fact-everything-you-thought-you-knew-about-biomass-stoves.html"
+    class="blog-card lazy shadow-card group flex flex-col h-full">
+    <div class="relative h-52">
+        <span class="category-tag">BIOMASS</span>
+        <img src="../assets/blogs/myth-vs-fact-everything-you-thought-you-knew-about-biomass-stoves.png"
+            alt="Myth vs Fact: Everything You Thought You Knew About Biomass Stoves"
+            class="w-full h-full object-cover rounded-t-md"
+            loading="lazy" decoding="async" fetchpriority="low">
+    </div>
+    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+        <div class="flex-grow">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-sm text-gray-500">24 Jun 2026</span>
+                <span class="read-time"><i class="far fa-clock mr-1"></i> 7 min read</span>
+            </div>
+            <h2 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                Myth vs Fact: Everything You Thought You Knew About Biomass Stoves
+            </h2>
+            <p class="text-gray-600 mb-4">
+                10 common myths about biomass stoves busted with real data — smoke, fuel sourcing, flame control, food taste, FSSAI compliance, and payback period.
+            </p>
+        </div>
+        <div class="mt-auto pt-4 border-t border-gray-200">
+            <div class="author-badge flex items-center gap-3">
+                <img src="https://ik.imagekit.io/enersolbiopower/enersol/our-story/ray_sing_dahiya.webp" alt="Rai Singh Dahiya" class="w-9 h-9 rounded-full object-cover">
+                <div>
+                    <span class="text-sm font-medium text-gray-800">Rai Singh Dahiya</span>
+                    <span class="text-xs text-gray-400 block">Founder, Enersol Biopower</span>
                 </div>
             </div>
+        </div>
+    </div>
+</a>
+
+                <!-- Blog 6: From Farm Waste to Kitchen Fuel — 22 Jun 2026 -->
+<a href="./blogs/from-farm-waste-to-kitchen-fuel-the-complete-journey.html"
+    class="blog-card lazy shadow-card group flex flex-col h-full">
+    <div class="relative h-52">
+        <span class="category-tag">BIOMASS</span>
+        <img src="../assets/blogs/from-farm-waste-to-kitchen-fuel-the-complete-journey.png"
+            alt="From Farm Waste to Kitchen Fuel: The Complete Journey"
+            class="w-full h-full object-cover rounded-t-md"
+            loading="lazy" decoding="async" fetchpriority="low">
+    </div>
+    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+        <div class="flex-grow">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-sm text-gray-500">22 Jun 2026</span>
+                <span class="read-time"><i class="far fa-clock mr-1"></i> 7 min read</span>
+            </div>
+            <h2 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                From Farm Waste to Kitchen Fuel: The Complete Journey
+            </h2>
+            <p class="text-gray-600 mb-4">
+                How India's 500 million tonnes of crop residue travels from farm to commercial kitchen — cutting LPG costs by 70% while giving farmers extra income from waste.
+            </p>
+        </div>
+        <div class="mt-auto pt-4 border-t border-gray-200">
+            <div class="author-badge flex items-center gap-3">
+                <img src="https://ik.imagekit.io/enersolbiopower/enersol/our-story/ray_sing_dahiya.webp" alt="Rai Singh Dahiya" class="w-9 h-9 rounded-full object-cover">
+                <div>
+                    <span class="text-sm font-medium text-gray-800">Rai Singh Dahiya</span>
+                    <span class="text-xs text-gray-400 block">Founder, Enersol Biopower</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+
+                <!-- Blog 5: Understanding Biomass Combustion — 20 Jun 2026 -->
+<a href="./blogs/understanding-biomass-combustion-why-clean-burning-matters.html"
+    class="blog-card lazy shadow-card group flex flex-col h-full">
+    <div class="relative h-52">
+        <span class="category-tag">CLEAN ENERGY</span>
+        <img src="../assets/blogs/understanding-biomass-combustion-why-clean-burning-matters.png"
+            alt="Understanding Biomass Combustion: Why Clean Burning Matters"
+            class="w-full h-full object-cover rounded-t-md"
+            loading="lazy" decoding="async" fetchpriority="low">
+    </div>
+    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+        <div class="flex-grow">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-sm text-gray-500">20 Jun 2026</span>
+                <span class="read-time"><i class="far fa-clock mr-1"></i> 6 min read</span>
+            </div>
+            <h2 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                Understanding Biomass Combustion: Why Clean Burning Matters
+            </h2>
+            <p class="text-gray-600 mb-4">
+                Incomplete combustion wastes 30–50% of your fuel. Learn how forced-draft technology achieves near-smokeless burning and 35–40% efficiency for commercial kitchens.
+            </p>
+        </div>
+        <div class="mt-auto pt-4 border-t border-gray-200">
+            <div class="author-badge flex items-center gap-3">
+                <img src="https://ik.imagekit.io/enersolbiopower/enersol/our-story/ray_sing_dahiya.webp" alt="Rai Singh Dahiya" class="w-9 h-9 rounded-full object-cover">
+                <div>
+                    <span class="text-sm font-medium text-gray-800">Rai Singh Dahiya</span>
+                    <span class="text-xs text-gray-400 block">Founder, Enersol Biopower</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+
+                <!-- Blog 4: 5 Practical Ways to Reduce Fuel Cost — 18 Jun 2026 -->
+<a href="./blogs/5-practical-ways-to-reduce-your-monthly-cooking-fuel-cost.html"
+    class="blog-card lazy shadow-card group flex flex-col h-full">
+    <div class="relative h-52">
+        <span class="category-tag">FUEL SAVINGS</span>
+        <img src="../assets/blogs/5-practical-ways-to-reduce-your-monthly-cooking-fuel-cost.png"
+            alt="5 Practical Ways to Reduce Your Monthly Cooking Fuel Cost"
+            class="w-full h-full object-cover rounded-t-md"
+            loading="lazy" decoding="async" fetchpriority="low">
+    </div>
+    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+        <div class="flex-grow">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-sm text-gray-500">18 Jun 2026</span>
+                <span class="read-time"><i class="far fa-clock mr-1"></i> 6 min read</span>
+            </div>
+            <h2 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                5 Practical Ways to Reduce Your Monthly Cooking Fuel Cost
+            </h2>
+            <p class="text-gray-600 mb-4">
+                A commercial kitchen spending ₹3,000/day on LPG can cut that to under ₹600/day. Discover 5 proven methods to slash fuel costs — starting today.
+            </p>
+        </div>
+        <div class="mt-auto pt-4 border-t border-gray-200">
+            <div class="author-badge flex items-center gap-3">
+                <img src="https://ik.imagekit.io/enersolbiopower/enersol/our-story/ray_sing_dahiya.webp" alt="Rai Singh Dahiya" class="w-9 h-9 rounded-full object-cover">
+                <div>
+                    <span class="text-sm font-medium text-gray-800">Rai Singh Dahiya</span>
+                    <span class="text-xs text-gray-400 block">Founder, Enersol Biopower</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+
+                <!-- How Agricultural Waste Is Transformed Into Clean Cooking Fuel Blog Card -->
+<a href="./blogs/how-agricultural-waste-is-transformed-into-clean-cooking-fuel.html"
+    class="blog-card lazy shadow-card group flex flex-col h-full">
+
+    <div class="relative h-52">
+        <span class="category-tag">AGRO WASTE ENERGY</span>
+        <img src="../assets/blogs/how-agricultural-waste-is-transformed-into-clean-cooking-fuel.png"
+            alt="How Agricultural Waste Is Transformed Into Clean Cooking Fuel"
+            class="w-full h-full object-cover rounded-t-md"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low">
+    </div>
+
+    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+        <div class="flex-grow">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-sm text-gray-500">15 Jun 2026</span>
+                <span class="read-time"><i class="far fa-clock mr-1"></i> 9 min read</span>
+            </div>
+
+            <h2 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                How Agricultural Waste Is Transformed Into Clean Cooking Fuel
+            </h2>
+
+            <p class="text-gray-600 mb-4">
+                Paddy straw, sugarcane bagasse, rice husk, cotton stalks — India's 686 million tonnes of crop residue can become clean cooking fuel. Discover the 4 transformation processes and how Enersol makes it practical.
+            </p>
+        </div>
+
+        <div class="mt-auto pt-4 border-t border-gray-200">
+            <div class="author-badge flex items-center gap-3">
+                <img src="https://ik.imagekit.io/enersolbiopower/enersol/our-story/ray_sing_dahiya.webp"
+                    alt="Rai Singh Dahiya"
+                    class="w-9 h-9 rounded-full object-cover">
+                <div>
+                    <span class="text-sm font-medium text-gray-800">Rai Singh Dahiya</span>
+                    <span class="text-xs text-gray-400 block">Founder, Enersol Biopower</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+
+                <!-- What Is Biomass Fuel Blog Card -->
+<a href="./blogs/what-is-biomass-fuel-and-why-is-india-adopting-it.html"
+    class="blog-card lazy shadow-card group flex flex-col h-full">
+
+    <div class="relative h-52">
+        <span class="category-tag">CLEAN ENERGY</span>
+        <img src="../assets/blogs/what-is-biomass-fuel-and-why-is-india-adopting-it.png"
+            alt="What Is Biomass Fuel and Why Is India Adopting It"
+            class="w-full h-full object-cover rounded-t-md"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low">
+    </div>
+
+    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+        <div class="flex-grow">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-sm text-gray-500">13 Jun 2026</span>
+                <span class="read-time"><i class="far fa-clock mr-1"></i> 8 min read</span>
+            </div>
+
+            <h2 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                What Is Biomass Fuel? Why India Is Adopting Biomass Energy in 2026
+            </h2>
+
+            <p class="text-gray-600 mb-4">
+                India generates 686 million tonnes of crop residue per year. Learn what biomass fuel is, its types, advantages, and why it is rapidly replacing LPG and fossil fuels across the country.
+            </p>
+        </div>
+
+        <div class="mt-auto pt-4 border-t border-gray-200">
+            <div class="author-badge flex items-center gap-3">
+                <img src="https://ik.imagekit.io/enersolbiopower/enersol/our-story/ray_sing_dahiya.webp"
+                    alt="Rai Singh Dahiya"
+                    class="w-8 h-8 rounded-full object-cover">
+                <div>
+                    <div class="text-sm font-medium">Rai Singh Dahiya</div>
+                    <div class="text-xs text-gray-500">Founder, Enersol Biopower</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+
+                <!-- Rai Singh Dahiya Paris Award Blog Card -->
+<a href="./blogs/rai-singh-dahiya-enersol-biopower-paris-award.html"
+    class="blog-card lazy shadow-card group flex flex-col h-full">
+
+    <div class="relative h-52">
+        <span class="category-tag">INNOVATION AWARD</span>
+        <img src="../assets/blogs/rai-singh-dahiya-enersol-biopower-paris-award.png"
+            alt="Rai Singh Dahiya Enersol Biopower Paris Award"
+            class="w-full h-full object-cover rounded-t-md"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low">
+    </div>
+
+    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+        <div class="flex-grow">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-sm text-gray-500">Updated: 8 Jun 2026</span>
+                <span class="read-time">
+                    <i class="far fa-clock mr-1"></i> 8 min read
+                </span>
+            </div>
+
+            <h2 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                From Rajasthan's Fields to Paris: The Journey of Rai Singh Dahiya & Enersol Biopower
+            </h2>
+
+            <p class="text-gray-600 mb-4">
+                Discover how Rai Singh Dahiya ji, founder of Enersol Biopower, received international recognition in Paris through Innovation Team Best Practices 2026 — a proud moment for Indian grassroots clean energy innovation.
+            </p>
+        </div>
+
+        <div class="mt-auto pt-4 border-t border-gray-200">
+            <div class="author-badge flex items-center gap-3">
+                <div class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                    EB
+                </div>
+                <div>
+                    <div class="text-sm font-medium">Enersol Biopower</div>
+                    <div class="text-xs text-gray-500">Founder's Journey &amp; Innovation Awards</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+
+
+<a href="./blogs/school-hostel-biomass-stove-clean-cooking-solutions.html"
+    class="blog-card lazy shadow-card group flex flex-col h-full">
+
+    
+    <div class="relative h-52">
+        <span class="category-tag">HOSTEL KITCHENS</span>
+        <img src="../assets/blogs/school-hostel-biomass-stove-clean-cooking-solutions.png"
+            alt="School Hostel Biomass Stove Clean Cooking Solutions"
+            class="w-full h-full object-cover rounded-t-md"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low">
+    </div>
+
+    
+    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+
+        <div class="flex-grow">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-sm text-gray-500">Updated: 20 May 2026</span>
+
+                <span class="read-time">
+                    <i class="far fa-clock mr-1"></i> 6 min read
+                </span>
+            </div>
+
+            <h2
+                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                Clean Cooking Solutions for Schools & Hostels Using Biomass Stoves
+            </h2>
+
+            <p class="text-gray-600 mb-4">
+                Learn how schools, hostels, and institutional kitchens are reducing LPG costs and improving cooking
+                efficiency with biomass stove solutions from Enersol Biopower.
+            </p>
+        </div>
+
+        
+        <div class="mt-auto pt-4 border-t border-gray-200">
+            <div class="author-badge flex items-center gap-3">
+
+                <div
+                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                    EB
+                </div>
+
+                <div>
+                    <div class="text-sm font-medium">Enersol Biopower</div>
+                    <div class="text-xs text-gray-500">
+                        Institutional Cooking Solutions Team
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</a>
+<!-- VILLAGE CANTEEN — KEEP COMMENTED
+<a href="./blogs/village-canteen-biogas-genset-renewable-electricity.html"
+    class="blog-card lazy shadow-card group flex flex-col h-full">
+
+    
+    <div class="relative h-52">
+        <span class="category-tag">RURAL ELECTRICITY</span>
+        <img src="../assets/blogs/village-canteen-biogas-genset-renewable-electricity.png"
+            alt="Village Canteen Biogas Genset Renewable Electricity"
+            class="w-full h-full object-cover rounded-t-md"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low">
+    </div>
+
+    
+    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+
+        <div class="flex-grow">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-sm text-gray-500">Updated: 22 May 2026</span>
+
+                <span class="read-time">
+                    <i class="far fa-clock mr-1"></i> 7 min read
+                </span>
+            </div>
+
+            <h2
+                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                Renewable Electricity Solutions for Village Canteens Using Biogas Genset
+            </h2>
+
+            <p class="text-gray-600 mb-4">
+                Discover how village canteens and rural food centers can generate affordable renewable electricity
+                using biogas genset systems powered by organic waste.
+            </p>
+        </div>
+
+        
+        <div class="mt-auto pt-4 border-t border-gray-200">
+            <div class="author-badge flex items-center gap-3">
+
+                <div
+                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                    EB
+                </div>
+
+                <div>
+                    <div class="text-sm font-medium">Enersol Biopower</div>
+                    <div class="text-xs text-gray-500">
+                        Rural Renewable Energy Team
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</a>
+END VILLAGE CANTEEN -->
+
+<a href="./blogs/temple-ashram-biomass-stove-fuel-saving.html"
+    class="blog-card lazy shadow-card group flex flex-col h-full">
+
+    
+    <div class="relative h-52">
+        <span class="category-tag">TEMPLE KITCHENS</span>
+        <img src="../assets/blogs/temple-ashram-biomass-stove-fuel-saving.png"
+            alt="Temple and Ashram Biomass Stove Fuel Saving"
+            class="w-full h-full object-cover rounded-t-md"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low">
+    </div>
+
+    
+    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+
+        <div class="flex-grow">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-sm text-gray-500">Updated: 18 May 2026</span>
+                <span class="read-time">
+                    <i class="far fa-clock mr-1"></i> 7 min read
+                </span>
+            </div>
+
+            <h2
+                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                How Temples & Ashrams Can Save Daily Cooking Fuel Costs with Biomass Stoves
+            </h2>
+
+            <p class="text-gray-600 mb-4">
+                Discover how temples, gurukuls, langars, and ashram kitchens are reducing LPG and firewood expenses
+                using high-efficiency biomass stove systems from Enersol Biopower.
+            </p>
+        </div>
+
+        
+        <div class="mt-auto pt-4 border-t border-gray-200">
+            <div class="author-badge flex items-center gap-3">
+
+                <div
+                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                    EB
+                </div>
+
+                <div>
+                    <div class="text-sm font-medium">Enersol Biopower</div>
+                    <div class="text-xs text-gray-500">
+                        Commercial Biomass Stove Team
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</a>
+<!-- RURAL KITCHEN — COMMENTED
+<a href="./blogs/rural-kitchen-biomass-stove-biogas-genset-solutions.html"
+    class="blog-card lazy shadow-card group flex flex-col h-full">
+    
+    <div class="relative h-52">
+        <span class="category-tag">RURAL SOLUTIONS</span>
+        <img src="../assets/blogs/rural-kitchen-biomass-stove-biogas-genset-solutions.png"
+            alt="Rural Kitchen Biomass Stove and Biogas Genset Solutions"
+            class="w-full h-full object-cover rounded-t-md"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low">
+    </div>
+
+    
+    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+        <div class="flex-grow">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-sm text-gray-500">Updated: 16 May 2026</span>
+                <span class="read-time"><i class="far fa-clock mr-1"></i> 6 min read</span>
+            </div>
+
+            <h2 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                Rural Kitchen Energy Solutions Using Biomass Stove & Biogas Genset
+            </h2>
+
+            <p class="text-gray-600 mb-4">
+                Sustainable cooking and electricity solutions for villages, dairy units, and rural enterprises using
+                biomass stove and biogas genset technologies.
+            </p>
+        </div>
+
+        
+        <div class="mt-auto pt-4 border-t border-gray-200">
+            <div class="author-badge flex items-center gap-3">
+                <div
+                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                    EB
+                </div>
+                <div>
+                    <div class="text-sm font-medium">Enersol Biopower</div>
+                    <div class="text-xs text-gray-500">Rural Renewable Energy Team</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+END RURAL KITCHEN -->
+
+
+<a href="./blogs/rice-mill-waste-to-electricity-biomass-gasifier.html"
+    class="blog-card lazy shadow-card group flex flex-col h-full">
+
+    <div class="relative h-52">
+        <span class="category-tag">RICE MILL ENERGY</span>
+        <img src="../assets/blogs/rice-mill-waste-to-electricity-biomass-gasifier.png"
+            alt="Rice Mill Waste to Electricity Biomass Gasifier"
+            class="w-full h-full object-cover rounded-t-md"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low">
+    </div>
+
+    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+        <div class="flex-grow">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-sm text-gray-500">Updated: 14 May 2026</span>
+                <span class="read-time"><i class="far fa-clock mr-1"></i> 8 min read</span>
+            </div>
+
+            <h2 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                Turn Rice Mill Waste into Electricity with Biomass Gasifier Technology
+            </h2>
+
+            <p class="text-gray-600 mb-4">
+                Rice husk and agricultural waste can now power industrial operations using biomass gasifier systems
+                designed for continuous and cost-effective energy generation.
+            </p>
+        </div>
+
+        <div class="mt-auto pt-4 border-t border-gray-200">
+            <div class="author-badge flex items-center gap-3">
+                <div
+                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                    EB
+                </div>
+                <div>
+                    <div class="text-sm font-medium">Enersol Biopower</div>
+                    <div class="text-xs text-gray-500">Industrial Biomass Energy Team</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+
+<a href="./blogs/hotel-food-waste-biogas-genset-electricity.html"
+    class="blog-card lazy shadow-card group flex flex-col h-full">
+
+    <div class="relative h-52">
+        <span class="category-tag">FOOD WASTE ENERGY</span>
+        <img src="../assets/blogs/hotel-food-waste-biogas-genset-electricity.png"
+            alt="Hotel Food Waste Biogas Genset Electricity"
+            class="w-full h-full object-cover rounded-t-md"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low">
+    </div>
+
+    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+        <div class="flex-grow">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-sm text-gray-500">Updated: 12 May 2026</span>
+                <span class="read-time"><i class="far fa-clock mr-1"></i> 7 min read</span>
+            </div>
+
+            <h2 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                Convert Hotel Food Waste into Electricity with Biogas Genset Systems
+            </h2>
+
+            <p class="text-gray-600 mb-4">
+                Hotels and restaurants can reduce waste disposal costs while generating clean electricity using
+                advanced biogas genset technology from Enersol Biopower.
+            </p>
+        </div>
+
+        <div class="mt-auto pt-4 border-t border-gray-200">
+            <div class="author-badge flex items-center gap-3">
+                <div
+                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                    EB
+                </div>
+                <div>
+                    <div class="text-sm font-medium">Enersol Biopower</div>
+                    <div class="text-xs text-gray-500">Waste to Energy Team</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+
+<a href="./blogs/dairy-farm-biogas-genset-electricity-generation.html"
+    class="blog-card lazy shadow-card group flex flex-col h-full">
+
+    <div class="relative h-52">
+        <span class="category-tag">DAIRY ENERGY</span>
+        <img src="../assets/blogs/dairy-farm-biogas-genset-electricity-generation.png"
+            alt="Dairy Farm Biogas Genset Electricity Generation"
+            class="w-full h-full object-cover rounded-t-md"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low">
+    </div>
+
+    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+        <div class="flex-grow">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-sm text-gray-500">Updated: 10 May 2026</span>
+                <span class="read-time"><i class="far fa-clock mr-1"></i> 7 min read</span>
+            </div>
+
+            <h2 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                Generate Electricity from Dairy Farm Waste Using Biogas Genset
+            </h2>
+
+            <p class="text-gray-600 mb-4">
+                See how dairy farms can convert cow dung and organic waste into electricity using efficient biogas
+                genset systems for sustainable power generation.
+            </p>
+        </div>
+
+        <div class="mt-auto pt-4 border-t border-gray-200">
+            <div class="author-badge flex items-center gap-3">
+                <div
+                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                    EB
+                </div>
+                <div>
+                    <div class="text-sm font-medium">Enersol Biopower</div>
+                    <div class="text-xs text-gray-500">Biogas Energy Specialists</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+
+<a href="./blogs/community-kitchen-biomass-stove-technology.html"
+    class="blog-card lazy shadow-card group flex flex-col h-full">
+
+    <div class="relative h-52">
+        <span class="category-tag">COMMUNITY KITCHENS</span>
+        <img src="../assets/blogs/community-kitchen-biomass-stove-technology.png"
+            alt="Community Kitchen Biomass Stove Technology"
+            class="w-full h-full object-cover rounded-t-md"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low">
+    </div>
+
+    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+        <div class="flex-grow">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-sm text-gray-500">Updated: 8 May 2026</span>
+                <span class="read-time"><i class="far fa-clock mr-1"></i> 6 min read</span>
+            </div>
+
+            <h2 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                Biomass Stove Technology for Community Kitchens & Large Scale Cooking
+            </h2>
+
+            <p class="text-gray-600 mb-4">
+                Learn how biomass stove systems are helping hostels, temples, NGOs, and community kitchens lower
+                cooking fuel expenses while improving efficiency.
+            </p>
+        </div>
+
+        <div class="mt-auto pt-4 border-t border-gray-200">
+            <div class="author-badge flex items-center gap-3">
+                <div
+                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                    EB
+                </div>
+                <div>
+                    <div class="text-sm font-medium">Enersol Biopower</div>
+                    <div class="text-xs text-gray-500">Commercial Cooking Solutions Team</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+
+<a href="./blogs/enersol-biopower-biomass-gasifier-biomass-stove-biogas-genset-pyrolysis-plant.html"
+    class="blog-card lazy shadow-card group flex flex-col h-full">
+
+    <div class="relative h-52">
+        <span class="category-tag">BIOMASS ENERGY</span>
+        <img src="../assets/blogs/biomass-gasifier-bg.png"
+            alt="Biomass Gasifier by Enersol Biopower"
+            class="w-full h-full object-cover rounded-t-md"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low">
+    </div>
+
+    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+        <div class="flex-grow">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-sm text-gray-500">Updated: 6 May 2026</span>
+                <span class="read-time"><i class="far fa-clock mr-1"></i> 9 min read</span>
+            </div>
+
+            <h2 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                Enersol Biopower Renewable Energy Solutions for Industries & Rural Applications
+            </h2>
+
+            <p class="text-gray-600 mb-4">
+                Explore biomass gasifier, biomass stove, biogas genset, and pyrolysis plant technologies designed
+                for industries, commercial kitchens, and sustainable rural energy systems.
+            </p>
+        </div>
+
+        <div class="mt-auto pt-4 border-t border-gray-200">
+            <div class="author-badge flex items-center gap-3">
+                <div
+                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                    EB
+                </div>
+                <div>
+                    <div class="text-sm font-medium">Enersol Biopower</div>
+                    <div class="text-xs text-gray-500">Biomass Technology Experts</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+
+<a href="./blogs/agro-industries-biomass-gasifier-biogas-genset.html"
+    class="blog-card lazy shadow-card group flex flex-col h-full">
+
+    <div class="relative h-52">
+        <span class="category-tag">AGRO INDUSTRIES</span>
+        <img src="../assets/blogs/agro-industries-biomass-gasifier-biogas-genset.png"
+            alt="Agro Industries Biomass Gasifier and Biogas Genset"
+            class="w-full h-full object-cover rounded-t-md"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low">
+    </div>
+
+    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+        <div class="flex-grow">
+            <div class="flex justify-between items-center mb-3">
+                <span class="text-sm text-gray-500">Updated: 4 May 2026</span>
+                <span class="read-time"><i class="far fa-clock mr-1"></i> 8 min read</span>
+            </div>
+
+            <h2 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                How Agro Industries Can Cut Fuel Costs with Biomass Gasifier & Biogas Genset
+            </h2>
+
+            <p class="text-gray-600 mb-4">
+                Discover how agro-processing industries are reducing diesel dependency using biomass gasifier and
+                biogas genset systems for sustainable heat and electricity generation.
+            </p>
+        </div>
+
+        <div class="mt-auto pt-4 border-t border-gray-200">
+            <div class="author-badge flex items-center gap-3">
+                <div
+                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                    EB
+                </div>
+                <div>
+                    <div class="text-sm font-medium">Enersol Biopower</div>
+                    <div class="text-xs text-gray-500">Renewable Energy Solutions Team</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>
+
+                <!-- Card: The Halwai's Secret -->
+                <a href="./blogs/halwai-secret-save-30000-monthly-fuel-cost-biomass-stove.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">BIOMASS STOVE</span>
+                        <img src="../assets/blogs/stove/the-halwai-secret-save-30000-monthly-fuel-cost-biomass-stove.png"
+                            alt="The Halwai's Secret: Save ₹30,000/Month on Fuel with Biomass Stove"
+                            class="w-full h-full object-cover rounded-t-md" loading="lazy" decoding="async"
+                            fetchpriority="low">
+                    </div>
+
+                    <!-- Body -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 3 May 2026</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 8 min read</span>
+                            </div>
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                The Halwai's Secret: How to Save ₹30,000/Month on Fuel
+                            </h2>
+                            <p class="text-gray-600 mb-4">
+                                Fuel eats 30–40% of a sweet shop's profits. Discover how Indian halwais are slashing
+                                their LPG bill from ₹54,000 to just ₹9,000/month by switching to Enersol's
+                                Jumbo-Shakti biomass stoves — with ROI in under 45 days.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB</div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Clean Cooking &amp; Biomass Stove Team</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card: LPG vs Biomass ROI Guide -->
+                <a href="./blogs/lpg-vs-biomass-stove-cost-recovery-roi-guide.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">SAVINGS & ROI</span>
+                        <img src="../assets/blogs/stove/lpg-vs-biomass-stove-cost-recovery-roi-guide.png"
+                            alt="LPG vs Biomass Stove Cost Recovery ROI Guide"
+                            class="w-full h-full object-cover rounded-t-md" loading="lazy" decoding="async"
+                            fetchpriority="low">
+                    </div>
+
+                    <!-- Body -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 3 May 2026</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 7 min read</span>
+                            </div>
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                LPG vs. Biomass: How to Recover Your Stove Cost in Just 3 Months
+                            </h2>
+                            <p class="text-gray-600 mb-4">
+                                A step-by-step ROI guide showing how Enersol's biomass stoves pay for themselves in
+                                under 90 days. Includes cost comparison, 3-month recovery plan, and savings calculator
+                                for dhabas, sweet shops, hostels, and dairy farms.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB</div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Clean Cooking &amp; Biomass Stove Team</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card: Waste to Wealth -->
+                <a href="./blogs/turn-garden-waste-to-free-cooking-fuel-biomass-stove.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">WASTE TO ENERGY</span>
+                        <img src="../assets/blogs/stove/turn-garden-waste-to-free-cooking-fuel-biomass-stove.png"
+                            alt="Turn Garden and Farm Waste into Free Cooking Fuel with Biomass Stove"
+                            class="w-full h-full object-cover rounded-t-md" loading="lazy" decoding="async"
+                            fetchpriority="low">
+                    </div>
+
+                    <!-- Body -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 3 May 2026</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 10 min read</span>
+                            </div>
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                From Waste to Wealth: Turn Garden &amp; Farm Scrap into Free Cooking Fuel
+                            </h2>
+                            <p class="text-gray-600 mb-4">
+                                Your dry leaves, wheat straw, corn cobs, and garden waste are free fuel. Learn how
+                                Enersol Biopower's gasification technology converts farm scrap into a clean, smokeless
+                                flame — saving ₹15,000–₹25,000 per year for zero cost.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB</div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Clean Cooking &amp; Biomass Stove Team</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <!-- Card 1: Biomass Gasification Cost Savings -->
+                <a href="./blogs/agro-industry-fuel-cost-savings-biomass-gasification.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">AGRO-INDUSTRY</span>
+                        <img src="../assets/blogs/Agro-Industries-blog.png"
+                            alt="How Agro-Industries are Slashing Fuel Costs by 60% with Biomass Gasification"
+                            class="w-full h-full object-cover rounded-t-md" loading="lazy" decoding="async"
+                            fetchpriority="low">
+                    </div>
+
+                    <!-- Body -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 28 Apr 2026</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 12 min read</span>
+                            </div>
+
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                How Agro-Industries are Slashing Fuel Costs by 60% with Biomass Gasification
+                            </h2>
+
+                            <p class="text-gray-600 mb-4">
+                                Diesel bills draining your margins? See how rice mills, tea estates, and cold storage
+                                units are converting agricultural waste into producer gas — cutting fuel costs by 60%
+                                and achieving full ROI in 12–18 months.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-blue-700 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB
+                                </div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Biomass Gasifier &amp; Industrial Energy Team
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 2: Biochar Sustainable Farming -->
+                <a href="./blogs/biochar-sustainable-farming-circular-economy.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">CIRCULAR ECONOMY</span>
+                        <img src="../assets/blogs/biochar-sustainable-farming-circular-economy.png"
+                            alt="From Waste to Wealth: The Growing Role of Bio-Char in Sustainable Farming"
+                            class="w-full h-full object-cover rounded-t-md" loading="lazy" decoding="async"
+                            fetchpriority="low">
+                    </div>
+
+                    <!-- Body -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 28 Apr 2026</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 11 min read</span>
+                            </div>
+
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                From Waste to Wealth: The Growing Role of Bio-Char in Sustainable Farming
+                            </h2>
+
+                            <p class="text-gray-600 mb-4">
+                                Stubble burning is choking India's fields and skies. Discover how pyrolysis transforms
+                                crop waste into Bio-char — improving soil health, sequestering carbon, and supporting
+                                India's Net-Zero 2070 mission without a single field fire.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-green-700 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB
+                                </div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Pyrolysis &amp; Circular Economy Team</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./blogs/lpg-vs-biomass-wood-stove-save-60-percent-fuel-costs.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">LPG VS BIOMASS</span>
+                        <img src="../assets/blogs/biomass-wood-stove.png"
+                            alt="LPG vs Biomass Wood Stove: Save 60% on Fuel Costs"
+                            class="w-full h-full object-cover rounded-t-md" loading="eager" decoding="async"
+                            fetchpriority="low">
+                    </div>
+
+                    <!-- Body -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 14 Apr 2026</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 10 min read</span>
+                            </div>
+
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                LPG vs. Biomass Wood Stove: Why It's Time to Switch
+                            </h2>
+
+                            <p class="text-gray-600 mb-4">
+                                Commercial LPG hit Rs 2,078/cylinder in April 2026. Discover how Enersol Biopower's
+                                smokeless biomass stoves cut fuel costs by 60%+, protect kitchen workers' health, and
+                                free your business from global price shocks.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB
+                                </div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Clean Cooking &amp; Biomass Stove Team</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="./blogs/lpg-alternative-smokeless-biomass-stove-benefits.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">BIOMASS STOVE</span>
+                        <img src="../assets/blogs/lpg-alternative-smokeless-biomass-stove-featured.webp"
+                            alt="LPG Alternative for Cooking: Smokeless Biomass Stove Benefits & Comparison"
+                            class="w-full h-full object-cover rounded-t-md " loading="eager" decoding="async"
+                            fetchpriority="low">
+                    </div>
+
+                    <!-- Body -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 12 Mar 2026</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 8 min read</span>
+                            </div>
+
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                LPG Alternative for Cooking: Smokeless Biomass Stove Benefits & Comparison
+                            </h2>
+
+                            <p class="text-gray-600 mb-4">
+                                Looking for an LPG alternative for cooking? Explore smokeless biomass stove benefits,
+                                biomass stove vs LPG comparison, and sustainable clean cooking solutions for homes,
+                                small businesses, and commercial kitchens.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB
+                                </div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Clean Cooking &amp; Biomass Stove Team</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="./blogs/how-pyrolysis-unlocks-hidden-value-of-plastic-waste.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">PLASTIC PYROLYSIS</span>
+                        <img src="../assets/blogs/biomass-waste-pyrolysis-featured.webp"
+                            alt="How Pyrolysis Unlocks the Hidden Value of Plastic Waste"
+                            class="w-full h-full object-cover rounded-t-md " loading="eager" decoding="async"
+                            fetchpriority="low">
+                    </div>
+
+                    <!-- Body -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 02 Feb 2026</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 8 min read</span>
+                            </div>
+
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                How Pyrolysis Unlocks the Hidden Value of Plastic Waste
+                            </h2>
+
+                            <p class="text-gray-600 mb-4">
+                                Discover how biomass pyrolysis converts agricultural residues, wood waste, and crop
+                                by-products into valuable biochar,
+                                while recovering syngas and bio-oil for energy reuse.
+                                Reduce open burning, improve sustainability outcomes, and support circular economy goals
+                                with industrial-scale systems.
+                            </p>
+
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB
+                                </div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Pyrolysis &amp; Circular Economy Team</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="./blogs/biomass-vs-biogas-vs-pyrolysis.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">TECH COMPARISON</span>
+                        <img src="../assets/blogs/biomass-vs-biogas-vs-pyrolysis-main.webp"
+                            alt="Biomass vs Biogas vs Pyrolysis – Best Energy for Agro-Industries"
+                            class="w-full h-full object-cover rounded-t-md " loading="eager" decoding="async"
+                            fetchpriority="low">
+                    </div>
+
+                    <!-- Body -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 19 Jan 2026</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 9 min read</span>
+                            </div>
+
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                Biomass vs Biogas vs Pyrolysis: Best Energy for Agro-Industries
+                            </h2>
+
+                            <p class="text-gray-600 mb-4">
+                                Compare biomass gasification, biogas and pyrolysis to choose the best waste-to-energy
+                                path for your agro-industry.
+                                Understand inputs, outputs, costs, ROI timelines and ideal use cases.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB
+                                </div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Bioenergy Technical Team</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="./blogs/biochar-pyrolysis-plant-technology-benefits-project-planning-guide.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">PROJECT GUIDE</span>
+                        <img src="../assets/blogs/biochar-pyrolysis-plant-main.png"
+                            alt="Biochar Pyrolysis Plant Technology Benefits Project Planning Guide"
+                            class="w-full h-full object-cover rounded-t-md " loading="eager" decoding="async"
+                            fetchpriority="low">
+                    </div>
+
+                    <!-- Body -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 22 Nov 2025</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 11 min read</span>
+                            </div>
+
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                Biochar Pyrolysis Plant Technology, Benefits & Project Planning Guide
+                            </h2>
+
+                            <p class="text-gray-600 mb-4">
+                                Understand pyrolysis plant technology, equipment layout, cost components, benefits,
+                                project viability and step-by-step planning for successful biochar production plants.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB</div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Project Planning Team</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="./blogs/biochar-pyrolysis-plant-manufacturer-in-india-biochar-from-agro-waste.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">BIOCHAR INDUSTRY</span>
+                        <img src="../assets/blogs/biochar-pyrolysis-plant-main.png"
+                            alt="Biochar Pyrolysis Plant Manufacturer in India Biochar from Agro Waste"
+                            class="w-full h-full object-cover rounded-t-md " loading="eager" decoding="async"
+                            fetchpriority="low">
+                    </div>
+
+                    <!-- Body -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 15 Nov 2025</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 9 min read</span>
+                            </div>
+
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                Biochar Pyrolysis Plant Manufacturer in India – Biochar from Agro Waste
+                            </h2>
+
+                            <p class="text-gray-600 mb-4">
+                                Learn how biochar pyrolysis plants convert agro waste like paddy husk, coconut shells,
+                                groundnut shells and crop residues into high-carbon biochar for agriculture and
+                                industry.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB</div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Biochar Technology Team</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./blogs/biochar-pyrolysis-plant-working-benefits-technology-applications-models-and-pricing.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">BIOCHAR TECHNOLOGY</span>
+                        <img src="../assets/blogs/biochar-pyrolysis-plant-main.png"
+                            alt="Biochar Pyrolysis Plant Working Benefits Technology Applications Models Pricing"
+                            class="w-full h-full object-cover rounded-t-md " loading="eager" decoding="async"
+                            fetchpriority="low">
+                    </div>
+
+                    <!-- Body -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 10 Nov 2025</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 10 min read</span>
+                            </div>
+
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                Biochar Pyrolysis Plant – Working, Benefits, Technology, Applications, Models & Pricing
+                            </h2>
+
+                            <p class="text-gray-600 mb-4">
+                                A complete guide on biochar pyrolysis plants — covering working principles, temperature
+                                zones, product quality, technology choices, plant models and pricing for commercial
+                                projects.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB</div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Biochar Engineering Team</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./blogs/biogas-genset-working-design-benefits-buyers-guide-waste-to-energy.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">BIOGAS POWER</span>
+                        <img src="../assets/blogs/biogas-genset-main.png"
+                            alt="Biogas Genset Working and Design"
+                            class="w-full h-full object-cover rounded-t-md " loading="eager" decoding="async"
+                            fetchpriority="low">
+                    </div>
+
+                    <!-- Body + Footer -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <!-- Body -->
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 29 Oct 2025</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 9 min read</span>
+                            </div>
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                Biogas Genset: Working, Design, Benefits & Buyer’s Guide
+                            </h2>
+                            <p class="text-gray-600 mb-4">
+                                Understand the complete working of biogas gensets — from gas cleaning to combustion,
+                                efficiency, applications, sizing and cost considerations for waste-to-energy projects.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB</div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Biogas Engineering Team</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./blogs/troubleshooting-biogas-gensets-common-problems-causes-solutions.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">BIOGAS POWER</span>
+                        <img src="../assets/blogs/biogas-genset-troubleshooting-main.png"
+                            alt="Biogas Genset Troubleshooting Guide"
+                            class="w-full h-full object-cover rounded-t-md " loading="eager" decoding="async"
+                            fetchpriority="low">
+                    </div>
+
+                    <!-- Body + Footer -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 20 Oct 2025</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 8 min read</span>
+                            </div>
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                Troubleshooting Biogas Gensets: Common Problems, Causes & Practical Solutions
+                            </h2>
+                            <p class="text-gray-600 mb-4">
+                                A complete troubleshooting guide to solve starting issues, low power, knocking,
+                                gas-quality problems, misfiring, overheating, and electrical-trip failures in biogas
+                                gensets.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB</div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Clean Energy Team</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="./blogs/smokeless-biomass-stove-manufacturer-in-india-clean-cooking.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">CLEAN COOKING</span>
+                        <img src="../assets/blogs/biomass-stove-main.webp"
+                            alt="Smokeless Biomass Stove Manufacturer in India"
+                            class="w-full h-full object-cover rounded-t-md " loading="eager" decoding="async"
+                            fetchpriority="low">
+                    </div>
+
+                    <!-- Body -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 12 Oct 2025</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 6 min read</span>
+                            </div>
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                Smokeless Biomass Stove Manufacturer in India – Clean Cooking for All
+                            </h2>
+                            <p class="text-gray-600 mb-4">
+                                Discover how smokeless biomass stoves reduce emissions, improve efficiency, and provide
+                                cost-effective clean cooking for households, canteens and institutions across India.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB</div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Clean Cooking Team</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./blogs/biomass-stove-vs-biogas-vs-solar-cooking-comparison.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">TECH COMPARISON</span>
+                        <img src="../assets/blogs/biomass-stove-vs-biogas-solar-main.png"
+                            alt="Biomass vs Biogas vs Solar Cooking Comparison"
+                            class="w-full h-full object-cover rounded-t-md " loading="eager" decoding="async"
+                            fetchpriority="low">
+                    </div>
+
+                    <!-- Body -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 02 Oct 2025</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 7 min read</span>
+                            </div>
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                Biomass Stove vs Biogas vs Solar Cooking – Which Technology Is Best?
+                            </h2>
+                            <p class="text-gray-600 mb-4">
+                                A complete comparison of biomass, biogas and solar cooking systems — covering cost,
+                                efficiency, reliability, fuel availability, emissions and suitability for Indian
+                                kitchens.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB</div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Energy Research Team</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./blogs/biogas-gensets-biomass-gasifiers-clean-alternatives.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">CLEAN ENERGY</span>
+                        <img src="../assets/blogs/biogas-biomass.png" alt="Biogas Gensets vs Biomass Gasifiers"
+                            class="w-full h-full object-cover rounded-t-md lazy"
+                            data-src="../assets/blogs/biogas-biomass.png" loading="lazy" decoding="async"
+                            fetchpriority="low">
+                    </div>
+
+
+                    <!-- Body + Footer -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <!-- Body -->
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 29 Sep 2025</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 6 min read</span>
+                            </div>
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                Biogas Gensets & Biomass Gasifiers: Clean Alternatives to Diesel
+                            </h2>
+                            <p class="text-gray-600 mb-4">
+                                Discover how Enersol Biopower’s biogas gensets and biomass gasifiers offer
+                                renewable, cost-effective, and sustainable power. A proven alternative
+                                to diesel for rural communities, agro-industries, and global energy needs.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB</div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Clean Energy Team</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+
+                <a href="./blogs/biomass-gasifier-manufacturer-india.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">CLEAN ENERGY</span>
+                        <img src="../assets/blogs/biomass-manufacturer.png" alt="Biomass Gasifier Manufacturer in India"
+                            class="w-full h-full object-cover rounded-t-md lazy"
+                            data-src="../assets/blogs/biomass-manufacturer.png" loading="lazy" decoding="async"
+                            fetchpriority="low">
+                    </div>
+                    <!-- Body + Footer -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <!-- Body -->
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 29 Sep 2025</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 7 min read</span>
+                            </div>
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                Biomass Gasifier Manufacturer, Supplier & Exporter in India
+                            </h2>
+                            <p class="text-gray-600 mb-4">
+                                Explore Enersol Biopower’s role in renewable energy with biomass gasifiers
+                                and biogas solutions — driving India’s clean energy transition, rural
+                                empowerment, and global sustainability.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB</div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Clean Energy Team</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./blogs/biomass-gasifier-for-agro-industries.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">CLEAN ENERGY</span>
+                        <img src="../assets/blogs/Biomass%20Gasifier%20.jpeg" alt="Biomass Gasifier for Agro-Industries"
+                            class="w-full h-full object-cover rounded-t-md lazy"
+                            data-src="../assets/blogs/Biomass%20Gasifier%20.jpeg" loading="lazy" decoding="async"
+                            fetchpriority="low">
+                    </div>
+
+
+
+                    <!-- Body + Footer -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <!-- Body -->
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 19 Sep 2025</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 5 min read</span>
+                            </div>
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                Biomass Gasifier for Agro-Industries: Turning Agricultural Waste into Power
+                            </h2>
+                            <p class="text-gray-600 mb-4">
+                                Agro-industries generate huge amounts of crop residues daily. Biomass gasifiers convert
+                                this waste into
+                                clean energy—reducing costs, cutting pollution, and ensuring reliable power for rice
+                                mills, sugar
+                                factories, food processors, and more.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB</div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Clean Energy Team</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+
+                <a href="./blogs/institutional-biomass-stove-manufacturer-india-schools-hostels-community-kitchens.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">CLEAN COOKING</span>
+                        <img src="../assets/blogs/institutional-biomass-stove-main.png"
+                            alt="Institutional Biomass Stove Manufacturer in India"
+                            class="w-full h-full object-cover rounded-t-md " loading="eager" decoding="async"
+                            fetchpriority="low">
+                    </div>
+
+                    <!-- Body -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 18 Sep 2025</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 8 min read</span>
+                            </div>
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                Institutional Biomass Stove Manufacturer in India – For Schools, Hostels & Community
+                                Kitchens
+                            </h2>
+                            <p class="text-gray-600 mb-4">
+                                Learn how institutional biomass stoves deliver high-heat, smokeless, fuel-saving
+                                cooking for large-scale kitchens — widely used in schools, hostels, ashrams and
+                                community kitchens.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-green-600 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB</div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Institutional Cooking Team</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+
+                <a href="./blogs/biomass-gasifier-exporter-from-india.html"
+                    class="blog-card lazy shadow-card group flex flex-col h-full">
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">CLEAN ENERGY</span>
+                        <img src="https://ik.imagekit.io/enersolbiopower/blog/enersol-blog-2.png"
+                            alt="Biomass Gasifier Exporter from India"
+                            class="w-full h-full object-cover rounded-t-md lazy"
+                            data-src="https://ik.imagekit.io/enersolbiopower/blog/enersol-blog-2.png" loading="lazy"
+                            decoding="async" fetchpriority="low">
+                    </div>
+
+                    <!-- Body + Footer -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <!-- Body -->
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 20 Aug 2025</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 5 min read</span>
+                            </div>
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                Biomass Gasifier Exporter from India – Supplying Clean Energy Worldwide
+                            </h2>
+                            <p class="text-gray-600 mb-4">
+                                From Indian Farms to Global Power – Delivering Green Energy Across Continents. Around
+                                the world, communities and businesses are saying goodbye to expensive, polluting fuels
+                                like coal, diesel, and LPG.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-gray-400 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB</div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Clean Energy Innovators</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="./blogs/biomass-gasifier-clean-energy-crop-residue.html"
+                    class="blog-card shadow-card group flex flex-col h-full">
+                    <!-- Header -->
+                    <div class="relative h-52">
+                        <span class="category-tag">CLEAN ENERGY</span>
+                        <img src="https://ik.imagekit.io/enersolbiopower/enersol/blogs/biomass_gassifuer_01.webp"
+                            alt="Biomass Gasifier - Clean Energy from Crop Residue"
+                            class="w-full h-full object-cover rounded-t-md lazy"
+                            data-src="https://ik.imagekit.io/enersolbiopower/enersol/blogs/biomass_gassifuer_01.webp"
+                            loading="lazy" decoding="async" fetchpriority="low">
+                    </div>
+
+                    <!-- Body + Footer -->
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                        <!-- Body -->
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 28 Jul 2025</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 4 min read</span>
+                            </div>
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                Biomass Gasifier: Harnessing Clean Energy from Crop Residue
+                            </h2>
+                            <p class="text-gray-600 mb-4">
+                                India burns over 500 million tonnes of agri-waste annually, harming the environment.
+                                Biomass
+                                gasification offers a clean, decentralized energy solution—transforming rural pollution
+                                into
+                                rural power.
+                            </p>
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-gray-400 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    RP</div>
+                                <div>
+                                    <div class="text-sm font-medium">Raj Patel</div>
+                                    <div class="text-xs text-gray-500">Energy Researcher</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog Card 2 -->
+                <!-- <a href="./blogs/inspirational .html" class="blog-card lazy shadow-card group flex flex-col h-full">
+
+                    <div class="relative h-52">
+                        <div class="category-tag">
+                            INSPIRATIONAL</div>
+                        <img src="../assets/blogs/blog-02.png" alt="Rai Singh Dahiya Story"
+                            class="w-full h-full object-cover rounded-t-md" />
+                    </div>
+
+
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 12 Feb 2025</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 6 min read</span>
+                            </div>
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                From Village Soil to Rashtrapati Bhavan: The Soul-Stirring Journey of Mr. Rai Singh
+                                Dahiya
+                            </h2>
+                            <p class="text-gray-600 mb-4">
+                                🌱 <strong>A Seed Was Sown in Silence</strong><br />
+                                In the sun-baked lanes of Pili Madori (Haryana), later in Thalarka (Rajasthan), a young
+                                boy
+                                watched the world without schoolbooks or streetlights — only with a sharp mind and
+                                burning
+                                questions. His classroom was the open field. His teachers? Curiosity, failure, and
+                                resilience.
+                            </p>
+                        </div>
+
+
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-gray-400 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    RD</div>
+                                <div>
+                                    <div class="text-sm font-medium">Rai Singh Dahiya</div>
+                                    <div class="text-xs text-gray-500">Farmer & Changemaker</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a> -->
+
+                <!-- Blog Card 3 -->
+                <!-- <a href="./blogs/Technology.html" class="blog-card lazy shadow-card group flex flex-col h-full">
+                    
+                    <div class="relative h-52">
+                        <div class="category-tag ">
+                            TECHNOLOGY</div>
+                        <img src="../assets/blogs/blog-03.png" alt="Biogas vs Biomass"
+                            class="w-full h-full object-cover rounded-t-md" />
+                    </div>
+
+                    
+                    <div class="flex flex-col flex-grow p-6 bg-white rounded-b-md">
+                       
+                        <div class="flex-grow">
+                            <div class="flex justify-between items-center mb-3">
+                                <span class="text-sm text-gray-500">Updated: 28 July 2025</span>
+                                <span class="read-time"><i class="far fa-clock mr-1"></i> 5 min read</span>
+                            </div>
+                            <h2
+                                class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors duration-300">
+                                Biogas Genset vs Biomass Gasifier – Which Is Better for Electricity Generation?
+                            </h2>
+                            <p class="text-gray-600 mb-4">
+                                In the world of sustainable energy, two technologies are gaining rapid attention for
+                                decentralized power generation — Biogas Gensets and Biomass Gasifiers. But which one is
+                                right for your specific application? Whether you’re a dairy farm, gaushala,
+                                agro-industrial
+                                unit, or a rural entrepreneur, this guide will help you choose the best fit for your
+                                power
+                                needs.
+                            </p>
+                        </div>
+
+                        
+                        <div class="mt-auto pt-4 border-t border-gray-200">
+                            <div class="author-badge flex items-center gap-3">
+                                <div
+                                    class="author-avatar bg-gray-400 w-8 h-8 flex items-center justify-center rounded-full text-white font-bold text-sm">
+                                    EB</div>
+                                <div>
+                                    <div class="text-sm font-medium">Enersol Biopower</div>
+                                    <div class="text-xs text-gray-500">Clean Energy Innovators</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a> -->
+
+            </div>
+
         </section>
+        </div><!-- end panel-blog -->
 
+        <!-- NEWS PANEL -->
+        <div id="panel-news" class="hidden">
+            <div class="py-4">
 
+                <!-- Section label -->
+                <div class="flex items-center gap-4 mb-8">
+                    <span class="inline-flex items-center gap-1.5 bg-gray-900 text-white text-xs font-bold px-4 py-1.5 uppercase tracking-widest">
+                        <i class="ri-newspaper-line"></i> Press Coverage
+                    </span>
+                    <div class="flex-1 h-px bg-gray-400"></div>
+                </div>
 
+                <!-- News List -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                    <!-- ── News Card 1: Paris Award ── -->
+                    <article class="bg-white rounded-xl shadow-card border border-gray-100 overflow-hidden flex flex-col group">
+                        <div class="relative h-48 overflow-hidden">
+                            <span class="absolute top-3 left-3 z-10 bg-gray-900 text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">
+                                <i class="ri-newspaper-line mr-1"></i> Dainik Bhaskar
+                            </span>
+                            <img src="../assets/blogs/rai-singh-dahiya-enersol-biopower-paris-award.png"
+                                alt="Rai Singh Dahiya Paris Award"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                loading="lazy">
+                        </div>
+                        <div class="p-5 flex flex-col flex-1">
+                            <p class="text-xs text-gray-400 mb-2">June 8, 2026 &nbsp;·&nbsp; Innovation Award</p>
+                            <h2 class="text-base font-bold text-gray-900 leading-snug mb-2">
+                                Rai Singh Dahiya Honoured in Paris for Grassroots Clean Energy Innovation
+                            </h2>
+                            <p class="text-sm text-gray-500 mb-4 line-clamp-1">
+                                From Rajasthan's fields to Paris — Enersol Biopower receives Innovation Team Best Practices 2026.
+                            </p>
+                            <div class="mt-auto">
+                                <a href="./news/rai-singh-dahiya-enersol-biopower-paris-award.html"
+                                    class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-primary-dark hover:text-primary transition-colors duration-200">
+                                    Read More <i class="ri-arrow-right-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- ── Add more news cards here ── -->
+
+                </div><!-- end news list -->
+
+            </div>
+        </div><!-- end panel-news -->
+
+        <script>
+            function switchTab(tab) {
+                ['blog', 'news'].forEach(function(t) {
+                    document.getElementById('panel-' + t).classList.add('hidden');
+                    document.getElementById('tab-' + t).classList.remove('active-tab');
+                });
+                document.getElementById('panel-' + tab).classList.remove('hidden');
+                document.getElementById('tab-' + tab).classList.add('active-tab');
+                history.replaceState(null, '', '#' + tab);
+            }
+            var hash = window.location.hash.replace('#', '');
+            if (hash === 'blog' || hash === 'news') switchTab(hash);
+        </script>
 
     </main>
+    <!-- Footer Section -->
+    <footer class="bg-primary-dark text-white body-font">
+        <div
+            class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col justify-center">
+            <!-- Logo and Info Section -->
+            <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                    <!-- Adjusted Logo -->
+                </a>
+                <div class="flex justify-start lg:w-0 lg:flex-1"><a
+                        class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                    </a><a href="#">
+                        <img class="h-12 w-auto sm:h-14 object-contain lazy"
+                            src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
+                            alt="Enersol Biopower" style="min-width: 150px;"
+                            data-src="https://ik.imagekit.io/enersolbiopower/enersol/blogs/erersollogo.webp"
+                            loading="lazy" decoding="async" fetchpriority="low">
+                    </a>
+                </div>
+
+
+                <p class="mt-2 text-sm text-gray-300">Innovative Renewable Energy Solutions for a Sustainable Future</p>
+            </div>
+
+            <!-- Column 1: Categories -->
+            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Explore</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="/">Home</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="./about-us.html">About
+                                Us</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="./our-story.html">Our
+                                Story</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="./products.html">Products</a>
+                        </li>
+                    </nav>
+                </div>
+
+                <!-- Column 2: Categories -->
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">Company</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="./contact-us.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="./blogs.html">Blogs &amp;
+                                News</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="./privacy-policy.html">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="./term-and-condition.html" class="text-gray-300 hover:text-gray-200">Terms of
+                                Service</a>
+                        </li>
+                        <li>
+                            <a href="./refund-policy.html" class="text-gray-300 hover:text-gray-200">Refund
+                                Policy</a>
+                        </li>
+                    </nav>
+                </div>
+
+                <!-- Column 3: Categories -->
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="./#achievements">Our
+                                Achievements</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="/#testimonials">Testimonials</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="./about-us.html#our-history">Our
+                                History</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="./about-us.html#mission">Mission &amp;
+                                Vission</a>
+                        </li>
+                    </nav>
+                </div>
+
+                <!-- Contact Column (with icons) -->
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
+                        Contact
+                    </h2>
+                    <nav class="list-none mb-10 footer-contact ">
+                        <!-- Address -->
+                        <style>
+                            @media (max-width: 768px) {
+                                .addressList {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    /* Centers the list */
+                                    text-align: center;
+                                    /* Ensures text is centered */
+                                }
+
+                                .addressList li {
+                                    justify-content: center;
+                                    /* Centers content horizontally */
+                                }
+                            }
+                        </style>
+                        <div class="addressList justify-center">
+                            <li class="text-gray-300 flex items-start">
+                                <!-- Address Icon -->
+                                <i class="ri-map-pin-fill mr-2 text-white"></i>
+                                <span class="block">Enersol Biopower Private Limited
+                                    Plot No. 57 A, Vrindavan Vihar, Akeda Dunder, laxminarayanpura, VKI Road No .19,
+                                    Jaipur-302013</span>
+                            </li>
+                            <!-- Phone -->
+                            <li class="text-gray-300 flex items-start">
+                                <!-- Phone Icon -->
+                                <i class="ri-phone-fill mr-2 text-white"></i>
+                                <span class="block">+91-9414535665</span>
+                            </li>
+                            <li class="text-gray-300 flex items-start">
+                                <i class="ri-phone-fill mr-2 text-white"></i>
+                                <span class="block">+91-8239554433</span>
+                            </li>
+                            <!-- Email -->
+                            <li class="text-gray-300 flex items-start">
+                                <!-- Email Icon -->
+                                <i class="ri-mail-fill mr-2 text-white"></i>
+                                <a href="mailto:info@enersolbiopower.com"
+                                    class="block hover:text-white">info@enersolbiopower.com</a>
+                            </li>
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="brand-logo flex flex-wrap items-center justify-center bg-white p-2 sm:p-4 gap-3 sm:gap-6">
+
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/nif-logo-1.webp" alt="NIF Logo"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/nif-logo-1.webp" loading="lazy"
+                decoding="async" fetchpriority="low"
+                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/gian.webp" alt="GIAN"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/gian.webp" loading="lazy"
+                decoding="async" fetchpriority="low"
+                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp"
+                alt="Swachh Bharat"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp"
+                loading="lazy" decoding="async" fetchpriority="low"
+                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/junagadh_agriculture_university.webp"
+                alt="Junagadh Agriculture University"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/junagadh_agriculture_university.webp"
+                loading="lazy" decoding="async" fetchpriority="low"
+                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/sustainable-energy.webp?updatedAt=1762515792165"
+                alt="Sustainable Energy"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/sustainable-energy.webp?updatedAt=1762515792165"
+                loading="lazy" decoding="async" fetchpriority="low"
+                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Make_In_India_new.webp?updatedAt=1754911304078"
+                alt="Make in India"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Make_In_India_new.webp?updatedAt=1754911304078"
+                loading="lazy" decoding="async" fetchpriority="low"
+                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="bg-gray-800">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+               <p class="text-gray-500 text-sm text-center sm:text-left">
+    © <span id="currentYear"></span> Enersol Biopower — All Rights Reserved
+</p>
+
+<script>
+    document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+</script>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                    <a class="text-gray-500" target="_blank" href="https://www.facebook.com/enersolbiopwr">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500" target="_blank"
+                        href="https://www.youtube.com/@enersolbiopower-wastetoenergy">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+
+                    </a>
+                    <a class="ml-3 text-gray-500" target="_blank" href="https://www.instagram.com/enersol_biopower/">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500" target="_blank"
+                        href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
     <script src="../js/main.js"></script>
+    <script>
+        window.ThundergitsBotConfig = {
+            apiUrl: 'https://custom-domain.com/api/',
+            conversationFlowUrl: 'https://bot-backend.thundergits.com/cdn/conversation/enersole-conversation-flow.json',
+            position: 'bottom-left', // bottom-right, bottom-left, top-right, top-left
+            theme: {
+                primaryColor: '#03459b',
+                secondaryColor: '#03459b',
+                textColor: '#1F2937',
+                backgroundColor: '#FFFFFF'
+            },
+            name: "Enersol Bio Power"
+        };
+    </script>
+    <!-- <script src="https://bot-backend.thundergits.com/cdn/bot.js"></script> -->
+
+
+    <!-- WhatsApp Floating Button -->
+    <div id="whatsApp-floating-btn"
+        class="fixed right-5 bottom-[10px] sm:right-4 sm:bottom-[10px] z-40 w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-full shadow-xl cursor-pointer flex items-center justify-center border border-green-600 transition-transform transform hover:scale-110 hover:shadow-2xl"
+        title="Chat on WhatsApp">
+        <img src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp" alt="WhatsApp"
+            class="w-12  sm:w-16 lazy"
+            data-src="https://ik.imagekit.io/enersolbiopower/enersol/blogs/whatsApp-icon.webp" loading="lazy"
+            decoding="async" fetchpriority="low">
+    </div>
+    <script src="../js/whatsapp-btn.js"></script>
+
+
+
+    <style data-lazy-css="1">
+        img.lazy {
+            opacity: 0;
+            transition: opacity .35s ease;
+        }
+
+        img.lazy.loaded {
+            opacity: 1;
+        }
+    </style>
+
+
+
+
+    <script data-lazy-loader="1">
+        (function () {
+            const SEL = "img.lazy[data-src]";
+            function loadNow(img) {
+                img.src = img.dataset.src;
+                img.onload = function () { img.classList.add("loaded"); };
+                img.removeAttribute("data-src");
+            }
+            if (!("IntersectionObserver" in window)) {
+                document.querySelectorAll(SEL).forEach(loadNow);
+                return;
+            }
+            const io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) return;
+                    loadNow(entry.target);
+                    io.unobserve(entry.target);
+                });
+            }, { rootMargin: "250px 0px" });
+            document.querySelectorAll(SEL).forEach(function (img) { io.observe(img); });
+        })();
+    </script>
 </body>
 
 </html>

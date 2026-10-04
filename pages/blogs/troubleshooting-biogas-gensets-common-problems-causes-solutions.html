@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MV8ZQKRT');</script>
+<!-- End Google Tag Manager -->
+<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-59WXVBZ5RQ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-59WXVBZ5RQ');
+    </script>
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://enersolbiopower.com/pages/blogs/troubleshooting-biogas-gensets-common-problems-causes-solutions.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/logo/fav-icon.png">
+
+    <title>Biogas Genset Troubleshooting Guide | Common Problems, Causes & Solutions</title>
+    <meta name="description"
+        content="A practical biogas genset troubleshooting guide covering common symptoms, root causes and field-tested solutions related to gas quality, engine, and electrical systems.">
+
+
+    <!-- Open Graph / Social SEO -->
+    <meta property="og:title" content="Troubleshooting Biogas Gensets: Common Problems, Causes & Practical Solutions">
+    <meta property="og:description"
+        content="A practical troubleshooting guide for biogas gensets covering starting issues, low power, knocking, overheating, gas quality and maintenance best practices.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://enersolbiopower.com/blogs/biogas-genset-troubleshooting">
+    <meta property="og:image" content="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/erersollogo.webp">
+    <meta property="og:site_name" content="Enersol Biopower Pvt. Ltd.">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Troubleshooting Biogas Gensets: Common Problems, Causes & Practical Solutions">
+    <meta name="twitter:description"
+        content="Step-by-step guidance to diagnose and solve common biogas genset problems in farms, gaushalas, STPs and industrial biogas projects.">
+    <meta name="twitter:image"
+        content="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/erersollogo.webp">
+
+    <!-- Article structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://enersolbiopower.com/blogs/biogas-genset-troubleshooting"
+      },
+      "headline": "Troubleshooting Biogas Gensets: Common Problems, Causes & Practical Solutions",
+      "description": "A detailed troubleshooting guide for biogas gensets, covering common operating problems, likely causes and practical solutions for reliable biogas-based power generation.",
+      "image": "https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/erersollogo.webp",
+      "author": {
+        "@type": "Organization",
+        "name": "Enersol Biopower Pvt. Ltd."
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Enersol Biopower Pvt. Ltd.",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/erersollogo.webp"
+        }
+      },
+      "datePublished": "2025-10-20",
+      "dateModified": "2025-10-20"
+    }
+  </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;family=Roboto:wght@300;400;500;700&amp;display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                        roboto: ['Roboto', 'sans-serif']
+                    },
+                    colors: {
+                        primary: {
+                            DEFAULT: '#299FD3',
+                            light: '#4FB5E0',
+                            dark: 'rgb(3 69 155)',
+                        },
+                        secondary: {
+                            DEFAULT: '#C7D110',
+                            light: '#D4DB50',
+                            dark: '#909B0B',
+                        },
+                        accentYellow: {
+                            DEFAULT: '#FED400',
+                            light: '#FFE766',
+                            dark: '#CCAA00',
+                        },
+                        accentRed: {
+                            DEFAULT: '#9B1418',
+                            light: '#C91B1F',
+                            dark: '#740F12',
+                        },
+                        gradientBlueGreen: {
+                            DEFAULT: 'linear-gradient(90deg, #299FD3 0%, #C7D110 100%)',
+                        },
+                        gradientYellowGreen: {
+                            DEFAULT: 'linear-gradient(90deg, #FED400 0%, #C7D110 100%)',
+                        },
+                    },
+                    boxShadow: {
+                        'card': '0 10px 30px -15px rgba(0, 0, 0, 0.1)',
+                        'highlight': '0 0 0 4px rgba(41, 159, 211, 0.2)',
+                        'soft': '0 4px 20px rgba(0, 0, 0, 0.08)',
+                        'section': '0 4px 30px rgba(0, 0, 0, 0.05)'
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: 0 },
+                            '100%': { opacity: 1 },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    },
+                },
+            },
+        };
+    </script>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .prose h1,
+        .prose h2,
+        .prose h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .prose p,
+        .prose li {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.7;
+        }
+
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #299FD3, #C7D110, transparent);
+        }
+
+        .gradient-bg {
+            background: linear-gradient(120deg, #f0f9ff 0%, #f8ffe5 100%);
+        }
+
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .highlight-box {
+            position: relative;
+        }
+
+        .highlight-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, #299FD3, #C7D110);
+            border-radius: 2px;
+        }
+    </style>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://enersolbiopower.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://enersolbiopower.com/pages/blogs.html"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Troubleshooting Biogas Gensets: Common Problems, Causes & Pr",
+      "item": "https://enersolbiopower.com/pages/blogs/troubleshooting-biogas-gensets-common-problems-causes-solutions.html"
+    }
+  ]
+}
+  </script>
+</head>
+
+<body class="bg-gray-50">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MV8ZQKRT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Top Bar -->
+    <div class="bg-gray-800 py-2">
+        <div class="container mx-auto px-4 flex flex-wrap justify-between items-center">
+            <!-- Right: Email + Social -->
+            <div class="flex flex-wrap justify-between w-full md:w-auto items-center space-x-4 ">
+                <div class="flex items-center space-x-2 text-white">
+                    <i class="ri-mail-line"></i>
+                    <a href="mailto:info@enersolbiopower.com">info@enersolbiopower.com</a>
+                </div>
+                <div class="flex space-x-2">
+                    <a href="https://www.facebook.com/enersolbiopwr" class="text-white">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy" class="text-white">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/enersol_biopower/" class="text-white">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/" class="text-white">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Left: Phones -->
+            <div class="flex flex-wrap justify-between w-full md:w-auto space-x-4 mt-4 md:mt-0">
+                <div class="flex items-center space-x-2 text-white">
+                    <i class="ri-phone-line"></i>
+                    <a href="tel:+919414535665">+91-9414535665</a>
+                </div>
+                <div class="flex items-center space-x-2 text-white">
+                    <i class="ri-phone-line"></i>
+                    <a href="tel:+918239554433">+91-8239554433</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Social Bar -->
+    <div id="sticky-social"
+        class="fixed top-1/3 left-2 z-50 hidden flex-col space-y-2 bg-black bg-opacity-60 p-2.5 rounded-lg shadow-md">
+        <a href="https://www.facebook.com/enersolbiopwr"
+            class="text-white text-[28px] hover:text-blue-500 transition duration-300">
+            <i class="ri-facebook-fill"></i>
+        </a>
+        <a href="https://www.youtube.com/@enersolbiopower-wastetoenergy"
+            class="text-white text-[28px] hover:text-red-500 transition duration-300">
+            <i class="ri-youtube-fill"></i>
+        </a>
+        <a href="https://www.instagram.com/enersol_biopower/"
+            class="text-white text-[28px] hover:text-pink-500 transition duration-300">
+            <i class="ri-instagram-fill"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/"
+            class="text-white text-[28px] hover:text-blue-400 transition duration-300">
+            <i class="ri-linkedin-fill"></i>
+        </a>
+    </div>
+
+    <!-- Navbar -->
+    <div class="bg-primary-dark sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4 md:justify-start md:space-x-10">
+                <!-- Logo -->
+                <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <a href="/">
+                        <img class="h-12 w-auto sm:h-14 lazy"
+                            src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
+                            alt="Enersol Biopower"
+                            data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/erersollogo.webp"
+                            loading="lazy" decoding="async" fetchpriority="low">
+                    </a>
+                </div>
+                <!-- Mobile toggle -->
+                <div class="-mr-2 -my-2 md:hidden">
+                    <button type="button"
+                        class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-accentYellow-dark hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                        id="mobile-menu-button" aria-expanded="false" aria-controls="mobile-menu">
+                        <span class="sr-only">Open menu</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" aria-hidden="true" style="color: white;">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-10">
+                    <a href="./../../index.html"
+                        class="text-base font-medium text-white hover:text-accentYellow-light">Home</a>
+                    <a href="../about-us.html"
+                        class="text-base font-medium text-white hover:text-accentYellow-light">About Us</a>
+                    <a href="../our-story.html"
+                        class="text-base font-medium text-white hover:text-accentYellow-light">Our Story</a>
+                    <div class="relative inline-block group">
+                        <!-- Products link -->
+                        <a href="./products.html"
+                            class="text-base font-medium text-white hover:text-accentYellow-light inline-flex items-center gap-1">
+                            Products
+                            <svg class="w-4 h-4 mt-0.5 transition-transform duration-200 group-hover:rotate-180"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+
+                        <!-- Dropdown (attached to Products) -->
+                        <div class="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl border border-gray-200
+           opacity-0 invisible group-hover:opacity-100 group-hover:visible
+           transition-all duration-150 z-50">
+
+                            <a href="./biomass-gasifier-manufacturer-india.html"
+                                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary rounded-t-lg">
+                                Biomass Gasifier
+                            </a>
+
+                            <a href="../biomass-stove-manufacturer-india.html"
+                                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary">
+                                Biomass Stove
+                            </a>
+
+                            <a href="../biogas-genset-manufacturer-india.html"
+                                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary">
+                                Biogas Genset
+                            </a>
+
+                            <a href="../biomass-pyrolysis-plant-manufacturer-india.html"
+                                class="block px-5 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary rounded-b-lg">
+                                Pyrolysis Plant
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="../blogs.html"
+                        class="text-base font-medium text-white hover:text-accentYellow-light">Blogs</a>
+                    <a href="../contact-us.html"
+                        class="text-base font-medium text-white hover:text-accentYellow-light">Contact Us</a>
+                </nav>
+
+                <!-- CTA -->
+                <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+                    <a href="../contact-us.html"
+                        class="whitespace-nowrap text-base font-medium bg-white hover:bg-gray-100 text-gray-800 px-4 py-2 rounded-md">
+                        Get a Quote
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="fixed inset-y-0 right-0 w-3/4 bg-white text-white transform translate-x-full transition-transform duration-300 ease-in-out"
+            id="mobile-menu" style="display: none;z-index: 10;">
+            <div>
+                <div class="pt-5 pb-6 ">
+                    <div class="flex items-center justify-between px-5">
+                        <div>
+                            <img class="h-8 w-auto lazy"
+                                src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
+                                alt="Enersol Biopower"
+                                data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/erersollogo.webp"
+                                loading="lazy" decoding="async" fetchpriority="low">
+                        </div>
+                        <div class="-mr-2">
+                            <button type="button"
+                                class="bg-primary rounded-md p-2 inline-flex items-center justify-center text-white hover:text-white hover:bg-primary-light focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                                onclick="toggleMobileMenu()">
+                                <span class="sr-only">Close menu</span>
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-6 px-5 border-t border-gray-300 pt-5">
+                        <nav class="grid gap-y-8">
+                            <a href="./../../index.html"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">Home</a>
+                            <a href="../about-us.html"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">About Us</a>
+                            <a href="../our-story.html"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">Our Story</a>
+                            <a href="../products.html"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">Products</a>
+                            <a href="../blogs.html"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">Blogs</a>
+                            <a href="../contact-us.html"
+                                class="text-base font-medium text-black hover:text-accentYellow-light">Contact Us</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="py-6 px-5 space-y-6">
+                    <div>
+                        <a href="../contact-us.html"
+                            class="w-full flex items-center justify-center px-4 py-2 rounded-md text-base font-medium text-white bg-gray-800 hover:bg-secondary-dark">
+                            Get a Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section (same banner as other blogs) -->
+    <div class="relative bg-cover bg-center h-[400px] mb-10"
+        style="background-image: url('../../assets/blogs/banner_for_all.png');">
+        <div class="absolute inset-0" style="background:linear-gradient(to top, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.18) 50%, transparent 100%);"></div>
+    <div class="absolute bottom-0 left-0 right-0 z-10 px-6 pb-6 md:px-10 md:pb-8 max-w-3xl">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white leading-tight mb-2 drop-shadow">
+                    Enersol Insights
+                </h2>
+        <p class="text-sm md:text-base text-white/85 leading-relaxed drop-shadow">
+                    Practical field guidance to keep your biogas power plant running reliably and efficiently.
+                </p>
+    </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 lg:px-8 py-12 mt-10">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Blog Content -->
+            <div class="lg:col-span-2 bg-white p-6 md:p-8 rounded-xl shadow-section">
+                <div class="flex items-center mb-6">
+                    <div class="bg-primary-light text-white px-3 py-1 rounded-full text-sm font-medium">
+                        Biogas Power
+                    </div>
+                    <span class="mx-3 text-gray-400">•</span>
+                    <span class="text-gray-500">October 20, 2025</span>
+                </div>
+
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-primary-dark leading-tight font-poppins">
+                    Troubleshooting Biogas Gensets: Common Problems, Causes & Practical Solutions
+                </h1>
+
+                <p class="text-xl mb-8 italic text-gray-600">
+                    A biogas genset can turn waste into valuable electricity and heat—but only if it runs
+                    reliably. When the engine refuses to start, runs roughly or trips frequently, the entire
+                    project suffers. This troubleshooting guide helps plant operators, engineers and project
+                    owners diagnose common biogas genset problems and solve them systematically.
+                </p>
+
+                <!-- Featured Image (dummy, replace data-src later) -->
+                <!-- Featured Image -->
+<figure class="mb-8">
+                    <img src="./../../assets/blogs/biogas-genset-troubleshooting-main.png"
+                        alt="Biogas Genset Troubleshooting in a Biogas Power Plant"
+                        class="w-full max-h-[500px] border-4 border-white object-contain">
+                    <figcaption class="text-center text-gray-500 mt-2 text-sm">
+                        Biogas genset in operation at a biogas plant. (Replace this placeholder image with your
+                        actual genset or project photo.)
+                    </figcaption>
+                </figure>
+<article class="prose lg:prose-xl max-w-none">
+                    <!-- Intro: Why troubleshooting matters -->
+                    <section class="mb-10">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-primary-light p-2 rounded-full mr-3">
+                                <i class="ri-plug-line text-white text-xl"></i>
+                            </div>
+                            <h2 class="text-3xl font-bold text-primary-dark font-poppins mt-1">
+                                Why Biogas Genset Troubleshooting Is Different from Diesel
+                            </h2>
+                        </div>
+
+                        <p class="text-gray-700 mb-4">
+                            Many biogas plants are designed around familiar diesel-generator thinking. The
+                            assumption is simple: if a diesel genset runs smoothly, a biogas genset should behave
+                            similarly. In practice, biogas fuel is more variable—its quality depends on feedstock,
+                            digestion, gas cleaning and daily operating habits. That means troubleshooting a
+                            biogas genset is always a combination of:
+                        </p>
+
+                        <ul class="list-disc list-inside text-gray-700 mb-4">
+                            <li><strong>Engine-side checks</strong> (spark plugs, ignition, lubrication, cooling).</li>
+                            <li><strong>Gas-side checks</strong> (pressure, methane percentage, H₂S, moisture).
+                            </li>
+                            <li><strong>Electrical-side checks</strong> (load, voltage, frequency, protection
+                                relays).</li>
+                        </ul>
+
+                        <p class="text-gray-700">
+                            This guide is structured according to real-world symptoms that operators typically
+                            see on site. For each symptom, we outline likely causes and give practical checks and
+                            actions. It is not a replacement for engine manuals or experienced service
+                            technicians, but it can make your troubleshooting faster and more systematic.
+                        </p>
+                    </section>
+
+                    <div class="section-divider my-10"></div>
+
+                    <!-- Quick reference table -->
+                    <section class="mb-10">
+                        <div class="flex items-center mb-6">
+                            <div class="bg-primary-light p-3 rounded-full mr-4 shadow-md">
+                                <i class="ri-table-line text-white text-2xl"></i>
+                            </div>
+                            <h2 class="text-3xl font-bold text-primary-dark font-poppins">
+                                Quick Reference: Common Biogas Genset Symptoms and Likely Causes
+                            </h2>
+                        </div>
+
+                        <div class="overflow-x-auto rounded-xl shadow-md border border-gray-200 mb-4">
+                            <table class="min-w-full bg-white text-sm">
+                                <thead class="bg-primary-light text-white">
+                                    <tr>
+                                        <th class="px-4 py-3 text-left font-semibold uppercase tracking-wide">
+                                            Symptom
+                                        </th>
+                                        <th class="px-4 py-3 text-left font-semibold uppercase tracking-wide">
+                                            Likely Area
+                                        </th>
+                                        <th class="px-4 py-3 text-left font-semibold uppercase tracking-wide">
+                                            Typical Causes
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200 text-gray-700">
+                                    <tr class="hover:bg-gray-50 transition">
+                                        <td class="px-4 py-3">Engine does not start</td>
+                                        <td class="px-4 py-3">Gas / ignition / safety</td>
+                                        <td class="px-4 py-3">Low gas pressure, poor gas quality, ignition fault, safety
+                                            interlock active</td>
+                                    </tr>
+                                    <tr class="bg-gray-50 hover:bg-gray-100 transition">
+                                        <td class="px-4 py-3">Frequent misfiring</td>
+                                        <td class="px-4 py-3">Gas / ignition</td>
+                                        <td class="px-4 py-3">Uneven gas flow, moisture, weak spark, wrong plug gap</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 transition">
+                                        <td class="px-4 py-3">Low power output</td>
+                                        <td class="px-4 py-3">Gas / engine / load</td>
+                                        <td class="px-4 py-3">Low methane, restricted intake, incorrect timing,
+                                            overloading</td>
+                                    </tr>
+                                    <tr class="bg-gray-50 hover:bg-gray-100 transition">
+                                        <td class="px-4 py-3">Knocking or pinging</td>
+                                        <td class="px-4 py-3">Gas / timing</td>
+                                        <td class="px-4 py-3">High H₂S, high compression temperature, advanced ignition
+                                            timing</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 transition">
+                                        <td class="px-4 py-3">High exhaust temperature</td>
+                                        <td class="px-4 py-3">Cooling / mixture</td>
+                                        <td class="px-4 py-3">Lean mixture, cooling system issues, overloading</td>
+                                    </tr>
+                                    <tr class="bg-gray-50 hover:bg-gray-100 transition">
+                                        <td class="px-4 py-3">Frequent tripping</td>
+                                        <td class="px-4 py-3">Electrical</td>
+                                        <td class="px-4 py-3">Overload, under-frequency, protection settings, poor
+                                            earthing</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 transition">
+                                        <td class="px-4 py-3">Corrosion and deposits</td>
+                                        <td class="px-4 py-3">Gas quality</td>
+                                        <td class="px-4 py-3">High H₂S, moisture carry-over, inadequate gas cleaning
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p class="text-gray-700 text-sm">
+                            Note: Always follow OEM safety instructions and lockout/tagout procedures before
+                            working on electrical and mechanical systems.
+                        </p>
+                    </section>
+
+                    <div class="section-divider my-10"></div>
+
+                    <!-- Engine will not start -->
+                    <section class="mb-10">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-primary-light p-2 rounded-full mr-3">
+                                <i class="ri-shut-down-line text-white text-xl"></i>
+                            </div>
+                            <h2 class="text-3xl font-bold text-primary-dark font-poppins mt-1">
+                                Problem 1: Biogas Genset Does Not Start
+                            </h2>
+                        </div>
+
+                        <p class="text-gray-700 mb-4">
+                            A non-starting genset is one of the most frustrating issues for plant operators. It
+                            usually points to problems in three areas: <strong>gas supply</strong>,
+                            <strong>ignition</strong> or <strong>safety interlocks</strong>.
+                        </p>
+
+                        <h3 class="text-2xl font-semibold text-primary-dark mb-3">
+                            Step-by-Step Checks
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-700 mb-4">
+                            <li><strong>Gas Pressure:</strong> Verify that gas pressure at the engine inlet is
+                                within the recommended range. Too low or too high pressure can prevent starting.</li>
+                            <li><strong>Gas Quality:</strong> Check if the digester is producing stable biogas.
+                                Very low methane percentage or excessive CO₂ can make ignition difficult.</li>
+                            <li><strong>Ignition System:</strong> Confirm that spark plugs, ignition coils and
+                                leads are in good condition and properly connected.</li>
+                            <li><strong>Safety and Sensors:</strong> Look for any active alarms—low lube oil
+                                pressure, high temperature, gas leak or emergency stop switches.</li>
+                            <li><strong>Battery and Starter:</strong> Ensure the battery voltage is adequate and
+                                the starter motor is functioning normally.</li>
+                        </ul>
+
+                        <p class="text-gray-700">
+                            If the engine cranks but does not fire, it is often a fuel–spark–timing issue. If the
+                            engine does not crank at all, focus first on electrical and safety circuits.
+                        </p>
+                    </section>
+
+                    <div class="section-divider my-10"></div>
+
+                    <!-- Misfiring and unstable running -->
+                    <section class="mb-10">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-primary-light p-2 rounded-full mr-3">
+                                <i class="ri-pulse-line text-white text-xl"></i>
+                            </div>
+                            <h2 class="text-3xl font-bold text-primary-dark font-poppins mt-1">
+                                Problem 2: Misfiring, Rough Running or Engine Hunting
+                            </h2>
+                        </div>
+
+                        <p class="text-gray-700 mb-4">
+                            Misfiring and unstable speed (hunting) indicate that the engine is not receiving a
+                            consistent combustible mixture. Left unresolved, this can damage the engine and
+                            alternator over time.
+                        </p>
+
+                        <h3 class="text-2xl font-semibold text-primary-dark mb-3">
+                            Likely Causes
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-700 mb-4">
+                            <li>Biogas flow fluctuating due to inconsistent digester pressure or blower issues.
+                            </li>
+                            <li>Moisture or condensate entering the gas line and reaching the mixer.</li>
+                            <li>Clogged gas filters or partially blocked gas valves.</li>
+                            <li>Weak spark on one or more cylinders (worn plugs, damaged leads).</li>
+                            <li>Incorrect air–fuel ratio adjustment or faulty mixer/venturi.</li>
+                        </ul>
+
+                        <h3 class="text-2xl font-semibold text-primary-dark mb-3">
+                            Practical Checks and Fixes
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-700 mb-4">
+                            <li>Drain all condensate traps and low points in the gas pipeline.</li>
+                            <li>Inspect and clean gas filters, strainers and valves as per maintenance schedule.
+                            </li>
+                            <li>Check spark plugs for deposits; clean or replace if necessary and verify the gap.
+                            </li>
+                            <li>Verify that air–gas mixture settings match the OEM recommendations for current gas
+                                quality.</li>
+                            <li>Monitor digester gas pressure for sudden fluctuations and rectify any blower or
+                                pressure-regulation issues.</li>
+                        </ul>
+
+                        <p class="text-gray-700">
+                            On sites where biogas production varies significantly during the day, it may be
+                            necessary to coordinate engine loading and operating hours with gas availability.
+                        </p>
+                    </section>
+
+                    <div class="section-divider my-10"></div>
+
+                    <!-- Low power output -->
+                    <section class="mb-10">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-primary-light p-2 rounded-full mr-3">
+                                <i class="ri-battery-2-charge-line text-white text-xl"></i>
+                            </div>
+                            <h2 class="text-3xl font-bold text-primary-dark font-poppins mt-1">
+                                Problem 3: Low Power Output from the Biogas Genset
+                            </h2>
+                        </div>
+
+                        <p class="text-gray-700 mb-4">
+                            Operators often notice that the genset no longer delivers its rated kilowatt output,
+                            even though it starts and runs. This usually points to gas calorific value, air–fuel
+                            ratio or engine-health issues.
+                        </p>
+
+                        <h3 class="text-2xl font-semibold text-primary-dark mb-3">
+                            Key Diagnostics
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-700 mb-4">
+                            <li><strong>Check Methane Percentage:</strong> A drop in CH₄ content reduces the
+                                energy available per cubic metre of gas.</li>
+                            <li><strong>Review Air Filters:</strong> Clogged air filters restrict combustion air
+                                and reduce effective power.</li>
+                            <li><strong>Inspect Turbocharger / Intake (if applicable):</strong> Deposits or leaks
+                                can reduce boost pressure.</li>
+                            <li><strong>Assess Engine Wear:</strong> Low compression due to worn rings or valves
+                                can reduce power over time.</li>
+                            <li><strong>Confirm Load Measurement:</strong> Ensure that the connected load and
+                                measurement instruments are accurate.</li>
+                        </ul>
+
+                        <p class="text-gray-700">
+                            In many cases, performance improves significantly when gas quality is stabilised
+                            through better digestion control and when basic maintenance (filters, plugs, oil) is
+                            updated according to run hours.
+                        </p>
+                    </section>
+
+                    <div class="section-divider my-10"></div>
+
+                    <!-- Knocking, overheating, exhaust temp -->
+                    <section class="mb-10">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-primary-light p-2 rounded-full mr-3">
+                                <i class="ri-temp-hot-line text-white text-xl"></i>
+                            </div>
+                            <h2 class="text-3xl font-bold text-primary-dark font-poppins mt-1">
+                                Problem 4: Knocking, Pinging and High Exhaust Temperature
+                            </h2>
+                        </div>
+
+                        <p class="text-gray-700 mb-4">
+                            Knocking (metallic pinging) and excessively high exhaust temperatures are serious
+                            warning signs. They can lead to piston, valve and head damage if ignored.
+                        </p>
+
+                        <h3 class="text-2xl font-semibold text-primary-dark mb-3">
+                            Possible Reasons
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-700 mb-4">
+                            <li>Over-advanced ignition timing relative to the gas quality.</li>
+                            <li>Lean air–fuel mixture causing high combustion temperatures.</li>
+                            <li>Insufficient cooling-water flow or blocked radiator fins.</li>
+                            <li>Deposits in combustion chamber raising compression ratio locally.</li>
+                            <li>Sustained operation at or above rated load in high ambient temperatures.</li>
+                        </ul>
+
+                        <h3 class="text-2xl font-semibold text-primary-dark mb-3">
+                            Recommended Actions
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-700 mb-4">
+                            <li>Immediately reduce load if knocking is observed and investigate before resuming
+                                full load.</li>
+                            <li>Review ignition timing with reference to engine manufacturer guidelines for biogas
+                                operation.</li>
+                            <li>Ensure cooling system is functioning—check coolant level, pump, belts and radiator
+                                cleanliness.</li>
+                            <li>Inspect for carbon deposits during scheduled overhauls and clean as per OEM
+                                procedure.</li>
+                        </ul>
+
+                        <p class="text-gray-700">
+                            As a general rule, persistent knocking should never be accepted as “normal”. It
+                            always indicates that something in the fuel–timing–load combination is incorrect for
+                            that engine.
+                        </p>
+                    </section>
+
+                    <div class="section-divider my-10"></div>
+
+                    <!-- Gas quality, H2S, moisture, corrosion -->
+                    <section class="mb-10">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-primary-light p-2 rounded-full mr-3">
+                                <i class="ri-flask-line text-white text-xl"></i>
+                            </div>
+                            <h2 class="text-3xl font-bold text-primary-dark font-poppins mt-1">
+                                Problem 5: Corrosion, Deposits and Gas-Quality-Related Damage
+                            </h2>
+                        </div>
+
+                        <p class="text-gray-700 mb-4">
+                            Biogas is not a clean “ready-to-use” fuel when it leaves the digester. Hydrogen
+                            sulphide (H₂S), moisture and particulate matter must be managed properly. Otherwise,
+                            long-term damage occurs in the engine and gas lines.
+                        </p>
+
+                        <h3 class="text-2xl font-semibold text-primary-dark mb-3">
+                            Warning Signs
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-700 mb-4">
+                            <li>Unusual corrosion on engine parts, valves, turbocharger or exhaust.</li>
+                            <li>Frequent spark plug fouling or deposits on valves and piston crown.</li>
+                            <li>Strong sulphur smell even after gas-cleaning stages.</li>
+                            <li>Condensate with strong odour or visible particulate matter in condensate pots.
+                            </li>
+                        </ul>
+
+                        <h3 class="text-2xl font-semibold text-primary-dark mb-3">
+                            Gas Cleaning and Preventive Measures
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-700 mb-4">
+                            <li>Use appropriately sized <strong>H₂S scrubbers</strong> (iron media, biological or
+                                chemical) and maintain them as per schedule.</li>
+                            <li>Provide <strong>adequate moisture separation</strong> through condensate traps and
+                                knock-out drums, especially before the genset.</li>
+                            <li>Monitor H₂S levels at regular intervals and replace or regenerate media on time.
+                            </li>
+                            <li>Ensure gas piping is sloped correctly so that condensate does not collect in dead
+                                legs.</li>
+                        </ul>
+
+                        <p class="text-gray-700">
+                            For many biogas power projects, consistent gas cleaning is the single biggest factor
+                            that determines engine life and maintenance cost over the years.
+                        </p>
+                    </section>
+
+                    <div class="section-divider my-10"></div>
+
+                    <!-- Electrical side: trips, protection -->
+                    <section class="mb-10">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-primary-light p-2 rounded-full mr-3">
+                                <i class="ri-flashlight-line text-white text-xl"></i>
+                            </div>
+                            <h2 class="text-3xl font-bold text-primary-dark font-poppins mt-1">
+                                Problem 6: Frequent Tripping, Voltage and Frequency Fluctuations
+                            </h2>
+                        </div>
+
+                        <p class="text-gray-700 mb-4">
+                            Even if the engine is running well, electrical issues can cause frequent tripping or
+                            unstable power quality. This affects connected loads and reduces confidence in the
+                            system.
+                        </p>
+
+                        <h3 class="text-2xl font-semibold text-primary-dark mb-3">
+                            Areas to Check
+                        </h3>
+                        <ul class="list-disc list-inside text-gray-700 mb-4">
+                            <li><strong>Load Variations:</strong> Large motors, compressors or pumps starting and
+                                stopping suddenly can cause dips and spikes.</li>
+                            <li><strong>Governor / Speed Control:</strong> If the speed controller is not tuned,
+                                frequency can drift under changing loads.</li>
+                            <li><strong>Protection Settings:</strong> Overly sensitive settings on under-voltage,
+                                under-frequency or reverse power relays.</li>
+                            <li><strong>Cable and Earthing:</strong> Poor connections, undersized cables or weak
+                                earthing arrangements.</li>
+                        </ul>
+
+                        <p class="text-gray-700">
+                            It is important to coordinate electrical design—cables, switchgear, protection and
+                            synchronisation (if grid-connected)—with the genset capacity and the nature of
+                            connected loads. Periodic testing and logging of voltage, current and frequency help
+                            identify patterns in tripping incidents.
+                        </p>
+                    </section>
+
+                    <div class="section-divider my-10"></div>
+
+                    <!-- Preventive maintenance checklist -->
+                    <section class="mb-10">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-primary-light p-2 rounded-full mr-3">
+                                <i class="ri-task-line text-white text-xl"></i>
+                            </div>
+                            <h2 class="text-3xl font-bold text-primary-dark font-poppins mt-1">
+                                Preventive Maintenance Checklist for Biogas Gensets
+                            </h2>
+                        </div>
+
+                        <p class="text-gray-700 mb-4">
+                            Many troubleshooting calls can be avoided if a simple preventive maintenance schedule
+                            is followed consistently. Below is a generic checklist that can be adapted to your
+                            engine model and site conditions.
+                        </p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="bg-gray-50 p-5 rounded-xl">
+                                <h3 class="text-xl font-semibold text-primary-dark mb-3">
+                                    Daily Checks
+                                </h3>
+                                <ul class="list-disc list-inside text-gray-700 text-sm">
+                                    <li>Visual inspection for leaks, unusual sound or vibration.</li>
+                                    <li>Check oil level, coolant level and gas pressure.</li>
+                                    <li>Drain condensate from gas-line traps.</li>
+                                    <li>Record operating hours, load, voltage and frequency.</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-50 p-5 rounded-xl">
+                                <h3 class="text-xl font-semibold text-primary-dark mb-3">
+                                    Weekly / Monthly Checks
+                                </h3>
+                                <ul class="list-disc list-inside text-gray-700 text-sm">
+                                    <li>Clean air filters and check air intake path.</li>
+                                    <li>Inspect spark plugs and ignition components.</li>
+                                    <li>Check radiator fins and cooling-water flow.</li>
+                                    <li>Verify gas filters and H₂S scrubber condition.</li>
+                                    <li>Test safety trips (emergency stop, low oil pressure, high temperature).</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-50 p-5 rounded-xl">
+                                <h3 class="text-xl font-semibold text-primary-dark mb-3">
+                                    Quarterly / Annual Checks
+                                </h3>
+                                <ul class="list-disc list-inside text-gray-700 text-sm">
+                                    <li>Engine performance test under rated load.</li>
+                                    <li>Compression and leak-down tests if performance has dropped.</li>
+                                    <li>Detailed inspection of valves, seats and combustion chambers.</li>
+                                    <li>Review gas-analysis records and update gas-cleaning designs if required.</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-gray-50 p-5 rounded-xl">
+                                <h3 class="text-xl font-semibold text-primary-dark mb-3">
+                                    Documentation and Training
+                                </h3>
+                                <ul class="list-disc list-inside text-gray-700 text-sm">
+                                    <li>Maintain a logbook of alarms, trips and corrective actions.</li>
+                                    <li>Update operators on any changes in operating procedures.</li>
+                                    <li>Schedule refresher training with OEM or technology partners.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="section-divider my-10"></div>
+
+                    <!-- When to call OEM / upgrade -->
+                    <section class="mb-10">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-primary-light p-2 rounded-full mr-3">
+                                <i class="ri-tools-line text-white text-xl"></i>
+                            </div>
+                            <h2 class="text-3xl font-bold text-primary-dark font-poppins mt-1">
+                                When to Call the OEM and When to Consider Upgrades
+                            </h2>
+                        </div>
+
+                        <p class="text-gray-700 mb-4">
+                            Routine issues such as filter cleaning, condensate draining and basic electrical
+                            checks can be handled by in-house teams. However, there are situations where it is
+                            safer and more economical to involve the engine OEM or an experienced biogas-genset
+                            partner.
+                        </p>
+
+                        <ul class="list-disc list-inside text-gray-700 mb-4">
+                            <li>Repeated major failures (piston, valves, crankshaft) within short operating hours.
+                            </li>
+                            <li>Persistent knocking or high exhaust temperature despite basic corrections.</li>
+                            <li>Chronic low power that cannot be explained by gas-quality variations alone.</li>
+                            <li>Plans to increase plant capacity or integrate additional loads.</li>
+                        </ul>
+
+                        <p class="text-gray-700">
+                            In some cases, performance and reliability improve dramatically when the biogas plant
+                            is paired with a better <strong>gas-cleaning system</strong> or when the engine is
+                            specifically configured for biogas rather than converted from diesel. Partners like
+                            <strong>Enersol Biopower</strong> can help evaluate whether retrofits, new-biomass
+                            gasifiers or improved biogas utilisation strategies will offer a better long-term
+                            outcome.
+                        </p>
+                    </section>
+
+                    <div class="section-divider my-10"></div>
+
+                    <!-- Conclusion -->
+                    <section class="mb-10">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-primary-light p-2 rounded-full mr-3">
+                                <i class="ri-lightbulb-flash-line text-white text-xl"></i>
+                            </div>
+                            <h2 class="text-3xl font-bold text-primary-dark font-poppins mt-1">
+                                Conclusion: Systematic Troubleshooting Protects Your Biogas Investment
+                            </h2>
+                        </div>
+
+                        <p class="text-gray-700 mb-4">
+                            A biogas genset is more than just an engine; it sits at the heart of an integrated
+                            system—digester, gas cleaning, fuel handling, cooling and electrical distribution.
+                            Effective troubleshooting therefore requires a systems view. When operators use a
+                            structured approach to symptoms, causes and actions, downtime reduces, maintenance
+                            becomes predictable and the business case for biogas power strengthens.
+                        </p>
+
+                        <p class="text-gray-700 mb-4">
+                            By paying close attention to gas quality, following preventive maintenance schedules
+                            and taking timely advice from experienced engine and biogas partners, plant owners can
+                            enjoy years of reliable power from their biogas assets. Troubleshooting then becomes
+                            a learning tool, not a constant firefighting exercise.
+                        </p>
+
+                        <p class="text-gray-700">
+                            As a <strong>biogas genset and biomass gasifier solution partner from India</strong>,
+                            <strong>Enersol Biopower</strong> works with dairies, gaushalas, food-processing
+                            units, STPs and industrial clients to design, commission and support biogas-based
+                            power plants that are both technically sound and practically maintainable on the
+                            ground.
+                        </p>
+                    </section>
+
+                    <!-- CTA -->
+                    <section
+                        class="bg-gradient-to-r from-primary to-secondary p-8 rounded-2xl text-center shadow-lg mt-12">
+                        <h2 class="text-3xl font-bold text-white mb-4">
+                            Need Help Diagnosing a Biogas Genset Problem at Your Plant?
+                        </h2>
+                        <p class="text-white text-xl mb-6 max-w-2xl mx-auto">
+                            Share your plant size, feedstock, gas-cleaning arrangement and genset details, and
+                            the Enersol Biopower team can help you review root causes and suggest practical
+                            improvements for more reliable biogas power generation.
+                        </p>
+                        <a href="../contact-us.html"
+                            class="inline-block bg-white text-primary-dark font-bold py-3 px-8 rounded-lg transition-all hover:bg-gray-100 transform hover:scale-105 shadow-md">
+                            Contact Us for Biogas Genset Support
+                        </a>
+                    </section>
+                
+    
+    <!-- Related Articles Section -->
+    <section class="related-articles bg-white py-8 px-4 border-t border-gray-200">
+      <div class="container mx-auto max-w-3xl">
+        <h2 class="text-xl font-bold text-gray-800 mb-4">Related Articles</h2>
+        <div class="grid sm:grid-cols-3 gap-4"><a href="/pages/blogs/biogas-genset-working-design-benefits-buyers-guide-waste-to-energy.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md hover:border-primary border border-transparent transition group"><span class="text-primary-dark font-semibold text-sm group-hover:underline">Biogas Genset: Working, Design & Buyers Guide</span><span class="text-gray-400 text-xs block mt-1">Enersol Biopower Blog</span></a><a href="/pages/blogs/dairy-farm-biogas-genset-electricity-generation.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md hover:border-primary border border-transparent transition group"><span class="text-primary-dark font-semibold text-sm group-hover:underline">Dairy Farm Biogas Genset</span><span class="text-gray-400 text-xs block mt-1">Enersol Biopower Blog</span></a><a href="/pages/blogs/hotel-food-waste-biogas-genset-electricity.html" class="block p-4 bg-white rounded-lg shadow hover:shadow-md hover:border-primary border border-transparent transition group"><span class="text-primary-dark font-semibold text-sm group-hover:underline">Hotel Food Waste Biogas Genset</span><span class="text-gray-400 text-xs block mt-1">Enersol Biopower Blog</span></a></div>
+      </div>
+    </section>
+    <!-- Author Bio Section -->
+    <section class="author-bio bg-gray-50 border-t border-gray-200 py-8 px-4 mt-4">
+      <div class="container mx-auto max-w-3xl">
+        <div class="flex flex-col sm:flex-row items-start gap-5">
+          <img src="https://ik.imagekit.io/enersolbiopower/enersol/our-story/ray_sing_dahiya.webp"
+               alt="Rai Singh Dahiya — Founder Enersol Biopower"
+               class="w-16 h-16 rounded-full object-cover flex-shrink-0" loading="lazy" />
+          <div>
+            <p class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-1">About the Author</p>
+            <h3 class="text-lg font-bold text-gray-900">Rai Singh Dahiya</h3>
+            <p class="text-sm text-primary-dark font-medium mb-2">Founder &amp; Chief Innovator, Enersol Biopower Pvt. Ltd.</p>
+            <p class="text-sm text-gray-600 leading-relaxed">Grassroots innovator and recipient of India's <strong>Fifth National Grassroots Innovation Award (2009)</strong>. Selected as Innovation Scholar-in-Residence at <strong>Rashtrapati Bhavan (2015)</strong>. Over 25 years of experience pioneering clean biomass energy solutions deployed at IITs, NITs, and in UNDP international projects across Africa and the Middle East.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </article>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="lg:col-span-1">
+                <div class="bg-white p-6 rounded-xl shadow-card sticky top-24">
+                    <h3 class="text-2xl font-bold mb-4 text-primary-dark">Share This Post</h3>
+                    <div class="flex space-x-4">
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://enersolbiopower.com/blogs/biogas-genset-troubleshooting"
+                            target="_blank" rel="noopener noreferrer"
+                            class="text-gray-500 hover:text-blue-600 transition-colors text-2xl">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/intent/tweet?url=https://enersolbiopower.com/blogs/biogas-genset-troubleshooting&text=Troubleshooting%20Biogas%20Gensets%20%E2%80%93%20Common%20Problems%20and%20Solutions"
+                            target="_blank" rel="noopener noreferrer"
+                            class="text-gray-500 hover:text-blue-400 transition-colors text-2xl">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://enersolbiopower.com/blogs/biogas-genset-troubleshooting&title=Troubleshooting%20Biogas%20Gensets"
+                            target="_blank" rel="noopener noreferrer"
+                            class="text-gray-500 hover:text-blue-700 transition-colors text-2xl">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <!-- WhatsApp -->
+                        <a href="https://api.whatsapp.com/send?text=Troubleshooting%20Biogas%20Gensets%20%E2%80%93%20Common%20Problems%20and%20Solutions%20-%20https://enersolbiopower.com/blogs/biogas-genset-troubleshooting"
+                            target="_blank" rel="noopener noreferrer"
+                            class="text-gray-500 hover:text-green-500 transition-colors text-2xl">
+                            <i class="ri-whatsapp-fill"></i>
+                        </a>
+                        <!-- Copy Link -->
+                        <a href="javascript:void(0);"
+                            onclick="navigator.clipboard.writeText('https://enersolbiopower.com/blogs/biogas-genset-troubleshooting'); alert('Link copied to clipboard!');"
+                            class="text-gray-500 hover:text-red-500 transition-colors text-2xl">
+                            <i class="ri-link"></i>
+                        </a>
+                    </div>
+
+                    <hr class="my-6">
+
+                    <h3 class="text-2xl font-bold mb-4 text-primary-dark">Recent Posts</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="./biogasGenset.html"
+                                class="text-gray-700 hover:text-primary transition-colors flex items-start">
+                                <i class="ri-arrow-right-s-line text-primary mt-1 mr-2"></i>
+                                <span>Biogas Genset: Working, Technology, Benefits &amp; Buyer’s Guide</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./biomass-gasifier-clean-energy-crop-residue.html"
+                                class="text-gray-700 hover:text-primary transition-colors flex items-start">
+                                <i class="ri-arrow-right-s-line text-primary mt-1 mr-2"></i>
+                                <span>Biomass Gasifier: Harnessing Clean Energy from Crop Residue</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./biomassStove.html"
+                                class="text-gray-700 hover:text-primary transition-colors flex items-start">
+                                <i class="ri-arrow-right-s-line text-primary mt-1 mr-2"></i>
+                                <span>Biomass Stove: Clean, Efficient &amp; Affordable Cooking Solution</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <hr class="my-6">
+
+                    <h3 class="text-2xl font-bold mb-4 text-primary-dark">Categories</h3>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="../blogs.html"
+                                class="text-gray-700 hover:text-primary transition-colors flex items-center">
+                                <i class="ri-folder-2-line mr-2"></i> Biogas Power
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../blogs.html"
+                                class="text-gray-700 hover:text-primary transition-colors flex items-center">
+                                <i class="ri-folder-2-line mr-2"></i> Biomass Technology
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../blogs.html"
+                                class="text-gray-700 hover:text-primary transition-colors flex items-center">
+                                <i class="ri-folder-2-line mr-2"></i> Renewable Energy Projects
+                            </a>
+                        </li>
+                    </ul>
+
+                    <hr class="my-6">
+
+                    <div class="bg-gradient-to-r from-primary-light to-primary p-6 rounded-xl text-white">
+                        <h3 class="text-xl font-bold mb-3">Subscribe to Enersol Updates</h3>
+                        <p class="mb-4">
+                            Receive new technical guides, project insights and practical tips on biogas gensets,
+                            biomass gasifiers and clean energy systems directly in your inbox.
+                        </p>
+                        <form>
+                            <div class="mb-3">
+                                <input type="email" placeholder="Your email address"
+                                    class="w-full px-4 py-2 rounded-lg text-gray-800">
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-accentYellow-light text-primary-dark font-bold py-2 rounded-lg hover:bg-accentYellow-dark transition-colors">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark text-white body-font">
+        <div
+            class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col justify-center">
+            <!-- Logo and Info Section -->
+            <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-white"></a>
+                <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <a class="flex title-font font-medium items-center md:justify-start justify-center text-white"></a>
+                    <a href="#">
+                        <img class="h-12 w-auto sm:h-14 object-contain lazy"
+                            src="https://ik.imagekit.io/enersolbiopower/enersol/index/erersollogo.webp"
+                            alt="Enersol Biopower" style="min-width: 150px;"
+                            data-src="https://ik.imagekit.io/enersolbiopower/enersol/biomassGasifier/erersollogo.webp"
+                            loading="lazy" decoding="async" fetchpriority="low">
+                    </a>
+                </div>
+                <p class="mt-2 text-sm text-gray-300">
+                    Innovative Renewable Energy Solutions for a Sustainable Future
+                </p>
+            </div>
+
+            <!-- Columns -->
+            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+                <!-- Explore -->
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
+                        Explore
+                    </h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="/">Home</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="../about-us.html">About Us</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="../our-story.html">Our Story</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="../products.html">Products</a>
+                        </li>
+                    </nav>
+                </div>
+
+                <!-- Company -->
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
+                        Company
+                    </h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="../contact-us.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="../blogs.html">Blogs &amp; News</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="../privacy-policy.html">Privacy
+                                Policy</a>
+                        </li>
+                        <li>
+                            <a href="../term-and-condition.html" class="text-gray-300 hover:text-gray-200">Terms of
+                                Service</a>
+                        </li>
+                        <li>
+                            <a href="../refund-policy.html" class="text-gray-300 hover:text-gray-200">Refund
+                                Policy</a>
+                        </li>
+                    </nav>
+                </div>
+
+                <!-- Categories -->
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
+                        Categories
+                    </h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="./#achievements">Our
+                                Achievements</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="/#testimonials">Testimonials</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="./about-us.html#our-history">Our
+                                History</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-300 hover:text-gray-200" href="./about-us.html#mission">Mission &amp;
+                                Vision</a>
+                        </li>
+                    </nav>
+                </div>
+
+                <!-- Contact Column -->
+                <div class="lg:w-1/4 md:w-1/2 w-full px-4 ">
+                    <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
+                        Contact
+                    </h2>
+                    <nav class="list-none mb-10 footer-contact ">
+                        <style>
+                            @media (max-width: 768px) {
+                                .addressList {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    text-align: center;
+                                }
+
+                                .addressList li {
+                                    justify-content: center;
+                                }
+                            }
+                        </style>
+                        <div class="addressList justify-center">
+                            <li class="text-gray-300 flex items-start">
+                                <i class="ri-map-pin-fill mr-2 text-white"></i>
+                                <span class="block">
+                                    Enersol Biopower Private Limited
+                                    Plot No. 57 A, Vrindavan Vihar, Akeda Dunder, Laxminarayanpura,
+                                    VKI Road No. 19, Jaipur-302013
+                                </span>
+                            </li>
+                            <li class="text-gray-300 flex items-start">
+                                <i class="ri-phone-fill mr-2 text-white"></i>
+                                <span class="block">+91-9414535665</span>
+                            </li>
+                            <li class="text-gray-300 flex items-start">
+                                <i class="ri-phone-fill mr-2 text-white"></i>
+                                <span class="block">+91-8239554433</span>
+                            </li>
+                            <li class="text-gray-300 flex items-start">
+                                <i class="ri-mail-fill mr-2 text-white"></i>
+                                <a href="mailto:info@enersolbiopower.com" class="block hover:text-white">
+                                    info@enersolbiopower.com
+                                </a>
+                            </li>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- Brand Logos -->
+        <div class="brand-logo flex flex-wrap items-center justify-center bg-white p-2 sm:p-4 gap-3 sm:gap-6">
+
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/nif-logo-1.webp" alt="NIF Logo"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/nif-logo-1.webp" loading="lazy"
+                decoding="async" fetchpriority="low"
+                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/gian.webp" alt="GIAN"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/gian.webp" loading="lazy"
+                decoding="async" fetchpriority="low"
+                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp" alt="Swachh Bharat"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/pngtree-swachh-bharat-logo-in-hindi-png-image_6218634.webp"
+                loading="lazy" decoding="async" fetchpriority="low"
+                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/junagadh_agriculture_university.webp"
+                alt="Junagadh Agriculture University"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/junagadh_agriculture_university.webp"
+                loading="lazy" decoding="async" fetchpriority="low"
+                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/sustainable-energy.webp?updatedAt=1762515792165" alt="Sustainable Energy"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/sustainable-energy.webp?updatedAt=1762515792165"
+                loading="lazy" decoding="async" fetchpriority="low"
+                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+
+            <img src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Make_In_India_new.webp?updatedAt=1754911304078" alt="Make in India"
+                data-src="https://ik.imagekit.io/enersolbiopower/enersol/about-us/Make_In_India_new.webp?updatedAt=1754911304078"
+                loading="lazy" decoding="async" fetchpriority="low"
+                class="lazy h-auto max-h-16 sm:max-h-32 transition-transform duration-300 hover:scale-110">
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="bg-gray-800">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+               <p class="text-gray-500 text-sm text-center sm:text-left">
+    © <span id="currentYear"></span> Enersol Biopower — All Rights Reserved
+</p>
+
+<script>
+    document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+</script>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                    <a class="text-gray-500" target="_blank" href="https://www.facebook.com/enersolbiopwr">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500" target="_blank"
+                        href="https://www.youtube.com/@enersolbiopower-wastetoenergy">
+                        <svg class="w-6 h-6 text-gray-500 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M21.7 8.037a4.26 4.26 0 0 0-.789-1.964 2.84 2.84 0 0 0-1.984-.839c-2.767-.2-6.926-.2-6.926-.2s-4.157 0-6.928.2a2.836 2.836 0 0 0-1.983.839 4.225 4.225 0 0 0-.79 1.965 30.146 30.146 0 0 0-.2 3.206v1.5a30.12 30.12 0 0 0 .2 3.206c.094.712.364 1.39.784 1.972.604.536 1.38.837 2.187.848 1.583.151 6.731.2 6.731.2s4.161 0 6.928-.2a2.844 2.844 0 0 0 1.985-.84 4.27 4.27 0 0 0 .787-1.965 30.12 30.12 0 0 0 .2-3.206v-1.516a30.672 30.672 0 0 0-.202-3.206Zm-11.692 6.554v-5.62l5.4 2.819-5.4 2.801Z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500" target="_blank" href="https://www.instagram.com/enersol_biopower/">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500" target="_blank"
+                        href="https://www.linkedin.com/company/enersol-biopower-pvt-ltd/">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Swiper (if used elsewhere on page)
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.style.display = 'block';
+            setTimeout(() => {
+                mobileMenu.style.transform = 'translateX(0)';
+            }, 10);
+        });
+
+        function toggleMobileMenu() {
+            mobileMenu.style.transform = 'translateX(100%)';
+            setTimeout(() => {
+                mobileMenu.style.display = 'none';
+            }, 300);
+        }
+
+        // Sticky social bar
+        const stickySocial = document.getElementById('sticky-social');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.scrollY;
+
+            if (currentScroll > 100 && currentScroll < lastScroll) {
+                stickySocial.classList.add('flex');
+                stickySocial.classList.remove('hidden');
+            } else {
+                stickySocial.classList.add('hidden');
+                stickySocial.classList.remove('flex');
+            }
+
+            lastScroll = currentScroll;
+        });
+    </script>
+
+    <style data-lazy-css="1">
+        img.lazy {
+            opacity: 0;
+            transition: opacity .35s ease;
+        }
+
+        img.lazy.loaded {
+            opacity: 1;
+        }
+    </style>
+
+    <script data-lazy-loader="1">
+        (function () {
+            const SEL = "img.lazy[data-src]";
+            function loadNow(img) {
+                img.src = img.dataset.src;
+                img.onload = function () {
+                    img.classList.add("loaded");
+                };
+                img.removeAttribute("data-src");
+            }
+            if (!("IntersectionObserver" in window)) {
+                document.querySelectorAll(SEL).forEach(loadNow);
+                return;
+            }
+            const io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (!entry.isIntersecting) return;
+                    loadNow(entry.target);
+                    io.unobserve(entry.target);
+                });
+            }, { rootMargin: "250px 0px" });
+            document.querySelectorAll(SEL).forEach(function (img) {
+                io.observe(img);
+            });
+        })();
+    </script>
+</body>
+
+</html>

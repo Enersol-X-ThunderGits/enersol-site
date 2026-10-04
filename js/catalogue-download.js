@@ -143,6 +143,15 @@ function openCatalogueModal(downloadUrl, productName) {
                 }
             } catch (error) {
                 console.error("Error:", error);
+                // Trigger download
+                    const link = document.createElement("a");
+                    link.href = downloadUrl;
+                    link.target = "_blank";
+                    link.download = "";
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+
                 alert("An error occurred. Please check your connection and try again.");
                 submitBtn.disabled = false;
                 submitBtn.innerHTML = originalContent;

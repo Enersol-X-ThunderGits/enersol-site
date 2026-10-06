@@ -4,7 +4,7 @@
     <loc>https://enersolbiopower.com/</loc>
     <lastmod>2026-06-04</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://enersolbiopower.com/pages/biomass-gasifier-manufacturer-india.html</loc>
@@ -67,6 +67,12 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://enersolbiopower.com/pages/blogs-news.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://enersolbiopower.com/pages/privacy-policy.html</loc>
     <lastmod>2026-06-04</lastmod>
     <changefreq>yearly</changefreq>
@@ -83,12 +89,6 @@
     <lastmod>2026-06-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.30</priority>
-  </url>
-  <url>
-    <loc>https://enersolbiopower.com/pages/blogs/Biomass Gasifier for Agro-Industries.html</loc>
-    <lastmod>2025-09-19</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://enersolbiopower.com/pages/blogs/agro-industries-biomass-gasifier-biogas-genset.html</loc>
@@ -316,6 +316,61 @@
     <loc>https://enersolbiopower.com/pages/blogs/village-canteen-biogas-genset-renewable-electricity.html</loc>
     <lastmod>2025-09-01</lastmod>
     <changefreq>yearly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://enersolbiopower.com/pages/blogs/5-practical-ways-to-reduce-your-monthly-cooking-fuel-cost.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://enersolbiopower.com/pages/blogs/from-farm-waste-to-kitchen-fuel-the-complete-journey.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://enersolbiopower.com/pages/blogs/how-agricultural-waste-is-transformed-into-clean-cooking-fuel.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://enersolbiopower.com/pages/blogs/how-harit-agni-is-changing-clean-cooking-in-rural-india.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://enersolbiopower.com/pages/blogs/myth-vs-fact-everything-you-thought-you-knew-about-biomass-stoves.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://enersolbiopower.com/pages/blogs/rai-singh-dahiya-enersol-biopower-paris-award.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://enersolbiopower.com/pages/blogs/understanding-biomass-combustion-why-clean-burning-matters.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://enersolbiopower.com/pages/blogs/what-is-biomass-fuel-and-why-is-india-adopting-it.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://enersolbiopower.com/pages/blogs/Technology.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://enersolbiopower.com/pages/blogs/inspirational.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://enersolbiopower.com/Electrified-Helical-Calciner.html</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
 </urlset>

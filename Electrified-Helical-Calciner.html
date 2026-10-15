@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESB-R — Electrified Helical Calciner | Enersol Biopower</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --char: #171F1B;      /* deep furnace charcoal */
+    --steel: #2B3733;     /* plate steel */
+    --steel-light: #4A5A55;
+    --paper: #ECEEE8;     /* cool lab-white */
+    --paper-dim: #D8DCD2;
+    --green: #6E9A2E;     /* Enersol brand green */
+    --green-bright: #8FC93A;
+    --amber: #E08B2C;     /* heating-element glow */
+    --line: rgba(236,238,232,0.14);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--char);
+    color:var(--paper);
+    font-family:'IBM Plex Sans', sans-serif;
+    font-size:16px;
+    line-height:1.55;
+  }
+  h1,h2,h3{
+    font-family:'Oswald', sans-serif;
+    text-transform:uppercase;
+    letter-spacing:0.02em;
+    margin:0;
+  }
+  .mono{font-family:'IBM Plex Mono', monospace;}
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:20px 6vw;
+    border-bottom:1px solid var(--line);
+    position:sticky;top:0;background:rgba(23,31,27,0.92);backdrop-filter:blur(6px);
+    z-index:50;
+  }
+  .brand{
+    font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:0.08em;
+    font-size:15px;color:var(--paper);text-transform:uppercase;
+  }
+  .brand span{color:var(--green-bright);}
+  .topbar nav{display:flex;gap:28px;font-size:13px;text-transform:uppercase;letter-spacing:0.08em;color:var(--paper-dim)}
+  .topbar nav a{text-decoration:none;border-bottom:1px solid transparent;padding-bottom:2px;transition:border-color .2s,color .2s;}
+  .topbar nav a:hover{color:var(--green-bright);border-color:var(--green-bright);}
+
+  /* ---------- hero ---------- */
+  .hero{
+    display:grid;grid-template-columns:1.1fr 0.9fr;gap:40px;
+    padding:70px 6vw 60px;
+    align-items:center;
+    border-bottom:1px solid var(--line);
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--green-bright);
+    letter-spacing:0.18em;text-transform:uppercase;margin-bottom:18px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--green-bright);display:inline-block;}
+  .hero h1{
+    font-size:clamp(42px,6vw,74px);
+    line-height:0.98;
+    color:var(--paper);
+  }
+  .hero h1 em{
+    font-style:normal;color:transparent;-webkit-text-stroke:1.5px var(--green-bright);
+  }
+  .hero .sub{
+    margin-top:22px;font-size:17px;color:var(--paper-dim);max-width:46ch;font-style:italic;
+  }
+  .hero-tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px;}
+  .tag{
+    font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.04em;
+    padding:6px 12px;border:1px solid var(--line);border-radius:2px;color:var(--paper-dim);
+  }
+  .price-row{
+    margin-top:30px;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+    padding-top:22px;border-top:1px solid var(--line);
+  }
+  .price-label{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--paper-dim);}
+  .price-value{font-family:'Oswald',sans-serif;font-size:30px;color:var(--green-bright);letter-spacing:.02em;}
+  .price-note{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--steel-light);}
+  .cta-row{margin-top:24px;display:flex;gap:16px;flex-wrap:wrap;}
+  .btn{
+    font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.05em;text-transform:uppercase;
+    padding:14px 26px;text-decoration:none;display:inline-block;transition:transform .15s, background .2s;
+  }
+  .btn-solid{background:var(--green-bright);color:var(--char);font-weight:600;}
+  .btn-solid:hover{background:var(--green);transform:translateY(-2px);}
+  .btn-outline{border:1px solid var(--paper-dim);color:var(--paper);}
+  .btn-outline:hover{border-color:var(--green-bright);color:var(--green-bright);}
+
+  /* ---------- schematic (signature element) ---------- */
+  .schematic{
+    position:relative;background:var(--steel);border:1px solid var(--line);
+    padding:26px 26px 20px;border-radius:2px;
+  }
+  .schematic-label{
+    font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--paper-dim);
+    display:flex;justify-content:space-between;margin-bottom:14px;letter-spacing:.05em;
+  }
+  .schematic-label .dot{width:8px;height:8px;border-radius:50%;background:var(--amber);display:inline-block;margin-right:6px;animation:blink 1.6s infinite;}
+  @keyframes blink{0%,100%{opacity:1;}50%{opacity:.25;}}
+  .rig{
+    display:flex;justify-content:center;
+  }
+  .tube-wrap{
+    position:relative;width:120px;height:340px;
+  }
+  .hopper{
+    width:0;height:0;
+    border-left:60px solid transparent;
+    border-right:60px solid transparent;
+    border-top:34px solid var(--paper-dim);
+    margin:0 auto;
+  }
+  .chamber{
+    width:120px;height:260px;background:repeating-linear-gradient(180deg, var(--char) 0 2px, var(--steel) 2px 34px);
+    border:2px solid var(--paper-dim);border-top:none;position:relative;overflow:hidden;
+  }
+  .helix{
+    position:absolute;left:50%;top:0;transform:translateX(-50%);
+    width:2px;height:100%;background:var(--paper-dim);opacity:.5;
+  }
+  .helix::before, .helix::after{content:"";position:absolute;left:-30px;width:60px;height:100%;
+    border:2px solid var(--paper-dim);border-radius:50%;opacity:.35;}
+  .coil{
+    position:absolute;left:8px;right:8px;top:0;bottom:0;
+    background-image: repeating-linear-gradient(transparent 0 12px, var(--paper-dim) 12px 14px);
+    opacity:.28;
+    mask-image: radial-gradient(ellipse 60px 8px at center, black 60%, transparent 100%);
+  }
+  .particle{
+    position:absolute;left:50%;top:6px;width:10px;height:10px;margin-left:-5px;
+    background:var(--green-bright);border-radius:50%;
+    box-shadow:0 0 10px 2px var(--green-bright);
+    animation:descend 4s cubic-bezier(.65,0,.35,1) infinite;
+  }
+  @keyframes descend{
+    0%{top:6px;background:var(--green-bright);box-shadow:0 0 10px 2px var(--green-bright);}
+    55%{background:var(--amber);box-shadow:0 0 14px 4px var(--amber);}
+    100%{top:calc(100% - 14px);background:var(--paper);box-shadow:0 0 8px 2px var(--paper);}
+  }
+  .co2{
+    position:absolute;font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--paper-dim);
+    left:56%;top:40%;opacity:0;animation:rise 4s linear infinite;
+  }
+  @keyframes rise{
+    0%,50%{opacity:0;top:70%;}
+    55%{opacity:.9;top:60%;}
+    95%{opacity:0;top:5%;}
+  }
+  .tray{
+    width:80px;height:24px;margin:0 auto;border:2px solid var(--paper-dim);border-top:none;
+    background:var(--steel);
+  }
+  .heat-zone-labels{
+    position:absolute;right:-64px;top:0;height:260px;display:flex;flex-direction:column;justify-content:space-around;
+    font-family:'IBM Plex Mono',monospace;font-size:9.5px;color:var(--paper-dim);
+  }
+  .schematic-foot{
+    margin-top:16px;display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;
+    font-size:11px;color:var(--paper-dim);border-top:1px solid var(--line);padding-top:12px;
+  }
+  .schematic-foot b{color:var(--green-bright);font-weight:500;}
+
+  /* ---------- sections ---------- */
+  section{padding:80px 6vw;border-bottom:1px solid var(--line);}
+  .section-head{display:flex;align-items:baseline;gap:16px;margin-bottom:44px;}
+  .section-head .num{font-family:'IBM Plex Mono',monospace;color:var(--green-bright);font-size:14px;}
+  .section-head h2{font-size:clamp(28px,3.4vw,40px);}
+
+  /* overview */
+  .overview{display:grid;grid-template-columns:1fr 1fr;gap:60px;}
+  .overview p{color:var(--paper-dim);font-size:15.5px;margin-bottom:16px;}
+  .app-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 24px;}
+  .app-list li{
+    font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--paper);
+    padding:10px 0;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center;
+  }
+  .app-list li::before{content:"▸";color:var(--green-bright);}
+
+  /* process */
+  .process{display:flex;flex-direction:column;}
+  .step{
+    display:grid;grid-template-columns:70px 1fr;gap:22px;padding:22px 0;border-bottom:1px solid var(--line);
+    position:relative;
+  }
+  .step:last-child{border-bottom:none;}
+  .step-flow{
+    display:flex;flex-direction:column;align-items:center;
+  }
+  .step-node{
+    width:14px;height:14px;border-radius:50%;border:2px solid var(--green-bright);background:var(--char);
+  }
+  .step-track{flex:1;width:1px;background:var(--line);margin-top:4px;}
+  .step-body h3{font-size:16px;color:var(--paper);margin-bottom:6px;letter-spacing:.02em;}
+  .step-body p{color:var(--paper-dim);font-size:14.5px;max-width:60ch;}
+
+  /* reactions */
+  .reactions{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
+  .reaction-card{
+    background:var(--steel);border:1px solid var(--line);padding:28px;
+  }
+  .reaction-card h3{font-size:14px;color:var(--amber);letter-spacing:.08em;margin-bottom:18px;}
+  .equation{
+    font-family:'IBM Plex Mono',monospace;font-size:22px;color:var(--paper);
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+  }
+  .equation .arrow{color:var(--green-bright);}
+  .equation sub{font-size:13px;}
+
+  /* specs */
+  table.specs{width:100%;border-collapse:collapse;font-family:'IBM Plex Mono',monospace;font-size:13.5px;}
+  table.specs tr{border-bottom:1px solid var(--line);}
+  table.specs td{padding:13px 10px;color:var(--paper-dim);}
+  table.specs td:first-child{color:var(--paper);width:36%;letter-spacing:.02em;}
+  table.specs tr:hover{background:rgba(143,201,58,0.05);}
+
+  /* advantages */
+  .adv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);}
+  .adv-item{background:var(--char);padding:24px;font-size:14px;color:var(--paper-dim);}
+  .adv-item b{display:block;color:var(--paper);font-family:'Oswald',sans-serif;font-size:15px;letter-spacing:.02em;margin-bottom:4px;text-transform:uppercase;}
+
+  /* why + accessories */
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:60px;}
+  .plain-list{list-style:none;margin:0;padding:0;}
+  .plain-list li{padding:11px 0;border-bottom:1px solid var(--line);font-size:14.5px;color:var(--paper-dim);display:flex;gap:10px;}
+  .plain-list li::before{content:"—";color:var(--green-bright);}
+
+  /* footer / contact */
+  footer{padding:60px 6vw 40px;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;}
+  .contact-block h2{font-size:26px;margin-bottom:14px;}
+  .contact-block p{color:var(--paper-dim);font-style:italic;margin-bottom:26px;}
+  .contact-details{font-family:'IBM Plex Mono',monospace;font-size:13.5px;color:var(--paper-dim);line-height:2;}
+  .contact-details b{color:var(--paper);}
+  .foot-note{
+    display:flex;align-items:flex-end;justify-content:flex-end;font-family:'IBM Plex Mono',monospace;
+    font-size:11.5px;color:var(--steel-light);text-align:right;
+  }
+
+  @media (max-width:880px){
+    .hero,.overview,.reactions,.two-col,footer{grid-template-columns:1fr;}
+    .adv-grid{grid-template-columns:1fr 1fr;}
+    .topbar nav{display:none;}
+    .foot-note{justify-content:flex-start;text-align:left;margin-top:20px;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="brand">Enersol<span>Biopower</span></div>
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#process">Process</a>
+      <a href="#specs">Specifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div>
+      <div class="eyebrow">High-Temperature Laboratory Calcination System</div>
+      <h1>ESB<em>-R</em><br>ELECTRIFIED<br>HELICAL CALCINER</h1>
+      <div class="sub">Advanced electrified helical downtube technology for rapid, repeatable sample calcination — engineered for research labs that can't afford inconsistent results.</div>
+      <div class="hero-tags">
+        <span class="tag">UP TO 1500°C ELEMENT TEMP</span>
+        <span class="tag">3–4 SEC RESIDENCE TIME</span>
+        <span class="tag">10–100 g / BATCH</span>
+      </div>
+      <div class="price-row">
+        <span class="price-label">Price</span>
+        <span class="price-value">₹ 21,12,200</span>
+        <span class="price-note">Ex-works, Jaipur</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-solid" href="ESB-R-Catalogue.pdf" download>Download Catalogue</a>
+        <a class="btn btn-outline" href="#specs">View Specifications</a>
+      </div>
+    </div>
+
+    <div class="schematic">
+      <div class="schematic-label"><span><span class="dot"></span>LIVE PROCESS SCHEMATIC</span><span>ESB-R / REV.01</span></div>
+      <div class="rig">
+        <div class="tube-wrap">
+          <div class="hopper"></div>
+          <div class="chamber">
+            <div class="coil"></div>
+            <div class="particle"></div>
+            <div class="co2">CO₂↑</div>
+          </div>
+          <div class="tray"></div>
+          <div class="heat-zone-labels">
+            <span>FEED</span>
+            <span>HEATED ZONE</span>
+            <span>HEATED ZONE</span>
+            <span>DISCHARGE</span>
+          </div>
+        </div>
+      </div>
+      <div class="schematic-foot">
+        <span>Feed → Helical downtube → <b>850–900°C</b> reaction → Discharge</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- OVERVIEW -->
+  <section id="overview">
+    <div class="section-head"><span class="num">01</span><h2>Product Overview</h2></div>
+    <div class="overview">
+      <div>
+        <p>The ESB-R Electrified Helical Calciner is a compact high-temperature laboratory system designed for rapid thermal decomposition of limestone and other mineral samples. A specially engineered helical downtube sits inside a heavily insulated, electrically heated chamber — delivering uniform heating and excellent temperature stability, batch after batch.</p>
+        <p>Built for research organizations, cement industries, universities, and pilot plants that need repeatable, accurate calcination experiments without the footprint or complexity of a full production calciner.</p>
+      </div>
+      <ul class="app-list">
+        <li>Cement Research Laboratories</li>
+        <li>Mineral Processing</li>
+        <li>Lime Industry</li>
+        <li>Universities &amp; Research Institutes</li>
+        <li>Material Science</li>
+        <li>Process Development</li>
+        <li>Pilot Plant Testing</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="section-head"><span class="num">02</span><h2>Working Principle</h2></div>
+    <div class="process">
+      <div class="step">
+        <div class="step-flow"><div class="step-node"></div><div class="step-track"></div></div>
+        <div class="step-body"><h3>Feed</h3><p>Material is manually fed into the top hopper.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-flow"><div class="step-node"></div><div class="step-track"></div></div>
+        <div class="step-body"><h3>Entry</h3><p>Sample enters the stainless-steel helical downtube.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-flow"><div class="step-node"></div><div class="step-track"></div></div>
+        <div class="step-body"><h3>Uniform Heating</h3><p>High-temperature electric heaters uniformly heat the material as it travels.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-flow"><div class="step-node"></div><div class="step-track"></div></div>
+        <div class="step-body"><h3>Calcination</h3><p>The calcination reaction occurs during the sample's downward movement through the tube.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-flow"><div class="step-node"></div><div class="step-track"></div></div>
+        <div class="step-body"><h3>Off-gas Release</h3><p>CO₂ generated by the reaction is released through the vent.</p></div>
+      </div>
+      <div class="step">
+        <div class="step-flow"><div class="step-node"></div></div>
+        <div class="step-body"><h3>Discharge</h3><p>Calcined product is collected at the bottom discharge tray.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REACTIONS -->
+  <section>
+    <div class="section-head"><span class="num">03</span><h2>Typical Calcination Reactions</h2></div>
+    <div class="reactions">
+      <div class="reaction-card">
+        <h3>LIMESTONE</h3>
+        <div class="equation">CaCO<sub>3</sub> <span class="arrow">→</span> CaO + CO<sub>2</sub></div>
+      </div>
+      <div class="reaction-card">
+        <h3>MAGNESITE</h3>
+        <div class="equation">MgCO<sub>3</sub> <span class="arrow">→</span> MgO + CO<sub>2</sub></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECS -->
+  <section id="specs">
+    <div class="section-head"><span class="num">04</span><h2>Technical Specifications</h2></div>
+    <table class="specs">
+      <tr><td>System Type</td><td>Electrified Helical Downtube Calciner</td></tr>
+      <tr><td>Operation</td><td>Batch Type</td></tr>
+      <tr><td>Feed Capacity</td><td>10–100 g per batch</td></tr>
+      <tr><td>Material</td><td>CaCO₃, MgCO₃ and similar minerals</td></tr>
+      <tr><td>Heating Method</td><td>Electric Resistance Heating</td></tr>
+      <tr><td>Heating Element</td><td>Kanthal A-1</td></tr>
+      <tr><td>Element Temperature</td><td>Up to 1500°C</td></tr>
+      <tr><td>Calcination Temperature</td><td>850–900°C (application dependent)</td></tr>
+      <tr><td>Reactor Material</td><td>SS304 / SS316</td></tr>
+      <tr><td>Helical Pipe OD</td><td>30 mm</td></tr>
+      <tr><td>Helical Pipe ID</td><td>25 mm</td></tr>
+      <tr><td>Helical Pipe Length</td><td>Approx. 4 m</td></tr>
+      <tr><td>Helical Pitch</td><td>Approx. 600 mm</td></tr>
+      <tr><td>Residence Time</td><td>3–4 seconds</td></tr>
+      <tr><td>Heating Power</td><td>10–12 kW (typical)</td></tr>
+      <tr><td>Temperature Sensors</td><td>6 × K-Type Thermocouples</td></tr>
+      <tr><td>Chamber Insulation</td><td>Dense Refractory + 50 mm Glass Wool</td></tr>
+      <tr><td>Chamber Size</td><td>600 × 600 mm</td></tr>
+      <tr><td>Overall Height</td><td>Approx. 3300 mm</td></tr>
+      <tr><td>Control System</td><td>PLC / PID Based Temperature Control (Optional)</td></tr>
+      <tr><td>Safety Features</td><td>Emergency Stop, Earthing, Over Temperature Protection</td></tr>
+    </table>
+  </section>
+
+  <!-- ADVANTAGES -->
+  <section>
+    <div class="section-head"><span class="num">05</span><h2>Major Advantages</h2></div>
+    <div class="adv-grid">
+      <div class="adv-item"><b>Uniform Heat</b>Distribution across the full helical length.</div>
+      <div class="adv-item"><b>Thermal Efficiency</b>Excellent insulation minimises energy loss.</div>
+      <div class="adv-item"><b>Fast Heating</b>Rapid rate gets samples to temperature quickly.</div>
+      <div class="adv-item"><b>Compact Footprint</b>Full lab-scale calciner in one enclosure.</div>
+      <div class="adv-item"><b>Low Heat Loss</b>Dense refractory plus glass wool insulation.</div>
+      <div class="adv-item"><b>Easy Maintenance</b>Modular components, simple access panels.</div>
+      <div class="adv-item"><b>Modular Construction</b>Built to adapt to lab-specific needs.</div>
+      <div class="adv-item"><b>High-Temp Stability</b>Consistent performance at operating extremes.</div>
+      <div class="adv-item"><b>Industrial Grade</b>Built for long service life in continuous use.</div>
+    </div>
+  </section>
+
+  <!-- WHY / ACCESSORIES -->
+  <section>
+    <div class="two-col">
+      <div>
+        <div class="section-head"><span class="num">06</span><h2>Why Enersol Biopower?</h2></div>
+        <ul class="plain-list">
+          <li>In-house design &amp; manufacturing</li>
+          <li>High temperature process expertise</li>
+          <li>Customized engineering solutions</li>
+          <li>Advanced thermal system design</li>
+          <li>Strong R&amp;D team</li>
+          <li>Installation &amp; commissioning support</li>
+          <li>After-sales service</li>
+          <li>Customized automation options</li>
+        </ul>
+      </div>
+      <div>
+        <div class="section-head"><span class="num">07</span><h2>Optional Accessories</h2></div>
+        <ul class="plain-list">
+          <li>PLC with HMI</li>
+          <li>SCADA monitoring</li>
+          <li>Data logging software</li>
+          <li>Variable temperature profiles</li>
+          <li>Industrial safety interlocks</li>
+          <li>Customized sample handling</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <footer id="contact">
+    <div class="contact-block">
+      <h2>Enersol Biopower Pvt. Ltd.</h2>
+      <p>Where waste becomes power.</p>
+      <div class="contact-details">
+        <div>📍 <b>Address</b> — Road No. 19, VKI, Jaipur - 302013, Rajasthan, India</div>
+        <div>🌐 <b>Web</b> — www.enersolbiopower.com</div>
+        <div>✉️ <b>Email</b> — info@enersolbiopower.com</div>
+        <div>📞 <b>Phone</b> — +91-9414535665 / 9610103127</div>
+      </div>
+    </div>
+    <div class="foot-note">
+      ESB-R DATASHEET · REV.01<br>ELECTRIFIED HELICAL CALCINER<br>© ENERSOL BIOPOWER PVT. LTD.
+    </div>
+  </footer>
+
+</body>
+</html>

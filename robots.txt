@@ -1,0 +1,33 @@
+User-agent: *
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /imagekit-upload-log.txt
+Disallow: /*.bak-*
+Disallow: /assets/product.csv
+Disallow: /assets/product.mp4
+Disallow: /assets/Renewable%20Energy%20101%20%20National%20Geographic%20-%20National%20Geographic%20(720p,%20h264).mp4
+Disallow: /assets/videoplayback.mp4
+Disallow: /assets/catelogue-pdf/
+Disallow: /pages/*.bak-*
+Disallow: /*?Itemid=
+Disallow: /*?ref=
+
+# Allow AI crawlers for citation and indexing
+# Allow AI crawlers for citation and indexing
+# AI Crawlers — explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://enersolbiopower.com/sitemap.xml

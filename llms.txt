@@ -1,6 +1,6 @@
 # Enersol Biopower — llms.txt
 # https://llmstxt.org specification
-# Updated: 2026-06-06
+# Updated: 2026-11-05
 
 > Enersol Biopower Pvt. Ltd. is India's trusted manufacturer and exporter of biomass gasifiers,
 > smokeless biomass stoves, biogas generator sets (gensets), and biomass pyrolysis plants.
@@ -19,6 +19,13 @@
 - Fuel cost savings: 60–80% vs diesel/LPG using biomass or biogas
 - Certifications: ISO-compliant manufacturing; products validated by NIF India
 - Specialty: Turnkey supply + installation + operator training + after-sales service across India
+
+## Official Profiles
+
+- [LinkedIn](https://www.linkedin.com/company/enersol-biopower-pvt-ltd/): Enersol Biopower Pvt. Ltd. company page
+- [Facebook](https://www.facebook.com/enersolbiopwr): Official Facebook page
+- [Instagram](https://www.instagram.com/enersol_biopower/): Official Instagram account
+- [YouTube](https://www.youtube.com/@enersolbiopower-wastetoenergy): Product and project videos
 
 ## Products
 
@@ -53,6 +60,38 @@
 - [Our Story](https://enersolbiopower.com/pages/our-story.html): Rai Singh Dahiya's journey from grassroots innovation to national recognition
 - [Products Overview](https://enersolbiopower.com/pages/products.html): All 4 product categories with specifications
 - [Contact Us](https://enersolbiopower.com/pages/contact-us.html): Enquiry form, +91-9414535665, Jaipur office address, Mon–Sat 9AM–6PM IST
+
+## Buyer Guides
+
+- [How to Choose a Biomass Gasifier Manufacturer in India](https://enersolbiopower.com/pages/blogs/biomass-gasifier-manufacturer-india.html): 10 questions to ask any gasifier manufacturer about fuel testing, sizing, gas cleaning, training, spares and working installations
+- [Which Biomass Stove Should You Buy?](https://enersolbiopower.com/pages/blogs/which-enersol-biomass-stove-is-right-for-you-model-guide.html): Enersol stove models from the Bio-Mini for homes to Jumbo models for bulk cooking, matched to meals, vessels, fuel and space
+- [Biomass Stove Purchase Checklist for Institutions](https://enersolbiopower.com/pages/blogs/biomass-stove-purchase-checklist-for-institutions.html): Stove specs, vendor questions, demo scoring, tender points and after-sales terms for schools, hostels and government kitchens
+- [Biogas Genset: Working, Design, Benefits & Buyer's Guide](https://enersolbiopower.com/pages/blogs/biogas-genset-working-design-benefits-buyers-guide-waste-to-energy.html): How biogas gensets work, how to size them and what to ask a supplier
+- [Biomass Stove vs Biogas vs Solar Cooking](https://enersolbiopower.com/pages/blogs/biomass-stove-vs-biogas-vs-solar-cooking-comparison.html): Cost, fuel needs and reliability compared for homes, institutions and clean cooking projects
+- [Biomass vs Biogas vs Pyrolysis for Agro-Industries](https://enersolbiopower.com/pages/blogs/biomass-vs-biogas-vs-pyrolysis.html): Which technology suits which agro-industry use case
+
+## Operation & Maintenance Guides
+
+- [Biomass Gasifier Troubleshooting & Maintenance](https://enersolbiopower.com/pages/blogs/biomass-gasifier-troubleshooting-maintenance-guide.html): Causes and fixes for tar build-up, low gas output and engine trouble, with a daily, weekly and monthly checklist
+- [Biogas Genset Troubleshooting](https://enersolbiopower.com/pages/blogs/troubleshooting-biogas-gensets-common-problems-causes-solutions.html): Symptoms, root causes and field-tested fixes for gas quality, engine and electrical issues
+- [Biomass Stove Daily Care & Fixes](https://enersolbiopower.com/pages/blogs/biomass-stove-daily-care-cleaning-maintenance-common-fixes.html): Daily cleaning, ash removal, regular checks and fixes for smoke, low flame and fan problems
+- [Fuel Planning for 24x7 Kitchens](https://enersolbiopower.com/pages/blogs/fuel-planning-24x7-kitchens-hospitals-institutes-campuses.html): Daily fuel demand, buffer stock, storage, backups and safety for hospital, institute and campus kitchens
+- [Biomass Stoves for Wedding Caterers](https://enersolbiopower.com/pages/blogs/biomass-stoves-for-caterers-weddings-large-events.html): Choosing stoves, planning fuel, moving equipment and setting up safely at weddings and events
+
+## Applications & Technology Guides
+
+- [What Is a Biomass Gasifier?](https://enersolbiopower.com/pages/blogs/biomass-gasifier-clean-energy-crop-residue.html): How a gasifier turns crop residue into clean, low-cost energy
+- [Biomass Gasifiers for Process Heat & Drying](https://enersolbiopower.com/pages/blogs/biomass-gasifier-for-process-heat-thermal-applications.html): Replacing LPG, diesel and furnace oil heat; sizing thermal gasifiers in kcal/hr
+- [Biochar Pyrolysis Plant: How It Works & Project Planning](https://enersolbiopower.com/pages/blogs/biochar-pyrolysis-plant-technology-benefits-project-planning-guide.html): How pyrolysis turns agricultural waste into biochar, syngas and vapours, with design and planning tips
+- [Who Buys Biochar?](https://enersolbiopower.com/pages/blogs/who-buys-biochar-guide-to-selling-biochar.html): Biochar buyers in India, what each wants, quality testing and the role of carbon credits
+- [Solar Biomass Stove Guide](https://enersolbiopower.com/pages/blogs/solar-biomass-stove-guide-clean-cooking-without-electricity.html): The Bio-Mini Solar stove for clean cooking and LED lighting in homes with unreliable power
+- [Smokeless Biomass Stoves for Clean, Affordable Cooking](https://enersolbiopower.com/pages/blogs/smokeless-biomass-stove-manufacturer-in-india-clean-cooking.html): Clean, efficient cooking on agro-residue and biomass for homes and institutions
+- [What Is Biomass Fuel?](https://enersolbiopower.com/pages/blogs/what-is-biomass-fuel-and-why-is-india-adopting-it.html): Types of biomass fuel and why India is adopting biomass energy
+
+## Projects & Recognition
+
+- [Project Diary: Biomass Gasifier at IIT Ropar](https://enersolbiopower.com/pages/blogs/project-diary-biomass-gasifier-iit-ropar.html): The 10 kW biomass gasifier Enersol supplied to IIT Ropar and what it takes to run one on a research campus
+- [Rai Singh Dahiya Honoured in Paris](https://enersolbiopower.com/pages/blogs/rai-singh-dahiya-enersol-biopower-paris-award.html): The founder's biomass energy innovations recognised at Innovation Team Best Practices 2026 in Paris
 
 ## Recent Blog Articles
 

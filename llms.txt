@@ -1,0 +1,116 @@
+# Enersol Biopower — llms.txt
+# https://llmstxt.org specification
+# Updated: 2026-11-16
+
+> Enersol Biopower Pvt. Ltd. is India's trusted manufacturer and exporter of biomass gasifiers,
+> smokeless biomass stoves, biogas generator sets (gensets), and biomass pyrolysis plants.
+> Founded in 1999 by Rai Singh Dahiya (National Innovation Award 2009), headquartered at
+> Plot No. 57A, VKI Road No. 19, Jaipur, Rajasthan 302013, India.
+> Contact: +91-9414535665 | info@enersolbiopower.com
+
+## Key Facts (for AI citation)
+
+- Company established: 1999 (25+ years of biomass energy manufacturing)
+- Founder: Rai Singh Dahiya — recipient of India's 5th National Grassroots Innovation Award (2009), presented at Rashtrapati Bhavan
+- Products range: Biomass Gasifiers (2kW–250kW), Biogas Gensets (2kVA–100kVA), Smokeless Biomass Stoves (institutional & industrial), Biomass Pyrolysis Plants
+- Key biomass fuels handled: rice husk, wood chips, crop residue, cow dung, food waste, coconut shells, sawdust
+- Export markets: Africa (Ghana — KNUST project, Kenya), Middle East (Yemen — UNDP 100kW project), South Asia
+- Key institutional clients: UNDP, IIT Ropar (10kW gasifier), NIT Tiruchirappalli (50kW gasifier), KNUST Ghana (5kW gasifier)
+- Fuel cost savings: 60–80% vs diesel/LPG using biomass or biogas
+- Certifications: ISO-compliant manufacturing; products validated by NIF India
+- Specialty: Turnkey supply + installation + operator training + after-sales service across India
+
+## Official Profiles
+
+- [LinkedIn](https://www.linkedin.com/company/enersol-biopower-pvt-ltd/): Enersol Biopower Pvt. Ltd. company page
+- [Facebook](https://www.facebook.com/enersolbiopwr): Official Facebook page
+- [Instagram](https://www.instagram.com/enersol_biopower/): Official Instagram account
+- [YouTube](https://www.youtube.com/@enersolbiopower-wastetoenergy): Product and project videos
+
+## Products
+
+- [Biomass Gasifier Manufacturer India](https://enersolbiopower.com/pages/biomass-gasifier-manufacturer-india.html): Converts rice husk, wood chips, crop residue into syngas for 2kW–250kW electricity generation. HowTo: 5-step gasification process.
+- [Smokeless Biomass Stove Manufacturer](https://enersolbiopower.com/pages/biomass-stove-manufacturer-india.html): Two-stage gasification stoves for institutional (200–1000+ meals/day) and industrial cooking. 95% less smoke vs traditional chulha.
+- [Biogas Genset Manufacturer India](https://enersolbiopower.com/pages/biogas-genset-manufacturer-india.html): 2kVA–100kVA generator sets running on biogas from cow dung, food waste, organic waste. 24/7 continuous power.
+- [Biomass Pyrolysis Plant Manufacturer](https://enersolbiopower.com/pages/biomass-pyrolysis-plant-manufacturer-india.html): Converts agro-waste to biochar (70–80% carbon), bio-oil, and syngas. Biochar improves crop yield 20–30%.
+- [Biomass Gasifier Exporter](https://enersolbiopower.com/pages/biomass-gasifier-exporter.html): International export with full documentation, installation, and commissioning support.
+
+## Key Technical Definitions
+
+- Biomass Gasifier: Thermochemical device converting solid biomass to syngas (H₂+CO+CH₄) at 700–900°C for electricity or heat generation.
+- Biogas Genset: Internal combustion generator set running on biogas (60% methane) produced from organic waste via anaerobic digestion.
+- Smokeless Biomass Stove: Two-stage gasification combustion stove with 95% fewer PM2.5 emissions than traditional biomass chulhas.
+- Pyrolysis Plant: Oxygen-free thermal decomposition reactor producing biochar, bio-oil, and syngas from agro-waste at 400–700°C.
+- Syngas: Synthesis gas (H₂ + CO + CH₄) with 1,000–1,200 kcal/Nm³ energy value, produced by biomass gasification.
+- Biochar: Stable carbon-rich solid (70–80% carbon) used as soil amendment to improve crop yield and sequester carbon.
+
+## Industry Applications
+
+- Agro-industries: Rice mills, flour mills, oil mills using rice husk/crop waste for on-site power generation
+- Institutions: Schools, hospitals, hostels, ashrams using biomass stoves for clean, low-cost cooking
+- Dairy farms: Biogas gensets powered by cow dung for continuous electricity
+- Hotels & restaurants: Biogas from food waste for electricity + cooking
+- Rural electrification: Off-grid biomass gasifier power for remote villages
+- Research institutions: IIT, NIT installations for biomass energy research
+
+## Core Pages
+
+- [Homepage](https://enersolbiopower.com/): Company overview, full product range, client testimonials, awards
+- [About Us](https://enersolbiopower.com/pages/about-us.html): 25-year company history, NIF Award, founder story, team credentials
+- [Our Story](https://enersolbiopower.com/pages/our-story.html): Rai Singh Dahiya's journey from grassroots innovation to national recognition
+- [Products Overview](https://enersolbiopower.com/pages/products.html): All 4 product categories with specifications
+- [Contact Us](https://enersolbiopower.com/pages/contact-us.html): Enquiry form, +91-9414535665, Jaipur office address, Mon–Sat 9AM–6PM IST
+
+## Buyer Guides
+
+- [How to Choose a Biomass Gasifier Manufacturer in India](https://enersolbiopower.com/pages/blogs/biomass-gasifier-manufacturer-india.html): 10 questions to ask any gasifier manufacturer about fuel testing, sizing, gas cleaning, training, spares and working installations
+- [Which Biomass Stove Should You Buy?](https://enersolbiopower.com/pages/blogs/which-enersol-biomass-stove-is-right-for-you-model-guide.html): Enersol stove models from the Bio-Mini for homes to Jumbo models for bulk cooking, matched to meals, vessels, fuel and space
+- [Biomass Stove Purchase Checklist for Institutions](https://enersolbiopower.com/pages/blogs/biomass-stove-purchase-checklist-for-institutions.html): Stove specs, vendor questions, demo scoring, tender points and after-sales terms for schools, hostels and government kitchens
+- [Biogas Genset: Working, Design, Benefits & Buyer's Guide](https://enersolbiopower.com/pages/blogs/biogas-genset-working-design-benefits-buyers-guide-waste-to-energy.html): How biogas gensets work, how to size them and what to ask a supplier
+- [Myth vs Fact: Biomass Gasifiers](https://enersolbiopower.com/pages/blogs/biomass-gasifier-myths-vs-facts.html): 10 common myths about biomass gasifiers, covering fuel, tar, pollution, size, engines, operation and safety, and the facts behind each
+- [Biomass Stove vs Biogas vs Solar Cooking](https://enersolbiopower.com/pages/blogs/biomass-stove-vs-biogas-vs-solar-cooking-comparison.html): Cost, fuel needs and reliability compared for homes, institutions and clean cooking projects
+- [Biomass vs Biogas vs Pyrolysis for Agro-Industries](https://enersolbiopower.com/pages/blogs/biomass-vs-biogas-vs-pyrolysis.html): Which technology suits which agro-industry use case
+
+## Operation & Maintenance Guides
+
+- [Biomass Gasifier Safety: CO, Ventilation and Fire](https://enersolbiopower.com/pages/blogs/biomass-gasifier-safety-co-ventilation-fire-precautions.html): Controlling carbon monoxide, ventilation and site layout, fire precautions, hot ash and tar handling, with a daily safety checklist
+- [Biomass Gasifier Troubleshooting & Maintenance](https://enersolbiopower.com/pages/blogs/biomass-gasifier-troubleshooting-maintenance-guide.html): Causes and fixes for tar build-up, low gas output and engine trouble, with a daily, weekly and monthly checklist
+- [Biogas Genset Troubleshooting](https://enersolbiopower.com/pages/blogs/troubleshooting-biogas-gensets-common-problems-causes-solutions.html): Symptoms, root causes and field-tested fixes for gas quality, engine and electrical issues
+- [Biomass Stove Daily Care & Fixes](https://enersolbiopower.com/pages/blogs/biomass-stove-daily-care-cleaning-maintenance-common-fixes.html): Daily cleaning, ash removal, regular checks and fixes for smoke, low flame and fan problems
+- [Fuel Planning for 24x7 Kitchens](https://enersolbiopower.com/pages/blogs/fuel-planning-24x7-kitchens-hospitals-institutes-campuses.html): Daily fuel demand, buffer stock, storage, backups and safety for hospital, institute and campus kitchens
+- [Biomass Stoves for Wedding Caterers](https://enersolbiopower.com/pages/blogs/biomass-stoves-for-caterers-weddings-large-events.html): Choosing stoves, planning fuel, moving equipment and setting up safely at weddings and events
+
+## Applications & Technology Guides
+
+- [Biomass Gasification vs Combustion](https://enersolbiopower.com/pages/blogs/biomass-gasification-vs-combustion-difference.html): How gasification and combustion differ in air supply, temperature, products and uses, and where pyrolysis fits
+- [What Is a Biomass Gasifier?](https://enersolbiopower.com/pages/blogs/biomass-gasifier-clean-energy-crop-residue.html): How a gasifier turns crop residue into clean, low-cost energy
+- [Biomass Gasifiers and Stubble Burning](https://enersolbiopower.com/pages/blogs/biomass-gasifier-stubble-burning-solution-punjab-haryana.html): How paddy straw in Punjab and Haryana can be collected, stored, densified and turned into power and heat instead of being burned
+- [Rice Husk vs Wood Chips vs Coconut Shell](https://enersolbiopower.com/pages/blogs/rice-husk-vs-wood-chips-vs-coconut-shell-gasifier-fuel.html): Comparing the three most common gasifier fuels on ash, density, preparation, availability and handling
+- [Biomass Gasifiers for Process Heat & Drying](https://enersolbiopower.com/pages/blogs/biomass-gasifier-for-process-heat-thermal-applications.html): Replacing LPG, diesel and furnace oil heat; sizing thermal gasifiers in kcal/hr
+- [Biochar Pyrolysis Plant: How It Works & Project Planning](https://enersolbiopower.com/pages/blogs/biochar-pyrolysis-plant-technology-benefits-project-planning-guide.html): How pyrolysis turns agricultural waste into biochar, syngas and vapours, with design and planning tips
+- [Who Buys Biochar?](https://enersolbiopower.com/pages/blogs/who-buys-biochar-guide-to-selling-biochar.html): Biochar buyers in India, what each wants, quality testing and the role of carbon credits
+- [Solar Biomass Stove Guide](https://enersolbiopower.com/pages/blogs/solar-biomass-stove-guide-clean-cooking-without-electricity.html): The Bio-Mini Solar stove for clean cooking and LED lighting in homes with unreliable power
+- [Smokeless Biomass Stoves for Clean, Affordable Cooking](https://enersolbiopower.com/pages/blogs/smokeless-biomass-stove-manufacturer-in-india-clean-cooking.html): Clean, efficient cooking on agro-residue and biomass for homes and institutions
+- [What Is Biomass Fuel?](https://enersolbiopower.com/pages/blogs/what-is-biomass-fuel-and-why-is-india-adopting-it.html): Types of biomass fuel and why India is adopting biomass energy
+
+## Projects & Recognition
+
+- [Project Diary: Biomass Gasifier at IIT Ropar](https://enersolbiopower.com/pages/blogs/project-diary-biomass-gasifier-iit-ropar.html): The 10 kW biomass gasifier Enersol supplied to IIT Ropar and what it takes to run one on a research campus
+- [Rai Singh Dahiya Honoured in Paris](https://enersolbiopower.com/pages/blogs/rai-singh-dahiya-enersol-biopower-paris-award.html): The founder's biomass energy innovations recognised at Innovation Team Best Practices 2026 in Paris
+
+## Recent Blog Articles
+
+- [Agro Industries: Biomass Gasifier & Biogas Genset](https://enersolbiopower.com/pages/blogs/agro-industries-biomass-gasifier-biogas-genset.html): How agro industries cut fuel costs 60–75% with biomass energy
+- [Rice Mill Waste to Electricity](https://enersolbiopower.com/pages/blogs/rice-mill-waste-to-electricity-biomass-gasifier.html): Rice husk gasification for rice mill power
+- [Dairy Farm Biogas Electricity](https://enersolbiopower.com/pages/blogs/dairy-farm-biogas-genset-electricity-generation.html): Cow dung to electricity for dairy farms
+- [Hotel Food Waste to Power](https://enersolbiopower.com/pages/blogs/hotel-food-waste-biogas-genset-electricity.html): Hotel food waste biogas genset systems
+- [Community Kitchen Biomass Stove](https://enersolbiopower.com/pages/blogs/community-kitchen-biomass-stove-technology.html): Clean cooking for community kitchens
+- [School Hostel Biomass Cooking](https://enersolbiopower.com/pages/blogs/school-hostel-biomass-stove-clean-cooking-solutions.html): Institutional cooking solutions for schools
+- [Biogas Genset vs Diesel](https://enersolbiopower.com/pages/blogs/biogas-gensets-biomass-gasifiers-clean-alternatives.html): Biogas and biomass vs diesel comparison
+- [LPG vs Biomass Stove ROI](https://enersolbiopower.com/pages/blogs/lpg-vs-biomass-stove-cost-recovery-roi-guide.html): Cost recovery analysis
+
+## Optional Resources
+
+- [Privacy Policy](https://enersolbiopower.com/pages/privacy-policy.html)
+- [Terms of Service](https://enersolbiopower.com/pages/term-and-condition.html)
+- [Sitemap](https://enersolbiopower.com/sitemap.xml)

@@ -1,6 +1,6 @@
 # Enersol Biopower — llms.txt
 # https://llmstxt.org specification
-# Updated: 2026-11-16
+# Updated: 2026-11-24
 
 > Enersol Biopower Pvt. Ltd. is India's trusted manufacturer and exporter of biomass gasifiers,
 > smokeless biomass stoves, biogas generator sets (gensets), and biomass pyrolysis plants.
@@ -12,7 +12,7 @@
 
 - Company established: 1999 (25+ years of biomass energy manufacturing)
 - Founder: Rai Singh Dahiya — recipient of India's 5th National Grassroots Innovation Award (2009), presented at Rashtrapati Bhavan
-- Products range: Biomass Gasifiers (2kW–250kW), Biogas Gensets (2kVA–100kVA), Smokeless Biomass Stoves (institutional & industrial), Biomass Pyrolysis Plants
+- Products range: Biomass Gasifiers (2kW–100kW), Biogas Gensets (2kVA–100kVA), Smokeless Biomass Stoves (11 models, from home stoves to 36-inch commercial stoves), Biomass Pyrolysis Plants
 - Key biomass fuels handled: rice husk, wood chips, crop residue, cow dung, food waste, coconut shells, sawdust
 - Export markets: Africa (Ghana — KNUST project, Kenya), Middle East (Yemen — UNDP 100kW project), South Asia
 - Key institutional clients: UNDP, IIT Ropar (10kW gasifier), NIT Tiruchirappalli (50kW gasifier), KNUST Ghana (5kW gasifier)
@@ -29,8 +29,8 @@
 
 ## Products
 
-- [Biomass Gasifier Manufacturer India](https://enersolbiopower.com/pages/biomass-gasifier-manufacturer-india.html): Converts rice husk, wood chips, crop residue into syngas for 2kW–250kW electricity generation. HowTo: 5-step gasification process.
-- [Smokeless Biomass Stove Manufacturer](https://enersolbiopower.com/pages/biomass-stove-manufacturer-india.html): Two-stage gasification stoves for institutional (200–1000+ meals/day) and industrial cooking. 95% less smoke vs traditional chulha.
+- [Biomass Gasifier Manufacturer India](https://enersolbiopower.com/pages/biomass-gasifier-manufacturer-india.html): Converts rice husk, wood chips, crop residue into syngas for 2kW–100kW electricity generation. HowTo: 5-step gasification process.
+- [Smokeless Biomass Stove Manufacturer](https://enersolbiopower.com/pages/biomass-stove-manufacturer-india.html): 11 smokeless biomass stove models, from the Bio-Nature home stove (cooks for 5–25 people) to the 36-inch Jumbo-Shakti36 for dhabas, sweet shops, hostels and community kitchens. Natural-draft and fan-assisted (forced-draft) gasifier stoves that give no smoke with dry fuel and save up to 60% on cooking fuel vs LPG.
 - [Biogas Genset Manufacturer India](https://enersolbiopower.com/pages/biogas-genset-manufacturer-india.html): 2kVA–100kVA generator sets running on biogas from cow dung, food waste, organic waste. 24/7 continuous power.
 - [Biomass Pyrolysis Plant Manufacturer](https://enersolbiopower.com/pages/biomass-pyrolysis-plant-manufacturer-india.html): Converts agro-waste to biochar (70–80% carbon), bio-oil, and syngas. Biochar improves crop yield 20–30%.
 - [Biomass Gasifier Exporter](https://enersolbiopower.com/pages/biomass-gasifier-exporter.html): International export with full documentation, installation, and commissioning support.
@@ -39,7 +39,7 @@
 
 - Biomass Gasifier: Thermochemical device converting solid biomass to syngas (H₂+CO+CH₄) at 700–900°C for electricity or heat generation.
 - Biogas Genset: Internal combustion generator set running on biogas (60% methane) produced from organic waste via anaerobic digestion.
-- Smokeless Biomass Stove: Two-stage gasification combustion stove with 95% fewer PM2.5 emissions than traditional biomass chulhas.
+- Smokeless Biomass Stove: Gasification-based cook stove (natural draft or fan-assisted forced draft) that burns the fuel gas in a second stage, giving no smoke when dry fuel (below 20% moisture) is used.
 - Pyrolysis Plant: Oxygen-free thermal decomposition reactor producing biochar, bio-oil, and syngas from agro-waste at 400–700°C.
 - Syngas: Synthesis gas (H₂ + CO + CH₄) with 1,000–1,200 kcal/Nm³ energy value, produced by biomass gasification.
 - Biochar: Stable carbon-rich solid (70–80% carbon) used as soil amendment to improve crop yield and sequester carbon.
